@@ -12,17 +12,6 @@ let integers4 = [-10, -3, 1, -4];
 let integers5 = [-10, -5, -6, -1];
 
 // combinatorial solution
-const iteratedBitCount = (digit) => {
-    let bitsCount = 0;
-
-    while (digit) {
-        bitsCount += (digit & 1);
-        digit >>= 1;
-    }
-
-    return bitsCount;
-}
-
 const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplierCountLimit = 3) => {
     let product;
     let setLength = integersToCount.length;
@@ -32,10 +21,21 @@ const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplie
 
     for(let setCounter = 0; setCounter < setsCount; setCounter++)
     {
-        if (iteratedBitCount(setCounter) !== multiplierCountLimit) {
+        // count bits
+        let bitsCount = 0;
+        let bitCounter = setCounter;
+
+        while (bitCounter) {
+            bitsCount += (bitCounter & 1);
+            bitCounter >>= 1;
+        }
+
+        if (bitsCount !== multiplierCountLimit) {
             continue;
         }
 
+
+        // find sub-product
         let elementPosition = setLength - 1;
         let bitMask = setCounter;
         let subProduct = 1;
