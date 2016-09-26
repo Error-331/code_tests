@@ -5,14 +5,14 @@
 // Algorithm that calculates highest product of three integers from array
 
 // mock data
-let integers1 = [1, 7, 3, 4];
-let integers2 = [-10, -1, 9, 9, 9];
-let integers3 = [-10, -3, 1, 2];
-let integers4 = [-10, -3, 1, -4];
-let integers5 = [-10, -5, -6, -1];
+let integers1 = [1, 7, 3, 4]; // 7 * 3 * 4 = 84
+let integers2 = [-10, -1, 9, 9, 9]; // 9 * 9 * 9 = 729
+let integers3 = [-10, -3, 1, 2]; // -10 * -3 * 2 = 60
+let integers4 = [-10, -3, 1, -4]; // -10 * -4 * 1 = 40
+let integers5 = [-10, -5, -6, -1]; // -1 * -5 * -6 = -30
 
 // combinatorial solution
-const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplierCountLimit = 3) => {
+const highestProductOfThreeIntegersCombinatorialSolution = (integersToCount, multiplierCountLimit = 3) => {
     let product;
     let setLength = integersToCount.length;
 
@@ -56,30 +56,95 @@ const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplie
     return product;
 }
 
+// best solution
+const highestProductOfThreeIntegersBestSolution = (integersToCount) => {
+    var highest = Math.max(integersToCount[0], integersToCount[1]);
+    var lowest  = Math.min(integersToCount[0], integersToCount[1]);
+
+    var highestProductOf2 = integersToCount[0] * integersToCount[1];
+    var lowestProductOf2  = integersToCount[0] * integersToCount[1];
+
+    var highestProductOf3 = integersToCount[0] * integersToCount[1] * integersToCount[2];
+
+    for (var i = 2; i < integersToCount.length; i++) {
+        let current = integersToCount[i];
+
+        highestProductOf3 = Math.max(
+            highestProductOf3,
+            current * highestProductOf2,
+            current * lowestProductOf2
+        );
+
+        highestProductOf2 = Math.max(
+            highestProductOf2,
+            current * highest,
+            current * lowest
+        );
+
+        lowestProductOf2 = Math.min(
+            lowestProductOf2,
+            current * highest,
+            current * lowest
+        );
+
+        highest = Math.max(highest, current);
+        lowest = Math.min(lowest, current);
+    }
+
+    return highestProductOf3;
+}
+
 console.log('Product calculation (highest product of three integers)');
 console.log('=======================================================');
 
-let product = highestProductOfThreeIntegersNotBestSolution(integers1);
+let product = highestProductOfThreeIntegersCombinatorialSolution(integers1);
 
-console.log('Product calculation - not the best solution - case 1');
+console.log('Product calculation - combinatorial solution - case 1');
 console.log('Product: ' + product);
 
-product = highestProductOfThreeIntegersNotBestSolution(integers2);
+product = highestProductOfThreeIntegersCombinatorialSolution(integers2);
 
-console.log('Product calculation - not the best solution - case 2');
+console.log('Product calculation - combinatorial solution - case 2');
 console.log('Product: ' + product);
 
-product = highestProductOfThreeIntegersNotBestSolution(integers3);
+product = highestProductOfThreeIntegersCombinatorialSolution(integers3);
 
-console.log('Product calculation - not the best solution - case 3');
+console.log('Product calculation - combinatorial solution - case 3');
 console.log('Product: ' + product);
 
-product = highestProductOfThreeIntegersNotBestSolution(integers4);
+product = highestProductOfThreeIntegersCombinatorialSolution(integers4);
 
-console.log('Product calculation - not the best solution - case 4');
+console.log('Product calculation - combinatorial solution - case 4');
 console.log('Product: ' + product);
 
-product = highestProductOfThreeIntegersNotBestSolution(integers5);
+product = highestProductOfThreeIntegersCombinatorialSolution(integers5);
 
-console.log('Product calculation - not the best solution - case 5');
+console.log('Product calculation - combinatorial solution - case 5');
+console.log('Product: ' + product);
+
+console.log('-------------------------------------------------------');
+
+product = highestProductOfThreeIntegersBestSolution(integers1);
+
+console.log('Product calculation - best solution - case 1');
+console.log('Product: ' + product);
+
+product = highestProductOfThreeIntegersBestSolution(integers2);
+
+console.log('Product calculation - best solution - case 2');
+console.log('Product: ' + product);
+
+product = highestProductOfThreeIntegersBestSolution(integers3);
+
+console.log('Product calculation - best solution - case 3');
+console.log('Product: ' + product);
+
+product = highestProductOfThreeIntegersBestSolution(integers4);
+
+console.log('Product calculation - best solution - case 4');
+console.log('Product: ' + product);
+
+product = highestProductOfThreeIntegersBestSolution(integers5);
+
+console.log('Product calculation - best solution - case 5');
 console.log('Product: ' + product);
