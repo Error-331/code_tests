@@ -23,52 +23,35 @@ const iteratedBitCount = (digit) => {
     return bitsCount;
 }
 
-const generateSubSets = (userSet, subSetLength) => {
-    let setLength = userSet.length;
+const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplierCountLimit = 3) => {
+    let product;
+    let setLength = integersToCount.length;
 
     // 00001 => 100000
     let setsCount = 1 << setLength;
-    let resultSet = [];
 
     for(let setCounter = 0; setCounter < setsCount; setCounter++)
     {
-        if (iteratedBitCount(setCounter) !== subSetLength) {
+        if (iteratedBitCount(setCounter) !== multiplierCountLimit) {
             continue;
         }
 
         let elementPosition = setLength - 1;
-        let bitmask = setCounter;
-        let subSet = [];
+        let bitMask = setCounter;
+        let subProduct = 1;
 
-        while(bitmask > 0)
+        while(bitMask > 0)
         {
-            if((bitmask & 1) == 1) {
-                subSet.push(userSet[elementPosition])
+            if((bitMask & 1) == 1) {
+                subProduct *= integersToCount[elementPosition];
             }
 
-            bitmask >>= 1;
+            bitMask >>= 1;
             elementPosition--;
         }
 
-        resultSet.push(subSet);
-    }
-
-    return resultSet;
-}
-
-const highestProductOfThreeIntegersNotBestSolution = (integersToCount, multiplierCountLimit = 3) => {
-    let subSets = generateSubSets(integersToCount, multiplierCountLimit);
-    let product;
-
-    subSets.forEach((subSet) => {
-        let subProduct = 1;
-
-        subSet.forEach((subSetElement) => {
-            subProduct *= subSetElement;
-        });
-
         product = (product === undefined || product < subProduct) ? subProduct : product;
-    });
+    }
 
     return product;
 }
