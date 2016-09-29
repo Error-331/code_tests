@@ -1,6 +1,6 @@
 'use strict';
 
-// Investigation of object inheritance.
+// Investigation of object pure prototype inheritance.
 
 // mock data
 //
@@ -36,6 +36,7 @@ function mockClass2() {
     }
 }
 
+// class 3 mock
 function mockClass3() {
     mockClass1.apply(this, arguments);
 
@@ -46,11 +47,16 @@ mockClass3.prototype = new mockClass1();
 mockClass3.prototype.constructor = mockClass3;
 mockClass3.prototype.parent = mockClass1.prototype;
 
+// class 4 mock
 function mockClass4() {
     mockClass3.apply(this, arguments);
 
     this.propA = 'propA_Val_Ext';
     this.testPrototypeProp1 = 'testPrototypeProp1_Val_Ext';
+
+    this.methodA = function() {
+        return this.propA;
+    }
 }
 
 mockClass4.prototype = new mockClass3();
@@ -59,17 +65,19 @@ mockClass4.prototype.parent = mockClass3.prototype;
 
 mockClass4.prototype.testPrototypeProp3 = 'testPrototypeProp3_Val';
 
+// if arrow function - this.parent = undefined, this.constructor = [native code]
 mockClass4.prototype.testPrototypeMethod2 = function() {
     return this.parent.testPrototypeMethod2.apply(this, arguments) + '_Ext';
 };
 
+// object creation
 let mockObject1 = new mockClass1('testval1');
 let mockObject2 = new mockClass2();
 let mockObject3 = new mockClass3('testval2');
 let mockObject4 = new mockClass4('testval4');
 
-console.log('Investigation of prototype mutation');
-console.log('===================================');
+console.log('Investigation of object pure prototype inheritance');
+console.log('==================================================');
 
 console.log('');
 
