@@ -30,6 +30,24 @@ const findFibonacciNthElementNotBestSolution = (elementNumber, prevElement = 0, 
     return findFibonacciNthElementNotBestSolution(elementNumber, nextElement, prevNextSum, ++elementsCount);
 };
 
+// good solution (Fibonacci sequence)
+const buildFibonacciSequenceGoodSolution = (numOfElements, startElement = 1) => {
+
+    let prevElement = 0;
+    let currentElement = prevElement + startElement;
+    let prevNextSum = 0;
+
+    for(let elementsCount = 1; elementsCount < numOfElements; elementsCount++) {
+
+        prevElement = currentElement;
+        currentElement = prevElement + currentElement;
+
+    }
+};
+
+let gg = buildFibonacciSequenceGoodSolution(10);
+console.log(gg);
+
 console.log('Fibonacci sequence');
 console.log('==================');
 
