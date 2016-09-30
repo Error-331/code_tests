@@ -32,21 +32,39 @@ const findFibonacciNthElementNotBestSolution = (elementNumber, prevElement = 0, 
 
 // good solution (Fibonacci sequence)
 const buildFibonacciSequenceGoodSolution = (numOfElements, startElement = 1) => {
-
     let prevElement = 0;
-    let currentElement = prevElement + startElement;
+    let currentElement = startElement;
+    let prevNextSum = 0;
+
+    let storageArray = [startElement];
+
+    for(let elementsCount = 1; elementsCount < numOfElements; elementsCount++) {
+        prevNextSum = prevElement + currentElement;
+
+        prevElement = currentElement;
+        currentElement = prevNextSum;
+
+        storageArray.push(prevNextSum);
+    }
+
+    return storageArray;
+};
+
+// not best solution (Fibonacci nth element)
+const findFibonacciNthElementGoodSolution = (numOfElements, startElement = 1) => {
+    let prevElement = 0;
+    let currentElement = startElement;
     let prevNextSum = 0;
 
     for(let elementsCount = 1; elementsCount < numOfElements; elementsCount++) {
+        prevNextSum = prevElement + currentElement;
 
         prevElement = currentElement;
-        currentElement = prevElement + currentElement;
-
+        currentElement = prevNextSum;
     }
-};
 
-let gg = buildFibonacciSequenceGoodSolution(10);
-console.log(gg);
+    return currentElement;
+};
 
 console.log('Fibonacci sequence');
 console.log('==================');
@@ -74,8 +92,31 @@ console.log('------------------------------------------------------');
 
 console.log('');
 
+fibonacciSequence = buildFibonacciSequenceGoodSolution(10, 1);
+
+console.log('Fibonacci sequence - good solution (elements - 10, first - 1)');
+console.log(fibonacciSequence);
+
+fibonacciSequence = buildFibonacciSequenceGoodSolution(10, 3);
+
+console.log('Fibonacci sequence - good solution (elements - 10, first - 3)');
+console.log(fibonacciSequence);
+
+fibonacciSequence = buildFibonacciSequenceGoodSolution(10, 5);
+
+console.log('Fibonacci sequence - good solution (elements - 10, first - 5)');
+console.log(fibonacciSequence);
+
+console.log('');
+
+console.log('------------------------------------------------------');
+
+console.log('');
+
 console.log('Fibonacci nth element');
 console.log('=====================');
+
+console.log('');
 
 let fibonacciNthElement = findFibonacciNthElementNotBestSolution(3, 1);
 
@@ -90,4 +131,25 @@ console.log(fibonacciNthElement);
 fibonacciNthElement = findFibonacciNthElementNotBestSolution(6, 5);
 
 console.log('Fibonacci nth element - not the best solution (element - 6, first - 5)');
+console.log(fibonacciNthElement);
+
+console.log('');
+
+console.log('------------------------------------------------------');
+
+console.log('');
+
+fibonacciNthElement = findFibonacciNthElementGoodSolution(3, 1);
+
+console.log('Fibonacci nth element - good solution (element - 3, first - 1)');
+console.log(fibonacciNthElement);
+
+fibonacciNthElement = findFibonacciNthElementGoodSolution(4, 3);
+
+console.log('Fibonacci nth element - good solution (element - 4, first - 3)');
+console.log(fibonacciNthElement);
+
+fibonacciNthElement = findFibonacciNthElementGoodSolution(6, 5);
+
+console.log('Fibonacci nth element - good solution (element - 6, first - 5)');
 console.log(fibonacciNthElement);
