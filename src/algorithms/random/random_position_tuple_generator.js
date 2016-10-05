@@ -1,9 +1,30 @@
 'use strict';
 
+// Generate integer tuples with random position in resulting array
+//
+// Example
+//
+// minInteger - 5
+// maxInteger - 10
+//
+// result:
+//
+// [ 10, 7, 8, 8, 9, 10, 7, 6, 9, 6, 5, 5 ]
+
+// mock data
+let minInteger1 = 1;
+let maxInteger1 = 10;
+
+let minInteger2 = 5;
+let maxInteger2 = 23;
+
+let minInteger3 = 3;
+let maxInteger3 = 7;
+
 // not best solution
 const generateRandomPositionTuples = (minInteger, maxInteger) => {
     let tuplesArray = [];
-    let tuplesArrayLength = maxInteger * 2;
+    let tuplesArrayLength = (maxInteger - (minInteger - 1))  * 2;
 
     maxInteger += 1;
 
@@ -33,13 +54,82 @@ const generateRandomPositionTuples = (minInteger, maxInteger) => {
     return tuplesArray;
 }
 
-let test = generateRandomPositionTuples(1, 100);
+// counts number of occurrences of each integer in array
+const integerOccurrenceCounter = (integerArray) => {
+    let integerOccurrences = {};
+    let integerArrayLength = integerArray.length;
 
-let c = {};
-for (let i = 0; i < test.length; i++) {
+    for (let integerArrayCounter = 0; integerArrayCounter < integerArrayLength; integerArrayCounter++) {
+        let currentInteger = integerArray[integerArrayCounter];
 
-    c[test[i]] = c[test[i]] !== undefined ? c[test[i]] + 1 : 1;
+        integerOccurrences[currentInteger] = integerOccurrences[currentInteger] !== undefined ? integerOccurrences[currentInteger] + 1 : 1;
+    }
+
+    return integerOccurrences;
 }
 
-console.log(test.length);
-console.log(c);
+console.log('Random position tuples generation');
+console.log('=================================');
+
+console.log('');
+
+console.log(`Tuples array 1 (min - ${minInteger1}, max - ${maxInteger1})`);
+console.log('----------------------------------');
+
+console.log('');
+
+let integerArray = generateRandomPositionTuples(minInteger1, maxInteger1);
+console.log('Integer array: ');
+console.log(integerArray);
+
+console.log('');
+
+let integerOccurrence = integerOccurrenceCounter(integerArray);
+console.log('Count of integer occurrence: ');
+console.log(integerOccurrence);
+
+console.log('');
+
+console.log('------------------------------');
+
+console.log('');
+
+console.log(`Tuples array 2 (min - ${minInteger2}, max - ${maxInteger2})`);
+console.log('----------------------------------');
+
+console.log('');
+
+integerArray = generateRandomPositionTuples(minInteger2, maxInteger2);
+console.log('Integer array: ');
+console.log(integerArray);
+
+console.log('');
+
+integerOccurrence = integerOccurrenceCounter(integerArray);
+console.log('Count of integer occurrence: ');
+console.log(integerOccurrence);
+
+console.log('');
+
+console.log('------------------------------');
+
+console.log('');
+
+console.log(`Tuples array 2 (min - ${minInteger3}, max - ${maxInteger3})`);
+console.log('----------------------------------');
+
+console.log('');
+
+integerArray = generateRandomPositionTuples(minInteger3, maxInteger3);
+console.log('Integer array: ');
+console.log(integerArray);
+
+console.log('');
+
+integerOccurrence = integerOccurrenceCounter(integerArray);
+console.log('Count of integer occurrence: ');
+console.log(integerOccurrence);
+
+console.log('');
+
+console.log('------------------------------');
