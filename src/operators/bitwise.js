@@ -1,7 +1,7 @@
 'use strict';
 
 // mock data
-let digit1 = 22; // 010110
+let digit1 = 22; //  010110
 let digit2 = 42; // 0101010
 
 console.log('Bitwise operators');
@@ -11,6 +11,20 @@ console.log('=================');
 
 let bitwiseANDResult = digit1 & digit2;
 console.log('Bitwise "AND" result: ' + bitwiseANDResult);
+
+console.log('-------------------------------------');
+
+// Bitwise OR (0111110 - 62)
+
+let bitwiseORResult = digit1 | digit2;
+console.log('Bitwise "OR" result: ' + bitwiseORResult);
+
+console.log('-------------------------------------');
+
+// Bitwise XOR (0111100 - 60)
+
+let bitwiseXORResult = digit1 ^ digit2;
+console.log('Bitwise "XOR" result: ' + bitwiseXORResult);
 
 console.log('-------------------------------------');
 
