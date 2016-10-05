@@ -33,7 +33,7 @@ let largeIntegersSet3 = [
 ]; // '52' is unique
 
 // not best solution
-const uniqueIntFinder = (integerArray) => {
+const uniqueIntFinderNotBestSolution = (integerArray) => {
     let integerOccurrences = {};
     let integerArrayLength = integerArray.length;
 
@@ -52,6 +52,17 @@ const uniqueIntFinder = (integerArray) => {
     return integerOccurrencesKeys.length === 1 ? integerOccurrencesKeys[0] : null;
 }
 
+// best solution
+const uniqueIntFinderBestSolution = (integerArray) => {
+    let uniqueInteger = 0;
+
+    integerArray.forEach(function(currentInteger) {
+        uniqueInteger ^= currentInteger;
+    });
+
+    return uniqueInteger;
+}
+
 console.log('Random position tuples generation');
 console.log('=================================');
 
@@ -59,6 +70,14 @@ console.log('');
 console.log('Not best solution');
 console.log('');
 
-console.log('Unique integer for large set 1: ' + uniqueIntFinder(largeIntegersSet1));
-console.log('Unique integer for large set 2: ' + uniqueIntFinder(largeIntegersSet2));
-console.log('Unique integer for large set 3: ' + uniqueIntFinder(largeIntegersSet3));
+console.log('Unique integer for large set 1: ' + uniqueIntFinderNotBestSolution(largeIntegersSet1));
+console.log('Unique integer for large set 2: ' + uniqueIntFinderNotBestSolution(largeIntegersSet2));
+console.log('Unique integer for large set 3: ' + uniqueIntFinderNotBestSolution(largeIntegersSet3));
+
+console.log('');
+console.log('Best solution');
+console.log('');
+
+console.log('Unique integer for large set 1: ' + uniqueIntFinderBestSolution(largeIntegersSet1));
+console.log('Unique integer for large set 2: ' + uniqueIntFinderBestSolution(largeIntegersSet2));
+console.log('Unique integer for large set 3: ' + uniqueIntFinderBestSolution(largeIntegersSet3));
