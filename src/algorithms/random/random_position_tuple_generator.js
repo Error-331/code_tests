@@ -21,6 +21,9 @@ let maxInteger2 = 23;
 let minInteger3 = 3;
 let maxInteger3 = 7;
 
+let minInteger4 = -10;
+let maxInteger4 = -1;
+
 // not best solution
 const generateRandomPositionTuples = (minInteger, maxInteger) => {
     let tuplesArray = [];
@@ -115,7 +118,7 @@ console.log('------------------------------');
 
 console.log('');
 
-console.log(`Tuples array 2 (min - ${minInteger3}, max - ${maxInteger3})`);
+console.log(`Tuples array 3 (min - ${minInteger3}, max - ${maxInteger3})`);
 console.log('----------------------------------');
 
 console.log('');
@@ -133,3 +136,20 @@ console.log(integerOccurrence);
 console.log('');
 
 console.log('------------------------------');
+
+console.log('');
+
+console.log(`Tuples array 4 (min - ${minInteger4}, max - ${maxInteger4})`);
+console.log('----------------------------------');
+
+console.log('');
+
+integerArray = generateRandomPositionTuples(minInteger4, maxInteger4);
+console.log('Integer array: ');
+console.log(integerArray);
+
+console.log('');
+
+integerOccurrence = integerOccurrenceCounter(integerArray);
+console.log('Count of integer occurrence: ');
+console.log(integerOccurrence);
