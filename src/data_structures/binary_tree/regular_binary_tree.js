@@ -4,13 +4,8 @@
 
 // binary tree node class implementation
 class BinaryTreeNode {
-    constructor(key, value, parent, leftChild, rightChild) {
-        this.key = key === undefined ? null : key;
-        this.value = value === undefined ? null : value;
-
-        this.parent = parent === undefined ? null : parent;
-        this.leftChild = leftChild === undefined ? null : leftChild;
-        this.rightChild = rightChild === undefined ? null : rightChild;
+    constructor(key = null, value = null, parent = null, leftChild = null, rightChild = null) {
+        [this.key, this.value, this.parent, this.leftChild, this.rightChild] = [key, value, parent, leftChild, rightChild];
     }
 }
 
@@ -20,7 +15,7 @@ class BinaryTree {
 
     }
 
-    static inorderTreeWalk(bNode, callBack) {
+    static inorderTreeWalk(bNode = null, callBack) {
         if (bNode === null) {
             return;
         }
@@ -28,6 +23,22 @@ class BinaryTree {
         this.inorderTreeWalk(bNode.leftChild, callBack);
         callBack(bNode);
         this.inorderTreeWalk(bNode.rightChild, callBack);
+    }
+
+    static recursiveKeySearch(bNode = null, keyToSearch) {
+        if (bNode === null || keyToSearch === bNode.key) {
+            return bNode;
+        }
+
+        return keyToSearch < bNode.key ? this.recursiveKeySearch(bNode.leftChild, keyToSearch) : this.recursiveKeySearch(bNode.rightChild, keyToSearch);
+    }
+
+    static iterativeKeySearch(bNode = null, keyToSearch) {
+        while (bNode !== null && keyToSearch !== bNode.key) {
+            bNode = keyToSearch < bNode.key ? bNode.leftChild : bNode.rightChild;
+        }
+
+        return bNode;
     }
 }
 
@@ -104,9 +115,89 @@ console.log('Binary tree "inorder tree walk"');
 console.log('===============================');
 
 console.log('Tree 1: ');
+console.log('');
 BinaryTree.inorderTreeWalk(BTNode1_1_5, binaryTreeWalkCallback);
 
+console.log('');
 console.log('------------------------------------------');
+console.log('');
 
 console.log('Tree 2: ');
+console.log('');
 BinaryTree.inorderTreeWalk(BTNode2_1_2, binaryTreeWalkCallback);
+
+console.log('');
+console.log('');
+
+console.log('Binary tree "recursive search"');
+console.log('==============================');
+
+console.log('');
+console.log('Tree 1 (key 8)');
+console.log('--------------');
+console.log('');
+
+let foundNode = BinaryTree.recursiveKeySearch(BTNode1_1_5, 8);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 1 (key 5)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.recursiveKeySearch(BTNode1_1_5, 5);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 2 (key 5)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.recursiveKeySearch(BTNode2_1_2, 5);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 2 (key 8)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.recursiveKeySearch(BTNode2_1_2, 8);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('');
+
+console.log('Binary tree "iterative search"');
+console.log('=============================');
+
+console.log('');
+console.log('Tree 1 (key 8)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.iterativeKeySearch(BTNode1_1_5, 8);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 1 (key 5)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.iterativeKeySearch(BTNode1_1_5, 5);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 2 (key 5)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.iterativeKeySearch(BTNode2_1_2, 5);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('Tree 2 (key 8)');
+console.log('--------------');
+console.log('');
+
+foundNode = BinaryTree.iterativeKeySearch(BTNode2_1_2, 8);
+console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
