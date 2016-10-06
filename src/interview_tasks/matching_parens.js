@@ -6,6 +6,7 @@
 
 // mock data
 let testSentence1 = 'Sometimes (when I nest them (my parentheticals) too much (like this (and this))) they get confusing.';
+let testSentence2 = 'Test ( some text ( some other text ) some more text )';
 
 // best solution
 const findClosingParenthesesPositionNotBestSolution = (sentenceToTest, openingParenthesesPosition) => {
@@ -29,4 +30,17 @@ const findClosingParenthesesPositionNotBestSolution = (sentenceToTest, openingPa
     return null;
 }
 
-console.log(findClosingParenthesesPositionNotBestSolution(testSentence1, 10));
+console.log('Parenthesis matching');
+console.log('====================');
+
+console.log('');
+console.log('Best solution');
+console.log('');
+
+console.log('Sentence 1, opening position - 10, closing position - ' + findClosingParenthesesPositionNotBestSolution(testSentence1, 10));
+console.log('Sentence 1, opening position - 28, closing position - ' + findClosingParenthesesPositionNotBestSolution(testSentence1, 28));
+
+console.log('');
+
+console.log('Sentence 2, opening position - 5, closing position - ' + findClosingParenthesesPositionNotBestSolution(testSentence2, 5));
+console.log('Sentence 2, opening position - 17, closing position - ' + findClosingParenthesesPositionNotBestSolution(testSentence2, 17));
