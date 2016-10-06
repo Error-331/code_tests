@@ -24,7 +24,7 @@ let maxInteger3 = 7;
 let minInteger4 = -10;
 let maxInteger4 = -1;
 
-// not best solution
+// worst solution
 const generateRandomPositionTuples = (minInteger, maxInteger) => {
     let tuplesArray = [];
     let tuplesArrayLength = (maxInteger - (minInteger - 1))  * 2;
@@ -71,13 +71,13 @@ const integerOccurrenceCounter = (integerArray) => {
     return integerOccurrences;
 }
 
-console.log('Random position tuples generation');
-console.log('=================================');
+console.log('Set with randomly positioned integer tuples');
+console.log('===========================================');
 
 console.log('');
 
-console.log(`Tuples array 1 (min - ${minInteger1}, max - ${maxInteger1})`);
-console.log('----------------------------------');
+console.log(`Tuples array 1 (min: ${minInteger1}, max: ${maxInteger1})`);
+console.log('--------------------------------');
 
 console.log('');
 
@@ -97,8 +97,8 @@ console.log('------------------------------');
 
 console.log('');
 
-console.log(`Tuples array 2 (min - ${minInteger2}, max - ${maxInteger2})`);
-console.log('----------------------------------');
+console.log(`Tuples array 2 (min: ${minInteger2}, max: ${maxInteger2})`);
+console.log('--------------------------------');
 
 console.log('');
 
@@ -118,8 +118,8 @@ console.log('------------------------------');
 
 console.log('');
 
-console.log(`Tuples array 3 (min - ${minInteger3}, max - ${maxInteger3})`);
-console.log('----------------------------------');
+console.log(`Tuples array 3 (min: ${minInteger3}, max: ${maxInteger3})`);
+console.log('-------------------------------');
 
 console.log('');
 
@@ -139,7 +139,7 @@ console.log('------------------------------');
 
 console.log('');
 
-console.log(`Tuples array 4 (min - ${minInteger4}, max - ${maxInteger4})`);
+console.log(`Tuples array 4 (min: ${minInteger4}, max: ${maxInteger4})`);
 console.log('----------------------------------');
 
 console.log('');
