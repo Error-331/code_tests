@@ -1,3 +1,5 @@
+'use strict';
+
 // https://www.interviewcake.com/question/javascript/product-of-other-numbers
 //
 // Algorithm that calculates product of every integer except the integer at that index
