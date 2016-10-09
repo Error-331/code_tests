@@ -40,6 +40,30 @@ class BinaryTree {
 
         return bNode;
     }
+
+    static insertNode(rootNode, nodeToInsert) {
+        let parentNode = null;
+        let tempNode = rootNode;
+
+        while(tempNode !== null) {
+            parentNode = tempNode;
+            tempNode = nodeToInsert.key < tempNode.key ? tempNode.leftChild : tempNode.rightChild;
+        }
+
+        nodeToInsert.parent = parentNode;
+
+        if (parentNode === null) {
+            rootNode = nodeToInsert;
+        } else {
+            if (nodeToInsert.key < parentNode.key) {
+                parentNode.leftChild = nodeToInsert;
+            } else {
+                parentNode.rightChild = nodeToInsert;
+            }
+        }
+
+        return nodeToInsert;
+    }
 }
 
 // helper functions
@@ -111,6 +135,13 @@ let BTNode2_1_2 = new BinaryTreeNode(2, 'V1_2', null, null, BTNode2_2_3);
 
 BTNode2_2_3.parent = BTNode2_1_2;
 
+// additional nodes (used in insertion operations)
+let BTNode1_4_9 = new BinaryTreeNode(9, 'V4_9', null, null, null);
+let BTNode1_4_7 = new BinaryTreeNode(7, 'V4_7', null, null, null);
+
+let BTNode2_5_7 = new BinaryTreeNode(7, 'V5_7', null, null, null);
+let BTNode2_5_6 = new BinaryTreeNode(6, 'V5_6', null, null, null);
+
 console.log('Binary tree "inorder tree walk"');
 console.log('===============================');
 
@@ -168,7 +199,7 @@ console.log('');
 console.log('');
 
 console.log('Binary tree "iterative search"');
-console.log('=============================');
+console.log('==============================');
 
 console.log('');
 console.log('Tree 1 (key 8)');
@@ -201,3 +232,28 @@ console.log('');
 
 foundNode = BinaryTree.iterativeKeySearch(BTNode2_1_2, 8);
 console.log(`Node found (key: ${foundNode.key}, value: ${foundNode.value})`);
+
+console.log('');
+console.log('');
+
+console.log('Binary tree node insertion');
+console.log('==========================');
+
+console.log('');
+console.log('Tree 1 (nodes 1_4_9 and 1_4_7)');
+console.log('------------------------------');
+console.log('');
+
+BinaryTree.insertNode(BTNode1_1_5, BTNode1_4_9);
+BinaryTree.insertNode(BTNode1_1_5, BTNode1_4_7);
+BinaryTree.inorderTreeWalk(BTNode1_1_5, binaryTreeWalkCallback);
+
+console.log('');
+console.log('Tree 2 (nodes 1_4_9 and 1_4_7)');
+console.log('------------------------------');
+console.log('');
+
+BinaryTree.insertNode(BTNode2_1_2, BTNode2_5_7);
+BinaryTree.insertNode(BTNode2_1_2, BTNode2_5_6);
+
+BinaryTree.inorderTreeWalk(BTNode2_1_2, binaryTreeWalkCallback);
