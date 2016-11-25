@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser freeze example 1 (reflow)</title>
+</head>
+<body>
+    <button id=blockUIButton>Block UI</button>
+    <div id=calculationResult></div>
+
+    <script>
+        function calculatePi(numberOfIterations) {
+                var pi = 0;
+                var n = 1;
+
+                for (var i = 1; i < numberOfIterations; i++) {
+                    pi = pi + (4 / n) - (4 / (n + 2));
+                    n += 4
+                }
+
+                return pi;
+            };
+
+            blockUIButton.onclick = function(){
+                calculationResult.innerHTML = calculatePi(1000000000);
+            }
+        </script>
+    </body>
+</html>
