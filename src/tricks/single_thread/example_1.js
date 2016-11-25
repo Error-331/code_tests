@@ -8,6 +8,7 @@ setTimeout(() => {
     console.log('output after timeout...');
 }, 0);
 
+// setTimeout() result will be put on queue and queue result can be put on stack when it is empty
 for (let counter1 = 0; counter1 < 1254740991; counter1++) {
 }
 
