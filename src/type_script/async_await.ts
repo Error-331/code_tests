@@ -1,7 +1,6 @@
 'use strict';
-//TODO: --noEmitHelpers , tslib, --importHelpers
-export default () => {
 
+export default async () => {
     function testDelayFunction1(ms: number) {
         return new Promise<void>(function(resolve) {
             setTimeout(resolve, ms);
@@ -21,13 +20,16 @@ export default () => {
         console.log('Another message after one second delay');
     }
 
-
-    console.log('TypeScript asynchronous features testing"');
-    console.log('=========================================');
+    console.log('TypeScript async/await testing');
+    console.log('==============================');
+    console.log('');
 
     console.log('Case 1 (delay using timeout and promise): ');
     console.log('');
 
-    testFunction1();
+    await testFunction1();
 
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
 }
