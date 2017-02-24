@@ -11,6 +11,8 @@
     "typescript": "^2.1.4",
     "tslib": "^1.5.0",
 
+    "elm": "^0.18.0",
+
     "webpack": "^1.12.12",
     "webpack-dev-middleware": "^1.5.1",
     "webpack-hot-middleware": "^2.6.4",
