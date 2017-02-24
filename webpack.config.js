@@ -1,17 +1,17 @@
-var path = require('path')
-var webpack = require('webpack')
+var path = require('path');
+var webpack = require('webpack');
 var validate = require('webpack-validator');
 
 module.exports = validate({
     devtool: 'cheap-module-eval-source-map',
     resolve: {
         root: [
-            path.resolve('./src')
+            path.resolve('./src/vanilla_js')
         ]
     },
     entry: [
         'babel-polyfill',
-        './src/index'
+        './src/vanilla_js/index'
     ],
     output: {
         path: path.join(__dirname, 'dist'),
@@ -22,11 +22,11 @@ module.exports = validate({
             {
                 test: /\.js$/,
                 include: [
-                    path.resolve(__dirname, "src"),
+                    path.resolve(__dirname, "src/vanilla_js"),
                 ],
                 exclude: /(node_modules|bower_components)/,
                 loaders: ['babel']
             }
         ]
     }
-})
+});
