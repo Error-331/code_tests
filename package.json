@@ -9,6 +9,8 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "lodash": "^4.17.4",
+
     "typescript": "^2.1.4",
     "tslib": "^1.5.0",
 
