@@ -2,10 +2,15 @@
   "compilerOptions": {
     "target": "ES6",
     "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "allowJs": true,
+    "outDir": "dist"
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
+
+  "files": ["src/type_script/index.ts"]
 }
