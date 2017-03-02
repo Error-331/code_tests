@@ -1,9 +1,17 @@
 'use strict';
 
-//import interfaces from './interfaces';
-//import functions from './functions';
-import async_features from './async_features';
+//TODO: --noEmitHelpers , tslib, --importHelpers
 
-//interfaces();
-//functions();
-async_features();
+//import interfaces from './interfaces';
+import functions from './functions';
+//import rest_spread from './rest_spread';
+//import async_await from './async_await';
+
+async function run() {
+    //interfaces();
+    await functions();
+    //await rest_spread();
+    //await async_await();
+}
+
+run();
