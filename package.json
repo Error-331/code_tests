@@ -4,8 +4,10 @@
   "description": "code testing platform...",
   "main": "index.js",
   "scripts": {
+    "run-scripts": "webpack -p --config ./webpack.config.js; node ./dist/bundle.js",
     "run-scripts-ts": "webpack -p --config ./webpack.typescript.config.js; node ./dist/typescript_bundle.js",
-    "run-scripts": "webpack -p --config ./webpack.config.js; node ./dist/bundle.js"
+    "run-scripts-playground": "webpack -p --config ./webpack.playground.config.js; node ./dist/playground_bundle.js"
+
   },
   "license": "MIT",
   "devDependencies": {
@@ -20,11 +22,12 @@
     "webpack-hot-middleware": "^2.6.4",
     "webpack-validator": "^2.2.0",
 
+    "babel-loader": "^6.3.2",
+    "json-loader": "^0.5.4",
     "worker-loader": "^0.7.1",
     "ts-loader": "^2.0.1",
 
     "babel-core": "^6.23.1",
-    "babel-loader": "^6.3.2",
     "babel-cli": "^6.23.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.23.0",
     "babel-plugin-transform-object-assign": "^6.22.0",
