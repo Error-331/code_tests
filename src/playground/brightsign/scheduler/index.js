@@ -13,7 +13,7 @@ export default async () => {
     console.log('');
 
     const startDate1String = '2017-03-11T00:00:00';
-    const endDate1String = '2017-03-12T23:59:59';
+    const endDate1String = '2017-03-11T23:59:59';
 
     const startDate1 = parseDate(startDate1String);
     const endDate1 = parseDate(endDate1String);

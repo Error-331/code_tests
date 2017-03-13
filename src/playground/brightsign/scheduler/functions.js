@@ -8,7 +8,7 @@ export const formatNumber = (usrNumber) => {
 };
 
 export const formatDateForScheduler = (usrDate) => {
-    return `${usrDate.getFullYear()}-${formatNumber(usrDate.getMonth())}-${formatNumber(usrDate.getDay())} ${formatNumber(usrDate.getHours())}:${formatNumber(usrDate.getMinutes())}:${formatNumber(usrDate.getSeconds())}`;
+    return `${usrDate.getFullYear()}-${formatNumber(usrDate.getMonth() + 1)}-${formatNumber(usrDate.getDate())} ${formatNumber(usrDate.getHours())}:${formatNumber(usrDate.getMinutes())}:${formatNumber(usrDate.getSeconds())}`;
 };
 
 export const calcPeriodInHours = (startDate, endDate) => {
