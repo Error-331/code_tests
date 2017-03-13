@@ -1,0 +1,120 @@
+{
+  "11": {
+    "id": 11,
+    "presentationId": 11,
+
+    "presentationName": "Fixed date presentation 1",
+    "isRecurrent": false,
+    "eventDate": "2017-03-14",
+
+    "startTime": "10:00:00",
+    "duration": "02:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "12": {
+    "id": 12,
+    "presentationId": 12,
+
+    "presentationName": "Fixed date presentation 2",
+    "isRecurrent": false,
+    "eventDate": "2017-03-11",
+
+    "startTime": "12:00:00",
+    "duration": "04:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "13": {
+    "id": 13,
+    "presentationId": 13,
+
+    "presentationName": "Fixed date presentation 3",
+    "isRecurrent": false,
+    "eventDate": "2017-03-12",
+
+    "startTime": "00:30:12",
+    "duration": "06:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "14": {
+    "id": 14,
+    "presentationId": 14,
+
+    "presentationName": "Fixed date presentation 4",
+    "isRecurrent": false,
+    "eventDate": "2017-03-20",
+
+    "startTime": "12:40:20",
+    "duration": "00:50:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "15": {
+    "id": 15,
+    "presentationId": 15,
+
+    "presentationName": "Fixed date presentation 5",
+    "isRecurrent": false,
+    "eventDate": "2017-03-20",
+
+    "startTime": "13:30:20",
+    "duration": "1.00:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "16": {
+    "id": 16,
+    "presentationId": 16,
+
+    "presentationName": "Fixed date presentation 6",
+    "isRecurrent": false,
+    "eventDate": "2017-03-10",
+
+    "startTime": "23:00:00",
+    "duration": "04:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  },
+
+  "17": {
+    "id": 17,
+    "presentationId": 17,
+
+    "presentationName": "Fixed date presentation 7",
+    "isRecurrent": false,
+    "eventDate": "2017-03-11",
+
+    "startTime": "23:00:00",
+    "duration": "02:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "13": {
+    "id": 28,
+    "presentationId": 28,
+
+    "presentationName": "Recurring(everyday) endless presentation 1",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "00:00:00",
+    "duration": "1.00:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  }
+}

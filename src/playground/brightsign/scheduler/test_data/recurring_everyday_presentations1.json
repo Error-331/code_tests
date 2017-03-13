@@ -1,0 +1,154 @@
+{
+  "21": {
+    "id": 21,
+    "presentationId": 21,
+
+    "presentationName": "Recurring(everyday) presentation 1",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "15:00:00",
+    "duration": "01:30:00",
+
+    "recurrenceStartDate": "2017-03-10T00:00:00",
+    "recurrenceEndDate" :"2017-03-15T00:00:00",
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "22": {
+    "id": 22,
+    "presentationId": 22,
+
+    "presentationName": "Recurring(everyday) presentation 2",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "17:00:00",
+    "duration": "00:40:00",
+
+    "recurrenceStartDate": "2017-03-11T00:00:00",
+    "recurrenceEndDate" :"2017-03-15T00:00:00",
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "23": {
+    "id": 23,
+    "presentationId": 23,
+
+    "presentationName": "Recurring(everyday) presentation 3",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "19:00:00",
+    "duration": "00:20:00",
+
+    "recurrenceStartDate": "2017-03-11T00:00:00",
+    "recurrenceEndDate" : "2017-03-15T00:00:00",
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "24": {
+    "id": 24,
+    "presentationId": 24,
+
+    "presentationName": "Recurring(everyday) presentation 4",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "20:00:00",
+    "duration": "01:00:00",
+
+    "recurrenceStartDate": "2017-03-11T00:00:00",
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "25": {
+    "id": 25,
+    "presentationId": 25,
+
+    "presentationName": "Recurring(everyday) presentation 5",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "20:00:00",
+    "duration": "01:00:00",
+
+    "recurrenceStartDate": "2017-03-11T00:00:00",
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "26": {
+    "id": 26,
+    "presentationId": 26,
+
+    "presentationName": "Recurring(everyday) presentation 6",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "00:00:00",
+    "duration": "01:00:00",
+
+    "recurrenceStartDate": "2017-03-12T00:00:00",
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "27": {
+    "id": 27,
+    "presentationId": 27,
+
+    "presentationName": "Recurring(everyday) presentation 7",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "02:00:00",
+    "duration": "01:00:00",
+
+    "recurrenceStartDate": "2017-03-12T00:00:00",
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "28": {
+    "id": 28,
+    "presentationId": 28,
+
+    "presentationName": "Recurring(everyday) presentation 8",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "03:00:00",
+    "duration": "01:00:00",
+
+    "recurrenceStartDate": "2017-03-10T00:00:00",
+    "recurrenceEndDate": "2017-03-11T00:00:00",
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "29": {
+    "id": 29,
+    "presentationId": 29,
+
+    "presentationName": "Recurring(everyday) presentation 9",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "04:00:00",
+    "duration": "00:10:00",
+
+    "recurrenceStartDate": "2017-03-10T00:00:00",
+    "recurrenceEndDate": "2017-03-15T00:00:00",
+
+    "daysOfWeek": "WeekDays"
+  }
+}
