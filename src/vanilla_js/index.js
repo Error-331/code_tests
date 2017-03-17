@@ -1,5 +1,6 @@
 'use strict';
 
+import templateStrings from './fundamentals/strings/template_strings'
 import symbols from './fundamentals/symbols';
 
 import combinators from './functional/combinators';
@@ -11,6 +12,7 @@ import lenses from './functional/lenses';
 
 async function run() {
     // fundamentals
+    await templateStrings();
     await symbols();
 
     // functional programming
