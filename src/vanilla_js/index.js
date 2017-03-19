@@ -13,6 +13,7 @@ import lenses from './functional/lenses';
 
 import promisesBase from './functional/promisses/base';
 import promisesTasks from './functional/promisses/tasks';
+import promisesUserCreated from './functional/promisses/user_created';
 
 async function run() {
     // fundamentals
@@ -32,6 +33,7 @@ async function run() {
     // functional programming (promises)
     await promisesBase();
     await promisesTasks();
+    await promisesUserCreated();
 }
 
 run();
