@@ -36,8 +36,8 @@ export default async () => {
         return num + 1;
     };
 
-    console.log('Functional programming promises');
-    console.log('===============================');
+    console.log('Functional programming promises (base)');
+    console.log('======================================');
     console.log('');
 
     let addThreeButVeryVerySlowly = composeAsync(
