@@ -8,6 +8,7 @@ import objectsBase from './fundamentals/objects/base';
 import combinators from './functional/combinators';
 import compose from './functional/compose';
 import basics from './functional/basics';
+import monad from './functional/monad';
 import transducers from './functional/transducers';
 import lenses from './functional/lenses';
 
@@ -27,6 +28,7 @@ async function run() {
     await combinators();
     await compose();
     await basics();
+    await monad();
     await transducers();
     await lenses();
 
@@ -34,6 +36,7 @@ async function run() {
     await promisesBase();
     await promisesTasks();
     await promisesUserCreated();
+    await compose();
 }
 
 run();
