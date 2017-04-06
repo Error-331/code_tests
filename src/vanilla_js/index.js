@@ -4,6 +4,7 @@ import templateStrings from './fundamentals/strings/template_strings'
 import symbols from './fundamentals/symbols';
 
 import objectsBase from './fundamentals/objects/base';
+import reflection from './fundamentals/objects/reflection';
 
 import combinators from './functional/combinators';
 import compose from './functional/compose';
@@ -23,6 +24,7 @@ async function run() {
 
     // fundamentals (objects)
     await objectsBase();
+    await reflection();
 
     // functional programming (base)
     await combinators();

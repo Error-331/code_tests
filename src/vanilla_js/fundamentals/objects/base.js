@@ -12,7 +12,7 @@ export default async () => {
     }
 
     console.log('Investigation of object basics');
-    console.log('===============================');
+    console.log('==============================');
 
     console.log('');
 

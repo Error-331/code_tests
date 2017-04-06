@@ -141,7 +141,7 @@ let object1_2 = new ObjectConstructor2('test2');
 
 ObjectConstructor2.constructor = function() {
     this.propCE = 'propCE_Val';
-}
+};
 
 let object2_2_CE = new ObjectConstructor2('test2E');
 
