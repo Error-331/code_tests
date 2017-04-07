@@ -22,7 +22,7 @@ module.exports = validate({
             {
                 test: /\.js$/,
                 include: [
-                    path.resolve(__dirname, "src/vanilla_js"),
+                    path.resolve(__dirname, 'src/')
                 ],
                 exclude: /(node_modules|bower_components)/,
                 loaders: ['babel']

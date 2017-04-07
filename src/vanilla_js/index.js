@@ -9,6 +9,7 @@ import reflection from './fundamentals/objects/reflection';
 import combinators from './functional/combinators';
 import compose from './functional/compose';
 import basics from './functional/basics';
+import functor from './functional/functor';
 import monad from './functional/monad';
 import transducers from './functional/transducers';
 import lenses from './functional/lenses';
@@ -19,26 +20,27 @@ import promisesUserCreated from './functional/promisses/user_created';
 
 async function run() {
     // fundamentals
-    await templateStrings();
-    await symbols();
+    //await templateStrings();
+    //await symbols();
 
     // fundamentals (objects)
-    await objectsBase();
-    await reflection();
+    //await objectsBase();
+    //await reflection();
 
     // functional programming (base)
-    await combinators();
-    await compose();
-    await basics();
-    await monad();
-    await transducers();
-    await lenses();
+    //await combinators();
+    //await compose();
+    //await basics();
+    await functor();
+    //await monad();
+    //await transducers();
+    //await lenses();
 
     // functional programming (promises)
-    await promisesBase();
-    await promisesTasks();
-    await promisesUserCreated();
-    await compose();
+    //await promisesBase();
+    //await promisesTasks();
+    //await promisesUserCreated();
+    //await compose();
 }
 
 run();
