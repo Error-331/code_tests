@@ -1,7 +1,9 @@
 'use strict';
 
-import templateStrings from './fundamentals/strings/template_strings'
+import templateStrings from './fundamentals/strings/template_strings';
 import symbols from './fundamentals/symbols';
+
+import generators from './fundamentals/iterators/generators';
 
 import objectsBase from './fundamentals/objects/base';
 import reflection from './fundamentals/objects/reflection';
@@ -23,6 +25,9 @@ async function run() {
     //await templateStrings();
     //await symbols();
 
+    // iterators
+    await generators();
+
     // fundamentals (objects)
     //await objectsBase();
     //await reflection();
@@ -31,7 +36,7 @@ async function run() {
     //await combinators();
     //await compose();
     //await basics();
-    await functor();
+    //await functor();
     //await monad();
     //await transducers();
     //await lenses();
