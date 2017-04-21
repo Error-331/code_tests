@@ -38,7 +38,7 @@ export default async () => {
         return false;
     };
 
-    const deviceLocalitySort = (deviceData) => {f
+    const deviceLocalitySort = (deviceData) => {
         return deviceData.localityPath.length;
     };
 
