@@ -1,6 +1,6 @@
 'use strict';
 
-import {chain, sortBy} from 'lodash';
+import {isObject, chain, sortBy, reduce, findIndex} from 'lodash';
 
 export default async () => {
     console.log('BrightSign locality problem');
@@ -11,26 +11,33 @@ export default async () => {
     let selectedLocalities = selectedLocalities1;
 
     const currentDevices = [
-        {id: 1, name: "device 1", localityPath: "/CA/"},
-        {id: 2, name: "device 2", localityPath: "/US/GA/Muscogee County/Columbus/"},
-        {id: 3, name: "device 3", localityPath: "/US/CA/Los Angeles County/"},
-        {id: 4, name: "device 4", localityPath: "/US/CA/San Mateo County/"},
-        {id: 5, name: "device 5", localityPath: "/US/CO/Arapahoe County/Greenwood Village/"},
-        {id: 6, name: "device 6", localityPath: "/US/TX/"},
-        {id: 7, name: "device 7", localityPath: "/US/CO/Boulder County/"},
-        {id: 8, name: "device 8", localityPath: "/US/MA/Suffolk County/"},
-        {id: 9, name: "device 9", localityPath: "/US/MA/Suffolk County/Chelsea/"},
-        {id: 10, name: "device 10", localityPath: "/US/NH/Hillsborough County/"},
-        {id: 11, name: "device 11", localityPath: "/US/NH/Hillsborough County/Manchester/"}
+        {id: 1, name: "device 1", locationPath: "/CA/"},
+        {id: 2, name: "device 2", locationPath: "/US/GA/Muscogee County/Columbus/"},
+        {id: 3, name: "device 3", locationPath: "/US/CA/Los Angeles County/"},
+        {id: 4, name: "device 4", locationPath: "/US/CA/San Mateo County/"},
+        {id: 5, name: "device 5", locationPath: "/US/CO/Arapahoe County/Greenwood Village/"},
+        {id: 6, name: "device 6", locationPath: "/US/TX/"},
+        {id: 7, name: "device 7", locationPath: "/US/CO/Boulder County/"},
+        {id: 8, name: "device 8", locationPath: "/US/MA/Suffolk County/"},
+        {id: 9, name: "device 9", locationPath: "/US/MA/Suffolk County/Chelsea/"},
+        {id: 10, name: "device 10", locationPath: "/US/NH/Hillsborough County/"},
+        {id: 11, name: "device 11", locationPath: "/US/NH/Hillsborough County/Manchester/"},
+        {id: 12, name: "device 12", locationPath: "/US/CA/"},
+        {id: 13, name: "device 13", locationPath: "/US/GA/"},
     ];
+
+    const extractLocationPathParams = (localityData) => {
+        let locationPath = isObject(localityData) ? localityData.locationPath : localityData;
+        return locationPath.split('/').filter(value => value != '');
+    };
 
     const deviceLocalityFilter = (deviceData) => {
         const selectedLocalitiesCount = selectedLocalities.length;
 
         for (let localityCounter1 = 0; localityCounter1 < selectedLocalitiesCount; localityCounter1++) {
-            let localityPath = selectedLocalities[localityCounter1];
+            let locationPath = selectedLocalities[localityCounter1];
 
-            if (deviceData.localityPath.indexOf(localityPath) === 0) {
+            if (deviceData.locationPath.indexOf(locationPath) === 0) {
                 return true;
             }
         }
@@ -38,68 +45,86 @@ export default async () => {
         return false;
     };
 
-    const deviceLocalitySort = (deviceData) => {
-        return deviceData.localityPath.length;
+    const groupDevicesByLocality1 = (deviceGroups, deviceData) => {
+        const locationPathParams = extractLocationPathParams(deviceData);
+        const locationPathParamsCount = locationPathParams.length;
+
+        let currentDeviceGroup = deviceGroups.localities;
+        let currentDeviceGroupDevices = [];
+        let currentLocationPathParams = [];
+
+        for (let locationPathParamsCounter1 = 0; locationPathParamsCounter1 < locationPathParamsCount; locationPathParamsCounter1++) {
+            let currentPathParam = locationPathParams[locationPathParamsCounter1];
+            currentLocationPathParams.push(currentPathParam);
+
+            let currentPathParamsCombination = `/${currentLocationPathParams.join('/')}/`;
+
+            if (!currentDeviceGroup[currentPathParamsCombination]) {
+                currentDeviceGroup[currentPathParamsCombination] = {
+                    localities: {},
+                    devices: []
+                }
+            }
+
+            currentDeviceGroupDevices = currentDeviceGroup[currentPathParamsCombination].devices;
+            currentDeviceGroup = currentDeviceGroup[currentPathParamsCombination].localities;
+        }
+
+        currentDeviceGroupDevices.push(deviceData);
+        return deviceGroups
     };
 
-    let filteredDevices = chain(currentDevices).filter(deviceLocalityFilter).sortBy(deviceLocalitySort).value();
+    const groupDevicesByLocality = (deviceGroups, deviceData) => {
+        const locationPathParams = extractLocationPathParams(deviceData);
+        const locationPathParamsCount = locationPathParams.length;
 
-    console.log('fil:', filteredDevices);
-/*
+        let currentDeviceGroup = deviceGroups;
+        let currentDeviceGroupDevices = [];
+        let currentLocationPathParams = [];
 
- var searchStringPermutations = this.state.searchValue ? stringService.createStringPermutations(this.state.searchValue.split(' ')) : [];
+        for (let locationPathParamsCounter1 = 0; locationPathParamsCounter1 < locationPathParamsCount; locationPathParamsCounter1++) {
+            const currentPathParam = locationPathParams[locationPathParamsCounter1];
+            currentLocationPathParams.push(currentPathParam);
 
+            const currentPathParamsCombination = `/${currentLocationPathParams.join('/')}/`;
+            const groupIndex = findIndex(currentDeviceGroup, (deviceGroup) => {return deviceGroup.localityPath === currentPathParamsCombination});
 
- .filter(function(item){
- var isItemMatch = this.state.searchValue ? false : true;
+            if (groupIndex === -1) {
+                currentDeviceGroup.push({
+                    localityPath: currentPathParamsCombination,
+                    localities: [],
+                    devices: []
+                });
 
- _.each(searchStringPermutations, function(searchStringPermutation){
- var searchCombination = searchStringPermutation.join(" ").toLowerCase();
- var resultText = this._extractOptionCaption(item);
-
- resultText = resultText.toString().toLowerCase();
-
- if (resultText.indexOf(searchCombination) === 0) {
- isItemMatch = true;
- }
- }, this);
-
- return isItemMatch;
- }, this)
-
-
- createStringPermutations(stringsToPermute, recursiveMemo) {
- var permutations = [];
- var permutableString;
- var recursiveMemo = recursiveMemo || [];
-
- _.each(stringsToPermute, function(item, index) {
- permutableString = stringsToPermute.splice(index, 1);
-
- if (stringsToPermute.length === 0) {
- permutations.push(recursiveMemo.concat(permutableString));
- }
-
- var permutationResult = this.createStringPermutations(stringsToPermute, recursiveMemo.concat(permutableString));
-
- permutations = permutations.concat(permutationResult);
- stringsToPermute.splice(index, 0, permutableString[0]);
- }, this);
-
- return permutations;
- }
+                currentDeviceGroup = currentDeviceGroup[currentDeviceGroup.length - 1].devices;
+            } else {
+                currentDeviceGroup = currentDeviceGroup[groupIndex].devices;
+            }
 
 
- var youngest = _
- .chain(users)
- .sortBy('age')
- .map(function(o) {
- return o.user + ' is ' + o.age;
- })
- .head()
- .value();
+           // currentDeviceGroupDevices = currentDeviceGroup[currentPathParamsCombination].devices;
+          //  currentDeviceGroup = currentDeviceGroup[currentPathParamsCombination].localities;
+        }
 
- */
+        //currentDeviceGroupDevices.push(deviceData);
+        return deviceGroups
+    };
+
+    const sortDevicesByLocation = (deviceData) => {
+        return deviceData.locationPath.split('/').join('');
+    };
+
+    const sortDeviceGroups = (deviceGroup) => {
+        console.log(deviceGroup);
+        return deviceGroup;
+    };
+
+    let filteredDeviceGroups = chain(currentDevices).filter(deviceLocalityFilter).reduce(groupDevicesByLocality, []).value();
+
+
+
+    console.log('fil:', JSON.stringify(filteredDeviceGroups));
+
 
 
     console.log('');
