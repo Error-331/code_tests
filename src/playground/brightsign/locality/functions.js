@@ -60,12 +60,10 @@ export const groupDevicesByLocality = (deviceGroups, deviceData) => {
 };
 
 export const sortDeviceGroups = (deviceGroup, orderASC = true) => {
-    if (orderASC) {
-        deviceGroup.localities = chain(deviceGroup.localities).sortBy(deviceGroup => sortDeviceGroups(deviceGroup, orderASC));
-    } else {
-        deviceGroup.localities = chain(deviceGroup.localities).sortBy(deviceGroup => sortDeviceGroups(deviceGroup, orderASC)).reverse();
-    }
+    let functionsChain = deviceGroup.localities = chain(deviceGroup.localities).sortBy(deviceGroup => sortDeviceGroups(deviceGroup, orderASC));
+    functionsChain = orderASC ? functionsChain : functionsChain.reverse();
 
+    deviceGroup.localities = functionsChain.value();
     return deviceGroup.localityPath.split('/').join('');
 };
 

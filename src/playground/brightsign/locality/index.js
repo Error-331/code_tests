@@ -10,7 +10,7 @@ export default async () => {
     console.log('');
 
     const selectedLocalities1 = sortSelectedLocalities(["/US/CO/Arapahoe County/", "/US/GA/", "/US/TX/Harris County/", "/US/CA/", "/CA/"]);
-    let filteredDeviceGroups = prepareDeviceGroups(devicesData1, selectedLocalities1, false);
+    let filteredDeviceGroups = prepareDeviceGroups(devicesData1, selectedLocalities1, true);
 
     console.log('fil:', JSON.stringify(filteredDeviceGroups));
 
