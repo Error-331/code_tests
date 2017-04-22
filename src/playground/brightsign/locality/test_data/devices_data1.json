@@ -1,0 +1,23 @@
+[
+  {"id": 2, "name": "device 2", "locationPath": "/US/GA/Muscogee County/Columbus/"},
+  {"id": 3, "name": "device 3", "locationPath": "/US/CA/Los Angeles County/"},
+  {"id": 4, "name": "device 4", "locationPath": "/US/CA/San Mateo County/"},
+  {"id": 5, "name": "device 5", "locationPath": "/US/CO/Arapahoe County/Greenwood Village/"},
+  {"id": 6, "name": "device 6", "locationPath": "/US/TX/"},
+  {"id": 7, "name": "device 7", "locationPath": "/US/CO/Boulder County/"},
+  {"id": 8, "name": "device 8", "locationPath": "/US/MA/Suffolk County/"},
+  {"id": 9, "name": "device 9", "locationPath": "/US/MA/Suffolk County/Chelsea/"},
+  {"id": 10, "name": "device 10", "locationPath": "/US/NH/Hillsborough County/"},
+  {"id": 11, "name": "device 11", "locationPath": "/US/NH/Hillsborough County/Manchester/"},
+  {"id": 12, "name": "device 12", "locationPath": "/US/CA/"},
+  {"id": 13, "name": "device 13", "locationPath": "/US/GA/"},
+  {"id": 14, "name": "device 14", "locationPath": "/CA/Ontario/Algoma/"},
+  {"id": 15, "name": "device 15", "locationPath": "/CA/Ontario/Durham/"},
+  {"id": 16, "name": "device 16", "locationPath": "/CA/Ontario/Durham/Spanish/"},
+  {"id": 17, "name": "device 17", "locationPath": "/CA/Ontario/Durham/Spanish/"},
+  {"id": 18, "name": "device 18", "locationPath": "/CA/Ontario/Durham/Thessalon/"},
+  {"id": 19, "name": "device 19", "locationPath": "/CA/Alberta/Lac La Biche County/Avenir/"},
+  {"id": 20, "name": "device 20", "locationPath": "/CA/Alberta/Lac La Biche County/Barnegat/"},
+  {"id": 21, "name": "device 21", "locationPath": "/CA/Alberta/Lac La Biche County/Barnegat/"},
+  {"id": 22, "name": "device 22", "locationPath": "/CA/Alberta/Lac La Biche County/Behan/"}
+]
