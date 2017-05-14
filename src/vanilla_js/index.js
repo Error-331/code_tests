@@ -1,5 +1,8 @@
 'use strict';
 
+import numbers from './fundamentals/numbers';
+import numberStringOrder from './fundamentals/operators/number_string_order';
+
 import templateStrings from './fundamentals/strings/template_strings';
 import symbols from './fundamentals/symbols';
 
@@ -16,17 +19,24 @@ import monad from './functional/monad';
 import transducers from './functional/transducers';
 import lenses from './functional/lenses';
 
+import functionFactories from './functional/fundamentals/function_factories';
+import partialApplication from './functional/fundamentals/partial_application';
+import currying from './functional/fundamentals/currying';
+
 import promisesBase from './functional/promisses/base';
 import promisesTasks from './functional/promisses/tasks';
 import promisesUserCreated from './functional/promisses/user_created';
 
 async function run() {
     // fundamentals
+    await numbers();
+    await numberStringOrder();
+
     //await templateStrings();
     //await symbols();
 
     // iterators
-    await generators();
+   // await generators();
 
     // fundamentals (objects)
     //await objectsBase();
@@ -40,6 +50,11 @@ async function run() {
     //await monad();
     //await transducers();
     //await lenses();
+
+    // functional programming (fundamentals)
+    //await functionFactories();
+    //await partialApplication();
+    //await currying();
 
     // functional programming (promises)
     //await promisesBase();
