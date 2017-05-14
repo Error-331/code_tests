@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- https://habrahabr.ru/company/mailru/blog/315196/ -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS locks</title>
+
+        <style>
+            html {width: 100%; height: 100%; margin: 0px; padding: 0px;}
+            body {width: 100%; height: 100%; margin: 0px; padding: 0px;}
+        </style>
+
+        <style>
+            .mainContainerOuter {box-sizing: border-box; width: 100%; height: 100%; padding: 5px;}
+            .mainContainerInner {
+                box-sizing: border-box;
+                display: flex; flex-flow: row wrap; justify-content: flex-start; align-items: flex-start; align-content: flex-start;
+                width: 100%; height: 100%; border: 1px solid black; padding: 5px;
+            }
+
+            .exampleContainerOuter {box-sizing: border-box; padding: 5px;}
+            .exampleContainerInner {box-sizing: border-box; border: 1px solid brown; padding: 5px;}
+            .exampleContainerInner > .exampleDescription {}
+            .exampleContainerInner > .exampleText {}
+
+            .example1ContainerInner {}
+            .example1ContainerInner > .exampleText {font-size: 20px;}
+
+            @media (min-width: 320px) {
+                .example1ContainerInner > .exampleText {font-size: calc(3.125vw + 10px);}
+            }
+
+            @media (min-width: 960px) {
+                .example1ContainerInner > .exampleText {font-size: 40px;}
+            }
+
+            .example2ContainerInner {}
+            .example2ContainerInner > .exampleText {font-size: 1.25rem;}
+
+            @media (min-width: 320px) {
+                .example2ContainerInner > .exampleText {font-size: calc(1.25rem + 3.125vw - 10px);}
+            }
+
+            @media (min-width: 960px) {
+                .example2ContainerInner > .exampleText {font-size: calc(1.25rem + 20px);}
+            }
+
+            .example3ContainerInner {}
+            .example3ContainerInner > .exampleText {line-height: 140%; background-color: wheat;}
+
+            @media (min-width: 320px) {
+                .example3ContainerInner > .exampleText {line-height: calc( 140% + 1vw - 3.2px );}
+            }
+
+            @media (min-width: 960px) {
+                .example3ContainerInner > .exampleText {line-height: calc( 140% + 6.4px );}
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div class="mainContainerOuter">
+            <div class="mainContainerInner">
+
+                <div class="exampleContainerOuter">
+                    <div class="exampleContainerInner example1ContainerInner">
+                        <div class="exampleDescription">
+                            <b>Example 1</b>
+                            <br/>
+                            Font-size resizing from 20px (screen width 320px) to 40px (screen size 960px) (hint: use linear function)
+                        </div>
+
+                        <div id="exampleText1" class="exampleText">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exampleContainerOuter">
+                    <div class="exampleContainerInner example2ContainerInner">
+                        <div class="exampleDescription">
+                            <b>Example 2</b>
+                            <br/>
+                            Font-size resizing from 20px (screen width 320px) to 40px (screen size 960px), with preset base font size 1.25rem
+                        </div>
+
+                        <div id="exampleText2" class="exampleText">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exampleContainerOuter">
+                    <div class="exampleContainerInner example3ContainerInner">
+                        <div class="exampleDescription">
+                            <b>Example 3</b>
+                            <br/>
+                            Line-height resizing from 140%; (screen width 320px) to 180%; (screen size 960px)
+                        </div>
+
+                        <div id="exampleText3" class="exampleText">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function calculateDifference(val1, val2) {
+                return val1 - val2;
+            }
+
+            function calculateFontIncrease(maxFontSize, minFontSize, maxScreenWidth, minScreenWidth) {
+                const fontSizeDifference = calculateDifference(maxFontSize, minFontSize);
+                const screenWidthDifference = calculateDifference(maxScreenWidth, minScreenWidth);
+
+                return fontSizeDifference / screenWidthDifference;
+            }
+
+            function calculateStartingValue(fontIncrease, minFontSize, minScreenWidth) {
+                return minFontSize - (fontIncrease * minScreenWidth);
+            }
+
+            const baseFontSize = 16; // px
+
+            const fontIncrease1 = calculateFontIncrease(40, 20, 960, 320);
+            const startingValue1 = calculateStartingValue(fontIncrease1, 20, 320);
+
+            document.getElementById('exampleText1').innerHTML = `font-size: calc(${fontIncrease1 * 100}vw + ${startingValue1}px);`;
+
+            const fontIncrease2 = calculateFontIncrease(20, 0, 960, 320);
+            const startingValue2 = calculateStartingValue(fontIncrease1, 0, 320);
+
+            document.getElementById('exampleText2').innerHTML = `font-size: calc(1.25rem + ${fontIncrease2 * 100}vw + ${startingValue2}px);`;
+
+
+            const percent1Increase3 = (baseFontSize * 140) / 100;
+            const percent2Increase3 = (baseFontSize * 180) / 100;
+
+            const fontIncrease3 = calculateFontIncrease(0, percent1Increase3 - percent2Increase3, 960, 320);
+            const startingValue3 = calculateStartingValue(fontIncrease1, 0, 320);
+
+            document.getElementById('exampleText3').innerHTML = `line-height: calc(140% + ${fontIncrease3 * 100}vw + ${startingValue3}px);`;
+        </script>
+
+    </body>
+</html>
