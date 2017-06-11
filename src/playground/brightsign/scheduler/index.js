@@ -1,9 +1,8 @@
 'use strict';
 
-import {parseDate, findPresentationsForPeriod, convertPresentationsToSchedulerFormat} from './functions';
-import {each, cloneDeep} from 'lodash';
+import {findPresentationsForPeriod, preparePresentationsForScheduler} from './functions';
 
-import fixedFatePresentations1 from './test_data/fixed_date_presentations1.json';
+import fixedDatePresentations1 from './test_data/fixed_date_presentations1.json';
 import recurringEverydayPresentations1 from './test_data/recurring_everyday_presentations1.json';
 import recurringEndlessEverydayPresentations1 from './test_data/recurring_endless_everyday_presentations1.json';
 
@@ -12,19 +11,16 @@ export default async () => {
     console.log('============================');
     console.log('');
 
-    const startDate1String = '2017-03-11T00:00:00';
-    const endDate1String = '2017-03-11T23:59:59';
+    //targetTimeZone(pin): "EST"
+    //reportedTimeZone(pin): "EST"
 
-    const startDate1 = parseDate(startDate1String);
-    const endDate1 = parseDate(endDate1String);
+    const startDate1String = '2017-03-10T00:00:00';
+    const endDate1String = '2017-03-15T23:59:59';
+
+    const foundFixedDatePresentations1 = preparePresentationsForScheduler(startDate1String, endDate1String, recurringEverydayPresentations1);
+console.log(foundFixedDatePresentations1);
 
 
-    const testData1 = cloneDeep(recurringEverydayPresentations1);
-    const testData1Result = findPresentationsForPeriod(startDate1, endDate1, testData1);
-
-    const schedulerData = convertPresentationsToSchedulerFormat(startDate1, endDate1, testData1Result);
-
-    //console.log(schedulerData);
 
     console.log('');
     console.log('--------------------------------------------------------');

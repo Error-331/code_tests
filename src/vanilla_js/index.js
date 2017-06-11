@@ -3,6 +3,9 @@
 import numbers from './fundamentals/numbers';
 import numberStringOrder from './fundamentals/operators/number_string_order';
 
+import hoistingGeneral from './fundamentals/hoisting/hoisting_general';
+import modules from './fundamentals/modules';
+
 import templateStrings from './fundamentals/strings/template_strings';
 import symbols from './fundamentals/symbols';
 
@@ -29,8 +32,11 @@ import promisesUserCreated from './functional/promisses/user_created';
 
 async function run() {
     // fundamentals
-    await numbers();
-    await numberStringOrder();
+    //await numbers();
+   // await numberStringOrder();
+
+    //await hoistingGeneral();
+    await modules();
 
     //await templateStrings();
     //await symbols();

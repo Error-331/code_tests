@@ -12,7 +12,7 @@ let mockObject1 = {
     methodA: function() {
         return this.propA;
     }
-}
+};
 
 // object 2 mock
 let mockObject2 = Object.create(mockObject1);
