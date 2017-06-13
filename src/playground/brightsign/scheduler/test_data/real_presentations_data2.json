@@ -1,0 +1,41 @@
+{
+  "6936762": {
+    "id": 6936762,
+    "presentationId": 670186,
+    "presentationName": "Van Cortlandt Cooperative FCU_040116-070116",
+    "isRecurrent": true,
+    "eventDate": null,
+    "startTime": "00:00:00",
+    "duration": "1.00:00:00",
+    "recurrenceStartDate": "2016-04-05T00:00:00",
+    "recurrenceEndDate": "2016-06-29T00:00:00",
+    "daysOfWeek": "EveryDay",
+    "creationDate": "2016-04-05T21:53:04.583",
+    "lastModifiedDate": "2016-04-05T21:53:04.583",
+    "expirationDate": "2016-06-30T05:00:00Z",
+    "interruptScheduling": false,
+    "regularGroupId": 20938,
+    "fetching": false,
+    "errors": ""
+  },
+
+  "6936763": {
+    "id": 6936763,
+    "presentationId": 741255,
+    "presentationName": "Van Cortlandt Cooperative FCU",
+    "isRecurrent": true,
+    "eventDate": null,
+    "startTime": "00:00:00",
+    "duration": "1.00:00:00",
+    "recurrenceStartDate": "2016-06-30T00:00:00",
+    "recurrenceEndDate": null,
+    "daysOfWeek": "EveryDay",
+    "creationDate": "2016-04-05T21:53:04.6",
+    "lastModifiedDate": "2016-04-05T21:53:04.6",
+    "expirationDate": "9999-12-31T23:59:59.997Z",
+    "interruptScheduling": false,
+    "regularGroupId": 20938,
+    "fetching": false,
+    "errors": ""
+  }
+}

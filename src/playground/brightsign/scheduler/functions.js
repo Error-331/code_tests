@@ -2,7 +2,7 @@
 
 import moment from 'moment';
 
-import {isNull, isArray, stubTrue, stubFalse, castArray, partial, cond, chain, map, trim, sortBy} from 'lodash';
+import {isNull, isArray, stubTrue, stubFalse, castArray, partial, cond, chain, map, trim, sortBy, cloneDeep} from 'lodash';
 import {EVERY_DAY_NAME, EVERY_WEEKDAY_NAME, EVERY_WEEKEND_NAME, WEEK_DAYS_NUMBERS, WEEK_ENDS_NUMBERS, ALL_DAYS_NUMBERS} from './constants';
 
 export const toLowerCaseAndTrim = userString => trim(userString.toLowerCase());
@@ -48,20 +48,6 @@ export const extractPossibleWeekDaysFromEvent = (daysOfWeek) => {
     }, []).uniq().sortBy().value();
 };
 
-export const extractPossibleWeekDaysFromPeriod = (startDateTime, endDateTime) => {
-    const startDateTimeCopy = moment(startDateTime);
-    const endDateTimeCopy = moment(endDateTime);
-
-    const possibleWeekDays = [];
-
-    while(startDateTimeCopy.isSameOrBefore(endDateTimeCopy)) {
-        possibleWeekDays.push(startDateTimeCopy.day());
-        startDateTimeCopy.add(1, 'd');
-    }
-
-    return possibleWeekDays;
-};
-
 const addDuration = (userDate, durationData) => {
     let newUserDate = moment(userDate);
     let startIndex = 0;
@@ -100,8 +86,8 @@ export const setTimePartOfDate = (userDate, userTime) => {
 };
 
 export const testPeriodStartEndTimeFitsPeriod = (eventStartDateTime, eventEndDateTime, periodStartDateTime, periodEndDateTime) => {
-    let eventStartDateTimeFits = eventStartDateTime.isSameOrBefore(periodStartDateTime) || eventStartDateTime.isBetween(periodStartDateTime, periodEndDateTime, null, '[]');
-    let eventEndDateTimeFits = eventEndDateTime.isSameOrAfter(periodEndDateTime) || eventEndDateTime.isBetween(periodStartDateTime, periodEndDateTime, null, '[]');
+    let eventStartDateTimeFits = eventStartDateTime.isSameOrBefore(periodStartDateTime) || eventStartDateTime.isBetween(periodStartDateTime, periodEndDateTime, null, '[)');
+    let eventEndDateTimeFits = eventEndDateTime.isSameOrAfter(periodEndDateTime) || eventEndDateTime.isBetween(periodStartDateTime, periodEndDateTime, null, '(]');
 
     return eventStartDateTimeFits && eventEndDateTimeFits;
 };
@@ -136,6 +122,12 @@ export const convertRecurrentToNoneRecurrentPresentation = (startDateTime, endDa
     const presentationDaysOfWeek = extractPossibleWeekDaysFromEvent(presentationData.daysOfWeek);
     const chunkedPresentations = [];
 
+    const starDateTimeDaysDiff = moment(startDateTime).diff(recurrenceStartDateTime, 'days');
+
+    if (starDateTimeDaysDiff >= 7) {
+        recurrenceStartDateTime = moment(startDateTime).subtract(7, 'day')
+    }
+
     while(recurrenceStartDateTime.isBefore(recurrenceEndDateTime)) {
         const currendWeekDay = recurrenceStartDateTime.day();
 
@@ -148,16 +140,17 @@ export const convertRecurrentToNoneRecurrentPresentation = (startDateTime, endDa
                 'isRecurrent': false,
                 'eventDate': recurrenceStartDateTime.format('YYYY-MM-DD'),
 
-                "recurrenceStartDate": null,
-                "recurrenceEndDate": null,
+                'recurrenceStartDate': null,
+                'recurrenceEndDate': null,
 
-                "daysOfWeek": null
+                'daysOfWeek': null,
+
+                'originalData': cloneDeep(presentationData)
             });
 
             recurrenceStartDateTime.add(1, 'day');
         }
     }
-
 
     return chunkedPresentations;
 };
@@ -195,7 +188,7 @@ export const normalizeNoRecurrentPresentationForScheduler = (startDateTime, endD
     eventStartDateTime = eventStartDateTime.isBefore(startDateTime) ? moment(startDateTime) : eventStartDateTime;
     eventEndDateTime = eventEndDateTime.isAfter(endDateTime) ? moment(endDateTime) : eventEndDateTime;
 
-    return {name: presentationData.presentationName, eventStartDateTime, eventEndDateTime};
+    return {name: presentationData.presentationName, period: presentationData.originalData.daysOfWeek, eventStartDateTime, eventEndDateTime};
 };
 
 export const preparePresentationsForScheduler = (startDateTime, endDateTime, presentationsData) => {

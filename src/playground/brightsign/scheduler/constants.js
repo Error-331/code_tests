@@ -1,7 +1,6 @@
 export const MILLISECONDS_IN_HOUR = 3600000;
 export const MILLISECONDS_IN_MINUTE = 60000;
 
-
 export const EVERY_DAY_NAME = 'EveryDay';
 export const EVERY_WEEKDAY_NAME = 'EveryWeekday';
 export const EVERY_WEEKEND_NAME = 'EveryWeekend';
