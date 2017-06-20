@@ -1,0 +1,21 @@
+{
+  "4364023": {
+    "id": 4364023,
+    "presentationId": 483366,
+    "presentationName": "M&L Supply 070615",
+    "isRecurrent": true,
+    "eventDate": null,
+    "startTime": "00:00:00",
+    "duration": "1.00:00:00",
+    "recurrenceStartDate": "2015-08-04T00:00:00",
+    "recurrenceEndDate": null,
+    "daysOfWeek": "EveryDay",
+    "creationDate": "2015-07-06T17:10:51.71",
+    "lastModifiedDate": "2015-07-06T17:10:51.71",
+    "expirationDate": "9999-12-31T23:59:59.997Z",
+    "interruptScheduling": false,
+    "regularGroupId": 7087,
+    "fetching": false,
+    "errors": ""
+  }
+}

@@ -116,5 +116,22 @@
     "recurrenceEndDate": null,
 
     "daysOfWeek": null
+  },
+
+  "18": {
+    "id": 18,
+    "presentationId": 18,
+
+    "presentationName": "Fixed date presentation 8",
+    "isRecurrent": false,
+    "eventDate": "2017-03-11",
+
+    "startTime": "24:00:00",
+    "duration": "04:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": null
   }
 }
