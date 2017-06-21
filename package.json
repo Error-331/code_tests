@@ -6,6 +6,7 @@
   "scripts": {
     "run-scripts": "webpack -p --config ./webpack.config.js; node ./dist/bundle.js",
     "run-scripts-ts": "webpack -p --config ./webpack.typescript.config.js; node ./dist/typescript_bundle.js",
+    "run-scripts-tools": "webpack -p --config ./webpack.tools.config.js; node ./dist/tools_bundle.js",
     "run-scripts-playground": "webpack -p --config ./webpack.playground.config.js; node ./dist/playground_bundle.js",
     "run-scripts-vendor-library-tests": "webpack -p --config ./webpack.vendor.library.tests.config.js; node ./dist/vendor_library_tests_bundle.js"
   },
