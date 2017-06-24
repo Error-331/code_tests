@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Flex Tricks</title>
+
+    <style>
+        .testFlexContainer1 {
+            box-sizing: border-box;
+
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: flex-start;
+            align-content: flex-start;
+
+            border: 1px solid black;
+
+        }
+
+        .testInnerContainer1_1 {
+            border: 1px solid gray;
+            font-size: 20px;
+        }
+
+        .testInnerContainer2_1 {
+            margin-left: auto;
+            border: 1px solid gray;
+            font-size: 12px;
+        }
+
+        .testFlexContainer2 {
+            box-sizing: border-box;
+
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: flex-start;
+            align-content: flex-start;
+
+            width: 200px;
+
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+
+        .testInnerContainer1_2 {
+            min-width: 0;
+            border: 1px solid gray;
+
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        .testInnerContainer2_2 {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+
+            margin-left: auto;
+            border: 1px solid gray;
+            font-size: 10px;
+        }
+
+        .testFlexContainer3 {
+            box-sizing: border-box;
+
+            display: flex;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: flex-start;
+            align-content: flex-start;
+
+            width: 200px;
+
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+
+        .testInnerContainer1_3 {
+            min-width: 0;
+            border: 1px solid gray;
+
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        .testInnerContainer2_3 {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            
+            border: 1px solid gray;
+            font-size: 10px;
+        }
+
+        .testFlexContainer4 {
+            box-sizing: border-box;
+
+            display: flex;
+            height: 50px;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: baseline;
+            align-content: flex-start;
+
+            margin-top: 10px;
+            border: 1px solid black;
+        }
+
+        .testInnerContainer1_4 {
+            min-width: 0;
+            border: 1px solid gray;
+
+            font-size: 16px;
+            word-wrap: break-word;
+        }
+
+        .testInnerContainer2_4 {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+
+            border: 1px solid gray;
+            font-size: 20px;
+        }
+
+        .testInnerContainer3_4 {
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+
+            border: 1px solid gray;
+            font-size: 25px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="testFlexContainer1">
+        <div class="testInnerContainer1_1">
+            Test inner container 1
+        </div>
+
+        <div class="testInnerContainer2_1">
+            Test inner container 2
+        </div>
+    </div>
+
+    <div class="testFlexContainer2">
+        <div class="testInnerContainer1_2">
+            Одиннадцатиклассница
+        </div>
+
+        <div class="testInnerContainer2_2">
+            Some text here
+        </div>
+    </div>
+
+    <div class="testFlexContainer3">
+        <div class="testInnerContainer1_3">
+            Одиннадцатиклассница
+        </div>
+
+        <div class="testInnerContainer2_3">
+            Some text here
+        </div>
+    </div>
+
+    <div class="testFlexContainer4">
+        <div class="testInnerContainer1_4">
+            Одиннадцатиклассница
+        </div>
+
+        <div class="testInnerContainer2_4">
+            Some text here
+        </div>
+
+        <div class="testInnerContainer3_4">
+            Some text here
+        </div>
+    </div>
+
+</body>
+</html>
