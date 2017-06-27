@@ -196,13 +196,15 @@ export const preparePresentationsForScheduler = (startDateTime, endDateTime, pre
     const endDateTimeCopy = moment(endDateTime);
 
     const convertedPresentations = convertPresentationsToNoneRecurrentFormat(startDateTime, endDateTime, presentationsData);
-
-    const normalizationFunc = partial(normalizeNoRecurrentPresentationForScheduler, startDateTimeCopy, endDateTimeCopy);
     let preparedPresentationsForScheduler = [];
 
     while(startDateTimeCopy.isBefore(endDateTimeCopy)) {
-        const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, moment(startDateTimeCopy).add(1, 'd'), convertedPresentations);
+        const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+        const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, convertedPresentations);
+        const normalizationFunc = partial(normalizeNoRecurrentPresentationForScheduler, startDateTimeCopy, endDateTime);
         const preparedPresentations = map(foundPresentations, normalizationFunc);
+
 
         preparedPresentationsForScheduler = preparedPresentationsForScheduler.concat(preparedPresentations);
         startDateTimeCopy.add(1, 'd');
@@ -218,7 +220,15 @@ export const preparePresentationsForDayScheduler = (startDateTime, presentations
     return preparePresentationsForScheduler(startDateTimeCopy, endDateTime, presentationsData);
 };
 
-export const preparePresentationsForWeekSchedulerFromSunday = (startDateTime, presentationsData) => {
+export const findAndPreparePresentationsForDayScheduler = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+    const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, presentationsData);
+    return preparePresentationsForScheduler(startDateTimeCopy, endDateTime, foundPresentations);
+};
+
+export const findAndPreparePresentationsForWeekSchedulerFromSunday = (startDateTime, presentationsData) => {
     const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
     let startDateTimeWeekDayCopy = startDateTimeCopy.weekday();
 
@@ -228,7 +238,8 @@ export const preparePresentationsForWeekSchedulerFromSunday = (startDateTime, pr
     }
 
     const endDateTime = moment(startDateTimeCopy).add(7, 'd');
-    const weekPresentations = preparePresentationsForScheduler(startDateTimeCopy, endDateTime, presentationsData);
+    const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, presentationsData);
+    const weekPresentations = preparePresentationsForScheduler(startDateTimeCopy, endDateTime, foundPresentations);
 
     const startDateTimeCounter = moment(startDateTimeCopy);
     const endDateTimeCounter = moment(startDateTimeCounter).add(1, 'd');
