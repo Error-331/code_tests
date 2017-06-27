@@ -210,3 +210,46 @@ export const preparePresentationsForScheduler = (startDateTime, endDateTime, pre
 
     return sortBy(preparedPresentationsForScheduler, presentationData => moment(presentationData.eventStartDateTime).valueOf());
 };
+
+export const preparePresentationsForDayScheduler = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+    return preparePresentationsForScheduler(startDateTimeCopy, endDateTime, presentationsData);
+};
+
+export const preparePresentationsForWeekSchedulerFromSunday = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    let startDateTimeWeekDayCopy = startDateTimeCopy.weekday();
+
+    while(startDateTimeWeekDayCopy !== 0) {
+        startDateTimeCopy.subtract(1, 'd');
+        startDateTimeWeekDayCopy = startDateTimeCopy.weekday();
+    }
+
+    const endDateTime = moment(startDateTimeCopy).add(7, 'd');
+    const weekPresentations = preparePresentationsForScheduler(startDateTimeCopy, endDateTime, presentationsData);
+
+    const startDateTimeCounter = moment(startDateTimeCopy);
+    const endDateTimeCounter = moment(startDateTimeCounter).add(1, 'd');
+    const weekPresentationsByDay = [];
+
+    do {
+        const presentationsInArray = chain(weekPresentations).filter((presentation) => {
+            const isStartDateTimeFits = moment(presentation.eventStartDateTime).isBetween(startDateTimeCounter, endDateTimeCounter, null, '[)');
+            const isEndDateTimeFits = moment(presentation.eventEndDateTime).isBetween(startDateTimeCounter, endDateTimeCounter, null, '(]');
+
+            return isStartDateTimeFits && isEndDateTimeFits;
+        }).reduce((presentationsArray, presentation) => {
+            presentationsArray.push(presentation);
+            return presentationsArray;
+        }, []).value();
+
+        weekPresentationsByDay.push(presentationsInArray);
+
+        startDateTimeCounter.add(1, 'd');
+        endDateTimeCounter.add(1, 'd');
+    } while(endDateTimeCounter.isSameOrBefore(endDateTime));
+
+    return weekPresentationsByDay;
+};
