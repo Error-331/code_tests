@@ -21,8 +21,9 @@ export default async () => {
     const startDate1String = '2017-03-05T00:00:00';
     const endDate1String = '2017-03-08T00:00:00';
 
-    const foundFixedDatePresentations1 = findAndPreparePresentationsForDayScheduler(startDate1String, recurringEndlessEverydayPresentations2);
-    console.log('ggg', foundFixedDatePresentations1);
+    const foundFixedDatePresentations1 = findAndPreparePresentationsForWeekSchedulerFromSunday(startDate1String, recurringEndlessEverydayPresentations2);
+
+    console.log(foundFixedDatePresentations1);
 
     console.log('');
     console.log('--------------------------------------------------------');

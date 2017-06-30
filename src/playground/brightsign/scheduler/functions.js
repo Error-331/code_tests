@@ -188,7 +188,7 @@ export const normalizeNoRecurrentPresentationForScheduler = (startDateTime, endD
     eventStartDateTime = eventStartDateTime.isBefore(startDateTime) ? moment(startDateTime) : eventStartDateTime;
     eventEndDateTime = eventEndDateTime.isAfter(endDateTime) ? moment(endDateTime) : eventEndDateTime;
 
-    return {name: presentationData.presentationName, period: presentationData.originalData.daysOfWeek, eventStartDateTime, eventEndDateTime};
+    return {name: presentationData.presentationName, period: presentationData.originalData.daysOfWeek, eventStartDateTime, eventEndDateTime, originalData: presentationData.originalData};
 };
 
 export const preparePresentationsForScheduler = (startDateTime, endDateTime, presentationsData) => {
@@ -204,7 +204,6 @@ export const preparePresentationsForScheduler = (startDateTime, endDateTime, pre
         const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, convertedPresentations);
         const normalizationFunc = partial(normalizeNoRecurrentPresentationForScheduler, startDateTimeCopy, endDateTime);
         const preparedPresentations = map(foundPresentations, normalizationFunc);
-
 
         preparedPresentationsForScheduler = preparedPresentationsForScheduler.concat(preparedPresentations);
         startDateTimeCopy.add(1, 'd');
