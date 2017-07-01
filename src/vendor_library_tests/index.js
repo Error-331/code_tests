@@ -2,6 +2,7 @@
 
 //import moment from './date/moment';
 
+import sanctuary from './functional/sanctuary';
 import fluture from './functional/fluture';
 import lodash from './functional/lodash';
 import ramda from './functional/ramda';
@@ -12,7 +13,8 @@ async function run() {
     //await moment();
 
     // functional libraries
-    //await fluture();
+    //await sanctuary();
+    await fluture();
     //await lodash();
     //await ramda();
     await mori();

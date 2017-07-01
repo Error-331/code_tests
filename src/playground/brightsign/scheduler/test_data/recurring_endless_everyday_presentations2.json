@@ -1,0 +1,35 @@
+{
+  "13": {
+    "id": 28,
+    "presentationId": 28,
+
+    "presentationName": "Recurring(everyday) endless presentation 1",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "15:00:00",
+    "duration": "6:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  },
+
+  "14": {
+    "id": 29,
+    "presentationId": 29,
+
+    "presentationName": "Recurring(everyday) endless presentation 2",
+    "isRecurrent": true,
+    "eventDate": null,
+
+    "startTime": "21:00:00",
+    "duration": "4:00:00",
+
+    "recurrenceStartDate": null,
+    "recurrenceEndDate": null,
+
+    "daysOfWeek": "EveryDay"
+  }
+}

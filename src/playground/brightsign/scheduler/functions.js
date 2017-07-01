@@ -188,7 +188,7 @@ export const normalizeNoRecurrentPresentationForScheduler = (startDateTime, endD
     eventStartDateTime = eventStartDateTime.isBefore(startDateTime) ? moment(startDateTime) : eventStartDateTime;
     eventEndDateTime = eventEndDateTime.isAfter(endDateTime) ? moment(endDateTime) : eventEndDateTime;
 
-    return {name: presentationData.presentationName, period: presentationData.originalData.daysOfWeek, eventStartDateTime, eventEndDateTime};
+    return {name: presentationData.presentationName, period: presentationData.originalData.daysOfWeek, eventStartDateTime, eventEndDateTime, originalData: presentationData.originalData};
 };
 
 export const preparePresentationsForScheduler = (startDateTime, endDateTime, presentationsData) => {
@@ -196,12 +196,13 @@ export const preparePresentationsForScheduler = (startDateTime, endDateTime, pre
     const endDateTimeCopy = moment(endDateTime);
 
     const convertedPresentations = convertPresentationsToNoneRecurrentFormat(startDateTime, endDateTime, presentationsData);
-
-    const normalizationFunc = partial(normalizeNoRecurrentPresentationForScheduler, startDateTimeCopy, endDateTimeCopy);
     let preparedPresentationsForScheduler = [];
 
     while(startDateTimeCopy.isBefore(endDateTimeCopy)) {
-        const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, moment(startDateTimeCopy).add(1, 'd'), convertedPresentations);
+        const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+        const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, convertedPresentations);
+        const normalizationFunc = partial(normalizeNoRecurrentPresentationForScheduler, startDateTimeCopy, endDateTime);
         const preparedPresentations = map(foundPresentations, normalizationFunc);
 
         preparedPresentationsForScheduler = preparedPresentationsForScheduler.concat(preparedPresentations);
@@ -209,4 +210,56 @@ export const preparePresentationsForScheduler = (startDateTime, endDateTime, pre
     }
 
     return sortBy(preparedPresentationsForScheduler, presentationData => moment(presentationData.eventStartDateTime).valueOf());
+};
+
+export const preparePresentationsForDayScheduler = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+    return preparePresentationsForScheduler(startDateTimeCopy, endDateTime, presentationsData);
+};
+
+export const findAndPreparePresentationsForDayScheduler = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    const endDateTime = moment(startDateTimeCopy).add(1, 'd');
+
+    const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, presentationsData);
+    return preparePresentationsForScheduler(startDateTimeCopy, endDateTime, foundPresentations);
+};
+
+export const findAndPreparePresentationsForWeekSchedulerFromSunday = (startDateTime, presentationsData) => {
+    const startDateTimeCopy = moment(startDateTime).set('h', 0).set('m', 0).set('s', 0).set('ms', 0);
+    let startDateTimeWeekDayCopy = startDateTimeCopy.weekday();
+
+    while(startDateTimeWeekDayCopy !== 0) {
+        startDateTimeCopy.subtract(1, 'd');
+        startDateTimeWeekDayCopy = startDateTimeCopy.weekday();
+    }
+
+    const endDateTime = moment(startDateTimeCopy).add(7, 'd');
+    const foundPresentations = findPresentationsForPeriod(startDateTimeCopy, endDateTime, presentationsData);
+    const weekPresentations = preparePresentationsForScheduler(startDateTimeCopy, endDateTime, foundPresentations);
+
+    const startDateTimeCounter = moment(startDateTimeCopy);
+    const endDateTimeCounter = moment(startDateTimeCounter).add(1, 'd');
+    const weekPresentationsByDay = [];
+
+    do {
+        const presentationsInArray = chain(weekPresentations).filter((presentation) => {
+            const isStartDateTimeFits = moment(presentation.eventStartDateTime).isBetween(startDateTimeCounter, endDateTimeCounter, null, '[)');
+            const isEndDateTimeFits = moment(presentation.eventEndDateTime).isBetween(startDateTimeCounter, endDateTimeCounter, null, '(]');
+
+            return isStartDateTimeFits && isEndDateTimeFits;
+        }).reduce((presentationsArray, presentation) => {
+            presentationsArray.push(presentation);
+            return presentationsArray;
+        }, []).value();
+
+        weekPresentationsByDay.push(presentationsInArray);
+
+        startDateTimeCounter.add(1, 'd');
+        endDateTimeCounter.add(1, 'd');
+    } while(endDateTimeCounter.isSameOrBefore(endDateTime));
+
+    return weekPresentationsByDay;
 };
