@@ -3,19 +3,46 @@
 const Datastore = require('nedb');
 const fs = require('fs');
 
+const testDataVariant1 = require('./../test_json_data/data_collection_variant1.json');
+
+const dbFilePath = './ne_db/db_files/test_db.json';
+
 module.exports = async () => {
-    if (fs.existsSync('./db_files/test_db.json')) {
-        fs.unlinkSync('./db_files/test_db.json');
+    console.log('"NeDB" database tests');
+    console.log('=====================');
+    console.log('');
+
+    if (fs.existsSync(dbFilePath)) {
+        fs.unlinkSync(dbFilePath);
     }
 
+    const dbConnector = new Datastore({ filename: dbFilePath, autoload: true });
 
-    const testDataVariant1 = require('./test_json_data/data_collection_variant1.json');
+    await new Promise((resolvePromise, rejectPromise) => {
+        console.log('Collection insertion example...');
 
-    const dbConnector = new Datastore({ filename: './db_files/test_db.json', autoload: true });
+        dbConnector.insert(testDataVariant1[0], function (error, newDoc) {
+            console.log('Collection insertion finished...');
 
-    dbConnector.insert(testDataVariant1[0], function (err, newDoc) {
-
+            error !== null ? rejectPromise(error) : resolvePromise(newDoc);
+        });
     });
+
+    console.log('');
+
+    await new Promise((resolvePromise, rejectPromise) => {
+        console.log('Collections insertion example...');
+
+        dbConnector.insert([testDataVariant1[1], testDataVariant1[2], testDataVariant1[3]], function (error, newDoc) {
+            console.log('Collections insertion finished...');
+
+            error !== null ? rejectPromise(error) : resolvePromise(newDoc);
+        });
+    });
+
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
 };
 
 
@@ -56,12 +83,5 @@ const dataVariant3Inst1 = {
 dbConnector.insert([{ a: 5 }, { a: 42 }], function (err, newDocs) {
     // Two documents were inserted in the database
     // newDocs is an array with these documents, augmented with their _id
-});
-
-// atomic insertions
-// If there is a unique constraint on field 'a', this will fail
-dbConnector.insert([{ a: 5 }, { a: 42 }, { a: 5 }], function (err) {
-    // err is a 'uniqueViolated' error
-    // The database was not modified
-
 });*/
+

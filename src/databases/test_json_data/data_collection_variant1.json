@@ -1,0 +1,73 @@
+[
+  {
+    "ip": "234.90.55.101",
+    "userAgent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+    "viewedLandingPageAddress": "landing1.com/products1.html",
+
+    "clientX": 157,
+    "clientY": 1050,
+
+    "offsetX": 35,
+    "offsetY": 277,
+
+    "pageX": 641,
+    "pageY": 221,
+
+    "screenX": 653,
+    "screenY": 235
+  },
+
+  {
+    "ip": "34.123.43.51",
+    "userAgent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+    "viewedLandingPageAddress": "landing1.com/products1.html",
+
+    "clientX": 654,
+    "clientY": 210,
+
+    "offsetX": 11,
+    "offsetY": 244,
+
+    "pageX": 531,
+    "pageY": 321,
+
+    "screenX": 335,
+    "screenY": 277
+  },
+
+  {
+    "ip": "34.123.43.51",
+    "userAgent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36",
+    "viewedLandingPageAddress": "landing1.com/products1.html",
+
+    "clientX": 343,
+    "clientY": 25,
+
+    "offsetX": 543,
+    "offsetY": 200,
+
+    "pageX": 341,
+    "pageY": 761,
+
+    "screenX": 783,
+    "screenY": 345
+  },
+
+  {
+    "ip": "45.211.124.90",
+    "userAgent": "Googlebot/2.1 (+http://www.google.com/bot.html)",
+    "viewedLandingPageAddress": "landing1.com/contacnts.html",
+
+    "clientX": 12,
+    "clientY": 12,
+
+    "offsetX": 0,
+    "offsetY": 0,
+
+    "pageX": 10,
+    "pageY": 0,
+
+    "screenX": 23,
+    "screenY": 42
+  }
+]

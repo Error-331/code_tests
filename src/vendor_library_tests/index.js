@@ -13,11 +13,11 @@ async function run() {
     //await moment();
 
     // functional libraries
-    //await sanctuary();
-    await fluture();
+    await sanctuary();
+    //await fluture();
     //await lodash();
     //await ramda();
-    await mori();
+   // await mori();
 }
 
 run();
