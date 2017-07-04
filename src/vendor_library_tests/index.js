@@ -8,16 +8,21 @@ import lodash from './functional/lodash';
 import ramda from './functional/ramda';
 import mori from './functional/mori';
 
+import flutureSanctuary from './functional/fluture_sanctuary';
+
 async function run() {
     // date libraries
     //await moment();
 
     // functional libraries
-    await sanctuary();
+    //await sanctuary();
     //await fluture();
     //await lodash();
     //await ramda();
    // await mori();
+
+    // functional libraries combinations
+    await flutureSanctuary();
 }
 
 run();

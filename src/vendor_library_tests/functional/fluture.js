@@ -1,7 +1,6 @@
 'use strict';
 
 import Future from 'fluture';
-import S from 'sanctuary';
 
 export default async () => {
 
