@@ -12,6 +12,7 @@ import symbols from './fundamentals/symbols';
 import generators from './fundamentals/iterators/generators';
 
 import objectsBase from './fundamentals/objects/base';
+import checkIfPropertyExist from './fundamentals/objects/check_if_property_exist';
 import reflection from './fundamentals/objects/reflection';
 
 import combinators from './functional/combinators';
@@ -36,7 +37,7 @@ async function run() {
    // await numberStringOrder();
 
     //await hoistingGeneral();
-    await modules();
+    //await modules();
 
     //await templateStrings();
     //await symbols();
@@ -46,6 +47,7 @@ async function run() {
 
     // fundamentals (objects)
     //await objectsBase();
+    await checkIfPropertyExist();
     //await reflection();
 
     // functional programming (base)

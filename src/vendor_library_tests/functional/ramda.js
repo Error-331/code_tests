@@ -73,6 +73,9 @@ export default async () => {
         [x => _.isUndefined(x.testProp4), x => '3']
     ]);
 
+    const numbersArray1 = [1, 5, 2, 10, 12];
+    const numbersArray2 = [5, 12, 44, 25];
+
     console.log('"Ramda" library tests');
     console.log('=====================');
 
@@ -157,6 +160,18 @@ export default async () => {
     console.log('squaredDate("January 1, 2014") -', squaredDate("January 1, 2014"));
 
     console.log('');
+    console.log('Intersection examples:');
+    console.log('');
+
+    console.log('R.intersection(numbersArray1, numbersArray2) -', R.intersection(numbersArray1, numbersArray2));
+    console.log('R.intersection(numbersArray2, numbersArray1) -', R.intersection(numbersArray2, numbersArray1));
+
+    console.log('');
+    console.log('Difference examples:');
+    console.log('');
+
+    console.log('R.difference(numbersArray1, numbersArray2) -', R.difference(numbersArray1, numbersArray2));
+    console.log('R.difference(numbersArray2, numbersArray1) -', R.difference(numbersArray2, numbersArray1));
 
     console.log('');
     console.log('--------------------------------------------------------');
