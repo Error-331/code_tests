@@ -46,8 +46,8 @@ async function run() {
    // await generators();
 
     // fundamentals (objects)
-    //await objectsBase();
-    await checkIfPropertyExist();
+    await objectsBase();
+    //await checkIfPropertyExist();
     //await reflection();
 
     // functional programming (base)

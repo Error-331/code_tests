@@ -11,6 +11,30 @@ export default async () => {
         testObj = {testProp: 2};
     }
 
+    function testClass1() {
+        this.testProp1 = 'test_prop1_val1';
+    }
+
+    testClass1.testStaticProp1 = 'test_static_prop_val1';
+
+    testClass1.testStaticMethod1 = function() {
+        console.log('this.testProp1 -', this.testProp1);
+        console.log('this.testStaticProp1 -', this.testStaticProp1);
+    };
+
+    function testClass2() {
+        this.testProp1 = 'test_prop1_val1';
+    }
+
+    testClass2.testStaticProp1 = 'test_static_prop_val1';
+
+    testClass2.testStaticMethod1 = function() {
+        console.log('this.testProp1 -', this.testProp1);
+        console.log('this.testStaticProp1 -', this.testStaticProp1);
+    };
+
+    testClass2.prototype.testStaticProp1 = 'test_prop_val1';
+
     console.log('Investigation of object basics');
     console.log('==============================');
 
@@ -38,6 +62,46 @@ export default async () => {
 
     let testObject2 = {testObject2Prop1, testObject2Prop2, testObject2Prop3};
     console.log(testObject2);
+
+    console.log('');
+    console.log('Object(class) static prop/method');
+    console.log('--------------------------------');
+    console.log('');
+
+    const testObject3 = new testClass1();
+
+    console.log('testObject3.testStaticProp1  -', testObject3.testStaticProp1 );
+    console.log('testClass1.testStaticProp1  -', testClass1.testStaticProp1 );
+
+    console.log('');
+
+    console.log('testObject3.testStaticMethod1 -', testObject3.testStaticMethod1);
+    console.log('testClass1.testStaticProp1  -', testClass1.testStaticMethod1);
+
+    console.log('');
+    console.log('testClass1.testStaticMethod1():');
+    console.log('');
+
+    testClass1.testStaticMethod1();
+
+    console.log('');
+    console.log('');
+
+    const testObject4 = new testClass2();
+
+    console.log('testObject4.testStaticProp1  -', testObject4.testStaticProp1 );
+    console.log('testClass2.testStaticProp1  -', testClass2.testStaticProp1 );
+
+    console.log('');
+
+    console.log('testObject4.testStaticMethod1 -', testObject4.testStaticMethod1);
+    console.log('testClass2.testStaticProp1  -', testClass2.testStaticMethod1);
+
+    console.log('');
+    console.log('testClass2.testStaticMethod1():');
+    console.log('');
+
+    testClass2.testStaticMethod1();
 
     console.log('');
     console.log('--------------------------------------------------------');
