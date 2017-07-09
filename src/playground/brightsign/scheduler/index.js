@@ -9,6 +9,7 @@ import recurringEndlessEverydayPresentations2 from './test_data/recurring_endles
 import realPresentationsData1 from './test_data/real_presentations_data1.json';
 import realPresentationsData2 from './test_data/real_presentations_data2.json';
 import realPresentationsData3 from './test_data/real_presentations_data3.json';
+import realPresentationsData4 from './test_data/real_presentations_data4.json';
 
 export default async () => {
     console.log('BrightSign scheduler problem');
@@ -18,10 +19,10 @@ export default async () => {
     //targetTimeZone(pin): "EST"
     //reportedTimeZone(pin): "EST"
 
-    const startDate1String = '2017-03-05T00:00:00';
+    const startDate1String = '2017-07-09T00:00:00';
     const endDate1String = '2017-03-08T00:00:00';
 
-    const foundFixedDatePresentations1 = findAndPreparePresentationsForWeekSchedulerFromSunday(startDate1String, recurringEndlessEverydayPresentations2);
+    const foundFixedDatePresentations1 = findAndPreparePresentationsForWeekSchedulerFromSunday(startDate1String, realPresentationsData4);
 
     console.log(foundFixedDatePresentations1);
 
