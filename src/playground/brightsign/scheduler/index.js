@@ -10,6 +10,7 @@ import realPresentationsData1 from './test_data/real_presentations_data1.json';
 import realPresentationsData2 from './test_data/real_presentations_data2.json';
 import realPresentationsData3 from './test_data/real_presentations_data3.json';
 import realPresentationsData4 from './test_data/real_presentations_data4.json';
+import realPresentationsData5 from './test_data/real_presentations_data5_with_interrupt_scheduling.json';
 
 export default async () => {
     console.log('BrightSign scheduler problem');
@@ -18,11 +19,12 @@ export default async () => {
 
     //targetTimeZone(pin): "EST"
     //reportedTimeZone(pin): "EST"
+    //87071
 
-    const startDate1String = '2017-07-09T00:00:00';
-    const endDate1String = '2017-03-08T00:00:00';
+    const startDate1String = '2017-07-10T00:00:00';
+    const endDate1String = '2017-07-11T00:00:00';
 
-    const foundFixedDatePresentations1 = findAndPreparePresentationsForWeekSchedulerFromSunday(startDate1String, realPresentationsData4);
+    const foundFixedDatePresentations1 = preparePresentationsForScheduler(startDate1String, endDate1String, realPresentationsData5);
 
     console.log(foundFixedDatePresentations1);
 
