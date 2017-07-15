@@ -37,7 +37,7 @@ async function run() {
    // await numberStringOrder();
 
     //await hoistingGeneral();
-    //await modules();
+    await modules();
 
     //await templateStrings();
     //await symbols();
@@ -46,7 +46,7 @@ async function run() {
    // await generators();
 
     // fundamentals (objects)
-    await objectsBase();
+    //await objectsBase();
     //await checkIfPropertyExist();
     //await reflection();
 
