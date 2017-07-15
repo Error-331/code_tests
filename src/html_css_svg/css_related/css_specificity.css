@@ -1,0 +1,105 @@
+.container {
+    margin: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.exampleContainer1 {
+    background-color: red;
+}
+
+.exampleContainer1 {
+    background-color: yellow;
+}
+
+.exampleContainer2 {
+    background-color: green;
+}
+
+#exampleContainer3 {
+    background-color: firebrick;
+}
+
+.exampleContainer3 {
+    background-color: gold;
+}
+
+div[data-container="exampleContainer4"] {
+    background-color: #0074d9;
+}
+
+.exampleContainer4 {
+    background-color: silver;
+}
+
+div {
+    background-color: purple;
+}
+
+.exampleContainer5 {
+    background-color: goldenrod;
+}
+
+.exampleContainer6 {
+    background-color: brown;
+}
+
+#exampleContainer6 {
+    background-color: blue;
+}
+
+.exampleContainer7 {
+    background-color: brown;
+}
+
+.exampleContainer8 {
+    background-color: yellow;
+}
+
+#exampleContainer8 {
+    background-color: azure;
+}
+
+.exampleContainer9 {
+    background-color: red !important;
+}
+
+.exampleContainer10 {
+    background-color: cadetblue !important;
+}
+
+#exampleContainer10 {
+    background-color: red;
+}
+
+.exampleContainer11 i {
+    font-size: 35px;
+}
+
+.exampleContainer11 {
+    background-color: darkolivegreen;
+    font-size: 10px !important;
+}
+
+.exampleContainer12 {
+    background-color: cadetblue;
+}
+
+.exampleContainer12 i
+{
+    color: firebrick;
+}
+
+html i
+{
+    color: gray;
+}
+
+.exampleContainer13 {
+
+}
+
+#exampleContainer13
+{
+    background-color: gray !important;
+}
