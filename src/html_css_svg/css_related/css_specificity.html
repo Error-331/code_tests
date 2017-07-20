@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS specificity</title>
+
+    <style>
+
+        .exampleContainer5 {
+            background-color: gray;
+        }
+
+        #exampleContainer6 {
+            background-color: wheat;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css_specificity.css">
+</head>
+<body>
+    <div class="container exampleContainer1">
+        Last selector wins (class - external file)
+    </div>
+
+    <div class="container exampleContainer2">
+        Directly targeted element wins (class - external)
+    </div>
+
+    <div id="exampleContainer3" class="container exampleContainer3">
+        Directly targeted element wins (class - external)
+    </div>
+
+    <div data-container="exampleContainer4" class="container exampleContainer4">
+        Directly targeted element wins (class - external)
+    </div>
+
+    <div class="container exampleContainer5">
+        Document style not wins (internal - external - class)
+    </div>
+
+    <div id="exampleContainer6" class="container exampleContainer6">
+        Document style not wins (internal - external - id)
+    </div>
+
+    <div class="container exampleContainer7" style="background-color: wheat">
+        Inline style wins (inline - external - class)
+    </div>
+
+    <div id="exampleContainer8" class="container exampleContainer8" style="background-color: darkolivegreen">
+        Inline style wins (inline - external - id)
+    </div>
+
+    <div id="exampleContainer9" class="container exampleContainer9" style="background-color: darkmagenta">
+        Important! wins over inline style (external - important - inline)
+    </div>
+
+    <div id="exampleContainer10" class="container exampleContainer10" style="background-color: fuchsia">
+        External class with Important! wins over id and inline style
+    </div>
+
+    <div class="container exampleContainer11">
+        <i>More specific style wins over more general style with Important!</i>
+    </div>
+
+    <div class="container exampleContainer12">
+        <i>"html i" > ".exampleContainer12 i"</i>
+    </div>
+
+    <div id="exampleContainer13" class="container exampleContainer13" style="background-color: yellow !important;">
+        Inline Important! wins over external Important!
+    </div>
+
+
+</body>
+</html>
