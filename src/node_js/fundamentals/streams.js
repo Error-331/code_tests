@@ -1,8 +1,8 @@
 'use strict';
 
-// TODO version 8 futures
 const {Writable, Readable} = require('stream');
 
+// stream classes definition
 class WritableStreamClass1 extends Writable {
     constructor(options) {
         super(options);
@@ -46,6 +46,16 @@ class WritableStreamClass1 extends Writable {
         }
     }
 
+    _final(callback) {
+        console.log(`Stream '${this._streamName}' final handler called`);
+        callback();
+    }
+
+    _destroy(error, callback) {
+        console.log(`Stream '${this._streamName}' destroyed with followng error - '${error.message}'`);
+        callback(error);
+    }
+
     getStreamName() {
         return this._streamName;
     }
@@ -59,17 +69,8 @@ class ReadableStreamClass1 extends Readable {
     }
 }
 
-const writableStream1 = new WritableStreamClass1({'name': 'writable_stream1'});
-
-writableStream1.on('error', function(error) {
-    console.error(`Error '${error.message}' while writing to stream ${this.getStreamName()}`);
-});
-
-writableStream1.on('finish', function() {
-    console.log(`Stream '${this.getStreamName()}' finish receiving data`);
-});
-
-const writeCharacters = (writeCount, stream) => {
+// helper functions definitions
+const writeCharacters1 = (writeCount, stream) => {
     let isDrained = true;
 
     const possibleCharacters = ['a', 'z', 'c', 'd', 'h'];
@@ -95,9 +96,45 @@ const writeCharacters = (writeCount, stream) => {
     }
 };
 
-writeCharacters(100, writableStream1);
+module.exports = async () => {
+    console.log('NodeJS streams examples');
+    console.log('=======================');
+    console.log('');
 
-const writableStream2 = new WritableStreamClass1({'name': 'writable_stream2'});
+    await new Promise((resolvePromise, rejectPromise) => {
+        let quiteConsole = false;
+
+        const writableStream1 = new WritableStreamClass1({'name': 'writable_stream1'});
+
+        writableStream1.on('close', function() {
+            console.log('close');
+        });
+
+        writableStream1.on('error', function(error) {
+            console.error(`Error '${error.message}' while writing to stream ${this.getStreamName()}`);
+        });
+
+        writableStream1.on('finish', function() {
+            console.log(`Stream '${this.getStreamName()}' finish receiving data`);
+
+            writableStream1.destroy(new Error('test error for destroy'));
+            quiteConsole = true;
+
+            resolvePromise();
+        });
+
+        writeCharacters1(100, writableStream1);
+    });
+
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
+};
+
+
+//writableStream1.destroy('ff');
+
+/*const writableStream2 = new WritableStreamClass1({'name': 'writable_stream2'});
 
 writableStream2.on('error', function(error) {
     console.error(`Error '${error.message}' while writing to stream ${this.getStreamName()}`);
@@ -137,5 +174,5 @@ const writeCharactersWithCork = (writeCount, stream) => {
 
 writableStream2.cork();
 writeCharactersWithCork(100, writableStream2);
-writableStream2.uncork();
+writableStream2.uncork();*/
 

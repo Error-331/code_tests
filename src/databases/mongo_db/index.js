@@ -70,8 +70,7 @@ module.exports = async () => {
                         });
                     });
 
-                    db.close();
-                    mongoDBProcess.kill(9);
+                    db.close(_ => mongoDBProcess.kill(9));
                 });
             }
         });
