@@ -1,5 +1,6 @@
 'use strict';
 
+const minimist = require('minimist');
 const {spawn} = require('child_process');
 const fs = require('fs');
 const rimraf = require('rimraf');
@@ -7,7 +8,7 @@ const rimraf = require('rimraf');
 const MongoClient = require('mongodb').MongoClient;
 
 const testDataVariant1 = require('./../test_json_data/data_collection_variant1.json');
-const dbDirPath = './mongo_db/db_files';
+const dbDirPath = './src/databases/mongo_db/db_files';
 
 module.exports = async () => {
 
@@ -18,7 +19,11 @@ module.exports = async () => {
     fs.mkdirSync(dbDirPath);
 
     await new Promise((resolvePromise, rejectPromise) => {
-        const mongoDBProcess = spawn('c:\\Program Files\\MongoDB\\Server\\3.4\\bin\\mongod.exe', ['--dbpath', dbDirPath, '--port', '27017']);
+        const cmdArgs = minimist(process.argv.slice(2));
+        const currentOS = cmdArgs.os.toLowerCase();
+
+        const mongodParams = ['--dbpath', dbDirPath, '--port', '27017'];
+        const mongoDBProcess = currentOS === 'windows' ? spawn('c:\\Program Files\\MongoDB\\Server\\3.4\\bin\\mongod.exe',  mongodParams) : spawn('mongod',  mongodParams);
 
         mongoDBProcess.stderr.on('data', (data) => {
             console.log(`stderr: ${data}`);
