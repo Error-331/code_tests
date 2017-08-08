@@ -76,6 +76,10 @@ export default async () => {
         testMethod1(testParam1: number, testParam2: number): number
     }
 
+    interface ConstructorInterface1 {
+        new (testPram1: string, testParam2: number): TestInterface9
+    }
+
     // interface usage example 11
     interface TestInterface10 {
         testProp1: string
@@ -128,7 +132,8 @@ export default async () => {
     }
 
     // example of how interface can extend class
-    let testClass1Obj = new TestClass1('testClass1Obj1', 1);
+    let testClassVar1:ConstructorInterface1 = TestClass1;
+    let testClass1Obj = new testClassVar1('testClass1Obj1', 1);
 
     class TestClass2 {
         private testProp1: number
