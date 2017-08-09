@@ -22,7 +22,7 @@
     "devDependencies": {
         "minimist": "^1.2.0",
         "rimraf": "^2.6.1",
-        "typescript": "^2.1.4",
+        "typescript": "^2.1.5",
         "tslib": "^1.5.0",
         "typings": "^2.1.0",
         "elm": "^0.18.0",
