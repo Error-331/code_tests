@@ -134,6 +134,21 @@ export default async () => {
     console.log('function voidFunc2(): void {console.log("void func 2");}');
 
     console.log('');
+
+    class TestClass1 {
+        public testProp1: string;
+        public testProp2: number;
+    }
+
+    const objectsArray1: TestClass1[] = [
+        {testProp1: 'testVal1', testProp2: 12},
+        {testProp1: 'testVal2', testProp2: 331},
+        {testProp1: 'testVal3', testProp2: 417}
+    ];
+
+    console.log('objectsArray1 (TestClass1[]):', objectsArray1);
+
+    console.log('');
     console.log('--------------------------------------------------------');
     console.log('');
 }
