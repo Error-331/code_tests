@@ -65,11 +65,11 @@ module.exports = async () => {
 
         mongoDBProcess.stdout.on('data', (data) => {
             if (data.toString().indexOf('waiting for connections on port 27017') !== -1) {
-                console.log('Mmongoose" MongoDB object modeling tests');
-                console.log('========================================');
+                console.log('Mongoose" MongoDB object modeling tests');
+                console.log('=======================================');
                 console.log('');
 
-               const dbConnection = mongoose.createConnection('mongodb://localhost:27017/mongooseExamples');
+                const dbConnection = mongoose.createConnection('mongodb://localhost:27017/mongooseExamples');
 
                 dbConnection.on('error', console.error.bind(console, 'connection error:'));
 

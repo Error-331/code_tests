@@ -7,8 +7,8 @@ const mongoose = require('./mongoose');
 async function run() {
     // NeDB
     //await neDB();
-    await mongoDB();
-    //await mongoose();
+    //await mongoDB();
+    await mongoose();
 }
 
 run();
