@@ -76,6 +76,10 @@ export default async () => {
         testMethod1(testParam1: number, testParam2: number): number
     }
 
+    interface ConstructorInterface1 {
+        new (testPram1: string, testParam2: number): TestInterface9
+    }
+
     // interface usage example 11
     interface TestInterface10 {
         testProp1: string
@@ -95,7 +99,12 @@ export default async () => {
     let testObj4 = {testProp14: 'testProp1Value'};
     let testObj5: TestInterface4 = {testProp1: 331, testProp2: 42, testProp3: [1, 2, 3]};
     let testObj6 = {testProp1: 2, testProp4: 33};
-    let testObj7: TestInterface12 = {testProp1: 'testPropValue1', testProp2: 12, testProp3: 33}
+    let testObj7: TestInterface12 = {testProp1: 'testPropValue1', testProp2: 12, testProp3: 33};
+    let testObj8 = <TestInterface12>{};
+
+    testObj8.testProp1 = 'testPropValue1';
+    testObj8.testProp2 = 13;
+    testObj8.testProp3 = 26;
 
     let testFunction5: TestInterface6;
     testFunction5 = (testParam1: number, testParam2: number) => {
@@ -123,7 +132,8 @@ export default async () => {
     }
 
     // example of how interface can extend class
-    let testClass1Obj = new TestClass1('testClass1Obj1', 1);
+    let testClassVar1:ConstructorInterface1 = TestClass1;
+    let testClass1Obj = new testClassVar1('testClass1Obj1', 1);
 
     class TestClass2 {
         private testProp1: number
@@ -142,6 +152,20 @@ export default async () => {
     }
 
     // class TestClass5 implements TestInterface13 {} - cannot be accomplished
+
+    // example of hybrid types (interface)
+    interface TestInterface14 {
+        (testProp1: string): number;
+        testProp2: Date;
+        testFunction1(): void;
+    }
+
+    function testFunction6(): TestInterface14 {
+        let testVar1 = <TestInterface14>function (testProp1: string) { };
+        testVar1.testProp2 = new Date();
+        testVar1.testFunction1 = function () { };
+        return testVar1;
+    }
 
     console.log('TypeScript interfaces examples');
     console.log('==============================');
@@ -172,6 +196,10 @@ export default async () => {
     console.log('');
 
     console.log('Example output of object that implements interface that inherits from multiple interfaces', testObj7);
+    console.log('');
+
+    console.log('Example output of object to which was assigned empty object with specific interface and then properties to this object were assigned', testObj8);
+    console.log('');
 
     console.log('');
     console.log('--------------------------------------------------------');
