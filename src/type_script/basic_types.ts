@@ -49,6 +49,16 @@ export default async () => {
     console.log('let anyVar3: any = "str1";');
 
     console.log('');
+    console.log('null/undefined vars declaration:');
+    console.log('');
+
+    let undefinedVar1: undefined = undefined;
+    let nullVar1: null = null;
+
+    console.log('let undefinedVar1: undefined = undefined;');
+    console.log('let nullVar1: null = null;');
+
+    console.log('');
     console.log('Array vars declaration:');
     console.log('');
 
@@ -119,6 +129,21 @@ export default async () => {
     console.log('let currentDialect2 = Dialects[1];');
 
     console.log('');
+
+    class TestClass1 {
+        public testProp1: string;
+        public testProp2: number;
+    }
+
+    const objectsArray1: TestClass1[] = [
+        {testProp1: 'testVal1', testProp2: 12},
+        {testProp1: 'testVal2', testProp2: 331},
+        {testProp1: 'testVal3', testProp2: 417}
+    ];
+
+    console.log('objectsArray1 (TestClass1[]):', objectsArray1);
+
+    console.log('');
     console.log('Declaration of function that returns void:');
     console.log('');
 
@@ -134,19 +159,14 @@ export default async () => {
     console.log('function voidFunc2(): void {console.log("void func 2");}');
 
     console.log('');
+    console.log('Declaration of function that never returns value:');
+    console.log('');
 
-    class TestClass1 {
-        public testProp1: string;
-        public testProp2: number;
+    function neverFunc1(message: string): never {
+        throw new Error(message);
     }
 
-    const objectsArray1: TestClass1[] = [
-        {testProp1: 'testVal1', testProp2: 12},
-        {testProp1: 'testVal2', testProp2: 331},
-        {testProp1: 'testVal3', testProp2: 417}
-    ];
-
-    console.log('objectsArray1 (TestClass1[]):', objectsArray1);
+    console.log('function neverFunc1(message: string): never {throw new Error(message);}');
 
     console.log('');
     console.log('--------------------------------------------------------');
