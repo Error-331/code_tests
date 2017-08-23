@@ -5,6 +5,7 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
     "allowJs": true,
     "outDir": "dist"
   },
