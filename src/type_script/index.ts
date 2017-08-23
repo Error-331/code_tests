@@ -1,7 +1,6 @@
 'use strict';
 
-// TODO: --noEmitHelpers , tslib, --importHelpers - if needed
-import basicTypes from './basic_types';
+//import basicTypes from './basic_types';
 //import interfaces from './interfaces';
 //import classes from './classes';
 //import functions from './functions';
@@ -12,6 +11,7 @@ import enums from './enums';
 //import decorators from './decorators';
 
 async function run() {
+    // fundamentals
     //await basicTypes();
     //await interfaces();
     //await classes();
@@ -21,6 +21,9 @@ async function run() {
     //await rest_spread();
     //await async_await();
     //await decorators();
+
+    // misc
+   // await jsonInclude();
 }
 
 run();
