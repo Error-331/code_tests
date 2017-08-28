@@ -8,6 +8,7 @@ import modules from './fundamentals/modules';
 
 import templateStrings from './fundamentals/strings/template_strings';
 import symbols from './fundamentals/symbols';
+import builtInFunctions from './fundamentals/built_in_functions';
 
 import generators from './fundamentals/iterators/generators';
 
@@ -37,13 +38,14 @@ async function run() {
    // await numberStringOrder();
 
     //await hoistingGeneral();
-    await modules();
+    //await modules();
 
     //await templateStrings();
     //await symbols();
+    await builtInFunctions();
 
     // iterators
-   // await generators();
+    //await generators();
 
     // fundamentals (objects)
     //await objectsBase();
