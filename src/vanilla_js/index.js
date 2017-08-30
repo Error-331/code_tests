@@ -20,7 +20,7 @@ import combinators from './functional/combinators';
 import compose from './functional/compose';
 import basics from './functional/basics';
 import functor from './functional/functor';
-import monad from './functional/monad';
+//import monad from './functional/monad';
 import transducers from './functional/transducers';
 import lenses from './functional/lenses';
 
@@ -48,7 +48,7 @@ async function run() {
     //await generators();
 
     // fundamentals (objects)
-    //await objectsBase();
+    await objectsBase();
     //await checkIfPropertyExist();
     //await reflection();
 
