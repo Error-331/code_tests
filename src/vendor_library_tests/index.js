@@ -18,11 +18,11 @@ async function run() {
     //await sanctuary();
     //await fluture();
     //await lodash();
-    //await ramda();
+    await ramda();
    // await mori();
 
     // functional libraries combinations
-    await flutureSanctuary();
+    //await flutureSanctuary();
 }
 
 run();

@@ -21,6 +21,12 @@ export default async () => {
         testEnum3Val4 = 34
     }
 
+    const enum TestEnum4 {
+        testEnum4Prop1 = 'testEnum4Val1',
+        testEnum4Prop2 = 'testEnum4Val2',
+        testEnum4Prop3 = 'testEnum4Val4'
+    }
+
     console.log('Enums examples');
     console.log('==============');
     console.log('');
@@ -39,6 +45,12 @@ export default async () => {
     console.log(`TestEnum3.testEnum3Val1 = ${TestEnum3.testEnum3Val1}`);
     console.log(`TestEnum3.testEnum3Val2 = ${TestEnum3.testEnum3Val2}`);
     console.log(`TestEnum3.testEnum3Val4 = ${TestEnum3.testEnum3Val4}`);
+
+    console.log('');
+
+    console.log(`TestEnum4.testEnum4Prop1 = ${TestEnum4.testEnum4Prop1}`);
+    console.log(`TestEnum4.testEnum4Prop2 = ${TestEnum4.testEnum4Prop2}`);
+    console.log(`TestEnum4.testEnum4Prop3 = ${TestEnum4.testEnum4Prop3}`);
 
     console.log('');
     console.log('--------------------------------------------------------');

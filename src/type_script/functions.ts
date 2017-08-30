@@ -21,7 +21,7 @@ export default async () => {
             this.name = name;
         }
 
-        onBeforeRegister(this:void, registerNumber) {
+        onBeforeRegister(this:void, registerNumber): void {
             console.log('register', registerNumber);
         }
     }
@@ -42,13 +42,13 @@ export default async () => {
     };
 
     class VehicleRegister implements Register {
-        vehicleBeforeRegisterHandlers = [];
+        vehicleBeforeRegisterHandlers: any[] = [];
 
-        addBeforeRegisterListener(handler) {
+        addBeforeRegisterListener(handler): void {
             this.vehicleBeforeRegisterHandlers.push(handler)
         }
 
-        registerVehicles() {
+        registerVehicles(): void {
             this.vehicleBeforeRegisterHandlers.forEach((beforeCallback, index) => {
                 beforeCallback(index + 1);
             });
