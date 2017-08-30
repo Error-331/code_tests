@@ -7,12 +7,14 @@ import hoistingGeneral from './fundamentals/hoisting/hoisting_general';
 import modules from './fundamentals/modules';
 
 import templateStrings from './fundamentals/strings/template_strings';
+import regexp from './fundamentals/strings/regexp';
+
 import symbols from './fundamentals/symbols';
-import builtInFunctions from './fundamentals/built_in_functions';
+//import builtInFunctions from './fundamentals/built_in_functions';
 
 import generators from './fundamentals/iterators/generators';
 
-import objectsBase from './fundamentals/objects/base';
+//import objectsBase from './fundamentals/objects/base';
 import checkIfPropertyExist from './fundamentals/objects/check_if_property_exist';
 import reflection from './fundamentals/objects/reflection';
 
@@ -40,15 +42,18 @@ async function run() {
     //await hoistingGeneral();
     //await modules();
 
+    // strings
     //await templateStrings();
+    await regexp();
+
     //await symbols();
-    await builtInFunctions();
+    //await builtInFunctions();
 
     // iterators
     //await generators();
 
     // fundamentals (objects)
-    await objectsBase();
+    //await objectsBase();
     //await checkIfPropertyExist();
     //await reflection();
 
