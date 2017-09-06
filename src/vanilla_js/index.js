@@ -10,7 +10,7 @@ import templateStrings from './fundamentals/strings/template_strings';
 import regexp from './fundamentals/strings/regexp';
 
 import symbols from './fundamentals/symbols';
-//import builtInFunctions from './fundamentals/built_in_functions';
+import builtInFunctions from './fundamentals/built_in_functions';
 
 import generators from './fundamentals/iterators/generators';
 
@@ -44,10 +44,10 @@ async function run() {
 
     // strings
     //await templateStrings();
-    await regexp();
+    //await regexp();
 
     //await symbols();
-    //await builtInFunctions();
+    await builtInFunctions();
 
     // iterators
     //await generators();

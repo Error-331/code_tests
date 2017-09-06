@@ -1,33 +1,52 @@
+"use strict";
+
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
-const {SERVER_PORT, HTML_PAGES_DIRECTORY_NAME, RESOURCES_DIRECTORY_NAME} = require ('./js/constants');
+const {SERVER_PORT, HTML_PAGES_DIRECTORY_NAME, RESOURCES_DIRECTORY_NAME, FILE_EXTENSION_TO_MIME_TYPE} = require ('./js/constants');
 
-const commonResponse = `
-                       <!doctype html>
-                       <html>
-                        <head>
-                            <title>Hello world</title>
-                        </head>
-                        <body>
-                            <h1>Test server started</h1>
-                        </body>
-                       </html>
-                       `;
+const getMIMETypeForFileExtension = (fileExtension) => {
+    const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLocaleLowerCase()];
+    return fileMIMEType ? fileMIMEType : null;
+};
 
-function getFile(localPath, res) {
-// read the file in and return it, or return a 500 if it can't be read
-    fs.readFile(localPath, function(err, contents) {
-        if (!err) {
-// use defaults instead of res.writeHead()
-            res.end(contents);
-        } else {
-            res.writeHead(500);
-            res.end();
-        }
-    });
-}
+const extractFileExtensionFromPathParams = (pathParams) => {
+    const pathParamsCount = pathParams.length;
+
+    if (pathParamsCount === 0) {
+        return null;
+    }
+
+    const lastPathParam = pathParams[pathParamsCount - 1];
+    const requestedFileExtension = path.extname(lastPathParam);
+
+    return requestedFileExtension ? requestedFileExtension.substr(1) : null;
+};
+
+const extractFileNameFromPathParams = (pathParams) => {
+    const fileExtension = extractFileExtensionFromPathParams(pathParams);
+
+    if (fileExtension === null) {
+        return null;
+    }
+
+    const pathParamsCount = pathParams.length;
+
+    if (pathParamsCount === 0) {
+        return null;
+    }
+
+    const lastPathParam = pathParams[pathParamsCount - 1];
+    const fileName = path.basename(lastPathParam, `.${fileExtension}`);
+
+    return fileName ? fileName : null;
+};
+
+const serveErrorPage = (response, code = 500, message = '') => {
+    response.writeHead(code);
+    response.end(message);
+};
 
 const loadLocalFile = async (fileAbsolutePath) => {
     return new Promise((resolve, reject) => {
@@ -41,71 +60,144 @@ const loadLocalFile = async (fileAbsolutePath) => {
     });
 };
 
-const serveStaticFile = (request, response, pathParams, queryParams, fileName, fileExtension) => {
-    let pathToFile;
+const serverDataByURLParams = (request, response, pathParams, queryParams) => {
+    return new Promise(async (resolve, reject) => {
+        response.writeHead(200);
+        response.end('');
+        resolve();
+    });
 
-    if (fileExtension === 'html') {
-        pathToFile = `${__dirname}/${HTML_PAGES_DIRECTORY_NAME}/${fileName}.${fileExtension}`;
-    } else {
-        const pathParamsCopy = pathParams;
-        pathParams.pop();
-
-        const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
-        pathToFile = `${__dirname}/${RESOURCES_DIRECTORY_NAME}${pathToDirectory}${fileName}.${fileExtension}`;
-    }
-
-    const fileContents = await loadLocalFile(pathToFile);
-console.log(fileContents);
-    //console.log('path to file:', pathToFile);
 };
 
-const requestHandler = (request, response) => {
-    const requestURL = request.url.toLowerCase();
-    const decodedRequestURL = decodeURIComponent(requestURL);
-    const preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
+const serveStaticFileByURLParams = (request, response, pathParams, queryParams) => {
+        return new Promise(async (resolve, reject) => {
+            let pathToFile;
 
-    const [urlPathString, urlQueryString] = preparedRequestURL.split('?');
-    const urlPathParams = urlPathString.split('/');
-    const urlPathParamsCount = urlPathParams.length;
+            const fileExtension = extractFileExtensionFromPathParams(pathParams);
+            const fileName = extractFileNameFromPathParams(pathParams);
 
-    const lastPathParamValue = urlPathParams[urlPathParamsCount - 1];
-    const requestedFileExtension = path.extname(lastPathParamValue);
+            const fileMIMEType = getMIMETypeForFileExtension(fileExtension);
 
-    if (requestedFileExtension) {
-        const requestedFileName = path.basename(lastPathParamValue, requestedFileExtension);
-        const preparedRequestedFileExtension = requestedFileExtension.substring(1);
-        console.log('buzz', requestedFileExtension, preparedRequestedFileExtension);
+            if (fileMIMEType === null) {
+                const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
 
-        serveStaticFile(request, response, urlPathParams, urlQueryString, requestedFileName, preparedRequestedFileExtension);
+                serveErrorPage(response, 400, errorMessage);
+                return reject(new Error(errorMessage));
+            }
+
+            if (fileExtension === 'html') {
+                pathToFile = `${__dirname}/${HTML_PAGES_DIRECTORY_NAME}/${fileName}.${fileExtension}`;
+
+            } else {
+                const pathParamsCopy = pathParams;
+                pathParams.pop();
+
+                const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
+                pathToFile = `${__dirname}/${RESOURCES_DIRECTORY_NAME}${pathToDirectory}${fileName}.${fileExtension}`;
+            }
+
+            let fileContents;
+
+            try {
+                fileContents = await loadLocalFile(pathToFile);
+            } catch(error) {
+                if (error.code === 'ENOENT') {
+                    serveErrorPage(response, 400, `Cannot find file: "${fileName}.${fileExtension}"`);
+                } else {
+                    serveErrorPage(response, 500, `An internal server error occurred while the file "${fileName}.${fileExtension}" was being loaded`);
+                }
+
+                return reject(error);
+            }
+
+            response.writeHead(200, {
+                'Content-Type': fileMIMEType,
+                'Content-Length': fileContents.length
+            });
+
+            response.end(fileContents);
+            resolve();
+        });
+};
+
+const routeRequest = async (request, response, pathParams, queryParams) => {
+    const pathParamsCopy = pathParams.slice();
+
+    if (pathParamsCopy.length === 0) {
+        pathParamsCopy.push('index.html');
     }
 
+    try {
+        if (extractFileExtensionFromPathParams(pathParamsCopy)) {
+            await serveStaticFileByURLParams (request, response, pathParamsCopy, queryParams);
+        } else {
+            await serverDataByURLParams(request, response, pathParamsCopy, queryParams);
+        }
+    } catch(error) {
+        console.log(error);
+    }
+};
 
-   // var filename = path.basename(req.url) || "index.html",
-     //   ext = path.extname(filename),
-// __dirname is a built-in variable containing the path where the code is running
-       // localPath = __dirname + "/public/";
+const parseURLQueryString = (queryString) => {
+    if (!queryString) {
+        return [];
+    }
 
- /*   if (ext == ".html") {
-        localPath += filename;
-// verify that this file actually exists and load it, or else return a 404
-        path.exists(localPath, function(exists) {
-            if (exists) {
-                getFile(localPath, res);
-            } else {
-                res.writeHead(404);
-                res.end();
-            }
-        });
+    const queryFragments = queryString.split('&');
+    return queryFragments.reduce((paramsObj, paramPair) => {
+        const params = paramPair.split('=');
+
+        if (params.length !== 2) {
+            return paramsObj;
+        }
+
+        const [paramKey, paramValue] = params;
+
+        paramsObj[paramKey] = paramValue;
+        return paramsObj
+    }, {});
+};
+
+const parseURLPathParams = (pathString) => {
+    return pathString ? pathString.split('/').map(param => decodeURIComponent(param)) : [];
+};
+
+const requestHandler = async (request, response) => {
+    const requestURL = request.url.toLowerCase();
+    const decodedRequestURL = decodeURI(requestURL);
+    const preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
+
+    const [urlPathString, urlQueryString] = preparedRequestURL ? preparedRequestURL.split('?') : ['', ''];
+    const urlPathParams = parseURLPathParams(urlPathString);
+    const urlQueryParams = parseURLQueryString(urlQueryString);
+
+    await routeRequest(request, response, urlPathParams, urlQueryParams);
+
+
+
+    //
+
+
+
+
+  /*  if (requestedFileExtension) {
+        const requestedFileName = path.basename(lastPathParamValue, requestedFileExtension);
+        const preparedRequestedFileExtension = requestedFileExtension.substring(1);
+
+        try {
+            await serveStaticFile(request, response, urlPathParams, urlQueryString, requestedFileName, preparedRequestedFileExtension);
+        } catch (error) {
+
+        }
     }*/
 
-
-    response.writeHead(200, {
+    /*response.writeHead(200, {
         'Content-Type': 'text/html',
         'Content-Length': commonResponse.length
     });
 
     console.log(`Requested URL: ${request.url}`);
-    response.end(commonResponse);
+    response.end(commonResponse);*/
 };
 
 const server = http.createServer(requestHandler);
