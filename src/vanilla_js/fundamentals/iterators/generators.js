@@ -7,7 +7,7 @@ export default async () => {
     console.log('================');
     console.log('');
 
-    function* exampleGeneratorFunction1()
+   /* function* exampleGeneratorFunction1()
     {
         yield 1;
         yield 2;
@@ -138,10 +138,10 @@ export default async () => {
     console.log('');
 
     let yieldedValues1 = [...exampleGeneratorFunction1()];
-    console.log('yielded values -', yieldedValues1);
+    console.log('yielded values -', yieldedValues1);*/
 
     console.log('');
-    console.log('Example usage of generators and promises:');
+    console.log('Examples usage of generators and promises');
     console.log('');
 
     const longSum = (param1, param2) => new Promise((resolve) => {
@@ -152,15 +152,29 @@ export default async () => {
         setTimeout(() => resolve(param1 - param2), 1000);
     });
 
-    const asyncFunc = generateSync(function* () {
+    const asyncFunc1 = generateSync(function* () {
         const result1 = yield longSum(...arguments);
         const result2 = yield longSubtract(...arguments);
 
         yield result1 * result2;
     });
 
+    const asyncFunc2 = generateSync(function* () {
+        const result1 = yield longSum(...arguments);
+        throw('some error 1');
+        const result2 = yield longSubtract(...arguments);
 
-    await asyncFunc(10, 20).then(val => console.log('final value -', val));
+        yield result1 * result2;
+    });
+
+
+    console.log('');
+    console.log('Normal flow:');
+    await asyncFunc1(10, 20).then(val => console.log('final value -', val)).catch(error => {console.log('Сaught error:', error);});
+    console.log('');
+
+    console.log('Error thrown:');
+    await asyncFunc2(10, 20).then(val => console.log('final value -', val)).catch(error => {console.log('Сaught error:', error);});
     console.log('');
 
     console.log('--------------------------------------------------------');

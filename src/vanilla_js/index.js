@@ -47,10 +47,10 @@ async function run() {
     //await regexp();
 
     //await symbols();
-    await builtInFunctions();
+    //await builtInFunctions();
 
     // iterators
-    //await generators();
+    await generators();
 
     // fundamentals (objects)
     //await objectsBase();

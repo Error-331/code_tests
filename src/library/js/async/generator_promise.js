@@ -7,24 +7,31 @@ export const isPromise = (obj) => {
     return typeof obj !== 'undefined' && typeof obj.then === 'function'
 };
 
-export const next = (iterable, callback, prevVal = undefined) => {
-    const item = iterable.next(prevVal);
+export const next = (iterable, resolveCallback, rejectCallback, prevVal = undefined) => {
+    let item;
+
+    try {
+        item = iterable.next(prevVal);
+    } catch(error) {
+        return rejectCallback(error)
+    }
+
     const currentValue = item.value;
 
     if (item.done) {
-        return callback(prevVal);
+        return resolveCallback(prevVal);
     }
 
     if (isPromise(currentValue)) {
         currentValue.then(value => {
-            setImmediate(() => next(iterable, callback, value));
-        });
+            next(iterable, resolveCallback, rejectCallback, value);
+        }).catch(error => rejectCallback(error));
     } else {
-        setImmediate(() => next(iterable, callback, currentValue));
+        next(iterable, resolveCallback, rejectCallback, currentValue);
     }
 };
 
 export const generateSync = (generatorFunction) =>
-    (...args) => new Promise(resolve => {
-        next(generatorFunction(...args), value => resolve(value));
+    (...args) => new Promise((resolve, reject) => {
+        next(generatorFunction(...args), value => resolve(value), reject);
     });
