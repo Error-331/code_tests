@@ -4,7 +4,7 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
-const {SERVER_PORT, HTML_PAGES_DIRECTORY_NAME, RESOURCES_DIRECTORY_NAME, FILE_EXTENSION_TO_MIME_TYPE} = require ('./js/constants');
+const {SERVER_PORT, HTML_PAGES_DIRECTORY_PATH, RESOURCES_DIRECTORY_PATH, FILE_EXTENSION_TO_MIME_TYPE} = require ('./js/constants');
 
 const getMIMETypeForFileExtension = (fileExtension) => {
     const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLocaleLowerCase()];
@@ -70,54 +70,54 @@ const serverDataByURLParams = (request, response, pathParams, queryParams) => {
 };
 
 const serveStaticFileByURLParams = (request, response, pathParams, queryParams) => {
-        return new Promise(async (resolve, reject) => {
-            let pathToFile;
+    return new Promise(async (resolve, reject) => {
+        let pathToFile;
 
-            const fileExtension = extractFileExtensionFromPathParams(pathParams);
-            const fileName = extractFileNameFromPathParams(pathParams);
+        const fileExtension = extractFileExtensionFromPathParams(pathParams);
+        const fileName = extractFileNameFromPathParams(pathParams);
 
-            const fileMIMEType = getMIMETypeForFileExtension(fileExtension);
+        const fileMIMEType = getMIMETypeForFileExtension(fileExtension);
 
-            if (fileMIMEType === null) {
-                const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
+        if (fileMIMEType === null) {
+            const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
 
-                serveErrorPage(response, 400, errorMessage);
-                return reject(new Error(errorMessage));
-            }
+            serveErrorPage(response, 400, errorMessage);
+            return reject(new Error(errorMessage));
+        }
 
-            if (fileExtension === 'html') {
-                pathToFile = `${__dirname}/${HTML_PAGES_DIRECTORY_NAME}/${fileName}.${fileExtension}`;
+        if (fileExtension === 'html') {
+            pathToFile = `${__dirname}/${HTML_PAGES_DIRECTORY_PATH}/${fileName}.${fileExtension}`;
 
+        } else {
+            const pathParamsCopy = pathParams;
+            pathParams.pop();
+
+            const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
+            pathToFile = `${__dirname}/${RESOURCES_DIRECTORY_PATH}${pathToDirectory}${fileName}.${fileExtension}`;
+        }
+
+        let fileContents;
+
+        try {
+            fileContents = await loadLocalFile(pathToFile);
+        } catch(error) {
+            if (error.code === 'ENOENT') {
+                serveErrorPage(response, 400, `Cannot find file: "${fileName}.${fileExtension}"`);
             } else {
-                const pathParamsCopy = pathParams;
-                pathParams.pop();
-
-                const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
-                pathToFile = `${__dirname}/${RESOURCES_DIRECTORY_NAME}${pathToDirectory}${fileName}.${fileExtension}`;
+                serveErrorPage(response, 500, `An internal server error occurred while the file "${fileName}.${fileExtension}" was being loaded`);
             }
 
-            let fileContents;
+            return reject(error);
+        }
 
-            try {
-                fileContents = await loadLocalFile(pathToFile);
-            } catch(error) {
-                if (error.code === 'ENOENT') {
-                    serveErrorPage(response, 400, `Cannot find file: "${fileName}.${fileExtension}"`);
-                } else {
-                    serveErrorPage(response, 500, `An internal server error occurred while the file "${fileName}.${fileExtension}" was being loaded`);
-                }
-
-                return reject(error);
-            }
-
-            response.writeHead(200, {
-                'Content-Type': fileMIMEType,
-                'Content-Length': fileContents.length
-            });
-
-            response.end(fileContents);
-            resolve();
+        response.writeHead(200, {
+            'Content-Type': fileMIMEType,
+            'Content-Length': fileContents.length
         });
+
+        response.end(fileContents);
+        resolve();
+    });
 };
 
 const routeRequest = async (request, response, pathParams, queryParams) => {
@@ -129,7 +129,7 @@ const routeRequest = async (request, response, pathParams, queryParams) => {
 
     try {
         if (extractFileExtensionFromPathParams(pathParamsCopy)) {
-            await serveStaticFileByURLParams (request, response, pathParamsCopy, queryParams);
+            await serveStaticFileByURLParams(request, response, pathParamsCopy, queryParams);
         } else {
             await serverDataByURLParams(request, response, pathParamsCopy, queryParams);
         }
@@ -172,32 +172,6 @@ const requestHandler = async (request, response) => {
     const urlQueryParams = parseURLQueryString(urlQueryString);
 
     await routeRequest(request, response, urlPathParams, urlQueryParams);
-
-
-
-    //
-
-
-
-
-  /*  if (requestedFileExtension) {
-        const requestedFileName = path.basename(lastPathParamValue, requestedFileExtension);
-        const preparedRequestedFileExtension = requestedFileExtension.substring(1);
-
-        try {
-            await serveStaticFile(request, response, urlPathParams, urlQueryString, requestedFileName, preparedRequestedFileExtension);
-        } catch (error) {
-
-        }
-    }*/
-
-    /*response.writeHead(200, {
-        'Content-Type': 'text/html',
-        'Content-Length': commonResponse.length
-    });
-
-    console.log(`Requested URL: ${request.url}`);
-    response.end(commonResponse);*/
 };
 
 const server = http.createServer(requestHandler);
@@ -209,5 +183,3 @@ server.listen(SERVER_PORT, (error) => {
         console.log(`Server is listening on ${SERVER_PORT}`);
     }
 });
-
-// response.writeHead(404, {'Content-Type': 'text/html'});
