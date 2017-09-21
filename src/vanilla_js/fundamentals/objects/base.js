@@ -37,7 +37,7 @@ export default async () => {
 
     testClass2.prototype.testStaticProp1 = 'test_prop_val1';
 
-    function createObjectFunction1(prop1Prefix, prop2Postfix, newProp, newMethod) {
+    function createObjectFunction1(prop1Prefix, prop2Postfix, newProp, newPropKey, newMethod) {
         return {
             testProp1: 'test_prop1_val1',
             [prop1Prefix + '_test_prop2']: 'test_prop2_val1',
@@ -61,9 +61,9 @@ export default async () => {
                 this.testProp1 = 'new_prefix_' + newValue;
             },
 
-            /*  set ['newProp'](newValue) {
+            set [newPropKey](newValue) {
                 this['newProp'] = 'test_prefix_' + newValue + '_test_postfix';
-            }*/
+            }
         }
     }
 
@@ -142,14 +142,17 @@ export default async () => {
 
     console.log('');
 
-    let testObject5 = createObjectFunction1('prefix11', 'postfix22', 'new_prop4_val1', 'testUserMethod1');
+    let testObject5 = createObjectFunction1('prefix11', 'postfix22', 'new_prop4_val1', 'new_prop4', 'testUserMethod1');
     testObject5.testProp1Mod = 'test_propM_val1';
     testObject5.newProp = 'new_prop4_val2';
 
     console.log('');
-    console.log('testObject4.testProp1Mod:', testObject5.testProp1Mod);
+    console.log('testObject5.testProp1Mod:', testObject5.testProp1Mod);
     console.log('testObject5.testUserMethod1("user_postfix1"):', testObject5.testUserMethod1('user_postfix1'));
-    console.log(testObject5.newProp);
+    console.log('testObject5.newProp:', testObject5.newProp);
+
+    testObject5.new_prop4 = 'new_value';
+    console.log('testObject5.newProp (after modification using "new_prop4" custom setter):', testObject5.newProp);
 
 
     console.log('');

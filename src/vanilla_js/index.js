@@ -14,7 +14,7 @@ import builtInFunctions from './fundamentals/built_in_functions';
 
 import generators from './fundamentals/iterators/generators';
 
-//import objectsBase from './fundamentals/objects/base';
+import objectsBase from './fundamentals/objects/base';
 import checkIfPropertyExist from './fundamentals/objects/check_if_property_exist';
 import reflection from './fundamentals/objects/reflection';
 
@@ -50,10 +50,10 @@ async function run() {
     //await builtInFunctions();
 
     // iterators
-    await generators();
+    //await generators();
 
     // fundamentals (objects)
-    //await objectsBase();
+    await objectsBase();
     //await checkIfPropertyExist();
     //await reflection();
 
