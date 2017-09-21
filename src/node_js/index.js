@@ -7,8 +7,8 @@ const crypto = require('./fundamentals/crypto');
 async function run() {
     // fundamentals
     //await eventEmitters();
-    //await streams();
-    await crypto();
+    await streams();
+    //await crypto();
 }
 
 run();

@@ -1,5 +1,7 @@
 'use strict';
 
+// https://blog.yld.io/2016/01/13/using-streams/#.WcObkWdqxhH
+
 const {Writable, Readable} = require('stream');
 
 // stream classes definition
@@ -20,13 +22,11 @@ class WritableStreamClass1 extends Writable {
             const currentChar = chunkElm.chunk.toString();
 
             if (this._acceptedCharacters.indexOf(currentChar) === -1) {
-                console.log(`Skipping character - '${currentChar}' in stream '${this._streamName}'`);
+                return callback(new Error(`Invalid character - '${currentChar}' in stream '${this._streamName}'`));
             } else {
                 console.log(`Saving '${currentChar}' in stream '${this._streamName}'`);
                 charsToWrite.push(currentChar);
             }
-
-
         }
 
         this._sourceMock = charsToWrite.slice();
@@ -52,8 +52,12 @@ class WritableStreamClass1 extends Writable {
     }
 
     _destroy(error, callback) {
-        console.log(`Stream '${this._streamName}' destroyed with followng error - '${error.message}'`);
-        callback(error);
+        if (error && error !== null) {
+            console.log(`Stream '${this._streamName}' destroyed with followng error - '${error.message}'`);
+            callback(error);
+        } else {
+            callback();
+        }
     }
 
     getStreamName() {
@@ -66,22 +70,71 @@ class ReadableStreamClass1 extends Readable {
         super(options);
 
         this._streamName = options.name || undefined;
+        this._bytesRead = 0;
+        this._maxPerRead = 100;
+
+        this._possibleCharacters = ['a', 'z', 'c', 'd', 'h'];
+        this._possibleCharactersCount = this._possibleCharacters.length;
+    }
+
+    _getRandomCharacters() {
+        return this._possibleCharacters[parseInt(Math.random() * this._possibleCharactersCount)];
+    }
+
+    _getStringToWright(size = 0) {
+        let stringToWright = [];
+
+        for (let charCount = 0; charCount < size; charCount++) {
+            stringToWright.push(this._getRandomCharacters());
+        }
+
+        return stringToWright.join('');
+    }
+
+    _read(size = 0) {
+        if (size === 0) {
+            return this.push(null);
+        }
+
+        let stringToWright = '';
+
+        do {
+            if (this._bytesRead >= size * 3) {
+                stringToWright = null;
+            } else {
+                stringToWright = this._getStringToWright(parseInt(Math.random() * this._maxPerRead));
+                this._bytesRead += stringToWright.length;
+            }
+        } while(this.push(stringToWright))
+    }
+
+    getStreamName() {
+        return this._streamName;
     }
 }
 
 // helper functions definitions
-const writeCharacters1 = (writeCount, stream) => {
+const writeCharacters1 = (writeCount, stream, useCork = false) => {
     let isDrained = true;
 
     const possibleCharacters = ['a', 'z', 'c', 'd', 'h'];
     const possibleCharactersCount = possibleCharacters.length;
+
+    if (useCork) {
+        stream.cork();
+    }
 
     do {
         writeCount--;
         let characterToWrite = possibleCharacters[parseInt(Math.random() * possibleCharactersCount)];
 
         if (writeCount === 0) {
-            stream.end(characterToWrite);
+            if (useCork) {
+                stream.write(characterToWrite);
+                stream.uncork();
+            } else {
+                stream.end(characterToWrite);
+            }
         } else {
             isDrained = stream.write(characterToWrite);
         }
@@ -101,9 +154,10 @@ module.exports = async () => {
     console.log('=======================');
     console.log('');
 
-    await new Promise((resolvePromise, rejectPromise) => {
-        let quiteConsole = false;
+    console.log('Writable stream example:');
+    console.log('');
 
+    await new Promise((resolvePromise, rejectPromise) => {
         const writableStream1 = new WritableStreamClass1({'name': 'writable_stream1'});
 
         writableStream1.on('close', function() {
@@ -111,16 +165,14 @@ module.exports = async () => {
         });
 
         writableStream1.on('error', function(error) {
-            console.error(`Error '${error.message}' while writing to stream ${this.getStreamName()}`);
+            console.error(`Error "${error.message}" while writing to stream ${this.getStreamName()}`);
         });
 
         writableStream1.on('finish', function() {
-            console.log(`Stream '${this.getStreamName()}' finish receiving data`);
+            console.log(`Stream "${this.getStreamName()}" finish receiving data`);
 
             writableStream1.destroy(new Error('test error for destroy'));
-            quiteConsole = true;
-
-            resolvePromise();
+            setTimeout(_ => resolvePromise(), 2000);
         });
 
         writeCharacters1(100, writableStream1);
@@ -129,50 +181,93 @@ module.exports = async () => {
     console.log('');
     console.log('--------------------------------------------------------');
     console.log('');
-};
 
+    console.log('Writable stream (with cork) example:');
+    console.log('');
 
-//writableStream1.destroy('ff');
+    await new Promise((resolvePromise, rejectPromise) => {
+        const writableStream2 = new WritableStreamClass1({'name': 'writable_stream2'});
 
-/*const writableStream2 = new WritableStreamClass1({'name': 'writable_stream2'});
-
-writableStream2.on('error', function(error) {
-    console.error(`Error '${error.message}' while writing to stream ${this.getStreamName()}`);
-});
-
-writableStream2.on('finish', function() {
-    console.log(`Stream '${this.getStreamName()}' finish receiving data`);
-});
-
-const writeCharactersWithCork = (writeCount, stream) => {
-    let isDrained = true;
-
-    const possibleCharacters = ['a', 'z', 'c', 'd', 'h'];
-    const possibleCharactersCount = possibleCharacters.length;
-
-    stream.cork();
-
-    do {
-        writeCount--;
-        let characterToWrite = possibleCharacters[parseInt(Math.random() * possibleCharactersCount)];
-
-        if (writeCount === 0) {
-            stream.end(characterToWrite);
-        } else {
-            isDrained = stream.write(characterToWrite);
-        }
-
-    } while (writeCount > 0 && isDrained);
-
-    if (writeCount > 0) {
-        stream.once('drain', () => {
-            console.log(`'${stream.getStreamName()}' drained`);
-            writeCharacters(writeCount, stream)
+        writableStream2.on('error', function(error) {
+            console.error(`Error "${error.message}" while writing to stream ${this.getStreamName()}`);
+            setTimeout(_ => resolvePromise(), 2000);
         });
-    }
+
+        writableStream2.on('finish', function() {
+            console.log(`Stream "${this.getStreamName()}" finish receiving data`);
+            setTimeout(_ => resolvePromise(), 2000);
+        });
+
+
+        writeCharacters1(1500, writableStream2, true);
+    });
+
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
+
+    console.log('Readable stream (pull) example:');
+    console.log('');
+
+    await new Promise((resolvePromise, rejectPromise) => {
+        const readablePullStream1 = new ReadableStreamClass1({'name': 'readable_pull_stream1'});
+
+        readablePullStream1.on('readable', () => {
+            let dataChunk;
+
+            while(null !== (dataChunk = readablePullStream1.read())) {
+                console.log(`Received ${dataChunk.length} bytes of data.`);
+            }
+
+            resolvePromise();
+        });
+    });
+
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
+
+    console.log('Readable stream (push) example:');
+    console.log('');
+
+    await new Promise((resolvePromise, rejectPromise) => {
+        const readablePushStream1 = new ReadableStreamClass1({'name': 'readable_push_stream1'});
+
+        let readCount = 0;
+        const readCountBeforePause = 500;
+
+        readablePushStream1.on('end', function() {
+            console.log(`Stream "${this.getStreamName()}" finish pushing data`);
+            setTimeout(_ => resolvePromise(), 2000);
+        });
+
+
+        readablePushStream1.on('data', function(dataChunk) {
+            console.log(`Received ${dataChunk.length} bytes of data.`);
+            readCount++;
+
+            if (readCount === readCountBeforePause) {
+                readablePushStream1.pause();
+
+                console.log('');
+                console.log(`Stream "${this.getStreamName()}" has been paused...`);
+                console.log('');
+
+                setTimeout(_ => {
+                    console.log('');
+                    console.log(`Stream "${this.getStreamName()}" has been resumed...`);
+                    console.log('');
+
+                    readablePushStream1.resume()
+                }, 3000);
+            }
+        });
+    });
+
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
 };
 
-writableStream2.cork();
-writeCharactersWithCork(100, writableStream2);
-writableStream2.uncork();*/
+
 
