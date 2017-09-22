@@ -28,6 +28,8 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'ico': ICON_MIME_TYPE
 });
 
+const MAX_POST_DATA_SIZE = 1e6;
+
 module.exports.SERVER_PORT = SERVER_PORT;
 
 module.exports.HTML_PAGES_DIRECTORY_PATH = HTML_PAGES_DIRECTORY_PATH;
@@ -43,3 +45,4 @@ module.exports.SVG_MIME_TYPE = SVG_MIME_TYPE;
 module.exports.ICON_MIME_TYPE = ICON_MIME_TYPE;
 
 module.exports.FILE_EXTENSION_TO_MIME_TYPE = FILE_EXTENSION_TO_MIME_TYPE;
+module.exports.MAX_POST_DATA_SIZE = MAX_POST_DATA_SIZE;

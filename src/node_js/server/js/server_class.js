@@ -1,0 +1,233 @@
+'use strict';
+
+const queryString = require('querystring');
+const path = require('path');
+const fs = require('fs');
+
+const {
+    HTML_PAGES_DIRECTORY_PATH,
+    RESOURCES_DIRECTORY_PATH,
+    FILE_EXTENSION_TO_MIME_TYPE,
+    MAX_POST_DATA_SIZE
+} = require ('./constants');
+
+class ServerClass {
+    _normalizeURLPath(urlPath) {
+        urlPath = urlPath.toLocaleLowerCase();
+
+        const urlPathLength = urlPath.length;
+        return urlPath[urlPathLength - 1] === '/' ? urlPath.substr(0, urlPathLength - 1) : urlPath;
+    };
+
+    _getMIMETypeForFileExtension(fileExtension) {
+        const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLocaleLowerCase()];
+        return fileMIMEType ? fileMIMEType : null;
+    };
+
+    _extractFileExtensionFromPathParams(pathParams) {
+        const pathParamsCount = pathParams.length;
+
+        if (pathParamsCount === 0) {
+            return null;
+        }
+
+        const lastPathParam = pathParams[pathParamsCount - 1];
+        const requestedFileExtension = path.extname(lastPathParam);
+
+        return requestedFileExtension ? requestedFileExtension.substr(1) : null;
+    }
+
+    _extractFileNameFromPathParams(pathParams) {
+        const fileExtension = this._extractFileExtensionFromPathParams(pathParams);
+
+        if (fileExtension === null) {
+            return null;
+        }
+
+        const pathParamsCount = pathParams.length;
+
+        if (pathParamsCount === 0) {
+            return null;
+        }
+
+        const lastPathParam = pathParams[pathParamsCount - 1];
+        const fileName = path.basename(lastPathParam, `.${fileExtension}`);
+
+        return fileName ? fileName : null;
+    }
+
+    _extractPOSTData() {
+        return new Promise((resolve, reject) => {
+            let postData = '';
+
+            if (this._request.method !== "POST") {
+                return resolve(postData);
+            }
+
+            this._request.on('data', postDataChunk => {
+                postData += postDataChunk;
+
+                if (postData.length > MAX_POST_DATA_SIZE) {
+                    reject('POST data is to big');
+                }
+            });
+
+            this._request.on('end', function() {
+                const preparedPostData = queryString.parse(postData);
+                resolve(preparedPostData);
+            });
+        });
+    };
+
+    _parseURLPathParams(pathString) {
+        return pathString ? pathString.split('/').map(param => decodeURIComponent(param)) : [];
+    };
+
+    _prepareRequestURLPath() {
+        const [urlPathString, urlQueryString] = this._preparedRequestURL ? this._preparedRequestURL.split('?') : ['', ''];
+
+        this._urlPathParams = this._parseURLPathParams(urlPathString);
+        this._urlQueryParams = queryString.parse(urlQueryString);
+    }
+
+    _prepareRequestURL() {
+        const requestURL = this._request.url.toLowerCase();
+        const decodedRequestURL = decodeURI(requestURL);
+
+        this._preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
+    }
+
+    _serveErrorPage(code = 500, message = '') {
+        this._response.writeHead(code);
+        this._response.end(message);
+    }
+
+    async _serverDataByURLParams() {
+        const urlPath = this._urlPathParams.join('/');
+        const preparedURLPath  = this._normalizeURLPath(urlPath);
+
+        const foundRoute = this._routes.find(route => {
+            const normalizedURLPath = this._normalizeURLPath(route.path);
+            return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
+        });
+
+        if (!foundRoute) {
+            return this._serveErrorPage(404, 'Route handler not found');
+        }
+
+        if(!foundRoute.handler || typeof foundRoute.handler !== 'function') {
+            return this._serveErrorPage(404, 'Route handler function not found');
+        }
+
+        try {
+            await foundRoute.handler.call(this);
+        } catch(error) {
+            return this._serveErrorPage(500, error);
+        }
+    };
+
+    _serveStaticFileByURLParams() {
+        return new Promise(async (resolve, reject) => {
+            let pathToFile;
+
+            const fileExtension = this._extractFileExtensionFromPathParams(this._urlPathParams);
+            const fileName = this._extractFileNameFromPathParams(this._urlPathParams);
+
+            const fileMIMEType = this._getMIMETypeForFileExtension(fileExtension);
+
+            if (fileMIMEType === null) {
+                const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
+
+                this._serveErrorPage(400, errorMessage);
+                return reject(new Error(errorMessage));
+            }
+
+            if (fileExtension === 'html') {
+                pathToFile = `${this._serverRootDir}/${HTML_PAGES_DIRECTORY_PATH}/${fileName}.${fileExtension}`;
+            } else {
+                const pathParamsCopy = this._urlPathParams.slice();
+                pathParamsCopy.pop();
+
+                const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
+                pathToFile = `${this._serverRootDir}/${RESOURCES_DIRECTORY_PATH}${pathToDirectory}${fileName}.${fileExtension}`;
+            }
+
+            const staticFileStream = fs.createReadStream(pathToFile, {
+                flags: 'r',
+                autoClose: true
+            });
+
+            staticFileStream.on('open', () => {
+                this._response.writeHead(200, {
+                    'Content-Type': fileMIMEType,
+                });
+            });
+
+            staticFileStream.on('close', () => {
+                resolve();
+            });
+
+            staticFileStream.on('error', (error) => {
+                console.log(error);
+
+                if (error.code === 'ENOENT') {
+                    this._serveErrorPage(404, `Cannot find file: "${fileName}.${fileExtension}"`);
+                } else {
+                    this._serveErrorPage(400, `Cannot open file: "${fileName}.${fileExtension}"`);
+                }
+
+                resolve();
+            });
+
+            staticFileStream.pipe(this._response);
+        });
+    };
+
+    async _routeRequest() {
+        const pathParamsCopy = this._urlPathParams.slice();
+
+        if (pathParamsCopy.length === 0) {
+            pathParamsCopy.push('index.html');
+        }
+
+        try {
+            if (this._extractFileExtensionFromPathParams(pathParamsCopy)) {
+                await this._serveStaticFileByURLParams();
+            } else {
+                await this._serverDataByURLParams();
+            }
+        } catch(error) {
+            this._serveErrorPage(500, error);
+            console.log(error);
+        }
+    }
+
+    async onHandleRequest() {
+        this._prepareRequestURL();
+        this._prepareRequestURLPath();
+
+        try {
+            this._postData = await this._extractPOSTData();
+        } catch(error) {
+            this._serveErrorPage(400, error);
+            return this._request.connection.destroy();
+        }
+
+        await this._routeRequest();
+    }
+
+    constructor(request, response, routes, serverRootDir) {
+        this._request = request;
+        this._response = response;
+        this._routes = routes;
+        this._serverRootDir = serverRootDir;
+
+        this._preparedRequestURL = '';
+        this._urlPathParams = [];
+        this._urlQueryParams = {};
+
+        this._postData = {};
+    }
+}
+
+module.exports = ServerClass;
