@@ -1,0 +1,14 @@
+.DS_STORE
+*.log
+
+node_modules
+npm-debug.log
+
+.idea/
+
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+src/node_js/server/user_created
