@@ -12,3 +12,4 @@ ehthumbs.db
 Thumbs.db
 
 src/node_js/server/user_created
+dist/*
