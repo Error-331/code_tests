@@ -13,47 +13,47 @@ const {
 
 class ServerClass {
     _normalizeURLPath(urlPath) {
-        urlPath = urlPath.toLocaleLowerCase();
+        urlPath = urlPath.toLowerCase();
 
         const urlPathLength = urlPath.length;
         return urlPath[urlPathLength - 1] === '/' ? urlPath.substr(0, urlPathLength - 1) : urlPath;
     };
 
     _getMIMETypeForFileExtension(fileExtension) {
-        const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLocaleLowerCase()];
-        return fileMIMEType ? fileMIMEType : null;
+        const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLowerCase()];
+        return fileMIMEType ? fileMIMEType : undefined;
     };
 
     _extractFileExtensionFromPathParams(pathParams) {
         const pathParamsCount = pathParams.length;
 
         if (pathParamsCount === 0) {
-            return null;
+            return;
         }
 
         const lastPathParam = pathParams[pathParamsCount - 1];
         const requestedFileExtension = path.extname(lastPathParam);
 
-        return requestedFileExtension ? requestedFileExtension.substr(1) : null;
+        return requestedFileExtension ? requestedFileExtension.substr(1) : undefined;
     }
 
     _extractFileNameFromPathParams(pathParams) {
         const fileExtension = this._extractFileExtensionFromPathParams(pathParams);
 
-        if (fileExtension === null) {
-            return null;
+        if (!fileExtension) {
+            return;
         }
 
         const pathParamsCount = pathParams.length;
 
         if (pathParamsCount === 0) {
-            return null;
+            return;
         }
 
         const lastPathParam = pathParams[pathParamsCount - 1];
         const fileName = path.basename(lastPathParam, `.${fileExtension}`);
 
-        return fileName ? fileName : null;
+        return fileName ? fileName : undefined;
     }
 
     _extractPOSTData() {
@@ -102,14 +102,18 @@ class ServerClass {
         this._response.end(message);
     }
 
-    async _serverDataByURLParams() {
+    _findCustomRouteForCurrentRequest() {
         const urlPath = this._urlPathParams.join('/');
         const preparedURLPath  = this._normalizeURLPath(urlPath);
 
-        const foundRoute = this._routes.find(route => {
+        return this._routes.find(route => {
             const normalizedURLPath = this._normalizeURLPath(route.path);
             return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
         });
+    }
+
+    async _serverDataByURLParams() {
+        const foundRoute = this._findCustomRouteForCurrentRequest();
 
         if (!foundRoute) {
             return this._serveErrorPage(404, 'Route handler not found');
@@ -135,7 +139,7 @@ class ServerClass {
 
             const fileMIMEType = this._getMIMETypeForFileExtension(fileExtension);
 
-            if (fileMIMEType === null) {
+            if (!fileMIMEType) {
                 const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
 
                 this._serveErrorPage(400, errorMessage);
@@ -184,17 +188,17 @@ class ServerClass {
     };
 
     async _routeRequest() {
-        const pathParamsCopy = this._urlPathParams.slice();
-
-        if (pathParamsCopy.length === 0) {
-            pathParamsCopy.push('index.html');
+        if (this._urlPathParams.length === 0) {
+            this._urlPathParams.push('index.html');
         }
+        const customRouteParamsObj = this._findCustomRouteForCurrentRequest();
+        const requestedFileExtension = this._extractFileExtensionFromPathParams(this._urlPathParams)
 
         try {
-            if (this._extractFileExtensionFromPathParams(pathParamsCopy)) {
-                await this._serveStaticFileByURLParams();
-            } else {
+            if (customRouteParamsObj) {
                 await this._serverDataByURLParams();
+            } else if (requestedFileExtension) {
+                await this._serveStaticFileByURLParams();
             }
         } catch(error) {
             this._serveErrorPage(500, error);

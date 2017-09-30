@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const SERVER_PORT = 3000;
 
