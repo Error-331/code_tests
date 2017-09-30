@@ -146,14 +146,15 @@ class ServerClass {
                 return reject(new Error(errorMessage));
             }
 
-            if (fileExtension === 'html') {
-                pathToFile = `${this._serverRootDir}/${HTML_PAGES_DIRECTORY_PATH}/${fileName}.${fileExtension}`;
-            } else {
-                const pathParamsCopy = this._urlPathParams.slice();
-                pathParamsCopy.pop();
+            const pathParamsCopy = this._urlPathParams.slice();
+            pathParamsCopy.pop();
 
-                const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
-                pathToFile = `${this._serverRootDir}/${RESOURCES_DIRECTORY_PATH}${pathToDirectory}${fileName}.${fileExtension}`;
+            const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
+
+            if (fileExtension === 'html') {
+                pathToFile = `${this._serverRootDir}/${this._getHTMLPagesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
+            } else {
+                pathToFile = `${this._serverRootDir}/${this._getResourcesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
             }
 
             const staticFileStream = fs.createReadStream(pathToFile, {
@@ -206,6 +207,14 @@ class ServerClass {
         }
     }
 
+    _getHTMLPagesDirectoryPath() {
+        return this._constantsOverrides.HTML_PAGES_DIRECTORY_PATH ? this._constantsOverrides.HTML_PAGES_DIRECTORY_PATH : HTML_PAGES_DIRECTORY_PATH;
+    }
+
+    _getResourcesDirectoryPath() {
+        return this._constantsOverrides.RESOURCES_DIRECTORY_PATH ? this._constantsOverrides.RESOURCES_DIRECTORY_PATH : RESOURCES_DIRECTORY_PATH;
+    }
+
     async onHandleRequest() {
         this._prepareRequestURL();
         this._prepareRequestURLPath();
@@ -220,7 +229,7 @@ class ServerClass {
         await this._routeRequest();
     }
 
-    constructor(request, response, routes, serverRootDir) {
+    constructor(request, response, routes, serverRootDir, constantsOverrides) {
         this._request = request;
         this._response = response;
         this._routes = routes;
@@ -231,6 +240,8 @@ class ServerClass {
         this._urlQueryParams = {};
 
         this._postData = {};
+
+        this._constantsOverrides = constantsOverrides;
     }
 }
 
