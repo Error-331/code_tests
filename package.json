@@ -4,14 +4,15 @@
     "description": "code testing platform...",
     "main": "index.js",
     "scripts": {
-        "compile-all-browser-js": "node ./utils/compile_all_browser_js.js",
         "run-scripts": "node ./utils/compile_scripts.js --type=vanilla && node ./dist/bundle.js",
+        "run-scripts-browser": "node ./utils/compile_all_browser_js.js && node ./src/browser_js/server.js",
         "run-scripts-nodejs": "node ./src/node_js/index.js",
         "run-scripts-ts": "node ./utils/compile_scripts.js --type=type_script && node ./dist/typescript_bundle.js",
         "run-scripts-tools": "node ./utils/compile_scripts.js --type=tools && node ./dist/tools_bundle.js",
         "run-scripts-playground": "node ./utils/compile_scripts.js --type=playground && node ./dist/playground_bundle.js",
         "run-scripts-vendor-library-tests": "node ./utils/compile_scripts.js --type=vendor_library_tests && node ./dist/vendor_library_tests_bundle.js",
-        "run-scripts-databases": "node ./src/databases/index.js --os=linux"
+        "run-scripts-databases": "node ./src/databases/index.js --os=linux",
+        "compile-browser-scripts": "node ./utils/compile_all_browser_js.js"
     },
     "license": "MIT",
     "devDependencies": {
