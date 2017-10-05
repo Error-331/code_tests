@@ -1,12 +1,5 @@
 'use strict';
 
-const SERVER_PORT = 3000;
-
-const PUBLIC_DIRECTORY_PATH = '.';
-
-const HTML_PAGES_DIRECTORY_PATH = `${PUBLIC_DIRECTORY_PATH }/pages`;
-const RESOURCES_DIRECTORY_PATH = `${PUBLIC_DIRECTORY_PATH }/resources`;
-
 const HTML_MIME_TYPE = 'text/html';
 const CSS_MIME_TYPE = 'text/css';
 const JS_MIME_TYPE = 'application/javascript';
@@ -28,13 +21,6 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'ico': ICON_MIME_TYPE
 });
 
-const MAX_POST_DATA_SIZE = 1e6;
-
-module.exports.SERVER_PORT = SERVER_PORT;
-
-module.exports.HTML_PAGES_DIRECTORY_PATH = HTML_PAGES_DIRECTORY_PATH;
-module.exports.RESOURCES_DIRECTORY_PATH = RESOURCES_DIRECTORY_PATH;
-
 module.exports.HTML_MIME_TYPE = HTML_MIME_TYPE;
 module.exports.CSS_MIME_TYPE = CSS_MIME_TYPE;
 module.exports.JS_MIME_TYPE = JS_MIME_TYPE;
@@ -45,4 +31,3 @@ module.exports.SVG_MIME_TYPE = SVG_MIME_TYPE;
 module.exports.ICON_MIME_TYPE = ICON_MIME_TYPE;
 
 module.exports.FILE_EXTENSION_TO_MIME_TYPE = FILE_EXTENSION_TO_MIME_TYPE;
-module.exports.MAX_POST_DATA_SIZE = MAX_POST_DATA_SIZE;

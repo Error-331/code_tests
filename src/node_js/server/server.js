@@ -2,12 +2,17 @@
 
 const http = require('http');
 
-const {SERVER_PORT} = require ('./js/constants');
+const BasicServerClass = require('./js/classes/basic_server_class');
+const CookiesServerMixin = require('./js/mixins/cookies_server_mixin');
+
+const {SERVER_PORT} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');
-const ServerClass = require('./js/server_class');
+
+class MainServerClass extends CookiesServerMixin(BasicServerClass) {
+}
 
 const requestHandler = async (request, response) => {
-    const serverClassInstance = new ServerClass(request, response, routes, __dirname);
+    const serverClassInstance = new MainServerClass(request, response, routes, __dirname);
     await serverClassInstance.onHandleRequest();
 };
 
