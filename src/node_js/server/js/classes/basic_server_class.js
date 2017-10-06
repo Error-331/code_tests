@@ -1,15 +1,11 @@
 'use strict';
 
 const queryString = require('querystring');
-const fs = require('fs');
 
 const {
     normalizeURLPath,
     parseURLPathParams,
-    extractFileExtensionFromPathParams,
-    extractFileNameFromPathParams,
-    extractPOSTDataFromRequest,
-    getMIMETypeForFileExtension
+    extractPOSTDataFromRequest
 } = require('./../utils/server_request_utils');
 
 const {
@@ -33,13 +29,21 @@ class BasicServerClass {
         this._preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
     }
 
+    _addCustomRoute(customRoute) {
+        this._routes.push(customRoute);
+    }
+
     _findCustomRouteForCurrentRequest() {
         const urlPath = this._urlPathParams.join('/');
         const preparedURLPath  = normalizeURLPath(urlPath);
 
         return this._routes.find(route => {
-            const normalizedURLPath = normalizeURLPath(route.path);
-            return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
+            if (typeof route.path === 'string') {
+                const normalizedURLPath = normalizeURLPath(route.path);
+                return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
+            } else {
+                return route.path.test(preparedURLPath);
+            }
         });
     }
 
@@ -78,73 +82,19 @@ class BasicServerClass {
         }
     };
 
-    _serveStaticFileByURLParams() {
-        return new Promise(async (resolve, reject) => {
-            let pathToFile;
-
-            const fileExtension = extractFileExtensionFromPathParams(this._urlPathParams);
-            const fileName = extractFileNameFromPathParams(this._urlPathParams);
-
-            const fileMIMEType = getMIMETypeForFileExtension(fileExtension);
-
-            if (!fileMIMEType) {
-                const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
-
-                this._serveErrorPage(400, errorMessage);
-                return reject(new Error(errorMessage));
-            }
-
-            const pathParamsCopy = this._urlPathParams.slice();
-            pathParamsCopy.pop();
-
-            const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
-
-            if (fileExtension === 'html') {
-                pathToFile = `${this._serverRootDir}/${this._getHTMLPagesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
-            } else {
-                pathToFile = `${this._serverRootDir}/${this._getResourcesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
-            }
-
-            const staticFileStream = fs.createReadStream(pathToFile, {
-                flags: 'r',
-                autoClose: true
-            });
-
-            this._addResponseHeader('Content-Type', fileMIMEType);
-            this._writeHead(200);
-
-            staticFileStream.on('close', () => {
-                resolve();
-            });
-
-            staticFileStream.on('error', (error) => {
-                console.log(error);
-
-                if (error.code === 'ENOENT') {
-                    this._serveErrorPage(404, `Cannot find file: "${fileName}.${fileExtension}"`);
-                } else {
-                    this._serveErrorPage(400, `Cannot open file: "${fileName}.${fileExtension}"`);
-                }
-
-                resolve();
-            });
-
-            staticFileStream.pipe(this._response);
-        });
-    };
-
     async _routeRequest() {
         if (this._urlPathParams.length === 0) {
             this._urlPathParams.push('index.html');
         }
+
         const customRouteParamsObj = this._findCustomRouteForCurrentRequest();
-        const requestedFileExtension = extractFileExtensionFromPathParams(this._urlPathParams);
 
         try {
             if (customRouteParamsObj) {
                 await this._serverDataByURLParams();
-            } else if (requestedFileExtension) {
-                await this._serveStaticFileByURLParams();
+            } else {
+                const error = new Error(`Cannot find rout handler for: "${this._urlPathParams.join('/')}"`);
+                this._serveErrorPage(404, error);
             }
         } catch(error) {
             this._serveErrorPage(500, error);
@@ -186,7 +136,7 @@ class BasicServerClass {
         await this._routeRequest();
     }
 
-    constructor(request, response, routes, serverRootDir, constantsOverrides) {
+    constructor(request, response, routes = [], serverRootDir, constantsOverrides) {
         this._request = request;
         this._response = response;
 
