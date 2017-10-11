@@ -9,8 +9,9 @@
 //import rest_spread from './rest_spread';
 //import async_await from './async_await';
 //import decorators from './decorators';
+import mixins from './mixins';
 
-import externalLibraryUsage from './external_library_usage';
+//import externalLibraryUsage from './external_library_usage';
 
 async function run() {
     // fundamentals
@@ -23,9 +24,10 @@ async function run() {
     //await rest_spread();
     //await async_await();
     //await decorators();
+    await mixins();
 
     // misc
-    await externalLibraryUsage();
+    //await externalLibraryUsage();
 }
 
 run();
