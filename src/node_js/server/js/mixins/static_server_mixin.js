@@ -28,7 +28,8 @@ const StaticServerMixin = (superClass) => class extends superClass {
             const pathParamsCopy = this._urlPathParams.slice();
             pathParamsCopy.pop();
 
-            const pathToDirectory = pathParamsCopy.length > 0 ? `/${pathParamsCopy.join('/')}/` : '/';
+            const pathParamsCopyNormalized = pathParamsCopy.map(pathParam => pathParam.toLocaleLowerCase());
+            const pathToDirectory = pathParamsCopyNormalized.length > 0 ? `/${pathParamsCopyNormalized.join('/')}/` : '/';
 
             if (fileExtension === 'html') {
                 pathToFile = `${this._serverRootDir}/${this._getHTMLPagesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Faster One Regular";
+    src: url("/Fonts/FasterOne-Regular.ttf") format('truetype')
+}
+
+body {
+    font-family: "Faster One Regular", Arial, sans-serif;
+
+}
+
+body input {
+    font-family: "Faster One Regular", Arial, sans-serif;
+}

@@ -23,9 +23,7 @@ class BasicServerClass {
     }
 
     _prepareRequestURL() {
-        const requestURL = this._request.url.toLowerCase();
-        const decodedRequestURL = decodeURI(requestURL);
-
+        const decodedRequestURL = decodeURI(this._request.url);
         this._preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
     }
 
