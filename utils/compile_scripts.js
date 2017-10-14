@@ -55,7 +55,7 @@ switch(typeParam) {
         webpackConfigCopy.resolve.modules.push(modulesResolvePath);
         webpackConfigCopy.entry.push(entryPath);
         webpackConfigCopy.output.path = distPath;
-        webpackConfigCopy.output.filename = 'typescript_bundle.j';
+        webpackConfigCopy.output.filename = 'typescript_bundle.js';
 
         webpackConfigCopy.module.rules.push({
             test: /\.tsx?$/,
