@@ -10,7 +10,7 @@ export default async () => {
     }
 
     class EngineMixin {
-        protected isEngineWorking:boolean = false;
+        isEngineWorking:boolean = false;
 
         public startEngine() {
             this.isEngineWorking = true;
@@ -26,14 +26,14 @@ export default async () => {
     }
 
     class WheelsMixin {
-        protected _wheelsCount = 4;
+        wheelsCount:number = 4;
 
-        get wheelsCount():number {
-            return this._wheelsCount;
+        getWheelsCount(): number {
+            return this.wheelsCount;
         }
 
-        set wheelsCount(wheelsCount: number) {
-            this._wheelsCount = wheelsCount;
+        setWheelsCount(wheelsCount: number) {
+            this.wheelsCount = wheelsCount;
         }
     }
 
@@ -50,22 +50,29 @@ export default async () => {
         getEngineStatus() {return false;}
 
         // Wheels
-        _wheelsCount: number = 4;
+        wheelsCount: number = 4;
 
-        get wheelsCount() {return 4;}
+        getWheelsCount():number {return 0};
+        setWheelsCount: (wheelsCount: number) => void;
     }
 
     applyMixins(VehicleClass, [EngineMixin, WheelsMixin]);
-
     let exampleVehicleObject1 = new VehicleClass();
-
-
-    exampleVehicleObject1.startEngine();
-    console.log(exampleVehicleObject1.getEngineStatus());
 
     console.log('Mixins examples');
     console.log('================');
     console.log('');
+
+    exampleVehicleObject1.startEngine();
+    console.log('start => exampleVehicleObject1.getEngineStatus():', exampleVehicleObject1.getEngineStatus());
+
+    exampleVehicleObject1.stopEngine();
+    console.log('stop => exampleVehicleObject1.getEngineStatus():', exampleVehicleObject1.getEngineStatus());
+
+    console.log('');
+
+    exampleVehicleObject1.setWheelsCount(6);
+    console.log('set 6 => exampleVehicleObject1.getWheelsCount()', exampleVehicleObject1.getWheelsCount());
 
     console.log('');
     console.log('--------------------------------------------------------');
