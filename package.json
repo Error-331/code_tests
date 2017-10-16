@@ -17,6 +17,7 @@
     "license": "MIT",
     "devDependencies": {
         "minimist": "^1.2.0",
+        "jsonfile": "^4.0.0",
         "rimraf": "^2.6.1",
         "typescript": "^2.4.2",
         "tslib": "^1.7.1",
