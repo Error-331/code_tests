@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>
+        <form>
+<!--
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data
+https://www.google.com.ua/search?q=arraybuffer+load+file&client=ubuntu&hs=IM&channel=fs&dcr=0&ei=DwzmWYX3D6WV6ASUtpa4Bw&start=10&sa=N&biw=1855&bih=983
+https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
+https://www.clicktorelease.com/blog/loading-sounds-faster-using-html5-web-audio-api/
+
+-->
+        </form>
+    </div>
+
+    <script>
+        var request = new XMLHttpRequest();
+
+        request.open( 'GET', 'concatenated_file.mp3', true );
+        request.responseType = 'arraybuffer';
+
+        request.onload = function() {
+            processConcatenatedFile( request.response );
+        };
+
+        request.send();
+    </script>
+</body>
+</html>
