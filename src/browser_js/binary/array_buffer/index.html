@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div>gfh
+        <form>
+<!--
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Sending_and_Receiving_Binary_Data
+https://www.google.com.ua/search?q=arraybuffer+load+file&client=ubuntu&hs=IM&channel=fs&dcr=0&ei=DwzmWYX3D6WV6ASUtpa4Bw&start=10&sa=N&biw=1855&bih=983
+https://developers.google.com/web/updates/2012/06/How-to-convert-ArrayBuffer-to-and-from-String
+https://www.clicktorelease.com/blog/loading-sounds-faster-using-html5-web-audio-api/
+
+-->
+        </form>
+    </div>
+
+    <script>
+
+        /*
+  Uses Web Audio API decodeAudioData() to decode
+  the extracted buffer.
+*/
+
+        function createSoundWithBuffer( buffer ) {
+
+            /*
+              This audio context is unprefixed!
+            */
+            var context = new AudioContext();
+
+            var audioSource = context.createBufferSource();
+            audioSource.connect( context.destination );
+
+            context.decodeAudioData( buffer, function( res ) {
+
+                audioSource.buffer = res;
+
+                /*
+                   Do something with the sound, for instance, play it.
+                   Watch out: all the sounds will sound at the same time!
+                */
+                audioSource.noteOn( 0 );
+
+            } );
+
+        }
+
+        /*
+  Create a new buffer to store the compressed sound
+  buffer from the concatenated buffer.
+*/
+
+        function extractBuffer( src, offset, length ) {
+
+            var dstU8 = new Uint8Array( length );
+            var srcU8 = new Uint8Array( src, offset, length );
+            dstU8.set( srcU8 );
+            return dstU8;
+
+        }
+
+
+        /*
+  Runs through the loaded array buffer and
+  extract each individual chunk that contains
+  each original sound file buffer.
+*/
+
+        function processConcatenatedFile( data ) {
+
+            var bb = new DataView( data );
+            var offset = 0;
+
+            while( offset < bb.byteLength ) {
+
+                var length = bb.getUint32( offset, true );
+                offset += 4;
+                var sound = extractBuffer( data, offset, length );
+                offset += length;
+
+                createSoundWithBuffer( sound.buffer );
+
+            }
+
+        }
+
+
+        const request = new XMLHttpRequest();
+
+        request.open( 'GET', 'sample_audio.mp3', true );//binary/array_buffer
+        request.responseType = 'arraybuffer';
+
+        request.onload = function() {
+            processConcatenatedFile( request.response );
+        };
+
+        request.send();
+    </script>
+</body>
+</html>
