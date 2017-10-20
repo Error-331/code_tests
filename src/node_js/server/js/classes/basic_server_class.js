@@ -33,7 +33,7 @@ class BasicServerClass {
 
     _findCustomRouteForCurrentRequest() {
         const urlPath = this._urlPathParams.join('/');
-        const preparedURLPath  = normalizeURLPath(urlPath);
+        const preparedURLPath = normalizeURLPath(urlPath);
 
         return this._routes.find(route => {
             if (typeof route.path === 'string') {
@@ -57,9 +57,16 @@ class BasicServerClass {
         this._responseHeaders.push([headerName, headerValue]);
     }
 
-    _serveErrorPage(code = 500, message = '') {
+    _serveErrorPage(code = 500, error = '') {
         this._response.writeHead(code);
-        this._response.end(message);
+
+        if (typeof error === 'object') {
+            this._response.end(error.message);
+        } else if(typeof error === 'string') {
+            this._response.end(error);
+        } else {
+            this._response.end();
+        }
     }
 
     async _serverDataByURLParams() {
@@ -96,7 +103,7 @@ class BasicServerClass {
             }
         } catch(error) {
             this._serveErrorPage(500, error);
-            console.log(error);
+            console.error(error.message);
         }
     }
 
