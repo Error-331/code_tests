@@ -1,10 +1,11 @@
 'use strict';
 
-console.log('Examples showing that JS is single thread');
-console.log('=========================================');
+console.log('Examples showing that JS is single thread (for/setTimeout)');
+console.log('==========================================================');
 console.log('');
 
 setTimeout(() => {
+    // last output
     console.log('output after timeout...');
 }, 0);
 
@@ -13,4 +14,5 @@ setTimeout(() => {
 for (let counter1 = 0; counter1 < 1254740991; counter1++) {
 }
 
+// first output
 console.log('output after long loop...');
