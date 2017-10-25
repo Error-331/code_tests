@@ -43,6 +43,18 @@ const routes = [
                 });
             });
         }
+    },
+
+    {
+        path: 'etag_tracking_check.html',
+        handler: function() {
+            return new Promise((resolve) => {
+                const server = this;
+
+                server._serveStaticFileByURLParams();
+                resolve();
+            });
+        }
     }
 ];
 
