@@ -113,7 +113,7 @@ const CookiesServerMixin = (superClass) => class extends superClass {
         return this._cookies.find(cookie => cookie.name === cookieName);
     }
 
-    _setCookie(cookieName, cookieValue, cookiePath, cookieDomain, cookieMaxAge, cookieExpires, cookieSecure, cookieHTTPOnly) {
+    _setCookie(cookieName, cookieValue, cookiePath, cookieDomain, cookieSecure, cookieHTTPOnly, cookieMaxAge, cookieExpires) {
         if (!cookieName) {
             return;
         }
@@ -133,10 +133,10 @@ const CookiesServerMixin = (superClass) => class extends superClass {
         cookieObj.value = encodeURIComponent(cookieValue);
         cookieObj.path = cookiePath ? cookiePath : (cookieObj.path || '/');
         cookieObj.domain = cookieDomain ? cookieDomain : (cookieObj.domain || this._getServerDomain());
-        cookieObj.maxAge = cookieMaxAge ? cookieMaxAge : (cookieObj.maxAge || MAS_AGE_SECONDS_COOKIE);
-        cookieObj.expires = cookieExpires ? cookieExpires : (cookieObj.expires || defaultExpiresDate.toUTCString());
         cookieObj.secure = cookieSecure ? cookieSecure : (cookieObj.secure || false);
         cookieObj.httpOnly = cookieHTTPOnly ? cookieHTTPOnly : (cookieObj.httpOnly || false);
+        cookieObj.maxAge = cookieMaxAge ? cookieMaxAge : (cookieObj.maxAge || MAS_AGE_SECONDS_COOKIE);
+        cookieObj.expires = cookieExpires ? cookieExpires : (cookieObj.expires || defaultExpiresDate.toUTCString());
 
         if (originalCookieIndex !== -1) {
             this._cookies[originalCookieIndex] = cookieObj;
