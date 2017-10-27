@@ -5,7 +5,8 @@ const queryString = require('querystring');
 const {
     normalizeURLPath,
     parseURLPathParams,
-    extractPOSTDataFromRequest
+    extractPOSTDataFromRequest,
+    getMIMETypeForFileExtension
 } = require('./../utils/server_request_utils');
 
 const {
@@ -34,8 +35,13 @@ class BasicServerClass {
     _findCustomRouteForCurrentRequest() {
         const urlPath = this._urlPathParams.join('/');
         const preparedURLPath = normalizeURLPath(urlPath);
+        const requestMethod = this._request.method.toLowerCase();
 
         return this._routes.find(route => {
+            if (route.method && route.method.toLocaleLowerCase() !== requestMethod) {
+                return false;
+            }
+
             if (typeof route.path === 'string') {
                 const normalizedURLPath = normalizeURLPath(route.path);
                 return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
@@ -54,19 +60,40 @@ class BasicServerClass {
     }
 
     _addResponseHeader(headerName, headerValue) {
-        this._responseHeaders.push([headerName, headerValue]);
+        const normalizedHeaderName = headerName.toLowerCase();
+        const headerIndex = this._responseHeaders.findIndex(header => {
+            return header[0] === normalizedHeaderName;
+        });
+
+        if (headerIndex === -1) {
+            this._responseHeaders.push([normalizedHeaderName, headerValue])
+        } else {
+            this._responseHeaders[headerIndex][1] = headerValue;
+        }
     }
 
     _serveErrorPage(code = 500, error = '') {
-        this._response.writeHead(code);
+        if (this._errorPageWasServed) {
+            return;
+        }
+
+        const textMIMEType = getMIMETypeForFileExtension('txt');
+
+        this._addResponseHeader('Content-Type', textMIMEType);
+        this._writeHead(code);
+
+        let errorMessage = '';
 
         if (typeof error === 'object') {
-            this._response.end(error.message);
-        } else if(typeof error === 'string') {
-            this._response.end(error);
-        } else {
-            this._response.end();
+            errorMessage = error.message;
+        } else if (typeof error === 'string') {
+            errorMessage = error;
         }
+
+        this._response.end(errorMessage);
+        console.error(errorMessage);
+
+        this._errorPageWasServed = true;
     }
 
     async _serverDataByURLParams() {
@@ -103,7 +130,6 @@ class BasicServerClass {
             }
         } catch(error) {
             this._serveErrorPage(500, error);
-            console.error(error.message);
         }
     }
 
@@ -121,6 +147,14 @@ class BasicServerClass {
 
     _getResponseHeaders() {
         return this._responseHeaders;
+    }
+
+    _getRequestHeaders() {
+        return this._request.headers;
+    }
+
+    _getRequestHeader(headerName) {
+        return this._request.headers[headerName];
     }
 
     _setResponseHeaders(responseHeaders) {
@@ -142,6 +176,8 @@ class BasicServerClass {
     }
 
     constructor(request, response, routes = [], serverRootDir, constantsOverrides) {
+        this._errorPageWasServed = false;
+
         this._request = request;
         this._response = response;
 
