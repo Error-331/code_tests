@@ -77,9 +77,15 @@ const getMIMETypeForFileExtension = (fileExtension) => {
     return fileMIMEType ? fileMIMEType : undefined;
 };
 
+const getMIMETypeForPathParams = (pathParams) => {
+    const fileExtension = extractFileExtensionFromPathParams(pathParams);
+    return getMIMETypeForFileExtension(fileExtension);
+};
+
 module.exports.normalizeURLPath = normalizeURLPath;
 module.exports.parseURLPathParams = parseURLPathParams;
 module.exports.extractFileExtensionFromPathParams = extractFileExtensionFromPathParams;
 module.exports.extractFileNameFromPathParams = extractFileNameFromPathParams;
 module.exports.extractPOSTDataFromRequest = extractPOSTDataFromRequest;
 module.exports.getMIMETypeForFileExtension = getMIMETypeForFileExtension;
+module.exports.getMIMETypeForPathParams = getMIMETypeForPathParams;
