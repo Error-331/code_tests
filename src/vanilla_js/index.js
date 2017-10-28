@@ -37,7 +37,7 @@ import promisesUserCreated from './functional/promisses/user_created';
 async function run() {
     // fundamentals
     //await numbers();
-   // await numberStringOrder();
+    await numberStringOrder();
 
     //await hoistingGeneral();
     //await modules();
@@ -53,7 +53,7 @@ async function run() {
     //await generators();
 
     // fundamentals (objects)
-    await objectsBase();
+    //await objectsBase();
     //await checkIfPropertyExist();
     //await reflection();
 
