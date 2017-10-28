@@ -5,8 +5,8 @@ const fs = require('fs');
 const routes = [
     {
         path: 'data/save',
-        handler: function (){
-            return new Promise((resolve) => {
+        handler: async function (){
+            await new Promise((resolve) => {
                 const server = this;
                 const fileName = 'users.txt';
 
@@ -46,16 +46,32 @@ const routes = [
     },
 
     {
-        path: 'etag_tracking_check.html',
-        handler: function() {
-            return new Promise((resolve) => {
-                const server = this;
+        path: 'images/html5_badge_h_css3_semantics.png',
+        method: 'get',
+        handler: async function() {
+            const server = this;
+            const trackingETagValue = 'test_etag_1';
 
-                server._serveStaticFileByURLParams();
-                resolve();
-            });
+            if (server._isETagCheckProceed()) {
+                console.log(`ETag check is happening: "${server._getETagCheckValue()}"`);
+
+                if (server._isETagMatch(trackingETagValue)) {
+                    console.log('ETag match');
+                    return this._serveEmptyResponse(304);
+                } else {
+                    console.log('ETag not match');
+                    server._addETagToResponse(trackingETagValue);
+                }
+            } else if (server._isETagPresent()) {
+                console.log(`ETag is present: "${server._getETagValue()}"`);
+            } else {
+                console.log('ETag not present and ETag check is not happening');
+                server._addETagToResponse(trackingETagValue);
+            }
+
+            await server._serverStaticFileByPath('images/html5_badge_h_css3_semantics.png');
         }
-    }
+    },
 ];
 
 module.exports = routes;

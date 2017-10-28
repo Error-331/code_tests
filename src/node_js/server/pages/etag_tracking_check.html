@@ -5,6 +5,29 @@
     <title>ETag tracking</title>
 </head>
 <body>
-    ETag trackin...
+    ETag tracking...
+
+    <script>
+        const fetchHeaders = new Headers();
+        const fetchConfig = {
+            method: 'GET',
+            headers: fetchHeaders
+        };
+
+        fetch('images/html5_badge_h_css3_semantics.png', fetchConfig).then(function(response) {
+            return response.blob();
+        }).then(function(myBlob) {
+            const $tempIMG = document.createElement('img');
+            const $body = document.querySelector('body');
+
+            const imageURL = URL.createObjectURL(myBlob);
+            $tempIMG.src = imageURL;
+
+            $body.appendChild($tempIMG);
+        });
+    </script>
+
 </body>
+
+
 </html>
