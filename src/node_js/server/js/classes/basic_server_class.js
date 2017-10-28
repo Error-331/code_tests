@@ -16,6 +16,12 @@ const {
 } = require ('./../constants/general_server_constants');
 
 class BasicServerClass {
+    _isRequestHeaderExist(headerName) {
+        const preparedHeaderName = headerName.toLowerCase();
+
+        return this._request.headers[headerName] && this._request.headers[preparedHeaderName];
+    }
+
     _prepareRequestURLPath() {
         const [urlPathString, urlQueryString] = this._preparedRequestURL ? this._preparedRequestURL.split('?') : ['', ''];
 
@@ -72,6 +78,11 @@ class BasicServerClass {
         }
     }
 
+    _serveEmptyResponse(code = 200) {
+        this._writeHead(code);
+        this._response.end();
+    }
+
     _serveErrorPage(code = 500, error = '') {
         if (this._errorPageWasServed) {
             return;
@@ -92,8 +103,6 @@ class BasicServerClass {
 
         this._response.end(errorMessage);
         console.error(errorMessage);
-
-        this._errorPageWasServed = true;
     }
 
     async _serverDataByURLParams() {
@@ -154,7 +163,9 @@ class BasicServerClass {
     }
 
     _getRequestHeader(headerName) {
-        return this._request.headers[headerName];
+        const preparedHeaderName = headerName.toLowerCase();
+
+        return this._request.headers[headerName] || this._request.headers[preparedHeaderName];
     }
 
     _setResponseHeaders(responseHeaders) {
