@@ -65,11 +65,15 @@ class BasicServerClass {
         this._responseHeaders = [];
     }
 
-    _addResponseHeader(headerName, headerValue) {
+    _addResponseHeader(headerName, headerValue, override = true) {
+        let headerIndex = -1;
         const normalizedHeaderName = headerName.toLowerCase();
-        const headerIndex = this._responseHeaders.findIndex(header => {
-            return header[0] === normalizedHeaderName;
-        });
+
+        if (override) {
+            headerIndex = this._responseHeaders.findIndex(header => {
+                return header[0] === normalizedHeaderName;
+            });
+        }
 
         if (headerIndex === -1) {
             this._responseHeaders.push([normalizedHeaderName, headerValue])
@@ -168,8 +172,28 @@ class BasicServerClass {
         return this._request.headers[headerName] || this._request.headers[preparedHeaderName];
     }
 
+    _getResponseHeaderIndexByNameValue(headerName, headerValue) {
+        const normalizedHeaderName = headerName.toLowerCase();
+
+        return this._responseHeaders.findIndex(headerArr => {
+            return headerArr[0] === normalizedHeaderName && headerArr[1] === headerValue;
+        });
+    }
+
+    _getResponseHeaderByNameValue(headerName, headerValue) {
+        const normalizedHeaderName = headerName.toLowerCase();
+
+        return this._responseHeaders.find(headerArr => {
+            return headerArr[0] === normalizedHeaderName && headerArr[1] === headerValue;
+        });
+    }
+
     _setResponseHeaders(responseHeaders) {
         this._responseHeaders = responseHeaders;
+    }
+
+    _setResonseHeaderValueAtIndex(headerIndex, headerValue) {
+        this._responseHeaders[headerIndex][1] = headerValue;
     }
 
     async onHandleRequest() {

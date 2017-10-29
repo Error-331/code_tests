@@ -138,15 +138,17 @@ const CookiesServerMixin = (superClass) => class extends superClass {
         cookieObj.maxAge = cookieMaxAge ? cookieMaxAge : (cookieObj.maxAge || MAS_AGE_SECONDS_COOKIE);
         cookieObj.expires = cookieExpires ? cookieExpires : (cookieObj.expires || defaultExpiresDate.toUTCString());
 
+        const cookieString = this._prepareCookieHeader(cookieObj);
+
         if (originalCookieIndex !== -1) {
+            const oldCookieString = this._prepareCookieHeader(originalCookie);
+            const oldCookieIndex = this._getResponseHeaderIndexByNameValue('Set-Cookie', oldCookieString);
+
+            this._setResonseHeaderValueAtIndex(oldCookieIndex, cookieString);
             this._cookies[originalCookieIndex] = cookieObj;
         } else {
-
             this._cookies.push(cookieObj);
-
-            const cookieString = this._prepareCookieHeader(cookieObj);
-            this._addResponseHeader('Set-Cookie', cookieString);
-
+            this._addResponseHeader('Set-Cookie', cookieString, false);
         }
 
         return cookieObj;
