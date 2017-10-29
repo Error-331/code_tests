@@ -1,67 +1,22 @@
 'use strict';
 
-class CookieParser {
-    _parseCookiesString(cookiesString) {
-        const cookiesPairs = cookiesString.split(';');
+import CookieHandler from './cookie_handler';
 
-        return cookiesPairs.reduce((keysValuesObject, cookiePair) => {
-            const cookieKeyVal = cookiePair.split('=');
 
-            if (!cookieKeyVal || !cookieKeyVal[0]) {
-                return keysValuesObject;
-            }
+const cookieHandlerInstance = new CookieHandler();
 
-            const cookieKey = cookieKeyVal[0].trim();
-            const cookieValue = decodeURIComponent(cookieKeyVal[1].trim());
+const currentCookies = cookieHandlerInstance.getCookies();
+const currentCookiesCount = currentCookies.length;
 
-            keysValuesObject[cookieKey] = cookieValue;
-            return keysValuesObject;
-        }, {});
-    }
+const $testContainer1 = document.getElementById('testContainer1');
+const $documentFragment = document.createDocumentFragment();
 
-    constructor() {
-        this._cookiesKeysValues = this._parseCookiesString(document.cookie);
-    }
+for (let cookieCounter1 = 0; cookieCounter1 < currentCookiesCount; cookieCounter1++) {
+    const {name, value, path, domain, maxAge, expires, secure, httpOnly} = currentCookies[cookieCounter1];
+    const $cookieContainer = document.createElement('div');
 
-    deleteCookieByName() {
-
-    }
-
-    getCookieValueByCookieName(cookieName) {
-        return this._cookiesKeysValues[cookieName];
-    }
-
-    setCookie(cookieName, cookieValue, cookiePath = '/', cookieDomain = window.location.hostname, cookieMaxAge, cookieExpires, cookieSecure = false, cookieHTTPOnly = false) {
-        if (!cookieName) {
-            return;
-        }
-
-        if (!cookieValue) {
-            return;
-        }
-
-        cookieValue = encodeURIComponent(cookieValue);
-
-        const cookieMaxAgeYears = 30;
-        const cookieMaxAgeSeconds = 31536000 * cookieMaxAgeYears;
-
-        if (!cookieMaxAge) {
-            cookieMaxAge = cookieMaxAgeSeconds;
-        }
-
-        if (!cookieExpires) {
-            const currentDate = new Date();
-            currentDate.setFullYear(currentDate.getFullYear() + cookieMaxAgeYears);
-
-            cookieExpires = currentDate.toUTCString()
-        }
-
-        const cookieKeyValue = `${cookieName}=${cookieValue}`;
-        const cookieMainPart = `${cookieKeyValue}; path=${cookiePath}; domain=${cookieDomain}; max-age=${cookieMaxAge}; expires=${cookieExpires}; `;
-        const cookieSecurePart = `${cookieMainPart} ${cookieSecure ? 'secure=true;' : ''} `;
-        const cookieHTTPOnlyPart = `${cookieSecurePart} ${cookieHTTPOnly ? 'httponly=true;' : ''}`;
-
-        this._cookiesKeysValues[cookieName] = cookieValue;
-        document.cookie = cookieHTTPOnlyPart;
-    }
+    $cookieContainer.innerHTML = `Name: ${name}; Value: ${decodeURIComponent(value)}; Path: ${path}; Domain: ${domain}; Max-age: ${maxAge}; Expires: ${expires}; Secure: ${secure}; HTTP-only: ${httpOnly}`;
+    $documentFragment.appendChild($cookieContainer);
 }
+
+$testContainer1.appendChild($documentFragment);

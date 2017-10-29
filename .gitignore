@@ -12,4 +12,5 @@ ehthumbs.db
 Thumbs.db
 
 src/node_js/server/user_created
+src/browser_js/**/**/bundle.js
 dist/*
