@@ -146,6 +146,21 @@ export default async () => {
     let car1 = new ExampleCarClass1('Car');
     car1.setName('Lamborghini');
 
+    class ExampleDomainClass1 {
+        constructor(
+            public name: string,
+            public isActive: boolean,
+            public dateAdd: Date,
+            private registrar: string
+        ) {}
+
+        public getRegistrar(): string {
+            return this.registrar
+        }
+    }
+
+    let domain1 = new ExampleDomainClass1('test1.com', true, new Date(), 'web-futuristics.com');
+
     console.log('TypeScript classes examples');
     console.log('===========================');
     console.log('');
@@ -167,10 +182,10 @@ export default async () => {
     // humman1 = animal1; // Error: 'Animal' and 'Human' are not compatible
 
     console.log('Example plank 1 perimeter (ExamplePlankClass1):', plank1.perimeter);
-    //plank1.perimeter = 30; // won't work
+    // plank1.perimeter = 30; // won't work
 
     console.log('Example plank 2 perimeter (ExamplePlankClass2):', plank2.perimeter);
-    //plank2.perimeter = 50; // won't work
+    // plank2.perimeter = 50; // won't work
 
     console.log('');
 
@@ -185,6 +200,15 @@ export default async () => {
     console.log('');
 
     console.log('Example call to class method (move) that was specified in abstract class(ExampleAbstractVehicleClass1):', car1.move());
+
+    console.log('');
+    console.log('Parameter properties examples:');
+    console.log('');
+
+    console.log('domain1.name =', domain1.name);
+    console.log('domain1.isActive =', domain1.isActive);
+    console.log('domain1.dateAdd =', domain1.dateAdd);
+    console.log('domain1.registrar =', domain1.getRegistrar());
 
     console.log('');
     console.log('--------------------------------------------------------');

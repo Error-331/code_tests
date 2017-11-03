@@ -2,7 +2,7 @@
 
 //import basicTypes from './basic_types';
 //import interfaces from './interfaces';
-//import classes from './classes';
+import classes from './classes';
 //import functions from './functions';
 //import generics from './generics';
 //import enums from './enums';
@@ -17,14 +17,14 @@ async function run() {
     // fundamentals
     //await basicTypes();
     //await interfaces();
-    //await classes();
+    await classes();
     //await functions();
     //await generics();
     //await enums();
     //await rest_spread();
     //await async_await();
     //await decorators();
-    await mixins();
+    //await mixins();
 
     // misc
     //await externalLibraryUsage();
