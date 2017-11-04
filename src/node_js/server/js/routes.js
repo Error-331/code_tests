@@ -72,6 +72,29 @@ const routes = [
             await server._serverStaticFileByPath('images/html5_badge_h_css3_semantics.png');
         }
     },
+
+    {
+        path: 'jsons/test1.json',
+        hostname: 'test1.com',
+        handler: async function() {
+            const server = this;
+            await server._forwardOpenProxyRequest();
+        }
+    },
+
+    {
+        path: 'jsons/test1.json',
+        handler: async function() {
+            const server = this;
+
+            server._addResponseHeader('x-test', 'test_value');
+            server._serveJSON({
+                'status': 'ok',
+                'isActive': true,
+                'date': new Date()
+            });
+        }
+    }
 ];
 
 module.exports = routes;

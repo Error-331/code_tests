@@ -10,12 +10,14 @@ const net = require('net');
 const BasicServerClass = require('./js/classes/basic_server_class');
 const CookiesServerMixin = require('./js/mixins/cookies_server_mixin');
 const StaticServerMixin = require('./js/mixins/static_server_mixin');
-const ETagTrackingMixin = require('./js/mixins/etag_tracking_mixin');
+const JSONServerMixin = require('./js/mixins/json_server_mixin');
+const ETagTrackingServerMixin = require('./js/mixins/etag_tracking_server_mixin');
+const OpenProxyServerMixin = require('./js/mixins/open_proxy_server_mixin');
 
 const {SERVER_PORT} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');
 
-class MainServerClass extends ETagTrackingMixin(CookiesServerMixin(StaticServerMixin(BasicServerClass))) {
+class MainServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin((CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {
 }
 
 const webServerRequestHandler = async (request, response) => {

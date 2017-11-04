@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open proxy server test</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Open prosy server test</h1>
+
+    <script>
+        const fetchHeadersList = {
+            'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0',
+
+            'Accept': 'application/json',
+            'Accept-Language': 'en-US,en',
+            'Accept-Encoding': 'gzip, deflate',
+
+            'X-Requested-With': 'XMLHttpRequest',
+            'Connection': 'keep-alive'
+        };
+
+        const fetchHeaders = new Headers(fetchHeadersList);
+        const fetchConfig = {
+            method: 'GET',
+            headers: fetchHeaders
+        };
+
+        fetch('jsons/test1.json', fetchConfig)
+            .then(response => response.json())
+            .then(responseJSON => {
+                const $body = document.querySelector('body');
+                const $div = document.createElement('div');
+
+                $div.innerText = JSON.stringify(responseJSON);
+                $body.appendChild($div);
+            });
+    </script>
+
+</body>
+</html>

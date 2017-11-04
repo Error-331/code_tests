@@ -241,7 +241,6 @@ module.exports = async () => {
             setTimeout(_ => resolvePromise(), 2000);
         });
 
-
         readablePushStream1.on('data', function(dataChunk) {
             console.log(`Received ${dataChunk.length} bytes of data.`);
             readCount++;
