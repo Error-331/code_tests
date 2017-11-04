@@ -3,6 +3,7 @@
 const HTML_MIME_TYPE = 'text/html';
 const CSS_MIME_TYPE = 'text/css';
 const JS_MIME_TYPE = 'application/javascript';
+const JSON_MIME_TYPE = 'application/json';
 
 const PNG_MIME_TYPE = 'image/png';
 const GIF_MIME_TYPE = 'image/gif';
@@ -29,6 +30,7 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'html': HTML_MIME_TYPE,
     'css': CSS_MIME_TYPE,
     'js': JS_MIME_TYPE,
+    'json': JSON_MIME_TYPE,
 
     'png': PNG_MIME_TYPE,
     'gif': GIF_MIME_TYPE,
@@ -57,6 +59,7 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
 module.exports.HTML_MIME_TYPE = HTML_MIME_TYPE;
 module.exports.CSS_MIME_TYPE = CSS_MIME_TYPE;
 module.exports.JS_MIME_TYPE = JS_MIME_TYPE;
+module.exports.JSON_MIME_TYPE = JSON_MIME_TYPE;
 
 module.exports.PNG_MIME_TYPE = PNG_MIME_TYPE;
 module.exports.GIF_MIME_TYPE = GIF_MIME_TYPE;
