@@ -144,7 +144,7 @@ const CookiesServerMixin = (superClass) => class extends superClass {
             const oldCookieString = this._prepareCookieHeader(originalCookie);
             const oldCookieIndex = this._getResponseHeaderIndexByNameValue('Set-Cookie', oldCookieString);
 
-            this._setResonseHeaderValueAtIndex(oldCookieIndex, cookieString);
+            this._setResponseHeaderValueAtIndex(oldCookieIndex, cookieString);
             this._cookies[originalCookieIndex] = cookieObj;
         } else {
             this._cookies.push(cookieObj);

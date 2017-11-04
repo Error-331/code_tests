@@ -1,6 +1,6 @@
 'use strict';
 
-const ETagTrackingMixin = (superClass) => class extends superClass {
+const ETagTrackingServerMixin = (superClass) => class extends superClass {
     _isETagPresent() {
         return this._isRequestHeaderExist('ETag');
     }
@@ -33,4 +33,4 @@ const ETagTrackingMixin = (superClass) => class extends superClass {
     }
 };
 
-module.exports = ETagTrackingMixin;
+module.exports = ETagTrackingServerMixin;

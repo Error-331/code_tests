@@ -1,6 +1,7 @@
 'use strict';
 
 const queryString = require('querystring');
+const url = require('url');
 
 const {
     normalizeURLPath,
@@ -39,12 +40,17 @@ class BasicServerClass {
     }
 
     _findCustomRouteForCurrentRequest() {
-        const urlPath = this._urlPathParams.join('/');
+        const urlPath = this._getRequestURLPath();
         const preparedURLPath = normalizeURLPath(urlPath);
         const requestMethod = this._request.method.toLowerCase();
+        const requestHostname = this._getRequestHostname();
 
         return this._routes.find(route => {
             if (route.method && route.method.toLocaleLowerCase() !== requestMethod) {
+                return false;
+            }
+
+            if (route.hostname && route.hostname !== requestHostname) {
                 return false;
             }
 
@@ -79,6 +85,12 @@ class BasicServerClass {
             this._responseHeaders.push([normalizedHeaderName, headerValue])
         } else {
             this._responseHeaders[headerIndex][1] = headerValue;
+        }
+    }
+
+    _addResponseHeaders(responseHeaders) {
+        for (const headerName in responseHeaders) {
+            this._addResponseHeader(headerName, responseHeaders[headerName ]);
         }
     }
 
@@ -147,7 +159,7 @@ class BasicServerClass {
     }
 
     _getServerDomain() {
-        return this._constantsOverrides.HTML_PAGES_DIRECTORY_PATH ? this._constantsOverrides.HTML_PAGES_DIRECTORY_PATH : SERVER_DOMAIN;
+        return this._constantsOverrides.SERVER_DOMAIN ? this._constantsOverrides.SERVER_DOMAIN : SERVER_DOMAIN;
     }
 
     _getHTMLPagesDirectoryPath() {
@@ -188,11 +200,31 @@ class BasicServerClass {
         });
     }
 
+    _getRequestHostname() {
+        const hostHeader = this._getRequestHeader('host');
+
+        if (hostHeader) {
+            return url.parse(`http://${hostHeader}`).hostname;
+        }
+    }
+
+    _getRequestPort() {
+        const hostHeader = this._getRequestHeader('host');
+
+        if (hostHeader) {
+            return url.parse(`http://${hostHeader}`).port;
+        }
+    }
+
+    _getRequestURLPath() {
+        return this._urlPathParams.join('/');
+    }
+
     _setResponseHeaders(responseHeaders) {
         this._responseHeaders = responseHeaders;
     }
 
-    _setResonseHeaderValueAtIndex(headerIndex, headerValue) {
+    _setResponseHeaderValueAtIndex(headerIndex, headerValue) {
         this._responseHeaders[headerIndex][1] = headerValue;
     }
 
