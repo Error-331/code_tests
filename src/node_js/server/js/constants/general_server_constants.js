@@ -1,6 +1,7 @@
 'use strict';
 
-const SERVER_PORT = 3000;
+const HTTP_SERVER_PORT = 3000;
+const HTTPS_SERVER_PORT = 4000;
 const SERVER_DOMAIN = 'localhost';
 
 const PUBLIC_DIRECTORY_PATH = '.';
@@ -10,7 +11,8 @@ const RESOURCES_DIRECTORY_PATH = `${PUBLIC_DIRECTORY_PATH}/resources`;
 
 const MAX_POST_DATA_SIZE = 1e6;
 
-module.exports.SERVER_PORT = SERVER_PORT;
+module.exports.HTTP_SERVER_PORT = HTTP_SERVER_PORT;
+module.exports.HTTPS_SERVER_PORT = HTTPS_SERVER_PORT;
 module.exports.SERVER_DOMAIN = SERVER_DOMAIN;
 
 module.exports.HTML_PAGES_DIRECTORY_PATH = HTML_PAGES_DIRECTORY_PATH;

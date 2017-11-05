@@ -17,6 +17,10 @@ const {
 } = require ('./../constants/general_server_constants');
 
 class BasicServerClass {
+    _isHTTPSUsed() {
+        return this._isHTTPS;
+    }
+
     _isRequestHeaderExist(headerName) {
         const preparedHeaderName = headerName.toLowerCase();
 
@@ -42,7 +46,7 @@ class BasicServerClass {
     _findCustomRouteForCurrentRequest() {
         const urlPath = this._getRequestURLPath();
         const preparedURLPath = normalizeURLPath(urlPath);
-        const requestMethod = this._request.method.toLowerCase();
+        const requestMethod = this._getRequestMethod();
         const requestHostname = this._getRequestHostname();
 
         return this._routes.find(route => {
@@ -170,6 +174,10 @@ class BasicServerClass {
         return this._constantsOverrides.RESOURCES_DIRECTORY_PATH ? this._constantsOverrides.RESOURCES_DIRECTORY_PATH : RESOURCES_DIRECTORY_PATH;
     }
 
+    _getRequestMethod() {
+        return this._request.method;
+    }
+
     _getResponseHeaders() {
         return this._responseHeaders;
     }
@@ -202,22 +210,28 @@ class BasicServerClass {
 
     _getRequestHostname() {
         const hostHeader = this._getRequestHeader('host');
+        const protocol = this._getProtocol();
 
         if (hostHeader) {
-            return url.parse(`http://${hostHeader}`).hostname;
+            return url.parse(`${protocol}://${hostHeader}`).hostname;
         }
     }
 
     _getRequestPort() {
         const hostHeader = this._getRequestHeader('host');
+        const protocol = this._getProtocol();
 
         if (hostHeader) {
-            return url.parse(`http://${hostHeader}`).port;
+            return url.parse(`${protocol}://${hostHeader}`).port;
         }
     }
 
     _getRequestURLPath() {
         return this._urlPathParams.join('/');
+    }
+
+    _getProtocol() {
+        return this._isHTTPSUsed() ? 'https' : 'http';
     }
 
     _setResponseHeaders(responseHeaders) {
@@ -242,11 +256,13 @@ class BasicServerClass {
         await this._routeRequest();
     }
 
-    constructor(request, response, routes = [], serverRootDir, constantsOverrides) {
+    constructor(request, response, options = {}, routes = [], serverRootDir, constantsOverrides) {
         this._errorPageWasServed = false;
 
         this._request = request;
         this._response = response;
+
+        this._isHTTPS = options.isHTTPS !== undefined ? options.isHTTPS : false;
 
         this._routes = routes;
         this._serverRootDir = serverRootDir;
