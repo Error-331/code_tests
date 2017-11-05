@@ -4,7 +4,9 @@
 // https://tools.ietf.org/html/rfc6455
 // https://gist.github.com/bradwright/1021082
 
+const {readFileSync} = require('fs');
 const http = require('http');
+const https = require('https');
 const net = require('net');
 
 const BasicServerClass = require('./js/classes/basic_server_class');
@@ -14,14 +16,19 @@ const JSONServerMixin = require('./js/mixins/json_server_mixin');
 const ETagTrackingServerMixin = require('./js/mixins/etag_tracking_server_mixin');
 const OpenProxyServerMixin = require('./js/mixins/open_proxy_server_mixin');
 
-const {SERVER_PORT} = require ('./js/constants/general_server_constants');
+const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');
 
 class MainServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin((CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {
 }
 
-const webServerRequestHandler = async (request, response) => {
-    const serverClassInstance = new MainServerClass(request, response, routes, __dirname);
+const httpWebServerRequestHandler = async (request, response) => {
+    const serverClassInstance = new MainServerClass(request, response, {}, routes, __dirname);
+    await serverClassInstance.onHandleRequest();
+};
+
+const httpsWebServerRequestHandler = async (request, response) => {
+    const serverClassInstance = new MainServerClass(request, response, {isHTTPS: true}, routes, __dirname);
     await serverClassInstance.onHandleRequest();
 };
 
@@ -62,13 +69,27 @@ const socketServerRequestHandler = (socket) => {
     });
 };
 
-const webServer = http.createServer(webServerRequestHandler);
+const httpWebServer = http.createServer(httpWebServerRequestHandler);
 
-webServer.listen(SERVER_PORT, (error) => {
+httpWebServer.listen(HTTP_SERVER_PORT, (error) => {
     if (error) {
-        return console.error('Error while starting server -', error);
+        return console.error('Error while starting server (http) -', error);
     } else {
-        console.log(`Server is listening on ${SERVER_PORT}`);
+        console.log(`Server (http) is listening on ${HTTP_SERVER_PORT}`);
+    }
+});
+
+const httpsWebServer = https.createServer({
+    key: readFileSync('./ssl/server.key', 'utf8'),
+    cert: readFileSync('./ssl/server.crt', 'utf8'),
+    ca: readFileSync('./ssl/ca.crt', 'utf8')
+}, httpsWebServerRequestHandler);
+
+httpsWebServer.listen(HTTPS_SERVER_PORT, (error) => {
+    if (error) {
+        return console.error('Error while starting server (https) -', error);
+    } else {
+        console.log(`Server (https) is listening on ${HTTPS_SERVER_PORT}`);
     }
 });
 
