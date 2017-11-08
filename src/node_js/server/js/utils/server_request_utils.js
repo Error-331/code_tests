@@ -31,6 +31,10 @@ const parseHTTPHead = (headString) => {
 const parseHTTPHeader = (headerString) => {
     const splittedHeaderString = headerString.split(':');
 
+    if (splittedHeaderString.length <= 0) {
+        return null;
+    }
+
     let headerName = splittedHeaderString[0].toLowerCase();
     let headerValue = splittedHeaderString[1];
 
@@ -46,7 +50,7 @@ const parseHTTPRequest = (stringToParse) => {
     const parsedLines = stringToParse.split('\r\n');
     const httpRequestData = {
         head: {},
-        headers: [],
+        headers: {},
         body: ''
     };
 
@@ -67,7 +71,21 @@ const parseHTTPRequest = (stringToParse) => {
 
         if (!isHeadersParsed) {
             // parse header
-            httpRequestData.headers.push(parseHTTPHeader(parsedLine))
+            const parsedHeader = parseHTTPHeader(parsedLine);
+
+            if (parsedHeader === null) {
+                return parsedData;
+            }
+
+            const parsedHeaderName = parsedHeader[0];
+            const parsedHeaderValue = parsedHeader[1];
+            const headerValue = httpRequestData.headers[parsedHeaderName];
+
+            if (headerValue) {
+                typeof headerValue !== 'object' ? httpRequestData.headers[parsedHeaderName] = [headerValue] : headerValue.push(parsedHeaderValue);
+            } else {
+                httpRequestData.headers[parsedHeaderName] = parsedHeaderValue;
+            }
         } else {
             // parse body line
         }
