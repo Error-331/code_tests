@@ -17,6 +17,65 @@ const parseURLPathParams = (pathString) => {
     return pathString ? pathString.split('/').map(param => decodeURIComponent(param)) : [];
 };
 
+const parseHTTPHead = (headString) => {
+    const [method, target, protocolVersion] = headString.split(' ');
+    const [protocol, versionNumber] = protocolVersion.split('/');
+    const parsedHead = {method, target, protocolVersion: {protocol, versionNumber}};
+
+    parsedHead.method = parsedHead.method.toLowerCase();
+    parsedHead.protocolVersion.protocol = parsedHead.protocolVersion.protocol.toLowerCase();
+
+    return parsedHead;
+};
+
+const parseHTTPHeader = (headerString) => {
+    const splittedHeaderString = headerString.split(':');
+
+    let headerName = splittedHeaderString[0].toLowerCase();
+    let headerValue = splittedHeaderString[1];
+
+    if (splittedHeaderString.length >= 2) {
+        headerValue = splittedHeaderString.slice(1).join(':').replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+
+    return [headerName, headerValue];
+};
+
+// TODO: add body parser
+const parseHTTPRequest = (stringToParse) => {
+    const parsedLines = stringToParse.split('\r\n');
+    const httpRequestData = {
+        head: {},
+        headers: [],
+        body: ''
+    };
+
+    return parsedLines.reduce((parsedData, parsedLine, parsedLineIndex) => {
+        let isHeadersParsed = false;
+
+        // first line - parse head
+        if (parsedLineIndex === 0) {
+            parsedData.head = parseHTTPHead(parsedLine);
+            return parsedData;
+        }
+
+        // delimiter line reached
+        if (parsedLine.length === 0) {
+            isHeadersParsed = true;
+            return parsedData;
+        }
+
+        if (!isHeadersParsed) {
+            // parse header
+            httpRequestData.headers.push(parseHTTPHeader(parsedLine))
+        } else {
+            // parse body line
+        }
+
+        return parsedData;
+    }, httpRequestData);
+};
+
 const extractFileExtensionFromPathParams = (pathParams) => {
     const pathParamsCount = pathParams.length;
 
@@ -53,7 +112,7 @@ const extractPOSTDataFromRequest = (request) =>  {
     return new Promise((resolve, reject) => {
         let postData = '';
 
-        if (request.method !== "POST") {
+        if (request.method !== 'POST') {
             return resolve(postData);
         }
 
@@ -84,6 +143,9 @@ const getMIMETypeForPathParams = (pathParams) => {
 
 module.exports.normalizeURLPath = normalizeURLPath;
 module.exports.parseURLPathParams = parseURLPathParams;
+module.exports.parseHTTPHead = parseHTTPHead;
+module.exports.parseHTTPHeader = parseHTTPHeader;
+module.exports.parseHTTPRequest = parseHTTPRequest;
 module.exports.extractFileExtensionFromPathParams = extractFileExtensionFromPathParams;
 module.exports.extractFileNameFromPathParams = extractFileNameFromPathParams;
 module.exports.extractPOSTDataFromRequest = extractPOSTDataFromRequest;
