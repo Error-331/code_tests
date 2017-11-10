@@ -50,7 +50,7 @@ const uniqueIntFinderNotBestSolution = (integerArray) => {
     let integerOccurrencesKeys = Object.keys(integerOccurrences);
 
     return integerOccurrencesKeys.length === 1 ? integerOccurrencesKeys[0] : null;
-}
+};
 
 // best solution
 const uniqueIntFinderBestSolution = (integerArray) => {
@@ -61,7 +61,7 @@ const uniqueIntFinderBestSolution = (integerArray) => {
     });
 
     return uniqueInteger;
-}
+};
 
 console.log('Random position tuples generation');
 console.log('=================================');

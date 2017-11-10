@@ -27,7 +27,6 @@ export default async () => {
 
     console.log('');
 
-
     function hoistFunc1() {
         console.log('Hoisted variable inside function -', hoistedVar2);
         var hoistedVar2 = 'hoisted_var2_val1'

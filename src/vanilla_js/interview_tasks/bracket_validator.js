@@ -42,7 +42,7 @@ const bracketsValidatorGoodSolution = (stringToTest) => {
     }
 
     return true;
-}
+};
 
 // best solution
 const bracketsValidatorBestSolution = (stringToTest) =>  {
@@ -77,7 +77,7 @@ const bracketsValidatorBestSolution = (stringToTest) =>  {
     }
 
     return openersStack.length === 0;
-}
+};
 
 console.log('Brackets validation');
 console.log('===================');

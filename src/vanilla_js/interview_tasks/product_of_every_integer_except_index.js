@@ -28,7 +28,7 @@ const getProductsOfAllIntsExceptAtIndexNotBestSolution = (integersToCount) => {
     });
 
     return productArray;
-}
+};
 
 // best solution
 const getProductsOfAllIntsExceptAtIndexBestSolution = (integersToCount) => {
@@ -50,7 +50,7 @@ const getProductsOfAllIntsExceptAtIndexBestSolution = (integersToCount) => {
     }
 
     return productsOfAllIntsExceptAtIndex;
-}
+};
 
 console.log('Product calculation (every integer expect at index)');
 console.log('===================================================');

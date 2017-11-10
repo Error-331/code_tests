@@ -54,7 +54,7 @@ const highestProductOfThreeIntegersCombinatorialSolution = (integersToCount, mul
     }
 
     return product;
-}
+};
 
 // best solution
 const highestProductOfThreeIntegersBestSolution = (integersToCount) => {
@@ -92,7 +92,7 @@ const highestProductOfThreeIntegersBestSolution = (integersToCount) => {
     }
 
     return highestProductOf3;
-}
+};
 
 console.log('Product calculation (highest product of three integers)');
 console.log('=======================================================');

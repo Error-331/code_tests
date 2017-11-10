@@ -37,7 +37,7 @@ const binarySearchOfInteger = (sortedInts, intToFind) => {
     }
 
     return searchValuePosition;
-}
+};
 
 // best solution
 const findSpecificSumOfTwoIntsBestSolution = (intsArray, specificSum) => {
@@ -63,7 +63,7 @@ const findSpecificSumOfTwoIntsBestSolution = (intsArray, specificSum) => {
     }
 
     return false;
-}
+};
 
 // binary search solution
 const findSpecificSumOfTwoIntsBinarySearchSolution = (intsArray, specificSum) => {
@@ -84,7 +84,7 @@ const findSpecificSumOfTwoIntsBinarySearchSolution = (intsArray, specificSum) =>
     }
 
     return false;
-}
+};
 
 console.log('Sum of two elements equality to use sum');
 console.log('=======================================');

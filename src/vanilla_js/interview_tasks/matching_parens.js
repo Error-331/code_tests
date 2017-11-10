@@ -28,7 +28,7 @@ const findClosingParenthesesPositionBestSolution = (sentenceToTest, openingParen
     }
 
     return null;
-}
+};
 
 console.log('Parenthesis matching');
 console.log('====================');
