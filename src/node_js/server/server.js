@@ -17,19 +17,26 @@ const StaticServerMixin = require('./js/mixins/static_server_mixin');
 const JSONServerMixin = require('./js/mixins/json_server_mixin');
 const ETagTrackingServerMixin = require('./js/mixins/etag_tracking_server_mixin');
 const OpenProxyServerMixin = require('./js/mixins/open_proxy_server_mixin');
+const WebSocketReverseProxyServerMixin = require('./js/mixins/web_socket_reverse_proxy_server_mixin');
 
-const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT, WEB_SOCKET_SERVER_POST, WEB_SOCKET_HOST} = require ('./js/constants/general_server_constants');
+const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT, WEB_SOCKET_SERVER_PORT, WEB_SOCKET_HOST} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');
 
-class MainServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin((CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {
-}
+// classes definition starts here
+class HttpServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin((CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {}
+class WebSocketReverseProxyClass extends WebSocketReverseProxyServerMixin(CookiesServerMixin(BasicServerClass)) {}
 
 const httpWebServerRequestHandler = async (request, response) => {
-    const serverClassInstance = new MainServerClass(request, response, {}, routes, __dirname);
+    const serverClassInstance = new HttpServerClass(request, response, {}, routes, __dirname);
     await serverClassInstance.onHandleRequest();
 };
 
 const httpWebServer = http.createServer(httpWebServerRequestHandler);
+
+httpWebServer.on('upgrade', async (request, socket) => {
+    const serverClassInstance = new WebSocketReverseProxyClass(request, socket, {}, routes, __dirname);
+    await serverClassInstance.onHandleUpgradeRequest();
+});
 
 httpWebServer.listen(HTTP_SERVER_PORT, (error) => {
     if (error) {
@@ -40,7 +47,7 @@ httpWebServer.listen(HTTP_SERVER_PORT, (error) => {
 });
 
 const httpsWebServerRequestHandler = async (request, response) => {
-    const serverClassInstance = new MainServerClass(request, response, {isHTTPS: true}, routes, __dirname);
+    const serverClassInstance = new HttpServerClass(request, response, {isHTTPS: true}, routes, __dirname);
     await serverClassInstance.onHandleRequest();
 };
 
@@ -65,6 +72,6 @@ const socketServerRequestHandler = (socket) => {
 
 const webSocketServer = net.createServer(socketServerRequestHandler);
 
-webSocketServer.listen({port:  WEB_SOCKET_SERVER_POST, host: WEB_SOCKET_HOST} , () => {
-    console.log(`Server (web-socket) is listening on ${WEB_SOCKET_SERVER_POST} at ${WEB_SOCKET_HOST}`);
+webSocketServer.listen(WEB_SOCKET_SERVER_PORT, WEB_SOCKET_HOST , () => {
+    console.log(`Server (web-socket) is listening on ${WEB_SOCKET_SERVER_PORT} at ${WEB_SOCKET_HOST}`);
 });

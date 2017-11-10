@@ -14,7 +14,7 @@ class BasicWebSocketServerClass {
     }
 
     _onWebSocketData(data) {
-        this._isDebugEnabled && console.log('WebSocket event: data, message: ', data.toString());
+        this._isDebugEnabled && console.log('WebSocket event: data, message: ', data.toString('utf8'));
 
         // binary = latin1
         const stringData = data.toString('binary');
@@ -24,31 +24,6 @@ class BasicWebSocketServerClass {
         } else {
 
         }
-
-
-
-       /*
-
-
-
-        if (this._isWebSocketConnected) {
-            // do something
-        }
-        else {
-            this._performHandshake(stringData);
-
-           /* var response = HandshakeHYBI00(data.toString('binary'));
-            if (response) {
-                // handshake succeeded, open connection
-                socket.write(response.join('\r\n'), 'binary');
-                wsConnected = true;
-            }
-            else {
-                // close connection, handshake bad
-                socket.end();
-                return;
-            }*/
-       // }
     }
 
     _onWebSocketDrain() {
@@ -91,11 +66,6 @@ class BasicWebSocketServerClass {
     _performHandshake(receivedData) {
         const httpRequestData = parseHTTPRequest(receivedData);
 
-        if (!this._isWebSocketOpenRequest(httpRequestData)) {
-            // do something
-            return;
-        }
-
         // save necessary data sent from client during handshake
         this._secWebSocketKeyClient = httpRequestData.headers['sec-websocket-key'];
         this._secWebSocketVersion = parseInt(httpRequestData.headers['sec-websocket-version']);
@@ -111,16 +81,11 @@ class BasicWebSocketServerClass {
         this._socket.write('Upgrade:websocket\r\n', 'binary');
         this._socket.write('Connection:Upgrade\r\n', 'binary');
         this._socket.write('\r\n');
+
+        // temporary
+        this._isWebSocketConnected = true;
     }
 
-    _isWebSocketOpenRequest(httpRequestData) {
-        const secWebSocketKeyHeader = httpRequestData.headers['sec-websocket-key'];
-        const secWebSocketVersionHeader = httpRequestData.headers['sec-websocket-version'];
-        const secWebSocketExtensionsHeader = httpRequestData.headers['sec-websocket-extensions'];
-        const upgradeHeader = httpRequestData.headers['upgrade'];
-
-        return secWebSocketKeyHeader && secWebSocketVersionHeader && secWebSocketExtensionsHeader && upgradeHeader;
-    }
 
     constructor(socket, options) {
         this._socket = socket;

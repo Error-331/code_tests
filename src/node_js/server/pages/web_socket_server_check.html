@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web socket server test</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Web socket server test</h1>
+
+    <script>
+        const webSocketInstance = new WebSocket('ws://localhost:3000');
+
+        webSocketInstance.onopen = function(error) {
+            console.error(error);
+            console.log('We socket protocol:', webSocketInstance.protocol);
+
+            webSocketInstance.send("Hello WebSocket!");
+
+        };
+
+
+        webSocketInstance.onmessage = function(e) {
+            if(typeof e.data === "string"){
+                console.log("String message received", e, e.data);
+            } else {
+                console.log("Other message received", e, e.data);
+            }
+        };
+
+        webSocketInstance.onerror = function(e) {
+            console.error("WebSocket Error: " , e);
+//Custom function for handling errors
+
+        };
+
+
+        webSocketInstance.onclose = function(e) {
+            console.log("Connection closed", e);
+        };
+
+
+
+    </script>
+</body>
+</html>
