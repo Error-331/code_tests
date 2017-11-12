@@ -1,6 +1,7 @@
 'use strict';
 
 import numbers from './fundamentals/numbers';
+import bitwise from './fundamentals/operators/bitwise';
 import numberStringOrder from './fundamentals/operators/number_string_order';
 
 import hoistingGeneral from './fundamentals/hoisting/hoisting_general';
@@ -37,7 +38,8 @@ import promisesUserCreated from './functional/promisses/user_created';
 async function run() {
     // fundamentals
     //await numbers();
-    await numberStringOrder();
+    await bitwise();
+    //await numberStringOrder();
 
     //await hoistingGeneral();
     //await modules();
