@@ -16,6 +16,8 @@ const {
     RESOURCES_DIRECTORY_PATH,
 } = require ('./../constants/general_server_constants');
 
+const HTTP_STATUS_CODES = require('./../constants/http_status_codes');
+
 class BasicServerClass {
     _isHTTPSUsed() {
         return this._isHTTPS;
@@ -234,6 +236,14 @@ class BasicServerClass {
         return this._isHTTPSUsed() ? 'https' : 'http';
     }
 
+    _getProtocolVersion() {
+        return this._protocolVersion;
+    }
+
+    _getStatusCodeString(statusCode) {
+        return HTTP_STATUS_CODES[statusCode.toString()];
+    }
+
     _setResponseHeaders(responseHeaders) {
         this._responseHeaders = responseHeaders;
     }
@@ -263,6 +273,7 @@ class BasicServerClass {
         this._response = response;
 
         this._isHTTPS = options.isHTTPS !== undefined ? options.isHTTPS : false;
+        this._protocolVersion = '1.1';
 
         this._routes = routes;
         this._serverRootDir = serverRootDir;
