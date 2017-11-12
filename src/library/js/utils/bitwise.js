@@ -1,6 +1,6 @@
 'use strict';
 
-export const convertToBinaryString = (numberToConvert, minLength = 4) => {
+const convertToBinaryString = (numberToConvert, minLength = 4) => {
     let convertedNumber = numberToConvert.toString(2);
     const convertedNumberLength = convertedNumber.length;
 
@@ -14,3 +14,5 @@ export const convertToBinaryString = (numberToConvert, minLength = 4) => {
 
     return convertedNumber;
 };
+
+module.exports.convertToBinaryString = convertToBinaryString;
