@@ -36,6 +36,7 @@ import promisesTasks from './functional/promisses/tasks';
 import promisesUserCreated from './functional/promisses/user_created';
 
 import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
+import passengerSeatsForFamiliesOfThree from './interview_tasks/passenger_seats_for_families_of_three';
 
 async function run() {
     // fundamentals
@@ -82,7 +83,8 @@ async function run() {
     //await compose();
 
     // interview tasks
-    await weeksInHawaii();
+    //await weeksInHawaii();
+    await passengerSeatsForFamiliesOfThree();
 }
 
 run();

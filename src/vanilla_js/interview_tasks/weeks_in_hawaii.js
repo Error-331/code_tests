@@ -6,7 +6,7 @@
 
 export default async () => {
     // not very accurate and not best solution
-    const notVeryAccurateNotBestSolutionFunc =(function () {
+    const notVeryAccurateNotBestSolutionFunc = (function () {
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
         const weekDaysNames = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -87,8 +87,8 @@ export default async () => {
         }
     }());
 
-    console.log('Built in functions');
-    console.log('==================');
+    console.log('Weeks in Hawaii');
+    console.log('===============');
     console.log('');
 
     console.log('Not very accurate and not best solution...');
