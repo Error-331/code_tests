@@ -35,10 +35,12 @@ import promisesBase from './functional/promisses/base';
 import promisesTasks from './functional/promisses/tasks';
 import promisesUserCreated from './functional/promisses/user_created';
 
+import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
+
 async function run() {
     // fundamentals
     //await numbers();
-    await bitwise();
+    //await bitwise();
     //await numberStringOrder();
 
     //await hoistingGeneral();
@@ -78,6 +80,9 @@ async function run() {
     //await promisesTasks();
     //await promisesUserCreated();
     //await compose();
+
+    // interview tasks
+    await weeksInHawaii();
 }
 
 run();
