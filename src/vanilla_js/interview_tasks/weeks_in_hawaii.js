@@ -6,6 +6,8 @@
 
 export default async () => {
     // not very accurate and not best solution
+
+    // TODO: try other test cases
     const notVeryAccurateNotBestSolutionFunc = (function () {
         const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         const monthLengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -27,6 +29,11 @@ export default async () => {
             return weekDaysNames.findIndex(weekDay => weekDay.toLowerCase() === userWeekDay);
         }
 
+        function findMonthIndex(userMonthName) {
+            userMonthName = userMonthName.toLowerCase();
+            return monthNames.findIndex(monthName => monthName.toLowerCase() === userMonthName);
+        }
+
         function findWeekDayIndex(userYear, userFirstYearDayWeekDayIndex, userMonthIndex, monthEnd = false) {
             for (let monthIndexCounter = 0; monthIndexCounter < monthLengths.length && monthIndexCounter < userMonthIndex; monthIndexCounter++) {
                 let daysInMonth = monthLengths[monthIndexCounter];
@@ -43,11 +50,6 @@ export default async () => {
             }
 
             return userFirstYearDayWeekDayIndex;
-        }
-
-        function findMonthIndex(userMonthName) {
-            userMonthName = userMonthName.toLowerCase();
-            return monthNames.findIndex(monthName => monthName.toLowerCase() === userMonthName);
         }
 
         function findTotalWeeksOnHawaii(totalVacationDays, firstDayIndex) {
