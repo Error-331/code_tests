@@ -35,6 +35,8 @@ import promisesBase from './functional/promisses/base';
 import promisesTasks from './functional/promisses/tasks';
 import promisesUserCreated from './functional/promisses/user_created';
 
+import sagaPattern from './design_patterns/saga_pattern';
+
 import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
 import passengerSeatsForFamiliesOfThree from './interview_tasks/passenger_seats_for_families_of_three';
 
@@ -82,9 +84,12 @@ async function run() {
     //await promisesUserCreated();
     //await compose();
 
+    // design patterns
+    await sagaPattern();
+
     // interview tasks
     //await weeksInHawaii();
-    await passengerSeatsForFamiliesOfThree();
+    //await passengerSeatsForFamiliesOfThree();
 }
 
 run();
