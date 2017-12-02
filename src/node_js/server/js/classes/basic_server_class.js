@@ -3,6 +3,8 @@
 const queryString = require('querystring');
 const url = require('url');
 
+const {cloneDeep} = require('./../utils/object_utils');
+
 const {
     normalizeURLPath,
     parseURLPathParams,
@@ -177,7 +179,7 @@ class BasicServerClass {
     }
 
     _getRequestMethod() {
-        return this._request.method;
+        return this._request.method.toLowerCase();
     }
 
     _getResponseHeaders() {
@@ -275,7 +277,7 @@ class BasicServerClass {
         this._isHTTPS = options.isHTTPS !== undefined ? options.isHTTPS : false;
         this._protocolVersion = '1.1';
 
-        this._routes = routes;
+        this._routes = cloneDeep(routes);
         this._serverRootDir = serverRootDir;
 
         this._preparedRequestURL = '';
