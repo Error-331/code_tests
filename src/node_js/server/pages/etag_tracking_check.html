@@ -15,6 +15,7 @@
         };
 
         fetch('images/html5_badge_h_css3_semantics.png', fetchConfig).then(function(response) {
+            console.log('Etag:', response.headers.get('etag'));
             return response.blob();
         }).then(function(myBlob) {
             const $tempIMG = document.createElement('img');
@@ -24,6 +25,8 @@
             $tempIMG.src = imageURL;
 
             $body.appendChild($tempIMG);
+        }).catch(function(error){
+            console.error(error);
         });
     </script>
 
