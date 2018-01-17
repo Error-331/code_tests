@@ -31,53 +31,55 @@ module.exports = async () => {
 
         mongoDBProcess.stdout.on('data', (data) => {
             if (data.toString().indexOf('waiting for connections on port 27017') !== -1) {
-                console.log('MongoDB" database tests');
-                console.log('=======================');
+                return;
+            }
+
+            console.log('MongoDB" database tests');
+            console.log('=======================');
+            console.log('');
+
+            const mongoDBURL = 'mongodb://localhost:27017/mongoDBExamples';
+
+            MongoClient.connect(mongoDBURL, async (err, db) => {
+                const examplesCollection = db.collection('examples');
+
+                await new Promise((resolvePromise, rejectPromise) => {
+                    console.log('Collection insertion example...');
+
+                    examplesCollection.insertOne(testDataVariant1[0], function(error, result) {
+                        console.log('Collection insertion finished...');
+                        error === null ? resolvePromise(result) : rejectPromise(error);
+                    });
+                });
+
                 console.log('');
 
-                const mongoDBURL = 'mongodb://localhost:27017/mongoDBExamples';
+                await new Promise((resolvePromise, rejectPromise) => {
+                    console.log('Collections insertion example...');
 
-                MongoClient.connect(mongoDBURL, async (err, db) => {
-                    const examplesCollection = db.collection('examples');
-
-                    await new Promise((resolvePromise, rejectPromise) => {
-                        console.log('Collection insertion example...');
-
-                        examplesCollection.insertOne(testDataVariant1[0], function(error, result) {
-                            console.log('Collection insertion finished...');
-                            error === null ? resolvePromise(result) : rejectPromise(error);
-                        });
+                    examplesCollection.insertMany([testDataVariant1[1], testDataVariant1[2], testDataVariant1[3]], (error, result) => {
+                        console.log('Collections insertion finished...');
+                        error === null ? resolvePromise(result) : rejectPromise(error);
                     });
-
-                    console.log('');
-
-                    await new Promise((resolvePromise, rejectPromise) => {
-                        console.log('Collections insertion example...');
-
-                        examplesCollection.insertMany([testDataVariant1[1], testDataVariant1[2], testDataVariant1[3]], (error, result) => {
-                            console.log('Collections insertion finished...');
-                            error === null ? resolvePromise(result) : rejectPromise(error);
-                        });
-                    });
-
-                    console.log('');
-
-                    await new Promise((resolvePromise, rejectPromise) => {
-                        console.log('Load all collections example...');
-
-                        examplesCollection.find({}).toArray((error, loadedDocs) => {
-                            console.log('Loaded collections:');
-                            console.log('');
-
-                            console.log(loadedDocs);
-
-                            error === null ? resolvePromise(loadedDocs) : rejectPromise(error);
-                        });
-                    });
-
-                    db.close(_ => mongoDBProcess.kill(9));
                 });
-            }
+
+                console.log('');
+
+                await new Promise((resolvePromise, rejectPromise) => {
+                    console.log('Load all collections example...');
+
+                    examplesCollection.find({}).toArray((error, loadedDocs) => {
+                        console.log('Loaded collections:');
+                        console.log('');
+
+                        console.log(loadedDocs);
+
+                        error === null ? resolvePromise(loadedDocs) : rejectPromise(error);
+                    });
+                });
+
+                db.close(_ => mongoDBProcess.kill(9));
+            });
         });
 
         mongoDBProcess.on('close', (code) => {

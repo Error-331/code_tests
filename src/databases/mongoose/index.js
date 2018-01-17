@@ -65,57 +65,59 @@ module.exports = async () => {
 
         mongoDBProcess.stdout.on('data', (data) => {
             if (data.toString().indexOf('waiting for connections on port 27017') !== -1) {
-                console.log('Mongoose" MongoDB object modeling tests');
-                console.log('=======================================');
+                return;
+            }
+
+            console.log('Mongoose" MongoDB object modeling tests');
+            console.log('=======================================');
+            console.log('');
+
+            const dbConnection = mongoose.createConnection('mongodb://localhost:27017/mongooseExamples');
+
+            dbConnection.on('error', console.error.bind(console, 'connection error:'));
+
+            dbConnection.on('disconnected', function () {
+                console.error('Mongoose connection disconnected');
+            });
+
+            dbConnection.once('open', async function() {
+                const statisticsDataModel = dbConnection.model('StatisticsData', StatisticsDataSchema);
+                const statisticsData1 = new statisticsDataModel(testDataVariant1[0]);
+
+                await new Promise((resolveAddCollectionPromise, rejectAddCollectionPromise) => {
+                    console.log('Collection insertion example...');
+
+                    statisticsData1.save().then((currentCollection) => {
+                        console.log('Collection insertion finished...');
+                        console.log('');
+                        console.log(currentCollection.getClientCoordinatesString());
+
+                        resolveAddCollectionPromise(currentCollection);
+                    }).catch(error => {
+                        rejectAddCollectionPromise(error);
+                    });
+                });
+
                 console.log('');
 
-                const dbConnection = mongoose.createConnection('mongodb://localhost:27017/mongooseExamples');
+                await new Promise((resolvePromise, rejectPromise) => {
+                    console.log('Load all collections example...');
 
-                dbConnection.on('error', console.error.bind(console, 'connection error:'));
+                    statisticsDataModel.find({}).then(loadedDocs => {
+                        console.log('Loaded collections:');
+                        console.log('');
 
-                dbConnection.on('disconnected', function () {
-                    console.error('Mongoose connection disconnected');
+                        console.log(loadedDocs);
+                        resolvePromise(loadedDocs)
+                    }).catch(error => {
+                        rejectPromise(error);
+                    });
                 });
 
-                dbConnection.once('open', async function() {
-                    const statisticsDataModel = dbConnection.model('StatisticsData', StatisticsDataSchema);
-                    const statisticsData1 = new statisticsDataModel(testDataVariant1[0]);
+                console.log('');
 
-                    await new Promise((resolveAddCollectionPromise, rejectAddCollectionPromise) => {
-                        console.log('Collection insertion example...');
-
-                        statisticsData1.save().then((currentCollection) => {
-                            console.log('Collection insertion finished...');
-                            console.log('');
-                            console.log(currentCollection.getClientCoordinatesString());
-
-                            resolveAddCollectionPromise(currentCollection);
-                        }).catch(error => {
-                            rejectAddCollectionPromise(error);
-                        });
-                    });
-
-                    console.log('');
-
-                    await new Promise((resolvePromise, rejectPromise) => {
-                        console.log('Load all collections example...');
-
-                        statisticsDataModel.find({}).then(loadedDocs => {
-                            console.log('Loaded collections:');
-                            console.log('');
-
-                            console.log(loadedDocs);
-                            resolvePromise(loadedDocs)
-                        }).catch(error => {
-                            rejectPromise(error);
-                        });
-                    });
-
-                    console.log('');
-
-                    dbConnection.close(_ =>  mongoDBProcess.kill(9));
-                });
-            }
+                dbConnection.close(_ =>  mongoDBProcess.kill(9));
+            });
         });
 
         mongoDBProcess.on('close', (code) => {
