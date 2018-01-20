@@ -2,42 +2,29 @@
 
 import R from 'ramda';
 
+import logicCategory from './ramda/categories/logic';
+import functionsCategory from './ramda/categories/function';
+
 export default async () => {
-    const isEven = x => x % 2 === 0;
-    const isOdd = R.complement(isEven);
+    console.log('"Ramda" library tests');
+    console.log('=====================');
 
-    const powersOfTwo = R.partial(Math.pow, [2]);
+    //await functionsCategory();
+    await logicCategory();
 
-    const squareOf = R.partialRight(Math.pow, [2]);
-    const cubeOf = R.partialRight(Math.pow, [3]);
+    console.log('');
+    console.log('--------------------------------------------------------');
+    console.log('');
 
-    const multiply = (a, b) => a * b;
-    const addOne = x => x + 1;
-    const square = x => x * x;
 
-    const operate1 = R.pipe(
-        multiply,
-        addOne,
-        square
-    );
+    /*
 
-    const numberToHex = (component) => {
-        const hex = component.toString(16);
-        return hex.length === 1 ? '0' + hex : hex;
-    };
 
-    const numbersToHex = (...args) => {
-        return [...args].map(numberToHex).join('');
-    };
 
-    const rgbToHex = (red, green, blue) => {
-        return '#' + numbersToHex(red) + numbersToHex(green) + numbersToHex(blue);
-    };
 
-    const hexColors = R.curry(rgbToHex);
 
-    const roundedSqrt = R.compose(Math.round, Math.sqrt);
-    const squaredDate = R.compose(roundedSqrt, Date.parse);
+
+
 
     const isDeviceOfRightModel1 = device => device.model === 'xhx23';
     const isDeviceOfRightModel2 = device => device.model === 'xhh54';
@@ -76,17 +63,6 @@ export default async () => {
     const numbersArray1 = [1, 5, 2, 10, 12];
     const numbersArray2 = [5, 12, 44, 25];
 
-    console.log('"Ramda" library tests');
-    console.log('=====================');
-
-    console.log('Complement examples:');
-    console.log('');
-
-    console.log('isEven(2) -', isEven(2));
-    console.log('isEven(3) -', isEven(3));
-    console.log('isOdd(2) -', isOdd(2));
-    console.log('isOdd(3) -', isOdd(3));
-
     console.log('');
 
     console.log('Either/both/allPass examples:');
@@ -105,37 +81,10 @@ export default async () => {
     console.log('isDeviceSupportStreamingData1(deviceData5) -', isDeviceSupportStreamingData1(deviceData5));
     console.log('isDeviceSupportStreamingData1(deviceData6) -', isDeviceSupportStreamingData1(deviceData6));
 
-    console.log('');
-    console.log('Partial left application examples:');
-    console.log('');
 
-    console.log('powersOfTwo(3) -', powersOfTwo(3));
-    console.log('powersOfTwo(5) -', powersOfTwo(5));
 
-    console.log('');
 
-    console.log('Partial right application examples:');
-    console.log('');
 
-    console.log('squareOf(3) -', squareOf(3));
-    console.log('squareOf(4) -', squareOf(4));
-    console.log('cubeOf(3) -', cubeOf(3));
-    console.log('cubeOf(4) -', cubeOf(4));
-
-    console.log('');
-
-    console.log('Currying examples:');
-    console.log('');
-
-    console.log('hexColors(11)(12)(123) -', hexColors(11)(12)(123));
-    console.log('hexColors(210)(12)(0) -', hexColors(210)(12)(0));
-
-    console.log('');
-
-    console.log('hexColors(11,12,123) -', hexColors(11,12,123));
-    console.log('hexColors(R.__, R.__, 0)(210)(12) -', hexColors(R.__, R.__, 0)(210)(12));
-
-    console.log('');
 
     console.log('Cond examples:');
     console.log('');
@@ -143,21 +92,6 @@ export default async () => {
     console.log('condFunc1ForTestObj1(testObj1) -', condFunc1ForTestObj1(testObj1));
     console.log('condFunc2ForTestObj1(testObj1) -', condFunc2ForTestObj1(testObj1));
 
-    console.log('');
-
-    console.log('Pipe examples:');
-    console.log('');
-
-    console.log('operate1(3, 4) -', operate1(3, 4));
-    console.log('operate1(10, 10) -', operate1(10, 10));
-
-    console.log('');
-
-    console.log('Compose examples:');
-    console.log('');
-
-    console.log('roundedSqrt(5) -', roundedSqrt(5));
-    console.log('squaredDate("January 1, 2014") -', squaredDate("January 1, 2014"));
 
     console.log('');
     console.log('Intersection examples:');
@@ -173,7 +107,5 @@ export default async () => {
     console.log('R.difference(numbersArray1, numbersArray2) -', R.difference(numbersArray1, numbersArray2));
     console.log('R.difference(numbersArray2, numbersArray1) -', R.difference(numbersArray2, numbersArray1));
 
-    console.log('');
-    console.log('--------------------------------------------------------');
-    console.log('');
+*/
 }
