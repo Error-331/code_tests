@@ -5,13 +5,6 @@ const {EventEmitter} = require('events');
 const {MESSAGE_TYPE_TO_OPCODE} = require('./../constants/web_socket_server_general_constants');
 const {NAME_TO_CLOSE_CODE} = require('./../constants/web_socket_server_close_codes_constants');
 
-//
-
-
-var crypto = require("crypto");
-
-
-
 class BasicWebSocketServerClass extends EventEmitter {
 
     _onWebSocketConnect() {
@@ -23,10 +16,9 @@ class BasicWebSocketServerClass extends EventEmitter {
         this._isDebugEnabled && error && console.error('WebSocket close with error:', error);
 
         if (!this._isClosed) {
-            //self.emit("close", 1006);
+            this.emit('close', NAME_TO_CLOSE_CODE);
             this._isClosed = true;
         }
-
     }
 
     _onWebSocketData(incomingDataBuffer) {
@@ -164,23 +156,6 @@ class BasicWebSocketServerClass extends EventEmitter {
         this._isClosed = true;
     }
 
-    _sendMessage(message) {
-        var opcode;
-        var payload;
-        if (Buffer.isBuffer(obj)) {
-            opcode = opcodes.BINARY;
-            payload = obj;
-        } else if (typeof obj == "string") {
-            opcode = opcodes.TEXT;
-// create a new buffer containing the UTF-8 encoded string
-            payload = new Buffer(obj, "utf8");
-        } else {
-            throw new Error("Cannot send object. Must be string or Buffer");
-        }
-        this._doSend(opcode, payload);
-
-    }
-
     _unmask(maskBytes, data) {
         let payload = new Buffer(data.length);
 
@@ -223,9 +198,10 @@ class BasicWebSocketServerClass extends EventEmitter {
 
                 this._closeSocket(code, reason);
                 this.emit('close', code, reason);
+
                 break;
             default:
-              //  this.close(1002, "unknown opcode");
+                this._closeSocket(NAME_TO_CLOSE_CODE.CLOSE_PROTOCOL_ERROR, 'unknown opcode');
         }
     }
 
@@ -323,6 +299,25 @@ class BasicWebSocketServerClass extends EventEmitter {
         this._socket.on('lookup', this._onWebSocketLookup.bind(this));
         this._socket.on('timeout', this._onWebSocketTimeout.bind(this));
         this._socket.on('error', this._onWebSocketError.bind(this));
+    }
+
+    sendMessage(message) {
+        let opcode;
+        let payload;
+
+        if (Buffer.isBuffer(message)) {
+            opcode = MESSAGE_TYPE_TO_OPCODE.BINARY;
+            payload = message;
+        } else if (typeof message === 'string') {
+            opcode = MESSAGE_TYPE_TO_OPCODE.TEXT;
+
+            payload = new Buffer(message, 'utf8');
+        } else {
+            throw new Error('Cannot send object. Must be string or Buffer');
+        }
+
+        this._writeToSocket(opcode, payload);
+
     }
 
     constructor(socket, options) {
