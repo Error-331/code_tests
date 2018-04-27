@@ -5,11 +5,15 @@ const {generateSHA1} = require('./../utils/crypto_utils');
 const WebSocketReverseProxyServerMixin = (superClass) => class extends superClass {
 
     _writeHead(statusCode) {
-        this._response.write('HTTP/1.1 101 Switching Protocols\r\n', 'binary');
+        const protocolString = this._getProtocol().toUpperCase();
+        const protocolVersionString = this._getProtocolVersion();
+        const statusCodeString = this._getStatusCodeString(statusCode);
+
+        this._response.write(`${protocolString}/${protocolVersionString} ${statusCode} ${statusCodeString}\r\n`, 'binary');
 
         const responseHeaders = this._getResponseHeaders();
-
         responseHeaders.forEach(([headerName, headerValue]) =>  this._response.write(`${headerName}:${headerValue}\r\n`, 'binary'));
+
         this._response.write('\r\n');
     };
 
@@ -42,7 +46,6 @@ const WebSocketReverseProxyServerMixin = (superClass) => class extends superClas
         this._addResponseHeader('Connection', 'Upgrade');
 
         this._writeHead(101);
-        this._response.end();
     }
 
     async onHandleUpgradeRequest() {
