@@ -1,0 +1,21 @@
+WebSocket frame
+===============
+
+is fragment? ('fin' bit)
+ |
+ |       is masked?
+ |        |
+ |        |
+|---------------------------------------------------------------------------|
+| opcode | length (7 bits) | extended length |     mask     |     data      |
+|---------------------------------------------------------------------------|
+       2 bytes               0 / 2 / 8 bytes     4 bytes         b bytes
+
+
+Note for WebSocket 'length' bytes
+=================================
+
+0111 1101 - 125 (max length that can be represented by one byte)
+0111 1111 - 127 (second byte, full length)
+1111 1111 1111 1111 - 65535 (extended 2 bytes of length)
+1111 1111 1111 1111 1111 1111 1111 1111 - 4294967295 (extended 4 bytes of length)
