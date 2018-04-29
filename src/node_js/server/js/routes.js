@@ -94,6 +94,48 @@ const routes = [
                 'date': new Date()
             });
         }
+    },
+
+    {
+        path: 'StartFileUpload',
+        method: 'options',
+        handler: async function(){
+            const server = this;
+            console.log('here1');
+
+            server._addResponseHeader('Access-Control-Allow-Origin', '*');
+            server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
+            server._addResponseHeader('access-control-allow-headers', ' Content-Type, BSN-AuthToken');
+
+            server._writeHead(200);
+            server._response.end();
+        }
+    },
+
+    {
+        path: 'StartFileUpload',
+        handler: async function(){
+            const server = this;
+            console.log('here');
+
+            server._addResponseHeader('Access-Control-Allow-Origin', '*');
+            server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
+            server._addResponseHeader('access-control-allow-headers', ' Content-Type, BSN-AuthToken');
+
+            server._setDomainToForwardTo('ast.brightsignnetwork.com');
+            server._setPortToForwardTo(443);
+            server._setPathToForwardPrefix('Upload/v201701/HTTP/WebContentUploadService.svc');
+            await server._forwardOpenProxyRequest();
+        }
+    },
+    {
+        path: 'websocket/connect',
+        handler: async function() {
+            const server = this;
+
+            server._writeHead(200);
+            server._response.end();
+        }
     }
 ];
 

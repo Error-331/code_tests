@@ -1,33 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
     <title>Web socket server test</title>
 
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        .outerForm {
+            box-sizing: border-box;
+            display: flex;
+
+            width: 100%;
+            height: 100%;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+        }
+
+        .outerForm >  h1 {
+            flex-basis: auto;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .outerForm >  h2 {
+            flex-basis: auto;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .outerForm > .chatMessagesContainerOuter {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+
+            padding: 5px;
+        }
+
+        .outerForm > .chatMessagesContainerOuter > .chatMessagesContainerInner {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        .outerForm > .chatMessagesContainerOuter > .chatMessagesContainerInner > .messageContainer {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            align-items: flex-end;
+            align-content: flex-start;
+
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .outerForm > .chatMessagesContainerOuter > .chatMessagesContainerInner > .messageContainer > .messageUserName {
+            box-sizing: border-box;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            font-family: Arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+
+            color: purple;
+        }
+
+        .outerForm > .chatMessagesContainerOuter > .chatMessagesContainerInner > .messageContainer > .messageUserName.currentUserName {
+            font-family: Arial, sans-serif;
+            color: green;
+        }
+
+        .outerForm > .chatMessagesContainerOuter > .chatMessagesContainerInner > .messageContainer > .messageTextContainer {
+            font-family: Arial, sans-serif;
+            color: blue;
+        }
+
+        .outerForm > .chatControlsContainerOuter {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+
+            padding: 5px;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .userNameInput {
+            box-sizing: border-box;
+
+            flex-basis: 15px;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            border: 1px solid black;
+            border-radius: 5px;
+
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .userMessageInput {
+            box-sizing: border-box;
+            resize: none;
+            overflow: hidden;
+
+            flex-basis: 40px;
+            flex-shrink: 0;
+            flex-grow: 0;
+
+            border: 1px solid black;
+            border-radius: 5px;
+
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 0;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+
+            align-items: stretch;
+            align-content: flex-start;
+
+            padding-top: 8px;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .buttonsGroup {
+            box-sizing: border-box;
+            display: flex;
+
+            flex-basis: auto;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+
+            align-items: stretch;
+            align-content: flex-start;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .leftButtonsGroup {
+            justify-content: flex-start;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .rightButtonsGroup {
+            justify-content: flex-end;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .buttonsGroup > .buttonContainer {
+            box-sizing: border-box;
+
+            flex-basis: 90px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .buttonsGroup > .buttonContainer > button {
+            box-sizing: border-box;
+
+            width: 100%;
+            height: 40px;
+
+            border: none;
+            border-radius: 5px;
+
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 15px;
+
+            text-transform: uppercase;
+
+            background-color: black;
+            color: white;
+        }
+
+        .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .rightButtonsGroup > .buttonContainer:first-child {
+            padding-right: 5px;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer {
+                flex-direction: column;
+
+                padding-top: 0px;
+            }
+
+            .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .buttonsGroup {
+                flex-direction: column;
+            }
+
+            .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .buttonsGroup > .buttonContainer {
+                box-sizing: border-box;
+
+                flex-basis: auto;
+                flex-shrink: 1;
+                flex-grow: 0;
+
+                padding-top: 10px;
+            }
+
+            .outerForm > .chatControlsContainerOuter > .chatControlsContainerInner > .buttonsContainer > .rightButtonsGroup > .buttonContainer:first-child {
+                padding-right: 0px;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>Web socket server test</h1>
+    <form class="outerForm">
+        <h1>Web socket server test</h1>
+        <h2>Chat</h2>
+
+        <div class="chatMessagesContainerOuter">
+            <div id="chatMessagesContainerInner" class="chatMessagesContainerInner">
+
+            </div>
+        </div>
+
+        <div class="chatControlsContainerOuter">
+            <div class="chatControlsContainerInner">
+                <label for="userNameInput">Name</label>
+                <input type="text" id="userNameInput" name="userName" class="userNameInput">
+
+                <label for="userMessageInput">Message</label>
+                <textarea rows="10" cols="50" id="userMessageInput" name="userMessageInput" class="userMessageInput"></textarea>
+
+                <div class="buttonsContainer">
+                    <div class="buttonsGroup leftButtonsGroup">
+                        <div class="buttonContainer">
+                            <button type="button"  id="sendMessageButton" name="sendMessageButton">send</button>
+                        </div>
+                    </div>
+
+                    <div class="buttonsGroup rightButtonsGroup">
+                        <div class="buttonContainer">
+                            <button type="button"  name="audioCallButton">call</button>
+                        </div>
+
+                        <div class="buttonContainer">
+                            <button type="button" name="videoCallButton">call (video)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 
     <script>
+        const $chatMessagesContainerInner = document .getElementById('chatMessagesContainerInner');
+
+        const $userNameInput = document.getElementById('userNameInput');
+        const $userMessageInput = document.getElementById('userMessageInput');
+
+        const $sendMessageButton = document.getElementById('sendMessageButton');
+
         const webSocketInstance = new WebSocket('ws://localhost:3000');
+        let isWebSocketConnected = false;
 
-        webSocketInstance.onopen = function(error) {
-            console.error(error);
-            console.log('We socket protocol:', webSocketInstance.protocol);
+        let userChatName = '';
 
-            webSocketInstance.send("Hello WebSocket!");
+        const sendChatMessage = (userName, message) => {
+            const payload = {type: 'chat_message', userName, message};
+            const payloadString = JSON.stringify(payload);
+
+            webSocketInstance.send(payloadString);
+        };
+
+        const appendNewMessage = (userName, userMessage) => {
+            const $messageContainer = document.createElement('div');
+            const $messageUserNameContainer = document.createElement('div');
+            const $messageTextContainer = document.createElement('div');
+
+            const $messageUserName = document.createTextNode(`${userName}:\xa0`);
+            const $messageText = document.createTextNode(userMessage);
+
+            $messageUserNameContainer.className = userName === userChatName ? 'messageUserName currentUserName' : 'messageUserName';
+            $messageTextContainer.className = 'messageTextContainer';
+            $messageContainer.className = 'messageContainer';
+
+            $messageUserNameContainer.appendChild($messageUserName);
+            $messageTextContainer.appendChild($messageText);
+
+            $messageContainer.appendChild($messageUserNameContainer);
+            $messageContainer.appendChild($messageTextContainer);
+
+            $chatMessagesContainerInner.appendChild($messageContainer);
+        };
+
+        webSocketInstance.onopen = function(event) {
+            isWebSocketConnected = true;
+
+            //console.error('cc', error);
+            // console.log('We socket protocol:', webSocketInstance.protocol);
+
+            ///webSocketInstance.send("Hello WebSocket!");
 
         };
 
-
-        webSocketInstance.onmessage = function(e) {
-            if(typeof e.data === "string"){
-                console.log("String message received", e, e.data);
-            } else {
-                console.log("Other message received", e, e.data);
+        webSocketInstance.onmessage = function(event) {
+            if(typeof event.data === 'string'){
+                const parsedData = JSON.parse(event.data);
+                appendNewMessage(parsedData.userName, parsedData.message);
             }
         };
+
+        $sendMessageButton.addEventListener('click', () => {
+            if (!isWebSocketConnected) {
+                return false;
+            }
+
+            const userName = $userNameInput.value;
+            const userMessage = $userMessageInput.value;
+
+            if ($userNameInput.readOnly !== true && userChatName.length === 0 && userName.length !== 0) {
+                userChatName = userName;
+                $userNameInput.readOnly = true;
+            }
+
+            if (userChatName.length === 0 || userMessage.length === 0) {
+                return false;
+            }
+
+            $userMessageInput.value = '';
+            sendChatMessage(userName, userMessage);
+        });
+
+
+
+
 
         webSocketInstance.onerror = function(e) {
             console.error("WebSocket Error: " , e);

@@ -7,7 +7,6 @@
 const {readFileSync} = require('fs');
 const http = require('http');
 const https = require('https');
-const net = require('net');
 
 const BasicServerClass = require('./js/classes/basic_server_class');
 const BasicWebSocketServerClass = require('./js/classes/basic_web_socket_server_class');
@@ -23,8 +22,11 @@ const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT, WEB_SOCKET_SERVER_PORT, WEB_SOCKET_H
 const routes = require('./js/routes');
 
 // classes definition starts here
-class HttpServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin((CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {}
+class HttpServerClass extends OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin(CookiesServerMixin(StaticServerMixin(BasicServerClass))))) {}
 class WebSocketReverseProxyClass extends WebSocketReverseProxyServerMixin(CookiesServerMixin(BasicServerClass)) {}
+
+// sockets array definition starts here
+const openSockets = [];
 
 const httpWebServerRequestHandler = async (request, response) => {
     const serverClassInstance = new HttpServerClass(request, response, {}, routes, __dirname);
@@ -36,6 +38,28 @@ const httpWebServer = http.createServer(httpWebServerRequestHandler);
 httpWebServer.on('upgrade', async (request, socket) => {
     const serverClassInstance = new WebSocketReverseProxyClass(request, socket, {}, routes, __dirname);
     await serverClassInstance.onHandleUpgradeRequest();
+
+    const webSocketServerClassInstance = new BasicWebSocketServerClass(socket, {enableDebug: true});
+
+    openSockets.push(webSocketServerClassInstance);
+
+    webSocketServerClassInstance.on('data', (opcode, data) => {
+       console.log(`WebSocket data received (code: ${opcode}): ${data}`);
+
+       const dataObj = JSON.parse(data);
+
+       if (dataObj.type === 'chat_message') {
+           openSockets.forEach((webSocketInstance) => {
+               if (webSocketInstance.isWebSocketConnected()) {
+                   webSocketInstance.sendMessage(data);
+               }
+           });
+       }
+    });
+
+    webSocketServerClassInstance.on('close', (closeCode, reson) => {
+        console.log(`WebSocket closed (code: ${closeCode}): ${reson}`);
+    });
 });
 
 httpWebServer.listen(HTTP_SERVER_PORT, (error) => {
@@ -63,15 +87,4 @@ httpsWebServer.listen(HTTPS_SERVER_PORT, (error) => {
     } else {
         console.log(`Server (https) is listening on ${HTTPS_SERVER_PORT}`);
     }
-});
-
-const socketServerRequestHandler = (socket) => {
-    console.log('Socket handler...');
-    const webSocketServerClassInstance = new BasicWebSocketServerClass(socket, {enableDebug: true});
-};
-
-const webSocketServer = net.createServer(socketServerRequestHandler);
-
-webSocketServer.listen(WEB_SOCKET_SERVER_PORT, WEB_SOCKET_HOST , () => {
-    console.log(`Server (web-socket) is listening on ${WEB_SOCKET_SERVER_PORT} at ${WEB_SOCKET_HOST}`);
 });

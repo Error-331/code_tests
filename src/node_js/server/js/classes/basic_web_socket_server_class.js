@@ -22,7 +22,7 @@ class BasicWebSocketServerClass extends EventEmitter {
     }
 
     _onWebSocketData(incomingDataBuffer) {
-        this._isDebugEnabled && console.log('WebSocket event: data, message: ', incomingDataBuffer.toString('utf8'));
+        this._isDebugEnabled && console.log('WebSocket event: data');
 
         this._incomingDataBuffer = Buffer.concat([this._incomingDataBuffer, incomingDataBuffer]);
         while (this._processBuffer()) {
@@ -120,7 +120,6 @@ class BasicWebSocketServerClass extends EventEmitter {
             // write first two bytes of `length` data filled with zeros
             // current implementation cannot handle such amounts of data
             buf.writeUInt32BE(0, 2);
-
 
             // write actual length of the payload to last four bytes
             buf.writeUInt32BE(length, 6);
@@ -305,6 +304,10 @@ class BasicWebSocketServerClass extends EventEmitter {
         let opcode;
         let payload;
 
+        if (this._isClosed) {
+            throw new Error('Cannot send object. Socket is closed.');
+        }
+
         if (Buffer.isBuffer(message)) {
             opcode = MESSAGE_TYPE_TO_OPCODE.BINARY;
             payload = message;
@@ -313,11 +316,14 @@ class BasicWebSocketServerClass extends EventEmitter {
 
             payload = new Buffer(message, 'utf8');
         } else {
-            throw new Error('Cannot send object. Must be string or Buffer');
+            throw new Error('Cannot send object. Must be string or Buffer.');
         }
 
         this._writeToSocket(opcode, payload);
+    }
 
+    isWebSocketConnected() {
+        return !this._isClosed;
     }
 
     constructor(socket, options) {
@@ -328,11 +334,6 @@ class BasicWebSocketServerClass extends EventEmitter {
         this._isClosed = false;
 
         this._isDebugEnabled = !!options.enableDebug;
-
-      //  this._secWebSocketKeyClient = null;
-      //  this._secWebSocketVersion = null;
-      //  this._secWebSocketExtension = null;
-
 
         this._bindEventHandlers();
     }

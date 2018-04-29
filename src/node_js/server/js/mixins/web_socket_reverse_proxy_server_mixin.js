@@ -57,6 +57,18 @@ const WebSocketReverseProxyServerMixin = (superClass) => class extends superClas
         this._performHandshake();
     }
 
+    getSecWebSocketKeyClient() {
+        return this._secWebSocketKeyClient;
+    }
+
+    getSecWebSocketVersion() {
+        return this._secWebSocketVersion;
+    }
+
+    getSecWebSocketExtension() {
+        return this._secWebSocketExtension;
+    }
+
     constructor(...serverParams) {
         super(...serverParams);
 
