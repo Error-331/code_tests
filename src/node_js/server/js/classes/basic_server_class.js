@@ -31,16 +31,18 @@ class BasicServerClass {
         return this._request.headers[headerName] && this._request.headers[preparedHeaderName];
     }
 
-    _prepareRequestURLPath() {
-        const [urlPathString, urlQueryString] = this._preparedRequestURL ? this._preparedRequestURL.split('?') : ['', ''];
+    _prepareRequestURLPath(preparedRequestURL) {
+        const [urlPathString, urlQueryString] = preparedRequestURL ? preparedRequestURL.split('?') : ['', ''];
 
-        this._urlPathParams = parseURLPathParams(urlPathString);
-        this._urlQueryParams = queryString.parse(urlQueryString);
+        return {
+            urlPathParams: parseURLPathParams(urlPathString),
+            urlQueryParams: queryString.parse(urlQueryString)
+        };
     }
 
     _prepareRequestURL() {
         const decodedRequestURL = decodeURI(this._request.url);
-        this._preparedRequestURL = decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
+        return decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
     }
 
     _addCustomRoute(customRoute) {
@@ -255,8 +257,11 @@ class BasicServerClass {
     }
 
     async onHandleRequest() {
-        this._prepareRequestURL();
-        this._prepareRequestURLPath();
+        this._preparedRequestURL  = this._prepareRequestURL();
+        const {urlPathParams, urlQueryParams} = this._prepareRequestURLPath(this._preparedRequestURL);
+
+        this._urlPathParams = urlPathParams;
+        this._urlQueryParams = urlQueryParams;
 
         try {
             this._postData = await extractPOSTDataFromRequest(this._request);
