@@ -3,7 +3,6 @@
 const {writeFileSync, existsSync, unlinkSync} = require('fs');
 
 module.exports = async () => {
-
     const currentDate = new Date().toLocaleDateString();
     const currentUserName = process.env.USER;
 
