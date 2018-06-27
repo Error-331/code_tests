@@ -84,7 +84,7 @@ class BasicWebSocketServerClass extends EventEmitter {
             // length < 1 0000 0000 0000 0000 (length that can feet in two extra bytes)
 
             // 2 bytes of service data + 2 bytes of extra length + unmasked data
-            outboundBuffer = new Buffer(payload.length + 4);
+            outboundBuffer = Buffer.alloc(payload.length + 4);
 
             // add payload length to second byte (no masking)
             // 126 - extra two bytes of length will be used
@@ -105,7 +105,7 @@ class BasicWebSocketServerClass extends EventEmitter {
             // length data of the payload requires 8 bytes of data to fit in
 
             // 2 bytes of service data + 8 bytes of extra length + unmasked data
-            outboundBuffer = new Buffer(payloadLength + 10);
+            outboundBuffer = Buffer.alloc(payloadLength + 10);
 
             // add payload length to second byte (no masking)
             // 127 - extra 8 bytes of length will be used
@@ -140,7 +140,7 @@ class BasicWebSocketServerClass extends EventEmitter {
 
         if (code) {
             // 2 bytes of service data + unmasked data
-            responseBuffer = new Buffer(Buffer.byteLength(reason) + 2);
+            responseBuffer = Buffer.alloc(Buffer.byteLength(reason) + 2);
 
             // write service data
             responseBuffer.writeUInt16BE(code, 0);
@@ -148,7 +148,7 @@ class BasicWebSocketServerClass extends EventEmitter {
             // write payload
             responseBuffer.write(reason, 2);
         } else {
-            responseBuffer = new Buffer(0);
+            responseBuffer = Buffer.alloc(0);
         }
 
         this._writeToSocket(MESSAGE_TYPE_TO_OPCODE.CLOSE, responseBuffer);
@@ -156,7 +156,7 @@ class BasicWebSocketServerClass extends EventEmitter {
     }
 
     _unmask(maskBytes, data) {
-        let payload = new Buffer(data.length);
+        let payload = Buffer.alloc(data.length);
 
         for (let i=0; i < data.length; i++) {
             payload[i] = maskBytes[i%4] ^ data[i];
@@ -314,7 +314,7 @@ class BasicWebSocketServerClass extends EventEmitter {
         } else if (typeof message === 'string') {
             opcode = MESSAGE_TYPE_TO_OPCODE.TEXT;
 
-            payload = new Buffer(message, 'utf8');
+            payload = Buffer.alloc(message.length, message, 'utf8');
         } else {
             throw new Error('Cannot send object. Must be string or Buffer.');
         }
