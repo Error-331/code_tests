@@ -1,6 +1,8 @@
+'use strict';
+
 function onWindowKeyDown(webGLContext, event){
   switch(event.keyCode){
-    case 49: //1
+    case 49: // 1
       return clearViewport(webGLContext, 0.3, 0.7, 0.2, 1.0);
     case 50: // 2
       return clearViewport(webGLContext, 0.3, 0.2, 0.7, 1.0);

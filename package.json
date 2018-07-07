@@ -37,7 +37,8 @@
         "typescript": "^2.6.2",
         "typings": "^2.1.1",
         "webpack": "^3.10.0",
-        "worker-loader": "^0.7.1"
+        "worker-loader": "^0.7.1",
+        "gl-matrix": "^2.6.1"
     },
     "dependencies": {
         "babel-polyfill": "^6.26.0",
