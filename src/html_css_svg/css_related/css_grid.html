@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Grid</title>
+
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+            margin: 0px;
+            padding: 0px;
+
+
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .vegetablesToEatList {
+            box-sizing: border-box;
+            display: grid;
+
+            height: 100%;
+
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: auto auto 1fr;
+            grid-gap: 5px;
+
+            grid-template-areas:
+                    "gh gh gh gh gh gh gh gh gh gh gh gh"
+                    "mh mh mh mh mh mh mh mh nh nh nh nh"
+                    "mb mb mb mb mb mb mb mb nb nb nb nb";
+        }
+
+        .vegetablesToEatListHeader {
+            box-sizing: border-box;
+
+            margin: 0px;
+            padding: 0px;
+
+            grid-area: gh;
+
+            background-color: #5F897D;
+            color: #D2BD90;
+        }
+
+        .vegetablesToEatMandatoryListHeader {
+            box-sizing: border-box;
+
+            margin: 0px;
+            padding: 0px;
+
+            grid-area: mh;
+
+            background-color: #CF9B35;
+            color: #5F4024;
+        }
+
+        .vegetablesToEatNoneMandatoryListHeader {
+            box-sizing: border-box;
+
+            margin: 0px;
+            padding: 0px;
+
+            grid-area: nh;
+
+            background-color: #A22E31;
+            color: #CE9A37;
+        }
+
+        .vegetablesToEatMandatoryListBody {
+            grid-area: mb;
+        }
+
+        .vegetablesToEatNoneMandatoryListBody {
+            grid-area: nb;
+        }
+
+        .vegetablesToEatListBody {
+            box-sizing: border-box;
+            display: grid;
+
+            grid-template-columns: repeat(6, minmax(auto, 1fr));
+            grid-auto-rows: auto auto 1fr;
+            grid-gap: 5px;
+        }
+
+        .vegetablesToEatListBody > div {
+            background-color: #CF9B35;
+        }
+
+    </style>
+</head>
+<body>
+
+<!--
+template-columns: repeat(3, 1fr);
+auto-rows: 100px;
+
+   grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+
+      display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px;
+-->
+
+
+    <div class="vegetablesToEatList">
+        <h1 class="vegetablesToEatListHeader">Овощи</h1>
+
+        <h2 class="vegetablesToEatMandatoryListHeader">Обязательно</h2>
+        <h2 class="vegetablesToEatNoneMandatoryListHeader">После привыкания</h2>
+
+        <div class="vegetablesToEatMandatoryListBody vegetablesToEatListBody">
+            <div>Аспарагус</div>
+            <div>Авокадо</div>
+            <div>Брокколи</div>
+            <div>Брюсельская капуста</div>
+            <div>Белокочанная капуста</div>
+            <div>Цветная капуста</div>
+            <div>Капуста Кале</div>
+            <div>Сельдерей</div>
+            <div>Огурцы</div>
+            <div>Грибы</div>
+            <div>Зеленый салат</div>
+            <div>Соте из зелени</div>
+            <div>Шпинат</div>
+            <div>Цукини</div>
+        </div>
+
+        <div class="vegetablesToEatNoneMandatoryListBody vegetablesToEatListBody">
+            <div>Баклажан</div>
+            <div>Чеснок</div>
+            <div>Лук</div>
+            <div>Пастернак</div>
+            <div>Перец</div>
+            <div>Брюква</div>
+            <div>Помидоры</div>
+            <div>Зимний сквош</div>
+        </div>
+    </div>
+
+    <div>
+        Фрукт
+        Ягоды
+        Грейпфрут
+
+
+        Растворимые волокна - огурцы ягды бобы орехи
+        Нерастворимые волокна - овощи с темными листьми   зеленые боба сельдерей
+
+        сутки - 35 г волокон 50 г из полноценных продуктов
+
+        Заменители сахара
+
+        Сахарные спирты - эритрит ксилит сорбит мальтита манит глицирин
+        Стевия
+        Архат
+
+        Жиры
+        Нельзя гидрогенизировые жиры
+
+        Органическое топленое масло
+        Говядина подножного вскармливания
+
+        Кокосовое молоко
+        Куриный жир
+        Утиниый жир
+        Кокосовое масло
+        Масло СЦТ
+        Масло авокадо
+        Оливковое масло Extra Virgin
+
+    </div>
+
+</body>
+</html>
