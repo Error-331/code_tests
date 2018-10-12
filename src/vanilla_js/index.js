@@ -47,6 +47,7 @@ import matchingParens from './interview_tasks/matching_parens';
 import productOfEveryIntegerExceptIndex from './interview_tasks/product_of_every_integer_except_index';
 import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
 import passengerSeatsForFamiliesOfThree from './interview_tasks/passenger_seats_for_families_of_three';
+import reversePolishNotation from './interview_tasks/reverse_polish_notation';
 
 async function run() {
     // fundamentals
@@ -104,8 +105,9 @@ async function run() {
     //await highestProductThreeIntegers();
     //await matchingParens();
     //await productOfEveryIntegerExceptIndex();
-    await weeksInHawaii();
+    //await weeksInHawaii();
     //await passengerSeatsForFamiliesOfThree();
+    await reversePolishNotation();
 }
 
 run();
