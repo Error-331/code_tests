@@ -37,8 +37,17 @@ import promisesUserCreated from './functional/promisses/user_created';
 
 import sagaPattern from './design_patterns/saga_pattern';
 
+import apples from './interview_tasks/apples';
+import bracketValidator from './interview_tasks/bracket_validator';
+import fibonacci from './interview_tasks/fibonacci';
+import findSpecificSumOfTwoInts from './interview_tasks/find_specific_sum_of_two_ints';
+import findUniqueIntAmongDuplicates from './interview_tasks/find_unique_int_among_duplicates';
+import highestProductThreeIntegers from './interview_tasks/highest_product_three_integers';
+import matchingParens from './interview_tasks/matching_parens';
+import productOfEveryIntegerExceptIndex from './interview_tasks/product_of_every_integer_except_index';
 import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
 import passengerSeatsForFamiliesOfThree from './interview_tasks/passenger_seats_for_families_of_three';
+import reversePolishNotation from './interview_tasks/reverse_polish_notation';
 
 async function run() {
     // fundamentals
@@ -85,11 +94,20 @@ async function run() {
     //await compose();
 
     // design patterns
-    await sagaPattern();
+   // await sagaPattern();
 
     // interview tasks
+    //await apples();
+    //await bracketValidator();
+    //await fibonacci();
+    //await findSpecificSumOfTwoInts();
+    //await findUniqueIntAmongDuplicates();
+    //await highestProductThreeIntegers();
+    //await matchingParens();
+    //await productOfEveryIntegerExceptIndex();
     //await weeksInHawaii();
     //await passengerSeatsForFamiliesOfThree();
+    await reversePolishNotation();
 }
 
 run();
