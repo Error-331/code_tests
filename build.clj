@@ -1,2 +1,2 @@
 (require 'cljs.build.api)
-(cljs.build.api/build "src/clojure_script" {:output-to "out/main.js"})
+(cljs.build.api/watch "src" {:main 'clojure-script.core :output-to "out/main.js"})
