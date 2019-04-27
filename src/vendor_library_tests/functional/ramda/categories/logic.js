@@ -217,7 +217,7 @@ export default async () => {
     console.log('isEmpty({testProp1: "testVal1"}) -', isEmpty({testProp1: 'testVal1'}));
 
     console.log('');
-    console.log('IsEmpty examples:');
+    console.log('Not examples:');
     console.log('');
 
     console.log('isDeviceNotAPlayer(deviceData1) -', isDeviceNotAPlayer(deviceData1));

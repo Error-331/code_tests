@@ -13,12 +13,12 @@ const generateSHA1 = (data, digest = 'hex') => {
 };
 
 const encodeStringToBase64 = (data) => {
-    const bufferInstance = new Buffer(data);
+    const bufferInstance = Buffer.alloc(data);
     return bufferInstance.toString('base64');
 };
 
 const decodeBase64 = (data, encoding = 'utf8') => {
-    const bufferInstance = new Buffer(data, 'base64');
+    const bufferInstance = Buffer.alloc(data, 'base64');
     return bufferInstance.toString(encoding);
 };
 

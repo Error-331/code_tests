@@ -32,33 +32,22 @@ function createShaderFromString(webGLContext, shaderType, shaderCode) {
   return shader;
 }
 
-function initWebGLProgram(webGLContext) {
-  const fgShader = createShaderFromString(webGLContext, webGLContext.FRAGMENT_SHADER, `
-    #ifdef GL_ES
-      precision highp float;
-    #endif
-
-    void main(void) {
-        gl_FragColor = vec4(0.5, 0.9, 0.2, 1.0); //Green
-    }
-  `);
-
-  const vxShader = createShaderFromString(webGLContext, webGLContext.VERTEX_SHADER, `
-    attribute vec3 aVertexPosition;
-
-    uniform mat4 uMVMatrix;
-    uniform mat4 uPMatrix;
-
-    void main(void) {
-        gl_Position = uPMatrix * uMVMatrix * vec4(aVertexPosition, 1.0);
-        gl_PointSize = 3.0;
-    }
-  `);
+function initWebGLProgram(webGLContext, vertexShaders, fragmentShaders) {
+  vertexShaders = R.unless(R.is(Object), vShader => [vShader])(vertexShaders);
+  fragmentShaders = R.unless(R.is(Object), fShader => [fShader])(fragmentShaders);
 
   const webGLProgram = webGLContext.createProgram();
 
-  webGLContext.attachShader(webGLProgram, vxShader);
-  webGLContext.attachShader(webGLProgram, fgShader);
+  R.forEach(vShaderCode =>  {
+    const vShader = createShaderFromString(webGLContext, webGLContext.VERTEX_SHADER, vShaderCode);
+    webGLContext.attachShader(webGLProgram, vShader);
+  }, vertexShaders);
+
+  R.forEach(fShaderCode => {
+    const fShader = createShaderFromString(webGLContext, webGLContext.FRAGMENT_SHADER, fShaderCode);
+    webGLContext.attachShader(webGLProgram, fShader);
+  }, fragmentShaders);
+
   webGLContext.linkProgram(webGLProgram);
 
   if (!webGLContext.getProgramParameter(webGLProgram, webGLContext.LINK_STATUS)) {
@@ -72,4 +61,31 @@ function initWebGLProgram(webGLContext) {
   webGLProgram.mvMatrixUniform = webGLContext.getUniformLocation(webGLProgram, 'uMVMatrix');
 
   return webGLProgram;
+}
+
+function gatherBufferStats(webGLContext, vertexBuffer, indexBuffer) {
+  const stats = {
+    vBufferBound: false,
+    iBufferBound: false,
+
+    vboSize: null,
+    vboUsage: null,
+
+    iboSize: null,
+    iboUsage: null,
+  };
+
+  const arrayBufferBinding = webGLContext.getParameter(webGLContext.ARRAY_BUFFER_BINDING);
+  stats.vBufferBound = R.equals(arrayBufferBinding, vertexBuffer);
+
+  const elementArrayBufferBinding = webGLContext.getParameter(webGLContext.ARRAY_BUFFER_BINDING);
+  stats.iBufferBound = R.equals(elementArrayBufferBinding, indexBuffer);
+
+  stats.vboSize = webGLContext.getBufferParameter(webGLContext.ARRAY_BUFFER, webGLContext.BUFFER_SIZE);
+  stats.vboUsage = webGLContext.getBufferParameter(webGLContext.ARRAY_BUFFER, webGLContext.BUFFER_USAGE);
+
+  stats.iboSize = webGLContext.getBufferParameter(webGLContext.ELEMENT_ARRAY_BUFFER, webGLContext.BUFFER_SIZE);
+  stats.iboUsage = webGLContext.getBufferParameter(webGLContext.ELEMENT_ARRAY_BUFFER, webGLContext.BUFFER_USAGE);
+
+  return stats;
 }

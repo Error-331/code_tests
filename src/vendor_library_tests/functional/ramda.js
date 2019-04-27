@@ -4,13 +4,21 @@ import R from 'ramda';
 
 import logicCategory from './ramda/categories/logic';
 import functionsCategory from './ramda/categories/function';
+import listCategory from './ramda/categories/list';
+
+import exercises from './ramda/exercises/index';
 
 export default async () => {
     console.log('"Ramda" library tests');
     console.log('=====================');
 
+    //await logicCategory();
     //await functionsCategory();
-    await logicCategory();
+    await listCategory();
+
+  //await exercises();
+    //await functionsCategory();
+
 
     console.log('');
     console.log('--------------------------------------------------------');

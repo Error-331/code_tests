@@ -12,7 +12,8 @@
         "run-scripts-playground": "node ./utils/compile_scripts.js --type=playground && node ./dist/playground_bundle.js",
         "run-scripts-vendor-library-tests": "node ./utils/compile_scripts.js --type=vendor_library_tests && node ./dist/vendor_library_tests_bundle.js",
         "run-scripts-databases": "node ./src/databases/index.js --os=linux",
-        "compile-browser-scripts": "node ./utils/compile_all_browser_js.js"
+        "compile-browser-scripts": "node ./utils/compile_all_browser_js.js",
+        "watch-compile-clojure-scripts": "java -cp cljs.jar:src/clojure_script clojure.main ./build.clj"
     },
     "license": "MIT",
     "devDependencies": {
@@ -51,7 +52,9 @@
         "mongoose": "^4.13.10",
         "mori": "^0.3.2",
         "nedb": "^1.8.0",
-        "ramda": "^0.25.0",
+        "ramda": "^0.26.0",
+        "crocks": "0.11.1",
+        "folktale": "^2.1.0",
         "redis": "^2.8.0",
         "sanctuary": "^0.13.2"
     }
