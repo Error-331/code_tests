@@ -56,6 +56,7 @@
         "crocks": "0.11.1",
         "folktale": "^2.1.0",
         "redis": "^2.8.0",
-        "sanctuary": "^0.13.2"
+        "sanctuary": "^0.13.2",
+        "rxjs": "6.5.2"
     }
 }
