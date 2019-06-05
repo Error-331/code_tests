@@ -11,6 +11,8 @@ import mori from './functional/mori';
 
 import flutureSanctuary from './functional/fluture_sanctuary';
 
+import rxjs from './other/rxjs';
+
 async function run() {
     // date libraries
     //await moment();
@@ -20,8 +22,9 @@ async function run() {
     //await fluture();
     //await lodash();
     //await ramda();
-    await crocks();
+    //await crocks();
    // await mori();
+    await rxjs();
 
     // functional libraries combinations
     //await flutureSanctuary();

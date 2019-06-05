@@ -4,7 +4,7 @@ import stateADT from './crocks/state_adt'
 
 export default async () => {
   console.log('"Crocks" library tests');
-  console.log('=====================+');
+  console.log('======================');
 
   await stateADT();
 
