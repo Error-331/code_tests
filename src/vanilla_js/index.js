@@ -3,6 +3,7 @@
 import numbers from './fundamentals/numbers';
 import bitwise from './fundamentals/operators/bitwise';
 import numberStringOrder from './fundamentals/operators/number_string_order';
+import classes from './fundamentals/classes';
 
 import hoistingGeneral from './fundamentals/hoisting/hoisting_general';
 import modules from './fundamentals/modules';
@@ -54,6 +55,7 @@ async function run() {
     //await numbers();
     //await bitwise();
     //await numberStringOrder();
+    await classes();
 
     //await hoistingGeneral();
     //await modules();
@@ -107,7 +109,7 @@ async function run() {
     //await productOfEveryIntegerExceptIndex();
     //await weeksInHawaii();
     //await passengerSeatsForFamiliesOfThree();
-    await reversePolishNotation();
+    //await reversePolishNotation();
 }
 
 run();

@@ -5,7 +5,7 @@ module.exports.webpackConfig = {
         modules: ['node_modules']
     },
 
-    entry: ['babel-polyfill'],
+    entry: [],
 
     output: {
     },

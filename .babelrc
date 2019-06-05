@@ -1,4 +1,29 @@
 {
-  "presets": ["es2015", "stage-0"],
-  "plugins": ["transform-decorators-legacy", "transform-async-to-generator", "transform-runtime"]
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "modules": "auto",
+        "targets": {
+          "browsers": [ "node 8"]
+        },
+        "useBuiltIns": "usage",
+        "corejs": 3
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
 }
