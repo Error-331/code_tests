@@ -1,7 +1,7 @@
 'use strict';
 
 export const fetchImage = (imageURL, options = {}, headers) => {
-    headers = headers | new Headers();
+  /*  headers = headers | new Headers();
 
     const fetchConfig = {
         method: 'GET',
@@ -11,5 +11,5 @@ export const fetchImage = (imageURL, options = {}, headers) => {
 
     return fetch(imageURL, fetchConfig).then(response => {
         return response.blob();
-    }).then(imageBlob => URL.createObjectURL(imageBlob));
+    }).then(imageBlob => URL.createObjectURL(imageBlob));*/
 };
