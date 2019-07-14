@@ -55,7 +55,7 @@ async function run() {
     //await numbers();
     //await bitwise();
     //await numberStringOrder();
-    await classes();
+    //await classes();
 
     //await hoistingGeneral();
     //await modules();
@@ -79,7 +79,7 @@ async function run() {
     //await combinators();
     //await compose();
     //await basics();
-    //await functor();
+    await functor();
     //await monad();
     //await transducers();
     //await lenses();
@@ -96,7 +96,7 @@ async function run() {
     //await compose();
 
     // design patterns
-   // await sagaPattern();
+    //await sagaPattern();
 
     // interview tasks
     //await apples();

@@ -31,50 +31,50 @@ export default async () => {
         }
     };
 
-    console.log('Identity.of(4).map(x => x / 2).map(x => x * 10):', Identity.of(4).map(x => x / 2).map(x => x * 10));
-    console.log('Const.of(10).map(x => x / 2).map(x => x * 10):', Const.of(10).map(x => x / 2).map(x => x * 10));
+    console.log('Identity.of(4).map(x => x / 2).map(x => x * 10):', Identity.of(4).map(x => x / 2).map(x => x * 10)); // Identity { val: 20 }
+    console.log('Const.of(10).map(x => x / 2).map(x => x * 10):', Const.of(10).map(x => x / 2).map(x => x * 10)); // Const { val: 10 }
     console.log('');
 
-    console.log('Identity.of(5).map(x => x * 2).chain(Maybe.of).map(x => x / 2):', Identity.of(5).map(x => x * 2).chain(Maybe.of).map(x => x / 2));
-    console.log('Identity.of(5).map(x => null).chain(Maybe.of).map(x => x / 2):', Identity.of(5).map(x => null).chain(Maybe.of).map(x => x / 2));
+    console.log('Identity.of(5).map(x => x * 2).chain(Maybe.of).map(x => x / 2):', Identity.of(5).map(x => x * 2).chain(Maybe.of).map(x => x / 2)); // Maybe { val: 5 }
+    console.log('Identity.of(5).map(x => null).chain(Maybe.of).map(x => x / 2):', Identity.of(5).map(x => null).chain(Maybe.of).map(x => x / 2)); // Maybe { val: null }
     console.log('');
 
-    console.log('Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2) - right:', Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2));
-    console.log('Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2) - right:', Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2));
-    console.log('Identity.of(null).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2) - right:', Identity.of(null).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2));
-    console.log('Identity.of(2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2) - right:', Identity.of(2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2));
+    console.log('Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2) - right:', Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2)); // Maybe { val: 10 }
+    console.log('Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2) - right:', Identity.of(2).map(x => x + 2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2)); // Maybe { val: null }
+    console.log('Identity.of(null).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2) - right:', Identity.of(null).map(x => x => x).ap(Maybe.of(5)).map(x => x * 2)); // Maybe { val: 10 }
+    console.log('Identity.of(2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2) - right:', Identity.of(2).map(x => x => x).ap(Maybe.of(null)).map(x => x * 2)); // Maybe { val: null }
     console.log('');
 
-    console.log('Maybe.of(x => x + 5).ap(Identity.of(5)):', Maybe.of(x => x + 5).ap(Identity.of(5)));
-    console.log('Maybe.of(x => x + 5).ap(Const.of(5)):', Maybe.of(x => x + 5).ap(Const.of(5)));
+    console.log('Maybe.of(x => x + 5).ap(Identity.of(5)):', Maybe.of(x => x + 5).ap(Identity.of(5)));  // Identity { val: 10 }
+    console.log('Maybe.of(x => x + 5).ap(Const.of(5)):', Maybe.of(x => x + 5).ap(Const.of(5))); // Const { val: 5 }
     console.log('');
 
-    console.log('Identity.of(x => x / 2).ap(Maybe.of(10)):', Identity.of(x => x / 2).ap(Maybe.of(10)));
-    console.log('Identity.of(x => x / 2).ap(Maybe.of(null)):', Identity.of(x => x / 2).ap(Maybe.of(null)));
+    console.log('Identity.of(x => x / 2).ap(Maybe.of(10)):', Identity.of(x => x / 2).ap(Maybe.of(10))); // Maybe { val: 5 }
+    console.log('Identity.of(x => x / 2).ap(Maybe.of(null)):', Identity.of(x => x / 2).ap(Maybe.of(null))); // Maybe { val: null }
     console.log('');
 
-    console.log('Const.of(x => x / 2).ap(Maybe.of(10)):', Const.of(x => x / 2).ap(Maybe.of(10)));
-    console.log('Const.of(x => x / 2).ap(Maybe.of(null)):', Const.of(x => x / 2).ap(Maybe.of(null)));
+    console.log('Const.of(x => x / 2).ap(Maybe.of(10)):', Const.of(x => x / 2).ap(Maybe.of(10))); // Const { val: Maybe { val: 10 } }
+    console.log('Const.of(x => x / 2).ap(Maybe.of(null)):', Const.of(x => x / 2).ap(Maybe.of(null))); // Const { val: Maybe { val: null } }
     console.log('');
 
-    console.log('Either(null, 7):', Either(null, 7));
-    console.log('Either(7, null):', Either(7, null));
+    console.log('Either(null, 7):', Either(null, 7)); // Either { val: 7 }
+    console.log('Either(7, null):', Either(7, null)); // Either { val: 7 }
     console.log('');
 
-    console.log('Identity.of(x => x / 2).ap(Either(null, 7)):', Identity.of(x => x / 2).ap(Either(null, 7)));
-    console.log('Identity.of(x => x / 2).ap(Either(7, null)):', Identity.of(x => x / 2).ap(Either(7, null)));
+    console.log('Identity.of(x => x / 2).ap(Either(null, 7)):', Identity.of(x => x / 2).ap(Either(null, 7))); // Either { val: 3.5 }
+    console.log('Identity.of(x => x / 2).ap(Either(7, null)):', Identity.of(x => x / 2).ap(Either(7, null))); // Either { val: 7 }
     console.log('');
 
-    console.log('Const.of(x => x / 2).ap(Either(null, 7)):', Const.of(x => x / 2).ap(Either(null, 7)));
-    console.log('Const.of(x => x / 2).ap(Either(7, null)):', Const.of(x => x / 2).ap(Either(7, null)));
+    console.log('Const.of(x => x / 2).ap(Either(null, 7)):', Const.of(x => x / 2).ap(Either(null, 7))); // Const { val: Either { val: 7 } }
+    console.log('Const.of(x => x / 2).ap(Either(7, null)):', Const.of(x => x / 2).ap(Either(7, null))); // Const { val: Either { val: 7 } }
     console.log('');
 
     console.log('testFunc1().map(x => x * 2)(4):', testFunc1.map(x => x * 2)(4));
     console.log('testFunc1.map(x => x + 10)(5):', testFunc1.map(x => x + 10)(5));
     console.log('');
 
-    console.log('testFunc2().map(Maybe.of)(5).map(x => x * 2):', testFunc2.map(Maybe.of)(5).map(x => x * 2));
-    console.log('testFunc2().map(Maybe.of)().map(x => x / 2):', testFunc2.map(Maybe.of)().map(x => x / 2));
+    console.log('testFunc2().map(Maybe.of)(5).map(x => x * 2):', testFunc2.map(Maybe.of)(5).map(x => x * 2)); // Maybe { val: 50 }
+    console.log('testFunc2().map(Maybe.of)().map(x => x / 2):', testFunc2.map(Maybe.of)().map(x => x / 2)); // Maybe { val: null }
     console.log('');
 
     console.log('');
