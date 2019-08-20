@@ -184,6 +184,7 @@ Files
 - copy content of current directory to remote one excluding '.git' directory: rsync -avz --exclude '.git' --no-perms --no-owner --no-group --omit-dir-times ./ /var/www/auth_service_development
 - change access rights to all files in remote directory which are present in current one: find . -print | sed 's/^/ \/var\/www\/auth_service_development\//' | xargs chmod -f 707 || exit 0
 - locate a specific file by name or extension : find /home/username/ -name "*.err"
+- show deleted files: lsof / | grep deleted
 
 less
 ----
