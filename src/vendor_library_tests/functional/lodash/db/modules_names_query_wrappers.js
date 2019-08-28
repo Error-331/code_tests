@@ -14,7 +14,7 @@ const createModulesNamesTable = (dbConnection) => dbConnection.exec(
 );
 
 const dropModulesNamesTable = (dbConnection) => dbConnection.exec(
-    `DROP TABLE modules_names`
+    `DROP TABLE IF EXISTS modules_names`
 );
 
 const insertNewModuleName = (dbConnection, name, belongsToOrganization) => dbConnection.run(

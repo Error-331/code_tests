@@ -45,12 +45,12 @@ const traverseNodeModulesDirectory = curry((mapCallback, rootDirPath) => {
     })(combinedDirList);
 });
 
-const traverseDirectoryRecursive = curry((userCallback, traverseCallback, filterFunc, pathTransformFunc, dirPath) => {
+const traverseDirectoryRecursive = curry((userCallback, traverseCallback, pathTransformFunc, dirPath) => {
     // transform provided directory path using provided `pathTransformFunc` (example: add 'node_modules' at the end)
     const preparedDirPath = pathTransformFunc(dirPath);
 
     // prepare current function for recursive call
-    const recursiveCallback = traverseDirectoryRecursive(userCallback, traverseCallback, filterFunc, pathTransformFunc);
+    const recursiveCallback = traverseDirectoryRecursive(userCallback, traverseCallback, pathTransformFunc);
 
     const mapCallback = generateSync(function* (dirName) {
         const installedDepsPromise = recursiveCallback(joinTwoPaths(preparedDirPath, dirName));
@@ -91,7 +91,6 @@ const traverseDirectoryRecursive = curry((userCallback, traverseCallback, filter
         [isEntityNotExists, constant(null)],
         [isEntityNotReadable, constant(null)],
         [isNotDirectory, constant(null)],
-        [filterFunc, constant(null)],
         [stubTrue, () => traverseCallback(mapCallback, preparedDirPath)]
     ])(preparedDirPath);
 });
