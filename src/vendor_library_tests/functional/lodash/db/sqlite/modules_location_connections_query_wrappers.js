@@ -12,7 +12,9 @@ const createModulesLocationConnectionsTable = (dbConnection) => dbConnection.exe
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         module_location_id INTEGER NOT NULL,
         module_parent_location_id INTEGER NOT NULL,
-        type TEXT NOT NULL
+        type TEXT NOT NULL,
+        
+        UNIQUE(module_location_id, module_parent_location_id, type)
     )`
 );
 

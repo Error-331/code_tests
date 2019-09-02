@@ -2,53 +2,62 @@
 
 // external imports
 const {join} = require('path');
-const {isNil, defaultTo, keys} = require('lodash/fp');
+const {realpathSync} = require('fs');
+
+const {isNil, defaultTo, keys, curry} = require('lodash/fp');
+const chalk = require('chalk');
 
 // local imports
+const {removeLastPathEntity} = require('./../helpers/path_helpers');
 const {generateSync} = require('./../helpers/promise_sync_helpers');
 
-const {createModulesNamesTable, dropModulesNamesTable, insertNewModuleName} = require('./../db/modules_names_query_wrappers');
-const {createModulesVersionsTable, dropModulesVersionsTable, insertNewModuleVersion} = require('./../db/modules_versions_query_wrappers');
-const {createModulesLocationsTable, dropModulesLocationsTable, insertNewModuleLocation} = require('./../db/modules_locations_query_wrappers');
-const {createModulesLocationConnectionsTable, dropModulesLocationConnectionsTable, insertNewModuleLocationConnection} = require('./../db/modules_location_connections_query_wrappers');
+const {getDBType} = require('./app_effects');
+
+const {
+    getModulesNamesQueryWrappers,
+    getModulesVersionsQueryWrappers,
+    getModulesLocationsQueryWrappers,
+    getModulesLocationConnectionsQueryWrappers,
+    getPathsTraversedQueryWrappers,
+} = require('./../helpers/db_helpers');
 
 // effects implementation
-const prepareDatabase = generateSync(function* (dbConnection) {
-    console.log('Dropping `modules_names` table...');
-    yield dropModulesNamesTable(dbConnection);
+const isPathAlreadyTraversed = curry((dbConnection, path) => {
+    return generateSync(function* (dbConnection, path) {
+        let preparedPath = realpathSync(removeLastPathEntity(path)); // TODO: to helpers
 
-    console.log('Dropping `modules_versions` table...');
-    yield dropModulesVersionsTable(dbConnection);
+        const traversedPath = yield getPathsTraversedQueryWrappers(getDBType()).selectTraversedPathByPath(dbConnection, preparedPath);
 
-    console.log('Dropping `modules_locations` table...');
-    yield dropModulesLocationsTable(dbConnection);
+        if (!isNil(traversedPath)) {
+            console.log(chalk.red(`Found traversed path '${traversedPath.path}'`));
+        }
 
-    console.log('Dropping `modules_location_connections` table...');
-    yield dropModulesLocationConnectionsTable(dbConnection);
+        yield !isNil(traversedPath);
 
-    console.log('Creating `modules_names` table...');
-    yield createModulesNamesTable(dbConnection);
-
-    console.log('Creating `modules_versions` table...');
-    yield createModulesVersionsTable(dbConnection);
-
-    console.log('Creating `modules_locations` table...');
-    yield createModulesLocationsTable(dbConnection);
-
-    console.log('Creating `modules_location_connections` table...');
-    yield createModulesLocationConnectionsTable(dbConnection);
+    })(dbConnection, path);
 });
 
 const insertModuleData = generateSync(function* (dbConnection, name, version, location, parentModuleLocationId, type) {
-    const moduleNameStatement = yield insertNewModuleName(dbConnection, name, 0);
-    const moduleVersionStatement = yield insertNewModuleVersion(dbConnection, moduleNameStatement.lastID, version); // TODO: FIX!!!
-    const moduleLocationStatement = yield insertNewModuleLocation(dbConnection, moduleNameStatement.lastID, moduleVersionStatement.lastID, location);
+    const dbType = getDBType();
+    const traversedLocation = yield getModulesLocationsQueryWrappers(dbType).selectLocationByPath(dbConnection, location);
 
-    if (!isNil(parentModuleLocationId)) {
-        yield insertNewModuleLocationConnection(dbConnection, moduleLocationStatement.lastID, parentModuleLocationId, type);
+    if (!isNil(traversedLocation)) {
+        console.log(chalk.red(`Found duplicate module on: '${traversedLocation.path}'`));
+        yield null;
+        return;
     }
 
-    yield moduleLocationStatement.lastID;
+    console.log(chalk.blue(`Adding module '${name}' (version: ${version}) in '${location}'`));
+
+    const moduleNameId = yield getModulesNamesQueryWrappers(dbType).selectInsertModuleName(dbConnection, name, 0);
+    const moduleVersionId = yield getModulesVersionsQueryWrappers(dbType).selectInsertModuleVersion(dbConnection, moduleNameId, version);
+    const moduleLocationId = yield getModulesLocationsQueryWrappers(dbType).selectInsertModuleLocation(dbConnection, moduleNameId, moduleVersionId, location);
+
+    if (!isNil(parentModuleLocationId)) {
+        yield getModulesLocationConnectionsQueryWrappers(dbType).insertNewModuleLocationConnection(dbConnection, moduleLocationId, parentModuleLocationId, type);
+    }
+
+    yield moduleLocationId;
 });
 
 const insertDependencyListToDB = generateSync(function* (dbConnection, packageJSONDependencies, pathToParentModule, parentLocationId, type) {
@@ -64,6 +73,6 @@ const insertDependencyListToDB = generateSync(function* (dbConnection, packageJS
 });
 
 // export
-exports.prepareDatabase = prepareDatabase;
+exports.isPathAlreadyTraversed = isPathAlreadyTraversed;
 exports.insertModuleData = insertModuleData;
 exports.insertDependencyListToDB = insertDependencyListToDB;

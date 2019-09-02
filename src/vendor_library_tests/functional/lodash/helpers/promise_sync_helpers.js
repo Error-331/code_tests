@@ -1,5 +1,13 @@
+'use strict';
+
+// external imports
+const {isNil, isObject} = require('lodash/fp');
+
+// local imports
+
+// helpers implementation
 const isPromise = (obj) => {
-    return typeof obj !== 'undefined' && typeof obj.then === 'function'
+    return typeof !isNil(obj) && isObject(obj) && typeof obj.then === 'function'
 };
 
 const next = (iterable, resolveCallback, rejectCallback, prevVal = undefined) => {
