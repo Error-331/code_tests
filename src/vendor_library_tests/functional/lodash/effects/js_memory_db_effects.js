@@ -4,50 +4,93 @@
 const chalk = require('chalk');
 
 // local imports
-const {createModulesNamesTable, dropModulesNamesTable} = require('./../db/js_memory/modules_names_query_wrappers');
-const {createModulesVersionsTable, dropModulesVersionsTable} = require('./../db/js_memory/modules_versions_query_wrappers');
-const {createModulesLocationsTable, dropModulesLocationsTable} = require('./../db/js_memory/modules_locations_query_wrappers');
-const {createModulesLocationConnectionsTable, dropModulesLocationConnectionsTable} = require('./../db/js_memory/modules_location_connections_query_wrappers');
-const {createPathsTraversedTable, dropPathsTraversedTable} = require('./../db/js_memory/paths_traversed_query_wrappers');
+const modulesNamesQueryWrappers = require('./../db/js_memory/modules_names_query_wrappers');
+const modulesVersionsQueryWrappers = require('./../db/js_memory/modules_versions_query_wrappers');
+const modulesLocationsQueryWrappers = require('./../db/js_memory/modules_locations_query_wrappers');
+const modulesLocationConnectionsQueryWrappers = require('./../db/js_memory/modules_location_connections_query_wrappers');
+const pathsTraversedQueryWrappers = require('./../db/js_memory/paths_traversed_query_wrappers');
 
 // effects implementation
 const openConnectionToDB = () => ({
+    modulesNamesMapLastId: null,
+    modulesVersionsMapLastId:  null,
     modulesLocationsMapLastId: null,
+    modulesLocationConnectionsMapLastId: null,
+    pathsTraversedMapLastId: null,
 
+    modulesNamesMap: null,
+    modulesVersionsMap: null,
     modulesLocationsMap: null,
+    modulesLocationConnectionsMap: null,
+    pathsTraversedMap: null,
+
+    modulesNamesIndexMap: null,
+    modulesVersionsIndexMap: null,
     modulesLocationIndexMap: null,
+    modulesLocationConnectionsIndexMap: null,
+    pathsTraversedIndexMap: null,
 });
 
-const closeConnectionToDB = (dbConnection) => null;
+const closeConnectionToDB = () => null;
 
 const prepareDatabase = (dbConnection) => {
     console.log(chalk.blue('Dropping `modules_names` table...'));
-    dropModulesNamesTable(dbConnection);
+    modulesNamesQueryWrappers.dropModulesNamesTable(dbConnection);
 
     console.log(chalk.blue('Dropping `modules_versions` table...'));
-    dropModulesVersionsTable(dbConnection);
+    modulesVersionsQueryWrappers.dropModulesVersionsTable(dbConnection);
 
     console.log(chalk.blue('Dropping `modules_locations` table...'));
-    dropModulesLocationsTable(dbConnection);
+    modulesLocationsQueryWrappers.dropModulesLocationsTable(dbConnection);
 
     console.log(chalk.blue('Dropping `modules_location_connections` table...'));
-    dropModulesLocationConnectionsTable(dbConnection);
+    modulesLocationConnectionsQueryWrappers.dropModulesLocationConnectionsTable(dbConnection);
 
     console.log(chalk.blue('Dropping `paths_traversed` table...'));
-    dropPathsTraversedTable(dbConnection);
+    pathsTraversedQueryWrappers.dropPathsTraversedTable(dbConnection);
 
     console.log(chalk.blue('Creating `modules_names` table...'));
-    createModulesNamesTable(dbConnection);
+    modulesNamesQueryWrappers.createModulesNamesTable(dbConnection);
 
     console.log(chalk.blue('Creating `modules_versions` table...'));
-    createModulesVersionsTable(dbConnection);
+    modulesVersionsQueryWrappers.createModulesVersionsTable(dbConnection);
 
     console.log(chalk.blue('Creating `modules_locations` table...'));
-    createModulesLocationsTable(dbConnection);
+    modulesLocationsQueryWrappers.createModulesLocationsTable(dbConnection);
 
     console.log(chalk.blue('Creating `modules_location_connections` table...'));
-    createModulesLocationConnectionsTable(dbConnection);
+    modulesLocationConnectionsQueryWrappers.createModulesLocationConnectionsTable(dbConnection);
 
     console.log(chalk.blue('Creating `paths_traversed` table...'));
-    createPathsTraversedTable(dbConnection);
+    pathsTraversedQueryWrappers.createPathsTraversedTable(dbConnection);
 };
+
+const exportToJSON = (dbConnection) => {
+    return Promise.all(
+        [
+            modulesNamesQueryWrappers.convertTableToJSON(dbConnection),
+            modulesVersionsQueryWrappers.convertTableToJSON(dbConnection),
+            modulesLocationsQueryWrappers.convertTableToJSON(dbConnection),
+            modulesLocationConnectionsQueryWrappers.convertTableToJSON(dbConnection),
+            pathsTraversedQueryWrappers.convertTableToJSON(dbConnection)
+        ]
+    ).then((pathsTraversed) => {
+        const resultingJSON = Object.assign(
+            {},
+                pathsTraversed[0],
+                pathsTraversed[1],
+                pathsTraversed[2],
+                pathsTraversed[3],
+                pathsTraversed[4]
+            );
+
+        return Promise.resolve(resultingJSON);
+    });
+};
+
+// export
+exports.openConnectionToDB = openConnectionToDB;
+exports.closeConnectionToDB = closeConnectionToDB;
+
+exports.prepareDatabase = prepareDatabase;
+exports.exportToJSON = exportToJSON;

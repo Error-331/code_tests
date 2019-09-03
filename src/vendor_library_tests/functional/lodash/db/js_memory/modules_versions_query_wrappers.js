@@ -4,6 +4,7 @@
 const {isNil} = require('lodash/fp');
 
 // local imports
+const {convertMapToJSON} = require('./../../helpers/map_helpers');
 
 // query wrappers implementation
 const createModulesVersionsTable = (dbConnection) => {
@@ -81,9 +82,22 @@ const selectInsertModuleVersion = (dbConnection, moduleNameId, version) => {
     });
 };
 
+const convertTableToJSON = (dbConnection) => {
+    const modulesNames = convertMapToJSON(dbConnection.modulesVersionsMap);
+    const modulesNamesIndex = convertMapToJSON(dbConnection.modulesVersionsIndexMap);
+
+    const combinedObject = {
+        modulesNames,
+        modulesNamesIndex,
+    };
+
+    return Promise.resolve(combinedObject);
+};
+
 // export
 exports.createModulesVersionsTable = createModulesVersionsTable;
 exports.dropModulesVersionsTable = dropModulesVersionsTable;
 exports.insertNewModuleVersion = insertNewModuleVersion;
 exports.selectModuleByNameIdAndVersion = selectModuleByNameIdAndVersion;
 exports.selectInsertModuleVersion = selectInsertModuleVersion;
+exports.convertTableToJSON = convertTableToJSON;

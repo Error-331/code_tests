@@ -4,6 +4,7 @@
 const {realpathSync} = require('fs');
 
 // local imports
+const {convertMapToJSON} = require('./../../helpers/map_helpers');
 
 // query wrappers implementation
 const createPathsTraversedTable = (dbConnection) => {
@@ -60,8 +61,17 @@ const selectTraversedPathByPath = (dbConnection, usrPath) => {
     return Promise.resolve(null);
 };
 
+const convertTableToJSON = (dbConnection) => {
+    const combinedObject = {
+        pathsTraversed: convertMapToJSON(dbConnection.pathsTraversedMap)
+    };
+
+    return Promise.resolve(combinedObject);
+};
+
 // export
 exports.createPathsTraversedTable = createPathsTraversedTable;
 exports.dropPathsTraversedTable = dropPathsTraversedTable;
 exports.insertNewPath = insertNewPath ;
 exports.selectTraversedPathByPath = selectTraversedPathByPath;
+exports.convertTableToJSON = convertTableToJSON;

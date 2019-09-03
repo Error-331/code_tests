@@ -3,6 +3,7 @@
 // external imports
 
 // local imports
+const {convertMapToJSON} = require('./../../helpers/map_helpers');
 
 // query wrappers implementation
 
@@ -26,7 +27,7 @@ const dropModulesLocationConnectionsTable  = (dbConnection) => {
 };
 
 const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
-    const composedKey = `${moduleLocationId}_${moduleParentLocationId}_${type}`; // UNIQUE(module_location_id, module_parent_location_id, type)
+    const composedKey = `${moduleLocationId}_${moduleParentLocationId}_${usrType}`; // UNIQUE(module_location_id, module_parent_location_id, type)
 
     if (dbConnection.modulesLocationConnectionsMap.has(composedKey)) {
         return Promise.resolve({
@@ -49,7 +50,20 @@ const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, modul
     }
 };
 
+const convertTableToJSON = (dbConnection) => {
+    const modulesNames = convertMapToJSON(dbConnection.modulesLocationConnectionsMap);
+    const modulesNamesIndex = convertMapToJSON(dbConnection.modulesLocationConnectionsIndexMap);
+
+    const combinedObject = {
+        modulesNames,
+        modulesNamesIndex,
+    };
+
+    return Promise.resolve(combinedObject);
+};
+
 // export
 exports.createModulesLocationConnectionsTable = createModulesLocationConnectionsTable;
 exports.dropModulesLocationConnectionsTable = dropModulesLocationConnectionsTable;
 exports.insertNewModuleLocationConnection = insertNewModuleLocationConnection;
+exports.convertTableToJSON = convertTableToJSON;
