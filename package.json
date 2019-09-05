@@ -34,8 +34,7 @@
         "typescript": "^2.6.2",
         "typings": "^2.1.1",
         "webpack": "^3.10.0",
-        "worker-loader": "^0.7.1",
-        "gl-matrix": "^2.6.1"
+        "worker-loader": "^0.7.1"
     },
     "dependencies": {
         "fluture": "^5.0.0",
@@ -54,6 +53,7 @@
         "sanctuary": "^0.13.2",
         "rxjs": "6.5.2",
         "semver": "6.3.0",
-        "chalk": "2.4.2"
+        "chalk": "2.4.2",
+        "gl-matrix": "^2.6.1"
     }
 }

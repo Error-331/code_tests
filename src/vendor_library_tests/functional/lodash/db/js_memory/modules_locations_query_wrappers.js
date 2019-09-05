@@ -61,7 +61,7 @@ const selectLocationByPath = (dbConnection, usrPath) => {
     return Promise.resolve(null);
 };
 
-const selectModuleByNameIdAndVersion = (dbConnection, moduleNameId, moduleVersionId, usrPath) => {
+const selectLocationByNameIdAndVersion = (dbConnection, moduleNameId, moduleVersionId, usrPath) => {
     for (const entry of dbConnection.modulesLocationsMap) {
         const {module_name_id, module_version_id, path} = entry[1];
 
@@ -80,7 +80,7 @@ const selectModuleByNameIdAndVersion = (dbConnection, moduleNameId, moduleVersio
 // returns id
 const selectInsertModuleLocation = (dbConnection, moduleNameId, moduleVersionId, path) => {
     return new Promise((resolve, reject) => {
-        selectModuleByNameIdAndVersion(dbConnection, moduleNameId, moduleVersionId, path)
+        selectLocationByNameIdAndVersion(dbConnection, moduleNameId, moduleVersionId, path)
             .then(moduleLocationRow => {
                 if (!isNil(moduleLocationRow)) {
                     resolve(moduleLocationRow.id);
@@ -113,6 +113,6 @@ exports.createModulesLocationsTable = createModulesLocationsTable;
 exports.dropModulesLocationsTable = dropModulesLocationsTable;
 exports.insertNewModuleLocation = insertNewModuleLocation;
 exports.selectLocationByPath = selectLocationByPath;
-exports.selectModuleByNameIdAndVersion = selectModuleByNameIdAndVersion;
+exports.selectLocationByNameIdAndVersion = selectLocationByNameIdAndVersion;
 exports.selectInsertModuleLocation = selectInsertModuleLocation;
 exports.convertTableToJSON = convertTableToJSON;

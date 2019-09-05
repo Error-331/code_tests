@@ -36,14 +36,14 @@ const selectLocationByPath = (dbConnection, path) => dbConnection.get(
     `SELECT * from modules_locations WHERE path = '${path}' ORDER BY id LIMIT 1`
 );
 
-const selectModuleByNameIdAndVersion = (dbConnection, moduleNameId, moduleVersionId, path) => dbConnection.get(
+const selectLocationByNameIdAndVersion = (dbConnection, moduleNameId, moduleVersionId, path) => dbConnection.get(
     `SELECT * from modules_locations WHERE module_name_id = ${moduleNameId} AND module_version_id = ${moduleVersionId} AND path = '${path}' ORDER BY id LIMIT 1`
 );
 
 // returns id
 const selectInsertModuleLocation = (dbConnection, moduleNameId, moduleVersionId, path) => {
     return new Promise((resolve, reject) => {
-        selectModuleByNameIdAndVersion(dbConnection, moduleNameId, moduleVersionId, path)
+        selectLocationByNameIdAndVersion(dbConnection, moduleNameId, moduleVersionId, path)
             .then(moduleLocationRow => {
                 if (!isNil(moduleLocationRow)) {
                     resolve(moduleLocationRow.id);
@@ -64,5 +64,5 @@ exports.createModulesLocationsTable = createModulesLocationsTable;
 exports.dropModulesLocationsTable = dropModulesLocationsTable;
 exports.insertNewModuleLocation = insertNewModuleLocation;
 exports.selectLocationByPath = selectLocationByPath;
-exports.selectModuleByNameIdAndVersion = selectModuleByNameIdAndVersion;
+exports.selectLocationByNameIdAndVersion = selectLocationByNameIdAndVersion;
 exports.selectInsertModuleLocation = selectInsertModuleLocation;

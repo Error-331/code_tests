@@ -6,7 +6,7 @@ const {eq, complement, curry, contains} = require('lodash/fp');
 
 // local imports
 const {DIRECTORIES_TO_EXCLUDE} = require('./../constants/exclusion_constants');
-console.log(constants.R_OK);
+
 // helpers implementation
 
 /**

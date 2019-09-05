@@ -8,8 +8,10 @@ const {initial, curry} = require('lodash/fp');
 
 // helpers implementation
 const joinTwoPaths = curry((path1, path2) => join(path1, path2));
-const removeLastPathEntity = (path) => initial(path.split(sep)).join(sep);
+const addNodeModulesDir = path => joinTwoPaths(path, '/node_modules');
+const removeLastPathEntity = path => initial(path.split(sep)).join(sep);
 
 // exports
 exports.joinTwoPaths = joinTwoPaths;
+exports.addNodeModulesDir = addNodeModulesDir;
 exports.removeLastPathEntity = removeLastPathEntity;

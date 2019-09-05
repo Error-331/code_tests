@@ -7,14 +7,29 @@ const chalk = require('chalk');
 // local imports
 const {DIRECTORIES_TO_EXCLUDE} = require('./../constants/exclusion_constants');
 
+const {addNodeModulesDir, removeLastPathEntity} = require('./../helpers/path_helpers');
 const {isExclusion} = require('./../helpers/validation_helpers');
 const {joinTwoPaths} = require('./../helpers/path_helpers');
 const {generateSync} = require('./../helpers/promise_sync_helpers');
+const {getPathsTraversedQueryWrappers} = require('./../helpers/db_helpers');
 
-const {insertModuleData, insertDependencyListToDB} = require('./../effects/db_effects');
-const {readPackageJSON} = require('./../effects/fs_effects');
+const {isPathAlreadyTraversed, insertModuleData, insertDependencyListToDB} = require('./../effects/db_effects');
+const {readPackageJSON, traverseDirectoryRecursive, traverseNodeModulesDirectory} = require('./../effects/fs_effects');
 
 // helpers implementation
+const filterTraversedPath = curry((dbConnection, dbType, path) => {
+    return generateSync(function* (dbConnection, path) {
+        const isPathVisited = yield isPathAlreadyTraversed(dbConnection, path);
+
+        if (isPathVisited === false) {
+            let preparedPath = removeLastPathEntity(path);
+            yield getPathsTraversedQueryWrappers(dbType).insertNewPath(dbConnection, preparedPath);
+        }
+
+        yield isPathVisited;
+    })(dbConnection, dbType, path);
+});
+
 const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModules, packageDirName, installedChildNodeModules) => {
     return generateSync(function* () {
         // compose full path to module
@@ -49,9 +64,26 @@ const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModu
         yield insertDependencyListToDB(dbConnection, devDependencies, pathToModule, currentModuleLocationID, 'devDependencies');
         yield insertDependencyListToDB(dbConnection, peerDependencies, pathToModule, currentModuleLocationID, 'peerDependencies');
 
+        // return package name (consistency reason)
         yield packageDirName;
     })();
 });
 
+const extractAndSaveModuleData = curry((dbConnection, dbType, pathToRootNodeModules) => {
+    return generateSync(function* (dbConnection, dbType, pathToRootNodeModules) {
+        yield handleModuleData(dbConnection, '', pathToRootNodeModules, '', []);
+
+        yield traverseDirectoryRecursive(
+            handleModuleData(dbConnection),
+            traverseNodeModulesDirectory,
+            filterTraversedPath(dbConnection, dbType),
+            addNodeModulesDir,
+            pathToRootNodeModules,
+        );
+    })(dbConnection, dbType, pathToRootNodeModules);
+});
+
 // export
+exports.filterTraversedPath = filterTraversedPath;
 exports.handleModuleData = handleModuleData;
+exports.extractAndSaveModuleData = extractAndSaveModuleData;
