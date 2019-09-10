@@ -41,31 +41,31 @@ const {
 const executeChildProcessTask = (dbType, dbConnection, taskType, data) => cond([
     [
         equals(INSERT_NEW_MODULE_NAME_CHILD_PROCESS),
-        () => getModulesNamesQueryWrappers(dbType).insertNewModuleName(data.name, data.belongsToOrganization),
+        () => getModulesNamesQueryWrappers(dbType).insertNewModuleName(dbConnection, data.name, data.belongsToOrganization),
     ],
     [
         equals(SELECT_MODULE_CHILD_PROCESS_CHILD_PROCESS),
-        () => getModulesNamesQueryWrappers(dbType).selectModule(data.usrName, data.belongsToOrganization),
+        () => getModulesNamesQueryWrappers(dbType).selectModule(dbConnection, data.usrName, data.belongsToOrganization),
     ],
     [
         equals(SELECT_INSERT_MODULE_NAME_CHILD_PROCESS),
-        () => getModulesNamesQueryWrappers(dbType).selectInsertModuleName(data.name, data.belongsToOrganization),
+        () => getModulesNamesQueryWrappers(dbType).selectInsertModuleName(dbConnection, data.name, data.belongsToOrganization),
     ],
     [
         equals(INSERT_NEW_MODULE_VERSION_CHILD_PROCESS),
-        () => getModulesVersionsQueryWrappers(dbType).insertNewModuleVersion(data.moduleNameId, data.version),
+        () => getModulesVersionsQueryWrappers(dbType).insertNewModuleVersion(dbConnection, data.moduleNameId, data.version),
     ],
     [
         equals(SELECT_MODULE_BY_NAME_ID_AND_VERSION_CHILD_PROCESS),
-        () => getModulesVersionsQueryWrappers(dbType).selectModuleByNameIdAndVersion(data.moduleNameId, data.usrVersion),
+        () => getModulesVersionsQueryWrappers(dbType).selectModuleByNameIdAndVersion(dbConnection, data.moduleNameId, data.usrVersion),
     ],
     [
         equals(SELECT_INSERT_MODULE_VERSION_CHILD_PROCESS),
-        () => getModulesVersionsQueryWrappers(dbType).selectInsertModuleVersion(data.moduleNameId, data.version),
+        () => getModulesVersionsQueryWrappers(dbType).selectInsertModuleVersion(dbConnection, data.moduleNameId, data.version),
     ],
     [
         equals(INSERT_NEW_MODULE_LOCATION_CHILD_PROCESS),
-        () => getModulesLocationsQueryWrappers(dbType).insertNewModuleLocation(data.moduleNameId, data.moduleVersionId, data.path),
+        () => getModulesLocationsQueryWrappers(dbType).insertNewModuleLocation(dbConnection, data.moduleNameId, data.moduleVersionId, data.path),
     ],
     [
         equals(SELECT_LOCATION_BY_PATH_CHILD_PROCESS),
@@ -93,7 +93,7 @@ const executeChildProcessTask = (dbType, dbConnection, taskType, data) => cond([
     ],
     [
         stubTrue,
-        Promise.reject(`Undefined task type: '${taskType}'`),
+        () => Promise.reject(`Undefined task type: '${taskType}'`),
     ],
 ])(taskType);
 

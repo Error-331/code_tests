@@ -2,25 +2,54 @@
 
 // external imports
 const chalk = require('chalk');
-const {bind} = require('lodash/fp');
+const {equals, cond, bind, curry} = require('lodash/fp');
 
 // local imports
+const {
+    MASTER_SET_NAME_COMMAND_MESSAGE_TYPE,
+    MASTER_SET_PATH_TO_MODULES_COMMAND_MESSAGE_TYPE,
+    MASTER_DATA_MESSAGE_TYPE,
+} = require('./../constants/master_process_constants');
 
 // effects implementation
 const masterProcessCommunicator = {
+    name: null,
+    pathToModules: null,
     pendingTasksMap: new Map(),
 
+    handleSetNameMessage: function(usrName) {
+        this.name = usrName;
+    },
+
+    handleSetPathMessage: function(usrPath) {
+        this.pathToModules = usrPath;
+    },
+
+    handleDataMessage: function(name, data) {
+        const taskData = this.pendingTasksMap.get(name);
+
+        this.pendingTasksMap.delete(name);
+        taskData.resolve(data);
+    },
+
     handleParentMessage: function(message) {
-        const {name, data} = message;
+        const {name, type, data} = message;
 
-        console.log('pop', message, this.pendingTasksMap);
+        console.log(
+            chalk.bgWhite(chalk.gray(` CHILD `)),
+            chalk.white(`Incoming message (name: '${name}', type: '${type}')`)
+        );
 
-        this.pendingTasksMap.get(name).resolve(data);
+        cond([
+            [equals(MASTER_SET_NAME_COMMAND_MESSAGE_TYPE), () => this.handleSetNameMessage(data)],
+            [equals(MASTER_SET_PATH_TO_MODULES_COMMAND_MESSAGE_TYPE), () => this.handleSetPathMessage(data)],
+            [equals(MASTER_DATA_MESSAGE_TYPE), () => this.handleDataMessage(name, data)],
+        ])(type);
     },
 
     delegateTaskToMaster: function(type, data) {
         const currentTimeStamp = new Date().getTime();
-        const pendingTaskName = `${type}_${currentTimeStamp}`;
+        const pendingTaskName = `${type}_${this.name}_${currentTimeStamp}`;
 
         return new Promise((resolve, reject) => {
            this.pendingTasksMap.set(pendingTaskName, {

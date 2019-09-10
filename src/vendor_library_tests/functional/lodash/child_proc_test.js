@@ -13,7 +13,7 @@ const {extractAndSaveModuleData} = require('./effects/modules_tree_effects');
 // functions definition
 
 // module implementation
-const pathToRootNodeModules1 = '/home/segei/projects/code_tests';
+const pathToRootNodeModules1 = '/home/luda/projects/fatback/bsCore';
 //const pathToRootNodeModules = '/home/segei/Downloads';
 //const pathToRootNodeModules = '/home/brightsign/projects/fatback/';
 const pathToRootNodeModules2 = '/home/brightsign/projects/fatback/bsCore';
@@ -30,9 +30,7 @@ const b = generateSync(function* () {
 
     yield getDBEffects(dbType).prepareDatabase(dbConnection);
     yield extractAndSaveModuleData(dbConnection, dbType, pathToRootNodeModules1);
-
-    const resultingJSON = yield getDBEffects(dbType).exportToJSON(dbConnection);
-    console.log(resultingJSON);
+    
 
     console.log('Closing DB connection...');
     yield getDBEffects(dbType).closeConnectionToDB(dbConnection);
