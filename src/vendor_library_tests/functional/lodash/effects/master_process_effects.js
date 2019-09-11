@@ -1,9 +1,8 @@
 'use strict';
 
 // external imports
-const {stubTrue, equals, cond} = require('lodash/fp');
+const {stubTrue, equals, curry, cond} = require('lodash/fp');
 
-const chalk = require('chalk');
 const {bind} = require('lodash/fp');
 
 // local imports

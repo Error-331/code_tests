@@ -3,7 +3,6 @@
 // external imports
 const {readdirSync} = require('fs');
 const {isNil, stubTrue, stubFalse, cond, curry, concat, filter, reduce} = require('lodash/fp');
-const chalk = require('chalk');
 const jsonfile = require('jsonfile');
 
 // local imports
@@ -19,6 +18,8 @@ const {
 } = require('./../helpers/validation_helpers');
 
 const {generateSync} = require('./../helpers/promise_sync_helpers');
+
+const {logFSMessage} = require('./../effects/log_effects');
 
 // effects implementation
 const readPackageJSON = curry((packageJSONDir) => {
@@ -82,7 +83,7 @@ const traverseDirectoryRecursive = curry((userCallback, traverseCallback, filter
         }
 
         // print current directory to console
-        console.log(chalk.magenta(`Traversing: '${preparedDirPath}'`));
+        logFSMessage(`Traversing: '${preparedDirPath}'`);
 
         yield traverseCallback(mapCallback, preparedDirPath);
     })(mapCallback, traverseCallback, preparedDirPath);

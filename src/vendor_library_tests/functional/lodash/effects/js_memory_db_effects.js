@@ -1,7 +1,6 @@
 'use strict';
 
 // external imports
-const chalk = require('chalk');
 
 // local imports
 const modulesNamesQueryWrappers = require('./../db/js_memory/modules_names_query_wrappers');
@@ -9,6 +8,8 @@ const modulesVersionsQueryWrappers = require('./../db/js_memory/modules_versions
 const modulesLocationsQueryWrappers = require('./../db/js_memory/modules_locations_query_wrappers');
 const modulesLocationConnectionsQueryWrappers = require('./../db/js_memory/modules_location_connections_query_wrappers');
 const pathsTraversedQueryWrappers = require('./../db/js_memory/paths_traversed_query_wrappers');
+
+const {logDBMessage} = require('./../effects/log_effects');
 
 // effects implementation
 const openConnectionToDB = () => ({
@@ -34,34 +35,34 @@ const openConnectionToDB = () => ({
 const closeConnectionToDB = () => null;
 
 const prepareDatabase = (dbConnection) => {
-    console.log(chalk.blue('Dropping `modules_names` table...'));
+    logDBMessage('Dropping `modules_names` table...');
     modulesNamesQueryWrappers.dropModulesNamesTable(dbConnection);
 
-    console.log(chalk.blue('Dropping `modules_versions` table...'));
+    logDBMessage('Dropping `modules_versions` table...');
     modulesVersionsQueryWrappers.dropModulesVersionsTable(dbConnection);
 
-    console.log(chalk.blue('Dropping `modules_locations` table...'));
+    logDBMessage('Dropping `modules_locations` table...');
     modulesLocationsQueryWrappers.dropModulesLocationsTable(dbConnection);
 
-    console.log(chalk.blue('Dropping `modules_location_connections` table...'));
+    logDBMessage('Dropping `modules_location_connections` table...');
     modulesLocationConnectionsQueryWrappers.dropModulesLocationConnectionsTable(dbConnection);
 
-    console.log(chalk.blue('Dropping `paths_traversed` table...'));
+    logDBMessage('Dropping `paths_traversed` table...');
     pathsTraversedQueryWrappers.dropPathsTraversedTable(dbConnection);
 
-    console.log(chalk.blue('Creating `modules_names` table...'));
+    logDBMessage('Creating `modules_names` table...');
     modulesNamesQueryWrappers.createModulesNamesTable(dbConnection);
 
-    console.log(chalk.blue('Creating `modules_versions` table...'));
+    logDBMessage('Creating `modules_versions` table...');
     modulesVersionsQueryWrappers.createModulesVersionsTable(dbConnection);
 
-    console.log(chalk.blue('Creating `modules_locations` table...'));
+    logDBMessage('Creating `modules_locations` table...');
     modulesLocationsQueryWrappers.createModulesLocationsTable(dbConnection);
 
-    console.log(chalk.blue('Creating `modules_location_connections` table...'));
+    logDBMessage('Creating `modules_location_connections` table...');
     modulesLocationConnectionsQueryWrappers.createModulesLocationConnectionsTable(dbConnection);
 
-    console.log(chalk.blue('Creating `paths_traversed` table...'));
+    logDBMessage('Creating `paths_traversed` table...');
     pathsTraversedQueryWrappers.createPathsTraversedTable(dbConnection);
 };
 

@@ -1,8 +1,7 @@
 'use strict';
 
 // external imports
-const chalk = require('chalk');
-const {isNil, equals, cond, once, bind} = require('lodash/fp');
+const {isNil, equals, cond, once, bind, over} = require('lodash/fp');
 
 // local imports
 const {
@@ -18,9 +17,11 @@ const {
     CHILD_DELEGATE_TASK_MESSAGE_TYPE,
 } = require('./../constants/child_process_constants');
 
+const {logUtilityMessage} = require('./log_effects');
+const {getProcessName, setProcessName} = require('./process_meta_effects');
+
 // effects implementation
 const masterProcessCommunicator = {
-    name: null,
     pathToModules: null,
     pendingTasksMap: new Map(),
 
@@ -28,14 +29,14 @@ const masterProcessCommunicator = {
 
     sendFinishTraverseModulesMessage: once(function() {
         process.send({
-            name: this.name,
+            name: getProcessName(),
             type: CHILD_FINISH_WITH_MODULE_TRAVERSING_MESSAGE_TYPE,
         });
     }),
 
     sendReadyTraverseModulesMessage: once(function () {
         process.send({
-            name: this.name,
+            name: getProcessName(),
             type: CHILD_READY_FOR_MODULE_TRAVERSING_MESSAGE_TYPE,
         });
     }),
@@ -48,32 +49,27 @@ const masterProcessCommunicator = {
     },
 
     handlePostParentMessage: function() {
-        if (!isNil(this.name) && !isNil(this.pathToModules)) {
+        if (!isNil(getProcessName()) && !isNil(this.pathToModules)) {
             this.sendReadyTraverseModulesMessage();
         }
     },
 
     handleParentMessage: function(message) {
-        const {name, type} = message;
-
-        console.log(
-            chalk.bgWhite(chalk.gray(` CHILD `)),
-            chalk.white(`Incoming message (name: '${name}', type: '${type}')`)
-        );
-
-        cond([
-            [({type}) => equals(MASTER_SET_NAME_COMMAND_MESSAGE_TYPE, type), ({data}) => this.name = data],
-            [({type}) => equals(MASTER_SET_PATH_TO_MODULES_COMMAND_MESSAGE_TYPE, type), ({data}) => this.pathToModules = data],
-            [({type}) => equals(MASTER_START_MODULE_TRAVERSE_COMMAND_MESSAGE_TYPE, type), bind(this.startModuleTraverseUserHandler, this)],
-            [({type}) => equals(MASTER_DATA_MESSAGE_TYPE, type), bind(this.handleDataMessage, this)],
+        over([
+            ({name, type}) => logUtilityMessage(`Incoming message (name: '${name}', type: '${type}')`),
+            cond([
+                [({type}) => equals(MASTER_SET_NAME_COMMAND_MESSAGE_TYPE, type), ({data}) => setProcessName(data)],
+                [({type}) => equals(MASTER_SET_PATH_TO_MODULES_COMMAND_MESSAGE_TYPE, type), ({data}) => this.pathToModules = data],
+                [({type}) => equals(MASTER_START_MODULE_TRAVERSE_COMMAND_MESSAGE_TYPE, type), bind(this.startModuleTraverseUserHandler, this)],
+                [({type}) => equals(MASTER_DATA_MESSAGE_TYPE, type), bind(this.handleDataMessage, this)],
+            ]),
+            bind(this.handlePostParentMessage, this),
         ])(message);
-
-        this.handlePostParentMessage(message);
     },
 
     delegateTaskToMaster: function(taskType, data) {
         const currentTimeStamp = new Date().getTime();
-        const pendingTaskName = `${taskType}_${this.name}_${currentTimeStamp}`;
+        const pendingTaskName = `${taskType}_${getProcessName()}_${currentTimeStamp}`;
 
         return new Promise((resolve, reject) => {
            this.pendingTasksMap.set(pendingTaskName, {

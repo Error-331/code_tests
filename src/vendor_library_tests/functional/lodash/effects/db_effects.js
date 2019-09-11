@@ -5,13 +5,13 @@ const {join} = require('path');
 const {realpathSync} = require('fs');
 
 const {isNil, defaultTo, keys, curry} = require('lodash/fp');
-const chalk = require('chalk');
 
 // local imports
 const {removeLastPathEntity} = require('./../helpers/path_helpers');
 const {generateSync} = require('./../helpers/promise_sync_helpers');
 
 const {getDBType} = require('./app_effects');
+const {logErrorMessage, logDBMessage} = require('./log_effects');
 
 const {
     getModulesNamesQueryWrappers,
@@ -29,7 +29,7 @@ const isPathAlreadyTraversed = curry((dbConnection, path) => {
         const traversedPath = yield getPathsTraversedQueryWrappers(getDBType()).selectTraversedPathByPath(dbConnection, preparedPath);
 
         if (!isNil(traversedPath)) {
-            console.log(chalk.red(`Found traversed path '${traversedPath.path}'`));
+            logErrorMessage(`Found traversed path '${traversedPath.path}'`);
         }
 
         yield !isNil(traversedPath);
@@ -42,12 +42,12 @@ const insertModuleData = generateSync(function* (dbConnection, name, version, lo
     const traversedLocation = yield getModulesLocationsQueryWrappers(dbType).selectLocationByPath(dbConnection, location);
 
     if (!isNil(traversedLocation)) {
-        console.log(chalk.red(`Found duplicate module on: '${traversedLocation.path}'`));
+        logErrorMessage(`Found duplicate module on: '${traversedLocation.path}'`);
         yield null;
         return;
     }
 
-    console.log(chalk.blue(`Adding module '${name}' (version: ${version}) in '${location}'`));
+    logDBMessage(`Adding module '${name}' (version: ${version}) in '${location}'`);
 
     const moduleNameId = yield getModulesNamesQueryWrappers(dbType).selectInsertModuleName(dbConnection, name, 0);
     const moduleVersionId = yield getModulesVersionsQueryWrappers(dbType).selectInsertModuleVersion(dbConnection, moduleNameId, version);

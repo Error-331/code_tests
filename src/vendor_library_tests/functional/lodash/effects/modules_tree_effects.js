@@ -2,7 +2,6 @@
 
 // external imports
 const {isNil, curry} = require('lodash/fp');
-const chalk = require('chalk');
 
 // local imports
 const {DIRECTORIES_TO_EXCLUDE} = require('./../constants/exclusion_constants');
@@ -15,6 +14,7 @@ const {getPathsTraversedQueryWrappers} = require('./../helpers/db_helpers');
 
 const {isPathAlreadyTraversed, insertModuleData, insertDependencyListToDB} = require('./../effects/db_effects');
 const {readPackageJSON, traverseDirectoryRecursive, traverseNodeModulesDirectory} = require('./../effects/fs_effects');
+const {logTaskMessage} = require('./../effects/log_effects');
 
 // helpers implementation
 const filterTraversedPath = curry((dbConnection, dbType, path) => {
@@ -22,7 +22,6 @@ const filterTraversedPath = curry((dbConnection, dbType, path) => {
         const isPathVisited = yield isPathAlreadyTraversed(dbConnection, path);
 
         if (isPathVisited === false) {
-            console.log('----------------------------', path);
             let preparedPath = removeLastPathEntity(path);
             yield getPathsTraversedQueryWrappers(dbType).insertNewPath(dbConnection, preparedPath);
         }
@@ -36,7 +35,7 @@ const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModu
         // compose full path to module
         const pathToModule = joinTwoPaths(pathToParentNodeModules, packageDirName);
 
-        console.log(chalk.green(`Processing package in '${pathToModule}'`));
+        logTaskMessage(`Processing package in '${pathToModule}'`);
 
         // apply filter to directory name
         if (isExclusion(DIRECTORIES_TO_EXCLUDE, packageDirName)) {

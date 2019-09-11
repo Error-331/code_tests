@@ -7,12 +7,14 @@ const {bind, curry} = require('lodash/fp');
 const {generateSync} = require('./helpers/promise_sync_helpers');
 const {getDBEffects} = require('./helpers/db_helpers');
 
+const {setChildProcessType} = require('./effects/process_meta_effects');
 const {getDBType, setChildProcessDBType} = require('./effects/app_effects');
 const {extractAndSaveModuleData} = require('./effects/modules_tree_effects');
 
 const {masterProcessCommunicator} = require('./effects/child_process_db_effects');
 
 // module implementation
+setChildProcessType();
 setChildProcessDBType();
 
 const b = generateSync(function* () {
