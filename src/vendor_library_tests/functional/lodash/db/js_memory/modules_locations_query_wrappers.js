@@ -97,12 +97,12 @@ const selectInsertModuleLocation = (dbConnection, moduleNameId, moduleVersionId,
 };
 
 const convertTableToJSON = (dbConnection) => {
-    const modulesNames = convertMapToJSON(dbConnection.modulesLocationsMap);
-    const modulesNamesIndex = convertMapToJSON(dbConnection.modulesLocationIndexMap);
+    const modulesLocations = convertMapToJSON(dbConnection.modulesLocationsMap);
+    const modulesLocationIndex = convertMapToJSON(dbConnection.modulesLocationIndexMap);
 
     const combinedObject = {
-        modulesNames,
-        modulesNamesIndex,
+        modulesLocations,
+        modulesLocationIndex,
     };
 
     return Promise.resolve(combinedObject);

@@ -38,7 +38,7 @@ const {
 // effects implementation
 
 // returns promise
-const executeChildProcessTask = (dbType, dbConnection, taskType, data) => cond([
+const executeChildProcessTask = curry((dbType, dbConnection, taskType, data) => cond([
     [
         equals(INSERT_NEW_MODULE_NAME_CHILD_PROCESS),
         () => getModulesNamesQueryWrappers(dbType).insertNewModuleName(dbConnection, data.name, data.belongsToOrganization),
@@ -95,7 +95,7 @@ const executeChildProcessTask = (dbType, dbConnection, taskType, data) => cond([
         stubTrue,
         () => Promise.reject(`Undefined task type: '${taskType}'`),
     ],
-])(taskType);
+])(taskType));
 
 // export
 exports.executeChildProcessTask = executeChildProcessTask;

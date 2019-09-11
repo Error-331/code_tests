@@ -39,7 +39,7 @@ const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, modul
             id: dbConnection.modulesNamesMapLastId,
             module_location_id: moduleLocationId,
             module_parent_location_id: moduleParentLocationId,
-            type: usrType
+            type: usrType,
         });
 
         dbConnection.modulesLocationConnectionsIndexMap.set(composedKey, dbConnection.modulesLocationConnectionsMapLastId);
@@ -51,12 +51,12 @@ const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, modul
 };
 
 const convertTableToJSON = (dbConnection) => {
-    const modulesNames = convertMapToJSON(dbConnection.modulesLocationConnectionsMap);
-    const modulesNamesIndex = convertMapToJSON(dbConnection.modulesLocationConnectionsIndexMap);
+    const modulesLocationConnections = convertMapToJSON(dbConnection.modulesLocationConnectionsMap);
+    const modulesLocationConnectionsIndexM = convertMapToJSON(dbConnection.modulesLocationConnectionsIndexMap);
 
     const combinedObject = {
-        modulesNames,
-        modulesNamesIndex,
+        modulesLocationConnections,
+        modulesLocationConnectionsIndexM,
     };
 
     return Promise.resolve(combinedObject);

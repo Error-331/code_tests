@@ -18,10 +18,11 @@ const {readPackageJSON, traverseDirectoryRecursive, traverseNodeModulesDirectory
 
 // helpers implementation
 const filterTraversedPath = curry((dbConnection, dbType, path) => {
-    return generateSync(function* (dbConnection, path) {
+    return generateSync(function* (dbConnection, dbType, path) {
         const isPathVisited = yield isPathAlreadyTraversed(dbConnection, path);
 
         if (isPathVisited === false) {
+            console.log('----------------------------', path);
             let preparedPath = removeLastPathEntity(path);
             yield getPathsTraversedQueryWrappers(dbType).insertNewPath(dbConnection, preparedPath);
         }

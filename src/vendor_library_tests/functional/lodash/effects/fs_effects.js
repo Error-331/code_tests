@@ -4,6 +4,7 @@
 const {readdirSync} = require('fs');
 const {isNil, stubTrue, stubFalse, cond, curry, concat, filter, reduce} = require('lodash/fp');
 const chalk = require('chalk');
+const jsonfile = require('jsonfile');
 
 // local imports
 const {joinTwoPaths} = require('./../helpers/path_helpers');
@@ -87,7 +88,14 @@ const traverseDirectoryRecursive = curry((userCallback, traverseCallback, filter
     })(mapCallback, traverseCallback, preparedDirPath);
 });
 
+const writJSONToFile = curry((pathToFile, jsonContents) => {
+    return new Promise((resolve, reject) => {
+        jsonfile.writeFile(pathToFile, jsonContents, {spaces: 2}, error => isNil(error) ? resolve() : reject(error));
+    });
+});
+
 // export
 exports.readPackageJSON = readPackageJSON;
 exports.traverseNodeModulesDirectory = traverseNodeModulesDirectory;
 exports.traverseDirectoryRecursive = traverseDirectoryRecursive;
+exports.writJSONToFile = writJSONToFile;
