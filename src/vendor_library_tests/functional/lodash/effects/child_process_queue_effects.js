@@ -31,6 +31,8 @@ const childProcessesMap = new Map();
 const childProcessPromiseMap = new Map();
 
 let pathsToModules = [];
+let queuePromise = null;
+let queueResolveCallback = null;
 
 // effects implementation
 const getProcessLinkByName = processName => childProcessesMap.get(processName);
@@ -40,7 +42,7 @@ const handleChildProcessMessage = curry((processName, taskProcessingContext, con
         ({name, type}) => logUtilityMessage(`Incoming message (name: '${name}', type: '${type}')`),
         cond([
             [({type}) => equals(CHILD_READY_FOR_MODULE_TRAVERSING_MESSAGE_TYPE, type), () => getProcessLinkByName(processName).send({type: MASTER_START_MODULE_TRAVERSE_COMMAND_MESSAGE_TYPE})],
-            [({type}) => equals(CHILD_FINISH_WITH_MODULE_TRAVERSING_MESSAGE_TYPE, type), concludeCallback],
+            [({type}) => equals(CHILD_FINISH_WITH_MODULE_TRAVERSING_MESSAGE_TYPE, type), () => concludeCallback(processName)],
             [({type}) => equals(CHILD_DELEGATE_TASK_MESSAGE_TYPE, type), ({name, taskType, data}) => {
                 taskProcessingContext(taskType, data).then((taskResult) => {
                     getProcessLinkByName(processName).send({name, type: MASTER_DATA_MESSAGE_TYPE, data: taskResult})
@@ -67,8 +69,13 @@ const spawnModulesTraversingProcess = (taskProcessingContext, pathToTraverse) =>
 
         childProcessLink.send({type: MASTER_SET_NAME_COMMAND_MESSAGE_TYPE, data: processName});
         childProcessLink.send({type: MASTER_SET_PATH_TO_MODULES_COMMAND_MESSAGE_TYPE, data: pathToTraverse});
-    }).then(() => {
+    }).then((processName) => {
         spawnModulesTraversingProcesses(taskProcessingContext);
+        childProcessPromiseMap.delete(processName);
+
+        if (childProcessPromiseMap.size === 0) {
+            queueResolveCallback();
+        }
     })
 };
 
@@ -82,8 +89,14 @@ const spawnModulesTraversingProcesses = (taskProcessingContext) => {
 };
 
 const initModulesTraversingProcessQueue = (taskProcessingContext, usrPathsToModules) => {
-    pathsToModules = usrPathsToModules;
-    spawnModulesTraversingProcesses(taskProcessingContext);
+    queuePromise = new Promise((resolve, reject) => {
+        queueResolveCallback = resolve;
+
+        pathsToModules = usrPathsToModules;
+        spawnModulesTraversingProcesses(taskProcessingContext);
+    });
+
+    return queuePromise;
 };
 
 // export
