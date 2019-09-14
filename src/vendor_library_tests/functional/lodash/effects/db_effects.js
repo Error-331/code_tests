@@ -39,13 +39,6 @@ const isPathAlreadyTraversed = curry((dbConnection, path) => {
 
 const insertModuleData = generateSync(function* (dbConnection, name, version, location, parentModuleLocationId, type) {
     const dbType = getDBType();
-    const traversedLocation = yield getModulesLocationsQueryWrappers(dbType).selectLocationByPath(dbConnection, location);
-
-    if (!isNil(traversedLocation)) {
-        logErrorMessage(`Found duplicate module on: '${traversedLocation.path}'`);
-        yield null;
-        return;
-    }
 
     logDBMessage(`Adding module '${name}' (version: ${version}) in '${location}'`);
 
@@ -54,7 +47,7 @@ const insertModuleData = generateSync(function* (dbConnection, name, version, lo
     const moduleLocationId = yield getModulesLocationsQueryWrappers(dbType).selectInsertModuleLocation(dbConnection, moduleNameId, moduleVersionId, location);
 
     if (!isNil(parentModuleLocationId)) {
-        yield getModulesLocationConnectionsQueryWrappers(dbType).insertNewModuleLocationConnection(dbConnection, moduleLocationId, parentModuleLocationId, type);
+        yield getModulesLocationConnectionsQueryWrappers(dbType).selectInsertModuleLocationConnection(dbConnection, moduleLocationId, parentModuleLocationId, type);
     }
 
     yield moduleLocationId;

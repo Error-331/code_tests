@@ -89,9 +89,26 @@ const exportToJSON = (dbConnection) => {
     });
 };
 
+const importFromJSON = (dbConnection, pathToFile) => {
+    const jsonContents = require(pathToFile);
+
+    logDBMessage(`Importing JSON data ('${pathToFile}')...`);
+
+    return Promise.all(
+        [
+            modulesNamesQueryWrappers.importTableFromJSON(dbConnection, jsonContents),
+            modulesVersionsQueryWrappers.importTableFromJSON(dbConnection, jsonContents),
+            modulesLocationsQueryWrappers.importTableFromJSON(dbConnection, jsonContents),
+            modulesLocationConnectionsQueryWrappers.importTableFromJSON(dbConnection, jsonContents),
+            pathsTraversedQueryWrappers.importTableFromJSON(dbConnection, jsonContents)
+        ]
+    );
+};
+
 // export
 exports.openConnectionToDB = openConnectionToDB;
 exports.closeConnectionToDB = closeConnectionToDB;
 
 exports.prepareDatabase = prepareDatabase;
 exports.exportToJSON = exportToJSON;
+exports.importFromJSON = importFromJSON;

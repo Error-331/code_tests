@@ -25,12 +25,12 @@ const {logUtilityMessage} = require('./../effects/log_effects');
 const {joinTwoPaths} = require('./../helpers/path_helpers');
 
 // private variables declaration
-let lastChildProcessIndex = 0;
+let lastChildProcessIndex = null;
 
 const childProcessesMap = new Map();
 const childProcessPromiseMap = new Map();
 
-let pathsToModules = [];
+let pathsToModules = null;
 let queuePromise = null;
 let queueResolveCallback = null;
 
@@ -89,6 +89,15 @@ const spawnModulesTraversingProcesses = (taskProcessingContext) => {
 };
 
 const initModulesTraversingProcessQueue = (taskProcessingContext, usrPathsToModules) => {
+    lastChildProcessIndex = 0;
+
+    childProcessesMap.clear();
+    childProcessPromiseMap.clear();
+
+    pathsToModules = null;
+    queuePromise = null;
+    queueResolveCallback = null;
+
     queuePromise = new Promise((resolve, reject) => {
         queueResolveCallback = resolve;
 

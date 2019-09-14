@@ -5,17 +5,25 @@
 // local imports
 
 // helpers implementation
-const convertMapToJSON = (mapToConvert) => {
-    const composedObject = {};
+const convertMapKeysToArray = (usrMap) => {
+    const keys = [];
 
-    for (const entry of mapToConvert) {
-        const [id, value] = entry;
-
-        composedObject[id] = value;
+    for (let [rowId] of usrMap) {
+        keys.push(rowId);
     }
 
-    return composedObject;
+    return keys;
 };
 
-// export
-exports.convertMapToJSON = convertMapToJSON;
+const convertMapDataToArray = (covertCallback, fieldName, usrMap, ) => {
+    const values = [];
+    for (let mapRow of usrMap) {
+        values.push(covertCallback(mapRow[1][fieldName]));
+    }
+
+    return values;
+};
+
+// exports
+exports.convertMapKeysToArray = convertMapKeysToArray;
+exports.convertMapDataToArray = convertMapDataToArray;

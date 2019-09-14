@@ -19,6 +19,7 @@ const jsMemoryModulesVersionsQueryWrappers = require('./../db/js_memory/modules_
 const jsMemoryModulesLocationsQueryWrappers = require('./../db/js_memory/modules_locations_query_wrappers');
 const jsMemoryModulesLocationConnectionsQueryWrappers = require('../db/js_memory/modules_location_connections_query_wrappers');
 const jsMemoryPathsTraversedQueryWrappers = require('./../db/js_memory/paths_traversed_query_wrappers');
+const jsMemoryReportQueryWrappers = require('./../db/js_memory/report_query_wrappers');
 
 const sqliteModulesNamesQueryWrappers = require('./../db/sqlite/modules_names_query_wrappers');
 const sqliteModulesVersionsQueryWrappers = require('./../db/sqlite/modules_versions_query_wrappers');
@@ -69,6 +70,12 @@ const getPathsTraversedQueryWrappers = cond([
     [isEqual(CHILD_PROCESS_DB_TYPE), constant(childProcessPathsTraversedQueryWrappers)],
 ]);
 
+const getReportQueryWrappers = cond([
+    [isEqual(JS_MEMORY_DB_TYPE), constant(jsMemoryReportQueryWrappers)],
+    [isEqual(SQLITE_DB_TYPE), constant({})],
+    [isEqual(CHILD_PROCESS_DB_TYPE), constant({})],
+]);
+
 // export
 exports.getDBEffects = getDBEffects;
 
@@ -77,3 +84,4 @@ exports.getModulesVersionsQueryWrappers = getModulesVersionsQueryWrappers;
 exports.getModulesLocationsQueryWrappers = getModulesLocationsQueryWrappers;
 exports.getModulesLocationConnectionsQueryWrappers = getModulesLocationConnectionsQueryWrappers;
 exports.getPathsTraversedQueryWrappers = getPathsTraversedQueryWrappers;
+exports.getReportQueryWrappers = getReportQueryWrappers;

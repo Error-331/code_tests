@@ -4,7 +4,7 @@
 const {isNil} = require('lodash/fp');
 
 // local imports
-const {convertMapToJSON} = require('./../../helpers/map_helpers');
+const {findLastRowIndexInJSON, convertMapToJSON, convertJSONToMap} = require('./../../helpers/json_helpers');
 
 // query wrappers implementation
 const createModulesLocationsTable = (dbConnection) => {
@@ -108,6 +108,15 @@ const convertTableToJSON = (dbConnection) => {
     return Promise.resolve(combinedObject);
 };
 
+const importTableFromJSON = (dbConnection, jsonData) => {
+    dbConnection.modulesLocationsMapLastId = findLastRowIndexInJSON(jsonData.modulesLocations);
+
+    dbConnection.modulesLocationsMap = convertJSONToMap(jsonData.modulesLocations);
+    dbConnection.modulesLocationIndexMap = convertJSONToMap(jsonData.modulesLocationIndex);
+
+    return Promise.resolve(dbConnection);
+};
+
 // export
 exports.createModulesLocationsTable = createModulesLocationsTable;
 exports.dropModulesLocationsTable = dropModulesLocationsTable;
@@ -116,3 +125,4 @@ exports.selectLocationByPath = selectLocationByPath;
 exports.selectLocationByNameIdAndVersion = selectLocationByNameIdAndVersion;
 exports.selectInsertModuleLocation = selectInsertModuleLocation;
 exports.convertTableToJSON = convertTableToJSON;
+exports.importTableFromJSON = importTableFromJSON;

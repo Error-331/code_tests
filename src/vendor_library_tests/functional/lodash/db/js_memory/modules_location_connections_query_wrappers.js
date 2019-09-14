@@ -1,9 +1,10 @@
 'use strict';
 
 // external imports
+const {isNil} = require('lodash/fp');
 
 // local imports
-const {convertMapToJSON} = require('./../../helpers/map_helpers');
+const {findLastRowIndexInJSON, convertMapToJSON, convertJSONToMap} = require('./../../helpers/json_helpers');
 
 // query wrappers implementation
 
@@ -28,7 +29,6 @@ const dropModulesLocationConnectionsTable  = (dbConnection) => {
 
 const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
     const composedKey = `${moduleLocationId}_${moduleParentLocationId}_${usrType}`; // UNIQUE(module_location_id, module_parent_location_id, type)
-
     if (dbConnection.modulesLocationConnectionsMap.has(composedKey)) {
         return Promise.resolve({
             lastID: dbConnection.modulesLocationConnectionsMapLastId
@@ -50,20 +50,79 @@ const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, modul
     }
 };
 
+const selectModuleLocationConnectionByParentLocationId = (dbConnection, moduleParentLocationId) => {
+    for (const entry of dbConnection.modulesLocationConnectionsMap) {
+        const {module_parent_location_id} = entry[1];
+
+        if (module_parent_location_id === moduleParentLocationId) {
+            return Promise.resolve(entry[1]);
+        }
+    }
+
+    return Promise.resolve(null);
+};
+
+const selectModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
+    for (const entry of dbConnection.modulesLocationConnectionsMap) {
+        const {module_location_id, module_parent_location_id, type} = entry[1];
+
+        if (
+            module_location_id === moduleLocationId &&
+            module_parent_location_id === moduleParentLocationId &&
+            type === usrType
+        ) {
+            return Promise.resolve(entry[1]);
+        }
+    }
+
+    return Promise.resolve(null);
+};
+
+const selectInsertModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
+    return new Promise((resolve, reject) => {
+        selectModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType)
+            .then(moduleLocationConnectionRow => {
+                if (!isNil(moduleLocationConnectionRow)) {
+                    resolve(moduleLocationConnectionRow.id);
+                } else {
+                    insertNewModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType)
+                        .then((moduleLocationConnectionStatement) => {
+                            resolve(moduleLocationConnectionStatement.lastID)
+                        })
+                        .catch(reject);
+                }
+            })
+            .catch(reject)
+    });
+}
+
 const convertTableToJSON = (dbConnection) => {
     const modulesLocationConnections = convertMapToJSON(dbConnection.modulesLocationConnectionsMap);
-    const modulesLocationConnectionsIndexM = convertMapToJSON(dbConnection.modulesLocationConnectionsIndexMap);
+    const modulesLocationConnectionsIndex = convertMapToJSON(dbConnection.modulesLocationConnectionsIndexMap);
 
     const combinedObject = {
         modulesLocationConnections,
-        modulesLocationConnectionsIndexM,
+        modulesLocationConnectionsIndex,
     };
 
     return Promise.resolve(combinedObject);
+};
+
+const importTableFromJSON = (dbConnection, jsonData) => {
+    dbConnection.modulesLocationConnectionsMapLastId = findLastRowIndexInJSON(jsonData.modulesLocationConnections);
+
+    dbConnection.modulesLocationConnectionsMap = convertJSONToMap(jsonData.modulesLocationConnections);
+    dbConnection.modulesLocationConnectionsIndexMap = convertJSONToMap(jsonData.modulesLocationConnectionsIndex);
+
+    return Promise.resolve(dbConnection);
 };
 
 // export
 exports.createModulesLocationConnectionsTable = createModulesLocationConnectionsTable;
 exports.dropModulesLocationConnectionsTable = dropModulesLocationConnectionsTable;
 exports.insertNewModuleLocationConnection = insertNewModuleLocationConnection;
+exports.selectModuleLocationConnectionByParentLocationId = selectModuleLocationConnectionByParentLocationId;
+exports.selectModuleLocationConnection = selectModuleLocationConnection;
+exports.selectInsertModuleLocationConnection = selectInsertModuleLocationConnection;
 exports.convertTableToJSON = convertTableToJSON;
+exports.importTableFromJSON = importTableFromJSON;

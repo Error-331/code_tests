@@ -4,7 +4,7 @@
 const {realpathSync} = require('fs');
 
 // local imports
-const {convertMapToJSON} = require('./../../helpers/map_helpers');
+const {findLastRowIndexInJSON, convertMapToJSON, convertJSONToMap} = require('./../../helpers/json_helpers');
 
 // query wrappers implementation
 const createPathsTraversedTable = (dbConnection) => {
@@ -62,11 +62,24 @@ const selectTraversedPathByPath = (dbConnection, usrPath) => {
 };
 
 const convertTableToJSON = (dbConnection) => {
+    const pathsTraversed = convertMapToJSON(dbConnection.pathsTraversedMap);
+    const pathsTraversedIndex = convertMapToJSON(dbConnection.pathsTraversedIndexMap);
+
     const combinedObject = {
-        pathsTraversed: convertMapToJSON(dbConnection.pathsTraversedMap)
+        pathsTraversed,
+        pathsTraversedIndex,
     };
 
     return Promise.resolve(combinedObject);
+};
+
+const importTableFromJSON = (dbConnection, jsonData) => {
+    dbConnection.pathsTraversedMapLastId = findLastRowIndexInJSON(jsonData.pathsTraversed);
+
+    dbConnection.pathsTraversedMap = convertJSONToMap(jsonData.pathsTraversed);
+    dbConnection.pathsTraversedIndexMap = convertJSONToMap(jsonData.pathsTraversedIndex);
+
+    return Promise.resolve(dbConnection);
 };
 
 // export
@@ -75,3 +88,4 @@ exports.dropPathsTraversedTable = dropPathsTraversedTable;
 exports.insertNewPath = insertNewPath ;
 exports.selectTraversedPathByPath = selectTraversedPathByPath;
 exports.convertTableToJSON = convertTableToJSON;
+exports.importTableFromJSON = importTableFromJSON;

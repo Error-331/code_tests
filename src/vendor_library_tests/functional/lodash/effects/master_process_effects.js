@@ -21,6 +21,9 @@ const {
     SELECT_INSERT_MODULE_LOCATION_CHILD_PROCESS,
 
     INSERT_NEW_MODULE_LOCATION_CONNECTION_CHILD_PROCESS,
+    SELECT_MODULE_LOCATION_CONNECTION,
+    SELECT_MODULE_LOCATION_CONNECTION_BY_PARENT_LOCATION_ID,
+    SELECT_INSERT_MODULE_LOCATION_CONNECTION_CHILD_PROCESS,
 
     INSERT_NEW_PATH_CHILD_PROCESS,
     SELECT_TRAVERSED_PATH_BY_PATH_CHILD_PROCESS,
@@ -81,6 +84,17 @@ const executeChildProcessTask = curry((dbType, dbConnection, taskType, data) => 
     [
         equals(INSERT_NEW_MODULE_LOCATION_CONNECTION_CHILD_PROCESS),
         () => getModulesLocationConnectionsQueryWrappers(dbType).insertNewModuleLocationConnection(dbConnection, data.moduleLocationId, data.moduleParentLocationId, data.usrType),
+    ],
+    [
+        equals(SELECT_MODULE_LOCATION_CONNECTION_BY_PARENT_LOCATION_ID),
+        () => getModulesLocationConnectionsQueryWrappers(dbType).insertNewModuleLocationConnection(dbConnection, data.moduleParentLocationId),
+    ],
+    [   equals(SELECT_MODULE_LOCATION_CONNECTION),
+        () => getModulesLocationConnectionsQueryWrappers(dbType).selectModuleLocationConnection(dbConnection, data.moduleLocationId, data.moduleParentLocationId, data.usrType),
+    ],
+    [
+        equals(SELECT_INSERT_MODULE_LOCATION_CONNECTION_CHILD_PROCESS),
+        () => getModulesLocationConnectionsQueryWrappers(dbType).selectInsertModuleLocationConnection(dbConnection, data.moduleLocationId, data.moduleParentLocationId, data.usrType),
     ],
     [
         equals(INSERT_NEW_PATH_CHILD_PROCESS),

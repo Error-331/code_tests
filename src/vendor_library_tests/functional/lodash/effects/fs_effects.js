@@ -60,8 +60,8 @@ const traverseDirectoryRecursive = curry((userCallback, traverseCallback, filter
     const recursiveCallback = traverseDirectoryRecursive(userCallback, traverseCallback, filterFunc, pathTransformFunc);
 
     const mapCallback = generateSync(function* (dirName) {
-        const installedDeps = yield recursiveCallback(joinTwoPaths(preparedDirPath, dirName));
-        yield userCallback(dirPath, preparedDirPath, dirName, installedDeps);
+        yield userCallback(dirPath, preparedDirPath, dirName);
+        yield recursiveCallback(joinTwoPaths(preparedDirPath, dirName));
     });
 
     return generateSync(function* (mapCallback, traverseCallback, preparedDirPath) {
