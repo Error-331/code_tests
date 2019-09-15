@@ -1,7 +1,7 @@
 'use strict';
 
 // external imports
-const {difference} = require('lodash/fp');
+const {isNil, equals, stabTrue, constant, spread, over, pipe, difference, filter, cond, some, path, pathOr} = require('lodash/fp');
 
 // local imports
 const {convertMapKeysToArray, convertMapDataToArray} = require('./../../helpers/map_helpers');
@@ -126,9 +126,73 @@ const selectModulesFullData = (dbConnection) => {
     return Promise.resolve(resultData);
 };
 
+const mapMapToArray = (callback, usrMap) => {
+    const resultArray = [];
 
+    for (let [mapKey, mapValue] of usrMap) {
+        resultArray.push(callback(mapValue, mapKey))
+    }
+
+    return resultArray;
+};
+
+const getMapValue = (usrMap, key) => usrMap.get(key.toString());
+
+const selectModulesFullDataByParentLocationId = (dbConnection) => {
+    const {modulesNamesMap, modulesVersionsMap, modulesLocationsMap, modulesLocationConnectionsMap} = dbConnection;
+
+
+
+    const c = pipe(
+        spread(difference),
+
+        filter(
+            pipe(
+                moduleLocationId => modulesLocationsMap.get(moduleLocationId),
+                over([
+                    pathOr(null, 'module_name_id'),
+                    pathOr(null, 'module_version_id'),
+                ]),
+
+                ([locationModuleNameId, locationModuleVersionId]) => [
+                    getMapValue(modulesNamesMap, locationModuleNameId),
+                    getMapValue(modulesVersionsMap, locationModuleVersionId)
+                ],
+
+                cond([
+                    [some(isNil), constant(false)],
+
+                    [
+                        ([moduleNameData, moduleVersionData]) => equals(path('id', moduleNameData), path('module_name_id', moduleVersionData)),
+                        constant(true),
+                    ],
+
+                    [stabTrue, constant(false)],
+                ]),
+
+            )
+        ),
+    )([
+        convertMapKeysToArray(modulesLocationsMap),
+        convertMapDataToArray(mapValue => mapValue.toString(), 'module_location_id', modulesLocationConnectionsMap),
+    ]);
+
+
+    return Promise.resolve(c);
+    /*map(
+        pipe(
+            parentModuleLocationId => modulesLocationsMap.get(parentModuleLocationId)
+        ),
+
+        difference(
+            convertMapKeysToArray(modulesLocationsMap),
+            convertMapDataToArray(mapValue => mapValue.toString(), 'module_location_id', modulesLocationConnectionsMap)
+        )
+    )*/
+};
 
 // export
 exports.selectModulesFullData = selectModulesFullData;
 exports.selectRootModulesFullData = selectRootModulesFullData;
 exports.selectChildModulesFullData = selectChildModulesFullData;
+exports.selectModulesFullDataByParentLocationId = selectModulesFullDataByParentLocationId;
