@@ -5,11 +5,13 @@
 // local imports
 
 // constants definition
-const SEMVER_OPERATOR_REG_EXP = RegExp('^\\>|\\<|\\=|\\~|\\^|\\*');
-const SEMVER_VERSION_REG_EXP = RegExp('^[0-9]');
-const SEMVER_OPERATOR_AND_VERSION_REG_EXP = RegExp('^(\\>|\\<|\\=|\\~|\\^|\\*)+(\\ )*[0-9]');
+const SEMVER_SINGLE_DELIMETER_REG_EXP = RegExp('([^\\|])(\\|)([^\\|])', 'g');
+const SEMVER_OPERATOR_REG_EXP = RegExp('^\\>|\\<|\\=|\\~|\\^|\\*', 'g');
+const SEMVER_VERSION_REG_EXP = RegExp('^[0-9]', 'g');
+const SEMVER_OPERATOR_AND_VERSION_REG_EXP = RegExp('^(\\>|\\<|\\=|\\~|\\^|\\*)+(\\ )*[0-9]', 'g');
 
 // export
+exports.SEMVER_SINGLE_DELIMETER_REG_EXP = SEMVER_SINGLE_DELIMETER_REG_EXP;
 exports.SEMVER_OPERATOR_REG_EXP = SEMVER_OPERATOR_REG_EXP;
 exports.SEMVER_VERSION_REG_EXP = SEMVER_VERSION_REG_EXP;
 exports.SEMVER_OPERATOR_AND_VERSION_REG_EXP = SEMVER_OPERATOR_AND_VERSION_REG_EXP;

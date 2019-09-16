@@ -1,10 +1,11 @@
 'use strict';
 
 // external imports
-const {stubTrue, identity, isEmpty, equals, cond, complement, curry, pipe, map, reduce, filter, trim, split, size} = require('lodash/fp');
+const {stubTrue, identity, isEmpty, equals, cond, complement, curry, pipe, map, reduce, filter, trim, split, compact, size} = require('lodash/fp');
 
 // local imports
 const {
+    SEMVER_SINGLE_DELIMETER_REG_EXP,
     SEMVER_OPERATOR_REG_EXP,
     SEMVER_VERSION_REG_EXP,
     SEMVER_OPERATOR_AND_VERSION_REG_EXP,
@@ -14,9 +15,9 @@ const {
 const determineMaxVersionByOperatorAndVersion = curry((currentMaxVersion, versionRange) => pipe(
     constant('f')
     )
-)
+);
 
-const determineMaxVersion = (currentMaxVersion, versionRange) => cond([
+const determineMaxVersion1 = (currentMaxVersion, versionRange) => cond([
     [SEMVER_OPERATOR_AND_VERSION_REG_EXP.test, determineMaxVersionByOperatorAndVersion(currentMaxVersion)],
     [stubTrue, (versionRange) => {throw new Error(`Cannot chose method for finding appropriate version for range: '${versionRange}'`)}]
 ])(versionRange);
@@ -75,7 +76,7 @@ const fSpace = curry((currentMaxVersion, versionsRange) => pipe(
     split(' '),
     filter(complement(isEmpty)), // to lib
     cond([
-        [isArrayOfOne, ([versionRange]) => determineMaxVersion(currentMaxVersion, versionRange)],
+        [isArrayOfOne, ([versionRange]) => determineMaxVersion1(currentMaxVersion, versionRange)],
         [isArrayOdd, () => { throw new Error(`Cannot combine version range after 'space split': '${versionsRange}'`) }],
         [isArrayEven, combineVersionRangeParts],
     ]),
@@ -96,11 +97,26 @@ const f2 = curry((currentMaxVersion, versionsRange) => pipe(
     ])
 )(versionsRange));
 
-const f1 = (versionsRange) => pipe(
+const determineMaxVersion = (versionsRange) => pipe(
+    // trim whitespaces
     trim,
-    split('||'), // | or || - case
-    // check if more then 1 - BIO OR needed else compare versions - generally cond is needed
+
+    // replace '|' with '||'
+    versionRange => versionRange.replace(
+        SEMVER_SINGLE_DELIMETER_REG_EXP,
+        '||',
+        (match, part1, part2, part3) => [part1, part3].join('||')
+    ),
+
+    // split by '||'
+    split('||'),
+
+    // remove `empty` values
+    compact,
+
+
     reduce(f2, ''),
 )(versionsRange);
 
-console.log(f1('  1.2.3 - 2.3.4 ||   >=3.5.6  || 2.5.6 -   2.6.0 || >=   1.2.3 <   2.4.0 '));
+// export
+exports.determineMaxVersion = determineMaxVersion;

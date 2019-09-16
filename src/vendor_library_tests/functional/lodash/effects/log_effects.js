@@ -43,7 +43,7 @@ const logConsoleMessage = curry((type, message) => {
 });
 
 const logMessage = curry((type, message) => {
-   // logConsoleMessage(type, message);
+    logConsoleMessage(type, message);
 });
 
 // export

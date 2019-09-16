@@ -16,8 +16,8 @@ const {
 const createModulesLocationConnectionsTable = (dbConnection) => Promise.resolve(dbConnection);
 const dropModulesLocationConnectionsTable  = (dbConnection) => Promise.resolve(dbConnection);
 
-const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
-    return dbConnection.delegateTaskToMaster(INSERT_NEW_MODULE_LOCATION_CONNECTION_CHILD_PROCESS, {moduleLocationId, moduleParentLocationId, usrType});
+const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth) => {
+    return dbConnection.delegateTaskToMaster(INSERT_NEW_MODULE_LOCATION_CONNECTION_CHILD_PROCESS, {moduleLocationId, moduleParentLocationId, usrType, usrDepth});
 };
 
 const selectModuleLocationConnectionByParentLocationId = (dbConnection, moduleParentLocationId) => {
@@ -28,8 +28,8 @@ const selectModuleLocationConnection = (dbConnection, moduleLocationId, modulePa
     return dbConnection.delegateTaskToMaster(SELECT_MODULE_LOCATION_CONNECTION, {moduleLocationId, moduleParentLocationId, usrType});
 };
 
-const selectInsertModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
-    return dbConnection.delegateTaskToMaster(SELECT_INSERT_MODULE_LOCATION_CONNECTION_CHILD_PROCESS, {moduleLocationId, moduleParentLocationId, usrType});
+const selectInsertModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth) => {
+    return dbConnection.delegateTaskToMaster(SELECT_INSERT_MODULE_LOCATION_CONNECTION_CHILD_PROCESS, {moduleLocationId, moduleParentLocationId, usrType, usrDepth});
 };
 
 const convertTableToJSON = () => Promise.resolve(null);

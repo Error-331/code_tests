@@ -37,7 +37,7 @@ const isPathAlreadyTraversed = curry((dbConnection, path) => {
     })(dbConnection, path);
 });
 
-const insertModuleData = generateSync(function* (dbConnection, name, version, location, parentModuleLocationId, type) {
+const insertModuleData = generateSync(function* (dbConnection, name, version, location, parentModuleLocationId, type, depth) {
     const dbType = getDBType();
 
     logDBMessage(`Adding module '${name}' (version: ${version}) in '${location}'`);
@@ -47,13 +47,13 @@ const insertModuleData = generateSync(function* (dbConnection, name, version, lo
     const moduleLocationId = yield getModulesLocationsQueryWrappers(dbType).selectInsertModuleLocation(dbConnection, moduleNameId, moduleVersionId, location);
 
     if (!isNil(parentModuleLocationId)) {
-        yield getModulesLocationConnectionsQueryWrappers(dbType).selectInsertModuleLocationConnection(dbConnection, moduleLocationId, parentModuleLocationId, type);
+        yield getModulesLocationConnectionsQueryWrappers(dbType).selectInsertModuleLocationConnection(dbConnection, moduleLocationId, parentModuleLocationId, type, depth);
     }
 
     yield moduleLocationId;
 });
 
-const insertDependencyListToDB = generateSync(function* (dbConnection, packageJSONDependencies, pathToParentModule, parentLocationId, type) {
+const insertDependencyListToDB = generateSync(function* (dbConnection, packageJSONDependencies, pathToParentModule, parentLocationId, type, depth) {
     const dependencies = defaultTo({})(packageJSONDependencies);
     const dependenciesKeys = keys(dependencies);
 
@@ -61,7 +61,7 @@ const insertDependencyListToDB = generateSync(function* (dbConnection, packageJS
         const dependencyName = dependenciesKeys[dependencyKeyIndex];
         const dependencyVersion = dependencies[dependencyName];
 
-        yield insertModuleData(dbConnection, dependencyName, dependencyVersion, join(pathToParentModule, 'node_modules', dependencyName), parentLocationId, type);
+        yield insertModuleData(dbConnection, dependencyName, dependencyVersion, join(pathToParentModule, 'node_modules', dependencyName), parentLocationId, type, depth);
     }
 });
 

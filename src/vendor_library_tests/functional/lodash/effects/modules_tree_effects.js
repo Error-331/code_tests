@@ -10,7 +10,7 @@ const {addNodeModulesDir, removeLastPathEntity} = require('./../helpers/path_hel
 const {isExclusion} = require('./../helpers/validation_helpers');
 const {joinTwoPaths} = require('./../helpers/path_helpers');
 const {generateSync} = require('./../helpers/promise_sync_helpers');
-const {getPathsTraversedQueryWrappers, getModulesLocationsQueryWrappers, getModulesLocationConnectionsQueryWrappers} = require('./../helpers/db_helpers');
+const {getPathsTraversedQueryWrappers, getModulesLocationsQueryWrappers} = require('./../helpers/db_helpers');
 
 const {getDBType} = require('./../effects/app_effects');
 const {isPathAlreadyTraversed, insertModuleData, insertDependencyListToDB} = require('./../effects/db_effects');
@@ -32,7 +32,7 @@ const filterTraversedPath = curry((dbConnection, dbType, path) => {
     })(dbConnection, dbType, path);
 });
 
-const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModules, packageDirName) => {
+const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModules, packageDirName, depth) => {
     return generateSync(function* () {
         // compose full path to module
         const pathToModule = joinTwoPaths(pathToParentNodeModules, packageDirName);
@@ -55,7 +55,7 @@ const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModu
         const parentLocationId = pathOr(null, 'id', parentLocationRow);
 
         // insert current module data to DB
-        const currentModuleLocationID = yield insertModuleData(dbConnection, name, version, pathToModule, parentLocationId, 'installed');
+        const currentModuleLocationID = yield insertModuleData(dbConnection, name, version, pathToModule, parentLocationId, 'installed', depth);
 
         if (isNil(currentModuleLocationID)) {
             yield null;
@@ -65,10 +65,13 @@ const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModu
         // extract module dependencies lists
         let {dependencies, devDependencies, peerDependencies} = currentPackageJSON;
 
+        // increment depth for dependencies
+        depth += 1;
+
         // insert dependencies data from package.json into DB
-        yield insertDependencyListToDB(dbConnection, dependencies, pathToModule, currentModuleLocationID, 'dependencies');
-        yield insertDependencyListToDB(dbConnection, devDependencies, pathToModule, currentModuleLocationID, 'devDependencies');
-        yield insertDependencyListToDB(dbConnection, peerDependencies, pathToModule, currentModuleLocationID, 'peerDependencies');
+        yield insertDependencyListToDB(dbConnection, dependencies, pathToModule, currentModuleLocationID, 'dependencies', depth);
+        yield insertDependencyListToDB(dbConnection, devDependencies, pathToModule, currentModuleLocationID, 'devDependencies', depth);
+        yield insertDependencyListToDB(dbConnection, peerDependencies, pathToModule, currentModuleLocationID, 'peerDependencies', depth);
 
         // return package name (consistency reason)
         yield packageDirName;
@@ -77,7 +80,7 @@ const handleModuleData = curry((dbConnection, originalPath, pathToParentNodeModu
 
 const extractAndSaveModuleData = curry((dbConnection, dbType, pathToRootNodeModules) => {
     return generateSync(function* (dbConnection, dbType, pathToRootNodeModules) {
-        yield handleModuleData(dbConnection, '', pathToRootNodeModules, '', []);
+        yield handleModuleData(dbConnection, '', pathToRootNodeModules, '', 0);
 
         yield traverseDirectoryRecursive(
             handleModuleData(dbConnection),
@@ -85,6 +88,7 @@ const extractAndSaveModuleData = curry((dbConnection, dbType, pathToRootNodeModu
             filterTraversedPath(dbConnection, dbType),
             addNodeModulesDir,
             pathToRootNodeModules,
+            1,
         );
     })(dbConnection, dbType, pathToRootNodeModules);
 });

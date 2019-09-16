@@ -12,7 +12,7 @@ const installPackagesForRootModules = (dbConnection) => {
     const dbType = getDBType();
 
     getReportQueryWrappers(dbType)
-        .selectModulesFullDataByParentLocationId(dbConnection)
+        .selectLevel1ModulesFullData(dbConnection)
         .then((rootModules) => {
 
             console.log(rootModules);

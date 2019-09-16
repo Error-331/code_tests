@@ -27,8 +27,8 @@ const dropModulesLocationConnectionsTable  = (dbConnection) => {
     return Promise.resolve(dbConnection);
 };
 
-const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
-    const composedKey = `${moduleLocationId}_${moduleParentLocationId}_${usrType}`; // UNIQUE(module_location_id, module_parent_location_id, type)
+const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth) => {
+    const composedKey = `${moduleLocationId}_${moduleParentLocationId}_${usrType}`; // UNIQUE(module_location_id, module_parent_location_id, type, depth)
     if (dbConnection.modulesLocationConnectionsMap.has(composedKey)) {
         return Promise.resolve({
             lastID: dbConnection.modulesLocationConnectionsMapLastId
@@ -40,6 +40,7 @@ const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, modul
             module_location_id: moduleLocationId,
             module_parent_location_id: moduleParentLocationId,
             type: usrType,
+            depth: usrDepth,
         });
 
         dbConnection.modulesLocationConnectionsIndexMap.set(composedKey, dbConnection.modulesLocationConnectionsMapLastId);
@@ -62,14 +63,15 @@ const selectModuleLocationConnectionByParentLocationId = (dbConnection, modulePa
     return Promise.resolve(null);
 };
 
-const selectModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
+const selectModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth) => {
     for (const entry of dbConnection.modulesLocationConnectionsMap) {
-        const {module_location_id, module_parent_location_id, type} = entry[1];
+        const {module_location_id, module_parent_location_id, type, depth} = entry[1];
 
         if (
             module_location_id === moduleLocationId &&
             module_parent_location_id === moduleParentLocationId &&
-            type === usrType
+            type === usrType &&
+            depth === usrDepth
         ) {
             return Promise.resolve(entry[1]);
         }
@@ -78,14 +80,14 @@ const selectModuleLocationConnection = (dbConnection, moduleLocationId, modulePa
     return Promise.resolve(null);
 };
 
-const selectInsertModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType) => {
+const selectInsertModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth) => {
     return new Promise((resolve, reject) => {
-        selectModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType)
+        selectModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth)
             .then(moduleLocationConnectionRow => {
                 if (!isNil(moduleLocationConnectionRow)) {
                     resolve(moduleLocationConnectionRow.id);
                 } else {
-                    insertNewModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType)
+                    insertNewModuleLocationConnection(dbConnection, moduleLocationId, moduleParentLocationId, usrType, usrDepth)
                         .then((moduleLocationConnectionStatement) => {
                             resolve(moduleLocationConnectionStatement.lastID)
                         })

@@ -13,6 +13,7 @@ const createModulesLocationConnectionsTable = (dbConnection) => dbConnection.exe
         module_location_id INTEGER NOT NULL,
         module_parent_location_id INTEGER NOT NULL,
         type TEXT NOT NULL,
+        depth INTEGER NOT NULL,
         
         UNIQUE(module_location_id, module_parent_location_id, type)
     )`
@@ -22,14 +23,15 @@ const dropModulesLocationConnectionsTable = (dbConnection) => dbConnection.exec(
     `DROP TABLE IF EXISTS modules_location_connections`
 );
 
-const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, type) => dbConnection.run(
+const insertNewModuleLocationConnection = (dbConnection, moduleLocationId, moduleParentLocationId, type, depth) => dbConnection.run(
     `INSERT OR IGNORE INTO modules_location_connections (
-        module_location_id, module_parent_location_id, type
+        module_location_id, module_parent_location_id, type, depth
     ) 
     VALUES (
         ${moduleLocationId}, 
         ${moduleParentLocationId},
-        '${type}'
+        '${type}',
+        ${depth}
     )`
 );
 
