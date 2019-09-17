@@ -1,77 +1,93 @@
 'use strict';
 
 // external imports
-const {stubTrue, identity, isEmpty, equals, cond, complement, curry, pipe, map, reduce, filter, trim, split, compact, size} = require('lodash/fp');
+const {
+    stubTrue,
+    constant,
+    identity,
+    isNil,
+    gt,
+    equals,
+    cond,
+    curry,
+    pipe,
+    over,
+    spread,
+    range,
+    map,
+    reduce,
+    times,
+    takeWhile,
+    trim,
+    split,
+    replace,
+    compact,
+    concat,
+    slice,
+    nth,
+    size
+} = require('lodash/fp');
 
 // local imports
 const {
     SEMVER_SINGLE_DELIMETER_REG_EXP,
+    SEMVER_PRERELEASE_REG_EXP,
+    SEMVER_OPERATOR_TO_VERSION_REG_EXP,
+
+
+
     SEMVER_OPERATOR_REG_EXP,
     SEMVER_VERSION_REG_EXP,
     SEMVER_OPERATOR_AND_VERSION_REG_EXP,
 } = require('./../constants/semver_regexp_constants');
 
 // helpers implementation
-const determineMaxVersionByOperatorAndVersion = curry((currentMaxVersion, versionRange) => pipe(
-    constant('f')
-    )
-);
+const prepareSemverVersion = (semverVersion, maxSemverVersion) => {
+    const preparedSemverVersion = pipe(
+        replace(new RegExp('x|X', 'g'), '*'),
+        split('.'),
+        map(versionPart => equals('*', versionPart) ? '9': versionPart),
 
-const determineMaxVersion1 = (currentMaxVersion, versionRange) => cond([
-    [SEMVER_OPERATOR_AND_VERSION_REG_EXP.test, determineMaxVersionByOperatorAndVersion(currentMaxVersion)],
-    [stubTrue, (versionRange) => {throw new Error(`Cannot chose method for finding appropriate version for range: '${versionRange}'`)}]
-])(versionRange);
+        cond([
+            [pipe(size, gt(3)), semverVersion => concat(semverVersion, times(constant('0'), 3 - size(semverVersion)))],
+            [stubTrue, identity]
+        ]),
+    )(semverVersion);
 
-const isArrayOfOne = usrArray => equals(size(usrArray), 1);
-const isArrayOdd = usrArray => equals(size(usrArray) % 2, 1);
-const isArrayEven = complement(isArrayOdd);
+    const preparedMaxSemverVersion = split('.', maxSemverVersion);
+    const indexesToReplace = takeWhile(
+        pipe(
+            over([
+                pipe(partIndex => nth(partIndex, preparedSemverVersion), parseInt),
+                pipe(partIndex => nth(partIndex, preparedMaxSemverVersion), parseInt),
+            ]),
 
-const combineVersionRangeParts = (versionRangeParts) => reduce(
+            spread(gte),
+        ),
+        range(
+            0,
+            size(preparedSemverVersion)
+        )
+    );
 
+    return concat(
+        slice(0, size(indexesToReplace), preparedMaxSemverVersion),
+        slice(size(indexesToReplace), 3, preparedSemverVersion)
+    );
+};
 
-    (versionsRangeData, versionRangePart) => {
-        if (versionsRangeData.skip) {
-            versionsRangeData.skip = false;
-            versionsRangeData.index += 1;
+const determineMaxVersionFromRange = curry((currentMaxVersion, versionRange) => {
+    const semverOperator = cond([
+        [isNil, constant('')],
+        [stubTrue, nth(1)]
+    ])(SEMVER_OPERATOR_TO_VERSION_REG_EXP.exec(versionRange));
 
-            if (versionsRangeData.index >= versionsRangeData.totalSize) {
-                return versionsRangeData.preparedVersions;
-            } else {
-                return versionsRangeData;
-            }
-        }
+    const currentVersion = versionRange.replace(semverOperator, '');
 
-        const nextIndex = versionsRangeData.index + 1;
+    //cond
+});
 
-        if (SEMVER_OPERATOR_AND_VERSION_REG_EXP.test(versionRangePart)) {
-            versionsRangeData.preparedVersions.push(versionRangePart);
-        } else if (SEMVER_OPERATOR_REG_EXP.test(versionRangePart)) {
-
-
-            // might be single '*' operator
-            if (nextIndex >= versionsRangeData.totalSize) {
-                versionsRangeData.preparedVersions.push(versionRangePart);
-            } else {
-                versionsRangeData.preparedVersions.push(`${versionRangePart}${versionRangeParts[nextIndex]}`);
-                versionsRangeData.skip = true;
-            }
-        }
-
-        versionsRangeData.index += 1;
-
-        if (versionsRangeData.index >= versionsRangeData.totalSize) {
-            return versionsRangeData.preparedVersions;
-        } else {
-            return versionsRangeData;
-        }
-    },
-
-    {index: 0, totalSize: size(versionRangeParts), preparedVersions: [], skip: false},
-
-    versionRangeParts
-);
-
-const fSpace = curry((currentMaxVersion, versionsRange) => pipe(
+/*const fSpace = curry((currentMaxVersion, versionsRange) => pipe(
     trim,
     split(' '),
     filter(complement(isEmpty)), // to lib
@@ -81,42 +97,49 @@ const fSpace = curry((currentMaxVersion, versionsRange) => pipe(
         [isArrayEven, combineVersionRangeParts],
     ]),
     reduce(determineMaxVersion, currentMaxVersion)
-)(versionsRange));
+)(versionsRange));*/
 
-const fHypen = curry((currentMaxVersion, versionsRange) => pipe(
+const determineMaxVersionFromHyphenRange = curry((currentMaxVersion, versionsRange) => pipe(
     split('-'),
-    map(fSpace(currentMaxVersion)),
+    compact,
+    reduce(determineMaxVersionFromRange, currentMaxVersion),
 )(versionsRange));
 
-const f2 = curry((currentMaxVersion, versionsRange) => pipe(
+const determineMaxVersionFromRangePart = curry((currentMaxVersion, versionsRange) => pipe(
     trim,
     cond([
-        [testStr => testStr.includes('-'), fHypen(currentMaxVersion)],
-        [testStr => testStr.includes(' '), fSpace(currentMaxVersion)],
-        [stubTrue, identity],
+        [testStr => testStr.includes('-'), determineMaxVersionFromHyphenRange(currentMaxVersion)],
+        //[testStr => testStr.includes(' '), fSpace(currentMaxVersion)],
+        [stubTrue, determineMaxVersionFromRange(currentMaxVersion)],
     ])
 )(versionsRange));
 
-const determineMaxVersion = (versionsRange) => pipe(
+const determineMaxVersionFromRanges = (versionsRange) => pipe(
     // trim whitespaces
     trim,
-
     // replace '|' with '||'
     versionRange => versionRange.replace(
         SEMVER_SINGLE_DELIMETER_REG_EXP,
-        '||',
-        (match, part1, part2, part3) => [part1, part3].join('||')
+        (match, part1, part2, part3) => [part1, part3].join('||'),
     ),
-
+    // replace '-dev.1' with '$dev.1' for latter parsing
+    versionRange => versionRange.replace(
+        SEMVER_PRERELEASE_REG_EXP,
+        (match, part1, part2, part3, part4, part5) => [part1, part5].join('$'),
+    ),
+    // remove `spaces` between semver operator and version specifier
+    versionRange => versionRange.replace(
+        SEMVER_OPERATOR_TO_VERSION_REG_EXP,
+        (match, part1, part2, part3) => [part1, part3].join(''),
+    ),
     // split by '||'
     split('||'),
-
     // remove `empty` values
     compact,
-
-
-    reduce(f2, ''),
+    // determine max version using range part
+    reduce(determineMaxVersionFromRangePart, null),
 )(versionsRange);
 
 // export
-exports.determineMaxVersion = determineMaxVersion;
+exports.prepareSemverVersion = prepareSemverVersion;
+exports.determineMaxVersionFromRanges = determineMaxVersionFromRanges;
