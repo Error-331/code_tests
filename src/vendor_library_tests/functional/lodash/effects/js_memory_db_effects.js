@@ -8,6 +8,7 @@ const modulesVersionsQueryWrappers = require('./../db/js_memory/modules_versions
 const modulesLocationsQueryWrappers = require('./../db/js_memory/modules_locations_query_wrappers');
 const modulesLocationConnectionsQueryWrappers = require('./../db/js_memory/modules_location_connections_query_wrappers');
 const pathsTraversedQueryWrappers = require('./../db/js_memory/paths_traversed_query_wrappers');
+const npmModulesVersionsQueryWrappers = require('./../db/js_memory/npm_modules_versions_query_wrappers');
 
 const {logDBMessage} = require('./../effects/log_effects');
 
@@ -18,18 +19,21 @@ const openConnectionToDB = () => ({
     modulesLocationsMapLastId: null,
     modulesLocationConnectionsMapLastId: null,
     pathsTraversedMapLastId: null,
+    npmModulesVersionsMapLastId: null,
 
     modulesNamesMap: null,
     modulesVersionsMap: null,
     modulesLocationsMap: null,
     modulesLocationConnectionsMap: null,
     pathsTraversedMap: null,
+    npmModulesVersionsMap: null,
 
     modulesNamesIndexMap: null,
     modulesVersionsIndexMap: null,
     modulesLocationIndexMap: null,
     modulesLocationConnectionsIndexMap: null,
     pathsTraversedIndexMap: null,
+    npmModulesVersionsIndexMap: null,
 });
 
 const closeConnectionToDB = () => null;
@@ -50,6 +54,9 @@ const prepareDatabase = (dbConnection) => {
     logDBMessage('Dropping `paths_traversed` table...');
     pathsTraversedQueryWrappers.dropPathsTraversedTable(dbConnection);
 
+    logDBMessage('Dropping `npm_modules_versions` table...');
+    npmModulesVersionsQueryWrappers.dropNPMModulesVersionsTable(dbConnection);
+
     logDBMessage('Creating `modules_names` table...');
     modulesNamesQueryWrappers.createModulesNamesTable(dbConnection);
 
@@ -64,9 +71,14 @@ const prepareDatabase = (dbConnection) => {
 
     logDBMessage('Creating `paths_traversed` table...');
     pathsTraversedQueryWrappers.createPathsTraversedTable(dbConnection);
+
+    logDBMessage('Creating `npm_modules_versions` table...');
+    npmModulesVersionsQueryWrappers.createNPMModulesVersionsTable(dbConnection);
 };
 
 const exportToJSON = (dbConnection) => {
+    logDBMessage('Exporting JSON data');
+
     return Promise.all(
         [
             modulesNamesQueryWrappers.convertTableToJSON(dbConnection),
@@ -89,6 +101,23 @@ const exportToJSON = (dbConnection) => {
     });
 };
 
+const exportNPMModulesVersionsToJSON = (dbConnection) => {
+    logDBMessage('Exporting NPM modules versions JSON data');
+
+    return Promise.all(
+        [
+            npmModulesVersionsQueryWrappers.convertTableToJSON(dbConnection),
+        ]
+    ).then((pathsTraversed) => {
+        const resultingJSON = Object.assign(
+            {},
+            pathsTraversed[0],
+        );
+
+        return Promise.resolve(resultingJSON);
+    });
+};
+
 const importFromJSON = (dbConnection, pathToFile) => {
     const jsonContents = require(pathToFile);
 
@@ -105,10 +134,25 @@ const importFromJSON = (dbConnection, pathToFile) => {
     );
 };
 
+const importNPMModulesVersionsFromJSON = (dbConnection, pathToFile) => {
+    const jsonContents = require(pathToFile);
+
+    logDBMessage(`Importing NPM modules versions JSON data ('${pathToFile}')...`);
+
+    return Promise.all(
+        [
+            npmModulesVersionsQueryWrappers.importTableFromJSON(dbConnection, jsonContents),
+        ]
+    );
+};
+
 // export
 exports.openConnectionToDB = openConnectionToDB;
 exports.closeConnectionToDB = closeConnectionToDB;
-
 exports.prepareDatabase = prepareDatabase;
+
 exports.exportToJSON = exportToJSON;
+exports.exportNPMModulesVersionsToJSON = exportNPMModulesVersionsToJSON;
+
 exports.importFromJSON = importFromJSON;
+exports.importNPMModulesVersionsFromJSON = importNPMModulesVersionsFromJSON;

@@ -1,10 +1,11 @@
 'use strict';
 
 // external imports
-const {isNil} = require('lodash/fp');
+const {isNil, identity} = require('lodash/fp');
 
 // local imports
 const {findLastRowIndexInJSON, convertMapToJSON, convertJSONToMap} = require('./../../helpers/json_helpers');
+const {mapMapToArray} = require('./../../helpers/map_helpers');
 
 // query wrappers implementation
 const createModulesVersionsTable = (dbConnection) => {
@@ -46,6 +47,11 @@ const insertNewModuleVersion = (dbConnection, moduleNameId, version) => {
             lastID: dbConnection.modulesVersionsMapLastId
         });
     }
+};
+
+const selectAllModulesVersions = (dbConnection) => {
+    const modulesVersions =  mapMapToArray(identity, dbConnection.modulesVersionsMap);
+    return Promise.resolve(modulesVersions);
 };
 
 const selectModuleByNameIdAndVersion = (dbConnection, moduleNameId, usrVersion) => {
@@ -107,6 +113,7 @@ const importTableFromJSON = (dbConnection, jsonData) => {
 exports.createModulesVersionsTable = createModulesVersionsTable;
 exports.dropModulesVersionsTable = dropModulesVersionsTable;
 exports.insertNewModuleVersion = insertNewModuleVersion;
+exports.selectAllModulesVersions = selectAllModulesVersions;
 exports.selectModuleByNameIdAndVersion = selectModuleByNameIdAndVersion;
 exports.selectInsertModuleVersion = selectInsertModuleVersion;
 exports.convertTableToJSON = convertTableToJSON;

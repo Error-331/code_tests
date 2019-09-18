@@ -1,19 +1,15 @@
 'use strict';
 
 // external imports
-const {isNil} = require('lodash/fp');
+const {isNil, identity} = require('lodash/fp');
 
 // local imports
 const {findLastRowIndexInJSON, convertMapToJSON, convertJSONToMap} = require('./../../helpers/json_helpers');
+const {mapMapToArray} = require('./../../helpers/map_helpers');
 
 // query wrappers implementation
 const createNPMModulesVersionsTable = (dbConnection) => {
-    dbConnection.npmModulesVersionsMapLastId = -1;
-
-    dbConnection.npmModulesVersionsMap = new Map();
-    dbConnection.npmModulesVersionsIndexMap = new Map();
-
-    return Promise.resolve(dbConnection);
+    return clearNPMModulesVersionsTable(dbConnection);
 };
 
 const dropNPMModulesVersionsTable = (dbConnection) => {
@@ -25,8 +21,17 @@ const dropNPMModulesVersionsTable = (dbConnection) => {
     return Promise.resolve(dbConnection);
 };
 
-const insertNewNPMModuleVersion = (dbConnection, moduleNameId, version) => {
-    const composedKey = `${moduleNameId}_${version}`; // UNIQUE(module_name_id, version)
+const clearNPMModulesVersionsTable = (dbConnection) => {
+    dbConnection.npmModulesVersionsMapLastId = -1;
+
+    dbConnection.npmModulesVersionsMap = new Map();
+    dbConnection.npmModulesVersionsIndexMap = new Map();
+
+    return Promise.resolve(dbConnection);
+};
+
+const insertNewNPMModuleVersion = (dbConnection, moduleName, version) => {
+    const composedKey = `${moduleName}_${version}`; // UNIQUE(module_name, version)
 
     if (dbConnection.npmModulesVersionsIndexMap.has(composedKey)) {
         return Promise.resolve({
@@ -36,7 +41,7 @@ const insertNewNPMModuleVersion = (dbConnection, moduleNameId, version) => {
         dbConnection.npmModulesVersionsMapLastId += 1;
         dbConnection.npmModulesVersionsMap.set(dbConnection.npmModulesVersionsMapLastId, {
             id: dbConnection.npmModulesVersionsMapLastId,
-            module_name_id: moduleNameId,
+            name: moduleName,
             version
         });
 
@@ -48,12 +53,17 @@ const insertNewNPMModuleVersion = (dbConnection, moduleNameId, version) => {
     }
 };
 
-const selectNPMModuleVersionByNameIdAndVersion = (dbConnection, moduleNameId, usrVersion) => {
+const selectAllNPMModulesVersions = (dbConnection) => {
+    const npmModulesVersions =  mapMapToArray(identity, dbConnection.npmModulesVersionsMap);
+    return Promise.resolve(npmModulesVersions);
+};
+
+const selectNPMModuleVersionByNameAndVersion = (dbConnection, moduleName, usrVersion) => {
     for (const entry of dbConnection.npmModulesVersionsMap) {
-        const {module_name_id, version} = entry[1];
+        const {name, version} = entry[1];
 
         if (
-            module_name_id === moduleNameId &&
+            name === moduleName &&
             version === usrVersion
         ) {
             return Promise.resolve(entry[1]);
@@ -64,14 +74,14 @@ const selectNPMModuleVersionByNameIdAndVersion = (dbConnection, moduleNameId, us
 };
 
 // returns id
-const selectInsertNPMModuleVersion = (dbConnection, moduleNameId, version) => {
+const selectInsertNPMModuleVersion = (dbConnection, moduleName, version) => {
     return new Promise((resolve, reject) => {
-        selectNPMModuleVersionByNameIdAndVersion(dbConnection, moduleNameId, version)
+        selectNPMModuleVersionByNameAndVersion(dbConnection, moduleName, version)
             .then(moduleVersionRow => {
                 if (!isNil(moduleVersionRow)) {
                     resolve(moduleVersionRow.id);
                 } else {
-                    insertNewNPMModuleVersion(dbConnection, moduleNameId, version)
+                    insertNewNPMModuleVersion(dbConnection, moduleName, version)
                         .then((moduleVersionStatement) => {
                             resolve(moduleVersionStatement.lastID)
                         })
@@ -106,8 +116,10 @@ const importTableFromJSON = (dbConnection, jsonData) => {
 // export
 exports.createNPMModulesVersionsTable = createNPMModulesVersionsTable;
 exports.dropNPMModulesVersionsTable = dropNPMModulesVersionsTable;
+exports.clearNPMModulesVersionsTable = clearNPMModulesVersionsTable;
 exports.insertNewNPMModuleVersion = insertNewNPMModuleVersion;
-exports.selectNPMModuleVersionByNameIdAndVersion = selectNPMModuleVersionByNameIdAndVersion;
+exports.selectAllNPMModulesVersions = selectAllNPMModulesVersions;
+exports.selectNPMModuleVersionByNameAndVersion = selectNPMModuleVersionByNameAndVersion;
 exports.selectInsertNPMModuleVersion = selectInsertNPMModuleVersion;
 exports.convertTableToJSON = convertTableToJSON;
 exports.importTableFromJSON = importTableFromJSON;
