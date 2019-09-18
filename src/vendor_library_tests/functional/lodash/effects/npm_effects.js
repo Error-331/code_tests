@@ -2,7 +2,7 @@
 
 // external imports
 const {spawn} = require('child_process');
-const {identity} = require('lodash/fp');
+const {isNil, identity, cond} = require('lodash/fp');
 
 // local imports
 const {SEMVER_NPM_VERSION_SANITIZE_REG_EXP} = require('./../constants/semver_regexp_constants');
@@ -15,7 +15,14 @@ const loadNPMPackageCurrentVersionBy = (transformCallback, npmPackageName) => {
 
         processLink.stdout.on('data', data => versionString = data);
         processLink.stderr.on('data', reject);
-        processLink.on('close', () => resolve(transformCallback(versionString.toString().replace(SEMVER_NPM_VERSION_SANITIZE_REG_EXP, ''))))
+        processLink.on('close', () => {
+            if (versionString === null) {
+                console.log(npmPackageName);
+            }
+
+
+            resolve(transformCallback(versionString.toString().replace(SEMVER_NPM_VERSION_SANITIZE_REG_EXP, '')))
+        })
     });
 };
 

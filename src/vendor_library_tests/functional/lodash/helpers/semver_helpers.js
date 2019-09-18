@@ -43,14 +43,18 @@ const {
 } = require('./../constants/semver_regexp_constants');
 
 // helpers implementation
-const prepareSemverVersion = curry((maxSemverVersion, semverVersion) => {
-    const [semverVersionPart, semverPrereleaseTagPart] = split('$', semverVersion);
+const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
+    const [semverVersionPart, semverPrereleaseTagPart] = split(prereleaseTagPartDelimiter, semverVersion);
 
-    if (!isNil(semverPrereleaseTagPart)) {
-        return concat(
-            pipe(split('.', semverVersionPart), parseInt),
-            semverPrereleaseTagPart
-        )
+    return compact(concat(
+        pipe(split('.'), map(parseInt))(semverVersionPart),
+        semverPrereleaseTagPart
+    ));
+};
+
+const prepareSemverVersion = curry((maxSemverVersion, semverVersion) => {
+    if (size(split('$', semverVersion)) >= 2) {
+        return semverStringToParts('$', semverVersion);
     }
 
     const preparedSemverVersion = pipe(
@@ -83,14 +87,12 @@ const prepareSemverVersion = curry((maxSemverVersion, semverVersion) => {
     return map(parseInt,
         concat(
             slice(0, size(indexesToReplace), preparedMaxSemverVersion),
-            slice(size(indexesToReplace), 3, preparedSemverVersion)
+            slice(size(indexesToReplace), size(preparedSemverVersion), preparedSemverVersion)
         )
     );
 });
 
 const determineMaxVersionFromRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
-    //console.log(npmMaximumVersion, currentMaxVersion, versionRange);
-
     const semverOperator = cond([
         [isNil, constant('')],
         [stubTrue, nth(1)]
@@ -102,9 +104,23 @@ const determineMaxVersionFromRange = curry((npmMaximumVersion, currentMaxVersion
         prepareSemverVersion(npmMaximumVersion)
     )(versionRange);
 
-    console.log(versionRange, '$$', currentVersionParts);
+   // console.log('****', semverStringToParts('-', npmMaximumVersion));
 
-    //cond
+    const currentMaxVersionParts = semverStringToParts('-', currentMaxVersion);
+
+    const decrementVersion = (semverVersionString) => {
+
+
+        cond([
+            [semverVersionParts => gt(size(semverVersionParts, 3)), semverVersionParts => split('.', semverVersionParts[size(semverVersionParts) - 1])],
+            [stubTrue, semverVersionParts => semverVersionParts[size(semverVersionParts) - 1] += 1]
+        ])(semverStringToParts(semverVersionString))
+    }
+
+    cond([
+        [constant('<'), ]
+        [stubTrue, identity]
+    ])(semverOperator);
 });
 
 /*const fSpace = curry((currentMaxVersion, versionsRange) => pipe(

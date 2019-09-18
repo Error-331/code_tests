@@ -38,6 +38,7 @@ const filterModulesByLocationIDs = (dbConnection, preFilter, postFilter, locatio
         pipe(
             preFilter,
             moduleLocationId => getMapValue(modulesLocationsMap, moduleLocationId),
+
             over([
                 pathOr(null, 'module_name_id'),
                 pathOr(null, 'module_version_id'),

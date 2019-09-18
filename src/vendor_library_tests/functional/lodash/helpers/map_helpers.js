@@ -1,7 +1,7 @@
 'use strict';
 
 // external imports
-const {curry} = require('lodash/fp');
+const {curry, toString} = require('lodash/fp');
 
 // local imports
 
@@ -36,7 +36,7 @@ const mapMapToArray = curry((callback, usrMap) => {
 });
 
 const getMapValue = curry(
-    (usrMap, key) => usrMap.get(key.toString())
+    (usrMap, key) => usrMap.get(toString(key)) || usrMap.get(key)
 );
 
 // exports
