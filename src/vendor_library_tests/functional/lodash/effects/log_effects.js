@@ -11,6 +11,7 @@ const {
     LOG_DB_MESSAGE_TYPE,
     LOG_FS_MESSAGE_TYPE,
     LOG_TASK_MESSAGE_TYPE,
+    LOG_REMOTE_TASK_MESSAGE_TYPE,
 
     MASTER_PROCESS_LOG_LABEL,
     CHILD_PROCESS_LOG_LABEL,
@@ -33,6 +34,7 @@ const logConsoleMessage = curry((type, message) => {
         [equals(LOG_DB_MESSAGE_TYPE), constant(chalk.blue(message))],
         [equals(LOG_FS_MESSAGE_TYPE), constant(chalk.magenta(message))],
         [equals(LOG_TASK_MESSAGE_TYPE), constant(chalk.yellow(message))],
+        [equals(LOG_REMOTE_TASK_MESSAGE_TYPE), constant(chalk.cyan(message))],
         [stubTrue, constant('')]
     ])(type);
 
@@ -53,3 +55,4 @@ exports.logErrorMessage = logMessage(LOG_ERROR_MESSAGE_TYPE);
 exports.logDBMessage = logMessage(LOG_DB_MESSAGE_TYPE);
 exports.logFSMessage = logMessage(LOG_FS_MESSAGE_TYPE);
 exports.logTaskMessage = logMessage(LOG_TASK_MESSAGE_TYPE);
+exports.logRemoteTaskMessage = logMessage(LOG_REMOTE_TASK_MESSAGE_TYPE);
