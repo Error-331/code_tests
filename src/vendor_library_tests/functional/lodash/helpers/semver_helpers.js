@@ -7,14 +7,12 @@ const {
     identity,
     isNil,
     isEmpty,
-    isFinite,
     min,
     lte,
     gt,
     gte,
     equals,
     cond,
-    complement,
     curry,
     pipe,
     over,
@@ -22,10 +20,8 @@ const {
     range,
     map,
     reduce,
-    times,
     takeWhile,
     dropWhile,
-    findLastIndex,
     trim,
     split,
     replace,
@@ -34,7 +30,8 @@ const {
     slice,
     nth,
     size,
-    last,
+    times,
+    fill,
 } = require('lodash/fp');
 
 // local imports
@@ -50,45 +47,83 @@ const {
     SEMVER_OPERATOR_AND_VERSION_REG_EXP,
 } = require('./../constants/semver_regexp_constants');
 
+const {
+    findLastFiniteValueIndex,
+    findLastFiniteNoneZeroValueIndex,
+    findFirstNoneZeroValue,
+
+    incrementAtIndex,
+    decrementAtIndex,
+    infinityAtIndex,
+
+    replaceToInfinityFromIndex,
+} = require('./../helpers/array_helpers');
+
 // helpers implementation
-//TODO: to helpers
-const findLastFiniteValueIndex = findLastIndex(isFinite);
-//TODO: to helpers
-const findLastFiniteNoneZeroValueIndex = findLastIndex(usrValue => isFinite(usrValue) && usrValue !== 0);
-//TODO: to helpers
-const incrementAtIndex = curry((index, usrArray) => {
-    const newArray = usrArray.slice();
-    newArray[index]++;
+const semverFillMissingParts = curry((fillValue, versionParts) => pipe(
+    versionParts => versionParts.slice(),
 
-    return newArray;
-});
-//TODO: to helpers
-const decrementAtIndex = curry((index, usrArray) => {
-    const newArray = usrArray.slice();
-    newArray[index]--;
+    cond([
+        [
+            versionParts => lte(size(versionParts), 2),
+            versionParts => concat(
+                versionParts,
+                times(constant(fillValue), 3 - size(versionParts))
+            ),
+        ],
+        [stubTrue, identity],
+    ])
+)(versionParts));
 
-    return newArray;
-});
+const semverFillMissingPartsWithZeros = semverFillMissingParts(0);
+const semverFillMissingPartsWithInfinity = semverFillMissingParts(Infinity);
 
-const performOperationAtLastPartOfParsedVersion = curry((callback, versionParts) => {
-    return pipe(
-        findLastFiniteNoneZeroValueIndex,
-        cond([
-            [equals(-1), constant(versionParts)],
-            [stubTrue, index => callback(index, versionParts)]
-        ])
-    )(versionParts);
+const performOperationAtLastPartOfParsedVersion = curry((callback, findCallback, versionParts) => {
+    return cond([
+        [
+            versionParts => equals(-1, findCallback(versionParts)),
+            identity,
+        ],
+        [
+            stubTrue,
+            versionParts => callback(findCallback(versionParts), versionParts),
+        ]
+    ])(versionParts.slice())
 });
 
 const incrementLastPartOfParsedVersion =
-    performOperationAtLastPartOfParsedVersion(incrementAtIndex);
+    performOperationAtLastPartOfParsedVersion(incrementAtIndex, findLastFiniteValueIndex);
 
 const decrementLastPartOfParsedVersion =
-    performOperationAtLastPartOfParsedVersion(decrementAtIndex);
+    performOperationAtLastPartOfParsedVersion(decrementAtIndex, findLastFiniteNoneZeroValueIndex);
 
 const performTildaOperatorOnParsedVersion = (versionParts) => {
-
+    return cond([
+        [versionSize => gt(versionSize, 2), versionSize => infinityAtIndex(versionSize - 1, versionParts)],
+        [versionSize => lte(versionSize, 2), versionSize =>  fill(versionSize - 1, 3 - versionSize, Infinity)], // TODO: check!!!
+        [stubTrue, constant(versionParts.slice())]
+    ])(size(versionParts));
 };
+
+const performCaretOperatorOnParsedVersion = cond([
+    [equals([0, 0]), constant([0, 0, Infinity])],
+    [stubTrue, cond(
+        [
+            [
+                versionParts => equals(findFirstNoneZeroValue(versionParts), -1),
+                identity,
+            ],
+            [
+                versionParts => gte(findFirstNoneZeroValue(versionParts), 0),
+                versionParts => replaceToInfinityFromIndex(
+                    findFirstNoneZeroValue(versionParts) + 1,
+                    versionParts
+                ),
+            ],
+            [stubTrue, identity],
+        ])
+    ],
+]);
 
 const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
     const [semverVersionPart, semverPrereleaseTagPart] = split(prereleaseTagPartDelimiter, semverVersion);
@@ -203,7 +238,12 @@ const conditionIsFulfilledForTwoParsedSemverVersions = (firstVer, secondVer, con
         [equals('<'),  constant(equals(comparisonResult, -1))],
         [equals('>='), constant(gte(comparisonResult, 0))],
         [equals('<='), constant(lte(comparisonResult, 0))],
-    ])(condition)
+    ])(condition);
+};
+
+const isSemverInHyphenRange = (lowerVer, higherVer, versionToCheck) => {
+    return conditionIsFulfilledForTwoParsedSemverVersions(versionToCheck, lowerVer, '>=') &&
+    conditionIsFulfilledForTwoParsedSemverVersions(versionToCheck, higherVer, '<=');
 };
 
 const semverFullRangeToSections = pipe(
@@ -230,29 +270,33 @@ const semverFullRangeToSections = pipe(
     compact,
 );
 
+const determineMaxVersionForParsedRange = (versionParts, condition) => {
+    return cond([
+        [isEmpty, constant(versionParts)],
+        [equals('='),  constant(versionParts)],
+        [equals('>='), constant(versionParts)],
+        [equals('<='), constant(versionParts)],
+        [equals('>'),  constant(incrementLastPartOfParsedVersion(versionParts))],
+        [equals('<'),  constant(decrementLastPartOfParsedVersion(versionParts))],
+        [equals('~'),  constant(performTildaOperatorOnParsedVersion(versionParts))],
+        [equals('^'),  constant(performCaretOperatorOnParsedVersion(versionParts))]
+    ])(condition)
+};
+
 const determineMaxVersionFromRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
-    const semverOperator = extractSemverOperator(versionRange);
+   // const semverOperator = extractSemverOperator(versionRange);
 
-    const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
-    const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
+   // const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
+    //const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
 
-    //console.log('zpp', semverOperator, isEmpty(semverOperator));
-    //console.log('zpp1', currentMaxVersion, currentMaxVersionParts, isEmpty(currentMaxVersionParts));
 
-    console.log('zpp2', incrementLastPartOfParsedVersion([1, Infinity,4]));
+    console.log('zpp2', determineMaxVersionForParsedRange([1], '~'));
 
-    /*const determineMaxVersionForParsedRange = (versionParts, condition) => {
-        cond([
-            [isEmpty, constant(versionParts)],
-            [constant('='),  constant(versionParts)],
-            [constant('>='), constant(versionParts)],
-            [constant('<='), constant(versionParts)],
-            [constant('>'),  constant(incrementLastPartOfParsedVersion(versionParts))],
-            [constant('<'),  constant(decrementLastPartOfParsedVersion(versionParts))],
-            [constant('~'),  constant(performTildaOperatorOnParsedVersion(versionParts))],
-            [constant('^'),  constant(performCaretOperatorOnParsedVersion(versionParts))]
-        ])(condition)
-    };*/
+
+
+
+
+
 
     //compareTwoParsedSemverVersions(currentVersionParts, currentMaxVersionParts);
 
