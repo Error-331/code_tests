@@ -8,6 +8,7 @@ const {
     isNil,
     isEmpty,
     min,
+    lt,
     lte,
     gt,
     gte,
@@ -31,7 +32,6 @@ const {
     nth,
     size,
     times,
-    fill,
 } = require('lodash/fp');
 
 // local imports
@@ -54,9 +54,8 @@ const {
 
     incrementAtIndex,
     decrementAtIndex,
-    infinityAtIndex,
 
-    replaceToInfinityFromIndex,
+    addReplaceInfinityFromToIndex,
 } = require('./../helpers/array_helpers');
 
 // helpers implementation
@@ -99,36 +98,39 @@ const decrementLastPartOfParsedVersion =
 
 const performTildaOperatorOnParsedVersion = (versionParts) => {
     return cond([
-        [versionSize => gt(versionSize, 2), versionSize => infinityAtIndex(versionSize - 1, versionParts)],
-        [versionSize => lte(versionSize, 2), versionSize =>  fill(versionSize - 1, 3 - versionSize, Infinity)], // TODO: check!!!
+        [versionSize => gte(versionSize, 2),() => addReplaceInfinityFromToIndex(2, 2, versionParts)],
+        [versionSize => lt(versionSize, 2), () => addReplaceInfinityFromToIndex(1, 2, versionParts)],
         [stubTrue, constant(versionParts.slice())]
     ])(size(versionParts));
 };
 
 const performCaretOperatorOnParsedVersion = cond([
     [equals([0, 0]), constant([0, 0, Infinity])],
-    [stubTrue, cond(
-        [
+    [stubTrue, pipe(
+        semverFillMissingParts(0),
+        cond(
             [
-                versionParts => equals(findFirstNoneZeroValue(versionParts), -1),
-                identity,
-            ],
-            [
-                versionParts => gte(findFirstNoneZeroValue(versionParts), 0),
-                versionParts => replaceToInfinityFromIndex(
-                    findFirstNoneZeroValue(versionParts) + 1,
-                    versionParts
-                ),
-            ],
-            [stubTrue, identity],
-        ])
-    ],
+                [
+                    versionParts => equals(findFirstNoneZeroValue(versionParts), -1),
+                    identity,
+                ],
+                [
+                    versionParts => gte(findFirstNoneZeroValue(versionParts), 0),
+                    versionParts => addReplaceInfinityFromToIndex(
+                        findFirstNoneZeroValue(versionParts) + 1,
+                        3 - (findFirstNoneZeroValue(versionParts) + 1),
+                        versionParts
+                    ),
+                ],
+                [stubTrue, identity],
+            ]),
+    )],
 ]);
 
 const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
     const [semverVersionPart, semverPrereleaseTagPart] = split(prereleaseTagPartDelimiter, semverVersion);
 
-    return compact(concat(
+    return concat(
         pipe(
             replace(new RegExp('x|X', 'g'), '*'),
             split('.'),
@@ -139,8 +141,8 @@ const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
                 ])),
             )
         (semverVersionPart),
-        semverPrereleaseTagPart
-    ));
+        compact(semverPrereleaseTagPart)
+    );
 };
 
 const normalizeSemverVersion = curry((maxSemverVersion, semverVersion) => {
@@ -151,6 +153,7 @@ const normalizeSemverVersion = curry((maxSemverVersion, semverVersion) => {
     }
 
     const normalizedMaxSemverVersion = semverStringToParts('-', maxSemverVersion);
+
     const indexesToReplace = takeWhile(
         pipe(
             over([
@@ -286,11 +289,11 @@ const determineMaxVersionForParsedRange = (versionParts, condition) => {
 const determineMaxVersionFromRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
    // const semverOperator = extractSemverOperator(versionRange);
 
-   // const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
+    const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
     //const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
 
-
-    console.log('zpp2', determineMaxVersionForParsedRange([1], '~'));
+console.log(currentVersionParts);
+    console.log('zpp2', determineMaxVersionForParsedRange(currentVersionParts, '>'));
 
 
 

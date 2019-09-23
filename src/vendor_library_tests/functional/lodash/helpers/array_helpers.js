@@ -2,15 +2,22 @@
 
 // external imports
 const {
+    stubTrue,
     constant,
+    identity,
     isFinite,
     equals,
+    cond,
+    spread,
     curry,
     map,
+    pipe,
+    over,
     findIndex,
     findLastIndex,
     concat,
     slice,
+    range,
     size,
     add,
 } = require('lodash/fp');
@@ -56,6 +63,22 @@ const replaceToInfinityFromIndex = curry((startIndex, usrArray) => {
     return replaceToValueFromIndex(startIndex, Infinity, usrArray);
 });
 
+const addReplaceInfinityFromToIndex = curry((startIndex, endIndex, usrArray) => {
+    return cond([
+        [
+            usrArray => size(usrArray) - 1 < endIndex,
+            pipe(
+                over([
+                    identity,
+                    usrArray => range(0, endIndex - (size(usrArray) - 1))
+                ]),
+                spread(concat),
+                replaceToInfinityFromIndex(startIndex),
+            )
+        ],
+        [stubTrue, replaceToInfinityFromIndex(startIndex)]
+    ])(usrArray);
+});
 
 // export
 exports.findLastFiniteValueIndex = findLastFiniteValueIndex;
@@ -71,3 +94,4 @@ exports.addInfinityToArray = addInfinityToArray;
 
 exports.replaceToValueFromIndex = replaceToValueFromIndex;
 exports.replaceToInfinityFromIndex = replaceToInfinityFromIndex;
+exports.addReplaceInfinityFromToIndex = addReplaceInfinityFromToIndex;
