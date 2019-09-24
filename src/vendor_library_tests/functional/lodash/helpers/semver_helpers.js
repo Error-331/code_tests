@@ -14,6 +14,8 @@ const {
     gte,
     equals,
     cond,
+    all,
+    any,
     curry,
     pipe,
     over,
@@ -21,6 +23,7 @@ const {
     range,
     map,
     reduce,
+    chunk,
     takeWhile,
     dropWhile,
     trim,
@@ -56,6 +59,8 @@ const {
     decrementAtIndex,
 
     addReplaceInfinityFromToIndex,
+    replaceToInfinityFromIndex,
+    cartesianProduct,
 } = require('./../helpers/array_helpers');
 
 // helpers implementation
@@ -132,6 +137,7 @@ const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
 
     return concat(
         pipe(
+            replace(new RegExp('v|V', 'g'), ''),
             replace(new RegExp('x|X', 'g'), '*'),
             split('.'),
             map(
@@ -147,6 +153,10 @@ const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
 
 const normalizeSemverVersion = curry((maxSemverVersion, semverVersion) => {
     const normalizedSemverVersion = semverStringToParts('$', semverVersion);
+
+    if (isNil(maxSemverVersion)) {
+        return normalizedSemverVersion;
+    }
 
     if (size(split('$', semverVersion)) >= 2) {
         return normalizedSemverVersion;
@@ -188,8 +198,8 @@ const extractSemverVersionParts = (npmMaximumVersion, singularRangePart) => {
     return pipe(
         trim,
         replace(extractSemverOperator(singularRangePart), ''),
-        normalizeSemverVersion(npmMaximumVersion)
-    )(singularRangePart)
+        normalizeSemverVersion(npmMaximumVersion),
+    )(singularRangePart);
 };
 
 const compareTwoParsedSemverVersions = (firstVer, secondVer) => {
@@ -232,7 +242,7 @@ const compareTwoParsedSemverVersions = (firstVer, secondVer) => {
     );
 };
 
-const conditionIsFulfilledForTwoParsedSemverVersions = (firstVer, secondVer, condition) => {
+const conditionIsFulfilledForTwoParsedSemverVersions = curry((condition, firstVer, secondVer) => {
     const comparisonResult = compareTwoParsedSemverVersions(firstVer, secondVer);
 
     return cond([
@@ -242,12 +252,100 @@ const conditionIsFulfilledForTwoParsedSemverVersions = (firstVer, secondVer, con
         [equals('>='), constant(gte(comparisonResult, 0))],
         [equals('<='), constant(lte(comparisonResult, 0))],
     ])(condition);
-};
+});
 
 const isSemverInHyphenRange = (lowerVer, higherVer, versionToCheck) => {
-    return conditionIsFulfilledForTwoParsedSemverVersions(versionToCheck, lowerVer, '>=') &&
-    conditionIsFulfilledForTwoParsedSemverVersions(versionToCheck, higherVer, '<=');
+    return conditionIsFulfilledForTwoParsedSemverVersions('>=', versionToCheck, lowerVer) &&
+    conditionIsFulfilledForTwoParsedSemverVersions('<=', versionToCheck, higherVer);
 };
+
+
+// array
+const determineMaxVersionsByOperator = (operator, versionParts) => {
+    return cond([
+        [isEmpty, constant([versionParts])],
+        [equals('='),  constant([versionParts])],
+        [equals('>='), constant([versionParts, replaceToInfinityFromIndex(0, versionParts)])],
+        [equals('<='), constant([versionParts, decrementLastPartOfParsedVersion(versionParts)])],
+        [equals('>'),  constant([incrementLastPartOfParsedVersion(versionParts) ,replaceToInfinityFromIndex(0, versionParts)])],
+        [equals('<'),  constant([decrementLastPartOfParsedVersion(versionParts)])],
+        [equals('~'),  constant([performTildaOperatorOnParsedVersion(versionParts)])],
+        [equals('^'),  constant([performCaretOperatorOnParsedVersion(versionParts)])]
+    ])(operator)
+};
+
+const determineMaxVersionFromSingularRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
+    if (isNil(currentMaxVersion)) {
+        return versionRange;
+    }
+
+    const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
+    const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
+
+    const currentVersionOperator = extractSemverOperator(versionRange);
+    const currentMaxVersionOperator = extractSemverOperator(currentMaxVersion);
+
+    const maxMaxVersionPartsByOp = determineMaxVersionsByOperator(currentMaxVersionOperator, currentMaxVersionParts);
+    const currentMaxVersionPartsByOp = determineMaxVersionsByOperator(currentVersionOperator, currentVersionParts);
+
+    return pipe(
+        cond([
+            [
+                product => equals(
+                    size(product),
+                    4
+                ),
+                pipe(
+                    chunk(2),
+                    map(any(equals(true))),
+                    all(equals(true)))
+            ],
+            [
+                stubTrue,
+                all(equals(true))
+            ],
+        ]),
+        cond([
+            [equals(true), constant(versionRange)],
+            [equals(false), constant(currentMaxVersion)]
+        ])
+    )(
+        map(versionsArr => conditionIsFulfilledForTwoParsedSemverVersions('>', versionsArr[0], versionsArr[1]),
+            cartesianProduct([currentMaxVersionPartsByOp, maxMaxVersionPartsByOp]),
+        )
+    );
+});
+
+const determineMaxVersionFromHyphenRange = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
+    trim,
+    split('-'),
+    compact,
+    nth(1),
+    determineMaxVersionFromSingularRange(npmMaximumVersion, currentMaxVersion),
+)(versionsRange));
+
+const determineMaxVersionFromSpaceRange = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
+    trim,
+    split(' '),
+    compact,
+    reduce(determineMaxVersionFromRangePart(npmMaximumVersion), currentMaxVersion),
+)(versionsRange));
+
+const determineMaxVersionFromRangePart = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
+    // trim whitespaces (after version range have been split into pieces there can still be whitespaces on both ends)
+    trim,
+    // find maximum version for each major range types (e.g. 1.2.3 - 2.4.5 or >3.4.6 <= 7.5.1) or singular range type (e.g ~1.2.3 or 1.2.3)
+    cond([
+        // determine max version from `hyphen range` (e.g. 1.2.3 - 2.4.5)
+        [testStr => testStr.includes('-'), determineMaxVersionFromHyphenRange(npmMaximumVersion, currentMaxVersion)],
+
+        // determine max version from `space range` (e.g. >3.4.6 <= 7.5.1)
+        [testStr => testStr.includes(' '), determineMaxVersionFromSpaceRange(npmMaximumVersion, currentMaxVersion)],
+
+        // determine max version from singular range (e.g ~1.2.3 or 1.2.3)
+        [stubTrue, determineMaxVersionFromSingularRange(npmMaximumVersion, currentMaxVersion)],
+    ])
+)(versionsRange));
 
 const semverFullRangeToSections = pipe(
     // trim whitespaces
@@ -273,73 +371,11 @@ const semverFullRangeToSections = pipe(
     compact,
 );
 
-const determineMaxVersionForParsedRange = (versionParts, condition) => {
-    return cond([
-        [isEmpty, constant(versionParts)],
-        [equals('='),  constant(versionParts)],
-        [equals('>='), constant(versionParts)],
-        [equals('<='), constant(versionParts)],
-        [equals('>'),  constant(incrementLastPartOfParsedVersion(versionParts))],
-        [equals('<'),  constant(decrementLastPartOfParsedVersion(versionParts))],
-        [equals('~'),  constant(performTildaOperatorOnParsedVersion(versionParts))],
-        [equals('^'),  constant(performCaretOperatorOnParsedVersion(versionParts))]
-    ])(condition)
-};
-
-const determineMaxVersionFromRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
-   // const semverOperator = extractSemverOperator(versionRange);
-
-    const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
-    //const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
-
-console.log(currentVersionParts);
-    console.log('zpp2', determineMaxVersionForParsedRange(currentVersionParts, '>'));
-
-
-
-
-
-
-
-    //compareTwoParsedSemverVersions(currentVersionParts, currentMaxVersionParts);
-
-    //console.log('compare', conditionIsFulfilledForTwoParsedSemverVersions(currentVersionParts, currentMaxVersionParts, semverOperator));
-
-
-});
-
-/*const fSpace = curry((currentMaxVersion, versionsRange) => pipe(
-    trim,
-    split(' '),
-    filter(complement(isEmpty)), // to lib
-    cond([
-        [isArrayOfOne, ([versionRange]) => determineMaxVersion1(currentMaxVersion, versionRange)],
-        [isArrayOdd, () => { throw new Error(`Cannot combine version range after 'space split': '${versionsRange}'`) }],
-        [isArrayEven, combineVersionRangeParts],
-    ]),
-    reduce(determineMaxVersion, currentMaxVersion)
-)(versionsRange));*/
-
-const determineMaxVersionFromHyphenRange = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
-    split('-'),
-    compact,
-    reduce(determineMaxVersionFromRange(npmMaximumVersion), currentMaxVersion),
-)(versionsRange));
-
-const determineMaxVersionFromRangePart = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
-    trim,
-    cond([
-        [testStr => testStr.includes('-'), determineMaxVersionFromHyphenRange(npmMaximumVersion, currentMaxVersion)],
-        //[testStr => testStr.includes(' '), fSpace(currentMaxVersion)],
-        [stubTrue, determineMaxVersionFromRange(npmMaximumVersion, currentMaxVersion)],
-    ])
-)(versionsRange));
-
-const determineMaxVersionFromRanges = (npmMaximumVersion, currentMaximumRange, versionsRange) => pipe(
+const determineMaxVersionFromRanges = (npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
     // split range into sections
     semverFullRangeToSections,
     // determine max version using range part
-    reduce(determineMaxVersionFromRangePart(npmMaximumVersion), currentMaximumRange),
+    reduce(determineMaxVersionFromRangePart(npmMaximumVersion), currentMaxVersion),
 )(versionsRange);
 
 // export

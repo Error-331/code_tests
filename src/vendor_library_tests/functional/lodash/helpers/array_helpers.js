@@ -11,6 +11,8 @@ const {
     spread,
     curry,
     map,
+    reduce,
+    flatten,
     pipe,
     over,
     findIndex,
@@ -80,6 +82,18 @@ const addReplaceInfinityFromToIndex = curry((startIndex, endIndex, usrArray) => 
     ])(usrArray);
 });
 
+// https://gist.github.com/ijy/6094414#gistcomment-2651944
+const cartesianProduct = (setsArray) => {
+    return reduce((product, setItem) =>
+            flatten(
+                map(
+                    productItem => map(nextSetItem => concat(productItem, [nextSetItem]), setItem),
+                    product,
+                )
+            )
+        , [[]], setsArray);
+};
+
 // export
 exports.findLastFiniteValueIndex = findLastFiniteValueIndex;
 exports.findLastFiniteNoneZeroValueIndex = findLastFiniteNoneZeroValueIndex;
@@ -95,3 +109,4 @@ exports.addInfinityToArray = addInfinityToArray;
 exports.replaceToValueFromIndex = replaceToValueFromIndex;
 exports.replaceToInfinityFromIndex = replaceToInfinityFromIndex;
 exports.addReplaceInfinityFromToIndex = addReplaceInfinityFromToIndex;
+exports.cartesianProduct = cartesianProduct;
