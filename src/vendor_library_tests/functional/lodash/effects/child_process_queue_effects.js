@@ -59,7 +59,7 @@ const spawnModulesTraversingProcess = (taskProcessingContext, pathToTraverse) =>
         lastChildProcessIndex += 1;
 
         const processName = `child_${lastChildProcessIndex}`;
-        const pathToProcessFile = joinTwoPaths(__dirname, './../child_proc_test.js');
+        const pathToProcessFile = joinTwoPaths(__dirname, './../processes/child_modules_traverse_process');
         const childProcessLink = fork(pathToProcessFile );
 
         childProcessesMap.set(processName, childProcessLink);

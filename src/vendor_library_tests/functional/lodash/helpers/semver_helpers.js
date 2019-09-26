@@ -16,6 +16,7 @@ const {
     cond,
     all,
     any,
+    includes,
     curry,
     pipe,
     over,
@@ -27,6 +28,7 @@ const {
     takeWhile,
     dropWhile,
     trim,
+    toLower,
     split,
     replace,
     compact,
@@ -42,12 +44,6 @@ const {
     SEMVER_SINGLE_DELIMETER_REG_EXP,
     SEMVER_PRERELEASE_REG_EXP,
     SEMVER_OPERATOR_TO_VERSION_REG_EXP,
-
-
-
-    SEMVER_OPERATOR_REG_EXP,
-    SEMVER_VERSION_REG_EXP,
-    SEMVER_OPERATOR_AND_VERSION_REG_EXP,
 } = require('./../constants/semver_regexp_constants');
 
 const {
@@ -132,37 +128,67 @@ const performCaretOperatorOnParsedVersion = cond([
     )],
 ]);
 
-const semverStringToParts = (prereleaseTagPartDelimiter, semverVersion) => {
-    const [semverVersionPart, semverPrereleaseTagPart] = split(prereleaseTagPartDelimiter, semverVersion);
-
-    return concat(
-        pipe(
-            replace(new RegExp('v|V', 'g'), ''),
-            replace(new RegExp('x|X', 'g'), '*'),
+const parsePrereleaseTag = (prereleaseTag) => {
+    return cond([
+        [isNil, constant([])],
+        [isEmpty, constant([])],
+        [stubTrue, pipe(
             split('.'),
-            map(
-                cond([
-                    [equals('*'), constant(Infinity)],
-                    [stubTrue, parseInt]
-                ])),
-            )
-        (semverVersionPart),
-        compact(semverPrereleaseTagPart)
-    );
+            cond([
+                [
+                    parts => gte(size(parts), 2),
+                    parts => {
+                        const lastElmIndex = size(parts) - 1;
+                        parts[lastElmIndex] = parseInt(parts[lastElmIndex]);
+
+                        return parts;
+                    }
+                ],
+                [stubTrue, identity],
+            ])
+        )]
+    ])(prereleaseTag)
 };
 
+const semverStringToParts = (semverVersion) => {
+    const [semverVersionPart, semverPrereleaseTagPart] = cond([
+        [includes('-'), split('-')],
+        [includes('$'), split('$')],
+        [stubTrue, constant([semverVersion])],
+    ])(semverVersion);
+
+    return pipe(
+        replace(new RegExp('v|V', 'g'), ''),
+        replace(new RegExp('x|X', 'g'), '*'),
+        split('.'),
+        map(
+            cond([
+                [equals('*'), constant(Infinity)],
+                [stubTrue, parseInt]
+            ])),
+
+        parsedVersionParts => [
+            parsedVersionParts,
+            compact(
+                parsePrereleaseTag(semverPrereleaseTagPart)
+            )
+        ]
+    )(semverVersionPart);
+};
+
+// TODO: rework
 const normalizeSemverVersion = curry((maxSemverVersion, semverVersion) => {
-    const normalizedSemverVersion = semverStringToParts('$', semverVersion);
+    const normalizedSemverVersion = semverStringToParts(semverVersion);
 
     if (isNil(maxSemverVersion)) {
         return normalizedSemverVersion;
     }
 
-    if (size(split('$', semverVersion)) >= 2) {
+    if (size(semverVersion) >= 2) {
         return normalizedSemverVersion;
     }
 
-    const normalizedMaxSemverVersion = semverStringToParts('-', maxSemverVersion);
+    const normalizedMaxSemverVersion = semverStringToParts(maxSemverVersion);
 
     const indexesToReplace = takeWhile(
         pipe(
@@ -196,17 +222,37 @@ const extractSemverOperator = (singularRangePart) => {
 
 const extractSemverVersionParts = (npmMaximumVersion, singularRangePart) => {
     return pipe(
+        // trim whitespaces (just in case if there uncleared whitespace characters left)
         trim,
+        // remove sevmer operator (e.g. '>', '=', '~')
         replace(extractSemverOperator(singularRangePart), ''),
         normalizeSemverVersion(npmMaximumVersion),
     )(singularRangePart);
 };
 
-const compareTwoParsedSemverVersions = (firstVer, secondVer) => {
-    if (isNil(secondVer) || isEmpty(secondVer)) {
-        return 1;
+// -1 lower
+// 1 greater
+// 0 equal
+// null incomparable
+// TODO: add constants 'alpha', 'beta, etc. and use them
+const compareSemverPrereleaseTagParts = (firstTag, secondTag) => {
+    // if first part of the tag (e.q. 'alpha', 'beta') are not equal we cannot compare the second part
+    if (!equals(toLower(firstTag[0]), toLower(secondTag[0]))) {
+        return null;
     }
 
+    // compare second part (part that contains number)
+    return cond([
+        [spread(gt), constant(1)],
+        [spread(lt), constant(-1)],
+        [spread(equals), constant(0)],
+    ])([
+        firstTag[1],
+        secondTag[1]
+    ]);
+};
+
+const compareTwoParsedVersions = (firstVer, secondVer) => {
     return cond([
         [pipe(size, equals(0)), constant(0)],
         [stubTrue, pipe(
@@ -219,7 +265,7 @@ const compareTwoParsedSemverVersions = (firstVer, secondVer) => {
             cond([
                 [equals(true), constant(1)],
                 [equals(false), constant(-1)]
-            ])
+            ]),
         )],
     ])(
         dropWhile(
@@ -242,8 +288,42 @@ const compareTwoParsedSemverVersions = (firstVer, secondVer) => {
     );
 };
 
+const compareTwoParsedSemverRanges = (firstRange, secondRange) => {
+    // if second version (array that represents parsed version) is empty, than first version is greater then second one
+    if (isNil(secondRange) || isEmpty(secondRange)) {
+        return 1;
+    }
+
+    // extract `version number` parts of each version (not prerelease tag)
+    const firstVerRealPart = firstRange[0];
+    const secondVerRealPart = secondRange[0];
+
+    // extract `prerelease tag` parts of each version (not version number)
+    const firstVerPreTag = firstRange[1];
+    const secondVerPreTag = secondRange[1];
+
+    // compare real parts (version numbers)
+    const realPartComparisonResult = compareTwoParsedVersions(firstVerRealPart, secondVerRealPart);
+
+    if (!isEmpty(firstVerPreTag) && !isEmpty(secondVerPreTag)) {
+        const prereleaseTagPartComparisonResult = compareSemverPrereleaseTagParts(firstVerPreTag, secondVerPreTag);
+
+        if (realPartComparisonResult !== 0 || prereleaseTagPartComparisonResult === null) {
+            return null
+        } else {
+            return prereleaseTagPartComparisonResult;
+        }
+    } else {
+        return realPartComparisonResult;
+    }
+};
+
 const conditionIsFulfilledForTwoParsedSemverVersions = curry((condition, firstVer, secondVer) => {
-    const comparisonResult = compareTwoParsedSemverVersions(firstVer, secondVer);
+    const comparisonResult = compareTwoParsedSemverRanges(firstVer, secondVer);
+
+    if (isNil(comparisonResult)) {
+        return null;
+    }
 
     return cond([
         [equals('='),  constant(equals(comparisonResult, 0))],
@@ -255,33 +335,46 @@ const conditionIsFulfilledForTwoParsedSemverVersions = curry((condition, firstVe
 });
 
 const isSemverInHyphenRange = (lowerVer, higherVer, versionToCheck) => {
-    return conditionIsFulfilledForTwoParsedSemverVersions('>=', versionToCheck, lowerVer) &&
-    conditionIsFulfilledForTwoParsedSemverVersions('<=', versionToCheck, higherVer);
+    return cond([
+        // if there is some version that cannot be compared - just return false
+        [includes(null), constant(false)],
+        // check that version should between bounds
+        [stubTrue, all(equals(true))]
+    ])([
+        // check each bound
+        conditionIsFulfilledForTwoParsedSemverVersions('>=', versionToCheck, lowerVer),
+        conditionIsFulfilledForTwoParsedSemverVersions('<=', versionToCheck, higherVer)
+    ]);
 };
-
 
 // array
 const determineMaxVersionsByOperator = (operator, versionParts) => {
+    // apply range operator to version
     return cond([
-        [isEmpty, constant([versionParts])],
-        [equals('='),  constant([versionParts])],
-        [equals('>='), constant([versionParts, replaceToInfinityFromIndex(0, versionParts)])],
-        [equals('<='), constant([versionParts, decrementLastPartOfParsedVersion(versionParts)])],
-        [equals('>'),  constant([incrementLastPartOfParsedVersion(versionParts) ,replaceToInfinityFromIndex(0, versionParts)])],
-        [equals('<'),  constant([decrementLastPartOfParsedVersion(versionParts)])],
-        [equals('~'),  constant([performTildaOperatorOnParsedVersion(versionParts)])],
-        [equals('^'),  constant([performCaretOperatorOnParsedVersion(versionParts)])]
-    ])(operator)
+        // if no operator provided just return current version (e.g 2.3.4)
+        [isEmpty, constant([ versionParts ])],
+        // same as above
+        [equals('='),  constant([ versionParts ])],
+        [equals('>='), constant([ versionParts, [replaceToInfinityFromIndex(0, versionParts[0])] ])],
+        [equals('<='), constant([ versionParts, [decrementLastPartOfParsedVersion(versionParts[0])] ])],
+        [equals('>'),  constant([ [incrementLastPartOfParsedVersion(versionParts[0])], [replaceToInfinityFromIndex(0, versionParts[0])] ])],
+        [equals('<'),  constant([ [decrementLastPartOfParsedVersion(versionParts[0])] ])],
+        [equals('~'),  constant([ [performTildaOperatorOnParsedVersion(versionParts[0])] ])],
+        [equals('^'),  constant([ [performCaretOperatorOnParsedVersion(versionParts[0])] ])]
+    ])(operator);
 };
 
 const determineMaxVersionFromSingularRange = curry((npmMaximumVersion, currentMaxVersion, versionRange) => {
+    // if we do not have maximum version yet - just use current one
     if (isNil(currentMaxVersion)) {
         return versionRange;
     }
 
+    // extract parsed version part and string `prerelease` part (e.g. [ [1, 2, 1], ['beta.55'] ] or [ [0, 0, 1], [] ])
     const currentVersionParts = extractSemverVersionParts(npmMaximumVersion, versionRange);
-    const currentMaxVersionParts = extractSemverVersionParts(npmMaximumVersion, currentMaxVersion);
+    const currentMaxVersionParts = extractSemverVersionParts(null, currentMaxVersion);
 
+    // extract operator for each version ('<', '>', '~', '^', etc.)
     const currentVersionOperator = extractSemverOperator(versionRange);
     const currentMaxVersionOperator = extractSemverOperator(currentMaxVersion);
 
@@ -290,6 +383,10 @@ const determineMaxVersionFromSingularRange = curry((npmMaximumVersion, currentMa
 
     return pipe(
         cond([
+            [
+                includes(null),
+                constant(false),
+            ],
             [
                 product => equals(
                     size(product),
@@ -302,7 +399,9 @@ const determineMaxVersionFromSingularRange = curry((npmMaximumVersion, currentMa
             ],
             [
                 stubTrue,
-                all(equals(true))
+                // TODO: this seams wrong in some situations (e.q. 1.2.5 > (>1.2.3) - satisfies the range, but not exactly true since
+                //  >1.2.3 = 1.2.4 - Infinity)
+                any(equals(true))
             ],
         ]),
         cond([
@@ -317,17 +416,26 @@ const determineMaxVersionFromSingularRange = curry((npmMaximumVersion, currentMa
 });
 
 const determineMaxVersionFromHyphenRange = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
+    // trim whitespaces (just in case if there uncleared whitespace characters left)
     trim,
+    // split string into parts by `-`
     split('-'),
+    // remove  `empty` or `nil` elements from array
     compact,
+    // pick second part of range (e.g. if `1.2.3 - 2.0.0`, `2.0.0` will be selected)
     nth(1),
+    // compare current maximum version and second part of `hyphen` range and choose greater one
     determineMaxVersionFromSingularRange(npmMaximumVersion, currentMaxVersion),
 )(versionsRange));
 
 const determineMaxVersionFromSpaceRange = curry((npmMaximumVersion, currentMaxVersion, versionsRange) => pipe(
+    // trim whitespaces (just in case if there uncleared whitespace characters left)
     trim,
+    // split string into parts by `space` character
     split(' '),
+    // remove  `empty` or `nil` elements from array
     compact,
+    // find maximum version using current maximum version and all parts of `space` range (e.q. `>3.2.5 <4.0.0 >3.3.0` - each part will be checked)
     reduce(determineMaxVersionFromRangePart(npmMaximumVersion), currentMaxVersion),
 )(versionsRange));
 

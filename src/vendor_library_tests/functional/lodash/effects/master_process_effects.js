@@ -3,8 +3,6 @@
 // external imports
 const {stubTrue, equals, curry, cond} = require('lodash/fp');
 
-const {bind} = require('lodash/fp');
-
 // local imports
 const {
     INSERT_NEW_MODULE_NAME_CHILD_PROCESS,
