@@ -1,6 +1,7 @@
 'use strict';
 
 import numbers from './fundamentals/numbers';
+import truthyAndFalsy from './fundamentals/truthy_and_falsy';
 import bitwise from './fundamentals/operators/bitwise';
 import numberStringOrder from './fundamentals/operators/number_string_order';
 import classes from './fundamentals/classes';
@@ -53,6 +54,7 @@ import reversePolishNotation from './interview_tasks/reverse_polish_notation';
 async function run() {
     // fundamentals
     //await numbers();
+    await truthyAndFalsy();
     //await bitwise();
     //await numberStringOrder();
     //await classes();
@@ -79,7 +81,7 @@ async function run() {
     //await combinators();
     //await compose();
     //await basics();
-    await functor();
+    //await functor();
     //await monad();
     //await transducers();
     //await lenses();
