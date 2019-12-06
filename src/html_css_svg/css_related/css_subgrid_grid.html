@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Sub-Grid</title>
+
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+            margin: 0px;
+            padding: 0px;
+
+
+            font: .9em/1.2 Arial, Helvetica, sans-serif;
+        }
+
+        .form{
+            display: grid;
+        }
+
+        .field{
+            display: grid;
+            grid-gap: inherit;
+        }
+
+        @media screen and (min-width:500px){
+            @supports (grid-template-columns: subgrid){
+                .form{
+                    grid-template-columns: auto 1fr;
+                    grid-gap: 20px;
+                }
+
+                .field{
+                    grid-column: 1 / -1;
+                    grid-template-columns: subgrid;
+                }
+
+                input,textarea{
+                    /* lets the grid-gap take care of spacing instead */
+                    margin: 0;
+                }
+            }
+        }
+
+
+        h1{
+            grid-column: 1 / -1;
+            color: white;
+            text-align: center;
+        }
+
+        .form {
+            width: 80vw;
+            max-width: 32em;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .8) ;
+            padding: 20px;
+            font-weight: bold;
+            border-radius: 20px;
+        }
+
+        textarea{
+            min-height: 160px;
+        }
+
+        button{
+            border: 2px solid transparent;
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            grid-column: 1 / -1;
+        }
+
+        input, textarea{
+            margin: 0 0 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aligning Forms With Subgrid</h1>
+
+    <form action="#" class="form">
+        <label class="field">
+            Name
+            <input type="text" id="name"/>
+        </label>
+
+        <label class="field">
+            A longer field
+            <input type="text" id="long-field"/>
+        </label>
+
+        <label class="field">
+            Message
+            <textarea id="textarea"></textarea>
+        </label>
+        <button>Send</button>
+    </form>
+</body>
+</html>
