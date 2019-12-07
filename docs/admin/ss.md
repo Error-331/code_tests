@@ -100,3 +100,32 @@ To display all socket connections with a destination or source port of ssh run t
 ss -at '( dport = :22 or sport = :22 )'
 
 ```
+
+List All Open Ports in Linux:
+
+```
+
+sudo ss -tulpn
+
+```
+
+- t - enables listing of TCP ports;
+- u - enables listing of UDP ports;
+- l - prints only listening sockets;
+- n - shows the port number;
+- p - show process/program name;
+
+Watch TCP and UDP Open Ports in Real-Time:
+
+```
+
+sudo watch ss -tulpn
+
+```
+
+- t - enables listing of TCP ports;
+- u - enables listing of UDP ports;
+- l - prints only listening sockets;
+- n - shows the port number;
+- p - show process/program name;
+

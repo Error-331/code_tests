@@ -32,6 +32,11 @@ command &> outfile - standart/error output to new file (create/overwright);
 
 diff <(ls ./test_from/ | cut -d. -f1) <(ls ./test_to/ | cut -d. -f1) - compare two directories using process substitution
 
+lsbkl - list of block devices (and snap applications) and there mount points;
+mount /dev/sbd1 /path/to/your/dir - mount device to dir;
+df - file system disk space usage report;
+
+cal - show calendar;
 
 Drivers
 =======
@@ -39,7 +44,7 @@ Drivers
 ubuntu-drivers devices - show installed drivers
 ubuntu-drivers list - show installed drivers (short list)
 
-Nvidia settings (extendet)
+Nvidia settings (extended)
 --------------------------
 
 Run following command and reboot PC:
@@ -304,6 +309,9 @@ Misc
 
 telnet ny1-ovpn.purevpn.net 1723 - check if remote host working (should show blank screen);
 ip addr show tun0 | grep -E -o -m 1 '([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})' | head -1 - extract IP of the specific network interface (tun0 in the example);
+
+sudo service network-manager restart - restart network service;
+sudo systemctl restart NetworkManager.service - restart network service;
 
 -----------------------------------------------------------------------------------------------------------
 
