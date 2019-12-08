@@ -22,7 +22,8 @@ async function testCase1() {
     });
 }
 
-async function testCase2() {
+async function testCase2()
+{
     return new Promise((resolve) => {
         const testObservable2 = new Observable(subscriber => {
             subscriber.next('test val 1...');
