@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Division</title>
+</head>
+<body>
+    <h1>
+        Modules and components
+    </h1>
+
+    <script type="module">
+        import AppClass from './classes/app_class.js';
+
+        const app = new AppClass();
+        app.run();
+    </script>
+
+    <template id="long-division-app-main-tpl">
+        <div>
+            <h1>
+                Long division
+            </h1>
+        </div>
+    </template>
+
+    <long-division-app/>
+</body>
+</html>
