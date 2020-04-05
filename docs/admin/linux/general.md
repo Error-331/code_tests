@@ -1,5 +1,6 @@
-System
-======
+# General
+
+## System
 
 systemctl restart pptpd - restart pptpd service;
 printenv - print all environment variables;
