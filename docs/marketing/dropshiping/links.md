@@ -6,6 +6,8 @@ http://www.gornakov.com/articles/dropshipping-ot-a-do-ya/ - Дропшиппин
 
 https://www.oberlo.com/blog/amazon-dropshipping-guide - Amazon Dropshipping Guide;
 
+https://chatra.io/ru/blog/dropshipping-s-aliexpress-podrobnaya-instruktsiya/ - статья по дропшипингу AliExpress;
+
 ## Services
 
 https://www.merchantwords.com/ - сервис ключевых слов и прочего для дропшиперов;
@@ -13,6 +15,12 @@ https://www.merchantwords.com/ - сервис ключевых слов и пр�
 https://feedcheck.co/ - сервис агрегирования отзывов;
 
 https://www.oberlo.com/ - облегчает дропшипинг;
+
+## Plugins
+
+https://apps.shopify.com/oberlo
+
+https://chrome.google.com/webstore/detail/expressfy-import-product/eckcohdilojamegecdpkdebokgobibmg
 
 ## Amazon
 
