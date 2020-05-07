@@ -27,6 +27,17 @@
 
 - https://b2bslots.com/about/blog/top-geo-gde-bolshe-vsego-razvit-onlajn-gembling/ - Топ ГЕО, где больше всего развит онлайн-гемблинг'
 
+## Рейтинги
+
+- https://affgambler.ru/ - сдесь собраны разнообразные рейтинги по онлайн казино, игровым автоматам, лицензиям и прочему
+
+## Игры
+
+### Слоты
+
+- https://affgambler.ru/slots/jammin-jars/ - особенный автомат
+- https://affgambler.ru/igrovye-avtomaty-megaways/ - особенный автомат
+
 # Беттинг
 
 ## Разработчики
