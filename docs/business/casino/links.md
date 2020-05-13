@@ -14,6 +14,7 @@
 - https://www.playtech.com/ - разработка систем для казино;
 - https://www.microgaming.co.uk/ - разработка систем для казино;
 - https://www.novomatic.com/en - разработка систем для казино;
+- https://www.gamblinginsider.com/ - разработчик игр (интересно);
 
 ## Прием платежей
 
@@ -25,7 +26,8 @@
 
 ## Статьи
 
-- https://b2bslots.com/about/blog/top-geo-gde-bolshe-vsego-razvit-onlajn-gembling/ - Топ ГЕО, где больше всего развит онлайн-гемблинг'
+- https://b2bslots.com/about/blog/top-geo-gde-bolshe-vsego-razvit-onlajn-gembling/ - Топ ГЕО, где больше всего развит онлайн-гемблинг';
+- https://www.gamblinginsider.com/ - сайт о Гэмблинге на английском;
 
 ## Рейтинги
 

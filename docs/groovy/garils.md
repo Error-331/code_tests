@@ -90,5 +90,5 @@ grails war
 - servletContext - shared state; 
 - session - session related data (cookies, etc.);
 - request - request object (GET parameters);
-- params- POST parameters;
+- params - POST parameters;
 - flash - a temporary storage map that stores objects within the session for the next request and the next request only;
