@@ -1,0 +1,148 @@
+#template {
+	color: #FFF;
+	position: relative;
+}
+
+#page_header{
+    
+}
+
+#logo{
+	left: 3%;
+	top: 0%;
+	position: absolute;
+	width: 95%;
+	height: 15%;
+    display: inline-block;
+    float: left;
+}
+
+#page_header h1{
+    display: inline-block;
+    float: left;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCondensedBlack';
+    src: url('../fonts/HelveticaNeue-CondensedBlack.eot');
+    src: url('../fonts/HelveticaNeue-CondensedBlack.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/HelveticaNeue-CondensedBlack.woff') format('woff'),
+         url('../fonts/HelveticaNeue-CondensedBlack.ttf') format('truetype'),
+         url('../fonts/HelveticaNeue-CondensedBlack.svg#1942_report1942_report') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'journalregular';
+    src: url('../fonts/journal-webfont.eot');
+    src: url('../fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/journal-webfont.woff2') format('woff2'),
+         url('../fonts/journal-webfont.woff') format('woff'),
+         url('../fonts/journal-webfont.ttf') format('truetype'),
+         url('../fonts/journal-webfont.svg#journalregular') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue-Bold';
+    font-weight: normal;
+    font-style: normal;
+	src: url('../fonts/HelveticaNeueBold.ttf');
+
+}
+
+#main {   
+    top: 15%;
+    left: 2.8%;
+    width: 95.1%;
+    height: 80.6%;
+    position: absolute;
+}
+
+#main .sections{position: absolute;}
+#main .sections > div{position: absolute;}
+
+.head-title{
+	font-family: 'HelveticaNeueCondensedBlack';
+	font-weight:bold;
+	color:#1b6e68;
+	font-size: 150%
+}
+ 
+
+.clear{clear:both;}
+
+.titles{color:#e29467;font-size: 140%;font-family: 'HelveticaNeue-Bold';left: 5.7%;top: 2%;height:16.5%;position:relative;}
+
+
+.event-item-left {font-family: 'HelveticaNeueCondensedBlack';left:13.5%;width:73%;height:20%; position:relative;}
+.event-item-left > div:first-child{float:left;width:64%; font-size: 100%;}
+.event-item-left > div:last-child{float:left;width:30%; font-size: 100%;}
+
+.event-item-right {font-family: 'HelveticaNeueCondensedBlack';left: 9%;width: 77.5%;position: relative;height: 11%;}
+.event-item-right > div:first-child{float:left;width:60%; font-size: 100%;}
+.event-item-right > div:last-child{float:left;width:40%; font-size: 100%;}
+
+.directory .titles{height: 9%;left: 4%;top: 1.2%;}
+
+.title-bottom {
+	font-size:100%;
+}
+
+.name {
+	font-family: 'HelveticaNeueCondensedBlack';
+	font-size: 90%;
+	margin-top: 2.5%;
+	margin-left: 8%;
+	letter-spacing: 1%;
+	word-spacing: 0%;
+}
+
+.description {
+	font-family: 'HelveticaNeueCondensedBlack';
+	font-size : 86%;
+	margin-top: 3.5%;
+	margin-left: 7.5%;
+	letter-spacing: 0.05px;
+	word-spacing: 1px;
+}
+
+.congratilations{
+	font-family: 'journalregular';
+	float:left;
+	margin-top: 3.5%;
+	margin-left: 8.4%;
+	font-size: 170%;
+	position:relative;
+	letter-spacing: 3px;
+}
+
+#main .sections.events {width: 39%;height: 61.1%;}
+#main .sections.events > div{width: 97%; height: 96%;left: 1.5%;top: 2%;}
+#main .sections.events > div > div.mrss_title {height: 15%;overflow: hidden;}
+#main .sections.events > div > div.mrss_title > div {height: 100%;}
+#main .sections.events > div > div.mrss_title h1 {top: 11%;width: 90%;overflow: hidden;height: 100%;text-overflow: ellipsis;white-space: nowrap;}
+#main .sections.events > div > div.mrss_desc {height: 83%;overflow: hidden;}
+
+#main .sections.directory {left:40%;width: 60%; height: 100%;}
+#main .sections.directory > div{width: 98%; height: 97%;left: 1%;top: 1.5%;}
+#main .sections.directory  > div > div.mrss_title {height: 8.8%;overflow: hidden;}
+#main .sections.directory  > div > div.mrss_title > div {height: 100%;}
+#main .sections.directory  > div > div.mrss_title h1 {top: 11%;width: 93%;overflow: hidden;height: 100%;text-overflow: ellipsis;white-space: nowrap;} 
+#main .sections.directory > div > div.mrss_desc{height: 91%;overflow: hidden;}
+
+#main .sections.employee {width: 39%; height: 36%;top:64%;overflow: hidden;word-wrap: normal;}
+#main .sections.employee > div{width: 97%; height: 94%;left: 1.5%;top: 0.9%;}
+#main .sections.employee .block_mrss {overflow: hidden; position: relative;top: 3.2%;height: 100%;}
+#main .sections.employee div.photo {display: inline-block;/*height: 87%;*/position: relative;max-width: 37%;float: left;padding-top: 2.8%;padding-left: 2.8%;}
+#main .sections.employee div.photo > img {max-height: 100%; max-width: 100%; }
+#main .sections.employee .block_mrss h1 ,
+#main .sections.employee .block_mrss div.name, 
+#main .sections.employee .block_mrss div.description, 
+#main .sections.employee .block_mrss div.congratilations{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+#main .sections.employee .block_mrss div.congratilations {width: 95%;}
+/*#main .sections.employee > div img{padding-top: 3%;padding-left: 3%;}*/
+
