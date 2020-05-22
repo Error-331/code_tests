@@ -72,13 +72,16 @@ control information to determine if and how the connection should be set up;
 
 - Personal area network (PAN) - very small LAN with a range of only a few feet;
 
-### Misc
+## Misc
 
 - Circuit-switched networking technologies are inherently connection-oriented, but not all connection-oriented technologies use circuit switching. Logical connection-oriented protocols can be implemented on 
 top of packet-switching networks to provide higher-layer services to applications that require connections;
 
+- Hardware devices generally implement multiple layers of the OSI model in addition to the physical layer (Ethernet network interface card performs functions at both the physical layer and the data link layer);
 
-### Terms
+- Sockets is not a protocol, but rather a programming method;
+
+## Terms
 
 - Packet - a message sent by protocols operating at the network layer of the OSI Reference Model, synonymous to datagram (network layer);
 - Frame - This term is most commonly associated with messages that travel at low levels of the OSI Reference Model (mostly link layer);
