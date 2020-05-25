@@ -2,6 +2,8 @@
 
 ## Physical Layer (Layer 1)
 
+Electrical or light signals sent between local devices.
+
 ### General
 
 - defines a number of network functions in addition to interfaces with hardware cables and cards;
@@ -27,6 +29,8 @@
 - Topology and Physical Network Design;
 
 ## Data Link Layer (Layer 2)
+
+Low-level data messages between local devices.
 
 ### General
 
@@ -58,19 +62,19 @@
 
 - Ethernet cards;
 - Token Ring cards;
-
-### Related technologies
-
-- Ethernet;
-- Token Ring;
-- FDDI (plus CDDI);
+- IEEE 802.2 LLC;
+- IEEE 802.11 (WLAN, Wi-Fi);
+- FDDI;
+- CDDI;
 - HomePNA;
-- IEEE 802.11;
+- HomeRF;
 - Asynchronous Transfer Mode (ATM);
 - TCP/IP’s Serial Line Interface Protocol (SLIP);
 - TCP/IP’s Point-to-Point Protocol (PPP);
 
 ## Network Layer (Layer 3)
+
+Messages between local or remote devices.
 
 ### General
 
@@ -94,9 +98,15 @@
 
 ### Related technologies
 
+- IP; 
+- IPv6; 
 - IPsec;
 - IP NAT;
 - Mobile IP;
+- DLC;
+- PLP;
+- RIP;
+- BGP;
 - Internet Control Message Protocol (ICMP);
 - Novell Internetworking Packet Exchange (IPX) protocol;
 
@@ -106,6 +116,8 @@
 - brouters (switches);
 
 ## Transport Layer (Layer 4)
+
+Communication between software processes.
 
 ### General
 
@@ -141,6 +153,8 @@ then demultiplex it from the incoming stream of datagrams, and direct each one t
 
 ## Session Layer (Layer 5)
 
+Sessions between local or remote devices.
+
 ### General
 
 - provide the necessary means for setting up, managing, and ending sessions (through APIs);
@@ -149,9 +163,12 @@ then demultiplex it from the incoming stream of datagrams, and direct each one t
 
 - NetBIOS;
 - TCP/IP Sockets;
+- Named pipes;
 - Remote Procedure Calls (RPCs);
 
 ## Presentation Layer (Layer 6)
+
+Encoded user data.
 
 ### General
 
@@ -170,8 +187,13 @@ then demultiplex it from the incoming stream of datagrams, and direct each one t
 ### Related technologies
  
 - Secure Sockets Layer (SSL) protocol;
+- Shells;
+- Redirectors;
+- MIME;
 
 ## Application Layer (Layer 7)
+
+Application data.
 
 ### General
 
@@ -185,7 +207,9 @@ then demultiplex it from the incoming stream of datagrams, and direct each one t
 
 - HTTP; 
 - FTP; 
+- TFTP;
 - SMTP; 
+- DNS;
 - DHCP; 
 - NFS;
 - Telnet;
@@ -193,3 +217,6 @@ then demultiplex it from the incoming stream of datagrams, and direct each one t
 - POP3; 
 - NNTP;
 - IRC;
+- BOOTP;
+- RMON;
+- IMAP;
