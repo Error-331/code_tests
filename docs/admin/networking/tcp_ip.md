@@ -1,17 +1,80 @@
-# TCP/IP
+# TCP/IP (suite)
 
-## TCP
+- uses its own four-layer architecture (which corresponds roughly to the OSI Reference Model);
 
-- used for applications that require the establishment of connections (as well as TCP’s other service features), such as FTP;
+- addressing system allows devices to be addressed regardless of the lower-level details of how each constituent network is constructed;
 
-## UDP
+- conceptually concerned more with connecting networks than with connecting devices;
 
-- used by other applications that don’t need connections or other features, but do need the faster performance that UDP can offer by not needing to make such connections before sending data;
+- TCP/IP routers enable data to be delivered between devices on different networks by moving it one step at a time from one network to the next;
 
-## Transport layer 
+- TCP/IP protocol suite is oriented around the notion of client/server network communication;
+
+## Important factors
+
+- Integrated Addressing System, TCP/IP includes within it (as part of IP primarily) a system for identifying and addressing devices on both small and large networks;
+
+- Design for Routing, TCP/IP is specifically designed to facilitate the routing of information over a network of arbitrary complexity;
+
+- Underlying Network Independence, TCP/IP operates primarily at layers 3 and above, and includes provisions to allow it to function on almost any lower-layer technology;
+
+- Scalability;
+
+- Open Standards and Development Process;
+
+- Universality Everyone uses TCP/IP because everyone uses it! This last point is, perhaps ironically, arguably the most important. Not only is TCP/IP the underlying language of the Internet, it is also used in most private networks today. Even former competitors to TCP/IP, such as Novell’s NetWare, now use TCP/IP to carry traffic.
+
+## OSI to TCP layers
+
+- 7 Application (OSI) - Application (TCP/IP);
+
+- 6 Presentation (OSI) - Application (TCP/IP);
+
+- 5 Session (OSI) - Application (TCP/IP);
+
+- 4 Transport (OSI) - (Host - to - Host) Transport (TCP/IP);
+
+- 3 Network (OSI)- Internet (TCP/IP);
+
+- 2 Data Link (OSI) - Network Interface (TCP/IP);
+
+- 1 Physical (OSI) - Hardware (TCP/IP);
+
+## Layers
+
+### Network Interface Layer 
+
+- where the actual TCP/IP protocols running at higher layers interface to the local network
+
+- Ethernet handles layer 2 (and layer 1) functions;
+ 
+- Serial Line Internet Protocol (SLIP) and the Point-to-Point Protocol (PPP), fill the gap between the network layer and the physical layer;
+
+### Internet Layer 
+
+- responsible for logical device addressing, data packaging, manipulation and delivery, and routing;
+
+### Host-to-Host Transport Layer 
+
+- facilitate end-to-end communication over an internetwork;
+
+- in charge of allowing logical connections to be made between devices that allow data to be sent either unreliably  or reliably;
+
+- identification of the specific source and destination application process;
+
+- can maintain a session;
 
 - TCP (connection-oriented);
 - User Datagram Protocol (UDP) (connectionless);
+
+### Application Layer 
+
+- broad layer, encompassing layers 5 through 7 in the OSI model;
+
+## The Internet Protocol (IP)
+
+- layer 3 protocol;
+- provides addressing, datagram routing, and other functions in an internetwork
 
 ## Summary  of the TCP/IP protocols
 
@@ -38,6 +101,30 @@
 - Determines the layer 3 address of a machine from its layer 2 address (superseded by BOOTP and DHCP);
 
 ### Internet Layer (Layer 3)
+
+#### Internet Protocol (IP)
+
+- Provides encapsulation and connectionless delivery of transport layer messages over a TCP/IP network;
+
+- Responsible for addressing and routing functions;
+
+#### Internet Protocol Version 6 (Pv6)
+
+- Provides encapsulation and connectionless delivery of transport layer messages over a TCP/IP network;
+
+- Responsible for addressing and routing functions;
+
+#### IP Network Address Translation (IP NAT)
+
+- Allows addresses on a private network to be automatically translated to different addresses on a public network;
+
+#### IP Security (IPsec)
+
+- Improve the security of IP transmissions;
+
+#### Internet Protocol Mobility Support
+
+- Resolves certain problems with IP associated with mobile devices;
 
 #### Internet Control Message Protocol (ICMP/ICMPv4, ICMPv6)
 
@@ -87,6 +174,10 @@
 
 - Ensures reliable and flow-controlled delivery of data using IP;
 
+- Used for applications that require the establishment of connections (as well as TCP’s other service features), such as FTP;
+
+- Responsible for reliable data transport between software processes on devices;
+
 #### User Datagram Protocol (UDP)
 
 - Severely stripped-down version of TCP;
@@ -96,6 +187,8 @@
 - Less reliable than TCP;
 
 - Less flow-management features than in TCP;
+
+- Used by applications that don’t need connections or other features, but do need the faster performance that UDP can offer by not needing to make such connections before sending data;
 
 ### Application Layer (Layer 5/6/7)
 
