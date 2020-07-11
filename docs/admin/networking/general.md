@@ -32,7 +32,6 @@ control information to determine if and how the connection should be set up;
 - UDP;
 - IP;
 
-
 #### Connection-Oriented protocols
 
 - Asynchronous Transfer Mode (ATM)

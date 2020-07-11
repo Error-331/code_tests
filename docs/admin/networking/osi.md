@@ -182,7 +182,7 @@ Encoded user data.
 
 - Compression(and decompression);
 
-- Encryption,
+- Encryption;
  
 ### Related technologies
  

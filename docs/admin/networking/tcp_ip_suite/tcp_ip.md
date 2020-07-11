@@ -58,13 +58,14 @@
 
 - facilitate end-to-end communication over an internetwork;
 
-- in charge of allowing logical connections to be made between devices that allow data to be sent either unreliably  or reliably;
+- in charge of allowing logical connections to be made between devices that allow data to be sent either unreliably or reliably;
 
 - identification of the specific source and destination application process;
 
 - can maintain a session;
 
 - TCP (connection-oriented);
+
 - User Datagram Protocol (UDP) (connectionless);
 
 ### Application Layer 
