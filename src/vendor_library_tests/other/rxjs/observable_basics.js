@@ -1,6 +1,6 @@
 'use strict';
 
-import { Observable } from 'rxjs';
+import { Observable, interval } from 'rxjs';
 
 async function testCase1() {
     return new Promise((resolve) => {
@@ -74,14 +74,21 @@ async function testCase3()
             };
         });
 
-        const testObserver3 = testObservable3.subscribe({
-            next(nextVal) { console.log(`Next val (observer 3): ${nextVal}`) },
-            error(error) { console.error('Error occurred (observer 3): ' + error); },
-            complete() { console.log('Flow is ended (observer 3)'); } // may not be called if unsubscribed
+        const testObserver31 = testObservable3.subscribe({
+            next(nextVal) { console.log(`Next val (observer 3-1): ${nextVal}`) },
+            error(error) { console.error('Error occurred (observer 3-1): ' + error); },
+            complete() { console.log('Flow is ended (observer 3-1)'); } // may not be called if unsubscribed
+        });
+
+        const testObserver32 = testObservable3.subscribe({
+            next(nextVal) { console.log(`Next val (observer 3-2): ${nextVal}`) },
+            error(error) { console.error('Error occurred (observer 3-2): ' + error); },
+            complete() { console.log('Flow is ended (observer 3-2)'); } // may not be called if unsubscribed
         });
 
         setTimeout(() => {
-            testObserver3.unsubscribe();
+            testObserver31.unsubscribe();
+            testObserver32.unsubscribe();
         }, 3200);
     });
 }
@@ -178,9 +185,35 @@ async function testCase5()
     });
 }
 
+async function testCase6()
+{
+    return new Promise((resolve) => {
+        const testObservable61 = interval(1000);
+        const testObservable62 = interval(1000);
+
+        const testObserver61 = testObservable61
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 6-1): ${nextVal}`);
+            });
+
+        const testObserver62 = testObservable62
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 6-2): ${nextVal}`);
+            });
+
+        testObserver61.add(testObserver62);
+
+        setTimeout(() => {
+            testObserver61.unsubscribe();
+            resolve();
+        }, 5000);
+    });
+}
+
+
 export default async () => {
-    console.log('"RxJS" library tests (basics)');
-    console.log('=============================');
+    console.log('"RxJS" library tests (observable basics)');
+    console.log('========================================');
     console.log('');
 
     console.log('Case 1 (simple single observable/observer):');
@@ -193,12 +226,12 @@ export default async () => {
     await testCase2();
 
     console.log('');
-    console.log('Case 3 (Two out of sync observable/observer, periodic updates):');
+    console.log('Case 3 (Two sync observable/observer, periodic updates):');
     console.log('');
     await testCase3();
 
     console.log('');
-    console.log('Case 4 (Two sync observable/observer (second began to listen later), periodic updates):');
+    console.log('Case 4 (Two out of sync observable/observer (second began to listen later), periodic updates):');
     console.log('');
     await testCase4();
 
@@ -206,6 +239,11 @@ export default async () => {
     console.log('Case 5 (Two sync observable/observer (both began to listen later), periodic updates):');
     console.log('');
     await testCase5();
+
+    console.log('');
+    console.log('Case 6 (Two observables/observer, one added to another , periodic updates):');
+    console.log('');
+    await testCase6();
 
     console.log('');
     console.log('--------------------------------------------------------');

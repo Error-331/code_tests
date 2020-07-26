@@ -11,7 +11,7 @@ import mori from './functional/mori';
 
 import flutureSanctuary from './functional/fluture_sanctuary';
 
-import rxjs from '../../../code_tests_all/src/vendor_library_tests/other/rxjs';
+import rxjs from './other/rxjs';
 
 async function run() {
     // date libraries
