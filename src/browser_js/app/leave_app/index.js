@@ -1,6 +1,5 @@
 'use strict';
 
-
 const windowInnerWidth = window.innerWidth;
 const rightBorder = windowInnerWidth - 200;
 

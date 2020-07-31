@@ -14,4 +14,18 @@
 
 - https://www.amazon.com/Alfa-AWUSO36NH-Wireless-Long-Rang-Network/dp/B0035APGP6/ref=as_li_ss_tl?ie=UTF8&qid=1496985484&sr=8-1&keywords=AWUS036NH&linkCode=sl1&tag=kennyvn-20&linkId=79a987c53218eafc3ed68c8e0319cd42&linkCode=w61&imprToken=E65VZ.S.nRgykfsD2ENgCw&slotNum=5 -
  ALFA AWUS036NH
+ 
+## Software
+
+- https://www.tcpdump.org/ - Tcpdump;
+- https://www.microsoft.com/en-us/Download/confirmation.aspx?id=4865 - Microsoft Net Mon;
+- https://landetective.com/download.html - LanDetective;
+- https://www.metageek.com/support/downloads/ - Chanalyzer;
+- https://www.ettercap-project.org/downloads.html - Ettercap;
+- https://www.netresec.com/?page=NetworkMiner - NetworkMiner;
+- https://www.telerik.com/fiddler - Fiddler;
+- https://www.wireshark.org/download.html - Wireshark;
+- https://www.kali.org/downloads/ - Kali Linux;
+- https://my.vmware.com/web/vmware/downloads - vmWare;
+- https://www.virtualbox.org/wiki/Downloads - Virtual Box;
 

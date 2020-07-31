@@ -210,7 +210,6 @@ async function testCase6()
     });
 }
 
-
 export default async () => {
     console.log('"RxJS" library tests (observable basics)');
     console.log('========================================');
