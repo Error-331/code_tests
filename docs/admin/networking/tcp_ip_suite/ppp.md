@@ -239,3 +239,203 @@ perform a cryptographic computation, and then checks to see if it gets the same 
 - Challenge - authenticator sends Challenge message (it has no inherent special meaning, the important thing is that both devices have the same Challenge message);
 - Response - the initiator uses its password to encrypt the challenge text, it then sends the encrypted challenge text as a Response back to the authenticator;
 - Success or Failure - the authenticator performs the same encryption on the challenge text and compares with received message;
+
+## PPP feature protocols
+
+### PPP Link Quality Monitoring and Reporting (LQM, LQR)
+
+Recognizing this need, the PPP suite includes a feature that allows devices to analyze the quality of the link between them. This is called PPP Link Quality Monitoring 
+or LQM. PPP is set up generically to allow any number of different monitoring functions to be used, but at present, there is only one, called Link Quality Reporting (LQR).
+
+#### LQR Setup
+
+- must be set up by LCP as part of the negotiation of basic link parameters; 
+- the device requests link monitoring by including the Quality Protocol configuration option in its Configure-Request frame;
+- the configuration option also specifies a reporting period; 
+- a number of counters are set up that keep track of various link statistics;
+- a timer is used to regulate the sending of quality reports over the link;
+- each time the timer expires, a link quality report is generated and sent in a PPP frame over the link using the special PPP Protocol field hexadecimal value 0xC025;
+
+##### Tracked statistics
+
+ The number of frames sent or received;
+ The number of octets (bytes) in all frames sent or received;
+ The number of errors that have occurred;
+ The number of frames that had to be discarded;
+ The number of link quality reports generated;
+
+#### Using Link Quality Reports
+
+ Some devices might decide to shut down a link if the absolute number of errors seen in any report reaches a certain threshold;
+ Some might look at the trend in successive reporting periods and take action if they detect certain trends, such as an increase in the rate of discarded frames;
+ Some devices might just log the information and take no action at all;
+
+### PPP Compression Control Protocol (CCP) and Compression Algorithms
+
+One of the biggest problems with serial links compared to many other types of layer 1 connections is that they are relatively slow. One way to improve 
+performance over serial links is to compress the data sent over the line. It is implemented using the following two distinct protocol components:
+
+- PPP Compression Control Protocol (CCP) - This protocol is responsible for negotiating and managing the use of compression on a PPP link;
+- PPP Compression Algorithms - A set of compression algorithms that perform the actual compression and decompression of data;
+
+#### CCP Operation: Compression Setup
+
+CCP is analogous to the Network Control Protocols (NCPs) that negotiate parameters specific to a network layer protocol sent on the link. CCP lets two devices 
+decide how they will compress data, in the same basic way. Similarly, just as each NCP is like a 'light' version of LCP, CCP is like a light version of LCP. 
+A CCP link is maintained independently of any NCP links. CCP uses the same subset of seven LCP message types that the NCPs use, and it adds two additional ones.
+
+- Link Configuration - The process of setting up compression and negotiating parameters is accomplished using Configure-Request, Configure-Ack, Configure-Nak, 
+and Configure-Reject messages, just as it is for LCP, except the configuration options are particular to CCP;
+
+- Link Maintenance - Code-Reject messages can be sent to indicate invalid code values in CCP frames, the two new message types are Reset-Request and Reset-Ack, 
+which are used to reset the compression (the CCP link) in the event of a detected failure in decompression;
+
+- Link Termination - A CCP link can be terminated using Terminate-Request and Terminate-Ack;
+
+##### CCP Configuration Options and Compression Algorithms
+
+The CCP configuration options begin with a Type value that indicates the compression algorithm. When the Type value is 0, this indicates that the option 
+contains information about a special, proprietary compression algorithm that isn’t covered by any RFC standards. Values from 1 to 254 indicate compression 
+algorithms that have been defined for use with CCP: 
+
+- 0 - Proprietary;
+- 1 and 2 - PPP Predictor Compression Protocol;
+- 17 - PPP Stac LZS Compression Protocol; 
+- 18 - Microsoft Point-to-Point Compression (MPPC) Protocol;
+- 19 - PPP Gandalf FZA Compression Protocol;
+- 21 - PPP BSD Compression Protocol;
+- 23 - PPP LZS-DCP Compression Protocol (LZS-DCP);
+- 26 - PPP Deflate Protocol;
+
+#### Compression Algorithm Operation: Compressing and Decompressing Data
+
+Transmitting device takes the data that would normally be put in the Information field of an uncompressed PPP frame and runs it through the compression 
+algorithm. To indicate that a frame has been compressed, the special value 0x00FD (hexadecimal) is placed in the PPP Protocol field. When compression is used 
+with multiple links and the links are compressed independently, a different value is used: 0x00FB. 
+
+Original Protocol value is prepended to the data before compression. When the data is decompressed, this value is used to restore the original Protocol field, 
+so the receiving device knows to which higher layer the data belongs. 
+
+In theory, a compression algorithm can put more than one PPP data frame into a compressed PPP data frame. Despite this, many, if not most, of the algorithms 
+maintain a one-to-one correspondence putting each PPP data frame into one compressed frame. 
+
+LCP frames are not compressed.
+
+### PPP Encryption Control Protocol (ECP) and Encryption Algorithms
+
+All data is normally sent in the clear (unencrypted), thereby making it easy for someone who intercepts it to read. PPP provides an optional feature that allows
+data to be encrypted and decrypted at the data link layer itself using two protocol components:
+ 
+- PPP Encryption Control Protocol (ECP) - responsible for negotiating and managing the use of encryption on a PPP link;
+- PPP Encryption Algorithms - family of encryption algorithms that perform the actual encryption and decryption of data;
+
+#### ECP Operation: Encryption Setup
+
+Once an ECP link is negotiated, devices can send encrypted frames between each other. When no longer needed, the ECP link can be terminated. The use of LCP 
+messages for each of the life stages of an ECP link is as follows:
+
+- Link Configuration - encryption and negotiating parameters is accomplished using Configure-Request, Configure-Ack, Configure-Nak, and Configure-Reject messages;
+
+- Link Maintenance - Code-Reject messages can be sent to indicate invalid code values in ECP frames, Reset-Request and Reset-Ack, are used to reset the 
+encryption (the ECP link) in the event of a detected failure in decryption;
+
+- Link Termination - ECP link can be terminated using Terminate-Request and Terminate-Ack;
+
+##### ECP Configuration Options and Encryption Algorithms
+
+Overall: 
+
+- first device sends a Configure-Request with one option for each of the encryption algorithms it supports;
+- second device compares this list of options to the algorithms it understands and checks for any details relevant to the option (to agree on how that algorithm should be used; 
+- second device replies (Ack, Nak, or Reject), and a negotiation ensues until the two devices come up with a common algorithm that they both understand;
+
+ECP:
+
+- ECP configuration options begin with a Type value that indicates the encryption algorithm;
+- when the Type value is 0, the option contains information about a special, proprietary encryption method that isn’t covered by any RFC standards;
+- values in the range from 1 to 254 indicate encryption algorithms that have been defined for use with ECP; 
+
+Possible values of the Type field:
+
+- 0 - Proprietary;
+- 2 - The PPP Triple-DES Encryption Protocol (3DESE);
+- 3 - The PPP DES Encryption Protocol, Version 2 (DESE-bis);
+
+#### Encryption Algorithm Operation: Encrypting and Decrypting Data
+
+- first device takes the data that would normally be put in the Information field of an unencrypted PPP frame and runs it through the encryption algorithm;
+- to indicate that a frame has been encrypted, the special value 0x0053 (hexadecimal) is placed in the PPP Protocol field;
+- when encryption is used with multiple links and the links are encrypted independently, a different value is used: 0x0055;
+- the original Protocol value is actually prepended to the data before encryption;
+- when the data is decrypted, this value is used to restore the original Protocol field;
+- each encrypted PPP data frame carries exactly one PPP data frame;
+
+### PPP Multilink Protocol (MP, MLP, MLPPP)
+
+It let`s you combine multiple links and use them as if they were one high-performance link. In ISDN, this technology is sometimes called bonding when done at 
+layer 1. For those hardware units that don’t provide this capability, PPP makes it available in the form of the PPP Multilink Protocol (MP).
+
+#### PPP Multilink Protocol Architecture
+
+MP is an optional feature of PPP, so it must be designed to integrate seamlessly into regular PPP operation. It is implemented as a new architectural sublayer 
+within PPP. 
+
+##### TCP/IP - PPP - PPP/MP stack
+
+- 7 - Application       - Upper layer protocols - Upper layer protocols
+- 6 - Application       - Upper layer protocols - Upper layer protocols
+- 5 - Application       - Upper layer protocols - Upper layer protocols
+- 4 - Transport         - TCP / UDP             - TCP / UDP
+- 3 - Internet          - IP                    - IP
+- 2 - Network interface - PPP                   - Multilink PPP - PPP 1           - PPP2
+- 1 - Network interface - Physical Link         -               - Physical link 1 - Physical link 2
+
+#### PPP Multilink Protocol Setup and Configuration
+
+This is done by LCP as part of the negotiation of basic link parameters in the link establishment phase (just like LQR). Three new configuration options are 
+defined to be negotiated to enable MP:
+
+- Multilink Maximum Received Reconstructed Unit - contains a value specifying the maximum size of the PPP frame it supports, if the device receiving this option
+does not support MP, it must respond with a Configure-Reject LCP message;
+
+- Multilink Short Sequence Number Header Format - allows devices to negotiate the use of a shorter sequence number field for MP frames, for efficiency;
+
+- Endpoint Discriminator - uniquely identifies the system;
+
+#### PPP Multilink Protocol Operation
+
+- Transmission - accepts datagrams (encapsulates them, decides how to transmit them);
+- Reception - takes the fragments received from all physical links and reassembles them into the original PPP frame;
+
+### PPP Bandwidth Allocation Protocol (BAP) and Bandwidth Allocation Control Protocol (BACP)
+
+In many applications, the amount of bandwidth needed varies over time. It often costs more to connect two or more layer 1 links than a single one, and it’s 
+not always needed. This enhancement to the basic MP package was provided in the form of a pair of new protocols:
+
+- Bandwidth Allocation Protocol (BAP) - describes a mechanism where either device communicating over an MP bundle of layer 1 links may request that a link be 
+added to the bundle or removed from it;
+
+- Bandwidth Allocation Control Protocol (BACP) - allows devices to configure how they want to use BAP;
+
+#### BACP Operation: Configuring the Use of BAP
+
+This is done using Configure-Request, Configure-Ack, Configure-Nak, and Configure- Reject messages. The only configuration option that is negotiated in BACP is 
+Favored-Peer, which is used to ensure that a problem does not occur if the two devices on the link try to send the same request at the same time. 
+
+#### BAP Operation: Adding and Removing Links
+
+BAP defines a set of messages that can be sent between devices to add or drop links to and from the current PPP bundle. It includes the tools necessary to have a 
+device actually initiate different types of physical layer connections (such as dialing a modem for bundled analog links or enabling an extra ISDN channel) when 
+more bandwidth is required. It then shuts them down when they’re no longer needed.
+
+BAP message types:
+
+- Call-Request and Call-Response - if one device on the link wants to add a link to the bundle and initiate the new physical layer link itself, it sends a 
+Call-Request frame to tell the other device, which replies with a Call-Response;
+
+- Callback-Request and Callback-Response - used when a device wants its peer (the other device on the link) to initiate the call to add a new link;
+
+- Call-Status-Indication and Call-Status-Response - after a device attempts to add a new link to the bundle it reports the status of the new link using the 
+Call-Status-Indication frame, the other device then replies with a Call-Status-Response;
+
+- Link-Drop-Query-Request and Link-Drop-Query-Response - one device uses these messages to request that a link be dropped, and the other uses them to respond to that request;
