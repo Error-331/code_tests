@@ -25,7 +25,6 @@ The conserve principle is about saving on compute and memory resources. This is
 done by using lazy evaluation techniques. The name lazy stems from the idea that we
 don't actually compute a new value until we're sure we actually need it.
 
-
 ## None blocking UI
 
 - make message processing short and/or cut down one message into several messages;

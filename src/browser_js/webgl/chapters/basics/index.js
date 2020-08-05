@@ -1,5 +1,11 @@
 'use strict';
 
+// external imports
+
+// local imports
+import {prepareDefaultWebGLContext} from './../../js/lib/context';
+
+// functions implementation
 function drawScene(webGLContext, webGLProgram, buffersData, canvasWidth, canvasHeight) {
   webGLContext.clearColor(0.0, 0.0, 0.0, 1.0);
   webGLContext.enable(webGLContext.DEPTH_TEST);
@@ -76,9 +82,12 @@ function initBuffers(webGLContext) {
 }
 
 const $canvas = document.getElementById('canvasWebGLContainer1');
-const webGLContext = getWebGLContext($canvas);
+prepareDefaultWebGLContext($canvas);
+
 const webGLProgram = initWebGLProgram(webGLContext);
 
 const buffersData = initBuffers(webGLContext);
 drawScene(webGLContext, webGLProgram, buffersData, 800, 600);
 renderLoop(webGLContext, webGLProgram, buffersData, 800, 600);
+
+// exports

@@ -20,17 +20,9 @@ gl.VERTEX_SHADER
 throws error
  */
 
-function createShaderFromString(webGLContext, shaderType, shaderCode) {
-  const shader = webGLContext.createShader(shaderType);
 
-  webGLContext.shaderSource(shader, shaderCode);
-  webGLContext.compileShader(shader);
 
-  const shaderCompileStatus = webGLContext.getShaderParameter(shader, webGLContext.COMPILE_STATUS);
-  R.unless(R.equals(true), () => {throw new Error(`Cannot create shader: ${webGLContext.getShaderInfoLog(shader)}`);})(shaderCompileStatus);
 
-  return shader;
-}
 
 function initWebGLProgram(webGLContext, vertexShaders, fragmentShaders) {
   vertexShaders = R.unless(R.is(Object), vShader => [vShader])(vertexShaders);
@@ -38,15 +30,8 @@ function initWebGLProgram(webGLContext, vertexShaders, fragmentShaders) {
 
   const webGLProgram = webGLContext.createProgram();
 
-  R.forEach(vShaderCode =>  {
-    const vShader = createShaderFromString(webGLContext, webGLContext.VERTEX_SHADER, vShaderCode);
-    webGLContext.attachShader(webGLProgram, vShader);
-  }, vertexShaders);
-
-  R.forEach(fShaderCode => {
-    const fShader = createShaderFromString(webGLContext, webGLContext.FRAGMENT_SHADER, fShaderCode);
-    webGLContext.attachShader(webGLProgram, fShader);
-  }, fragmentShaders);
+  prepareShaders(webGLContext.VERTEX_SHADER, vertexShaders);
+  prepareShaders(webGLContext.FRAGMENT_SHADER, fragmentShaders);
 
   webGLContext.linkProgram(webGLProgram);
 

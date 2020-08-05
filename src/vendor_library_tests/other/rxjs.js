@@ -1,64 +1,27 @@
 'use strict';
 
-import { Observable } from 'rxjs';
+import observableBasics from './rxjs/observable_basics';
 
-async function testCase1() {
-    return new Promise((resolve) => {
-        const testObservable1 = new Observable(subscriber => {
-            subscriber.next('test val 1...');
-            subscriber.next('test val 2...');
-            subscriber.next('test val 3...');
+import subjectBasics from './rxjs/subject_basics';
+import subjectAdvanced from './rxjs/subject_advanced';
 
-            const intervalId = setTimeout(() => {
-                subscriber.next('test val...timeout...');
-                subscriber.complete();
-                resolve();
-            }, 1500);
-        });
+import schedulerBasics from './rxjs/scheduler_basics';
 
-        const testObserver1 = testObservable1.subscribe(nextVal => {
-            console.log(`Next val (observer 1): ${nextVal}`);
-        });
-    });
-}
-
-async function testCase2()
-{
-    return new Promise((resolve) => {
-        const testObservable2 = new Observable(subscriber => {
-            subscriber.next('test val 1...');
-            subscriber.next('test val 2...');
-            subscriber.next('test val 3...');
-
-            const intervalId = setInterval(() => {
-                subscriber.next('test val...interval...');
-            }, 1000);
-
-            return function unsubscribe() {
-                clearInterval(intervalId);
-                console.log('Unsubscribing from observable 2...');
-                resolve();
-            };
-        });
-
-        const testObserver2 = testObservable2.subscribe(nextVal => {
-            console.log(`Next val (observer 2): ${nextVal}`);
-        });
-
-        setTimeout(() => {
-            testObserver2.unsubscribe();
-        }, 3100);
-    });
-}
+import rxjsOperators from './rxjs/operators';
 
 export default async () => {
     console.log('"RxJS" library tests');
     console.log('====================');
     console.log('');
 
-    await testCase1();
-    console.log('');
-    await testCase2();
+    //await observableBasics();
+
+   // await subjectBasics();
+   // await subjectAdvanced();
+
+    await schedulerBasics();
+
+    //await rxjsOperators();
 
     console.log('');
     console.log('--------------------------------------------------------');
