@@ -4,6 +4,8 @@ import { Subject } from 'rxjs';
 
 async function testCase1() {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testSubject1 = new Subject();
 
         testSubject1.subscribe(nextVal => {
@@ -19,12 +21,16 @@ async function testCase1() {
             testSubject1.complete();
             resolve();
         }, 1500);
+
+        // endregion
     });
 }
 
 async function testCase2()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testSubject2 = new Subject();
 
         const testObserver2 = testSubject2.subscribe(nextVal => {
@@ -46,12 +52,16 @@ async function testCase2()
             testObserver2.unsubscribe();
             resolve();
         }, 3100);
+
+        // endregion
     });
 }
 
 async function testCase3()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testSubject3 = new Subject();
 
         const testObserver31 = testSubject3.subscribe({
@@ -87,12 +97,16 @@ async function testCase3()
 
             resolve();
         }, 3200);
+
+        // endregion
     });
 }
 
 async function testCase4()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testSubject4 = new Subject();
 
         const testObserver4_1 = testSubject4.subscribe({
@@ -130,12 +144,17 @@ async function testCase4()
             testObserver4_2.unsubscribe();
             resolve();
         }, 10000);
+
+        // endregion
+
     });
 }
 
 async function testCase5()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testSubject5 = new Subject();
 
         let testObserver5_1;
@@ -174,6 +193,8 @@ async function testCase5()
             testObserver5_2.unsubscribe();
             resolve();
         }, 10000);
+
+        // endregion
     });
 }
 
