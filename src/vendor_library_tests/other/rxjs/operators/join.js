@@ -1,10 +1,13 @@
 'use strict';
 
-import { Observable, merge } from 'rxjs';
+import { Observable, merge, combineLatest } from 'rxjs';
+import { startWith } from 'rxjs/operators';
 
 async function testCase1()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable1_1 = new Observable(subscriber => {
             subscriber.next(1);
             subscriber.next(2);
@@ -51,6 +54,102 @@ async function testCase1()
         setTimeout(() => {
             testObserver1.unsubscribe();
         }, 5000);
+
+        // endregion
+    });
+}
+
+async function testCase2()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable2 = new Observable(subscriber => {
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.next(3);
+
+            let testValue = 4;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 2...');
+                resolve();
+            };
+        });
+
+        const testObserver2 = testObservable2
+            .pipe(startWith(-3, -2, -1, 0))
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 2): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver2.unsubscribe();
+        }, 5000);
+
+        // endregion
+    });
+}
+
+async function testCase3()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable3_1 = new Observable(subscriber => {
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.next(3);
+
+            let testValue = 4;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 3-1...');
+            };
+        });
+
+        const testObservable3_2 = new Observable(subscriber => {
+            subscriber.next(10);
+            subscriber.next(20);
+            subscriber.next(30);
+
+            let testValue = 40;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1200);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 3-2...');
+            };
+        });
+
+        const testObserver3 = combineLatest(testObservable3_1, testObservable3_2)
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 3): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver3.unsubscribe();
+
+            resolve();
+        }, 5000);
+
+        // endregion
     });
 }
 
@@ -62,6 +161,16 @@ export default async () => {
     console.log('Case 1 (single observer, two observables, merge operator):');
     console.log('');
     await testCase1();
+
+    console.log('');
+    console.log('Case 2 (single observer/observable, startWith operator):');
+    console.log('');
+    await testCase2();
+
+    console.log('');
+    console.log('Case 2 (one observer, two observables, combineLatest operator):');
+    console.log('');
+    await testCase3();
 
     console.log('');
     console.log('--------------------------------------------------------');
