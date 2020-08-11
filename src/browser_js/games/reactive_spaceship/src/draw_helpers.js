@@ -7,6 +7,8 @@ import { forEach } from 'ramda';
 import { SHOOT_SPEED } from './constants';
 import { getCanvasContext, getCanvasWidth, getCanvasHeight } from './dom';
 
+import { collision } from './game_object_helpers';
+
 // implementation
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -46,15 +48,32 @@ const drawSpaceShip = (x, y) => {
 };
 
 const drawEnemies = (enemiesData) => {
-    forEach(function(enemyData) {
+    forEach((enemyData) => {
         enemyData.y += 5;
         enemyData.x += getRandomInt(-15, 15);
-        drawTriangle(enemyData.x, enemyData.y, 20, '#00ff00', 'down');
+
+        if (!enemyData.isDead) {
+            drawTriangle(enemyData.x, enemyData.y, 20, '#00ff00', 'down');
+        }
+
+        forEach(function(shot) {
+            shot.y += SHOOT_SPEED;
+            drawTriangle(shot.x, shot.y, 5, '#00ffff', 'down');
+        }, enemyData.shots);
     }, enemiesData);
 };
 
-const drawHeroShots = (heroShotsData) => {
+const drawHeroShots = (heroShotsData, enemiesData) => {
     forEach((shotData) => {
+        for (var l=0; l < enemiesData.length; l++) {
+            var enemy = enemiesData[l];
+            if (!enemy.isDead && collision(shotData, enemy)) {
+                enemy.isDead = true;
+                shotData.x = shotData.y = -100;
+                break;
+            }
+        }
+
         shotData.y -= SHOOT_SPEED;
         drawTriangle(shotData.x, shotData.y, 5, '#ffff00', 'up');
     }, heroShotsData);
