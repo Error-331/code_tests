@@ -14,14 +14,14 @@ export default async () => {
     console.log('====================');
     console.log('');
 
-    //await observableBasics();
+    await observableBasics();
 
-   // await subjectBasics();
-   // await subjectAdvanced();
+    await subjectBasics();
+    await subjectAdvanced();
 
     await schedulerBasics();
 
-    //await rxjsOperators();
+    await rxjsOperators();
 
     console.log('');
     console.log('--------------------------------------------------------');

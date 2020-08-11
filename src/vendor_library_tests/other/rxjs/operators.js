@@ -1,5 +1,6 @@
 'use strict';
 
+import utilityOperators from './operators/utility';
 import transformationOperators from './operators/transformation';
 import filteringOperators from './operators/filtering';
 import aggregateOperators from './operators/aggregate';
@@ -11,11 +12,12 @@ export default async () => {
     console.log('================================');
     console.log('');
 
-    //await creationOperators();
+    await utilityOperators();
+    await creationOperators();
     await transformationOperators();
-   // await filteringOperators();
-   // await aggregateOperators();
-    //await joinOperators();
+    await filteringOperators();
+    await aggregateOperators();
+    await joinOperators();
 
     console.log('');
     console.log('--------------------------------------------------------');

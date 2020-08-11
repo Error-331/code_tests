@@ -6,6 +6,8 @@ import { multicast } from 'rxjs/operators';
 async function testCase1()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable1 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
@@ -40,8 +42,7 @@ async function testCase1()
                 error(error) { console.error('Error occurred (subject 1-2): ' + error); },
                 complete() { console.log('Flow is ended (subject 1-2)'); } // may not be called if unsubscribed
             });
-        }, 4000
-        );
+        }, 4000);
 
         const testObservable1Subscription = testObservable1.subscribe(testSubject1);
 
@@ -53,6 +54,8 @@ async function testCase1()
 
             resolve();
         }, 10000);
+
+        // endregion
     });
 }
 
