@@ -4,6 +4,7 @@
 import { forEach } from 'ramda';
 
 // local imports
+import { SHOOT_SPEED } from './constants';
 import { getCanvasContext, getCanvasWidth, getCanvasHeight } from './dom';
 
 // implementation
@@ -52,10 +53,18 @@ const drawEnemies = (enemiesData) => {
     }, enemiesData);
 };
 
+const drawHeroShots = (heroShotsData) => {
+    forEach((shotData) => {
+        shotData.y -= SHOOT_SPEED;
+        drawTriangle(shotData.x, shotData.y, 5, '#ffff00', 'up');
+    }, heroShotsData);
+};
+
 // exports
 export {
     drawTriangle,
     drawStars,
     drawSpaceShip,
     drawEnemies,
+    drawHeroShots,
 };

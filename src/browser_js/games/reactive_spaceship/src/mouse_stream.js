@@ -9,8 +9,10 @@ import { getCanvasElement } from './dom';
 
 // implementation
 const getMouseMoveObservable = memoizeWith(identity, () => fromEvent(getCanvasElement(), 'mousemove'));
+const getMouseClickObservable = memoizeWith(identity, () => fromEvent(getCanvasElement(), 'click'));
 
 // exports
 export {
-    getMouseMoveObservable
+    getMouseMoveObservable,
+    getMouseClickObservable,
 };

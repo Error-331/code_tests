@@ -2,7 +2,6 @@
 
 // external imports
 import { map, startWith } from 'rxjs/operators';
-
 import { identity, memoizeWith } from 'ramda';
 
 // local imports

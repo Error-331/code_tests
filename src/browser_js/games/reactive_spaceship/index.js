@@ -1,10 +1,13 @@
 'use strict';
 
 // external imports
+import { sampleTime } from 'rxjs/operators';
 
 // local imports
+import { STAR_SKY_SPEED } from './src/constants'
+
 import { initDOM } from './src/dom';
-import { drawStars, drawSpaceShip, drawEnemies } from './src/draw_helpers';
+import { drawStars, drawSpaceShip, drawEnemies, drawHeroShots } from './src/draw_helpers';
 
 import { getGameObservable } from './src/game_stream';
 
@@ -12,12 +15,15 @@ import { getGameObservable } from './src/game_stream';
 initDOM();
 
 getGameObservable()
+    .pipe(
+        sampleTime(STAR_SKY_SPEED)
+    )
     .subscribe({
-        next([starsArray, spaceship, enemiesData]) {
+        next([starsArray, spaceship, enemiesData, heroShotsData]) {
             drawStars(starsArray);
             drawSpaceShip(spaceship.x, spaceship.y);
-            console.log('ff', enemiesData);
             drawEnemies(enemiesData);
+            drawHeroShots(heroShotsData);
         },
         error(error) { console.error('Error during game cycle: ' + error); },
         complete() { console.log('Game cycle stopped'); }
