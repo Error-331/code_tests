@@ -4,27 +4,33 @@ import { Observable, interval } from 'rxjs';
 
 async function testCase1() {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable1 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
             subscriber.next('test val 3...');
 
-            const intervalId = setTimeout(() => {
+            setTimeout(() => {
                 subscriber.next('test val...timeout...');
                 subscriber.complete();
                 resolve();
             }, 1500);
         });
 
-        const testObserver1 = testObservable1.subscribe(nextVal => {
+        testObservable1.subscribe(nextVal => {
             console.log(`Next val (observer 1): ${nextVal}`);
         });
+
+        // endregion
     });
 }
 
 async function testCase2()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable2 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
@@ -37,7 +43,6 @@ async function testCase2()
             return function unsubscribe() {
                 clearInterval(intervalId);
                 console.log('Unsubscribing from observable 2...');
-                resolve();
             };
         });
 
@@ -47,13 +52,19 @@ async function testCase2()
 
         setTimeout(() => {
             testObserver2.unsubscribe();
+            resolve();
         }, 3100);
+
+        // endregion
+
     });
 }
 
 async function testCase3()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable3 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
@@ -70,7 +81,6 @@ async function testCase3()
             return function unsubscribe() {
                 clearInterval(intervalId);
                 console.log('Unsubscribing from observable 3...');
-                resolve();
             };
         });
 
@@ -89,13 +99,19 @@ async function testCase3()
         setTimeout(() => {
             testObserver31.unsubscribe();
             testObserver32.unsubscribe();
+
+            resolve();
         }, 3200);
+
+        // endregion
     });
 }
 
 async function testCase4()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable4 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
@@ -111,7 +127,6 @@ async function testCase4()
             return function unsubscribe() {
                 clearInterval(intervalId);
                 console.log('Unsubscribing from observable 4...');
-                resolve();
             };
         });
 
@@ -129,19 +144,24 @@ async function testCase4()
                 error(error) { console.error('Error occurred (observer 4-2): ' + error); },
                 complete() { console.log('Flow is ended (observer 4-2)'); } // may not be called if unsubscribed
             });
-
         }, 4000);
 
         setTimeout(() => {
             testObserver4_1.unsubscribe();
             testObserver4_2.unsubscribe();
+
+            resolve();
         }, 10000);
+
+        // endregion
     });
 }
 
 async function testCase5()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable5 = new Observable(subscriber => {
             subscriber.next('test val 1...');
             subscriber.next('test val 2...');
@@ -157,7 +177,6 @@ async function testCase5()
             return function unsubscribe() {
                 clearInterval(intervalId);
                 console.log('Unsubscribing from observable 5...');
-                resolve();
             };
         });
 
@@ -181,13 +200,19 @@ async function testCase5()
         setTimeout(() => {
             testObserver5_1.unsubscribe();
             testObserver5_2.unsubscribe();
+
+            resolve();
         }, 10000);
+
+        // endregion
     });
 }
 
 async function testCase6()
 {
     return new Promise((resolve) => {
+
+        // region actual example code
         const testObservable61 = interval(1000);
         const testObservable62 = interval(1000);
 
@@ -207,6 +232,40 @@ async function testCase6()
             testObserver61.unsubscribe();
             resolve();
         }, 5000);
+
+        // endregion
+    });
+}
+
+async function testCase7()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable7 = new Observable(subscriber => {
+            subscriber.next('test val 1...');
+            subscriber.next('test val 2...');
+            subscriber.next('test val 3...');
+
+
+            setTimeout(() => {
+                subscriber.error(new Error('Observable7 generic error...'));
+            }, 2000);
+
+            return function unsubscribe() {
+                console.log('Unsubscribing from observable 7...');
+            };
+        });
+
+        const testObserver7 = testObservable7.subscribe({
+            next(nextVal) { console.log(`Next val (observer 7): ${nextVal}`) },
+            error(error) { console.error('Error occurred (observer 7): ' + error); resolve();},
+            complete() { console.log('Flow is ended (observer 7)'); } // may not be called if unsubscribed
+        });
+
+
+
+        // endregion
     });
 }
 
@@ -243,6 +302,11 @@ export default async () => {
     console.log('Case 6 (Two observables/observer, one added to another , periodic updates):');
     console.log('');
     await testCase6();
+
+    console.log('');
+    console.log('Case 7 (One observable/observer, error is thrown after some time):');
+    console.log('');
+    await testCase7();
 
     console.log('');
     console.log('--------------------------------------------------------');
