@@ -10,10 +10,6 @@ import { getCanvasContext, getCanvasWidth, getCanvasHeight } from './dom';
 import { collision } from './game_object_helpers';
 
 // implementation
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 const drawTriangle = (x, y, width, color, direction) => {
     const canvasContext = getCanvasContext();
 
@@ -49,13 +45,10 @@ const drawSpaceShip = (x, y) => {
 
 const drawEnemies = (enemiesData) => {
     forEach((enemyData) => {
-        enemyData.y += 5;
-        enemyData.x += getRandomInt(-15, 15);
-
         if (!enemyData.isDead) {
             drawTriangle(enemyData.x, enemyData.y, 20, '#00ff00', 'down');
         }
-
+console.log('fff', enemyData.shots);
         forEach(function(shot) {
             shot.y += SHOOT_SPEED;
             drawTriangle(shot.x, shot.y, 5, '#00ffff', 'down');

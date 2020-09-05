@@ -1,7 +1,7 @@
 'use strict';
 
 // external imports
-import { sampleTime, takeWhile } from 'rxjs/operators';
+import { sampleTime, takeWhile, mergeMap } from 'rxjs/operators';
 
 // local imports
 import { STAR_SKY_SPEED } from './src/constants'
@@ -11,6 +11,9 @@ import { drawStars, drawSpaceShip, drawEnemies, drawHeroShots } from './src/draw
 import { isGameOver } from './src/game_object_helpers';
 
 import { getGameObservable } from './src/game_stream';
+import {combineLatest, of} from "rxjs";
+import {getEnemyTransformObservableCreator} from './src/enemy_stream';
+
 
 // implementation
 initDOM();
@@ -18,8 +21,13 @@ initDOM();
 getGameObservable()
     .pipe(
         sampleTime(STAR_SKY_SPEED),
-        takeWhile(([starsArray, spaceship, enemiesData]) => isGameOver(spaceship, enemiesData) === false)
-    )
+        takeWhile(([starsArray, spaceship, enemiesData]) => isGameOver(spaceship, enemiesData) === false),
+        mergeMap(
+            ([starsArray, spaceship, enemiesData, heroShotsData]) => {
+                return combineLatest(of(starsArray), of(spaceship), getEnemyTransformObservableCreator(enemiesData), of(heroShotsData));
+            }
+        )
+    ) // [starsArray, spaceship, enemiesData, heroShotsData]
     .subscribe({
         next([starsArray, spaceship, enemiesData, heroShotsData]) {
             drawStars(starsArray);

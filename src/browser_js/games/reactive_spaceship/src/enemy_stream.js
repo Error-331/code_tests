@@ -1,19 +1,25 @@
 'use strict';
 
 // external imports
-import { interval } from 'rxjs';
-import { scan } from 'rxjs/operators';
+import { interval, of } from 'rxjs';
+import { scan, map as rxMap, mergeMapTo } from 'rxjs/operators';
 
-import { identity, append, filter, pipe, memoizeWith, last } from 'ramda';
+import { identity, append, filter, map, pipe, memoizeWith, last } from 'ramda';
 
 // local imports
 import { ENEMY_FREQUENCY, ENEMY_SHOOT_FREQUENCY } from './constants';
+import EnemyShotClass from './entities/enemy_class';
 import { getCanvasWidth } from './dom';
 
 import { isEnemyObjectVisible } from './game_object_helpers';
 
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 // implementation
-const getEnemyObservable = memoizeWith(identity, () => interval(ENEMY_FREQUENCY)
+const getEnemyObservable = memoizeWith(identity, () =>
+    interval(ENEMY_FREQUENCY)
     .pipe(
         scan(enemiesData => {
             return pipe(
@@ -25,30 +31,33 @@ const getEnemyObservable = memoizeWith(identity, () => interval(ENEMY_FREQUENCY)
                         }
                     )
                 ),
-                append({
-                    x: parseInt(Math.random() * getCanvasWidth()),
-                    y: -30,
-                    shots: [],
-                }),
-
+                append(new EnemyShotClass()),
                 (currentEnemiesData) => {
-                    interval(ENEMY_SHOOT_FREQUENCY).subscribe(() => {
-                        const lastEnemy = last(currentEnemiesData);
+                    const lastEnemy = last(currentEnemiesData);
+                    const shootGeneratorObservable = interval(ENEMY_SHOOT_FREQUENCY).subscribe(lastEnemy);
 
-                        if (!lastEnemy.isDead) {
-                            lastEnemy.shots.push({ x: lastEnemy.x, y: lastEnemy.y });
-                        }
-
-                        lastEnemy.shots = lastEnemy.shots.filter(isEnemyObjectVisible);
-                    });
+                    lastEnemy.addShotsGeneratorObservable(shootGeneratorObservable);
 
                     return currentEnemiesData;
                 }
             )(enemiesData);
-        }, [])
+        }, []),
     ));
+
+const getEnemyTransformObservableCreator = (enemiesData) =>
+    of(enemiesData)
+        .pipe(
+            rxMap(map(enemyData => {
+                enemyData.y += 5;
+                enemyData.x += getRandomInt(-15, 15);
+
+                return enemyData;
+            })),
+        );
+
 
 // exports
 export {
-    getEnemyObservable
+    getEnemyObservable,
+    getEnemyTransformObservableCreator,
 }

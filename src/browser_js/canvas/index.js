@@ -69,7 +69,7 @@ const case4 = () => {
     context.fillText(textMessage, canvas.width / 2, 100);
     context.strokeText(textMessage, canvas.width / 2, 100);
 
-    context.strokeStyle = 'grau';
+    context.strokeStyle = 'gray';
     context.lineWidth = 2;
 
     context.beginPath();
