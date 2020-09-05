@@ -4,14 +4,14 @@
 
 - install putty;
 
-- install pagente;
+- install pageant;
 
 - install plink;
 
-- convert ssh key;
+- convert ssh key (`puTTYgen`);
 
-- add env var: `GIT_SSH C:\Users\TestUser\Downloads\plink.exe`;
+- add env var: `GIT_SSH C:\Users\TestUser\Downloads\plink.exe` (important);
 
-- start pagent;
+- start pageant;
 
 - add key using `plink -v git@git.somedomain.com` (cmd);

