@@ -48,7 +48,7 @@ const drawEnemies = (enemiesData) => {
         if (!enemyData.isDead) {
             drawTriangle(enemyData.x, enemyData.y, 20, '#00ff00', 'down');
         }
-console.log('fff', enemyData.shots);
+
         forEach(function(shot) {
             shot.y += SHOOT_SPEED;
             drawTriangle(shot.x, shot.y, 5, '#00ffff', 'down');

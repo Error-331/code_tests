@@ -1,7 +1,7 @@
 'use strict';
 
 import { Observable, Subject } from 'rxjs';
-import { map, scan, mergeMap } from 'rxjs/operators';
+import { map, scan, mergeMap, mapTo } from 'rxjs/operators';
 
 async function testCase1()
 {
@@ -88,6 +88,7 @@ async function testCase3()
             let testValue = 40;
 
             const intervalId = setInterval(() => {
+                console.log(`testObservable31 next...${testValue}`);
                 subscriber.next(testValue);
                 testValue += 10;
             }, 1000);
@@ -106,6 +107,7 @@ async function testCase3()
             let testValue = 4;
 
             const intervalId = setInterval(() => {
+                console.log(`testObservable32 next: ${testValue}`);
                 subscriber.next(testValue);
                 testValue += 1;
             }, 1000);
@@ -238,6 +240,42 @@ async function testCase5()
     });
 }
 
+async function testCase6()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable6 = new Observable(subscriber => {
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.next(3);
+
+            let testValue = 4;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 1...');
+            };
+        });
+
+        const testObserver6 = mapTo('-top-')(testObservable6).subscribe(nextVal => {
+            console.log(`Next val (observer 6): ${nextVal}`);
+        });
+
+        setTimeout(() => {
+            testObserver6.unsubscribe();
+            resolve();
+        }, 3100);
+
+        // endregion
+    });
+}
+
 export default async () => {
     console.log('"RxJS" library tests (transformation operators)');
     console.log('==============================================');
@@ -266,6 +304,11 @@ export default async () => {
     console.log('Case 5 (single observer, multiple subjects, mergeMap operator):');
     console.log('');
     await testCase5();
+
+    console.log('');
+    console.log('Case 6 (single observable/observer, mapTo operator):');
+    console.log('');
+    await testCase6();
 
     console.log('');
     console.log('--------------------------------------------------------');
