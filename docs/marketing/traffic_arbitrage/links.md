@@ -10,6 +10,10 @@
 
 - https://pdl-profit.com/?utm_source=zorbasmedia&utm_medium=banner - PDL-profit;
 
+### Покупка траффика
+
+- https://www.kadam.net/en;
+
 ## Обучение
 
 - https://zorbasmedia.com/ - все о cpa и арбитраже;

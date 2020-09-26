@@ -20,5 +20,24 @@ secure player. It is possible to disable the security on a player so the Linux p
 
 - https://www.kharkovforum.com/showthread.php?t=4254055 - proper pin setup in serial audio jack;
 
-#### Possible
+### Serial port parameters
 
+- Baud rate: 115200
+- Data: 8 bit
+- Parity: none
+- Stop: 1 bit
+- Flow control: none
+- Handshake: hardware
+
+### SSH
+
+- Enable `ssh` on player via `autorun.brs`;
+- Type:
+j
+```angular2
+
+ssh brightsign@192.168.1.72
+
+```
+
+password: `admin`
