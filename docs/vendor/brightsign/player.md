@@ -33,8 +33,8 @@ secure player. It is possible to disable the security on a player so the Linux p
 
 - Enable `ssh` on player via `autorun.brs`;
 - Type:
-j
-```angular2
+
+```bash
 
 ssh brightsign@192.168.1.72
 
