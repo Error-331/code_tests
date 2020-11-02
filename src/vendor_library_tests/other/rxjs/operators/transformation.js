@@ -1,7 +1,7 @@
 'use strict';
 
-import { Observable, Subject } from 'rxjs';
-import { map, scan, mergeMap, mapTo } from 'rxjs/operators';
+import { Observable, Subject, interval } from 'rxjs';
+import { map, scan, mergeMap, mapTo, mergeMapTo, switchMap, pairwise } from 'rxjs/operators';
 
 async function testCase1()
 {
@@ -88,7 +88,7 @@ async function testCase3()
             let testValue = 40;
 
             const intervalId = setInterval(() => {
-                console.log(`testObservable31 next...${testValue}`);
+                console.log(`testObservable3_1 next...${testValue}`);
                 subscriber.next(testValue);
                 testValue += 10;
             }, 1000);
@@ -107,7 +107,7 @@ async function testCase3()
             let testValue = 4;
 
             const intervalId = setInterval(() => {
-                console.log(`testObservable32 next: ${testValue}`);
+                console.log(`testObservable3_2 next: ${testValue}`);
                 subscriber.next(testValue);
                 testValue += 1;
             }, 1000);
@@ -276,6 +276,222 @@ async function testCase6()
     });
 }
 
+async function testCase7()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable71 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                console.log(`testObservable7_1 next...${testValue}`);
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 7-1...');
+            };
+        });
+
+        const testObservable72 = new Observable(subscriber => {
+            let testValue = 1;
+
+            const intervalId = setInterval(() => {
+                console.log(`testObservable7_2 next: ${testValue}`);
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 3000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 7-2...');
+            };
+        });
+
+        const testObserver7 = testObservable71.pipe(
+            mergeMapTo(testObservable72)
+        ).subscribe(nextVal => {
+            console.log(`Next val (observer 7): ${nextVal}`);
+        });
+
+        setTimeout(() => {
+            testObserver7.unsubscribe();
+            resolve();
+        }, 15000);
+
+        // endregion
+    });
+}
+
+async function testCase8()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable81 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                console.log(`testObservable8_1 next...${testValue}`);
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 8-1...');
+            };
+        });
+
+        const testObservable82 = new Observable(subscriber => {
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.next(3);
+
+            return function unsubscribe() {
+                console.log('Unsubscribing from observable 8-2...');
+            };
+        });
+
+        const testObserver8 = testObservable81.pipe(
+            mergeMapTo(testObservable82)
+        ).subscribe(nextVal => {
+            console.log(`Next val (observer 8): ${nextVal}`);
+        });
+
+        setTimeout(() => {
+            testObserver8.unsubscribe();
+            resolve();
+        }, 10000);
+
+        // endregion
+    });
+}
+
+async function testCase9()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable91 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                console.log(`testObservable9_1 next...${testValue}`);
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 2000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 9-1...');
+            };
+        });
+
+        const testObserver9 = testObservable91.pipe(
+            mergeMapTo(interval(1000))
+        ).subscribe(nextVal => {
+            console.log(`Next val (observer 9): ${nextVal}`);
+        });
+
+        setTimeout(() => {
+            testObserver9.unsubscribe();
+            resolve();
+        }, 10000);
+
+        // endregion
+    });
+}
+
+
+async function testCase10()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable101 = new Observable(subscriber => {
+            subscriber.next(1);
+            let testValue = 2;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 5000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 10-1...');
+            };
+        });
+
+        const testObservable102 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 10-2...');
+            };
+        });
+
+        const testObserver10 = testObservable101.pipe(
+            switchMap(val => testObservable102.pipe(map(subVal => val + subVal)))
+        )
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 10): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver10.unsubscribe();
+            resolve();
+        }, 20000);
+
+        // endregion
+    });
+}
+
+
+async function testCase11()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable111 = new Observable(subscriber => {
+            let testValue = 1;
+
+            const intervalId = setInterval(() => {
+                console.log(`testObservable11_1 next...${testValue}`);
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 11-1...');
+            };
+        });
+
+        const testObserver11 = testObservable111.pipe(pairwise())
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 11): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver11.unsubscribe();
+            resolve();
+        }, 5000);
+
+        // endregion
+    });
+}
+
 export default async () => {
     console.log('"RxJS" library tests (transformation operators)');
     console.log('==============================================');
@@ -309,6 +525,31 @@ export default async () => {
     console.log('Case 6 (single observable/observer, mapTo operator):');
     console.log('');
     await testCase6();
+
+    console.log('');
+    console.log('Case 7 (two observable/observer, mergeMapTo operator):');
+    console.log('');
+    await testCase7();
+
+    console.log('');
+    console.log('Case 8 (two observable/observer (only one setInterval), mergeMapTo operator):');
+    console.log('');
+    await testCase8();
+
+    console.log('');
+    console.log('Case 9 (two observable/observer (one setInterval, one pure interval), switchMap operator):');
+    console.log('');
+    await testCase9();
+
+    console.log('');
+    console.log('Case 10 (two observable/observer, mergeMapTo operator):');
+    console.log('');
+    await testCase10();
+
+    console.log('');
+    console.log('Case 11 (one observable/observer, pairwise operator):');
+    console.log('');
+    await testCase11();
 
     console.log('');
     console.log('--------------------------------------------------------');

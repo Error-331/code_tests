@@ -106,6 +106,7 @@ https://rozetka.com.ua/71291092/p71291092/ - Постер MUDRA ГАЗ 24 Вол
 https://www.bookovka.ua/ru/detskaya-literatura/22210-my-koshki.html?gclid=Cj0KCQjwhtT1BRCiARIsAGlY51IJa5e_lNediVuirDW-dZET6NLfHH5qql3VWh7jyo91soUoMJ_nuYMaAnJwEALw_wcB
 https://bukva.ua/catalog/browse/327/1/743144?gclid=Cj0KCQjw0Mb3BRCaARIsAPSNGpXy31oBfTjlYmpX3Hvkqp10k9vM-c6uBnMHUqNAhPyAeeS-qXlEq0EaAuxUEALw_wcB
 https://promo.yakaboo.ua/borotbazapravdu
+https://www.yakaboo.ua/ua/last-days-of-summer.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop#proceed
 
 ## Сумки
 
