@@ -22,11 +22,11 @@ async function run() {
     //await sanctuary();
     //await fluture();
     //await lodash();
-    await fantasyLodash();
+    //await fantasyLodash();
     //await ramda();
     //await crocks();
    // await mori();
-    //await rxjs();
+    await rxjs();
 
     // functional libraries combinations
     //await flutureSanctuary();

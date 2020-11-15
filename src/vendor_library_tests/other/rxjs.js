@@ -1,6 +1,7 @@
 'use strict';
 
 import observableBasics from './rxjs/observable_basics';
+import observableAdvanced from './rxjs/observable_advanced';
 
 import subjectBasics from './rxjs/subject_basics';
 import subjectAdvanced from './rxjs/subject_advanced';
@@ -15,6 +16,7 @@ export default async () => {
     console.log('');
 
     await observableBasics();
+    await observableAdvanced();
 
     await subjectBasics();
     await subjectAdvanced();

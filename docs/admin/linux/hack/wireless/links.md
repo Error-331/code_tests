@@ -29,3 +29,16 @@
 - https://my.vmware.com/web/vmware/downloads - vmWare;
 - https://www.virtualbox.org/wiki/Downloads - Virtual Box;
 
+## Forums
+
+- https://forum.antichat.ru//threads/274700/ - password base;
+- https://forum.antichat.ru/threads/281655/page-151#post-4269747 - password base;
+
+## Articles
+
+- https://en.wikipedia.org/wiki/VLAN_hopping - VLAN hopping;
+- https://en.wikipedia.org/wiki/Unicast_flood - Unicast flood;
+- https://en.wikipedia.org/wiki/IP_address_spoofing - IP address spoofing;
+- https://spectreattack.com/ - Meltdown and Spectre;
+- https://misc0110.net/ - interesting js exploits;
+
