@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame examples</title>
+
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #testIframe1 {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>
+        Test frame 1 example
+    </h3>
+
+    <iframe id="testIframe1"
+        title="Test frame 1 example"
+        src="/dom/grid/index.html">
+    </iframe>
+
+    <script>
+setTimeout(() => {
+    const $testIframe1 = document.getElementById('testIframe1');
+
+    console.log($testIframe1.contentWindow);
+    console.log($testIframe1.contentDocument);
+
+    $testIframe1.contentDocument.getElementById('testGrid1').style.backgroundColor = 'yellow';
+}, 3000);
+    </script>
+
+</body>
+</html>
