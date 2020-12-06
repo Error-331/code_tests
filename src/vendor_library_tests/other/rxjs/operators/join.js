@@ -1,7 +1,7 @@
 'use strict';
 
 import { Observable, merge, combineLatest } from 'rxjs';
-import { startWith } from 'rxjs/operators';
+import { startWith, withLatestFrom } from 'rxjs/operators';
 
 async function testCase1()
 {
@@ -153,6 +153,102 @@ async function testCase3()
     });
 }
 
+async function testCase4()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable4_1 = new Observable(subscriber => {
+            let testValue = 1;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 4-1...');
+            };
+        });
+
+        const testObservable4_2 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1500);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 4-2...');
+            };
+        });
+
+        const testObserver4 = testObservable4_2.pipe(withLatestFrom(testObservable4_1))
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 4): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver4.unsubscribe();
+
+            resolve();
+        }, 8000);
+
+        // endregion
+    });
+}
+
+async function testCase5()
+{
+    return new Promise((resolve) => {
+
+        // region actual example code
+        const testObservable5_1 = new Observable(subscriber => {
+            let testValue = 1;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1000);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 5-1...');
+            };
+        });
+
+        const testObservable5_2 = new Observable(subscriber => {
+            let testValue = 10;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 10;
+            }, 1500);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 5-2...');
+            };
+        });
+
+        const testObserver4 = testObservable5_2.pipe(withLatestFrom(testObservable5_1, (first, second) => ({prop1: first, prop2: second })))
+            .subscribe(nextVal => {
+                console.log(`Next val (observer 5): ${nextVal}`);
+            });
+
+        setTimeout(() => {
+            testObserver4.unsubscribe();
+
+            resolve();
+        }, 8000);
+
+        // endregion
+    });
+}
+
 export default async () => {
     console.log('"RxJS" library tests (transformation operators)');
     console.log('===============================================');
@@ -171,6 +267,16 @@ export default async () => {
     console.log('Case 2 (one observer, two observables, combineLatest operator):');
     console.log('');
     await testCase3();
+
+    console.log('');
+    console.log('Case 4 (one observer, two observables, withLatestFrom operator):');
+    console.log('');
+    await testCase4();
+
+    console.log('');
+    console.log('Case 5 (one observer, two observables, withLatestFrom operator with custom func):');
+    console.log('');
+    await testCase5();
 
     console.log('');
     console.log('--------------------------------------------------------');

@@ -88,7 +88,7 @@ const routes = [
             const server = this;
 
             server._addResponseHeader('x-test', 'test_value');
-            server._serveJSON({
+            server.serveJSON({
                 'status': 'ok',
                 'isActive': true,
                 'date': new Date()
@@ -99,9 +99,8 @@ const routes = [
     {
         path: 'StartFileUpload',
         method: 'options',
-        handler: async function(){
+        handler: async function() {
             const server = this;
-            console.log('here1');
 
             server._addResponseHeader('Access-Control-Allow-Origin', '*');
             server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
@@ -114,9 +113,8 @@ const routes = [
 
     {
         path: 'StartFileUpload',
-        handler: async function(){
+        handler: async function() {
             const server = this;
-            console.log('here');
 
             server._addResponseHeader('Access-Control-Allow-Origin', '*');
             server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
@@ -128,6 +126,46 @@ const routes = [
             await server._forwardOpenProxyRequest();
         }
     },
+
+    {
+        path: 'check/upload',
+        method: 'post',
+        handler: async function() {
+            const server = this;
+
+            server.serveJSON({
+                'status': 'ok',
+            });
+        }
+    },
+
+    {
+        path: 'data/upload',
+        method: 'post',
+        handler: async function() {
+            const server = this;
+
+            server.serveJSON({
+                'status': 'ok',
+            });
+        }
+    },
+
+    {
+        path: 'data/form',
+        method: 'post',
+        handler: async function() {
+            const server = this;
+
+            server.serveJSON({
+                'status': 'ok',
+                'name': this.postData['name'],
+                'surname': this.postData['surname'],
+                'email': this.postData['email']
+            });
+        }
+    },
+
     {
         path: 'websocket/connect',
         handler: async function() {

@@ -11,6 +11,18 @@ analyzing the responses.
 
 Faster than NMap for multiple IP addresses. Can scan the internet IP space in about six minutes.
 
+### Kismet
+
+Kismet is a network detector, packet sniffer, and intrusion detection system for 802.11 wireless LANs. Kismet will work with any wireless card which supports raw monitoring mode, 
+and can sniff 802.11a, 802.11b, 802.11g, and 802.11n traffic. Kismet differs from other wireless network detectors in working passively. Namely, without sending any loggable packets, it is able to 
+detect the presence of both wireless access points and wireless clients, and to associate them with each other. It is also the most widely used and up to date open source wireless monitoring tool.
+
+### Ettercap
+
+Network security tool for man-in-the-middle attacks on LAN. It can be used for computer network protocol analysis and security auditing. It runs on various Unix-like operating systems including Linux, 
+Mac OS X, BSD and Solaris, and on Microsoft Windows. It is capable of intercepting traffic on a network segment, capturing passwords, and conducting active eavesdropping against a number of common protocols. 
+Its original developers later founded Hacking Team.
+
 ## CMS & Framework Identification
 
 ### WhatWeb

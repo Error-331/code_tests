@@ -1,5 +1,6 @@
 'use strict';
 
+import errorHandlingOperators from './operators/error_handling';
 import utilityOperators from './operators/utility';
 import transformationOperators from './operators/transformation';
 import filteringOperators from './operators/filtering';
@@ -12,6 +13,7 @@ export default async () => {
     console.log('================================');
     console.log('');
 
+    await errorHandlingOperators();
     await utilityOperators();
     await creationOperators();
     await transformationOperators();

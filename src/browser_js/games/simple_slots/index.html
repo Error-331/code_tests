@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Very simple slot machine</title>
+</head>
+<body>
+
+
+<canvas id="main_canvas" width="400" height="400" class="regularCanvas" style="background-color: gray"></canvas>
+
+<script>
+    // reel - 1 - square 2 - rectangle 3 - circle 4 - J
+    // reel -
+
+    // actions
+    // startReels stopReels startReel advanceReel stopReel
+
+    // observables
+    // scene compositor
+    // user controls
+
+
+
+    /*
+
+
+
+
+
+
+
+
+
+
+while (true)
+{
+for (each frameListener)
+{
+frameListener.frameStarted();
+}
+renderCurrentScene();
+for (each frameListener)
+{
+frameListener.frameEnded();
+}
+finalizeSceneAndSwapBuffers();
+}
+
+
+
+class GameFrameListener : public Ogre::FrameListener
+{
+public:
+virtual void frameStarted(const FrameEvent& event)
+{
+// Do things that must happen before the 3D scene
+// is rendered (i.e., service all game engine
+// subsystems).
+pollJoypad(event);
+updatePlayerControls(event);
+updateDynamicsSimulation(event);
+resolveCollisions(event);
+updateCamera(event);
+// etc.
+}
+virtual void frameEnded(const FrameEvent& event)
+{
+// Do things that must happen after the 3D scene
+// has been rendered.
+drawHud(event);
+// etc.
+}
+};
+
+Most game engines have an event system, which permits various
+engine subsystems to register interest in particular kinds of events and to respond to those events when they occur (see Section 16.8 for details). A game’s
+event system is usually very similar to the event/messaging system underlying virtually all graphical user interfaces (for example, Microsoft Windows’
+window messages, the event handling system in Java’s AWT or the services
+provided by C#’s delegate and event keywords).
+
+
+Some game engines leverage their event system in order to implement the
+periodic servicing of some or all of their subsystems. For this to work, the
+event system must permit events to be posted into the future—that is, to be
+queued for later delivery. A game engine can then implement periodic updating by simply posting an event.
+
+In the event handler, the code can perform whatever periodic servicing is required. It can then post a new event 1/30 or
+1/60 of a second into the future, thus continuing the periodic servicing for as
+long as it is required.
+
+8.4 Abstract Timelines
+In game programming, it can be extremely useful to think in terms of abstract
+timelines. A timeline is a continuous, one-dimensional axis whose origin (t =
+0) can lie at any arbitrary location relative to other timelines in the system. A
+timeline can be implemented via a simple clock variable that stores absolute
+time values in either integer or floating-point format.
+
+8.4.1 Real Time
+We can think of times measured directly via the CPU’s high-resolution timer
+register (see Section 8.5.3) as lying on what we’ll call the real timeline. The
+origin of this timeline is defined to coincide with the moment the CPU was
+last powered on or reset. It measures times in units of CPU cycles (or some
+multiple thereof), although these time values can be easily converted into units
+of seconds by multiplying them by the frequency of the high-resolution timer
+on the current CPU.
+
+
+8.4.2 Game Time
+We needn’t limit ourselves to working with the real timeline exclusively. We
+can define as many other timeline(s) as we need in order to solve the problems
+at hand. For example, we can define a game timelinethat is technically independent of real time. Under normal circumstances, game time coincides with real
+time. If we wish to pause the game, we can simply stop updating the game
+timeline temporarily. If we want our game to go into slow motion, we can update the game clock more slowly than the real-time clock. All sorts of effects
+can be achieved by scaling and warping one timeline relative to another
+
+Pausing or slowing down the game clock is also a highly useful debugging tool. To track down a visual anomaly, a developer can pause game time
+in order to freeze the action. Meanwhile, the rendering engine and debug flythrough camera can continue to run, as long as they are governed by a different
+clock (either the real-time clock or a separate camera clock). This allows the developer to fly the camera around the game world to inspect it from any angle
+desired. We can even support single-stepping the game clock, by advancing
+the game clock by one target frame interval (e.g., 1/30 of a second) each time a “single-step” button is pressed on the joypad or keyboard while the game is
+in a paused state.
+
+8.4.3 Local and Global Timelines
+
+
+8.5
+Measuring and Dealing with Time
+In this section, we’ll investigate some of the subtle and not-so-subtle distinc-
+tions between different kinds of timelines and clocks and see how they are
+implemented in real game engines.
+8.5.1
+Frame Rate and Time Deltas
+The frame rate of a real-time game describes how rapidly the sequence of still
+3D frames is presented to the viewer. The unit of Hertz (Hz), defined as the
+number of cycles per second, can be used to describe the rate of any periodic
+process. In games and film, frame rate is typically measured in frames per second
+(FPS), which is the same thing as Hertz for all intents and purposes. Films
+traditionally run at 24 FPS. Games in North America and Japan are typically
+rendered at 30 or 60 FPS, because this is the natural refresh rate of the NTSC
+color television standard used in these regions. In Europe and most of the rest
+
+of the world, games update at 50 FPS, because this is the natural refresh rate
+of a PAL or SECAM color television signal.
+The amount of time that elapses between frames is known as the frame time,
+time delta or delta time. This last term is commonplace because the duration be-
+tween frames is often represented mathematically by the symbol ∆t. (Techni-
+cally speaking, ∆t should really be called the frame period, since it is the inverse
+of the frame frequency: T = 1/ f . But, game programmers hardly ever use the
+term “period” in this context.) If a game is being rendered at exactly 30 FPS,
+then its delta time is 1/30 of a second, or 33.3 ms (milliseconds). At 60 FPS, the
+delta time is half as big, 1/60 of a second or 16.6 ms. To really know how much
+time has elapsed during one iteration of the game loop, we need to measure
+it. We’ll see how this is done below.
+We should note here that milliseconds are a common unit of time measure-
+ment in games. For example, we might say that the animation system is tak-
+ing 4 ms to run, which implies that it occupies about 12% of the entire frame
+( 4/33.3 ≈ 0.12 ) . Other common units include seconds and machine cycles.
+We’ll discuss time units and clock variables in more depth below.
+
+8.5.2
+From Frame Rate to Speed
+Let’s imagine that we want to make a spaceship fly through our game world
+at a constant speed of 40 meters per second (or in a 2D game, we might
+specify this as 40 pixels per second). One simple way to accomplish this is
+to multiply the ship’s speed v (measured in meters per second) by the du-
+ration of one frame ∆t (measured in seconds), yielding a change in position
+∆x = v∆t (which is measured in meters per frame). This position delta can then
+be added to the ship’s current position x 1 , in order to find its position next
+frame: x 2 = x 1 + ∆x = x 1 + v∆t.
+This is actually a simple form of numerical integration known as the explicit
+Euler method (see Section 13.4.4). It works well as long as the speeds of our
+objects are roughly constant. To handle variable speeds, we need to resort to
+somewhat more complex integration methods. But all numerical integration
+techniques make use of the elapsed frame time ∆t in one way or another. So
+it is safe to say that the perceived speeds of the objects in a game are dependent
+upon the frame duration, ∆t. Hence a central problem in game programming
+is to determine a suitable value for ∆t. In the sections that follow, we’ll discuss
+various ways of doing this.
+
+8.5.2.1
+Old-School CPU-Dependent Games
+In many early video games, no attempt was made to measure how much real
+time had elapsed during the game loop. The programmers would essentially
+ignore ∆t altogether and instead specify the speeds of objects directly in terms
+of meters (or pixels, or some other distance unit) per frame. In other words,
+they were, perhaps unwittingly, specifying object speeds in terms of ∆x = v∆t,
+instead of in terms of v.
+
+The net effect of this simplistic approach was that the perceived speeds of
+the objects in these games were entirely dependent upon the frame rate that
+the game was actually achieving on a particular piece of hardware. If this kind
+of game were to be run on a computer with a faster CPU than the machine for
+which it was originally written, the game would appear to be running in fast
+forward. For this reason, I’ll call these games CPU-dependent games.
+
+8.5.2.2
+Updating Based on Elapsed Time
+To make our games CPU-independent, we must measure ∆t in some way,
+rather than simply ignoring it. Doing this is quite straightforward. We simply
+read the value of the CPU’s high-resolution timer twice—once at the begin-
+ning of the frame and once at the end. Then we subtract, producing an accu-
+rate measure of ∆t for the frame that has just passed. This delta is then made
+available to all engine subsystems that need it, either by passing it to every
+function that we call from within the game loop or by storing it in a global
+variable or encapsulating it within a singleton class of some kind. (We’ll de-
+scribe the CPU’s high-resolution timer in more detail in Section 8.5.3.)
+
+The approach outlined above is used by many game engines. In fact, I am
+tempted to go out on a limb and say that most game engines use it. However,
+there is one big problem with this technique: We are using the measured value
+of ∆t taken during frame k as an estimate of the duration of the upcoming frame
+( k + 1 ) . This isn’t necessarily very accurate. (As they say in investing, “past
+performance is not a guarantee of future results.”) Something might happen
+next frame that causes it to take much more time (or much less) than the current
+frame. We call such an event a frame-rate spike.
+
+Using last frame’s delta as an estimate of the upcoming frame can have
+some very real detrimental effects. For example, if we’re not careful it can put
+the game into a “viscious cycle” of poor frame times. Let’s assume that our
+physics simulation is most stable when updated once every 33.3 ms (i.e., at
+30 Hz). If we get one bad frame, taking say 57 ms, then we might make the mistake of stepping the physics system twice on the next frame, presumably to
+“cover” the 57 ms that has passed. Those two steps take roughly twice as long
+to complete as a regular step, causing the next frame to be at least as bad as
+this one was, and possibly worse. This only serves to exacerbate and prolong
+the problem.
+
+8.5.2.3
+Using a Running Average
+It is true that game loops tend to have at least some frame-to-frame coherency.
+If the camera is pointed down a hallway containing lots of expensive-to-draw
+objects on one frame, there’s a good chance it will still be pointed down that
+hallway on the next. Therefore, one reasonable approach is to average the
+frame-time measurements over a small number of frames and use that as the
+next frame’s estimate of ∆t. This allows the game to adapt to a varying frame
+rate, while softening the effects of momentary performance spikes. The longer
+the averaging interval, the less responsive the game will be to a varying frame
+rate, but spikes will have less of an impact as well.
+
+8.5.2.4
+Governing the Frame Rate
+We can avoid the inaccuracy of using last frame’s ∆t as an estimate of this
+frame’s duration altogether, by flipping the problem on its head. Rather than
+trying to guess at what next frame’s duration will be, we can instead attempt
+to guarantee that every frame’s duration will be exactly 33.3 ms (or 16.6 ms if
+we’re running at 60 FPS). To do this, we measure the duration of the current
+frame as before. If the measured duration is less than the ideal frame time, we
+simply put the main thread to sleep until the target frame time has elapsed.
+If the measured duration is more than the ideal frame time, we must “take
+our lumps” and wait for one more whole frame time to elapse. This is called
+frame-rate governing.
+
+Clearly this approach only works when your game’s frame rate is reason-
+ably close to your target frame rate on average. If your game is ping-ponging
+between 30 FPS and 15 FPS due to frequent “slow” frames, then the game’s
+quality can degrade significantly. As such, it’s still a good idea to design all
+engine systems so that they are capable of dealing with arbitrary frame dura-
+tions. During development, you can leave the engine in “variable frame rate”
+mode, and everything will work as expected. Later on, when the game is get-
+ting closer to achieving its target frame rate consistently, we can switch on
+frame-rate governing and start to reap its benefits.
+
+To implement record and playback, we make note of every relevant event
+that occurs during gameplay, saving each one in a list along with an accurate
+time stamp. The list of events can then be replayed with exactly the same tim-
+ing, using the same initial conditions and an identical initial random seed. In
+theory, doing this should produce a gameplay experience that is indistinguish-
+able from the original playthrough. However, if the frame rate isn’t consis-
+tent, things may not happen in exactly the same order. This can cause “drift,”
+and pretty soon your AI characters are flanking when they should have fallen
+back.
+
+8.5.2.5
+Screen Tearing and V-Sync
+A visual anomaly known as screen tearing occurs when the back buffer is
+swapped with the front buffer while the screen has only been partially
+“drawn” by the video hardware. When tearing occurs, a portion of the screen
+shows the new image, while the remainder shows the old one. To avoid tear-
+ing, many rendering engines wait for the vertical blanking interval of the moni-
+tor before swapping buffers.
+Older CRT monitors and TVs “draw” the contents of the in-memory frame
+buffer by exciting phosphors on the screen via a beam of electrons that scans
+from left-to-right and top-to-bottom. On such displays, the v-blank interval
+is the time during which the electron gun is “blanked” (turned off) while it
+is being reset to the top-left corner of the screen. Modern LCD, plasma and
+LED displays no longer use an electron beam, and they don’t require any time
+between finishing the draw of the last scan line of one frame and the first scan
+line of the next. But the v-blank interval still exists, in part because video stan-
+dards were established when CRTs were the norm, and in part because of the
+need to support older displays.
+Waiting for the v-blank interval is called v-sync. It is really just another
+form of frame-rate governing, because it effectively clamps the frame rate of
+the main game loop to a multiple of the screen’s refresh rate. For example, on
+an NTSC monitor that refreshes at a rate of 60 Hz, the game’s real update rate
+
+is effectively quantized to a multiple of 1/60 of a second. If more than 1/60 of
+a second elapses between frames, we must wait until the next v-blank interval,
+which means waiting 2/60 of a second (30 FPS). If we miss two v-blanks, then
+we must wait a total of 3/60 of a second (20 FPS) and so on. Also, be careful
+not to make assumptions about the frame rate of your game, even when it is
+synchronized to the v-blank interval; if your game supports them, you must
+keep in mind that the PAL and SECAM standards are based around an update
+rate of 50 Hz, not 60 Hz.
+
+8.5.3 Measuring Real Time with a High-Resolution Timer
+
+All modern CPUs contain a high-resolution timer, which is usually imple-
+mented as a hardware register that counts the number of CPU cycles (or
+some multiple thereof) that have elapsed since the last time the processor
+was powered on or reset. This is the timer that we should use when mea-
+suring elapsed time in a game, because its resolution is usually on the order
+of the duration of a few CPU cycles. For example, on a 3 GHz Pentium pro-
+cessor, the high-resolution timer increments once per CPU cycle, or 3 billion
+times per second. Hence the resolution of the high-res timer is 1/3 billion =
+3.33 × 10 − 10 seconds = 0.333 ns (one-third of a nanosecond). This is more than
+enough resolution for all of our time-measurement needs in a game.
+
+Different microprocessors and different operating systems provide differ-
+ent ways to query the high-resolution timer. On a Pentium, a special instruc-
+tion called rdtsc (read time-stamp counter) can be used, although the Win32
+API wraps this facility in a pair of functions: QueryPerformanceCounter()
+reads the 64-bit counter register and QueryPerformanceFrequency() re-
+turns the number of counter increments per second for the current CPU. On
+a PowerPC architecture, such as the chips found in the Xbox 360 and PlaySta-
+tion 3, the instruction mftb (move from time base register) can be used to read
+the two 32-bit time base registers, while on other PowerPC architectures, the
+instruction mfspr (move from special-purpose register) is used instead.
+
+A CPU’s high-resolution timer register is 64 bits wide on most processors,
+to ensure that it won’t wrap too often. The largest possible value of a 64-bit un-
+signed integer is 0xFFFFFFFFFFFFFFFF ≈ 1.8 × 10 19 clock ticks. So, on a 3 GHz
+Pentium processor that updates its high-res timer once per CPU cycle, the reg-
+ister’s value will wrap back to zero once every 195 years or so—definitely not
+a situation we need to lose too much sleep over. In contrast, a 32-bit integer
+clock will wrap after only about 1.4 seconds at 3 GHz.
+
+     */
+
+
+
+</script>
+
+<script type="text/javascript" src="/games/bundle.js"></script>
+
+</body>
+</html>

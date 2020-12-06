@@ -26,7 +26,7 @@ const findMainJSFilesRecursively = (basePath) => {
 };
 
 // found all JS files
-const pathToBrowserJSDir = path.resolve(__dirname, `./../src/browser_js/`);
+const pathToBrowserJSDir = path.resolve(__dirname, `./../src/browser_js/games/`);
 const foundJSFilesPaths = findMainJSFilesRecursively(pathToBrowserJSDir);
 
 // compile every JS file

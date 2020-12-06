@@ -3,15 +3,6 @@
 const queryString = require('querystring');
 const url = require('url');
 
-const {cloneDeep} = require('./../utils/object_utils');
-
-const {
-    normalizeURLPath,
-    parseURLPathParams,
-    extractPOSTDataFromRequest,
-    getMIMETypeForFileExtension
-} = require('./../utils/server_request_utils');
-
 const {
     SERVER_DOMAIN,
     HTML_PAGES_DIRECTORY_PATH,
@@ -20,7 +11,22 @@ const {
 
 const HTTP_STATUS_CODES = require('./../constants/http_status_codes');
 
+const ServerMixinErrorClass = require('./../classes/server_mixin_error_class');
+
+const {cloneDeep} = require('./../utils/object_utils');
+
+const {
+    normalizeURLPath,
+    parseURLPathParams,
+    extractRawPOSTDataFromRequest,
+    extractCookies,
+    getMIMETypeForFileExtension
+} = require('./../utils/server_request_utils');
+
+
 class BasicServerClass {
+    #cookies = {};
+
     _isHTTPSUsed() {
         return this._isHTTPS;
     }
@@ -43,6 +49,28 @@ class BasicServerClass {
     _prepareRequestURL() {
         const decodedRequestURL = decodeURI(this._request.url);
         return decodedRequestURL[0] === '/' ? decodedRequestURL.substring(1) : decodedRequestURL;
+    }
+
+    async _parsePostData() {
+        if (
+            this._getRequestMethod() === 'post' &&
+            this._isRequestHeaderExist('content-type') &&
+            this._getRequestHeader('content-type').toLowerCase() === 'application/x-www-form-urlencoded'
+        ) {
+              try {
+                  this._rawPostData = await extractRawPOSTDataFromRequest(this._request);
+                  this._postData = queryString.parse(this._rawPostData)
+              } catch(error) {
+                  this._serveErrorPage(500, error);
+                  return this._request.connection.destroy();
+              }
+        } else {
+            return;
+        }
+    }
+
+    _parseCookies() {
+        this.#cookies = extractCookies(this._request);
     }
 
     _addCustomRoute(customRoute) {
@@ -145,7 +173,11 @@ class BasicServerClass {
         try {
             await foundRoute.handler.call(this);
         } catch(error) {
-            return this._serveErrorPage(500, error);
+            if (error instanceof ServerMixinErrorClass) {
+                return this._serveErrorPage(error.httpResponseCode, error);
+            } else {
+                return this._serveErrorPage(500, error);
+            }
         }
     };
 
@@ -256,6 +288,18 @@ class BasicServerClass {
         this._responseHeaders[headerIndex][1] = headerValue;
     }
 
+    async _onBeforeRouteRequest() {
+
+    }
+
+    get postData() {
+        return this._postData;
+    }
+
+    get cookies() {
+        return this.#cookies;
+    }
+
     async onHandleRequest() {
         this._preparedRequestURL  = this._prepareRequestURL();
         const {urlPathParams, urlQueryParams} = this._prepareRequestURLPath(this._preparedRequestURL);
@@ -263,13 +307,10 @@ class BasicServerClass {
         this._urlPathParams = urlPathParams;
         this._urlQueryParams = urlQueryParams;
 
-        try {
-            this._postData = await extractPOSTDataFromRequest(this._request);
-        } catch(error) {
-            this._serveErrorPage(400, error);
-            return this._request.connection.destroy();
-        }
+        await this._parsePostData();
+        this._parseCookies();
 
+        await this._onBeforeRouteRequest();
         await this._routeRequest();
     }
 
@@ -289,7 +330,9 @@ class BasicServerClass {
         this._urlPathParams = [];
         this._urlQueryParams = {};
 
+        this._rawPostData = null;
         this._postData = {};
+
         this._responseHeaders = [];
 
         this._constantsOverrides = constantsOverrides ? constantsOverrides : {};
