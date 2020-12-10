@@ -6,6 +6,7 @@ import transformationOperators from './operators/transformation';
 import filteringOperators from './operators/filtering';
 import aggregateOperators from './operators/aggregate';
 import joinOperators from './operators/join';
+import joinCreationOperators from './operators/join_creation';
 import creationOperators from './operators/creation';
 
 export default async () => {
@@ -20,6 +21,7 @@ export default async () => {
     await filteringOperators();
     await aggregateOperators();
     await joinOperators();
+    await joinCreationOperators();
 
     console.log('');
     console.log('--------------------------------------------------------');

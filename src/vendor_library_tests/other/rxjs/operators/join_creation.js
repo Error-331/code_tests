@@ -1,15 +1,14 @@
 'use strict';
 
-import { Observable, merge, combineLatest } from 'rxjs';
-import { startWith, withLatestFrom } from 'rxjs/operators';
-
+import { Observable, merge, combineLatest, interval } from 'rxjs';
+import { mergeAll, map } from 'rxjs/operators';
 
 async function testCase1()
 {
     return new Promise((resolve) => {
 
         // region actual example code
-        const testObservable1 = new Observable(subscriber => {
+        const testObservable1_1 = new Observable(subscriber => {
             subscriber.next(1);
             subscriber.next(2);
             subscriber.next(3);
@@ -23,15 +22,33 @@ async function testCase1()
 
             return function unsubscribe() {
                 clearInterval(intervalId);
-                console.log('Unsubscribing from observable 1...');
+                console.log('Unsubscribing from observable 1-1...');
                 resolve();
             };
         });
 
-        const testObserver1 = testObservable1
-            .pipe(startWith(-3, -2, -1, 0))
+        const testObservable1_2 = new Observable(subscriber => {
+            subscriber.next(10);
+            subscriber.next(20);
+            subscriber.next(30);
+
+            let testValue = 40;
+
+            const intervalId = setInterval(() => {
+                subscriber.next(testValue);
+                testValue += 1;
+            }, 1500);
+
+            return function unsubscribe() {
+                clearInterval(intervalId);
+                console.log('Unsubscribing from observable 1-2...');
+                resolve();
+            };
+        });
+
+        const testObserver1 = merge(testObservable1_1, testObservable1_2)
             .subscribe(nextVal => {
-                console.log(`Next val (observer 2): ${nextVal}`);
+                console.log(`Next val (observer 1): ${nextVal}`);
             });
 
         setTimeout(() => {
@@ -48,7 +65,11 @@ async function testCase2()
 
         // region actual example code
         const testObservable2_1 = new Observable(subscriber => {
-            let testValue = 1;
+            subscriber.next(1);
+            subscriber.next(2);
+            subscriber.next(3);
+
+            let testValue = 4;
 
             const intervalId = setInterval(() => {
                 subscriber.next(testValue);
@@ -62,12 +83,16 @@ async function testCase2()
         });
 
         const testObservable2_2 = new Observable(subscriber => {
-            let testValue = 10;
+            subscriber.next(10);
+            subscriber.next(20);
+            subscriber.next(30);
+
+            let testValue = 40;
 
             const intervalId = setInterval(() => {
                 subscriber.next(testValue);
                 testValue += 10;
-            }, 1500);
+            }, 1200);
 
             return function unsubscribe() {
                 clearInterval(intervalId);
@@ -75,16 +100,16 @@ async function testCase2()
             };
         });
 
-        const testObserver4 = testObservable2_2.pipe(withLatestFrom(testObservable2_1))
+        const testObserver2 = combineLatest(testObservable2_1, testObservable2_2)
             .subscribe(nextVal => {
                 console.log(`Next val (observer 2): ${nextVal}`);
             });
 
         setTimeout(() => {
-            testObserver4.unsubscribe();
+            testObserver2.unsubscribe();
 
             resolve();
-        }, 8000);
+        }, 5000);
 
         // endregion
     });
@@ -92,38 +117,30 @@ async function testCase2()
 
 async function testCase3()
 {
+    let id = 0;
+
     return new Promise((resolve) => {
 
         // region actual example code
-        const testObservable3_1 = new Observable(subscriber => {
-            let testValue = 1;
+        const testObserver3 = interval(2000).pipe(
+            map(() => {
+                return new Observable(subscriber => {
+                    let currentId = id;
+                    id = id + 1;
 
-            const intervalId = setInterval(() => {
-                subscriber.next(testValue);
-                testValue += 1;
-            }, 1000);
+                    console.log(`Observables ${currentId}`);
+                    subscriber.next(`Sub observables ${currentId}`);
 
-            return function unsubscribe() {
-                clearInterval(intervalId);
-                console.log('Unsubscribing from observable 3-1...');
-            };
-        });
+                    const intervalId = setInterval(() => {
+                        console.log(`Observable ${currentId}`);
+                        subscriber.next(`Sub observable ${currentId}`);
+                    }, 5000);
 
-        const testObservable3_2 = new Observable(subscriber => {
-            let testValue = 10;
-
-            const intervalId = setInterval(() => {
-                subscriber.next(testValue);
-                testValue += 10;
-            }, 1500);
-
-            return function unsubscribe() {
-                clearInterval(intervalId);
-                console.log('Unsubscribing from observable 3-2...');
-            };
-        });
-
-        const testObserver3 = testObservable3_2.pipe(withLatestFrom(testObservable3_1, (first, second) => ({prop1: first, prop2: second })))
+                    return () => clearInterval(intervalId)
+                });
+            })
+        )
+            .pipe(mergeAll())
             .subscribe(nextVal => {
                 console.log(`Next val (observer 3): ${nextVal}`);
             });
@@ -132,7 +149,7 @@ async function testCase3()
             testObserver3.unsubscribe();
 
             resolve();
-        }, 8000);
+        }, 10000);
 
         // endregion
     });
@@ -143,18 +160,17 @@ export default async () => {
     console.log('===============================================');
     console.log('');
 
+    console.log('Case 1 (single observer, two observables, merge operator):');
     console.log('');
-    console.log('Case 1 (single observer/observable, startWith operator):');
-    console.log('');
-    await testCase1();
+ //   await testCase1();
 
     console.log('');
-    console.log('Case 2 (one observer, two observables, withLatestFrom operator):');
+    console.log('Case 2 (one observer, two observables, combineLatest operator):');
     console.log('');
-    await testCase2();
+   // await testCase2();
 
     console.log('');
-    console.log('Case 3 (one observer, two observables, withLatestFrom operator with custom func):');
+    console.log('Case 3 (one observer, one observable, multiple sub-observables, mergeAll operator):');
     console.log('');
     await testCase3();
 
