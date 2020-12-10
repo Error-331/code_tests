@@ -1,7 +1,5 @@
 'use strict';
 
-const {extractPOSTDataFromRequest} = require('./../utils/server_request_utils');
-
 const LogServerMixin = (superClass) => class extends superClass {
     _printRequestHead() {
         const requestMethod = this._getRequestMethod();
@@ -22,20 +20,41 @@ const LogServerMixin = (superClass) => class extends superClass {
         console.log('');
     }
 
-    async _printRequestPOSTData() {
+    _printRequestPOSTData() {
         try {
-            const postData = await extractPOSTDataFromRequest(this._request);
-            console.log('POST data: ', postData);
+            console.log('');
+            console.log('-----------------');
+            console.log('Request post data');
+            console.log('-----------------');
+            console.log('');
+
+            console.log(`POST(raw) data: ${this._rawPostData} (${typeof this._rawPostData})`);
+            console.log('POST data: ', this._postData);
         } catch(error) {
             console.error('Cannot extract POST data');
         }
+    }
 
+    _printRequestCookies() {
+        console.log('');
+        console.log('---------------');
+        console.log('Request cookies');
+        console.log('---------------');
+        console.log('');
+
+        console.log('Cookies data: ', this.cookies);
+    }
+
+    _printRequestMeta() {
+        console.log(`Request (${new Date().toTimeString()})`);
         console.log('');
     }
 
     _printRequestHeaders() {
         const requestHeaders = this._request.headers;
 
+        console.log('');
+        console.log('---------------');
         console.log('Request headers');
         console.log('---------------');
         console.log('');
@@ -46,23 +65,25 @@ const LogServerMixin = (superClass) => class extends superClass {
     }
 
     async _printRequestData() {
-        console.log(`Request (${new Date().toTimeString()})`);
-        console.log('');
-
+        this._printRequestMeta();
         this._printRequestHead();
         this._printRequestURLParameters();
-        await this._printRequestPOSTData();
+        this._printRequestPOSTData();
+        this._printRequestCookies();
         this._printRequestHeaders();
 
         console.log('');
-        console.log('----------------------------------');
+        console.log('=======================================');
         console.log('');
+    }
+
+    async _onBeforeRouteRequest() {
+        await super._onBeforeRouteRequest();
+        await this._printRequestData()
     }
 
     constructor(...serverParams) {
         super(...serverParams);
-
-        this._printRequestData();
     }
 };
 

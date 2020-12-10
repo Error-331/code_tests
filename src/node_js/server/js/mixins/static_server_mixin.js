@@ -9,6 +9,8 @@ const {
     getMIMETypeForFileExtension
 } = require('./../utils/server_request_utils');
 
+const ServerMixinErrorClass = require('./../classes/server_mixin_error_class');
+
 const StaticServerMixin = (superClass) => class extends superClass {
     _preparePathToFile(pathParams) {
         pathParams = pathParams.slice();
@@ -55,8 +57,7 @@ const StaticServerMixin = (superClass) => class extends superClass {
                 const errorCode = isENOENT ? 404 : 400;
                 const errorMessage = isENOENT ? `Cannot find file: "${fileName}"` : `Cannot open file: "${fileName}.${fileExtension}"`;
 
-                this._serveErrorPage(errorCode, errorMessage);
-                reject(new Error(errorMessage));
+                reject(new ServerMixinErrorClass(errorCode, errorMessage));
             });
 
             staticFileStream.pipe(this._response);
@@ -68,9 +69,7 @@ const StaticServerMixin = (superClass) => class extends superClass {
 
         if (!pathParams || pathParams.length <= 0) {
             const errorMessage = `Cannot serve undefined file`;
-
-            this._serveErrorPage(400, errorMessage);
-            throw new Error(errorMessage);
+            throw new ServerMixinErrorClass(400, errorMessage);
         }
 
         const fileExtension = extractFileExtensionFromPathParams(pathParams);
@@ -78,9 +77,7 @@ const StaticServerMixin = (superClass) => class extends superClass {
 
         if (!fileMIMEType) {
             const errorMessage = `Cannot find MIME type for file extension of ".${fileExtension}"`;
-
-            this._serveErrorPage(400, errorMessage);
-            throw new Error(errorMessage);
+            throw new ServerMixinErrorClass(400, errorMessage);
         }
 
         const pathToFile = this._preparePathToFile(pathParams);

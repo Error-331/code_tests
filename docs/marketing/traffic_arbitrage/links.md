@@ -63,3 +63,6 @@
 
 - https://everymatrix.com/the-art-of-giving-the-right-bonus-at-the-right-time-to-the-right-player/?utm_source=social&utm_medium=Linkedin&utm_campaign=BE2020&utm_content=article1 - удержка внимания;
 
+- https://apptica.com/ - сервис мобильной аналитики;
+- https://mobile.adplexity.com/ - большой сервис аналитики;
+
