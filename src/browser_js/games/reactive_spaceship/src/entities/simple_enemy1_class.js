@@ -20,10 +20,14 @@ class SimpleEnemy1Class {
     #shots = [];
 
     constructor() {
-        this.#id = `${Date(). getTime().toString()}_${getRandomInt(1, 1000)}`;
+        this.#id = `${new Date().getTime().toString()}_${getRandomInt(1, 1000)}`;
 
-        this.x = parseInt(Math.random() * getCanvasWidth());
-        this.y = -30;
+        this.#x = parseInt(Math.random() * getCanvasWidth());
+        this.#y = -30;
+    }
+
+    isReachEnd() {
+        return this.#y >= getCanvasHeight() + 40;
     }
 
     isVisible() {
@@ -32,11 +36,11 @@ class SimpleEnemy1Class {
     }
 
     isDone() {
-        return this.#isDead && this.#shots.length === 0;
+        return (this.#isDead || this.isReachEnd()) && this.#shots.length === 0;
     }
 
     move() {
-        if (!this.#isDead) {
+        if (!this.#isDead && !this.isReachEnd()) {
             this.#x += getRandomInt(-15, 15);
             this.#y += 5;
         }
@@ -45,7 +49,7 @@ class SimpleEnemy1Class {
     }
 
     shot() {
-        if (!this.#isDead) {
+        if (!this.#isDead && !this.isReachEnd()) {
             this.#shots.push(
                 new SimpleEnemy1Shot1Class(this.#x, this.#y)
             );
@@ -56,8 +60,9 @@ class SimpleEnemy1Class {
 
     moveShots() {
         this.#shots = filter(shot => !shot.isDone(), this.#shots);
-
         forEach(shot => shot.move(), this.#shots);
+
+        return this;
     }
 
     #drawEnemyShots() {
@@ -71,6 +76,10 @@ class SimpleEnemy1Class {
     draw() {
         this.#drawEnemy();
         this.#drawEnemyShots();
+    }
+
+    get id() {
+        return this.#id;
     }
 
     get isDead() {

@@ -12,7 +12,7 @@ const collision = (target1, target2) => {
 };
 
 const isGameOver = (ship, enemies) => {
-    return enemies.some(function(enemy) {
+    /*return enemies.some(function(enemy) {
         if (collision(ship, enemy)) {
             return true;
         }
@@ -20,7 +20,8 @@ const isGameOver = (ship, enemies) => {
         return enemy.shots.some(function(shot) {
             return collision(ship, shot);
         });
-    });
+    });*/
+    return false;
 };
 
 
