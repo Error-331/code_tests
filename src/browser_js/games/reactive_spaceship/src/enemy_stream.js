@@ -30,7 +30,7 @@ const getEnemyObservable = memoizeWith(identity, () =>
                                         ),
                                     timer(0, ENEMY_SHOOT_FREQUENCY)
                                         .pipe(
-                                            rxMap(() => this.shot())
+                                            rxMap(() => enemy.shot())
                                         )
                                 )
                         ))
@@ -54,7 +54,7 @@ const getEnemyObservable = memoizeWith(identity, () =>
                 enemiesData.push(enemyData)
             }
 
-            return filter((enemiesData) => !enemiesData.isDone(), enemiesData);
+            return filter((enemyData) => !enemyData.isDone(), enemiesData);
         }, []),
 
        tap(f => console.log('fff', f))
