@@ -34,7 +34,7 @@ const insertionSort = (userSequence) => {
     }
 
     return sortedSequence;
-}
+};
 
 console.log('Insertion sorting');
 console.log('=================');

@@ -13,7 +13,7 @@ export default async () => {
     let mockString5 = '[ {} ( ( ) ) ] { ( { )= ) }'; // false
     let mockString6 = 'test }';                      // false
 
-// good solution
+    // good solution
     const bracketsValidatorGoodSolution = (stringToTest) => {
         let openersTypes = ['(', '{', '['];
         let closersTypes = [')', '}', ']'];
@@ -45,7 +45,7 @@ export default async () => {
         return true;
     };
 
-// best solution
+    // best solution
     const bracketsValidatorBestSolution = (stringToTest) =>  {
         let openersToClosers = {
             '(': ')',
