@@ -110,6 +110,7 @@ https://www.yakaboo.ua/ua/strategicheskie-igry-dostupnyj-uchebnik-po-teorii-igr-
 https://www.yakaboo.ua/ua/mistectvo-strategii-putivnik-do-uspihu-v-zhitti-ta-biznesi-vid-ekspertiv-teorii-gri.html?gclid=CjwKCAjwrvv3BRAJEiwAhwOdM9QyANyxpYwAWACa92N7s6Y8q6q86KAsAo639bfseinklRPujx8mehoCGYYQAvD_BwE#proceed - Мистецтво стратегії. Путівник до успіху в житті та бізнесі від експертів теорії гри
 https://www.yakaboo.ua/ua/byt-piratom-kak-brosit-miru-vyzov-i-pobedit.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop - Быть пиратом. Как бросить миру вызов и победить
 https://www.yakaboo.ua/ua/last-days-of-summer.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop#proceed
+https://www.yakaboo.ua/ua/mamiglapinatapei-abo-ljubov-u-kiivs-kij-komunalci-1570986.html?gclid=Cj0KCQiAlZH_BRCgARIsAAZHSBkUvdzK8rsWPLARRPCJYA3-EfUK7Wp_Vo7BXJi4iWf_CHAcsifSb6gaApgzEALw_wcB
 
 ## Сумки
 
