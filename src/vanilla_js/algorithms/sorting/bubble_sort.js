@@ -31,7 +31,7 @@ const bubbleSort = (userSequence) => {
     }
 
     return sortedSequence;
-}
+};
 
 console.log('Bubble sorting');
 console.log('==============');

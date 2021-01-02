@@ -3,7 +3,7 @@
 const {JSON_MIME_TYPE} = require('./../constants/mime_types_constants');
 
 const JSONSeverMixin = (superClass) => class extends superClass {
-    _serveJSON(jsonObject) {
+    serveJSON(jsonObject) {
         const stringifiedJSON = JSON.stringify(jsonObject);
 
         this._addResponseHeader('Content-Type', JSON_MIME_TYPE);

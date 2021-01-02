@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File upload</title>
+</head>
+<body>
+    <h1>File upload</h1>
+
+    <form action="/data/upload" method="POST" enctype="multipart/form-data" id="upload_1_form">
+        Files:<br/>
+        <input type="file" name="file" id="upload_input_1" multiple>
+        <br/>
+        <input type="text" id="file_name" name="file_name"><br><br>
+        <br/>
+        <input type="text" id="name" name="name"><br><br>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const data = { fileName: 'test1' };
+
+        const checkUploadStatus = () => {
+            fetch('/check/upload', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log(`Status: ${data.status}`);
+
+                    setTimeout(checkUploadStatus, 3000);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        };
+
+        checkUploadStatus();
+    </script>
+
+</body>
+</html>

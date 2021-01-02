@@ -43,7 +43,6 @@ const OpenProxyServerMixin = (superClass) => class extends superClass {
                 this._addResponseHeaders(proxyResponse.headers);
                 this._writeHead(proxyResponse.statusCode);
 
-
                 proxyResponse.on('error', (error) => {
                     console.error(error);
                     reject(error);

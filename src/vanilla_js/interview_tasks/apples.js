@@ -5,12 +5,12 @@
 // Algorithm that finds the best possible profit made by selling apples (based on data for previous week) - no shorting
 
 export default async () => {
-// mock data
+    // mock data
     let stockPricesYesterday = [10, 7, 5, 8, 11, 9];
     let stockPricesYesterdayDescending = [10, 8, 6, 4];
     let stockPricesYesterdayAscending = [2, 4, 6, 8, 10];
 
-// not best solution
+    // not best solution
     const findBestBuySellProfitNotBestSolution = (stocks) => {
         let stocksProfits = [];
 

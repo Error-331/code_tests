@@ -22,7 +22,7 @@ const iteratedBitCount = (digit) => {
     }
 
     return bitsCount;
-}
+};
 
 console.log('Iterated bit count');
 console.log('==================');

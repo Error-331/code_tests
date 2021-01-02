@@ -40,11 +40,10 @@ const heapsPermutationGenerator = (arrayToPermute) => {
     }
 
     return permutationsArray;
-}
+};
 
-
-console.log('Bubble sorting');
-console.log('==============');
+console.log('Heaps permutation generator');
+console.log('===========================');
 
 console.log('');
 

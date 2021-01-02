@@ -1,0 +1,4 @@
+GET http://localhost:3000/form_post_data_test.html
+Cookie: test_cookie1=testval_1; test_cookie2=testval_2
+
+###

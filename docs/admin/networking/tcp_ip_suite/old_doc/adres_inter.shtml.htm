@@ -1,0 +1,1162 @@
+<p>
+    <head>
+        <title>
+            Адресация в IP-сетях
+        </title>
+    </head>
+
+    <body BGCOLOR="#E7E3E7" LINK="#004080" VLINK="#004080" TEXT="#000000" topmargin="0" marginheight="0" Background=" ">
+        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+            <h3 align="center">
+                <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                    Адресация в IP-сетях
+                </font>
+            </h3>
+        </font>
+
+        <p align="center">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                Типы адресов: физический (MAC-адрес), сетевой (IP-адрес) и символьный (DNS-имя)
+            </font>
+        </p>
+
+        <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+            Каждый компьютер в сети TCP/IP имеет адреса трех уровней:
+        </font>
+
+        <ul>
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                <li>
+                    <a name="Anchor1"></a>
+                        <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                            Локальный адрес узла, определяемый технологией, с помощью которой построена отдельная сеть, в которую входит данный узел. Для узлов, входящих в локальные сети -
+                            это МАС-адрес сетевого адаптера или порта маршрутизатора, например, 11-А0-17-3D-BC-01. Эти адреса назначаются производителями оборудования и являются уникальными
+                            адресами, так как управляются централизовано. Для всех существующих технологий локальных сетей МАС-адрес имеет формат 6 байтов: старшие 3 байта - идентификатор
+                            фирмы производителя, а младшие 3 байта назначаются уникальным образом самим производителем. Для узлов, входящих в глобальные сети, такие как Х.25 или frame relay,
+                            локальный адрес назначается администратором глобальной сети.
+                        </font>
+                </li>
+
+                <li>
+                    <a name="Anchor2"></a>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        IP-адрес, состоящий из 4 байт, например, 109.26.17.100. Этот адрес используется на сетевом уровне. Он назначается администратором во время конфигурирования
+                        компьютеров и маршрутизаторов. IP-адрес состоит из двух частей: номера сети и номера узла. Номер сети может быть выбран администратором произвольно, либо назначен
+                        по рекомендации специального подразделения Internet (Network Information Center, NIC), если сеть должна работать как составная часть Internet. Обычно провайдеры
+                        услуг Internet получают диапазоны адресов у подразделений NIC, а затем распределяют их между своими абонентами.
+                    </font>
+
+                </li>
+            </font>
+        </ul>
+
+        <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                Номер узла в протоколе IP назначается независимо от локального адреса узла. Деление IP-адреса на поле номера сети и номера узла - гибкое, и граница между этими полями
+                может устанавливаться весьма произвольно. Узел может входить в несколько IP-сетей. В этом случае узел должен иметь несколько IP-адресов, по числу сетевых связей.
+                Таким образом IP-адрес характеризует не отдельный компьютер или маршрутизатор, а одно сетевое соединение.
+            </font>
+
+            <ul>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                    <li>
+                        <a name="Anchor3"></a>
+
+                        <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                            Символьный идентификатор-имя, например, SERV1.IBM.COM. Этот адрес назначается администратором и состоит из нескольких частей, например, имени машины, имени
+                            организации, имени домена. Такой адрес, называемый также DNS-именем, используется на прикладном уровне, например, в протоколах FTP или telnet.
+                        </font>
+                    </li>
+                </font>
+            </ul>
+        </p>
+
+        <h4>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                    Три основных класса IP-адресов
+            </font>
+        </h4>
+
+        <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                IP-адрес имеет длину 4 байта и обычно записывается в виде четырех чисел, представляющих значения каждого байта в десятичной форме, и разделенных точками, например:
+            </font>
+        </p>
+
+        <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                128.10.2.30 - традиционная десятичная форма представления адреса,
+            </font>
+        </p>
+
+        <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                10000000 00001010 00000010 00011110 - двоичная форма представления этого же адреса.
+            </font>
+        </p>
+
+        <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                На рисунке 3.1 показана структура IP-адреса.
+            </font>
+        </p>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="300">
+            <thead>
+                Класс А
+            </thead>
+
+            <tr>
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        0
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        N сети
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        N узла
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="300">
+            <thead>
+                Класс В
+            </thead>
+
+            <tr>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            1
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            0
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            N сети
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            N узла
+                        </font>
+                    </td>
+                </font>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="300">
+            <thead>
+                Класс С
+            </thead>
+
+            <tr>
+                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            1
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            1
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            0
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            N сети
+                        </font>
+                    </td>
+
+                    <td>
+                        <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                            N узла
+                        </font>
+                    </td>
+                </font>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="300">
+            <thead>
+                Класс D
+            </thead>
+
+            <tr>
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        0
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        адрес группы multicast
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="3" cellspacing="0" width="300">
+            <thead>
+                Класс Е
+            </thead>
+
+            <tr>
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        1
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        0
+                    </font>
+                </td>
+
+                <td>
+                    <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                        зарезервирован
+                    </font>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                Рис. 3.1. Структура IР-адреса
+            </font>
+        </p>
+
+        <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                Адрес состоит из двух логических
+                частей - номера сети и номера узла в сети. Какая часть адреса относится к номеру
+                сети, а какая к номеру узла, определяется значениями первых битов адреса:
+            </font>
+
+            <ul>
+                <li>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        Если адрес начинается с 0, то сеть относят к
+                        классу А, и номер сети занимает один байт, остальные 3 байта интерпретируются
+                        как номер узла в сети. Сети класса А имеют номера в диапазоне от 1 до 126.
+                        (Номер 0 не используется, а номер 127 зарезервирован для специальных целей,
+                        о чем будет сказано ниже.) В сетях класса А количество узлов должно быть больше
+                        216 , но не превышать 224.
+                    </font>
+                </li>
+
+                <li>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        Если первые два бита адреса равны 10, то сеть
+                        относится к классу В и является сетью средних размеров с числом узлов 28 -
+                        216. В сетях класса В под адрес сети и под адрес узла отводится по 16 битов,
+                        то есть по 2 байта.
+                    </font>
+                </li>
+
+                <li>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        Если адрес начинается с последовательности 110,
+                        то это сеть класса С с числом узлов не больше 28. Под адрес сети отводится
+                        24 бита, а под адрес узла - 8 битов.
+                    </font>
+                </li>
+
+                <li>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        Если адрес начинается с последовательности 1110,
+                        то он является адресом класса D и обозначает особый, групповой адрес - multicast.
+                        Если в пакете в качестве адреса назначения указан адрес класса D, то такой
+                        пакет должны получить все узлы, которым присвоен данный адрес.
+                    </font>
+                </li>
+
+                <li>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                        Если адрес начинается с последовательности 11110,
+                        то это адрес класса Е, он зарезервирован для будущих применений.
+                    </font>
+                </li>
+            </ul>
+        </p>
+
+        <p align="justify">
+            <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                В таблице приведены диапазоны номеров
+                сетей, соответствующих каждому классу сетей.
+            </font>
+        </p>
+
+        <p>
+            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                <table border="1" align="center" cellpadding="3" cellspacing="0">
+                    <tr>
+                        <th>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                Класс
+                            </font>
+                        </th>
+
+                        <th>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                Наименьший адрес
+                            </font>
+                        </th>
+
+                        <th>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                Наибольший адрес
+                            </font>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b>
+                                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                    A
+                                </font>
+                            </b>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                01.0.0
+                            </font>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                126.0.0.0
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b>
+                                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                    B
+                                </font>
+                            </b>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                128.0.0.0
+                            </font>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                191.255.0.0
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b>
+                                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                    C
+                                </font>
+                            </b>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                192.0.1.0
+                            </font>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                223.255.255.0
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b>
+                                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                    D
+                                </font>
+                            </b>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                224.0.0.0
+                            </font>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                239.255.255.255
+                            </font>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <b>
+                                <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                    E
+                                </font>
+                            </b>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                240.0.0.0
+                            </font>
+                        </td>
+
+                        <td>
+                            <font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+                                247.255.255.255
+                            </font>
+                        </td>
+                    </tr>
+                </table>
+            </font>
+
+            <h4>
+                <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                    Соглашения о специальных адресах: broadcast, multicast, loopback
+                </font>
+            </h4>
+
+<p>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В протоколе IP существует несколько соглашений 
+  об особой интерпретации IP-адресов: 
+</font>
+<ul>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+если IР-адрес состоит только из двоичных нулей, 
+    
+</font>
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+0 0 0 0 ................................... 0 0 0 0
+</font>
+</td>
+</font>
+</tr>
+</table>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+то он обозначает адрес того узла, который сгенерировал 
+    этот пакет;
+</font>
+</font>
+</li>
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+если в поле номера сети стоят 0, 
+</font>
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+0 0 0 0 .......0 Номер узла
+</font>
+</td>
+</font>
+</tr>
+</table>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+то по умолчанию считается, что этот узел принадлежит 
+    той же самой сети, что и узел, который отправил пакет;
+</font>
+</font>
+</li>
+<li>
+
+<a name="Anchor4"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+если все двоичные разряды IP-адреса равны 1, 
+    
+</font>
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+1 1 1 1 .........................................1 1
+</font>
+</td>
+</font>
+</tr>
+</table>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+то пакет с таким адресом назначения должен рассылаться 
+    всем узлам, находящимся в той же сети, что и источник этого пакета. Такая 
+    рассылка называется ограниченным широковещательным сообщением (limited broadcast);
+</font>
+</font>
+</li>
+<li>
+
+
+<a name="Anchor5"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+если в поле адреса назначения стоят сплошные 
+    1, 
+</font>
+<table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Номер сети 1111................11
+</font>
+</td>
+</font>
+</tr>
+</table>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+то пакет, имеющий такой адрес рассылается всем 
+    узлам сети с заданным номером. Такая рассылка называется широковещательным 
+    сообщением (broadcast);
+</font>
+</font>
+</li>
+<li>
+
+<a name="Anchor6"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+адрес 127.0.0.1 зарезервирован для организации 
+    обратной связи при тестировании работы программного обеспечения узла без реальной 
+    отправки пакета по сети. Этот адрес имеет название loopback.
+</font>
+</font>
+</li>
+</font>
+</ul>
+</font>
+<p align="justify">
+
+<a name="Anchor7"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Уже упоминавшаяся форма группового 
+  IP-адреса - multicast - означает, что данный пакет должен быть доставлен сразу 
+  нескольким узлам, которые образуют группу с номером, указанным в поле адреса. 
+  Узлы сами идентифицируют себя, то есть определяют, к какой из групп они относятся. 
+  Один и тот же узел может входить в несколько групп. Такие сообщения в отличие 
+  от широковещательных называются мультивещательными. Групповой адрес не делится 
+  на поля номера сети и узла и обрабатывается маршрутизатором особым образом. 
+  
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В протоколе IP нет понятия широковещательности 
+  в том смысле, в котором оно используется в протоколах канального уровня локальных 
+  сетей, когда данные должны быть доставлены абсолютно всем узлам. Как ограниченный 
+  широковещательный IP-адрес, так и широковещательный IP-адрес имеют пределы распространения 
+  в интерсети - они ограничены либо сетью, к которой принадлежит узел - источник 
+  пакета, либо сетью, номер которой указан в адресе назначения. Поэтому деление 
+  сети с помощью маршрутизаторов на части локализует широковещательный шторм пределами 
+  одной из составляющих общую сеть частей просто потому, что нет способа адресовать 
+  пакет одновременно всем узлам всех сетей составной сети. 
+</font>
+<h4>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Отображение физических адресов на IP-адреса: протоколы 
+  ARP и RARP
+</font>
+</font>
+</font></h4>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В протоколе IP-адрес узла, то есть 
+  адрес компьютера или порта маршрутизатора, назначается произвольно администратором 
+  сети и прямо не связан с его локальным адресом, как это сделано, например, в 
+  протоколе IPX. Подход, используемый в IP, удобно использовать в крупных сетях 
+  и по причине его независимости от формата локального адреса, и по причине стабильности, 
+  так как в противном случае, при смене на компьютере сетевого адаптера это изменение 
+  должны бы были учитывать все адресаты всемирной сети Internet (в том случае, 
+  конечно, если сеть подключена к Internet'у). 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Локальный адрес используется в протоколе 
+  IP только в пределах локальной сети при обмене данными между маршрутизатором 
+  и узлом этой сети. Маршрутизатор, получив пакет для узла одной из сетей, непосредственно 
+  подключенных к его портам, должен для передачи пакета сформировать кадр в соответствии 
+  с требованиями принятой в этой сети технологии и указать в нем локальный адрес 
+  узла, например его МАС-адрес. В пришедшем пакете этот адрес не указан, поэтому 
+  перед маршрутизатором встает задача поиска его по известному IP-адресу, который 
+  указан в пакете в качестве адреса назначения. С аналогичной задачей сталкивается 
+  и конечный узел, когда он хочет отправить пакет в удаленную сеть через маршрутизатор, 
+  подключенный к той же локальной сети, что и данный узел. 
+</font>
+</font>
+<p align="justify">
+
+<a name="Anchor8"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Для определения локального адреса 
+  по IP-адресу используется протокол разрешения адреса Address Resolution Protocol, 
+  ARP. Протокол ARP работает различным образом в зависимости от того, какой протокол 
+  канального уровня работает в данной сети - протокол локальной сети (Ethernet, 
+  Token Ring, FDDI) с возможностью широковещательного доступа одновременно ко 
+  всем узлам сети, или же протокол глобальной сети (X.25, frame relay), как правило 
+  не поддерживающий широковещательный доступ. Существует также протокол, решающий 
+  обратную задачу - нахождение IP-адреса по известному локальному адресу. Он называется 
+  реверсивный ARP - RARP (
+</font>
+<i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Reverse Address Resolution Protocol
+</i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+) и используется 
+  при старте бездисковых станций, не знающих в начальный момент своего IP-адреса, 
+  но знающих адрес своего сетевого адаптера. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В локальных сетях протокол ARP использует 
+  широковещательные кадры протокола канального уровня для поиска в сети узла с 
+  заданным IP-адресом. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Узел, которому нужно выполнить отображение 
+  IP-адреса на локальный адрес, формирует ARP запрос, вкладывает его в кадр протокола 
+  канального уровня, указывая в нем известный IP-адрес, и рассылает запрос широковещательно. 
+  Все узлы локальной сети получают ARP запрос и сравнивают указанный там IP-адрес 
+  с собственным. В случае их совпадения узел формирует ARP-ответ, в котором указывает 
+  свой IP-адрес и свой локальный адрес и отправляет его уже направленно, так как 
+  в ARP запросе отправитель указывает свой локальный адрес. ARP-запросы и ответы 
+  используют один и тот же формат пакета. Так как локальные адреса могут в различных 
+  типах сетей иметь различную длину, то формат пакета протокола ARP зависит от 
+  типа сети. На рисунке 3.2 показан формат пакета протокола ARP для передачи по 
+  сети Ethernet. 
+</font>
+</font>
+<p>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<table border="1" align="center" cellpadding="3" cellspacing="0">
+<thead>
+</font>
+<b>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+0 8 16 31 Т
+</b>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+</thead>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<th colspan="2">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Тип сети 
+</font>
+</th>
+<th>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Тип протокола
+</font>
+</th>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Длина локального адреса
+</font>
+</td>
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ Длина сетевого адреса
+</font>
+</td>
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ Операция
+</font>
+</td>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td colspan="3">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Локальный адрес отправителя (байты 0 - 3)
+</font>
+</td>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td colspan="2">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Локальный адрес отправителя (байты 4 - 5)
+</font>
+</td>
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ IP-адрес отправителя (байты 0-1)
+</font>
+</td>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td colspan="2">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+IP-адрес отправителя (байты 2-3)
+</font>
+</td>
+<td>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ Искомый локальный адрес (байты 0 - 1)
+</font>
+</td>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td colspan="3">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Искомый локальный адрес (байты 2-5)
+</font>
+</td>
+</font>
+</tr>
+<tr>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<td colspan="3">
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Искомый IP-адрес (байты 0 - 3)
+</font>
+</td>
+</font>
+</tr>
+</table>
+</font>
+<p align="center">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Рис. 3.2. Формат пакета протокола 
+  ARP 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В поле типа сети для сетей Ethernet 
+  указывается значение 1. Поле типа протокола позволяет использовать пакеты ARP 
+  не только для протокола IP, но и для других сетевых протоколов. Для IP значение 
+  этого поля равно 080016. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Длина локального адреса для протокола 
+  Ethernet равна 6 байтам, а длина IP-адреса - 4 байтам. В поле операции для ARP 
+  запросов указывается значение 1 для протокола ARP и 2 для протокола RARP. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Узел, отправляющий ARP-запрос, заполняет 
+  в пакете все поля, кроме поля искомого локального адреса (для RARP-запроса не 
+  указывается искомый IP-адрес). Значение этого поля заполняется узлом, опознавшим 
+  свой IP-адрес. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В глобальных сетях администратору 
+  сети чаще всего приходится вручную формировать ARP-таблицы, в которых он задает, 
+  например, соответствие IP-адреса адресу узла сети X.25, который имеет смысл 
+  локального адреса. В последнее время наметилась тенденция автоматизации работы 
+  протокола ARP и в глобальных сетях. Для этой цели среди всех маршрутизаторов, 
+  подключенных к какой-либо глобальной сети, выделяется специальный маршрутизатор, 
+  который ведет ARP-таблицу для всех остальных узлов и маршрутизаторов этой сети. 
+  При таком централизованном подходе для всех узлов и маршрутизаторов вручную 
+  нужно задать только IP-адрес и локальный адрес выделенного маршрутизатора. Затем 
+  каждый узел и маршрутизатор регистрирует свои адреса в выделенном маршрутизаторе, 
+  а при необходимости установления соответствия между IP-адресом и локальным адресом 
+  узел обращается к выделенному маршрутизатору с запросом и автоматически получает 
+  ответ без участия администратора. 
+</font>
+<h4>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Отображение символьных адресов на IP-адреса: служба 
+  DNS
+</font>
+</font>
+</font></h4>
+</font>
+<p align="justify">
+
+<a name="Anchor9"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+DNS (
+</font>
+<i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Domain Name System
+</i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+) - 
+  это распределенная база данных, поддерживающая иерархическую систему имен для 
+  идентификации узлов в сети Internet. Служба DNS предназначена для автоматического 
+  поиска IP-адреса по известному символьному имени узла. Спецификация DNS определяется 
+  стандартами RFC 1034 и 1035. DNS требует статической конфигурации своих таблиц, 
+  отображающих имена компьютеров в IP-адрес. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Протокол DNS является служебным протоколом 
+  прикладного уровня. Этот протокол несимметричен - в нем определены DNS-серверы 
+  и DNS-клиенты. DNS-серверы хранят часть распределенной базы данных о соответствии 
+  символьных имен и IP-адресов. Эта база данных распределена по административным 
+  доменам сети Internet. Клиенты сервера DNS знают IP-адрес сервера DNS своего 
+  административного домена и по протоколу IP передают запрос, в котором сообщают 
+  известное символьное имя и просят вернуть соответствующий ему IP-адрес. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Если данные о запрошенном соответствии 
+  хранятся в базе данного DNS-сервера, то он сразу посылает ответ клиенту, если 
+  же нет - то он посылает запрос DNS-серверу другого домена, который может сам 
+  обработать запрос, либо передать его другому DNS-серверу. Все DNS-серверы соединены 
+  иерархически, в соответствии с иерархией доменов сети Internet. Клиент опрашивает 
+  эти серверы имен, пока не найдет нужные отображения. Этот процесс ускоряется 
+  из-за того, что серверы имен постоянно кэшируют информацию, предоставляемую 
+  по запросам. Клиентские компьютеры могут использовать в своей работе IP-адреса 
+  нескольких DNS-серверов, для повышения надежности своей работы. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+База данных DNS имеет структуру дерева, 
+  называемого доменным пространством имен, в котором каждый домен (узел дерева) 
+  имеет имя и может содержать поддомены. Имя домена идентифицирует его положение 
+  в этой базе данных по отношению к родительскому домену, причем точки в имени 
+  отделяют части, соответствующие узлам домена. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Корень базы данных DNS управляется 
+  центром Internet Network Information Center. Домены верхнего уровня назначаются 
+  для каждой страны, а также на организационной основе. Имена этих доменов должны 
+  следовать международному стандарту ISO 3166. Для обозначения стран используются 
+  трехбуквенные и двухбуквенные аббревиатуры, а для различных типов организаций 
+  используются следующие аббревиатуры: 
+</font>
+<ul>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+com - коммерческие организации (например, microsoft.com);
+</font>
+</font>
+</li>
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+edu - образовательные (например, mit.edu);
+</font>
+</font>
+</li>
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+gov - правительственные организации (например, 
+    nsf.gov);
+</font>
+</font>
+</li>
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+org - некоммерческие организации (например, 
+    fidonet.org);
+</font>
+</font>
+</li>
+<li>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+net - организации, поддерживающие сети (например, 
+    nsf.net).
+</font>
+</font>
+</li>
+</font>
+</ul>
+</font>
+<p align="justify">
+
+<a name="Anchor10"></a
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Каждый домен DNS администрируется 
+  отдельной организацией, которая обычно разбивает свой домен на поддомены и передает 
+  функции администрирования этих поддоменов другим организациям. Каждый домен 
+  имеет уникальное имя, а каждый из поддоменов имеет уникальное имя внутри своего 
+  домена. Имя домена может содержать до 63 символов. Каждый хост в сети Internet 
+  однозначно определяется своим 
+</font>
+<i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+полным доменным именем (fully qualified domain 
+  name, FQDN
+</i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+), которое включает имена всех доменов по направлению от хоста 
+  к корню. Пример полного DNS-имени : 
+</font>
+</font>
+<p>
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+citint.dol.ru. 
+</font>
+<h4>
+
+<a name="Anchor11"></a>
+
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Автоматизация процесса назначения IP-адресов узлам 
+  сети - протокол DHCP
+</font>
+</font>
+</font></h4>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Как уже было сказано, IP-адреса могут 
+  назначаться администратором сети вручную. Это представляет для администратора 
+  утомительную процедуру. Ситуация усложняется еще тем, что многие пользователи 
+  не обладают достаточными знаниями для того, чтобы конфигурировать свои компьютеры 
+  для работы в интерсети и должны поэтому полагаться на администраторов. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Протокол 
+</font>
+<i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+Dynamic Host Configuration 
+  Protocol (DHCP)
+</i>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+ был разработан для того, чтобы освободить администратора 
+  от этих проблем. Основным назначением DHCP является динамическое назначение 
+  IP-адресов. Однако, кроме динамического, DHCP может поддерживать и более простые 
+  способы ручного и автоматического статического назначения адресов. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В ручной процедуре назначения адресов 
+  активное участие принимает администратор, который предоставляет DHCP-серверу 
+  информацию о соответствии IP-адресов физическим адресам или другим идентификаторам 
+  клиентов. Эти адреса сообщаются клиентам в ответ на их запросы к DHCP-серверу. 
+  
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+При автоматическом статическом способе 
+  DHCP-сервер присваивает IP-адрес (и, возможно, другие параметры конфигурации 
+  клиента) из пула наличных IP-адресов без вмешательства оператора. Границы пула 
+  назначаемых адресов задает администратор при конфигурировании DHCP-сервера. 
+  Между идентификатором клиента и его IP-адресом по-прежнему, как и при ручном 
+  назначении, существует постоянное соответствие. Оно устанавливается в момент 
+  первичного назначения сервером DHCP IP-адреса клиенту. При всех последующих 
+  запросах сервер возвращает тот же самый IP-адрес. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+При динамическом распределении адресов 
+  DHCP-сервер выдает адрес клиенту на ограниченное время, что дает возможность 
+  впоследствии повторно использовать IP-адреса другими компьютерами. Динамическое 
+  разделение адресов позволяет строить IP-сеть, количество узлов в которой намного 
+  превышает количество имеющихся в распоряжении администратора IP-адресов. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+DHCP обеспечивает надежный и простой 
+  способ конфигурации сети TCP/IP, гарантируя отсутствие конфликтов адресов за 
+  счет централизованного управления их распределением. Администратор управляет 
+  процессом назначения адресов с помощью параметра "продолжительности аренды" 
+  (lease duration), которая определяет, как долго компьютер может использовать 
+  назначенный IP-адрес, перед тем как снова запросить его от сервера DHCP в аренду. 
+  
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Примером работы протокола DHCP может 
+  служить ситуация, когда компьютер, являющийся клиентом DHCP, удаляется из подсети. 
+  При этом назначенный ему IP-адрес автоматически освобождается. Когда компьютер 
+  подключается к другой подсети, то ему автоматически назначается новый адрес. 
+  Ни пользователь, ни сетевой администратор не вмешиваются в этот процесс. Это 
+  свойство очень важно для мобильных пользователей. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Протокол DHCP использует модель клиент-сервер. 
+  Во время старта системы компьютер-клиент DHCP, находящийся в состоянии "инициализация", 
+  посылает сообщение discover (исследовать), которое широковещательно распространяется 
+  по локальной сети и передается всем DHCP-серверам частной интерсети. Каждый 
+  DHCP-сервер, получивший это сообщение, отвечает на него сообщением offer (предложение), 
+  которое содержит IP-адрес и конфигурационную информацию. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Компьютер-клиент DHCP переходит в 
+  состояние "выбор" и собирает конфигурационные предложения от DHCP-серверов. 
+  Затем он выбирает одно из этих предложений, переходит в состояние "запрос" и 
+  отправляет сообщение request (запрос) тому DHCP-серверу, чье предложение было 
+  выбрано. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Выбранный DHCP-сервер посылает сообщение 
+  DHCP-acknowledgment (подтверждение), содержащее тот же IP-адрес, который уже 
+  был послан ранее на стадии исследования, а также параметр аренды для этого адреса. 
+  Кроме того, DHCP-сервер посылает параметры сетевой конфигурации. После того, 
+  как клиент получит это подтверждение, он переходит в состояние "связь", находясь 
+  в котором он может принимать участие в работе сети TCP/IP. Компьютеры-клиенты, 
+  которые имеют локальные диски, сохраняют полученный адрес для использования 
+  при последующих стартах системы. При приближении момента истечения срока аренды 
+  адреса компьютер пытается обновить параметры аренды у DHCP-сервера, а если этот 
+  IP-адрес не может быть выделен снова, то ему возвращается другой IP-адрес. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+В протоколе DHCP описывается несколько 
+  типов сообщений, которые используются для обнаружения и выбора DHCP-серверов, 
+  для запросов информации о конфигурации, для продления и досрочного прекращения 
+  лицензии на IP-адрес. Все эти операции направлены на то, чтобы освободить администратора 
+  сети от утомительных рутинных операций по конфигурированию сети. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Однако использование DHCP несет в 
+  себе и некоторые проблемы. Во-первых, это проблема согласования информационной 
+  адресной базы в службах DHCP и DNS. Как известно, DNS служит для преобразования 
+  символьных имен в IP-адреса. Если IP-адреса будут динамически изменятся сервером 
+  DHCP, то эти изменения необходимо также динамически вносить в базу данных сервера 
+  DNS. Хотя протокол динамического взаимодействия между службами DNS и DHCP уже 
+  реализован некоторыми фирмами (так называемая служба Dynamic DNS), стандарт 
+  на него пока не принят. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Во-вторых, нестабильность IP-адресов 
+  усложняет процесс управления сетью. Системы управления, основанные на протоколе 
+  SNMP, разработаны с расчетом на статичность IP-адресов. Аналогичные проблемы 
+  возникают и при конфигурировании фильтров маршрутизаторов, которые оперируют 
+  с IP-адресами. 
+</font>
+</font>
+<p align="justify">
+<font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+Наконец, централизация процедуры 
+  назначения адресов снижает надежность системы: при отказе DHCP-сервера все его 
+  клиенты оказываются не в состоянии получить IP-адрес и другую информацию о конфигурации. 
+  Последствия такого отказа могут быть уменьшены путем использовании в сети нескольких 
+  серверов DHCP, каждый из которых имеет свой пул IP-адресов. 
+</font>
+</font>
+<p>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2">
+&nbsp;
+</body>
+</html>
