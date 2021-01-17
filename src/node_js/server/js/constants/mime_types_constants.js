@@ -15,6 +15,7 @@ const EOT_MIME_TYPE = 'application/vnd.ms-fontobject';
 const OTF_MIME_TYPE = 'application/font-sfnt';
 const TTF_MIME_TYPE = 'application/font-sfnt';
 const WOFF_MIME_TYPE = 'application/font-woff';
+
 const WOFF2_MIME_TYPE = 'font/woff2';
 
 const MPEG3_MIME_TYPE = 'audio/mpeg3';
@@ -25,6 +26,9 @@ const MPEG_MIME_TYPE = 'video/mpeg';
 
 const SWF_MIME_TYPE = 'application/x-shockwave-flash';
 const TEXT_MIME_TYPE = 'text/plain';
+
+const X_WWW_FORM_URLENCODED_MIME_TYPE = 'application/x-www-form-urlencoded';
+const MULTIPART_FORM_DATA_MIME_TYPE = 'multipart/form-data';
 
 const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'html': HTML_MIME_TYPE,
@@ -81,5 +85,8 @@ module.exports.MPEG_MIME_TYPE = MPEG_MIME_TYPE;
 
 module.exports.SWF_MIME_TYPE = SWF_MIME_TYPE;
 module.exports.TEXT_MIME_TYPE = TEXT_MIME_TYPE;
+
+module.exports.X_WWW_FORM_URLENCODED_MIME_TYPE = X_WWW_FORM_URLENCODED_MIME_TYPE;
+module.exports.MULTIPART_FORM_DATA_MIME_TYPE = MULTIPART_FORM_DATA_MIME_TYPE;
 
 module.exports.FILE_EXTENSION_TO_MIME_TYPE = FILE_EXTENSION_TO_MIME_TYPE;

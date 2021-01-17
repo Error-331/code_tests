@@ -11,26 +11,28 @@ const https = require('https');
 const BasicServerClass = require('./js/classes/basic_server_class');
 const BasicWebSocketServerClass = require('./js/classes/basic_web_socket_server_class');
 
-const LogServerMixin = require('./js/mixins/log_server_mixin');
+const LogServerMiddlewareClass = require('./js/classes/middlewares/log_server_middleware_class');
 const CookiesServerMixin = require('./js/mixins/cookies_server_mixin');
 const StaticServerMixin = require('./js/mixins/static_server_mixin');
-const JSONServerMixin = require('./js/mixins/json_server_mixin');
 const ETagTrackingServerMixin = require('./js/mixins/etag_tracking_server_mixin');
-const OpenProxyServerMixin = require('./js/mixins/open_proxy_server_mixin');
+const OpenProxyServerMixin = require('./js/classes/facades/open_proxy_server_mixin');
 const WebSocketReverseProxyServerMixin = require('./js/mixins/web_socket_reverse_proxy_server_mixin');
 
 const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');
 
 // classes definition starts here
-class HttpServerClass extends LogServerMixin(OpenProxyServerMixin(ETagTrackingServerMixin(JSONServerMixin(CookiesServerMixin(StaticServerMixin(BasicServerClass)))))) {}
+class HttpServerClass extends ETagTrackingServerMixin(CookiesServerMixin(StaticServerMixin(BasicServerClass))) {}
 class WebSocketReverseProxyClass extends LogServerMixin(WebSocketReverseProxyServerMixin(CookiesServerMixin(BasicServerClass))) {}
 
 // sockets array definition starts here
 const openSockets = [];
 
 const httpWebServerRequestHandler = async (request, response) => {
-    const serverClassInstance = new HttpServerClass(request, response, {}, routes, __dirname);
+    const serverClassInstance = new HttpServerClass(request, response, {}, routes, _dirname);
+
+    serverClassInstance.use(new LogServerMiddlewareClass());
+
     await serverClassInstance.onHandleRequest();
 };
 
