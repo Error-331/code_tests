@@ -36,18 +36,6 @@ class BasicServerClass {
         return HTTP_STATUS_CODES[statusCode.toString()];
     }
 
-    get serverDomain() {
-        return this.#constantsOverrides.SERVER_DOMAIN ? this.#constantsOverrides.SERVER_DOMAIN : SERVER_DOMAIN;
-    }
-
-    get htmlPagesDirectoryPath() {
-        return this.#constantsOverrides.HTML_PAGES_DIRECTORY_PATH ? this.#constantsOverrides.HTML_PAGES_DIRECTORY_PATH : HTML_PAGES_DIRECTORY_PATH;
-    }
-
-    get resourcesDirectoryPath() {
-        return this.#constantsOverrides.RESOURCES_DIRECTORY_PATH ? this.#constantsOverrides.RESOURCES_DIRECTORY_PATH : RESOURCES_DIRECTORY_PATH;
-    }
-
     get isHTTPSUsed() {
         return this.#isHTTPS;
     }
@@ -72,6 +60,10 @@ class BasicServerClass {
         return this.#response;
     }
 
+    get router() {
+        return this.#router;
+    }
+
     get hostname() {
         const hostHeader = this.#request.getHeader('host');
         const protocol = this.protocol();
@@ -92,6 +84,10 @@ class BasicServerClass {
         } else {
             return null;
         }
+    }
+
+    get serverRootDir() {
+        return this.#serverRootDir;
     }
 
     get constantsOverrides() {

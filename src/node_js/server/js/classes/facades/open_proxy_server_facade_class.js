@@ -7,7 +7,6 @@ const https = require('https');
 const ServerFacadeClass = require('./server_facade_class');
 const ServerRequestClass = require('./request/server_request_class');
 
-const {normalizeURLPath} = require('../../utils/server_request_utils');
 const {OPEN_PROXY_DOMAIN_TO_FORWARD_TO, OPEN_PROXY_FORWARD_PORT} = require('../../constants/open_proxy_constants');
 
 class OpenProxyServerFacadeClass extends ServerFacadeClass {

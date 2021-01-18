@@ -7,12 +7,18 @@ const {
     extractFileExtensionFromPathParams,
     extractFileNameFromPathParams,
     getMIMETypeForFileExtension
-} = require('./../utils/server_request_utils');
+} = require('../../utils/server_request_utils');
 
-const ServerMixinErrorClass = require('./../classes/server_mixin_error_class');
+const {
+    HTML_PAGES_DIRECTORY_PATH,
+    RESOURCES_DIRECTORY_PATH,
+} = require ('./../constants/general_server_constants');
 
-const StaticServerMixin = (superClass) => class extends superClass {
-    _preparePathToFile(pathParams) {
+const ServerMixinErrorClass = require('../server_mixin_error_class');
+const ServerFacadeClass = require('./server_facade_class');
+
+class StaticServerFacadeClass extends ServerFacadeClass {
+    preparePathToFile(pathParams) {
         pathParams = pathParams.slice();
 
         const fileName = extractFileNameFromPathParams(pathParams);
@@ -26,18 +32,18 @@ const StaticServerMixin = (superClass) => class extends superClass {
         let pathToFile;
 
         if (fileExtension === 'html') {
-            pathToFile = `${this._serverRootDir}/${this._getHTMLPagesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
+            pathToFile = `${this.server.serverRootDir}/${this.htmlPagesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
         } else {
-            pathToFile = `${this._serverRootDir}/${this._getResourcesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
+            pathToFile = `${this.server.serverRootDir}/${this.resourcesDirectoryPath()}${pathToDirectory}${fileName}.${fileExtension}`;
         }
 
         return pathToFile;
     }
 
-    _serveFile(pathToFile, fileMIMEType) {
+    serveFile(pathToFile, fileMIMEType) {
         return new Promise((resolve, reject) => {
-            this._addResponseHeader('Content-Type', fileMIMEType);
-            this._writeHead(200);
+            this.server.response.addResponseHeader('Content-Type', fileMIMEType);
+            this.server.response.writeHead(200);
 
             const staticFileStream = fs.createReadStream(pathToFile, {
                 flags: 'r',
@@ -52,7 +58,8 @@ const StaticServerMixin = (superClass) => class extends superClass {
                 const isENOENT = error.code === 'ENOENT';
 
                 const pathParams = pathToFile.split('/');
-                const fileName = pathParams[pathParams.length - 1];
+                const fileName = extractFileNameFromPathParams(pathParams);
+                const fileExtension = extractFileExtensionFromPathParams(pathParams);
 
                 const errorCode = isENOENT ? 404 : 400;
                 const errorMessage = isENOENT ? `Cannot find file: "${fileName}"` : `Cannot open file: "${fileName}.${fileExtension}"`;
@@ -60,11 +67,12 @@ const StaticServerMixin = (superClass) => class extends superClass {
                 reject(new ServerMixinErrorClass(errorCode, errorMessage));
             });
 
-            staticFileStream.pipe(this._response);
+            // TODO: handle pipe properly
+            staticFileStream.pipe(this.server.response.rawResponse);
         });
     }
 
-    async _serverStaticFileByPath(pathParams) {
+    async serverStaticFileByPath(pathParams) {
         pathParams = typeof pathParams === 'string' ? parseURLPathParams(pathParams) : pathParams.slice();
 
         if (!pathParams || pathParams.length <= 0) {
@@ -80,22 +88,30 @@ const StaticServerMixin = (superClass) => class extends superClass {
             throw new ServerMixinErrorClass(400, errorMessage);
         }
 
-        const pathToFile = this._preparePathToFile(pathParams);
-        await this._serveFile(pathToFile, fileMIMEType);
+        const pathToFile = this.preparePathToFile(pathParams);
+        await this.serveFile(pathToFile, fileMIMEType);
     }
 
-    _serveStaticFileByURLParams() {
-        return this._serverStaticFileByPath(this._urlPathParams);
+    serveStaticFileByURLParams() {
+        return this.serverStaticFileByPath(this.server.request.urlPathParams);
     };
 
-    constructor(...serverParams) {
-        super(...serverParams);
+    get htmlPagesDirectoryPath() {
+        return this.server.constantsOverrides.HTML_PAGES_DIRECTORY_PATH ? this.#constantsOverrides.HTML_PAGES_DIRECTORY_PATH : HTML_PAGES_DIRECTORY_PATH;
+    }
 
-        this._addCustomRoute({
+    get resourcesDirectoryPath() {
+        return this.server.constantsOverrides.RESOURCES_DIRECTORY_PATH ? this.#constantsOverrides.RESOURCES_DIRECTORY_PATH : RESOURCES_DIRECTORY_PATH;
+    }
+
+    constructor(server) {
+        super(server);
+
+        this.server.router.addCustomRoute({
             path: /\.[^.\\/:*?"<>|\r\n]+$/,
-            handler: this._serveStaticFileByURLParams
+            handler: this.serveStaticFileByURLParams
         });
     }
 };
 
-module.exports = StaticServerMixin;
+module.exports = StaticServerFacadeClass;

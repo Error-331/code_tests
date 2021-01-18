@@ -1,6 +1,6 @@
 'use strict';
 
-const {generateSHA1} = require('./../utils/crypto_utils');
+const {generateSHA1} = require('../../utils/crypto_utils');
 
 const WebSocketReverseProxyServerMixin = (superClass) => class extends superClass {
 

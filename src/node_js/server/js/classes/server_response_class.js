@@ -10,10 +10,10 @@ class ServerResponseClass {
     #errorPageWasServed = false;
 
     #rawResponse = null;
-    #responseHeaders = [];
+    #headers = [];
 
     clearResponseHeaders() {
-        this.#responseHeaders = [];
+        this.#headers = [];
     }
 
     addResponseHeader(headerName, headerValue, override = true) {
@@ -21,15 +21,15 @@ class ServerResponseClass {
         const normalizedHeaderName = headerName.toLowerCase();
 
         if (override) {
-            headerIndex = this.#responseHeaders.findIndex(header => {
+            headerIndex = this.#headers.findIndex(header => {
                 return header[0] === normalizedHeaderName;
             });
         }
 
         if (headerIndex === -1) {
-            this.#responseHeaders.push([normalizedHeaderName, headerValue])
+            this.#headers.push([normalizedHeaderName, headerValue])
         } else {
-            this.#responseHeaders[headerIndex][1] = headerValue;
+            this.#headers[headerIndex][1] = headerValue;
         }
     }
 
@@ -40,7 +40,7 @@ class ServerResponseClass {
     }
 
     writeHead(statusCode) {
-        this.#rawResponse.writeHead(statusCode, this.#responseHeaders);
+        this.#rawResponse.writeHead(statusCode, this.#headers);
     };
 
     serveEmptyResponse(code = 200) {
@@ -98,7 +98,7 @@ class ServerResponseClass {
     getResponseHeaderIndexByNameValue(headerName, headerValue) {
         const normalizedHeaderName = headerName.toLowerCase();
 
-        return this.#responseHeaders.findIndex(headerArr => {
+        return this.#headers.findIndex(headerArr => {
             return headerArr[0] === normalizedHeaderName && headerArr[1] === headerValue;
         });
     }
@@ -106,7 +106,7 @@ class ServerResponseClass {
     getResponseHeaderByNameValue(headerName, headerValue) {
         const normalizedHeaderName = headerName.toLowerCase();
 
-        return this.#responseHeaders.find(headerArr => {
+        return this.#headers.find(headerArr => {
             return headerArr[0] === normalizedHeaderName && headerArr[1] === headerValue;
         });
     }
@@ -115,16 +115,16 @@ class ServerResponseClass {
         return this.#rawResponse;
     }
 
-    get responseHeaders() {
-        return this.#responseHeaders;
+    get headers() {
+        return this.#headers;
     }
 
     setResponseHeaderValueAtIndex(headerIndex, headerValue) {
-        this.#responseHeaders[headerIndex][1] = headerValue;
+        this.#headers[headerIndex][1] = headerValue;
     }
 
-    set responseHeaders(responseHeaders) {
-        this.#rawResponse = responseHeaders;
+    set responseHeaders(headers) {
+        this.#headers = headers;
     }
 
     constructor(rawResponse) {
