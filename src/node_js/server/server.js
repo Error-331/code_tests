@@ -13,7 +13,7 @@ const BasicWebSocketServerClass = require('./js/classes/basic_web_socket_server_
 
 const LogServerMiddlewareClass = require('./js/classes/middlewares/log_server_middleware_class');
 const StaticServerMixin = require('./js/classes/facades/static_server_facade_class');
-const WebSocketReverseProxyServerMixin = require('./js/classes/facades/web_socket_reverse_proxy_server_mixin');
+const WebSocketReverseProxyServerMixin = require('./js/classes/facades/web_socket_reverse_proxy_server_facade_class');
 
 const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT} = require ('./js/constants/general_server_constants');
 const routes = require('./js/routes');

@@ -43,6 +43,10 @@ class ServerResponseClass {
         this.#rawResponse.writeHead(statusCode, this.#headers);
     };
 
+    write(data) {
+        this.#rawResponse.write(data);
+    }
+
     serveEmptyResponse(code = 200) {
         this.writeHead(code);
         this.#rawResponse.end();
