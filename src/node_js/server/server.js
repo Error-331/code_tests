@@ -1,39 +1,43 @@
 'use strict';
 
+const cluster = require('cluster');
+
+const MetaMasterServerClass = require('./js/classes/meta/meta_master_server_class');
+const MetaChildServerClass = require('./js/classes/meta/meta_child_server_class');
+
+if (cluster.isMaster) {
+    const metaMasterServer = new MetaMasterServerClass();
+    metaMasterServer.startCluster();
+} else {
+    const metaChildServerClass = new MetaChildServerClass();
+    metaChildServerClass.start();
+}
+
 // https://nodejs.org/dist/latest-v8.x/docs/api/net.html#net_server_listen
 // https://tools.ietf.org/html/rfc6455
 // https://gist.github.com/bradwright/1021082
 
-const {readFileSync} = require('fs');
-const http = require('http');
-const https = require('https');
+/*const {readFileSync} = require('fs');
 
-const BasicServerClass = require('./js/classes/basic_server_class');
+
+
 const BasicWebSocketServerClass = require('./js/classes/basic_web_socket_server_class');
 
-const LogServerMiddlewareClass = require('./js/classes/middlewares/log_server_middleware_class');
+
 const StaticServerMixin = require('./js/classes/facades/static_server_facade_class');
 const WebSocketReverseProxyServerMixin = require('./js/classes/facades/web_socket_reverse_proxy_server_facade_class');
 
-const {HTTP_SERVER_PORT, HTTPS_SERVER_PORT} = require ('./js/constants/general_server_constants');
-const routes = require('./js/routes');
+
 
 // classes definition starts here
-class HttpServerClass extends StaticServerMixin(BasicServerClass) {}
 class WebSocketReverseProxyClass extends LogServerMixin(WebSocketReverseProxyServerMixin(BasicServerClass)) {}
 
 // sockets array definition starts here
 const openSockets = [];
 
-const httpWebServerRequestHandler = async (request, response) => {
-    const serverClassInstance = new HttpServerClass(request, response, {}, routes, _dirname);
 
-    serverClassInstance.use(new LogServerMiddlewareClass());
 
-    await serverClassInstance.onHandleRequest();
-};
 
-const httpWebServer = http.createServer(httpWebServerRequestHandler);
 
 httpWebServer.on('upgrade', async (request, socket) => {
     const serverClassInstance = new WebSocketReverseProxyClass(request, socket, {}, routes, __dirname);
@@ -62,13 +66,7 @@ httpWebServer.on('upgrade', async (request, socket) => {
     });
 });
 
-httpWebServer.listen(HTTP_SERVER_PORT, (error) => {
-    if (error) {
-        console.error('Error while starting server (http) -', error);
-    } else {
-        console.log(`Server (http) is listening on ${HTTP_SERVER_PORT}`);
-    }
-});
+
 
 const httpsWebServerRequestHandler = async (request, response) => {
     const serverClassInstance = new HttpServerClass(request, response, {isHTTPS: true}, routes, __dirname);
@@ -87,4 +85,4 @@ httpsWebServer.listen(HTTPS_SERVER_PORT, (error) => {
     } else {
         console.log(`Server (https) is listening on ${HTTPS_SERVER_PORT}`);
     }
-});
+});*/

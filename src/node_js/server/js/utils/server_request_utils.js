@@ -105,6 +105,5 @@ const getMIMETypeForPathParams = (pathParams) => {
 module.exports.extractFileExtensionFromPathParams = extractFileExtensionFromPathParams;
 module.exports.extractFileNameFromPathParams = extractFileNameFromPathParams;
 module.exports.extractRawPOSTDataFromRequest = extractRawPOSTDataFromRequest;
-module.exports.extractPOSTDataFromRequest = extractPOSTDataFromRequest;
 module.exports.getMIMETypeForFileExtension = getMIMETypeForFileExtension;
 module.exports.getMIMETypeForPathParams = getMIMETypeForPathParams;

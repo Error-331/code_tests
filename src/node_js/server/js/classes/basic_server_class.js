@@ -29,7 +29,7 @@ class BasicServerClass {
     #constantsOverrides = {};
 
     async #onBeforeRouteRequest() {
-        this.#middlewares.each(async (middleware) => await middleware.onBeforeRouteRequest(this));
+        this.#middlewares.forEach(async (middleware) => await middleware.onBeforeRouteRequest(this));
     }
 
     getStatusCodeString(statusCode) {
@@ -66,7 +66,7 @@ class BasicServerClass {
 
     get hostname() {
         const hostHeader = this.#request.getHeader('host');
-        const protocol = this.protocol();
+        const protocol = this.protocol;
 
         if (hostHeader) {
             return url.parse(`${protocol}://${hostHeader}`).hostname;
@@ -77,7 +77,7 @@ class BasicServerClass {
 
     get port() {
         const hostHeader = this.#request.getHeader('host');
-        const protocol = this.protocol();
+        const protocol = this.protocol;
 
         if (hostHeader) {
             return url.parse(`${protocol}://${hostHeader}`).port;
@@ -123,7 +123,9 @@ class BasicServerClass {
             await this.#onBeforeRouteRequest();
             await this.routeRequest();
         } catch(error) {
-            this.#response.serveErrorPage(500, error);
+            //TODO: log error
+            // user should not see system error message so we replace it with generic one
+            this.#response.serveErrorPage(500, 'Fatal server error');
             return this.#request.rawRequest.connection.destroy();
         }
     }

@@ -139,7 +139,7 @@ class ServerRequestClass {
     }
 
     setHeader(name, value) {
-        this.#headers[name] = value;
+        this.headers[name] = value;
     }
 
     constructor(rawRequest, tempUploadDirPath) {
