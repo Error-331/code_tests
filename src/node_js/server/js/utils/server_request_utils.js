@@ -8,39 +8,6 @@ const {MAX_POST_DATA_SIZE} = require ('./../constants/general_server_constants')
 
 const MultipartBodyParserContext = require('./../classes/multipart_body_parser/multipart_body_parser_context');
 
-
-const extractFileExtensionFromPathParams = (pathParams) => {
-    const pathParamsCount = pathParams.length;
-
-    if (pathParamsCount === 0) {
-        return;
-    }
-
-    const lastPathParam = pathParams[pathParamsCount - 1];
-    const requestedFileExtension = path.extname(lastPathParam);
-
-    return requestedFileExtension ? requestedFileExtension.substr(1) : undefined;
-};
-
-const extractFileNameFromPathParams = (pathParams) => {
-    const fileExtension = extractFileExtensionFromPathParams(pathParams);
-
-    if (!fileExtension) {
-        return;
-    }
-
-    const pathParamsCount = pathParams.length;
-
-    if (pathParamsCount === 0) {
-        return;
-    }
-
-    const lastPathParam = pathParams[pathParamsCount - 1];
-    const fileName = path.basename(lastPathParam, `.${fileExtension}`);
-
-    return fileName ? fileName : undefined;
-};
-
 const extractRawPOSTDataFromRequest = async (request) =>  {
     return new Promise((resolve, reject) => {
         let postData = '';
@@ -92,18 +59,4 @@ const extractRawPOSTDataFromRequest = async (request) =>  {
     }*/
 };
 
-const getMIMETypeForFileExtension = (fileExtension) => {
-    const fileMIMEType = FILE_EXTENSION_TO_MIME_TYPE[fileExtension.toLowerCase()];
-    return fileMIMEType ? fileMIMEType : undefined;
-};
-
-const getMIMETypeForPathParams = (pathParams) => {
-    const fileExtension = extractFileExtensionFromPathParams(pathParams);
-    return getMIMETypeForFileExtension(fileExtension);
-};
-;
-module.exports.extractFileExtensionFromPathParams = extractFileExtensionFromPathParams;
-module.exports.extractFileNameFromPathParams = extractFileNameFromPathParams;
 module.exports.extractRawPOSTDataFromRequest = extractRawPOSTDataFromRequest;
-module.exports.getMIMETypeForFileExtension = getMIMETypeForFileExtension;
-module.exports.getMIMETypeForPathParams = getMIMETypeForPathParams;

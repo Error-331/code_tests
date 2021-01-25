@@ -25,7 +25,9 @@ class ServerFacadeClass {
     }
 
     constructor(parentServerFacade) {
-        this.parentServerFacade = parentServerFacade;
+        if (parentServerFacade !== undefined && parentServerFacade !== null) {
+            this.parentServerFacade = parentServerFacade;
+        }
     }
 }
 

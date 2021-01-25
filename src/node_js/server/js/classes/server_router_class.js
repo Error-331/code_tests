@@ -1,6 +1,6 @@
 'use strict';
 
-const ServerRequestClass = require('./request/server_request_class');
+const ReqResUtilClass = require('./utils/req_res_util_class');
 const { cloneDeep } = require('./../utils/object_utils');
 
 class ServerRouterClass {
@@ -10,25 +10,21 @@ class ServerRouterClass {
         this.#routes.push(customRoute);
     }
 
-    findCustomRouteForCurrentRequest(server) {
-        const preparedURLPath = server.request.normalizeURLPath;
-        const requestMethod = server.request.method;
-        const requestHostname = server.hostname;
-
+    findCustomRouteForCurrentRequest(request) {
         return this.#routes.find(route => {
-            if (route.method && route.method.toLocaleLowerCase() !== requestMethod) {
+            if (route.method && route.method.toLocaleLowerCase() !== request.method) {
                 return false;
             }
 
-            if (route.hostname && route.hostname !== requestHostname) {
+            if (route.hostname && route.hostname !== request.hostname) {
                 return false;
             }
 
             if (typeof route.path === 'string') {
-                const normalizedURLPath = ServerRequestClass.normalizeURLPath(route.path);
-                return normalizedURLPath === '' ? false : normalizedURLPath === preparedURLPath;
+                const normalizedURLPath = ReqResUtilClass.normalizeURLPath(route.path);
+                return normalizedURLPath === '' ? false : normalizedURLPath === request.normalizedURLPath;
             } else {
-                return route.path.test(preparedURLPath);
+                return route.path.test(request.normalizedURLPath);
             }
         });
     }

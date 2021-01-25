@@ -2,7 +2,7 @@
 
 const http = require('http');
 
-const BasicServerClass = require('../node_js/server/js/classes/basic_server_class');
+const BasicServerClass = require('../node_js/server/js/classes/servers/http_server_class');
 const CookiesServerMixin = require('../node_js/server/js/classes/facades/cookies_server_facade_class');
 const StaticServerMixin = require('../node_js/server/js/classes/facades/static_server_facade_class');
 

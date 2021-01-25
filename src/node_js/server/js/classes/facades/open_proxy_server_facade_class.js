@@ -5,7 +5,7 @@ const http = require('http');
 const https = require('https');
 
 const ServerFacadeClass = require('./server_facade_class');
-const ServerRequestClass = require('./request/server_request_class');
+const ReqResUtilClass = require('./../utils/req_res_util_class');
 
 const {OPEN_PROXY_DOMAIN_TO_FORWARD_TO, OPEN_PROXY_FORWARD_PORT} = require('../../constants/open_proxy_constants');
 
@@ -33,7 +33,7 @@ class OpenProxyServerFacadeClass extends ServerFacadeClass {
             headers: server.request.headers
         };
 
-        if (server.isHTTPSUsed) {
+        if (server.isHTTPS) {
             options.key = readFileSync('./ssl/server.key', 'utf8');
             options.cert = readFileSync('./ssl/server.crt', 'utf8');
         }
@@ -45,7 +45,7 @@ class OpenProxyServerFacadeClass extends ServerFacadeClass {
         return new Promise((resolve, reject) => {
             const server = this.server;
             const requestOptions = this.#prepareOpenProxyGeneralOptions();
-            const requestFunc = server.request.isHTTPSUsed() ? https.request : http.request;
+            const requestFunc = server.isHTTPS() ? https.request : http.request;
 
             const remoteRequest = requestFunc(requestOptions, (proxyResponse) => {
                 server.response.addResponseHeader(proxyResponse.headers);
@@ -98,7 +98,7 @@ class OpenProxyServerFacadeClass extends ServerFacadeClass {
             return;
         }
 
-        pathPrefix = ServerRequestClass.normalizeURLPath(pathPrefix);
+        pathPrefix = ReqResUtilClass.normalizeURLPath(pathPrefix);
         pathPrefix = pathPrefix[0] === '/' ? pathPrefix : `/${pathPrefix}`;
 
         this.#pathToForwardPrefix = pathPrefix;

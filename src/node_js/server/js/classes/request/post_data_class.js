@@ -20,7 +20,7 @@ class PostDataClass {
                 }
             });
 
-            request.on('end', function() {
+            request.rawRequest.on('end', function() {
                 resolve(postData);
             });
         });
@@ -32,6 +32,10 @@ class PostDataClass {
 
     get data() {
         return this.#data
+    }
+
+    getValueByKey(key) {
+        return this.#data[key];
     }
 
     async parse(request) {

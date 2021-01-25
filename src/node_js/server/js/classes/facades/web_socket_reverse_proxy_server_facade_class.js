@@ -2,6 +2,7 @@
 
 const { generateSHA1 } = require('../../utils/crypto_utils');
 const ServerFacadeClass = require('./server_facade_class');
+const ReqResUtilClass = require('./../utils/req_res_util_class');
 
 class WebSocketReverseProxyServerFacadeClass extends ServerFacadeClass {
     #secWebSocketKeyClient = null;
@@ -11,7 +12,7 @@ class WebSocketReverseProxyServerFacadeClass extends ServerFacadeClass {
     #writeHead(statusCode) {
         const protocolString = this.server.protocol.toUpperCase();
         const protocolVersionString = this.server.protocolVersion;
-        const statusCodeString = this.server.getStatusCodeString(statusCode);
+        const statusCodeString = ReqResUtilClass.findStatusCodeStringByStatusCode(statusCode);
 
         this.server.response.write(`${protocolString}/${protocolVersionString} ${statusCode} ${statusCodeString}\r\n`, 'binary');
 

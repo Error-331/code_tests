@@ -6,6 +6,10 @@ const MetaMasterServerClass = require('./js/classes/meta/meta_master_server_clas
 const MetaChildServerClass = require('./js/classes/meta/meta_child_server_class');
 
 if (cluster.isMaster) {
+    process.on('message', () => console.log('pih pih'));
+
+   // process.stdin.on('data', c => console.log('ss', c));
+
     const metaMasterServer = new MetaMasterServerClass();
     metaMasterServer.startCluster();
 } else {

@@ -142,10 +142,8 @@ const routes = [
     {
         path: 'data/upload',
         method: 'post',
-        handler: async function() {
-            const server = this;
-
-            server.serveJSON({
+        handler: async function(serverProxy) {
+            serverProxy.serveJSON({
                 'status': 'ok',
             });
         }
@@ -154,14 +152,12 @@ const routes = [
     {
         path: 'data/form',
         method: 'post',
-        handler: async function() {
-            const server = this;
-
-            server.serveJSON({
+        handler: async function(serverProxy) {
+            serverProxy.serveJSON({
                 'status': 'ok',
-                'name': this.postData['name'],
-                'surname': this.postData['surname'],
-                'email': this.postData['email']
+                'name': serverProxy.getPostValueByKey('name'),
+                'surname': serverProxy.getPostValueByKey('surname'),
+                'email': serverProxy.getPostValueByKey('email')
             });
         }
     },
@@ -174,7 +170,14 @@ const routes = [
             server._writeHead(200);
             server._response.end();
         }
-    }
+    },
+
+    {
+        path: 'test/error/1',
+        handler: async function() {
+            throw new Error('Test server error 1');
+        }
+    },
 ];
 
 module.exports = routes;

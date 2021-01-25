@@ -1,10 +1,9 @@
 'use strict';
 
-const ServerMixinErrorClass = require('./server_mixin_error_class');
-
-const { getMIMETypeForFileExtension } = require('./../utils/server_request_utils');
-
 const { JSON_MIME_TYPE } = require('./../constants/mime_types_constants');
+
+const ServerMixinErrorClass = require('./server_mixin_error_class');
+const ReqResUtilClass = require('./utils/req_res_util_class');
 
 class ServerResponseClass {
     #errorPageWasServed = false;
@@ -13,6 +12,15 @@ class ServerResponseClass {
     #headers = [];
 
     clearResponseHeaders() {
+        this.#headers = [];
+    }
+
+    async destroy() {
+        if (this.#rawResponse.socket !== undefined && this.#rawResponse.socket !== null) {
+            this.#rawResponse.socket.destroy();
+        }
+
+        this.#rawResponse = null;
         this.#headers = [];
     }
 
@@ -57,7 +65,7 @@ class ServerResponseClass {
             return;
         }
 
-        const textMIMEType = getMIMETypeForFileExtension('txt');
+        const textMIMEType = ReqResUtilClass.findMIMETypeByFileExtension('txt');
 
         this.addResponseHeader('Content-Type', textMIMEType);
         this.writeHead(code);
@@ -71,7 +79,6 @@ class ServerResponseClass {
         }
 
         this.#rawResponse.end(errorMessage);
-        console.error(errorMessage);
     }
 
     serveJSON(jsonObject) {
@@ -83,20 +90,12 @@ class ServerResponseClass {
         this.#rawResponse.end(stringifiedJSON);
     }
 
-    async serverDataByURLParams(routeParamsObj) {
+    async serverDataByURLParams(serverProxy, routeParamsObj) {
         if(!routeParamsObj.handler || typeof routeParamsObj.handler !== 'function') {
-            return this.serveErrorPage(404, 'Route handler function not found');
+            throw new ServerMixinErrorClass(404, 'Route handler function not found');
         }
 
-        try {
-            await routeParamsObj.handler.call(this);
-        } catch(error) {
-            if (error instanceof ServerMixinErrorClass) {
-                return this.serveErrorPage(error.httpResponseCode, error);
-            } else {
-                return this.serveErrorPage(500, error);
-            }
-        }
+        await routeParamsObj.handler(serverProxy);
     };
 
     getResponseHeaderIndexByNameValue(headerName, headerValue) {
@@ -127,7 +126,7 @@ class ServerResponseClass {
         this.#headers[headerIndex][1] = headerValue;
     }
 
-    set responseHeaders(headers) {
+    set headers(headers) {
         this.#headers = headers;
     }
 
