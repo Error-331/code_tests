@@ -3,7 +3,7 @@
 const path = require('path');
 const queryString = require('querystring');
 
-const {FILE_EXTENSION_TO_MIME_TYPE} = require ('./../constants/mime_types_constants');
+const {FILE_EXTENSION_TO_MIME_TYPE} = require ('../constants/data/mime_types_constants');
 const {MAX_POST_DATA_SIZE} = require ('./../constants/general_server_constants');
 
 const MultipartBodyParserContext = require('./../classes/multipart_body_parser/multipart_body_parser_context');

@@ -2,7 +2,7 @@
 
 const queryString = require('querystring');
 
-const { X_WWW_FORM_URLENCODED_MIME_TYPE, MULTIPART_FORM_DATA_MIME_TYPE } = require('./../../constants/mime_types_constants');
+const { X_WWW_FORM_URLENCODED_MIME_TYPE, MULTIPART_FORM_DATA_MIME_TYPE } = require('../../constants/data/mime_types_constants');
 
 const PostDataClass = require('./post_data_class');
 const ReqResUtilClass = require('./../utils/req_res_util_class');

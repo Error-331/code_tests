@@ -7,7 +7,7 @@ const {
 } = require('../../utils/server_request_utils');
 
 const {
-    HTML_PAGES_DIRECTORY_PATH,
+    STATIC_PAGES_DIRECTORY_PATH,
     RESOURCES_DIRECTORY_PATH,
 } = require ('./../../constants/general_server_constants');
 
@@ -29,7 +29,7 @@ class StaticServerFacadeClass extends ServerFacadeClass {
 
         let pathToFile;
 
-        if (fileExtension === 'html') {
+        if (ReqResUtilClass.isStaticPage(fileExtension)) {
             pathToFile = `${this.server.serverRootDir}/${this.htmlPagesDirectoryPath}${pathToDirectory}${fileName}.${fileExtension}`;
         } else {
             pathToFile = `${this.server.serverRootDir}/${this.resourcesDirectoryPath}${pathToDirectory}${fileName}.${fileExtension}`;
@@ -95,7 +95,7 @@ class StaticServerFacadeClass extends ServerFacadeClass {
     };
 
     get htmlPagesDirectoryPath() {
-        return this.server.constantsOverrides.HTML_PAGES_DIRECTORY_PATH ? this.server.constantsOverrides.HTML_PAGES_DIRECTORY_PATH : HTML_PAGES_DIRECTORY_PATH;
+        return this.server.constantsOverrides.STATIC_PAGES_DIRECTORY_PATH ? this.server.constantsOverrides.STATIC_PAGES_DIRECTORY_PATH : STATIC_PAGES_DIRECTORY_PATH;
     }
 
     get resourcesDirectoryPath() {

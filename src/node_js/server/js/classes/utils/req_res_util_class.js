@@ -3,9 +3,14 @@
 const { STATUS_CODES } = require('http');
 const path = require('path');
 
-const { FILE_EXTENSION_TO_MIME_TYPE } = require ('./../../constants/mime_types_constants');
+const { STATIC_PAGE_EXTENSIONS } = require('./../../constants/data/file_extensions_constants');
+const { FILE_EXTENSION_TO_MIME_TYPE } = require ('./../../constants/data/mime_types_constants');
 
 class ReqResUtilClass {
+    static isStaticPage(fileExtension) {
+        return STATIC_PAGE_EXTENSIONS.includes(fileExtension);
+    }
+
     static parseRequestCookies(cookiesHeader) {
         return cookiesHeader.split(';').reduce((parsedCookies, cookieKeyValue) => {
             const [key, value] = cookieKeyValue.trim().split('=');

@@ -34,7 +34,7 @@ class MetaChildServerClass {
         }, routes);
 
         serverClassInstance.use(new StaticServerMiddlewareClass());
-        //serverClassInstance.use(new LogServerMiddlewareClass());
+        serverClassInstance.use(new LogServerMiddlewareClass());
 
         return serverClassInstance;
     }
@@ -57,9 +57,9 @@ class MetaChildServerClass {
 
 
         if (server !== null) {
-            server.on(SERVER_LISTEN_ERROR_EVENT, (er) => {
+            /*server.on(SERVER_LISTEN_ERROR_EVENT, (er) => {
                 console.log('bbbbb', er);
-            });
+            });*/
 
             try {
                 server.startListening();

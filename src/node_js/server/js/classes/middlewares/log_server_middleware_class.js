@@ -55,7 +55,7 @@ class LogServerMiddlewareClass {
         console.log('---------------');
         console.log('');
 
-        console.log('Rqw cookies data: ', server.request.rawCookies);
+        console.log('Raw cookies data: ', server.request.rawCookies);
         console.log('Cookies data: ', server.request.cookies);
     }
 

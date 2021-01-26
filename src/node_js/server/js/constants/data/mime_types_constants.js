@@ -1,5 +1,10 @@
 'use strict';
 
+const {
+    HTML_FILE_EXTENSION,
+    WML_FILE_EXTENSION,
+} = require('./file_extensions_constants');
+
 const HTML_MIME_TYPE = 'text/html';
 const CSS_MIME_TYPE = 'text/css';
 const JS_MIME_TYPE = 'application/javascript';
@@ -30,8 +35,17 @@ const TEXT_MIME_TYPE = 'text/plain';
 const X_WWW_FORM_URLENCODED_MIME_TYPE = 'application/x-www-form-urlencoded';
 const MULTIPART_FORM_DATA_MIME_TYPE = 'multipart/form-data';
 
+const XML_NONE_CASUAL_READER_MIME_TYPE = 'application/xml';
+const XML_CASUAL_READER_MIME_TYPE = 'text/xml';
+
+const WML_MIME_TYPE = 'text/vnd.wap.wml';
+const WMLS_MIME_TYPE = 'text/vnd.wap.wmlscript';
+const WMLC_MIME_TYPE = 'application/vnd.wap.wmlc';
+const WMLSC_MIME_TYPE = 'application/vnd.wap.wmlscriptc';
+const WBMP_MIME_TYPE = 'image/vnd.wap.wbmp';
+
 const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
-    'html': HTML_MIME_TYPE,
+    [HTML_FILE_EXTENSION]: HTML_MIME_TYPE,
     'css': CSS_MIME_TYPE,
     'js': JS_MIME_TYPE,
     'json': JSON_MIME_TYPE,
@@ -57,7 +71,15 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'mpg': MPEG_MIME_TYPE,
 
     'swf': SWF_MIME_TYPE,
-    'txt': TEXT_MIME_TYPE
+    'txt': TEXT_MIME_TYPE,
+
+    'xml': XML_CASUAL_READER_MIME_TYPE,
+
+    [WML_FILE_EXTENSION]: WML_MIME_TYPE,
+    'wmls': WMLS_MIME_TYPE,
+    'wmlc': WMLC_MIME_TYPE,
+    'wmlsc': WMLSC_MIME_TYPE,
+    'wbmp': WBMP_MIME_TYPE,
 });
 
 module.exports.HTML_MIME_TYPE = HTML_MIME_TYPE;
@@ -88,5 +110,14 @@ module.exports.TEXT_MIME_TYPE = TEXT_MIME_TYPE;
 
 module.exports.X_WWW_FORM_URLENCODED_MIME_TYPE = X_WWW_FORM_URLENCODED_MIME_TYPE;
 module.exports.MULTIPART_FORM_DATA_MIME_TYPE = MULTIPART_FORM_DATA_MIME_TYPE;
+
+module.exports.XML_NONE_CASUAL_READER_MIME_TYPE = XML_NONE_CASUAL_READER_MIME_TYPE;
+module.exports.XML_CASUAL_READER_MIME_TYPE = XML_CASUAL_READER_MIME_TYPE;
+
+module.exports.WML_MIME_TYPE = WML_MIME_TYPE;
+module.exports.WMLS_MIME_TYPE = WMLS_MIME_TYPE;
+module.exports.WMLC_MIME_TYPE = WMLC_MIME_TYPE;
+module.exports.WMLSC_MIME_TYPE = WMLSC_MIME_TYPE;
+module.exports.WBMP_MIME_TYPE = WBMP_MIME_TYPE;
 
 module.exports.FILE_EXTENSION_TO_MIME_TYPE = FILE_EXTENSION_TO_MIME_TYPE;

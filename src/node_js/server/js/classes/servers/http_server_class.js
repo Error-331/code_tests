@@ -14,7 +14,7 @@ const HTTPServerProxyClass = require('./../proxies/http_server_proxy_class');
 
 const ReqResUtilClass = require('./../utils/req_res_util_class');
 
-class HTTPServerClass extends EventEmitter{
+class HTTPServerClass extends EventEmitter {
     #server = null;
 
     #request = null;
@@ -44,34 +44,26 @@ class HTTPServerClass extends EventEmitter{
     }
 
     async #onBeforeErrorSent(error) {
-        this.#middlewares.forEach(async (middleware) => {
-            if (middleware.onBeforeErrorSent) {
-                await middleware.onBeforeErrorSent(this, error);
-            }
-        });
+        await this.#executeMiddlewareMethod('onBeforeErrorSent', error);
     }
 
     async #onBeforeRouteRequest() {
-        this.#middlewares.forEach(async (middleware) => {
-            if (middleware.onBeforeRouteRequest) {
-                await middleware.onBeforeRouteRequest(this);
-            }
-        });
+        await this.#executeMiddlewareMethod('onBeforeRouteRequest');
     }
 
-    async #onHandleError(error) {
+    async #onHandleRequestError(error) {
         await this.#onBeforeErrorSent(error);
 
         if (error instanceof ServerMixinErrorClass) {
             if (error.httpResponseCode >= 500) {
                 // user should not see system error message so we replace it with generic one
-                return this.#response.serveErrorPage(error.httpResponseCode, ReqResUtilClass.findStatusCodeStringByStatusCode(error.httpResponseCode));
+                return this.#response?.serveErrorPage?.(error.httpResponseCode, ReqResUtilClass.findStatusCodeStringByStatusCode(error.httpResponseCode));
             } else {
-                return this.#response.serveErrorPage(error.httpResponseCode, error);
+                return this.#response?.serveErrorPage?.(error.httpResponseCode, error);
             }
         } else {
             // user should not see system error message so we replace it with generic one
-            return this.#response.serveErrorPage(500, 'Fatal server error');
+            return this.#response?.serveErrorPage?.(500, 'Fatal server error');
         }
     }
 
@@ -84,14 +76,21 @@ class HTTPServerClass extends EventEmitter{
             await this.#onBeforeRouteRequest();
             await this.#routeRequest();
         } catch(error) {
-            await this.#onHandleError(error);
+            await this.#onHandleRequestError(error);
         } finally {
-            await this.destroy();
+            await this.finalizeRequest();
         }
     }
 
-    #onHandleServerError(error) {
+    async #onHandleServerError(error) {
         this.emit(SERVER_ERROR_EVENT, error);
+        await this.#onHandleRequestError(error);
+    }
+
+    async #executeMiddlewareMethod(methodName, ...params) {
+        for (let middlewareIdx = 0; middlewareIdx < this.#middlewares.length; middlewareIdx++) {
+            await this.#middlewares[middlewareIdx]?.[methodName]?.(this, ...params);
+        }
     }
 
     #bindEvents() {
@@ -99,13 +98,9 @@ class HTTPServerClass extends EventEmitter{
     }
 
     async destroy() {
-        await this.#request.destroy();
-        await this.#response.destroy();
+        await this.finalizeRequest();
 
         this.#server = null;
-
-        this.#request = null;
-        this.#response = null;
         this.#router = null;
 
         this.#protocol = null;
@@ -115,6 +110,14 @@ class HTTPServerClass extends EventEmitter{
 
         this.#serverRootDir = '';
         this.#constantsOverrides = {};
+    }
+
+    async finalizeRequest() {
+        await this.#request.destroy();
+        await this.#response.destroy();
+
+        this.#request = null;
+        this.#response = null;
     }
 
     use(nextMiddleware) {

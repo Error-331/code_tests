@@ -1,6 +1,6 @@
 'use strict';
 
-const { JSON_MIME_TYPE } = require('./../constants/mime_types_constants');
+const { JSON_MIME_TYPE } = require('../constants/data/mime_types_constants');
 
 const ServerMixinErrorClass = require('./server_mixin_error_class');
 const ReqResUtilClass = require('./utils/req_res_util_class');

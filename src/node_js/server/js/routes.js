@@ -178,6 +178,13 @@ const routes = [
             throw new Error('Test server error 1');
         }
     },
+
+    {
+        path: 'wml/world_time/select',
+        handler: async function() {
+            throw new Error('Test server error 1');
+        }
+    },
 ];
 
 module.exports = routes;
