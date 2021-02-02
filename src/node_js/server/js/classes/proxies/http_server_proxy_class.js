@@ -7,12 +7,28 @@ class HTTPServerProxyClass {
         return this.server.response.serveJSON(jsonObject);
     }
 
+    writeHead(statusCode) {
+        return this.response.writeHead(statusCode);
+    }
+
     addResponseHeader(headerName, headerValue, override = true) {
         return this.response.addResponseHeader(headerName, headerValue, override);
     }
 
-    writeHead(statusCode) {
-        return this.response.writeHead(statusCode);
+    addTransformStream(transformStream) {
+        this.response.addTransformStream(transformStream);
+    }
+
+    addCustomRoute(customRoute) {
+        this.router.addCustomRoute(customRoute);
+    }
+
+    use(nextMiddleware) {
+        this.server.use(nextMiddleware);
+    }
+
+    pipeToResponseFrom(readableStream) {
+        return this.response.pipeFrom(readableStream);
     }
 
     get server() {
@@ -25,6 +41,10 @@ class HTTPServerProxyClass {
 
     get response() {
         return this.#server.response;
+    }
+
+    get router() {
+        return this.#server.router;
     }
 
     get constantsOverrides() {

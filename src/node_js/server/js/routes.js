@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 
+const WMLToXMLTransformStreamClass = require('./classes/streams/transform/wml_to_xml_transform_stream_class');
+
 const routes = [
     {
         path: 'data/save',
@@ -184,7 +186,7 @@ const routes = [
         handler: async function() {
             throw new Error('Test server error 1');
         }
-    },
+    }
 ];
 
 module.exports = routes;

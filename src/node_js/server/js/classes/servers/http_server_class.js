@@ -69,7 +69,7 @@ class HTTPServerClass extends EventEmitter {
 
     async #onHandleRequest(request, response) {
         this.#request = new ServerRequestClass(request, './');
-        this.#response = new ServerResponseClass(response);
+        this.#response.rawResponse = response
 
         try {
             await this.#request.prepare();
@@ -89,7 +89,7 @@ class HTTPServerClass extends EventEmitter {
 
     async #executeMiddlewareMethod(methodName, ...params) {
         for (let middlewareIdx = 0; middlewareIdx < this.#middlewares.length; middlewareIdx++) {
-            await this.#middlewares[middlewareIdx]?.[methodName]?.(this, ...params);
+            await this.#middlewares[middlewareIdx]?.[methodName]?.(new HTTPServerProxyClass(this), ...params);
         }
     }
 
@@ -99,6 +99,9 @@ class HTTPServerClass extends EventEmitter {
 
     async destroy() {
         await this.finalizeRequest();
+
+        this.#request = null;
+        this.#response = null;
 
         this.#server = null;
         this.#router = null;
@@ -115,9 +118,6 @@ class HTTPServerClass extends EventEmitter {
     async finalizeRequest() {
         await this.#request.destroy();
         await this.#response.destroy();
-
-        this.#request = null;
-        this.#response = null;
     }
 
     use(nextMiddleware) {
@@ -171,6 +171,8 @@ class HTTPServerClass extends EventEmitter {
 
     constructor(options = {}, routes = [], constantsOverrides) {
         super();
+
+        this.#response = new ServerResponseClass();
 
         this.#server = http.createServer(this.#onHandleRequest.bind(this));
         this.#router = new ServerRouterClass(routes);

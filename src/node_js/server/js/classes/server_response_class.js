@@ -11,6 +11,17 @@ class ServerResponseClass {
     #rawResponse = null;
     #headers = [];
 
+    #transformStreams = [];
+
+    #pipeTransformStreams(sourceStream) {
+        return this.#transformStreams.reduce((currentStream, nextStream) => {
+            return currentStream.pipe(nextStream);
+        }, sourceStream).pipe(this.#rawResponse);
+    }
+
+    #bindEventHandlers() {
+    }
+
     clearResponseHeaders() {
         this.#headers = [];
     }
@@ -22,6 +33,12 @@ class ServerResponseClass {
 
         this.#rawResponse = null;
         this.#headers = [];
+
+        this.#transformStreams = [];
+    }
+
+    addTransformStream(transformStream) {
+        this.#transformStreams.push(transformStream);
     }
 
     addResponseHeader(headerName, headerValue, override = true) {
@@ -51,8 +68,12 @@ class ServerResponseClass {
         this.#rawResponse.writeHead(statusCode, this.#headers);
     };
 
-    write(data) {
+    writeData(data) {
         this.#rawResponse.write(data);
+    }
+
+    pipeFrom(readableStream) {
+        return this.#pipeTransformStreams(readableStream);
     }
 
     serveEmptyResponse(code = 200) {
@@ -126,12 +147,18 @@ class ServerResponseClass {
         this.#headers[headerIndex][1] = headerValue;
     }
 
+    set rawResponse(rawResponse) {
+        this.#rawResponse = rawResponse;
+    }
+
     set headers(headers) {
         this.#headers = headers;
     }
 
     constructor(rawResponse) {
-        this.#rawResponse = rawResponse;
+        this.#rawResponse = rawResponse ?? null;
+
+        this.#bindEventHandlers();
     }
 }
 

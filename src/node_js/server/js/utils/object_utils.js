@@ -10,7 +10,11 @@ const cloneDeep = (objectToClone) => {
             const propertyValue = newObject[objectProperty];
 
             if (Array.isArray(propertyValue) || isRegularObject(propertyValue)) {
-                newObject[objectProperty] = cloneDeep(propertyValue);
+                if (propertyValue instanceof RegExp) {
+                    newObject[objectProperty] = propertyValue;
+                } else {
+                    newObject[objectProperty] = cloneDeep(propertyValue);
+                }
             }
         }
     }

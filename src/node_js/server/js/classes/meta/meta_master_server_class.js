@@ -34,6 +34,7 @@ class MetaMasterServerClass {
         this.#isShuttingDown = true;
 console.log('bzzzzzzzz');
         for (const id in cluster.workers) {
+
             cluster.workers[id].send(MASTER_INIT_SHUTDOWN);
         }
 

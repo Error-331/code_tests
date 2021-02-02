@@ -2,6 +2,7 @@
 
 const {
     HTML_FILE_EXTENSION,
+    XML_FILE_EXTENSION,
     WML_FILE_EXTENSION,
 } = require('./file_extensions_constants');
 
@@ -37,6 +38,7 @@ const MULTIPART_FORM_DATA_MIME_TYPE = 'multipart/form-data';
 
 const XML_NONE_CASUAL_READER_MIME_TYPE = 'application/xml';
 const XML_CASUAL_READER_MIME_TYPE = 'text/xml';
+const XSLT_MITE_TYPE = 'application/xslt+xml';
 
 const WML_MIME_TYPE = 'text/vnd.wap.wml';
 const WMLS_MIME_TYPE = 'text/vnd.wap.wmlscript';
@@ -73,7 +75,9 @@ const FILE_EXTENSION_TO_MIME_TYPE = Object.freeze({
     'swf': SWF_MIME_TYPE,
     'txt': TEXT_MIME_TYPE,
 
-    'xml': XML_CASUAL_READER_MIME_TYPE,
+    [XML_FILE_EXTENSION]: XML_CASUAL_READER_MIME_TYPE,
+    'xslt': XSLT_MITE_TYPE,
+    'xsl': XSLT_MITE_TYPE,
 
     [WML_FILE_EXTENSION]: WML_MIME_TYPE,
     'wmls': WMLS_MIME_TYPE,
@@ -113,6 +117,7 @@ module.exports.MULTIPART_FORM_DATA_MIME_TYPE = MULTIPART_FORM_DATA_MIME_TYPE;
 
 module.exports.XML_NONE_CASUAL_READER_MIME_TYPE = XML_NONE_CASUAL_READER_MIME_TYPE;
 module.exports.XML_CASUAL_READER_MIME_TYPE = XML_CASUAL_READER_MIME_TYPE;
+module.exports.XSLT_MITE_TYPE = XSLT_MITE_TYPE;
 
 module.exports.WML_MIME_TYPE = WML_MIME_TYPE;
 module.exports.WMLS_MIME_TYPE = WMLS_MIME_TYPE;

@@ -14,12 +14,12 @@ class WebSocketReverseProxyServerFacadeClass extends ServerFacadeClass {
         const protocolVersionString = this.server.protocolVersion;
         const statusCodeString = ReqResUtilClass.findStatusCodeStringByStatusCode(statusCode);
 
-        this.server.response.write(`${protocolString}/${protocolVersionString} ${statusCode} ${statusCodeString}\r\n`, 'binary');
+        this.server.response.writeData(`${protocolString}/${protocolVersionString} ${statusCode} ${statusCodeString}\r\n`, 'binary');
 
         const responseHeaders = this.server.response.headers;
-        responseHeaders.forEach(([headerName, headerValue]) =>  this.server.response.write(`${headerName}:${headerValue}\r\n`, 'binary'));
+        responseHeaders.forEach(([headerName, headerValue]) =>  this.server.response.writeData(`${headerName}:${headerValue}\r\n`, 'binary'));
 
-        this.server.response.write('\r\n');
+        this.server.response.writeData('\r\n');
     };
 
     // TODO: Sec-WebSocket-Protocol

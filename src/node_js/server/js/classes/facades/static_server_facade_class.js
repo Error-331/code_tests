@@ -65,8 +65,7 @@ class StaticServerFacadeClass extends ServerFacadeClass {
                 reject(new ServerMixinErrorClass(errorCode, errorMessage));
             });
 
-            // TODO: handle pipe properly
-            staticFileStream.pipe(this.server.response.rawResponse);
+            this.server.pipeToResponseFrom(staticFileStream);
         });
     }
 

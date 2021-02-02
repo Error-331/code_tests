@@ -20,9 +20,11 @@ const { SERVER_LISTEN_ERROR_EVENT } = require('./../../constants/server/server_e
 const routes = require('./../../routes');
 
 const HTTPServerClass = require('./../servers/http_server_class');
+const HTTPServerProxyClass = require('./../proxies/http_server_proxy_class');
 
 const LogServerMiddlewareClass = require('./../middlewares/log_server_middleware_class');
 const StaticServerMiddlewareClass = require('./../middlewares/static_server_middleware_class');
+const WMLServerMiddlewareClass = require('./../middlewares/wml_server_middleware_class');
 
 class MetaChildServerClass {
     #type = null;
@@ -33,8 +35,11 @@ class MetaChildServerClass {
             port: HTTP_SERVER_PORT,
         }, routes);
 
-        serverClassInstance.use(new StaticServerMiddlewareClass());
-        serverClassInstance.use(new LogServerMiddlewareClass());
+        const serverProxy = new HTTPServerProxyClass(serverClassInstance);
+
+        serverProxy.use(new WMLServerMiddlewareClass());
+        serverProxy.use(new StaticServerMiddlewareClass());
+        serverProxy.use(new LogServerMiddlewareClass());
 
         return serverClassInstance;
     }
