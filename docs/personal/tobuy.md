@@ -112,6 +112,8 @@ https://www.yakaboo.ua/ua/byt-piratom-kak-brosit-miru-vyzov-i-pobedit.html?utm_s
 https://www.yakaboo.ua/ua/last-days-of-summer.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop#proceed
 https://www.yakaboo.ua/ua/mamiglapinatapei-abo-ljubov-u-kiivs-kij-komunalci-1570986.html?gclid=Cj0KCQiAlZH_BRCgARIsAAZHSBkUvdzK8rsWPLARRPCJYA3-EfUK7Wp_Vo7BXJi4iWf_CHAcsifSb6gaApgzEALw_wcB
 
+https://biblia.in.ua/biblii/045zti-bibliya-oranzhevo-zheltaya-11918 - библия
+
 ## Сумки
 
 http://suitcase.zakupka.com/p/170799081-leadhake-y-310-sumka-muzhskaya-brezentovaya/
