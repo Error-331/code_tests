@@ -3,7 +3,7 @@
 export default async () => {
     // mock data
     const denominations1 = [50, 25, 10, 5, 1];
-    const denominations2 = [1, 3, 4];
+    const denominations2 = [4, 3, 1];
 
     // slowest solution
     const findAmountOfChangeSlowestSolution = (money, denominations) => {
@@ -27,9 +27,7 @@ export default async () => {
 
         return coins;
     };
-
-
-
+    
     // better solution
     const findAmountOfChangeBetterSolution = (money, denominations) => {
         let currentMoney = money;
@@ -52,11 +50,17 @@ export default async () => {
     // dynamic programming recursive solution (with memo)
     const findAmountOfChangeDynamicProgrammingMemoSolution = (money, denominations, numOfCoinsMemo = {}, coinMemo = {}) => {
         if (money < 0) {
-            return Infinity
+            return {
+                bestNumOfCoins: Infinity,
+                coinMemo,
+            };
         }
 
         if (money === 0) {
-            return 0;
+            return {
+                bestNumOfCoins: 0,
+                coinMemo,
+            };
         }
 
         if (numOfCoinsMemo[money]) {
@@ -64,17 +68,19 @@ export default async () => {
         }
 
         let bestNumOfCoins = Infinity;
-        let d = null;
+        let bestCoin = null;
 
         for (let coinCnt = 0; coinCnt < denominations.length; coinCnt++) {
-            if (bestNumOfCoins > findAmountOfChangeDynamicProgrammingMemoSolution(money - denominations[coinCnt], denominations, numOfCoinsMemo, coinMemo) + 1) {
-                d = denominations[coinCnt];
-                bestNumOfCoins = findAmountOfChangeDynamicProgrammingMemoSolution(money - denominations[coinCnt], denominations, numOfCoinsMemo, coinMemo) + 1
+            const foundSolution = findAmountOfChangeDynamicProgrammingMemoSolution(money - denominations[coinCnt], denominations, numOfCoinsMemo, coinMemo);
+
+            if (bestNumOfCoins > foundSolution.bestNumOfCoins + 1) {
+                bestCoin = denominations[coinCnt];
+                bestNumOfCoins = foundSolution.bestNumOfCoins + 1
             }
         }
 
         numOfCoinsMemo[money] = bestNumOfCoins;
-        coinMemo[money] = d;
+        coinMemo[money] = bestCoin;
 
         return {
             bestNumOfCoins,
@@ -99,6 +105,11 @@ export default async () => {
 
     console.log('Amount of change');
     console.log('================');
+    console.log('');
+
+    console.log('Slowest solution');
+    console.log('----------------');
+    console.log('');
 
     let change = findAmountOfChangeSlowestSolution(105, denominations1);
 
@@ -125,7 +136,18 @@ export default async () => {
     console.log('Amount of change (4) - slowest solution (case 5, coin pack 1)');
     console.log('Change: ', change);
 
+    change = findAmountOfChangeSlowestSolution(6, denominations2);
+
+    console.log('Amount of change (6) - slowest solution (case 6, coin pack 2)');
+    console.log('Change: ', change);
+
+    console.log('');
     console.log('------------------------------------------------------');
+    console.log('');
+
+    console.log('Better solution');
+    console.log('---------------');
+    console.log('');
 
     change = findAmountOfChangeBetterSolution(105, denominations1);
 
@@ -152,12 +174,49 @@ export default async () => {
     console.log('Amount of change (4) - better solution (case 5, coin pack 1)');
     console.log('Change: ', change);
 
+    change = findAmountOfChangeBetterSolution(6, denominations2);
+
+    console.log('Amount of change (6) - better solution (case 6, coin pack 2)');
+    console.log('Change: ', change);
+
+    console.log('');
     console.log('------------------------------------------------------');
+    console.log('');
+
+    console.log('Dynamic programming (with memo) solution');
+    console.log('----------------------------------------');
+    console.log('');
 
     change = findAmountOfChangeDynamicProgrammingMemoSolution(105, denominations1);
 
-    console.log('Amount of change (105) - better solution (case 1, coin pack 1)');
+    console.log('Amount of change (105) - dynamic programming (with memo) solution (case 1, coin pack 1)');
+    console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(105, change.bestNumOfCoins, change.coinMemo));
+
+    change = findAmountOfChangeDynamicProgrammingMemoSolution(106, denominations1);
+
+    console.log('Amount of change (106) - dynamic programming (with memo) solution (case 2, coin pack 1)');
+    console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(106, change.bestNumOfCoins, change.coinMemo));
+
+    change = findAmountOfChangeDynamicProgrammingMemoSolution(54, denominations1);
+
+    console.log('Amount of change (54) - dynamic programming (with memo) solution (case 3, coin pack 1)');
+    console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(54, change.bestNumOfCoins, change.coinMemo));
+
+    change = findAmountOfChangeDynamicProgrammingMemoSolution(55, denominations1);
+
+    console.log('Amount of change (55) - dynamic programming (with memo) solution (case 4, coin pack 1)');
+    console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(55, change.bestNumOfCoins, change.coinMemo));
+
+    change = findAmountOfChangeDynamicProgrammingMemoSolution(4, denominations1);
+
+    console.log('Amount of change (4) - dynamic programming (with memo) solution (case 5, coin pack 1)');
+    console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(4, change.bestNumOfCoins, change.coinMemo));
+
+    change = findAmountOfChangeDynamicProgrammingMemoSolution(6, denominations2);
+
+    console.log('Amount of change (6) - dynamic programming (with memo) solution (case 6, coin pack 2)');
     console.log('Change: ', visualizeAmountOfChangeDynamicProgrammingMemoUtil(6, change.bestNumOfCoins, change.coinMemo));
+
 
     console.log('');
     console.log('--------------------------------------------------------');
