@@ -1,7 +1,7 @@
 // external imports
 
 // internal imports
-import RegularLinkedListNodeClass from './regular_linked_list_node_class';
+const RegularLinkedListNodeClass = require('./regular_linked_list_node_class');
 
 // implementation
 class RegularLinkedListClass {
@@ -9,24 +9,6 @@ class RegularLinkedListClass {
     #count = 0;
 
     #comparator = (first, second) => first === second;
-
-    constructor(comparator) {
-        this.#comparator = comparator;
-    }
-
-    getElementAt(index) {
-        if (index >= 0 && index <= this.#count) {
-            let node = this.#head;
-
-            for (let nodeCounter = 0; nodeCounter < index && node !== null; nodeCounter++) {
-                node = node.next;
-            }
-
-            return node;
-        }
-
-        return null;
-    }
 
     indexOf(element) {
         let current = this.#head;
@@ -105,6 +87,11 @@ class RegularLinkedListClass {
         return this.removeAt(index);
     }
 
+    destroy() {
+        this.#head?.destroy();
+        this.#head = null;
+    }
+
     toString() {
         if (this.#head == null) {
             return '';
@@ -113,7 +100,7 @@ class RegularLinkedListClass {
         let objString = `${this.#head.element}`;
         let current = this.#head.next;
 
-        for (let nodeCounter = 1; nodeCounter < this.size() && current !== null; nodeCounter++) {
+        for (let nodeCounter = 1; nodeCounter < this.size && current !== null; nodeCounter++) {
             objString = `${objString},${current.element}`;
             current = current.next;
         }
@@ -121,15 +108,47 @@ class RegularLinkedListClass {
         return objString;
     }
 
-    size() {
+    getElementAt(index) {
+        if (index >= 0 && index <= this.#count) {
+            let node = this.#head;
+
+            for (let nodeCounter = 0; nodeCounter < index && node !== null; nodeCounter++) {
+                node = node.next;
+            }
+
+            return node;
+        }
+
+        return null;
+    }
+
+    get comparator() {
+        return this.#comparator;
+    }
+
+    get size() {
         return this.#count;
     }
 
-    isEmpty() {
-        return this.size() === 0;
+    get isEmpty() {
+        return this.size === 0;
     }
 
     get head() {
         return this.#head;
     }
+
+    get lastChild() {
+        if (!this.isEmpty) {
+            return this.getElementAt(this.size - 1);
+        } else {
+            return null;
+        }
+    }
+
+    constructor(comparator) {
+        this.#comparator = comparator;
+    }
 }
+
+module.exports = RegularLinkedListClass;

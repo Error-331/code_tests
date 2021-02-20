@@ -7,8 +7,12 @@ class RegularLinkedListNodeClass {
     #element = null;
     #next = null;
 
-    constructor(element) {
-        this.#element = element;
+    destroy() {
+        this.#element?.destroy();
+        this.#next?.destroy();
+
+        this.#element = null;
+        this.#next = null;
     }
 
     get element() {
@@ -22,8 +26,11 @@ class RegularLinkedListNodeClass {
     set next(node) {
         this.#next = node;
     }
+
+    constructor(element) {
+        this.#element = element;
+    }
 }
 
 // export
-export { RegularLinkedListNodeClass };
-export default RegularLinkedListNodeClass;
+module.exports = RegularLinkedListNodeClass;
