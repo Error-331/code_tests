@@ -48,7 +48,6 @@
   }
 }
 
-
 ```
 
 ### Webpack config

@@ -2,7 +2,7 @@
 
 ## Command
 
-`"test-build": "webpack --config webpack.config.test.js --mode=development"`
+`"test-build": "webpack serve --open --config webpack.config.test.js --mode=development"`
 
 ## Preparation
 
@@ -89,5 +89,5 @@ module.exports = {
 ## Result
 
 Dev server will be launched and additional browser tab will be opened which will point to dev server address. If changes are made to any of the source files - the dev server will immediately 
-recompile all the files and the browser tab will be refreshed.
+recompile all the files, and the browser tab will be refreshed.
 

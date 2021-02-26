@@ -2,7 +2,7 @@
 
 ## Command
 
-`"test-build": "webpack --config webpack.config.test.js --mode=development"`
+`"test-build": "webpack serve --open --config webpack.config.test.js --mode=development"`
 
 ## Preparation
 
@@ -35,7 +35,6 @@ module.exports = {
         filename: '[name].bundle.js',
 
         publicPath: '/'
-       // publicPath: 'http://localhost:63342/build_test/dist/',
     },
 
     module: {
@@ -53,8 +52,6 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-
-
     },
 
     plugins: [
@@ -64,7 +61,6 @@ module.exports = {
         })
     ],
 };
-
 
 ```
 
@@ -129,5 +125,5 @@ export function subTest1() {
 
 ## Result
 
-All specified `js` files and `css` files will be reloaded automatically upon update. Note `if (module.hot)` code. HTML file will not be reloaded automatically.
+All specified `js` files and `css` files will be reloaded automatically upon an update. Note `if (module.hot)` code. HTML file will not be reloaded automatically.
 
