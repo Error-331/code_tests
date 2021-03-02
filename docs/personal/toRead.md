@@ -16,3 +16,7 @@ https://batenka.ru/explore/field/football-refugee-part-i/
 ## Marketing
 
 http://webmilk.ru/2010/03/03/intervyu-s-vladelcem-stopgame-ru/
+
+## Literature
+
+В. Т. Шаламова - 'Тюремная пайка'

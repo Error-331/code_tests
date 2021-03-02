@@ -155,7 +155,7 @@ module.exports = { presets };
 
 #### index.tsx
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -190,7 +190,7 @@ render();
 
 #### ApplicationContainer.tsx
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 import ApplicationComponent from './../components/ApplicationComponent';
@@ -207,7 +207,7 @@ export default ApplicationContainer;
 
 #### ApplicationComponent.tsx
 
-```javascript
+```jsx harmony
 
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -251,7 +251,7 @@ export default ApplicationComponent;
 
 #### SettingsContainer.tsx
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 
