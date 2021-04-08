@@ -206,7 +206,6 @@ function ApplicationComponent(props) {
 
             <Route path='/settings'>
                 <div>
-
                     Settings...
                 </div>
             </Route>
