@@ -51,7 +51,7 @@ or this (???):
 
 ```bash 
 
-adb -s 192.168.1.135  reverse tcp:8081 tcp:8081
+adb -s 192.168.1.135 reverse tcp:8081 tcp:8081
 
 ```
 
@@ -121,6 +121,18 @@ adb shell input keyevent 82
 
 ```
 
-## Links
+## Expo
 
-- https://developer.android.com/studio/run/device;
+### Problems
+
+#### Heap Space Is Exhausted
+
+Add following code to `android/app/build.gradle`:
+
+```gradle
+
+dexOptions {
+    javaMaxHeapSize "4g"
+}
+
+```
