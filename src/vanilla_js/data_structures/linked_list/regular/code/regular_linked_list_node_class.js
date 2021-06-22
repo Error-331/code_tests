@@ -8,8 +8,8 @@ class RegularLinkedListNodeClass {
     #next = null;
 
     destroy() {
-        this.#element?.destroy();
-        this.#next?.destroy();
+        typeof this.#element === 'object' ? this.#element?.destroy() : null;
+        typeof this.#next === 'object' ?  this.#next?.destroy() : null;
 
         this.#element = null;
         this.#next = null;

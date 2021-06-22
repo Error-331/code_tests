@@ -90,6 +90,9 @@ class RegularLinkedListClass {
     destroy() {
         this.#head?.destroy();
         this.#head = null;
+        this.#count = 0;
+
+        this.#comparator = null;
     }
 
     toString() {
@@ -106,6 +109,33 @@ class RegularLinkedListClass {
         }
 
         return objString;
+    }
+
+    [Symbol.iterator]() {
+        let nodeCounter = 0;
+        let node = null;
+
+        return {
+            next: () => {
+                if (nodeCounter >= this.#count) {
+                    return { done: true };
+                } else if (nodeCounter === 0) {
+                    nodeCounter += 1;
+                    node = this.#head;
+
+                    return node === null ? { done: true } : { value: node, done: false };
+                } else {
+                    node = node.next;
+
+                    if (node === null) {
+                        return { done: true };
+                    } else {
+                        nodeCounter += 1;
+                        return { value: node, done: false };
+                    }
+                }
+            }
+        }
     }
 
     getElementAt(index) {
@@ -147,7 +177,7 @@ class RegularLinkedListClass {
     }
 
     constructor(comparator) {
-        this.#comparator = comparator;
+        this.#comparator = comparator ?? this.#comparator;
     }
 }
 
