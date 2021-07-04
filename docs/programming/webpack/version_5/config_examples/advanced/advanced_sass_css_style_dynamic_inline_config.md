@@ -4,7 +4,7 @@
 
 ## Command
 
-`"test-build-dev-serve": "webpack serve --open --config webpack.config.test.js --mode=development"`
+`"test-build-dev-serve"": "webpack serve --open --config webpack.config.test.js --mode=development"`
 
 ## Preparation
 
@@ -18,7 +18,9 @@
   "scripts": {
     "test-build-dev-serve": "webpack serve --open --config webpack.config.test.js --mode=development"
   },
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "4.7.0"
+  },
   "devDependencies": {
     "webpack": "5.23.0",
     "webpack-cli": "4.5.0",
@@ -27,13 +29,17 @@
     "clean-webpack-plugin": "3.0.0",
     "style-loader": "2.0.0",
     "css-loader": "5.0.2",
-    "raw-loader": "4.0.2"
+    "sass-loader": "11.0.1",
+    "raw-loader": "4.0.2",
+    "babel-loader": "8.2.2",
+    "@babel/core": "7.12.17",
+    "node-sass": "5.0.0"
   }
 }
 
 ```
 
-### Config
+### Webpack config
 
 ```javascript
 
@@ -49,11 +55,11 @@ module.exports = {
 
     devServer: {
         contentBase: './dist',
-        hot: true,
     },
 
     entry: {
         app: './src/index.js',
+        main: './src/main.js',
     },
 
     output: {
@@ -65,6 +71,7 @@ module.exports = {
 
     module: {
         rules: [
+            { test: /\.scss$/, use: ['style-loader', 'css-loader', 'sass-loader'], },
             { test: /\.css$/, use: ['style-loader', 'css-loader'], },
             { test: /\.txt$/, use: 'raw-loader' },
 
@@ -78,6 +85,8 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
+
+
     },
 
     plugins: [
@@ -87,7 +96,6 @@ module.exports = {
         })
     ],
 };
-
 
 ```
 
@@ -99,6 +107,7 @@ module.exports = {
 
 const testTxt = require('./test.txt').default;
 require('./css/style1.css');
+require('./scss/style1.scss');
 
 import { subTest1 } from './sub1';
 
@@ -126,6 +135,21 @@ export function subTest1() {
     const testVar1 = 'test_val_1(sub1)';
     return testVar1;
 }
+
+```
+
+#### main.js
+
+```javascript
+
+const somePath = require('./sub1');
+const Icon = require('./icon.png');
+
+let testVar2 = 'test2 val';
+testVar2 += '_add';
+
+console.log(testVar2);
+console.log(somePath);
 
 ```
 
@@ -159,6 +183,53 @@ body {
 
 ```
 
+#### style2.css
+
+```css
+
+div {
+    background-color: 'gold';
+}
+
+```
+
+### SCSS
+
+#### style1.scss
+
+```scss
+
+$fa-font-path: "~font-awesome/fonts/";
+@import "~font-awesome/scss/font-awesome";
+
+$color1: #c6538c;
+
+.test_div {
+  background-color: $color1;
+}
+
+```
+
+#### style2.scss
+
+```scss
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: initial;
+}
+
+
+//hide video preview, full screen controls
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
+}
+
+
+```
+
 ### HTML
 
 ```html
@@ -171,12 +242,13 @@ body {
 </head>
 <body>
 
-    <div>
+    <div class="test_div">
         Test...
     </div>
 
 </body>
 </html>
+
 
 ```
 
@@ -192,5 +264,4 @@ One...Two...Three...
 
 ## Result
 
-All specified `js` files and `css` files will be reloaded automatically upon an update. Note `if (module.hot)` code. HTML file will not be reloaded automatically.
-
+All styles that are imported inside js files will be dynamically inserted via `style` tags (including `sass` styles).
