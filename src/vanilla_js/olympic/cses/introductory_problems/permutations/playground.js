@@ -68,13 +68,6 @@ function permutationNaiveOptimizedSolution(numbersCount) {
     }
 }
 
-// let result = new Array(numbersCount);
-
-/* for (let counter1 = 0; counter1 < limit; counter1++) {
-     result[counter1] = (limit - counter1) * 2;
-     result[counter1 + limit] = ((limit - counter1) * 2) - 1;
- }*/
-
 console.log('Permutations');
 console.log('============');
 console.log('');

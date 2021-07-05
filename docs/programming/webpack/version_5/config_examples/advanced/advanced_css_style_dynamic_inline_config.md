@@ -1,12 +1,37 @@
 # Simplest config
 
+- [X] Approved
+
 ## Command
 
 `"test-build": "webpack --config webpack.config.test.js --mode=development"`
 
 ## Preparation
 
-### Config
+### Package JSON
+
+```json
+
+{
+  "name": "build-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test-build": "webpack --config webpack.config.test.js --mode=development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0",
+    "html-webpack-plugin": "5.2.0",
+    "style-loader": "2.0.0",
+    "css-loader": "5.0.2",
+    "raw-loader": "4.0.2"
+  }
+}
+
+```
+
+### Webpack config
 
 ```javascript
 
@@ -53,15 +78,60 @@ module.exports = {
 const testTxt = require('./test.txt').default;
 require('./css/style1.css');
 
+import { subTest1 } from './sub1';
+
 let testVar1 = 5;
 testVar1 += 5;
 
 console.log(testVar1);
 console.log(testTxt);
 
+subTest1();
 
-if (__DEV__) {
-    console.log('development mode');
+```
+
+#### sub1.js
+
+```javascript
+
+export function subTest1() {
+    const testVar1 = 'test_val_1(sub1)';
+    return testVar1;
+}
+
+
+```
+
+#### main.js
+
+```javascript
+
+const somePath = require('./sub1');
+
+let testVar2 = 'test2 val';
+testVar2 += '_add';
+
+console.log(testVar2);
+console.log(somePath);
+
+```
+
+### CSS
+
+#### style1.css
+
+```css
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    background-color: green;
 }
 
 ```
@@ -78,12 +148,23 @@ if (__DEV__) {
 </head>
 <body>
 
-    <div>
+    <div class="test_div">
         Test...
     </div>
 
 </body>
 </html>
+
+
+```
+
+### Raw files
+
+#### Test1.txt
+
+```text
+
+One...Two...Three...
 
 ```
 
@@ -111,37 +192,5 @@ All styles that are imported inside js files will be dynamically inserted via `s
 
 </body>
 </html>
-
-```
-
-#### Browser
-
-```html
-
-<!DOCTYPE html>
-<html lang="en"><head>
-    <meta charset="UTF-8">
-    <title>Test build app</title>
-<script defer="" src="http://localhost:63342/build_test/dist/app.ff83c503f27ab5251e29.js"></script><script defer="" src="http://localhost:63342/build_test/dist/main.36d6251c3685e928ac16.js"></script><style>html {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-
-    background-color: green;
-}
-</style></head>
-<body cz-shortcut-listen="true">
-
-    <div>
-        Test...
-    </div>
-
-
-
-</body></html>
 
 ```

@@ -1,10 +1,37 @@
 # Simplest config
 
+- [X] Approved
+
 ## Command
 
 `"test-build": "webpack --config webpack.config.test.js --mode=development"`
 
 ## Preparation
+
+### Package JSON
+
+```json
+
+{
+  "name": "build-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test-build": "webpack --config webpack.config.test.js --mode=development"
+  },
+  "dependencies": {
+    "font-awesome": "4.7.0"
+  },
+  "devDependencies": {
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0",
+    "html-webpack-plugin": "5.2.0",
+    "style-loader": "2.0.0",
+    "css-loader": "5.0.2",
+    "raw-loader": "4.0.2"
+  }
+}
+
+```
 
 ### Config
 
@@ -86,6 +113,25 @@ body {
 
 ### JS
 
+#### index.js
+
+```javascript
+
+const testTxt = require('./test.txt').default;
+require('./css/style1.css');
+
+import { subTest1 } from './sub1';
+
+let testVar1 = 5;
+testVar1 += 5;
+
+console.log(testVar1);
+console.log(testTxt);
+
+subTest1();
+
+```
+
 #### main.js
 
 ```javascript
@@ -104,6 +150,18 @@ const myIcon = new Image();
 myIcon.src = Icon;
 
 element.appendChild(myIcon);
+
+```
+
+#### sub1.js
+
+```javascript
+
+export function subTest1() {
+    const testVar1 = 'test_val_1(sub1)';
+    return testVar1;
+}
+
 
 ```
 
@@ -128,6 +186,16 @@ element.appendChild(myIcon);
 
 ```
 
+### Raw files
+
+#### Test1.txt
+
+```text
+
+One...Two...Three...
+
+```
+
 ## Result
 
 All styles that are imported inside js files will be dynamically inserted via `style` tags.
@@ -143,43 +211,14 @@ All styles that are imported inside js files will be dynamically inserted via `s
 <head>
     <meta charset="UTF-8">
     <title>Test build app</title>
-<script defer src="http://localhost:63342/build_test/dist/app.ff83c503f27ab5251e29.js"></script><script defer src="http://localhost:63342/build_test/dist/main.36d6251c3685e928ac16.js"></script></head>
+<script defer src="http://localhost:63342/build_test/dist/app.c6aa8c142566f612b0dd.js"></script><script defer src="http://localhost:63342/build_test/dist/main.c3d9a92929b8bae4fdc3.js"></script></head>
 <body>
 
-    <div>
-        Test...
-    </div>
+<div class="test_div">
+    Test...
+</div>
 
 </body>
 </html>
 
-```
-
-#### Browser
-
-```html
-
-<!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><title>Test build app</title><script defer="defer" src="http://localhost:63342/build_test/dist/app.51e3af5a0b3af9d65302.js"></script><script defer="defer" src="http://localhost:63342/build_test/dist/main.67a479e8f6c4d023234c.js"></script><style>@font-face {
-    font-family: 'MyFont';
-    src: url(http://localhost:63342/build_test/dist/df83aca91e5faad5cbc3.ttf) format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-html {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    margin: 0px;
-    padding: 0px;
-
-    font-family: 'MyFont';
-
-    background-color: green;
-    background: url(http://localhost:63342/build_test/dist/5b95fc36d1f896e6fc5b.png);
-}
-</style></head><body cz-shortcut-listen="true"><div>Test...</div></body></html>
 ```
