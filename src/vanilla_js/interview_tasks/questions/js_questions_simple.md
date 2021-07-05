@@ -1,4 +1,4 @@
-# Вопросы по JavaScript (собеседование)
+# Вопросы по JavaScript (собеседование) - начальный уровень
 
 ## Общие вопросы по JavaScript
 
@@ -237,7 +237,7 @@ Person.prototype.getFullName = function(){
 }
 
 // ES6
-class Person{
+class Person {
     constructor(firstName, lastName, age, address){
         this.firstName = firstName;
         this.lastName = lastName;
