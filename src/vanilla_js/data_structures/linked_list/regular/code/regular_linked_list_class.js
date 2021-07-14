@@ -115,13 +115,15 @@ class RegularLinkedListClass {
         let nodeCounter = 0;
         let node = null;
 
+        const linkedList = this;
+
         return {
-            next: () => {
-                if (nodeCounter >= this.#count) {
+            next: function() {
+                if (nodeCounter >= linkedList.#count) {
                     return { done: true };
                 } else if (nodeCounter === 0) {
                     nodeCounter += 1;
-                    node = this.#head;
+                    node = linkedList.#head;
 
                     return node === null ? { done: true } : { value: node, done: false };
                 } else {
