@@ -1,4 +1,4 @@
-# Simplest config
+# Advanced config (hot module reloading using Webpack dev server)
 
 - [X] Approved
 

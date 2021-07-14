@@ -1,4 +1,4 @@
-# Simplest config
+# Advanced config (live reload)
 
 - [X] Approved
 

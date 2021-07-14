@@ -1,4 +1,4 @@
-# Simplest config
+# Advanced config (dynamic inline css)
 
 - [X] Approved
 

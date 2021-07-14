@@ -1,4 +1,4 @@
-# Simplest config
+# Advanced config (css/image/font loaders)
 
 - [X] Approved
 

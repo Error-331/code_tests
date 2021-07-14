@@ -1,4 +1,6 @@
-# Simplest config
+# Simplest config (HTML plugin and raw loader)
+
+- [X] Approved
 
 ## Command
 
@@ -6,7 +8,28 @@
 
 ## Preparation
 
-### Config
+### Package JSON
+
+```json
+
+{
+  "name": "build-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test-build": "webpack --config webpack.config.test.js --mode=development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0",
+    "html-webpack-plugin": "5.2.0",
+    "raw-loader": "4.0.2"
+  }
+}
+
+```
+
+### Webpack config
 
 ```javascript
 
@@ -36,15 +59,11 @@ module.exports = {
 
 ```
 
-### test.txt
+### JS
 
-```text
+#### index.js
 
-One...Two...Three...
-
-```
-
-### index.js
+```javascript
 
 const testTxt = require('./test.txt').default;
 
@@ -53,6 +72,8 @@ testVar1 += 5;
 
 console.log(testVar1);
 console.log(testTxt);
+
+````
 
 ### HTML
 
@@ -74,9 +95,23 @@ console.log(testTxt);
 
 ```
 
+### Raw files
+
+#### Test1.txt
+
+```text
+
+One...Two...Three...
+
+```
+
 ## Result
 
+An `index.js` file will be packaged into `build.js` file which will be located in the `./build` directory. An HTML file will be created which will have a link to `build.js` file.
+
 ### HTML
+
+#### Compiled
 
 ```html
 

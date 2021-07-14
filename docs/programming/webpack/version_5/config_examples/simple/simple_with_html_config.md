@@ -1,4 +1,6 @@
-# Simplest config
+# Simplest config (HTML plugin)
+
+- [X] Approved
 
 ## Command
 
@@ -6,7 +8,27 @@
 
 ## Preparation
 
-### Config
+### Package JSON
+
+```json
+
+{
+  "name": "build-test",
+  "version": "1.0.0",
+  "scripts": {
+    "test-build": "webpack --config webpack.config.test.js --mode=development"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0",
+    "html-webpack-plugin": "5.2.0"
+  }
+}
+
+```
+
+### Webpack config
 
 ```javascript
 
@@ -32,6 +54,20 @@ module.exports = {
 
 ```
 
+### JS
+
+#### index.js
+
+```javascript
+
+
+let testVar1 = 5;
+testVar1 += 5;
+
+console.log(testVar1);
+
+````
+
 ### HTML
 
 ```html
@@ -53,6 +89,8 @@ module.exports = {
 ```
 
 ## Result
+
+One chunk will be generated (`build.js`) which will be added as a link to HTML file (which uses `./src/index.html` file as a template).
 
 ### HTML
 

@@ -1,4 +1,4 @@
-# Simplest config
+# Advanced config (hot module reloading using external server)
 
 - [X] Approved
 
