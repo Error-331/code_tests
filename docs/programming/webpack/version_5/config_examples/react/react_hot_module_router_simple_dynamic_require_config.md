@@ -1,4 +1,6 @@
-# Simplest config
+# React config (hot module replacement and dynamic import using require.ensure)
+
+- [X] Approved
 
 ## Command
 
@@ -14,7 +16,7 @@
   "name": "build-test",
   "version": "1.0.0",
   "scripts": {
-    "test-build-dev-serve": "webpack serve --open --config webpack.config.test.js --mode=development"
+    "test-build": "webpack serve --open --config webpack.config.test.js --mode=development"
   },
   "dependencies": {
     "react": "17.0.1",
@@ -130,7 +132,7 @@ const presets = [
                 chrome: "67",
                 safari: "11.1",
             },
-            useBuiltIns: "usage",
+            useBuiltIns: "entry",
             corejs: "3.9.0",
         },
     ],
@@ -145,7 +147,10 @@ module.exports = { presets };
 
 #### index.js
 
-```javascript
+```jsx harmony
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -180,7 +185,7 @@ render();
 
 #### ApplicationContainer.js
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 import ApplicationComponent from './../components/ApplicationComponent';
@@ -197,38 +202,42 @@ export default ApplicationContainer;
 
 #### ApplicationComponent.js
 
-```javascript
+```jsx harmony
 
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import DashboardContainer from './../routes/dashboard/containers/DashboardContainer';
 import getComponent from './../routes/settings/containers/SettingsContainer';
 
-let comp = null;
+let Comp = null;
 
-function ApplicationComponent(props) {
-    const [compExist, setCompExist] = useState(false)
+function ApplicationComponent() {
+    const [compExist, setCompExist] = useState(false);
 
     if (!compExist) {
-        getComponent((component => {
-            comp = component;
+        getComponent(component => {
+            console.log('loaded');
+            Comp = component;
             setCompExist(true);
-        }))
+        });
     }
 
     return (
         <Switch>
             <Route exact path='/'>
-                <DashboardContainer />
+                <div>
+                    Dashboard...
+                </div>
             </Route>
 
             <Route path='/settings'>
-                {compExist && comp}
+                <div>
+                    Settings...
+                </div>
             </Route>
 
             <Route path='/sign'>
-                Sign...
+                {compExist ? <Comp/> : <div>Loading...</div>}
             </Route>
         </Switch>
     );
@@ -240,7 +249,7 @@ export default ApplicationComponent;
 
 #### SettingsContainer.js
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 
@@ -255,6 +264,25 @@ function getComponent(cb) {
 }
 
 export default getComponent;
+
+```
+
+#### SettingsComponent.js
+
+```jsx harmony
+
+import React from 'react';
+
+function SettingsComponent() {
+    return (
+        <div>
+            Settings...
+        </div>
+    );
+}
+
+export default SettingsComponent;
+
 
 ```
 
@@ -277,4 +305,4 @@ export default getComponent;
 
 ## Result
 
-Development environment with enabled hot-module replacement.
+Development environment with enabled hot-module replacement. `SettingsContainer` component will be dynamically loaded (using older `require.ensure` technique).

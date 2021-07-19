@@ -1,4 +1,6 @@
-# Simplest config
+# React config (typescript transpiling)
+
+- [X] Approved
 
 ## Command
 
@@ -14,14 +16,8 @@
   "name": "build-test",
   "version": "1.0.0",
   "scripts": {
-    "test-build-dev": "webpack --config webpack.config.test.js --mode=development",
-    "test-build-prod": "webpack --config webpack.config.test.js --mode=production",
-    "test-build-dev-serve": "webpack serve --open --config webpack.config.test.js --mode=development"
+    "test-build": "webpack serve --open --config webpack.config.test.js --mode=development"
   },
-  "author": "your name",
-  "description": "My Electron app",
-  "license": "MIT",
-  "main": "./electron/index.js",
   "dependencies": {
     "core-js": "3.9.0",
     "react": "17.0.1",
@@ -139,7 +135,7 @@ const presets = [
                 chrome: "67",
                 safari: "11.1",
             },
-            useBuiltIns: "usage",
+            useBuiltIns: "entry",
             corejs: "3.9.0",
         },
     ],
@@ -156,6 +152,9 @@ module.exports = { presets };
 #### index.tsx
 
 ```jsx harmony
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -212,18 +211,17 @@ export default ApplicationContainer;
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import DashboardContainer from './../routes/dashboard/containers/DashboardContainer';
 import getComponent from './../routes/settings/containers/SettingsContainer';
 
-let comp = null;
+let Comp = null;
 
-function ApplicationComponent(props) {
-    const [compExist, setCompExist] = useState(false)
+function ApplicationComponent() {
+    const [compExist, setCompExist] = useState(false);
 
     if (!compExist) {
         getComponent().then(component => {
             console.log('loaded');
-            comp = component;
+            Comp = component;
             setCompExist(true);
         });
     }
@@ -231,15 +229,19 @@ function ApplicationComponent(props) {
     return (
         <Switch>
             <Route exact path='/'>
-                <DashboardContainer />
+                <div>
+                    Dashboard...
+                </div>
             </Route>
 
             <Route path='/settings'>
-                {compExist && comp}
+                <div>
+                    Settings...
+                </div>
             </Route>
 
             <Route path='/sign'>
-                Sign...
+                {compExist ? <Comp/> : <div>Loading...</div>}
             </Route>
         </Switch>
     );
@@ -267,6 +269,25 @@ function getComponent() {
 }
 
 export default getComponent;
+
+```
+
+#### SettingsComponent.tsx
+
+```jsx harmony
+
+import React from 'react';
+
+function SettingsComponent() {
+    return (
+        <div>
+            Settings...
+        </div>
+    );
+}
+
+export default SettingsComponent;
+
 
 ```
 

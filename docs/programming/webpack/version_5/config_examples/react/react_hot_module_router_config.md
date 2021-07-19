@@ -1,4 +1,6 @@
-# Simplest config
+# React config (hot module replacement)
+
+- [X] Approved
 
 ## Command
 
@@ -14,7 +16,7 @@
   "name": "build-test",
   "version": "1.0.0",
   "scripts": {
-    "test-build-dev-serve": "webpack serve --open --config webpack.config.test.js --mode=development"
+    "test-build": "webpack serve --open --config webpack.config.test.js --mode=development"
   },
   "dependencies": {
     "react": "17.0.1",
@@ -54,7 +56,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     target: 'web',
-    devtool: 'inline-source-map',
+    devtool: 'eval',
 
     devServer: {
         contentBase: './dist',
@@ -119,7 +121,7 @@ const presets = [
                 chrome: "67",
                 safari: "11.1",
             },
-            useBuiltIns: "usage",
+            useBuiltIns: "entry",
             corejs: "3.9.0",
         },
     ],
@@ -134,7 +136,10 @@ module.exports = { presets };
 
 #### index.js
 
-```javascript
+```jsx harmony
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -169,7 +174,7 @@ render();
 
 #### ApplicationContainer.js
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 import ApplicationComponent from './../components/ApplicationComponent';
@@ -186,22 +191,21 @@ export default ApplicationContainer;
 
 #### ApplicationComponent.js
 
-```javascript
+```jsx harmony
 
 import React from 'react';
 import {
     Switch,
-    Route,
-    useLocation
+    Route
 } from 'react-router-dom';
 
-import DashboardContainer from './../routes/dashboard/containers/DashboardContainer';
-
-function ApplicationComponent(props) {
+function ApplicationComponent() {
     return (
         <Switch>
             <Route exact path='/'>
-                <DashboardContainer />
+                <div>
+                    Dashboard...
+                </div>
             </Route>
 
             <Route path='/settings'>
@@ -211,13 +215,16 @@ function ApplicationComponent(props) {
             </Route>
 
             <Route path='/sign'>
-                Sign...
+                <div>
+                    Sign...
+                </div>
             </Route>
         </Switch>
     );
 }
 
 export default ApplicationComponent;
+
 
 ```
 
