@@ -41,3 +41,7 @@ ssh brightsign@192.168.1.72
 ```
 
 password: `admin`
+
+### How to change 'Autorun' version
+
+- Path: `bs-device-artifacts/lib/staticFileAttributes.ts`;
