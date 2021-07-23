@@ -1,12 +1,10 @@
 function simpleNumericSubsetGeneratorAlgorithmNaive1(numberOfElements, currentNumber = 1, subset = [], subsets = []) {
     if (currentNumber === numberOfElements + 1) {
-        // обработать подмножество
         if (subset.length === 0) {
             subset.push(0);
         }
 
         subsets.push(subset.slice());
-
     } else {
         subset.push(currentNumber);
         simpleNumericSubsetGeneratorAlgorithmNaive1(numberOfElements, currentNumber + 1, subset.slice(), subsets);
