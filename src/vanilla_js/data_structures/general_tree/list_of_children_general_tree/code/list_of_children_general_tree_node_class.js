@@ -1,6 +1,6 @@
 'use strict';
 
-const RegularLinkedListClass = require('../../../linked_list/regular/regular_linked_list_class');
+const RegularLinkedListClass = require('../../../linked_list/regular/code/regular_linked_list_class');
 
 class ListOfChildrenGeneralTreeNodeClass {
     #tree = null;
@@ -67,6 +67,34 @@ class ListOfChildrenGeneralTreeNodeClass {
 
         this.#childrenLinkedList.destroy();
         this.#childrenLinkedList = null;
+    }
+
+    findChildBy(comparator) {
+        let isFound = false;
+
+        for (const child of this.#childrenLinkedList) {
+            if (typeof comparator === 'function') {
+                isFound = comparator(child.element);
+            } else {
+                isFound = comparator === child.element;
+            }
+
+            if (isFound) {
+                return child;
+            }
+        }
+    }
+
+    childrenIterator() {
+        if (this.#childrenLinkedList === null) {
+            return {
+                next: () => {
+                    return {done: true};
+                }
+            }
+        } else {
+            return this.#childrenLinkedList[Symbol.iterator];
+        }
     }
 
     getChildAt(index) {
