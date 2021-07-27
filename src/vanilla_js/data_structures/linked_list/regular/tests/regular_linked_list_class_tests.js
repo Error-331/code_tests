@@ -6,6 +6,7 @@ const {
     checkRegularLinkedListNotEmpty,
     checkRegularLinkedListItemAt,
     checkRegularLinkedListIndexOf,
+    checkRegularLinkedListFind,
     checkRegularLinkedListItems,
     checkRegularLinkedListIterator,
 } = require('./../../../../../../utils/testing/data_structures/regular_linked_list_class_test_utils');
@@ -148,6 +149,58 @@ function testLinkedListElementAtCase2() {
     checkRegularLinkedListItemAt(linkedListObj, 1, {key: 7, value: -5});
     checkRegularLinkedListItemAt(linkedListObj, 2, {key: -1, value: 65});
     checkRegularLinkedListItemAt(linkedListObj, 3, {key: 10, value: -12});
+}
+
+function testLinkedListElementFindCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+
+    checkRegularLinkedListFind(linkedListObj, 0, 5, 5);
+    checkRegularLinkedListFind(linkedListObj, 1, 7, 7);
+    checkRegularLinkedListFind(linkedListObj, 2, -1, -1);
+    checkRegularLinkedListFind(linkedListObj, 3, 10, 10);
+}
+
+function testLinkedListElementFindCase2() {
+    const comparator = (first, second) => first.value === second.value;
+
+    const linkedListObj = new RegularLinkedListClass(comparator);
+
+    linkedListObj.push({key: 5, value: 65});
+    linkedListObj.push({key: 7, value: -5});
+    linkedListObj.push({key: -1, value: 65});
+    linkedListObj.push({key: 10, value: -12});
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, {key: 5, value: 65}, {key: 10, value: -12});
+
+    checkRegularLinkedListFind(linkedListObj, 0, {key: 5, value: 65}, {key: 5, value: 65});
+    checkRegularLinkedListFind(linkedListObj, 1, {key: 7, value: -5}, {key: 7, value: -5});
+    checkRegularLinkedListFind(linkedListObj, 0, {key: -1, value: 65}, {key: 5, value: 65});
+    checkRegularLinkedListFind(linkedListObj, 3, {key: 10, value: -12}, {key: 10, value: -12});
+}
+
+function testLinkedListElementFindCase3() {
+    const comparator = (first, second) => first.key === second.key;
+
+    const linkedListObj = new RegularLinkedListClass(comparator);
+
+    linkedListObj.push({key: 5, value: 65});
+    linkedListObj.push({key: 7, value: -5});
+    linkedListObj.push({key: -1, value: 65});
+    linkedListObj.push({key: 10, value: -12});
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, {key: 5, value: 65}, {key: 10, value: -12});
+
+    checkRegularLinkedListFind(linkedListObj, 0, {key: 5, value: 65}, {key: 5, value: 65});
+    checkRegularLinkedListFind(linkedListObj, 1, {key: 7, value: -5}, {key: 7, value: -5});
+    checkRegularLinkedListFind(linkedListObj, 2, {key: -1, value: 65}, {key: -1, value: 65});
+    checkRegularLinkedListFind(linkedListObj, 3, {key: 10, value: -12}, {key: 10, value: -12});
 }
 
 function testLinkedListElementIndexOfCase1() {
@@ -405,6 +458,10 @@ testLinkedListInsertCase4();
 
 testLinkedListElementAtCase1();
 testLinkedListElementAtCase2();
+
+testLinkedListElementFindCase1();
+testLinkedListElementFindCase2();
+testLinkedListElementFindCase3();
 
 testLinkedListElementIndexOfCase1();
 testLinkedListElementIndexOfCase2();

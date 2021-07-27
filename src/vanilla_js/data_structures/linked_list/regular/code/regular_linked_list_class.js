@@ -10,6 +10,16 @@ class RegularLinkedListClass {
 
     #comparator = (first, second) => first === second;
 
+    find(element) {
+        for (const node of this) {
+            if (this.#comparator(element, node.element)) {
+                return node.element;
+            }
+        }
+
+        return null;
+    }
+
     indexOf(element) {
         let current = this.#head;
 
@@ -176,6 +186,10 @@ class RegularLinkedListClass {
         } else {
             return null;
         }
+    }
+
+    set comparator(comparator) {
+        this.#comparator = comparator;
     }
 
     constructor(comparator) {

@@ -20,6 +20,13 @@ function checkRegularLinkedListItemAt(linkedList, itemIndex, testItem) {
     assert.deepStrictEqual(testItem, linkedListItem.element);
 }
 
+function checkRegularLinkedListFind(linkedList, itemIndex, testItemSearch, testItemStored) {
+    checkRegularLinkedListItemAt(linkedList, itemIndex, testItemStored);
+
+    const linkedListItem = linkedList.find(testItemSearch);
+    assert.deepStrictEqual(linkedListItem, testItemStored);
+}
+
 function checkRegularLinkedListIndexOf(linkedList, itemIndex, testItemSearch, testItemStored) {
     checkRegularLinkedListItemAt(linkedList, itemIndex, testItemStored);
 
@@ -35,7 +42,6 @@ function checkRegularLinkedListItems(linkedList, testItems = []) {
     for (let itemsCnt = 0; itemsCnt < testItemsLength; itemsCnt++) {
         const testItem = testItems[itemsCnt];
         const linkedListItem = linkedList.getElementAt(itemsCnt).element;
-
 
         assert.deepStrictEqual(testItem, linkedListItem);
     }
@@ -54,6 +60,7 @@ function checkRegularLinkedListIterator(linkedList, testItems = []) {
 module.exports.checkRegularLinkedListEmpty = checkRegularLinkedListEmpty;
 module.exports.checkRegularLinkedListNotEmpty = checkRegularLinkedListNotEmpty;
 
+module.exports.checkRegularLinkedListFind = checkRegularLinkedListFind;
 module.exports.checkRegularLinkedListItemAt = checkRegularLinkedListItemAt;
 module.exports.checkRegularLinkedListIndexOf = checkRegularLinkedListIndexOf;
 
