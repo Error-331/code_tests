@@ -1,6 +1,6 @@
 'use strict';
 
-const RegularLinkedListClass = require('../../../linked_list/regular/code/regular_linked_list_class');
+const RegularLinkedListClass = require('./../../../linked_list/regular/code/regular_linked_list_class');
 const RegularGeneralTreeNodeChildrenIteratorClass = require('./regular_general_tree_node_children_iterator_class');
 
 class RegularGeneralTreeNodeClass {
