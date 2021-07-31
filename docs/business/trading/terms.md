@@ -2,6 +2,12 @@
 
 ## General
 
+- Bid price - refers to the highest price a buyer will pay for a security;
+  
+- Ask price - refers to the lowest price a seller will accept for a security;
+  
+- Spread - difference between Ask and Bid price, the smaller the spread, the greater the liquidity of the security;
+
 - Market liquidity (Ликвидность) - свойство активов быть быстро проданными по цене, близкой к рыночной. Чем легче и быстрее можно обменять актив с учётом его полной стоимости, тем более ликвидным он является. 
 Для товара ликвидность будет соответствовать скорости его реализации по номинальной цене, без дополнительных скидок;
 
