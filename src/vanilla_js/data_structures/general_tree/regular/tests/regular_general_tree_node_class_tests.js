@@ -272,6 +272,42 @@ function testRegularGeneralTreeNodeGetRightmostChildCase3() {
     assert.strictEqual(rightmostChild, null);
 }
 
+function testRegularGeneralTreeNodeFindChildByCase1() {
+    const data = 'test_val1';
+    const childData = [5, 10, -5, 'test_val1'];
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, null, data);
+    const [ dataForTest ] = prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChildBy((data, treeNode) => data === treeNode.data, -5);
+    checkNode(requiredNode, ...dataForTest[2]);
+}
+
+function testRegularGeneralTreeNodeFindChildByCase2() {
+    const data = 'test_val1';
+    const childData = [5, 10, -5, 'test_val1'];
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, null, data);
+    const [ dataForTest ] = prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChildBy((data, treeNode) => data === treeNode.data,'test_val1');
+    checkNode(requiredNode, ...dataForTest[3]);
+}
+
+function testRegularGeneralTreeNodeFindChildByCase3() {
+    const data = 'test_val1';
+    const childData = [5, 10, -5, 'test_val1'];
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, null, data);
+    prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChildBy((data, treeNode) => data === treeNode.data, 543);
+    assert.strictEqual(requiredNode, null);
+}
+
 function testRegularGeneralTreeNodeFindChildByDataCase1() {
     const data = 'test_val1';
     const childData = [5, 10, -5, 'test_val1'];
@@ -305,6 +341,69 @@ function testRegularGeneralTreeNodeFindChildByDataCase3() {
     prepareDataForIterationTest(tree, parentNode, childData);
 
     const requiredNode = parentNode.findChildByData(543);
+    assert.strictEqual(requiredNode, null);
+}
+
+
+function testRegularGeneralTreeNodeFindChildCase1() {
+    const data = 'test_val1';
+    const childData = [5, 10, -5, 'test_val1'];
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, (data, treeNode) => data === treeNode.data, data);
+    const [ dataForTest ] = prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChildByData(-5);
+    checkNode(requiredNode, ...dataForTest[2]);
+}
+
+function testRegularGeneralTreeNodeFindChildCase2() {
+    const data = 'test_val1';
+    const childData = [
+        { method: 'post', path: '/param1/param2', handler: () => {} },
+        { method: 'get', path: '/param1/param2', handler: () => {} },
+        { method: 'post', path: '/param2/param1', handler: () => {} },
+        { method: 'put', path: '/a1/a2', handler: () => {} },
+    ];
+
+    const pathPartTreeComparator = (pathNode, method, path) => {
+        if (pathNode.data.path instanceof RegExp) {
+            return false;
+        }
+
+        return pathNode.data.method === method && pathNode.data.path === path;
+    };
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, ([method, pathPart], childNode) => pathPartTreeComparator(childNode, method, pathPart), data);
+    const [ dataForTest ] = prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChild(['post', '/param2/param1']);
+    checkNode(requiredNode, ...dataForTest[2]);
+}
+
+function testRegularGeneralTreeNodeFindChildCase3() {
+    const data = 'test_val1';
+    const childData = [
+        { method: 'post', path: '/param1/param2', handler: () => {} },
+        { method: 'get', path: '/param1/param2', handler: () => {} },
+        { method: 'post', path: '/param2/param1', handler: () => {} },
+        { method: 'put', path: '/a1/a2', handler: () => {} },
+    ];
+
+    const pathPartTreeComparator = (pathNode, method, path) => {
+        if (pathNode.data.path instanceof RegExp) {
+            return false;
+        }
+
+        return pathNode.data.method === method && pathNode.data.path === path;
+    };
+
+    const tree = new RegularGeneralTreeClass();
+    const parentNode = new RegularGeneralTreeNodeClass(tree, null, ([method, pathPart], childNode) => pathPartTreeComparator(childNode, method, pathPart), data);
+    const [ dataForTest ] = prepareDataForIterationTest(tree, parentNode, childData);
+
+    const requiredNode = parentNode.findChild(['put', '/a1/a3']);
     assert.strictEqual(requiredNode, null);
 }
 
@@ -502,9 +601,17 @@ testRegularGeneralTreeNodeGetRightmostChildCase1();
 testRegularGeneralTreeNodeGetRightmostChildCase2();
 testRegularGeneralTreeNodeGetRightmostChildCase3();
 
+testRegularGeneralTreeNodeFindChildByCase1();
+testRegularGeneralTreeNodeFindChildByCase2();
+testRegularGeneralTreeNodeFindChildByCase3();
+
 testRegularGeneralTreeNodeFindChildByDataCase1();
 testRegularGeneralTreeNodeFindChildByDataCase2();
 testRegularGeneralTreeNodeFindChildByDataCase3();
+
+testRegularGeneralTreeNodeFindChildCase1();
+testRegularGeneralTreeNodeFindChildCase2();
+testRegularGeneralTreeNodeFindChildCase3();
 
 testRegularGeneralTreeNodeChildrenIteratorCase1();
 testRegularGeneralTreeNodeChildrenIteratorCase2();

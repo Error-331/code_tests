@@ -29,14 +29,22 @@ class RegularGeneralTreeNodeClass {
         this.#childrenLinkedList = null;
     }
 
-    findChildByData(data) {
+    findChild(data) {
+        return this.#childrenLinkedList.find(data);
+    }
+
+    findChildBy(comparator, data) {
         const prevComparator = this.#childrenLinkedList.comparator;
-        this.#childrenLinkedList.comparator = (data, treeNode) => data === treeNode.data;
+        this.#childrenLinkedList.comparator = comparator;
 
         const requiredNode = this.#childrenLinkedList.find(data);
         this.#childrenLinkedList.comparator = prevComparator;
 
         return requiredNode;
+    }
+
+    findChildByData(data) {
+        return this.findChildBy((data, treeNode) => data === treeNode.data, data);
     }
 
     getChildAt(index) {
