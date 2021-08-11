@@ -45,9 +45,10 @@
 
 - AMD Radeon RX 470;
 - AMD Radeon RX 570;
-- AMD Radeon RX580 ()https://hard.rozetka.com.ua/gigabyte_gv_rx580ixeb_8gd/p64709120/);
+- AMD Radeon RX580 (https://hard.rozetka.com.ua/gigabyte_gv_rx580ixeb_8gd/p64709120/);
 - AMD Radeon Pro WX 7100;
 - AMD Radeon RX Vega 56;
 - AMD Radeon RX Vega 64;
 - AMD Vega Frontier Edition Air;
 - AMD Radeon Pro WX 9100;
+- AMD Radeon 5700xt (У Жоры);
