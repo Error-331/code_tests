@@ -258,17 +258,17 @@ or LQM. PPP is set up generically to allow any number of different monitoring fu
 
 ##### Tracked statistics
 
- The number of frames sent or received;
- The number of octets (bytes) in all frames sent or received;
- The number of errors that have occurred;
- The number of frames that had to be discarded;
- The number of link quality reports generated;
+- The number of frames sent or received;
+- The number of octets (bytes) in all frames sent or received;
+- The number of errors that have occurred;
+- The number of frames that had to be discarded;
+- The number of link quality reports generated;
 
 #### Using Link Quality Reports
 
- Some devices might decide to shut down a link if the absolute number of errors seen in any report reaches a certain threshold;
- Some might look at the trend in successive reporting periods and take action if they detect certain trends, such as an increase in the rate of discarded frames;
- Some devices might just log the information and take no action at all;
+- Some devices might decide to shut down a link if the absolute number of errors seen in any report reaches a certain threshold;
+- Some might look at the trend in successive reporting periods and take action if they detect certain trends, such as an increase in the rate of discarded frames;
+- Some devices might just log the information and take no action at all;
 
 ### PPP Compression Control Protocol (CCP) and Compression Algorithms
 

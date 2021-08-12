@@ -1,10 +1,23 @@
 'use strict';
 
+const ListOfChildrenGeneralTreeClass = require('./../../../../vanilla_js/data_structures/general_tree/list_of_children_general_tree/code/list_of_children_general_tree_class');
+
+const RegularGeneralTreeClass = require('./../../../../vanilla_js/data_structures/general_tree/regular/code/regular_general_tree_class');
+
 const ReqResUtilClass = require('./utils/req_res_util_class');
 const { cloneDeep } = require('./../utils/object_utils');
 
 class ServerRouterClass {
     #routes = [];
+    #routesTrees = new Map();
+
+    #pathPartTreeComparator(pathNode, method, path) {
+        if (pathNode.data.path instanceof RegExp) {
+            return false;
+        }
+
+        return pathNode.data.method === method && pathNode.data.path === path;
+    }
 
     #prepareRoutes() {
         this.#routes.map(route => {
@@ -152,8 +165,61 @@ class ServerRouterClass {
         });
     }
 
+    #buildRouteTreeForMethod(method, routes) {
+        const treeObj = new RegularGeneralTreeClass();
+        let currentNode = treeObj.createNewRoot(([method, pathPart], childNode) => this.#pathPartTreeComparator(childNode, method, pathPart), { method, path: '/', handler: null });
+
+        routes.forEach(route => {
+            if (typeof route.path === 'object' && route.path instanceof RegExp) {
+                currentNode.addChild({ method, path: route.path, handler: route.handler });
+                return;
+            }
+
+            const routePathParts = route.path.slice();
+
+            // if handler for root path is found (e.q. '/') we need to add this handler to it since we have already added data for root path without handler function
+            if (routePathParts.length === 1) {
+                treeObj.root.data = Object.assign(treeObj.root.data,{ handler: route.handler });
+                return;
+            }
+
+            // remove root path ('/')
+            routePathParts.shift();
+
+            routePathParts.forEach(pathPart => {
+                let searchNode = currentNode.findChild([ method, pathPart ]);
+
+                if (!searchNode) {
+                    searchNode = currentNode.addChild({ method, path: pathPart, handler: null });
+                }
+
+                currentNode = searchNode;
+            });
+
+            currentNode.data = { method, path: routePathParts[routePathParts.length - 1], handler: route.handler };
+            currentNode = treeObj.root;
+        });
+
+        this.#routesTrees.set(method, treeObj);
+    }
+
+    #rebuildRouteTree() {
+        this.#routesTrees = new Map();
+        const sortedRoutesWithPreparedPathsByMethod = this.sortedRoutesWithPreparedPathsByMethod;
+
+        for (const [method, routes] of sortedRoutesWithPreparedPathsByMethod) {
+            this.#buildRouteTreeForMethod(method, routes);
+        }
+    }
+
+    #initRoutes() {
+        this.#prepareRoutes();
+        this.#rebuildRouteTree();
+    }
+
     addCustomRoute(customRoute) {
         this.#routes.push(customRoute);
+        this.#initRoutes();
     }
 
     findCustomRouteForCurrentRequest(request) {
@@ -183,9 +249,30 @@ class ServerRouterClass {
         return this.#sortRoutesWithPreparedPaths();
     }
 
+    get sortedRoutesWithPreparedPathsByMethod() {
+        const sortedRoutesWithPreparedPathsByMethod = new Map();
+
+        this.sortedRoutesByPreparedPaths.forEach(route => {
+            const routeMethod = route.method.toLowerCase();
+
+            if (!sortedRoutesWithPreparedPathsByMethod.has(routeMethod)) {
+                sortedRoutesWithPreparedPathsByMethod.set(routeMethod, [route])
+            } else {
+                const routesByMethod = sortedRoutesWithPreparedPathsByMethod.get(routeMethod);
+                routesByMethod.push(route);
+            }
+        });
+
+        return sortedRoutesWithPreparedPathsByMethod;
+    }
+
+    get routesTrees() {
+        return this.#routesTrees;
+    }
+
     constructor(routes) {
         this.#routes = cloneDeep(routes);
-        this.#prepareRoutes();
+        this.#initRoutes();
     }
 }
 

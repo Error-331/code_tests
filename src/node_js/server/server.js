@@ -1,6 +1,6 @@
 'use strict';
 
-const cluster = require('cluster');
+/*const cluster = require('cluster');
 
 const MetaMasterServerClass = require('./js/classes/meta/meta_master_server_class');
 const MetaChildServerClass = require('./js/classes/meta/meta_child_server_class');
@@ -15,7 +15,86 @@ if (cluster.isMaster) {
 } else {
     const metaChildServerClass = new MetaChildServerClass();
     metaChildServerClass.start();
-}
+}*/
+
+
+
+
+/*
+
+
+path: '/',
+path: '/hello/{user}',
+path: '/hello/{user?}',
+/{any*}
+/{files*2}
+/{files*}
+
+
+/route1/sub1/sub2
+/route2/sub1/sub2
+/sub1/sub2/route1
+
+/{any*}
+
+
+{user} > {user?}
+{files*} > {user?}
+
+ */
+
+const ServerRouterClass = require('./js/classes/server_router_class');
+
+const routes = [
+    { path: 'route3/{files*}', handler: () => {} },
+    { path: '/', handler: () => {} },
+    { path: '/hello/{user}', handler: () => {} },
+    { path: '/hello/{user?}   ', handler: () => {} },
+    { path: ' /{any*}   ', handler: () => {} },
+    { path: '/{files*2}', handler: () => {} },
+    { path: '   /{files*}', handler: () => {} },
+
+    { path: /\.[^.\\/:*?"<>|\r\n]+$/, handler: () => {} },
+
+    { path: 'route3/sub1/sub2/sub3/{files*}', handler: () => {} },
+    { path: 'route3/sub1/sub2/sub3', handler: () => {} },
+    { path: 'route3/sub1/sub2/sub3/sub4', handler: () => {} },
+    { path: 'route3/sub1/red5/sub3/sub4', handler: () => {} },
+    { path: 'route3/sub3/sub2/sub3/sub4', handler: () => {} },
+    { path: 'route3/sub1/sub2/sub3/{file}', handler: () => {} },
+    { path: 'route3/sub1/{file}/sub3/sub4', handler: () => {} },
+    { path: 'route3/sub1/sub2/sub3/{file?}', handler: () => {} },
+
+    { path: 'route3/sub1/{files*}', handler: () => {} },
+    { path: '/route1/sub1/sub2', handler: () => {} },
+
+    { path: /aa(b-c).*$/, handler: () => {} },
+    { path: 'route3/sub1/{file}/sub3/sub4', handler: () => {} },
+    { path: 'route3/sub1/{file}/{red}/sub4', handler: () => {} },
+    { path: 'route3/sub3/{file}/{red}/sub4', handler: () => {} },
+
+    { path: 'route4/{file}/{name*}', handler: () => {} },
+    { path: 'route4/{file}/sub2', handler: () => {} },
+    { path: 'route4/{file}/{name?}', handler: () => {} },
+    { path: 'route4/sub1/sub2', handler: () => {} },
+
+    { path: '/route2/sub1/sub2', handler: () => {} },
+    { path: '/sub1/sub2/route1', handler: () => {} },
+
+    { path: 'route3/{files?}', handler: () => {} },
+
+    { path: 'route3/sub1/sub2', handler: () => {} },
+
+];
+
+
+const router = new ServerRouterClass(routes);
+
+
+
+
+
+
 
 // https://nodejs.org/dist/latest-v8.x/docs/api/net.html#net_server_listen
 // https://tools.ietf.org/html/rfc6455

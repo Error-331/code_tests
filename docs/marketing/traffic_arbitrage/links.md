@@ -1,5 +1,10 @@
 # Ссылки
 
+## Биржи
+
+- https://freelancehunt.ua/ - биржа фриланса (можно заказать виде для тикток);
+- https://freelance.ru/pro - биржа фриланса (можно заказать виде для тикток);
+
 ## Системы оплаты
 
 - paytools - прием платежей;
@@ -52,6 +57,10 @@
 
 - https://zorbasmedia.ru/case-x2roas/ - Кейс: Масштабируемся от $43 000 до $200 000 в месяц. Увеличение ROAS в два раза;
 - https://fb-killa.pro/index.php?threads/cloak-it-kachestvennyj-kloaking-servis-dlja-facebook-instagram-google.2119/ - Кейс, нутра, TikTok;
+- https://vc.ru/social/83394-tik-tok-dlya-biznesa-uspet-za-15-sekund-trendy-reklama-zarabotok - по заработку в тик ток (немного устаревшее);
+- https://promo.altera-media.com/information/expert/tiktok-ads/ - по заработку в тик ток (устаревшее);
+- https://rusability.ru/internet-marketing/kak-sdelat-video-v-tik-tok-mehanika-lajfhaki-i-luchshie-priyomy/ - по заработку в тик ток (устаревшее);
+- https://kwork.ru/animation/8656236/promo-rolik-video-kreativ-dlya-reklamy-fb-instagram-vk-ok-tik-tok - по заработку в тик ток (устаревшее);
 
 ## Офферы
 
@@ -75,3 +84,8 @@
 - https://zorbasmedia.ru/kejs-raskrutka-mobilnogo-prilozheniya-v-google-play/ - Кейс: Раскрутка мобильного приложения в Google Play;
 
 - https://zorbasmedia.ru/novyj-metod-identifikatsii-polzovatelya-bez-ispolzovaniya-cookies/ - etag;
+
+## TikTok
+
+- https://freelancehunt.ua/project/montazher-dlya-video-tiktok/625007.html - пример заказа видео для тикток;
+- https://freelance.ru/freelancers/video/sozdanie-video-dlya-tik-tok/ - заказ видео для тик тока;
