@@ -33,20 +33,35 @@ function createShaderFromString(webGLContext, shaderType, shaderCode) {
 }
 
 function initWebGLProgram(webGLContext, vertexShaders, fragmentShaders) {
-  vertexShaders = R.unless(R.is(Object), vShader => [vShader])(vertexShaders);
-  fragmentShaders = R.unless(R.is(Object), fShader => [fShader])(fragmentShaders);
+    const webGLProgram = webGLContext.createProgram();
 
-  const webGLProgram = webGLContext.createProgram();
+  if (!R.isNil(vertexShaders)) {
+      vertexShaders = R.unless(R.is(Object), vShader => [vShader])(vertexShaders);
 
-  R.forEach(vShaderCode =>  {
-    const vShader = createShaderFromString(webGLContext, webGLContext.VERTEX_SHADER, vShaderCode);
-    webGLContext.attachShader(webGLProgram, vShader);
-  }, vertexShaders);
+      R.forEach(vShaderCode =>  {
+        const vShader = createShaderFromString(webGLContext, webGLContext.VERTEX_SHADER, vShaderCode);
+        webGLContext.attachShader(webGLProgram, vShader);
+      }, vertexShaders);
+
+  }
+
+
+    if (!R.isNil(fragmentShaders)) {
+        fragmentShaders = R.unless(R.is(Object), fShader => [fShader])(fragmentShaders);
 
   R.forEach(fShaderCode => {
     const fShader = createShaderFromString(webGLContext, webGLContext.FRAGMENT_SHADER, fShaderCode);
     webGLContext.attachShader(webGLProgram, fShader);
   }, fragmentShaders);
+
+    }
+
+
+
+
+
+
+
 
   webGLContext.linkProgram(webGLProgram);
 

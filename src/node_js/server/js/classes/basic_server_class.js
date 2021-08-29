@@ -294,6 +294,16 @@ class BasicServerClass {
 
         this._constantsOverrides = constantsOverrides ? constantsOverrides : {};
     }
+
+    getQueryParam(paramName) {
+        const paramValue = this._urlQueryParams[paramName];
+
+        if (paramValue === undefined || paramValue === null) {
+            return null;
+        } else {
+            return paramValue;
+        }
+    }
 }
 
 module.exports = BasicServerClass;

@@ -4,8 +4,29 @@ const fs = require('fs');
 
 const routes = [
     {
+        path: 'data/test',
+        handler: async function () {
+            const server = this;
+
+            server._response.writeHead(200);
+            server._response.end(`
+                <?xml version="1.0" encoding="UTF-8"?>
+                <DISTANCES>
+                    <DISTANCE>
+                        <CAR_NAME>0002KXB</CAR_NAME>
+                        <CAR_CODE>866039046931623</CAR_CODE>
+                        <TIME_FROM>${server.getQueryParam('start_date')}</TIME_FROM>
+                        <TIME_TO>${server.getQueryParam('end_date')}</TIME_TO>
+                        <DIST>144.63</DIST>
+                    </DISTANCE>
+                </DISTANCES>
+            `);
+        }
+    },
+
+    {
         path: 'data/save',
-        handler: async function (){
+        handler: async function () {
             await new Promise((resolve) => {
                 const server = this;
                 const fileName = 'users.txt';
