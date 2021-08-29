@@ -22,6 +22,7 @@
         "@babel/preset-env": "7.4.3",
         "@babel/plugin-proposal-decorators": "7.4.4",
         "@babel/plugin-proposal-class-properties": "7.4.4",
+        "@babel/plugin-proposal-private-methods": "7.12.1",
         "core-js": "3.1.2",
         "babel-loader": "8.0.6",
         "elm": "^0.18.0",
@@ -39,6 +40,7 @@
     "dependencies": {
         "fluture": "^5.0.0",
         "lodash": "4.17.11",
+        "lodash-fantasy": "https://github.com/jlmorgan/node-lodash-fantasy/tarball/feature/refactor",
         "moment": "^2.20.1",
         "moment-timezone": "^0.5.14",
         "mongodb": "^2.2.34",
@@ -54,6 +56,7 @@
         "rxjs": "6.5.2",
         "semver": "6.3.0",
         "chalk": "2.4.2",
-        "gl-matrix": "^2.6.1"
+        "gl-matrix": "^2.6.1",
+        "axios": "0.21.1"
     }
 }

@@ -1,6 +1,8 @@
 module.exports.webpackConfig = {
     devtool: 'cheap-eval-source-map',
 
+    target: 'node',
+
     resolve: {
         modules: ['node_modules']
     },

@@ -14,6 +14,7 @@ import regexp from './fundamentals/strings/regexp';
 
 import symbols from './fundamentals/symbols';
 import builtInFunctions from './fundamentals/built_in_functions';
+import dateFundamentals from './fundamentals/date';
 
 import generators from './fundamentals/iterators/generators';
 
@@ -50,11 +51,12 @@ import productOfEveryIntegerExceptIndex from './interview_tasks/product_of_every
 import weeksInHawaii from './interview_tasks/weeks_in_hawaii';
 import passengerSeatsForFamiliesOfThree from './interview_tasks/passenger_seats_for_families_of_three';
 import reversePolishNotation from './interview_tasks/reverse_polish_notation';
+import amountOfChange from './interview_tasks/amount_of_change';
 
 async function run() {
     // fundamentals
     //await numbers();
-    await truthyAndFalsy();
+    //await truthyAndFalsy();
     //await bitwise();
     //await numberStringOrder();
     //await classes();
@@ -68,6 +70,7 @@ async function run() {
 
     //await symbols();
     //await builtInFunctions();
+    //await dateFundamentals();
 
     // iterators
     //await generators();
@@ -112,6 +115,7 @@ async function run() {
     //await weeksInHawaii();
     //await passengerSeatsForFamiliesOfThree();
     //await reversePolishNotation();
+    await amountOfChange();
 }
 
 run();

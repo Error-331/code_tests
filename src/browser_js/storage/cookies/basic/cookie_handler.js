@@ -110,7 +110,7 @@ export default class CookieHandler {
         }
 
         const originalCookie = this.getCookie(cookieName);
-        const originalCookieIndex = this._getCookieIndex(cookieName);
+        const originalCookieIndex = this.getCookieIndex(cookieName);
         const cookieObj = (originalCookie && originalCookieIndex !== -1) ? Object.assign({}, originalCookie) : {};
 
         const defaultExpiresDate = new Date();

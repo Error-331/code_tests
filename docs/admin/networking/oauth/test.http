@@ -1,0 +1,4 @@
+GET https://authorization-server.com/authorize?response_type=code&client_id=_ftBrrC2e6VdhyIkttMhGWfJ&redirect_uri=https://www.oauth.com/playground/authorization-code.html&scope=photo+offline_access&state=2qwwu41AijIQPQX8
+Set-Cookie: oauth2-state=2qwwu41AijIQPQX8; Path=/;
+
+###

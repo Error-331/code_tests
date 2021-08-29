@@ -2,6 +2,8 @@
 
 const fs = require('fs');
 
+const WMLToXMLTransformStreamClass = require('./classes/streams/transform/wml_to_xml_transform_stream_class');
+
 const routes = [
     {
         path: 'data/test',
@@ -109,7 +111,7 @@ const routes = [
             const server = this;
 
             server._addResponseHeader('x-test', 'test_value');
-            server._serveJSON({
+            server.serveJSON({
                 'status': 'ok',
                 'isActive': true,
                 'date': new Date()
@@ -120,9 +122,8 @@ const routes = [
     {
         path: 'StartFileUpload',
         method: 'options',
-        handler: async function(){
+        handler: async function() {
             const server = this;
-            console.log('here1');
 
             server._addResponseHeader('Access-Control-Allow-Origin', '*');
             server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
@@ -135,9 +136,8 @@ const routes = [
 
     {
         path: 'StartFileUpload',
-        handler: async function(){
+        handler: async function() {
             const server = this;
-            console.log('here');
 
             server._addResponseHeader('Access-Control-Allow-Origin', '*');
             server._addResponseHeader('Access-Control-Allow-Credentials', 'true');
@@ -149,6 +149,42 @@ const routes = [
             await server._forwardOpenProxyRequest();
         }
     },
+
+    {
+        path: 'check/upload',
+        method: 'post',
+        handler: async function() {
+            const server = this;
+
+            server.serveJSON({
+                'status': 'ok',
+            });
+        }
+    },
+
+    {
+        path: 'data/upload',
+        method: 'post',
+        handler: async function(serverProxy) {
+            serverProxy.serveJSON({
+                'status': 'ok',
+            });
+        }
+    },
+
+    {
+        path: 'data/form',
+        method: 'post',
+        handler: async function(serverProxy) {
+            serverProxy.serveJSON({
+                'status': 'ok',
+                'name': serverProxy.getPostValueByKey('name'),
+                'surname': serverProxy.getPostValueByKey('surname'),
+                'email': serverProxy.getPostValueByKey('email')
+            });
+        }
+    },
+
     {
         path: 'websocket/connect',
         handler: async function() {
@@ -156,6 +192,20 @@ const routes = [
 
             server._writeHead(200);
             server._response.end();
+        }
+    },
+
+    {
+        path: 'test/error/1',
+        handler: async function() {
+            throw new Error('Test server error 1');
+        }
+    },
+
+    {
+        path: 'wml/world_time/select',
+        handler: async function() {
+            throw new Error('Test server error 1');
         }
     }
 ];

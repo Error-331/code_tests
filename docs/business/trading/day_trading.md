@@ -60,7 +60,6 @@ the stock. The company that originally issued the stock never receives any money
 
 - have first dibs on the stock and will sell large blocks to their best customers;
 
-
 ### Hedge funds
 
 - privately owned trading houses;

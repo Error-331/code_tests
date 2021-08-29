@@ -2,9 +2,9 @@
 
 const http = require('http');
 
-const BasicServerClass = require('../node_js/server/js/classes/basic_server_class');
-const CookiesServerMixin = require('../node_js/server/js/mixins/cookies_server_mixin');
-const StaticServerMixin = require('../node_js/server/js/mixins/static_server_mixin');
+const BasicServerClass = require('../node_js/server/js/classes/servers/http_server_class');
+const CookiesServerMixin = require('../node_js/server/js/classes/facades/cookies_server_facade_class');
+const StaticServerMixin = require('../node_js/server/js/classes/facades/static_server_facade_class');
 
 const {HTTP_SERVER_PORT} = require ('./../node_js/server/js/constants/general_server_constants');
 const routes = require('./routes');

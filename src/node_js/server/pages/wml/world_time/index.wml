@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+    <head>
+        <meta http-equiv="Cache-Control" content="max-age=0"/>
+    </head>
+
+    <card id="Choice">
+        <do type="accept">
+            <go href="/wml/world_time/select?$(CityName)" />
+        </do>
+
+        <p align="center">
+            World Time<br/>
+            Select City<br/>
+        </p>
+
+        <p align="left">
+            <select name="CityName">
+                <option value="Honolulu">Honolulu</option>
+                <option value="London">London</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="New York">New York</option>
+                <option value="Paris">Paris</option>
+                <option value="Phoenix">Phoenix</option>
+                <option value="Tokyo">Tokyo</option>
+            </select>
+        </p>
+
+    </card>
+</wml>
