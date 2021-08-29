@@ -1,0 +1,65 @@
+const testParent1 = {
+    testProp1: 'test_prop1_val1',
+    testProp2: 'test_prop2_val1',
+}
+
+const testChild2Const = function() {};
+testChild2Const.prototype = testParent1;
+const testChild1 = new testChild2Const();
+
+console.log('testParent1');
+console.log(testParent1.testProp1);
+console.log(testParent1.testProp2);
+console.log(testParent1.testProp3);
+console.log(testParent1.testProp4);
+
+console.log('');
+
+console.log('tesChild1');
+console.log(testChild1.testProp1);
+console.log(testChild1.testProp2);
+console.log(testChild1.testProp3);
+console.log(testChild1.testProp4);
+
+console.log('');
+
+testParent1.testProp1 = 'another_prop1_val1';
+testParent1.testProp2 = 'another_prop2_val1';
+testParent1.testProp3 = 'some_prop3_val1';
+
+testChild1.testProp1 = 'child_new_prop1_val1';
+testChild1.testProp2 = 'child_new_prop2_val1';
+testChild1.testProp3 = 'child_new_prop3_val1';
+testChild1.testProp4 = 'child_new_prop4_val1';
+
+console.log('');
+
+console.log('testParent1');
+console.log(testParent1.testProp1);
+console.log(testParent1.testProp2);
+console.log(testParent1.testProp3);
+console.log(testParent1.testProp4);
+
+console.log('');
+
+console.log('tesChild1');
+console.log(testChild1.testProp1);
+console.log(testChild1.testProp2);
+console.log(testChild1.testProp3);
+console.log(testChild1.testProp4);
+
+console.log('');
+
+console.log('testParent1 (props status)');
+console.log(testParent1.hasOwnProperty('testProp1'));
+console.log(testParent1.hasOwnProperty('testProp2'));
+console.log(testParent1.hasOwnProperty('testProp3'));
+console.log(testParent1.hasOwnProperty('testProp4'));
+
+console.log('');
+
+console.log('tesChild1 (props status)');
+console.log(testChild1.hasOwnProperty('testProp1'));
+console.log(testChild1.hasOwnProperty('testProp2'));
+console.log(testChild1.hasOwnProperty('testProp3'));
+console.log(testChild1.hasOwnProperty('testProp4'));
