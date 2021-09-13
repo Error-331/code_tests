@@ -194,6 +194,11 @@ https://bt.rozetka.com.ua/ua/191126286/p191126286/
 https://ru.banggood.com/TK20-Computer-PC-Case-Gaming-Chassis-Special-Tank-Shaped-120mm-Fans-Water-Cooling-Tempered-Glass-Support-ATX-or-ITX-or-MicroATX-or-E-ATX-Motherboard-p-1819163.html?cur_warehouse=CN&rmmds=category
 https://ru.banggood.com/GAMEKM-M-ATX-Computer-Gaming-Case-Vertical-Graphics-Card-Special-Shaped-Water-Cooling-Desktop-Support-M-ATX-or-ITX-Motherboard-for-PC-p-1787258.html?gmcCountry=UA&currency=UAH&cur_warehouse=CN&createTmp=1&ID=6287830&utm_source=googleshopping&utm_medium=cpc_bgcs&utm_content=sandra&utm_campaign=sandra-pla-uag-all-pc-0205&ad_id=496700378851&gclid=Cj0KCQjws-OEBhCkARIsAPhOkIaUVJCFFP9kPYubrPjo15XGLWNOCv_buoqVfLCnnmLf3qTFRYB40aUaAhjREALw_wcB
 
+### Электроника
+
+https://rozetka.com.ua/274853088/p274853088/ - Адаптер переходник Kebidu AV RCA to HDMI
+https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
+
 ### Разное
 
 https://edisons.com.ua/retro-provodka/retro-vyklyuchateli/page-2/ - розетки/выключатели
