@@ -23,6 +23,37 @@
 - callbacks for asynchronous requests will also be executed on the Event Loop;
 - event loop will fulfill the non-blocking asynchronous requests made by its callbacks (I/O);
 
+### Event Loop Phases
+
+#### Poll
+The poll phase executes I/O-related callbacks. This is the phase that  application code is most likely to execute in. When your main application
+code starts running, it runs in this phase.
+
+#### Check
+In this phase, callbacks that are triggered via setImmediate() are executed.
+
+#### Close
+This phase executes callbacks that are triggered via EventEmitter close  events. For example, when a net.Server TCP server closes, it emits a close event that 
+runs a callback in this phase.
+
+#### Timers
+Callbacks scheduled using setTimeout() and setInterval() are executed in this phase.
+
+#### Pending
+Special system events are run in this phase, like when a net. Socket TCP socket throws an ECONNREFUSED error.
+
+Poll -> Check -> Close -> Timers -> Pending
+
+### Event loop microtask queues
+
+There are two special microtask queues that can have callbacks added to them while a phase is running:
+
+- The first microtask queue handles callbacks that have been registered using process.nextTick();
+- The second microtask queue handles promises that reject or resolve;
+
+Callbacks in the microtask queues take priority over callbacks in the phase’s normal queue, and callbacks in the next tick microtask queue run before callbacks in 
+the promise microtask queue.
+
 ## Worker pool
 
 - implemented in `libuv` (exposes a general task submission API);
@@ -40,5 +71,5 @@
 ### Queue
 
 - the Event Loop does not actually maintain a queue;
-- Event Loop has a collection of file descriptors that it asks the operating system to monitor, using a mechanism like epoll (Linux), kqueue (OSX), event ports (Solaris), or IOCP (Windows);
+- event Loop has a collection of file descriptors that it asks the operating system to monitor, using a mechanism like epoll (Linux), kqueue (OSX), event ports (Solaris), or IOCP (Windows);
 - Worker Pool uses a real queue whose entries are tasks to be processed;
