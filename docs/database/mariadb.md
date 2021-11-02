@@ -1,5 +1,14 @@
 # MariaDB
 
+### Log file location
+
+- `/var/log` (Linux) or MariaDB data directory
+- MariaDB data directory;
+
+### MariaDB data directory location
+
+- `/var/lib/mysql` (Linux);
+
 ## Tips & Tricks
 
 ### Make MariaDB be accessible from command line (e.g. you can login to MariaDB from any user)
