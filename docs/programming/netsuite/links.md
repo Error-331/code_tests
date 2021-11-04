@@ -7,3 +7,7 @@
 ## SuiteScript documentation
 
 - https://2201854.app.netsuite.com/app/help/helpcenter.nl?fid=chapter_N3170023.html&whence= - SuiteScript Supported Records;
+
+## Additional resources
+
+- https://blog.prolecto.com/ - blog about NetSuite;
