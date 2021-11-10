@@ -4,6 +4,7 @@ const RegularLinkedListClass = require('./../code/regular_linked_list_class');
 const {
     checkRegularLinkedListEmpty,
     checkRegularLinkedListNotEmpty,
+    checkRegularLinkedListElement,
     checkRegularLinkedListItemAt,
     checkRegularLinkedListIndexOf,
     checkRegularLinkedListFind,
@@ -31,13 +32,49 @@ function testLinkedListEmptyNotEmptyCase() {
 
 function testLinkedListPushCase1() {
     const linkedListObj = new RegularLinkedListClass();
-    linkedListObj.push(5);
+    const newNode = linkedListObj.push(5);
+    checkRegularLinkedListElement(newNode.element, 5);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 1, 5, 5);
     checkRegularLinkedListItems(linkedListObj, [5]);
 }
 
 function testLinkedListPushCase2() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    let newNode = linkedListObj.push(5);
+    checkRegularLinkedListElement(newNode.element, 5);
+
+    newNode = linkedListObj.push(7);
+    checkRegularLinkedListElement(newNode.element, 7);
+
+    newNode = linkedListObj.push(-1);
+    checkRegularLinkedListElement(newNode.element, -1);
+
+    newNode = linkedListObj.push(10);
+    checkRegularLinkedListElement(newNode.element, 10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+}
+
+function testLinkedListInsertBeforeHeadCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    let newNode = linkedListObj.insertBeforeHead(5);
+    checkRegularLinkedListElement(newNode.element, 5);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 1, 5, 5);
+    checkRegularLinkedListItems(linkedListObj, [5]);
+
+    newNode = linkedListObj.insertBeforeHead(-1);
+    checkRegularLinkedListElement(newNode.element, -1);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 2, -1, 5);
+    checkRegularLinkedListItems(linkedListObj, [-1, 5]);
+}
+
+function testLinkedListInsertBeforeHeadCase2() {
     const linkedListObj = new RegularLinkedListClass();
 
     linkedListObj.push(5);
@@ -47,6 +84,54 @@ function testLinkedListPushCase2() {
 
     checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
     checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    let newNode = linkedListObj.insertBeforeHead(51);
+    checkRegularLinkedListElement(newNode.element, 51);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 5, 51, 10);
+    checkRegularLinkedListItems(linkedListObj, [51, 5, 7, -1, 10]);
+}
+
+function testLinkedListInsertAfterNodeCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    let previousNode = linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    let newNode = linkedListObj.insertAfterNode(previousNode, 72);
+    checkRegularLinkedListElement(newNode.element, 72);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 5, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, 72, -1, 10]);
+}
+
+function testLinkedListInsertAfterNodeCase2() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    let previousNode = linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    let newNode = linkedListObj.insertAfterNode(previousNode, 72);
+    checkRegularLinkedListElement(newNode.element, 72);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 5, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, 72, -1, 10]);
+
+    newNode = linkedListObj.insertAfterNode(newNode, 8);
+    checkRegularLinkedListElement(newNode.element, 8);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 6, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, 72, 8, -1, 10]);
 }
 
 function testLinkedListInsertCase1() {
@@ -255,6 +340,107 @@ function testLinkedListElementIndexOfCase3() {
     checkRegularLinkedListIndexOf(linkedListObj, 3, {key: 10, value: -12}, {key: 10, value: -12});
 }
 
+function testLinkedListRemoveHeadNodeCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    const removedElement = linkedListObj.removeHeadNode();
+    checkRegularLinkedListElement(5, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 3, 7, 10);
+    checkRegularLinkedListItems(linkedListObj, [7, -1, 10]);
+}
+
+function testLinkedListRemoveHeadNodeCase2() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    let removedElement = linkedListObj.removeHeadNode();
+    checkRegularLinkedListElement(5, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 3, 7, 10);
+    checkRegularLinkedListItems(linkedListObj, [7, -1, 10]);
+
+    removedElement = linkedListObj.removeHeadNode();
+    checkRegularLinkedListElement(7, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 2, -1, 10);
+    checkRegularLinkedListItems(linkedListObj, [-1, 10]);
+
+    removedElement = linkedListObj.removeHeadNode();
+    checkRegularLinkedListElement(-1, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 1, 10, 10);
+    checkRegularLinkedListItems(linkedListObj, [10]);
+
+    removedElement = linkedListObj.removeHeadNode();
+    checkRegularLinkedListElement(10, removedElement);
+
+    checkRegularLinkedListEmpty(linkedListObj);
+}
+
+function testLinkedListRemoveNextNodeCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    const previousNode = linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    const removedElement = linkedListObj.removeNextNode(previousNode);
+    checkRegularLinkedListElement(-1, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 3, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, 10]);
+}
+
+function testLinkedListRemoveNextNodeCase2() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    const previousNode = linkedListObj.push(5);
+    linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    let removedElement = linkedListObj.removeNextNode(previousNode);
+    checkRegularLinkedListElement(7, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 3, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, -1, 10]);
+
+    removedElement = linkedListObj.removeNextNode(previousNode);
+    checkRegularLinkedListElement(-1, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 2, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 10]);
+
+    removedElement = linkedListObj.removeNextNode(previousNode);
+    checkRegularLinkedListElement(10, removedElement);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 1, 5, 5);
+    checkRegularLinkedListItems(linkedListObj, [5]);
+}
+
 function testLinkedListRemoveAtCase1() {
     const linkedListObj = new RegularLinkedListClass();
 
@@ -266,7 +452,8 @@ function testLinkedListRemoveAtCase1() {
     checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
     checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
 
-    linkedListObj.removeAt(2);
+    const removedElement = linkedListObj.removeAt(2);
+    checkRegularLinkedListElement(-1, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, 5, 10);
     checkRegularLinkedListItems(linkedListObj, [5, 7, 10]);
@@ -283,7 +470,8 @@ function testLinkedListRemoveAtCase2() {
     checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
     checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
 
-    linkedListObj.removeAt(0);
+    const removedElement = linkedListObj.removeAt(0);
+    checkRegularLinkedListElement(5, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, 7, 10);
     checkRegularLinkedListItems(linkedListObj, [7, -1, 10]);
@@ -300,7 +488,8 @@ function testLinkedListRemoveAtCase3() {
     checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
     checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
 
-    linkedListObj.removeAt(3);
+    const removedElement = linkedListObj.removeAt(3);
+    checkRegularLinkedListElement(10, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, 5, -1);
     checkRegularLinkedListItems(linkedListObj, [5, 7, -1]);
@@ -321,7 +510,8 @@ function testLinkedListRemoveCase1() {
     checkRegularLinkedListIndexOf(linkedListObj, 2, -1, -1);
     checkRegularLinkedListIndexOf(linkedListObj, 3, 10, 10);
 
-    linkedListObj.remove(-1);
+    const removedElement = linkedListObj.remove(-1);
+    checkRegularLinkedListElement(-1, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, 5, 10);
 
@@ -347,7 +537,8 @@ function testLinkedListRemoveCase2() {
     checkRegularLinkedListIndexOf(linkedListObj, 0, {key: -1, value: 65}, {key: 5, value: 65});
     checkRegularLinkedListIndexOf(linkedListObj, 3, {key: 10, value: -12}, {key: 10, value: -12});
 
-    linkedListObj.remove({key: -1, value: 65});
+    const removedElement = linkedListObj.remove({key: -1, value: 65});
+    checkRegularLinkedListElement({key: 5, value: 65}, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, {key: 7, value: -5}, {key: 10, value: -12});
 
@@ -373,7 +564,8 @@ function testLinkedListRemoveCase3() {
     checkRegularLinkedListIndexOf(linkedListObj, 2, {key: -1, value: 65}, {key: -1, value: 65});
     checkRegularLinkedListIndexOf(linkedListObj, 3, {key: 10, value: -12}, {key: 10, value: -12});
 
-    linkedListObj.remove({key: -1, value: 65});
+    const removedElement = linkedListObj.remove({key: -1, value: 65});
+    checkRegularLinkedListElement({key: -1, value: 65}, removedElement);
 
     checkRegularLinkedListNotEmpty(linkedListObj, 3, {key: 5, value: 65}, {key: 10, value: -12});
 
@@ -451,6 +643,12 @@ testLinkedListEmptyNotEmptyCase();
 testLinkedListPushCase1();
 testLinkedListPushCase2();
 
+testLinkedListInsertBeforeHeadCase1();
+testLinkedListInsertBeforeHeadCase2();
+
+testLinkedListInsertAfterNodeCase1();
+testLinkedListInsertAfterNodeCase2();
+
 testLinkedListInsertCase1();
 testLinkedListInsertCase2();
 testLinkedListInsertCase3();
@@ -466,6 +664,12 @@ testLinkedListElementFindCase3();
 testLinkedListElementIndexOfCase1();
 testLinkedListElementIndexOfCase2();
 testLinkedListElementIndexOfCase3();
+
+testLinkedListRemoveHeadNodeCase1();
+testLinkedListRemoveHeadNodeCase2();
+
+testLinkedListRemoveNextNodeCase1();
+testLinkedListRemoveNextNodeCase2();
 
 testLinkedListRemoveAtCase1();
 testLinkedListRemoveAtCase2();

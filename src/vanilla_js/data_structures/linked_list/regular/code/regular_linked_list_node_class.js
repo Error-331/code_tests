@@ -7,12 +7,24 @@ class RegularLinkedListNodeClass {
     #element = null;
     #next = null;
 
+    clear() {
+        this.#element = null;
+    }
+
+    unlink() {
+        this.#next = null;
+    }
+
+    abandon() {
+        this.clear();
+        this.unlink();
+    }
+
     destroy() {
         typeof this.#element === 'object' ? this.#element?.destroy() : null;
         typeof this.#next === 'object' ?  this.#next?.destroy() : null;
 
-        this.#element = null;
-        this.#next = null;
+        this.abandon();
     }
 
     get element() {

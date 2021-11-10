@@ -10,14 +10,18 @@ class RegularLinkedListClass {
 
     #comparator = (first, second) => first === second;
 
-    find(element) {
+    findNode(element) {
         for (const node of this) {
             if (this.#comparator(element, node.element)) {
-                return node.element;
+                return node;
             }
         }
 
         return null;
+    }
+
+    find(element) {
+        return this.findNode(element)?.element;
     }
 
     indexOf(element) {
@@ -50,51 +54,94 @@ class RegularLinkedListClass {
         }
 
         this.#count++;
+        return node;
     }
 
-    removeAt(index) {
-        if (index >= 0 && index < this.#count) {
-            let current = this.#head;
+    insertBeforeHead(element) {
+        const node = new RegularLinkedListNodeClass(element);
+        node.next = this.head;
 
+        this.#head = node;
+        this.#count++;
+
+        return node;
+    }
+
+    insertAfterNode(previousNode, element) {
+        const node = new RegularLinkedListNodeClass(element);
+
+        node.next = previousNode.next;
+        previousNode.next = node;
+
+        this.#count++;
+        return node;
+    }
+
+    insert(element, index) {
+        if (index >= 0 && index <= this.#count) {
             if (index === 0) {
-                this.#head = current.next;
+                return this.insertBeforeHead(element);
             } else {
-                const previous = this.getElementAt(index - 1);
-                current = previous.next;
-                previous.next = current.next;
+                const previous = this.getNodeAt(index - 1);
+                return this.insertAfterNode(previous, element);
             }
-
-            this.#count--;
-            return current.element;
         }
 
         return null;
     }
 
-    insert(element, index) {
-        if (index >= 0 && index <= this.#count) {
-            const node = new RegularLinkedListNodeClass(element);
+    removeHeadNode() {
+        const node = this.#head;
+        this.#head = node.next;
 
+        const currentElement = node.element;
+        node.abandon();
+
+        this.#count--;
+        return currentElement;
+    }
+
+    removeNextNode(previousNode) {
+        const currentNode = previousNode.next
+        previousNode.next = currentNode.next;
+
+        const currentElement = currentNode.element;
+        currentNode.abandon();
+
+        this.#count--;
+        return currentElement;
+    }
+
+    removeAt(index) {
+        if (index >= 0 && index < this.#count) {
             if (index === 0) {
-                node.next = this.head;
-                this.#head = node;
+                return this.removeHeadNode();
             } else {
-                const previous = this.getElementAt(index - 1);
+                const previous = this.getNodeAt(index - 1);
+                return this.removeNextNode(previous);
 
-                node.next = previous.next;
-                previous.next = node;
             }
-
-            this.#count++;
-            return node;
         }
 
         return null;
     }
 
     remove(element) {
-        const index = this.indexOf(element);
-        return this.removeAt(index);
+        let previousNode = null;
+
+        for (const node of this) {
+            if (this.#comparator(element, node.element)) {
+                if (previousNode === null) {
+                    return this.removeHeadNode();
+                } else {
+                    return this.removeNextNode(previousNode);
+                }
+            }
+
+            previousNode = node;
+        }
+
+        return null;
     }
 
     destroy() {
@@ -150,7 +197,7 @@ class RegularLinkedListClass {
         }
     }
 
-    getElementAt(index) {
+    getNodeAt(index) {
         if (index >= 0 && index <= this.#count) {
             let node = this.#head;
 
@@ -182,7 +229,7 @@ class RegularLinkedListClass {
 
     get lastChild() {
         if (!this.isEmpty) {
-            return this.getElementAt(this.size - 1);
+            return this.getNodeAt(this.size - 1);
         } else {
             return null;
         }
@@ -197,4 +244,5 @@ class RegularLinkedListClass {
     }
 }
 
+// exports
 module.exports = RegularLinkedListClass;
