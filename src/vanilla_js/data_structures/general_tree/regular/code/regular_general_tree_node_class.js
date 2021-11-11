@@ -48,7 +48,7 @@ class RegularGeneralTreeNodeClass {
     }
 
     getChildAt(index) {
-        return this.#childrenLinkedList.getElementAt(index)?.element;
+        return this.#childrenLinkedList.getNodeAt(index)?.element;
     }
 
     get tree() {

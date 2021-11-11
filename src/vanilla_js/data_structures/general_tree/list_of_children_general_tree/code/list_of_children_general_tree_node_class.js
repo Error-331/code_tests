@@ -98,7 +98,7 @@ class ListOfChildrenGeneralTreeNodeClass {
     }
 
     getChildAt(index) {
-        return this.#childrenLinkedList.getElementAt(index);
+        return this.#childrenLinkedList.getNodeAt(index);
     }
 
     get id() {

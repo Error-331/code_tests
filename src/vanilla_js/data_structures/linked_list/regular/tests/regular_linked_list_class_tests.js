@@ -1,5 +1,7 @@
+// external imports
 const assert = require('assert').strict;
 
+// internal imports
 const RegularLinkedListClass = require('./../code/regular_linked_list_class');
 const {
     checkRegularLinkedListEmpty,
@@ -14,6 +16,7 @@ const {
 
 const { checkRegularLinkedListNodeDestroyed } = require('./../../../../../../utils/testing/data_structures/regular_linked_list_node_class_test_utils');
 
+// implementation
 function testLinkedListEmptyCase() {
     const linkedListObj = new RegularLinkedListClass();
     checkRegularLinkedListEmpty(linkedListObj);
@@ -684,3 +687,5 @@ testLinkedListIteratorCase2();
 
 testLinkedListToStringCase();
 testLinkedListDestroyedCase();
+
+// exports

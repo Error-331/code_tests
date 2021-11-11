@@ -11,16 +11,16 @@ function checkRegularLinkedListNotEmpty(linkedList, size, head, lastChild) {
     assert.strictEqual(linkedList.size, size);
     assert.strictEqual(linkedList.isEmpty, false);
 
-    assert.deepStrictEqual(linkedList.head.element, head);
-    assert.deepStrictEqual(linkedList.lastChild.element, lastChild);
+    assert.deepStrictEqual(linkedList.head.element.serialize?.() ?? linkedList.head.element, head.serialize?.() ?? head);
+    assert.deepStrictEqual(linkedList.lastChild.element.serialize?.() ?? linkedList.lastChild.element, lastChild.serialize?.() ?? lastChild);
 }
 
 function checkRegularLinkedListElement(listElement, testElement) {
-    assert.deepStrictEqual(testElement, listElement);
+    assert.deepStrictEqual(testElement.serialize?.() ?? testElement, listElement.serialize?.() ?? listElement);
 }
 
 function checkRegularLinkedListItem(listNode, testNode) {
-    checkRegularLinkedListElement(testNode.element, listNode.element);
+    checkRegularLinkedListElement(testNode.element.serialize?.() ?? testNode.element, listNode.element.serialize?.() ?? listNode.element);
 }
 
 function checkRegularLinkedListItemAt(linkedList, itemIndex, testItem) {
@@ -32,7 +32,7 @@ function checkRegularLinkedListFind(linkedList, itemIndex, testItemSearch, testI
     checkRegularLinkedListItemAt(linkedList, itemIndex, testItemStored);
 
     const linkedListItem = linkedList.find(testItemSearch);
-    assert.deepStrictEqual(linkedListItem, testItemStored);
+    assert.deepStrictEqual(linkedListItem.serialize?.() ?? linkedListItem, testItemStored.serialize?.() ?? testItemStored);
 }
 
 function checkRegularLinkedListIndexOf(linkedList, itemIndex, testItemSearch, testItemStored) {
@@ -51,7 +51,7 @@ function checkRegularLinkedListItems(linkedList, testItems = []) {
         const testItem = testItems[itemsCnt];
         const linkedListItem = linkedList.getNodeAt(itemsCnt).element;
 
-        assert.deepStrictEqual(testItem, linkedListItem);
+        assert.deepStrictEqual(testItem.serialize?.() ?? testItem, linkedListItem.serialize?.() ?? linkedListItem);
     }
 }
 
@@ -59,7 +59,7 @@ function checkRegularLinkedListIterator(linkedList, testItems = []) {
     const iteratedLinkedListItems = [];
 
     for (const node of linkedList) {
-        iteratedLinkedListItems.push(node.element);
+        iteratedLinkedListItems.push(node.element.serialize?.() ?? node.element);
     }
 
     assert.deepStrictEqual(testItems, iteratedLinkedListItems);
