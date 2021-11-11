@@ -46,6 +46,7 @@ function checkRegularLinkedListIndexOf(linkedList, itemIndex, testItemSearch, te
 
 function checkRegularLinkedListItems(linkedList, testItems = []) {
     const testItemsLength = testItems.length;
+    assert.strictEqual(linkedList.size, testItemsLength);
 
     for (let itemsCnt = 0; itemsCnt < testItemsLength; itemsCnt++) {
         const testItem = testItems[itemsCnt];
