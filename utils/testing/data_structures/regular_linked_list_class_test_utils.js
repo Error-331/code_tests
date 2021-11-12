@@ -1,5 +1,9 @@
+// external imports
 const assert = require('assert').strict;
 
+// internal imports
+
+// implementation
 function checkRegularLinkedListEmpty(linkedList) {
     assert.strictEqual(linkedList.size, 0);
     assert.strictEqual(linkedList.isEmpty, true);
@@ -20,7 +24,7 @@ function checkRegularLinkedListElement(listElement, testElement) {
 }
 
 function checkRegularLinkedListItem(listNode, testNode) {
-    checkRegularLinkedListElement(testNode.element.serialize?.() ?? testNode.element, listNode.element.serialize?.() ?? listNode.element);
+    checkRegularLinkedListElement(testNode.element, listNode.element);
 }
 
 function checkRegularLinkedListItemAt(linkedList, itemIndex, testItem) {
@@ -66,6 +70,7 @@ function checkRegularLinkedListIterator(linkedList, testItems = []) {
     assert.deepStrictEqual(testItems, iteratedLinkedListItems);
 }
 
+// exports
 module.exports.checkRegularLinkedListEmpty = checkRegularLinkedListEmpty;
 module.exports.checkRegularLinkedListNotEmpty = checkRegularLinkedListNotEmpty;
 
