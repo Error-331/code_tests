@@ -616,6 +616,35 @@ function testLinkedListToStringCase() {
     assert.strictEqual(linkedListObj.toString(), '5,7,-1,10');
 }
 
+function testLinkedLIstToArrayCase1() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(5);
+    linkedListObj.push(7);
+    linkedListObj.push(-1);
+    linkedListObj.push(10);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
+    checkRegularLinkedListItems(linkedListObj, [5, 7, -1, 10]);
+
+    assert.deepStrictEqual(linkedListObj.toArray(), [5, 7, -1, 10]);
+}
+
+function testLinkedLIstToArrayCase2() {
+    const linkedListObj = new RegularLinkedListClass();
+
+    linkedListObj.push(74);
+    linkedListObj.push(1);
+    linkedListObj.push(-65);
+    linkedListObj.push(-2);
+    linkedListObj.push(88);
+
+    checkRegularLinkedListNotEmpty(linkedListObj, 5, 74, 88);
+    checkRegularLinkedListItems(linkedListObj, [74, 1, -65, -2, 88]);
+
+    assert.deepStrictEqual(linkedListObj.toArray(), [74, 1, -65, -2, 88]);
+}
+
 function testLinkedListDestroyedCase() {
     const linkedListObj = new RegularLinkedListClass();
 
@@ -686,6 +715,10 @@ testLinkedListIteratorCase1();
 testLinkedListIteratorCase2();
 
 testLinkedListToStringCase();
+
+testLinkedLIstToArrayCase1();
+testLinkedLIstToArrayCase2();
+
 testLinkedListDestroyedCase();
 
 // exports

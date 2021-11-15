@@ -157,15 +157,25 @@ class RegularLinkedListClass {
             return '';
         }
 
-        let objString = `${this.#head.element}`;
+        let objString = `${this.#head.element.toString?.()}`;
         let current = this.#head.next;
 
         for (let nodeCounter = 1; nodeCounter < this.size && current !== null; nodeCounter++) {
-            objString = `${objString},${current.element}`;
+            objString = `${objString},${current.element.toString?.() ?? current.element}`;
             current = current.next;
         }
 
         return objString;
+    }
+
+    toArray() {
+        const elementsArray = [];
+
+        for (const node of this) {
+            elementsArray.push(node.element);
+        }
+
+        return elementsArray;
     }
 
     [Symbol.iterator]() {
