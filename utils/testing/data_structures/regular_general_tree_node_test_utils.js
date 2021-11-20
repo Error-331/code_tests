@@ -1,5 +1,9 @@
+// external imports
 const assert = require('assert').strict;
 
+// internal imports
+
+// implementation
 function prepareDataForIterationTest(tree, parentNode, childData) {
     const destroyCallTracker = new assert.CallTracker();
     const dataForTest = [];
@@ -68,6 +72,7 @@ function checkRegularGeneralTreeDestroyedNodeChildrenIterator(parentNode, childN
     assert.strictEqual(0, iteratedNodeChildren.length);
 }
 
+// exports
 module.exports.prepareDataForIterationTest = prepareDataForIterationTest;
 module.exports.checkNode = checkNode;
 module.exports.checkRegularGeneralTreeNodeChildrenIterator = checkRegularGeneralTreeNodeChildrenIterator;

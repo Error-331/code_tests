@@ -1,5 +1,9 @@
+// external imports
 const assert = require('assert').strict;
 
+// internal imports
+
+// implementation
 function checkNodeBase(node, id, key, parent, isLeaf) {
     assert.strictEqual(node.id, id);
     assert.strictEqual(node.key, key);
@@ -17,5 +21,6 @@ function checkNodeChildSibling(node, nodeSpec) {
     }
 }
 
+// exports
 module.exports.checkNodeBase = checkNodeBase;
 module.exports.checkNodeChildSibling = checkNodeChildSibling;

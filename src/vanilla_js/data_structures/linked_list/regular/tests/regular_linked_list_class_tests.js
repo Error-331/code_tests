@@ -30,7 +30,7 @@ function testLinkedListEmptyNotEmptyCase() {
     linkedListObj.push(-1);
     linkedListObj.push(10);
 
-    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10)
+    checkRegularLinkedListNotEmpty(linkedListObj, 4, 5, 10);
 }
 
 function testLinkedListPushCase1() {
