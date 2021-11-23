@@ -49,7 +49,6 @@ class RegularQueueClass {
 
         return {
             next: function () {
-
                 if (nextItemId >= queue.#itemsCount) {
                     return {done: true};
                 } else {
