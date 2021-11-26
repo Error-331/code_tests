@@ -16,6 +16,47 @@ function checkGraphRegularAdjacencyMatrixDepthFirstSearch(actualPath, expectedPa
     assert.deepStrictEqual(actualPath, expectedPath);
 }
 
+function checkGraphRegularAdjacencyMatrixRowsCount(actualRowCount, expectedRowCount) {
+    assert.strictEqual(actualRowCount, expectedRowCount);
+}
+
+function checkGraphRegularAdjacencyMatrixRowById(actualRowsData, expectedRowsData) {
+    const actualRowsDataArray = actualRowsData.toArray();
+
+    const actualRowsDataCount = actualRowsDataArray.length;
+    const expectedRowsDataCount = expectedRowsData.length;
+
+    assert.strictEqual(actualRowsDataCount, expectedRowsDataCount);
+
+    for (let rowId = 0; rowId < actualRowsDataCount; rowId++) {
+        const actualRowData = actualRowsDataArray[rowId];
+        const expectedRowData = expectedRowsData[rowId];
+
+        const [expectedId, expectedData] = expectedRowData;
+
+        assert.strictEqual(actualRowData.id, expectedId);
+        assert.deepStrictEqual(actualRowData.data, expectedData);
+    }
+}
+
+function checkGraphRegularAdjacencyMatrixRowsIds(actualRowsIds, expectedRowsIds) {
+    assert.deepStrictEqual(actualRowsIds, expectedRowsIds);
+}
+
+function checkGraphRegularAdjacencyMatrixRowsIdsByIterator(keysIterator, expectedRowsIds) {
+    const keysArray = [];
+
+    for (const key of keysIterator) {
+        keysArray.push(key);
+    }
+
+    checkGraphRegularAdjacencyMatrixRowsIds(keysArray, expectedRowsIds);
+}
+
 // exports
 module.exports.checkGraphRegularAdjacencyMatrixIdsArray = checkGraphRegularAdjacencyMatrixIdsArray;
 module.exports.checkGraphRegularAdjacencyMatrixDepthFirstSearch = checkGraphRegularAdjacencyMatrixDepthFirstSearch;
+module.exports.checkGraphRegularAdjacencyMatrixRowsCount = checkGraphRegularAdjacencyMatrixRowsCount;
+module.exports.checkGraphRegularAdjacencyMatrixRowById = checkGraphRegularAdjacencyMatrixRowById;
+module.exports.checkGraphRegularAdjacencyMatrixRowsIds = checkGraphRegularAdjacencyMatrixRowsIds;
+module.exports.checkGraphRegularAdjacencyMatrixRowsIdsByIterator = checkGraphRegularAdjacencyMatrixRowsIdsByIterator;

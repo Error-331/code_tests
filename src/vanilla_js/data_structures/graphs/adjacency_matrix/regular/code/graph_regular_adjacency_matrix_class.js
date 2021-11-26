@@ -85,6 +85,10 @@ class GraphRegularAdjacencyMatrixClass {
         }
     }
 
+    depthFirstSearch(searchImplementationObj, rowId = null) {
+        return searchImplementationObj.depthFirstSearch(this, rowId);
+    }
+
     toArray() {
         const elementsArray = [];
 
@@ -93,6 +97,28 @@ class GraphRegularAdjacencyMatrixClass {
         }
 
         return elementsArray;
+    }
+
+    getRowById(rowId) {
+        if (rowId === undefined || rowId === null) {
+            throw new Error('GraphVertexAdjacencyLinkedListClass: cannot find row for "undefined" row ID');
+        }
+
+        return this.#vertexRows.get(rowId);
+    }
+
+    get rowsIds() {
+        const keysArray = [];
+
+        for (const key of this.#vertexRows.keys()) {
+            keysArray.push(key);
+        }
+
+        return keysArray;
+    }
+
+    get rowsIdsIterator() {
+        return this.#vertexRows.keys();
     }
 
     get rowsCount() {

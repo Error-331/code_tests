@@ -19,7 +19,7 @@ class ListOfChildrenGeneralTreeClass {
         const root = this.root;
 
         if (root === null) {
-            throw new Error('Tree does not have a root');
+            throw new Error('ListOfChildrenGeneralTreeClass: Tree does not have a root');
         }
 
         const leftChild = new ListOfChildrenGeneralTreeNodeClass(this, this.nextNodeId, key, root, this.#comparator);

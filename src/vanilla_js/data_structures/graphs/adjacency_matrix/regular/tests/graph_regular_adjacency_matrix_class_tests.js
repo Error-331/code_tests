@@ -2,9 +2,13 @@
 
 // internal imports
 const GraphRegularAdjacencyMatrixClass = require('./../code/graph_regular_adjacency_matrix_class');
+
 const {
     checkGraphRegularAdjacencyMatrixIdsArray,
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch,
+    checkGraphRegularAdjacencyMatrixRowsCount,
+    checkGraphRegularAdjacencyMatrixRowById,
+    checkGraphRegularAdjacencyMatrixRowsIds,
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator,
 } = require('./../../../../../../../utils/testing/data_structures/graph/graph_regular_adjacency_matrix_test_utils');
 
 // implementation
@@ -203,38 +207,233 @@ function testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase3() {
     ]);
 }
 
-function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1() {
+function testGraphRegularAdjacencyMatrixGetRowByIdCase1() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData1);
+
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(1), [
+        [0, null],
+        [2, null],
+    ]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowByIdCase2() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData2);
+
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(0), [
+        [1, null],
+        [2, null],
+        [3, null],
+    ]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowByIdCase3() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData3);
+
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(2), [
+        [0, null],
+        [1, null],
+        [3, null],
+        [4, null],
+    ]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowByIdCase4() {
     const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData1);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(), [0, 1, 2, 3]);
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(1), [
+        [0, null],
+        [2, null],
+    ]);
 }
 
-function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase2() {
+function testGraphRegularAdjacencyMatrixGetRowByIdCase5() {
     const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData2);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(), [0, 1, 4, 5, 3, 6, 7, 2]);
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(0), [
+        [1, null],
+        [2, null],
+        [3, null],
+    ]);
 }
 
-function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3() {
+function testGraphRegularAdjacencyMatrixGetRowByIdCase6() {
     const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData3);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(), [0, 2, 1, 4, 3]);
+    checkGraphRegularAdjacencyMatrixRowById(adjacencyMatrix.getRowById(2), [
+        [0, null],
+        [1, null],
+        [3, null],
+        [4, null],
+    ]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase1() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData1);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase2() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData2);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3, 4, 5, 6, 7]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase3() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData3);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3, 4]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase4() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData1);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase5() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData2);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3, 4, 5, 6, 7]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsCase6() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData3);
+
+    checkGraphRegularAdjacencyMatrixRowsIds(adjacencyMatrix.rowsIds, [0, 1, 2, 3, 4]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase1() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData1);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase2() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData2);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3, 4, 5, 6, 7]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase3() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData3);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3, 4]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase4() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData1);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase5() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData2);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3, 4, 5, 6, 7]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase6() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData3);
+
+    checkGraphRegularAdjacencyMatrixRowsIdsByIterator(adjacencyMatrix.rowsIdsIterator, [0, 1, 2, 3, 4]);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase1() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData1);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 4);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase2() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData2);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 8);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase3() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData3);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 5);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase4() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData1);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 4);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase5() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData2);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 8);
+}
+
+function testGraphRegularAdjacencyMatrixGetRowsCountCase6() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData3);
+
+    checkGraphRegularAdjacencyMatrixRowsCount(adjacencyMatrix.rowsCount, 5);
 }
 
 testGraphRegularAdjacencyMatrixInitByAdjacencyListCase1();
 testGraphRegularAdjacencyMatrixInitByAdjacencyListCase2();
 testGraphRegularAdjacencyMatrixInitByAdjacencyListCase3();
 
-testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase1()
-testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase2()
-testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase3()
+testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase1();
+testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase2();
+testGraphRegularAdjacencyMatrixInitByAdjacencyMatrixCase3();
 
-testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1();
-testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase2();
-testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3();
+testGraphRegularAdjacencyMatrixGetRowByIdCase1();
+testGraphRegularAdjacencyMatrixGetRowByIdCase2();
+testGraphRegularAdjacencyMatrixGetRowByIdCase3();
+testGraphRegularAdjacencyMatrixGetRowByIdCase4();
+testGraphRegularAdjacencyMatrixGetRowByIdCase5();
+testGraphRegularAdjacencyMatrixGetRowByIdCase6();
+
+testGraphRegularAdjacencyMatrixGetRowsIdsCase1();
+testGraphRegularAdjacencyMatrixGetRowsIdsCase2();
+testGraphRegularAdjacencyMatrixGetRowsIdsCase3();
+testGraphRegularAdjacencyMatrixGetRowsIdsCase4();
+testGraphRegularAdjacencyMatrixGetRowsIdsCase5();
+testGraphRegularAdjacencyMatrixGetRowsIdsCase6();
+
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase1();
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase2();
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase3();
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase4();
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase5();
+testGraphRegularAdjacencyMatrixGetRowsIdsByIteratorCase6();
+
+testGraphRegularAdjacencyMatrixGetRowsCountCase1();
+testGraphRegularAdjacencyMatrixGetRowsCountCase2();
+testGraphRegularAdjacencyMatrixGetRowsCountCase3();
+testGraphRegularAdjacencyMatrixGetRowsCountCase4();
+testGraphRegularAdjacencyMatrixGetRowsCountCase5();
+testGraphRegularAdjacencyMatrixGetRowsCountCase6();
 
 // exports
 
