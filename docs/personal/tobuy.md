@@ -1,5 +1,17 @@
 # Купить
 
+## Компьютер
+
+### PCI
+
+#### USB
+
+https://rozetka.com.ua/24232901/p24232901/ - usb-c + usb A v.1 + 19 pin + sata power
+https://rozetka.com.ua/stlab_u_1270/p7906048/ - 4 usb A v.3
+https://rozetka.com.ua/210511681/p210511681/ - 2 usb A v3 + usb-c
+https://rozetka.com.ua/24233055/p24233055/ - 2 usb A v3 + 19 pin + sata power
+https://rozetka.com.ua/33544863/p33544863/ - 2 usb A v3 + sata power + molex power
+
 ## Постеры
 
 https://rozetka.com.ua/139794041/p139794041/
