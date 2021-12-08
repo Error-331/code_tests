@@ -17,6 +17,7 @@ setInterval(() => console.log('Test'), 10);
 ```
 
 ## Don’t introduce Zalgo
+
 When exposing a method that takes a callback, that  callback should always be run asynchronously. It should not be done like this:
 
 ```javascript
@@ -58,5 +59,51 @@ function test1(count, callback) {
 }
 
 ```
+
+## Do not serialize POJO
+
+Don't do this:
+
+```javascript
+
+const testUserObj1 = {
+    username: 'some user 1',
+    email: 'user1@test.org'
+};
+
+res.send(testUserObj1); // POJO
+
+```
+
+Do this: 
+
+```javascript
+
+class TestUserClass1 {
+    constructor(username, email) {
+        this.username = username;
+        this.email = email;
+    }
+    
+    toJSON() {
+        return {
+            username: this.username,
+            email: this.email,
+        };
+    }
+}
+
+const testUserObj2 = new TestUserClass1('class', 'class@example.org');
+
+res.send(testUserObj2);
+
+
+```
+
+This will prevent leakage of information:
+
+```javascript
+
+testUserObj1.password = testUserObj2.password = 'some_password1';
 
 ```
