@@ -13,23 +13,33 @@ class GraphRegularAdjacencyMatrixClass {
 
         if (typeof vertexData === 'object') {
             id = vertexData.id;
-            data = vertexData?.id ?? null;
+            data = vertexData?.data ?? null;
         } else {
             id = vertexData;
         }
 
-        return vertexRow.pushVertexData(id, data).element;
+        const requiredVertex = vertexRow.findVertexNodeById(id);
+
+        if (requiredVertex === undefined || requiredVertex === null) {
+            return vertexRow.pushVertexData(id, data).element;
+        } else {
+            return requiredVertex.element;
+        }
     }
 
     #getOrCreateVertexRow(rowIdx) {
         if (this.#vertexRows.has(rowIdx) ) {
             return this.#vertexRows.get(rowIdx);
         } else {
-            const newAdjacencyLinkedList = new GraphVertexAdjacencyLinkedListClass();
-            this.#vertexRows.set(rowIdx, newAdjacencyLinkedList);
-
-            return newAdjacencyLinkedList;
+            return this.createVertexRow(rowIdx);
         }
+    }
+
+    createVertexRow(rowIdx) {
+        const newAdjacencyLinkedList = new GraphVertexAdjacencyLinkedListClass();
+        this.#vertexRows.set(rowIdx, newAdjacencyLinkedList);
+
+        return newAdjacencyLinkedList;
     }
 
     depthFirstSearch(vertexRowId = null, visitedVertexesIds = []) {
@@ -87,6 +97,18 @@ class GraphRegularAdjacencyMatrixClass {
 
     depthFirstSearch(searchImplementationObj, rowId = null) {
         return searchImplementationObj.depthFirstSearch(this, rowId);
+    }
+
+    addEdge(vertexIdFrom, vertexIdNext, data) {
+        let vertexFromLinkedList = this.#getOrCreateVertexRow(vertexIdFrom);
+
+        return this.#addVertexData(
+            vertexFromLinkedList,
+            {
+                id: vertexIdNext,
+                data
+            }
+        );
     }
 
     toArray() {

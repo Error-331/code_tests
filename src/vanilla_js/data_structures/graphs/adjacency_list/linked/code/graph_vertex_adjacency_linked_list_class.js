@@ -6,8 +6,12 @@ const RegularGraphVertexClass = require('./../../../vertex/regular/code/regular_
 
 // implementation
 class GraphVertexAdjacencyLinkedListClass extends RegularLinkedListClass {
-    static comparator(firstVertex, secondVertex) {
+    static baseComparator(firstVertex, secondVertex) {
         return firstVertex.id === secondVertex.id;
+    }
+
+    static idComparator(requiredVertexIdentifier, currentVertex) {
+        return requiredVertexIdentifier === currentVertex;
     }
 
     insertAfterVertex(newVertex, prevVertex = null) {
@@ -52,6 +56,20 @@ class GraphVertexAdjacencyLinkedListClass extends RegularLinkedListClass {
         return this.findNode(vertex);
     }
 
+    findVertexNodeById(vertexId) {
+        const originalComparator = this.comparator;
+        this.comparator = GraphVertexAdjacencyLinkedListClass.idComparator;
+
+        const node = this.findVertexNode(vertexId);
+        this.comparator = originalComparator;
+
+        return node;
+    }
+
+    [Symbol.iterator]() {
+        return super[Symbol.iterator]();
+    }
+
     getVertexAfter(prevVertex = null) {
         if (prevVertex === undefined || prevVertex === null) {
             return this.head ?? null;
@@ -64,7 +82,7 @@ class GraphVertexAdjacencyLinkedListClass extends RegularLinkedListClass {
         if (comparator !== undefined && comparator !== null) {
             super(comparator);
         } else {
-            super(GraphVertexAdjacencyLinkedListClass.comparator);
+            super(GraphVertexAdjacencyLinkedListClass.baseComparator);
         }
     }
 }
