@@ -22,3 +22,21 @@ that moves the bough...
 ...On thine own resolve depend not at all...
 
 ...On the promise of thy God hang time and eternity...
+
+## Angus Buchan
+
+### In Quietness and Trust
+
+#### A special Mission
+
+*"For the love of Christ constraineth us; because we thus judge, that if one died for all, then were all dead:"*
+
+**(2 Corinthians 5:14)**
+
+*"And that he died for all, that they which live should not henceforth live unto themselves, but unto him which died for them, and rose again."*
+
+**(2 Corinthians 5:15)**
+
+...Evangelism is very simple: It`s one hungry beggar showing another hungry beggar where to find bread...
+
+...Keep telling them what Jesus means to you, was Smith's advice...
