@@ -41,6 +41,15 @@ that moves the bough...
 
 ...Keep telling them what Jesus means to you, was Smith's advice...
 
+#### Manage Your Home Wisely
+
+*"Wherefore be ye not unwise, but understanding what the will of the Lord is."*
+**(Ephesians 5:17 KJV)**
+
+*"And be not drunk with wine, wherein is excess; but be filled with the Spirit;"*
+**(Ephesians 5:18)**
+
+...Men need to stand up and be counted...
 
 ## Various authors
 
