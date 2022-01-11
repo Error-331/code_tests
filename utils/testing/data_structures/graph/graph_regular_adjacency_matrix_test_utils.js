@@ -16,6 +16,13 @@ function checkGraphRegularAdjacencyMatrixDepthFirstSearch(actualPath, expectedPa
     assert.deepStrictEqual(actualPath, expectedPath);
 }
 
+function checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet(actualSet, expectedSet) {
+    assert.strictEqual(actualSet.size === expectedSet.size, true);
+    for (let expectedSetValue of expectedSet) {
+        assert.strictEqual(actualSet.has(expectedSetValue), true);
+    }
+}
+
 function checkGraphRegularAdjacencyMatrixRowsCount(actualRowCount, expectedRowCount) {
     assert.strictEqual(actualRowCount, expectedRowCount);
 }
@@ -56,6 +63,7 @@ function checkGraphRegularAdjacencyMatrixRowsIdsByIterator(keysIterator, expecte
 // exports
 module.exports.checkGraphRegularAdjacencyMatrixIdsArray = checkGraphRegularAdjacencyMatrixIdsArray;
 module.exports.checkGraphRegularAdjacencyMatrixDepthFirstSearch = checkGraphRegularAdjacencyMatrixDepthFirstSearch;
+module.exports.checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet = checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet;
 module.exports.checkGraphRegularAdjacencyMatrixRowsCount = checkGraphRegularAdjacencyMatrixRowsCount;
 module.exports.checkGraphRegularAdjacencyMatrixRowById = checkGraphRegularAdjacencyMatrixRowById;
 module.exports.checkGraphRegularAdjacencyMatrixRowsIds = checkGraphRegularAdjacencyMatrixRowsIds;
