@@ -86,7 +86,7 @@ const testAdjacencyMatrixData1 = [
     [1, 0, 1, 0],
     [0, 1, 0, 0],
     [1, 0, 0, 0]
-]; // result - 0 3 1 2
+]; // result - 0, 3, 1, 2
 
 const testAdjacencyMatrixData2 = [
     [0, 1, 1, 1, 0, 0, 0, 0],
@@ -106,15 +106,16 @@ const testAdjacencyMatrixData3 = [
     [1, 1, 0, 1, 1], // 3
     [1, 0, 1, 0, 0], // 4
     [0, 1, 1, 0, 0], // 5
-]; // result - 0 3 2 4 1
+]; // result - 0, 3, 2, 4, 1
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase1() {
     const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
     adjacencyMatrix.initByAdjacencyList(testAdjacencyListData1);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 1, 2]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 1, 2]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase2() {
@@ -122,8 +123,9 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase2() {
     adjacencyMatrix.initByAdjacencyList(testAdjacencyListData2);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 5, 7, 6, 4, 2, 1]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 5, 7, 6, 4, 2, 1]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase3() {
@@ -131,8 +133,9 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase3() {
     adjacencyMatrix.initByAdjacencyList(testAdjacencyListData3);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 2, 4, 1]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 2, 4, 1]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1() {
@@ -140,8 +143,9 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1() 
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData1);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 1, 2]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 1, 2]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase2() {
@@ -149,8 +153,9 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase2() 
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData2);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 5, 7, 6, 4, 2, 1]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 5, 7, 6, 4, 2, 1]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3() {
@@ -158,8 +163,9 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3() 
     adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData3);
 
     const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
-    checkGraphRegularAdjacencyMatrixDepthFirstSearch(adjacencyMatrix.depthFirstSearch(deepFirstImplementation), [0, 3, 2, 4, 1]);
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 2, 4, 1]);
 }
 
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase1();

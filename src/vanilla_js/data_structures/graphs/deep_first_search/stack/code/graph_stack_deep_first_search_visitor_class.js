@@ -5,8 +5,9 @@ const RegularStackClass = require('./../../../../stack/regular/code/regular_stac
 
 // implementation
 class GraphStackDeepFirstSearchVisitorClass {
+    #visitedVertexesIds = null;
+
     depthFirstSearch(adjacencyMatrix, vertexRowId = null) {
-        const vertexPath = [];
         const valuesInStack = new Set();
         let preparedVertexRowId = vertexRowId;
 
@@ -23,8 +24,9 @@ class GraphStackDeepFirstSearchVisitorClass {
 
         while (!vertexStack.isEmpty) {
             const currentVertexId = vertexStack.pop();
+
             visitedVertexesFlags[currentVertexId] = true;
-            vertexPath.push(currentVertexId);
+            this.#visitedVertexesIds.push(currentVertexId);
 
             for (const { element: { id: vertexId } } of adjacencyMatrix.getRowById(currentVertexId)) {
                 if (!visitedVertexesFlags[vertexId] && !valuesInStack.has(vertexId)) {
@@ -33,14 +35,16 @@ class GraphStackDeepFirstSearchVisitorClass {
                 }
             }
         }
+    }
 
-        return vertexPath;
+    get visitedVertexesIds() {
+        return this.#visitedVertexesIds.slice();
+    }
+
+    constructor() {
+        this.#visitedVertexesIds = [];
     }
 }
-
-/*
-
- */
 
 // exports
 module.exports = GraphStackDeepFirstSearchVisitorClass;

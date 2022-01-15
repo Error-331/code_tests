@@ -4,23 +4,31 @@
 
 // implementation
 class GraphRecursiveDeepFirstSearchVisitorClass {
-    depthFirstSearch(adjacencyMatrix, vertexRowId = null, visitedVertexesIds = []) {
+    #visitedVertexesIds = null;
+
+    depthFirstSearch(adjacencyMatrix, vertexRowId = null) {
         let preparedVertexRowId = vertexRowId;
 
         if (preparedVertexRowId === undefined || preparedVertexRowId === null) {
             const vertexRowIds = adjacencyMatrix.rowsIdsIterator;
             preparedVertexRowId = vertexRowIds.next().value;
-            visitedVertexesIds.push(preparedVertexRowId);
+            this.#visitedVertexesIds.push(preparedVertexRowId);
         }
 
         for (const { element: { id: vertexId } } of adjacencyMatrix.getRowById(preparedVertexRowId)) {
-            if (!visitedVertexesIds.includes(vertexId)) {
-                visitedVertexesIds.push(vertexId);
-                this.depthFirstSearch(adjacencyMatrix, vertexId, visitedVertexesIds);
+            if (!this.#visitedVertexesIds.includes(vertexId)) {
+                this.#visitedVertexesIds.push(vertexId);
+                this.depthFirstSearch(adjacencyMatrix, vertexId);
             }
         }
+    }
 
-        return visitedVertexesIds;
+    get visitedVertexesIds() {
+        return this.#visitedVertexesIds.slice();
+    }
+
+    constructor() {
+        this.#visitedVertexesIds = [];
     }
 }
 
