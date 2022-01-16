@@ -23,6 +23,17 @@ function checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet(actualSet, e
     }
 }
 
+function checkGraphRegularAdjacencyMatrixTopologicalSort(actual, expected) {
+    assert.strictEqual(typeof actual.length, 'number');
+    assert.strictEqual(typeof expected.length, 'number');
+
+    assert.strictEqual(actual.length === expected.length, true);
+
+    for (let expectedValue of expected) {
+        assert.strictEqual(actual.includes(expectedValue), true);
+    }
+}
+
 function checkGraphRegularAdjacencyMatrixRowsCount(actualRowCount, expectedRowCount) {
     assert.strictEqual(actualRowCount, expectedRowCount);
 }
@@ -63,6 +74,7 @@ function checkGraphRegularAdjacencyMatrixRowsIdsByIterator(keysIterator, expecte
 // exports
 module.exports.checkGraphRegularAdjacencyMatrixIdsArray = checkGraphRegularAdjacencyMatrixIdsArray;
 module.exports.checkGraphRegularAdjacencyMatrixDepthFirstSearch = checkGraphRegularAdjacencyMatrixDepthFirstSearch;
+module.exports.checkGraphRegularAdjacencyMatrixTopologicalSort = checkGraphRegularAdjacencyMatrixTopologicalSort;
 module.exports.checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet = checkGraphRegularAdjacencyMatrixDepthFirstSearchDeadEndSet;
 module.exports.checkGraphRegularAdjacencyMatrixRowsCount = checkGraphRegularAdjacencyMatrixRowsCount;
 module.exports.checkGraphRegularAdjacencyMatrixRowById = checkGraphRegularAdjacencyMatrixRowById;
