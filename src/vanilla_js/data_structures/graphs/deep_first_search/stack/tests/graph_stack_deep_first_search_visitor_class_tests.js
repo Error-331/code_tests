@@ -81,6 +81,41 @@ testAdjacencyListData3[4] = [];
 testAdjacencyListData3[4].push(1);
 testAdjacencyListData3[4].push(2);
 
+const testAdjacencyListData4 = [];
+
+testAdjacencyListData4[0] = [];
+testAdjacencyListData4[0].push(1);
+testAdjacencyListData4[0].push(3);
+
+testAdjacencyListData4[1] = [];
+testAdjacencyListData4[1].push(2);
+
+testAdjacencyListData4[2] = [];
+
+testAdjacencyListData4[3] = [];
+testAdjacencyListData4[3].push(4);
+
+testAdjacencyListData4[4] = [];
+testAdjacencyListData4[4].push(2);
+testAdjacencyListData4[4].push(5);
+
+testAdjacencyListData4[5] = [];
+
+testAdjacencyListData4[6] = [];
+testAdjacencyListData4[6].push(3);
+testAdjacencyListData4[6].push(7);
+
+testAdjacencyListData4[7] = [];
+
+testAdjacencyListData4[8] = [];
+testAdjacencyListData4[8].push(6);
+testAdjacencyListData4[8].push(9);
+
+testAdjacencyListData4[9] = [];
+testAdjacencyListData4[9].push(7);
+
+testAdjacencyListData4[10] = [];
+
 const testAdjacencyMatrixData1 = [
     [0, 1, 0, 1],
     [1, 0, 1, 0],
@@ -107,6 +142,22 @@ const testAdjacencyMatrixData3 = [
     [1, 0, 1, 0, 0], // 4
     [0, 1, 1, 0, 0], // 5
 ]; // result - 0, 3, 2, 4, 1
+
+const testAdjacencyMatrixData4 = [
+//   0  1  2  3  4  5  6  7  8  9  10
+    [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+    [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+];
+// result - 0, 3, 4, 5, 2, 1
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase1() {
     const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
@@ -136,6 +187,16 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase3() {
     adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
 
     checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 2, 4, 1]);
+}
+
+function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase4() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyList(testAdjacencyListData4);
+
+    const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
+
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 4, 5, 2, 1]);
 }
 
 function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1() {
@@ -168,13 +229,25 @@ function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3() 
     checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 2, 4, 1]);
 }
 
+function testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase4() {
+    const adjacencyMatrix = new GraphRegularAdjacencyMatrixClass();
+    adjacencyMatrix.initByAdjacencyMatrix(testAdjacencyMatrixData4);
+
+    const deepFirstImplementation = new GraphStackDeepFirstSearchVisitorClass();
+    adjacencyMatrix.depthFirstSearch(deepFirstImplementation);
+
+    checkGraphRegularAdjacencyMatrixDepthFirstSearch(deepFirstImplementation.visitedVertexesIds, [0, 3, 4, 5, 2, 1]);
+}
+
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase1();
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase2();
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase3();
+testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyListCase4();
 
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase1();
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase2();
 testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase3();
+testGraphRegularAdjacencyMatrixDeepFirstSearchByAdjacencyMatrixCase4();
 
 // exports
 

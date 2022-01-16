@@ -23,11 +23,19 @@ class GraphTopologicalDeepFirstSearchVisitorClass {
             }
         }
 
-        this.#deadEndVertexesIds.add(preparedVertexRowId);
+        this.addDeadEndVertexId(preparedVertexRowId);
+    }
+
+    addDeadEndVertexId(vertexId) {
+        this.#deadEndVertexesIds.add(vertexId);
     }
 
     get visitedVertexesIds() {
         return this.#visitedVertexesIds.slice();
+    }
+
+    get visitedVertexesIdsRef() {
+        return this.#visitedVertexesIds;
     }
 
     get deadEndVertexesIds() {

@@ -42,25 +42,6 @@ class GraphRegularAdjacencyMatrixClass {
         return newAdjacencyLinkedList;
     }
 
-    depthFirstSearch(vertexRowId = null, visitedVertexesIds = []) {
-        let preparedVertexRowId = vertexRowId;
-
-        if (preparedVertexRowId === undefined || preparedVertexRowId === null) {
-            const vertexRowIds = this.#vertexRows.keys();
-            preparedVertexRowId = vertexRowIds.next().value;
-            visitedVertexesIds.push(preparedVertexRowId);
-        }
-
-        for (const { element: { id: vertexId } } of this.#vertexRows.get(preparedVertexRowId)) {
-            if (!visitedVertexesIds.includes(vertexId)) {
-                visitedVertexesIds.push(vertexId);
-                this.depthFirstSearch(vertexId, visitedVertexesIds);
-            }
-        }
-
-        return visitedVertexesIds;
-    }
-
     initByAdjacencyList(adjacencyList) {
         for(let rowIdx = 0; rowIdx < adjacencyList.length; rowIdx++) {
             const currentListRow = adjacencyList[rowIdx];
@@ -97,6 +78,10 @@ class GraphRegularAdjacencyMatrixClass {
 
     depthFirstSearch(searchImplementationObj, rowId = null) {
         return searchImplementationObj.depthFirstSearch(this, rowId);
+    }
+
+    topologicalSort(topologicalSortImplementation) {
+        return topologicalSortImplementation.topologicalSort(this);
     }
 
     addEdge(vertexIdFrom, vertexIdNext, data) {
