@@ -41,6 +41,14 @@ that moves the bough...
 
 ...Keep telling them what Jesus means to you, was Smith's advice...
 
+#### Humility before God
+
+*"Humble yourselves in the sight of the Lord, and he shall lift you up."*
+
+**(James 4:10 KJV)**
+
+...He will give you the place that you need in order to fulfill His purpose for your life...
+
 #### Manage Your Home Wisely
 
 *"Wherefore be ye not unwise, but understanding what the will of the Lord is."*
