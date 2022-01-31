@@ -6,6 +6,14 @@
 
 **(Hebrews 11:1 KJV)**
 
+*"For the wisdom of this world is foolishness with God. For it is written, He taketh the wise in their own craftiness."*
+
+**(1 Corinthians 3:19 KJV)**
+
+*"And said, Verily I say unto you, Except ye be converted, and become as little children, ye shall not enter into the kingdom of heaven."*
+
+**(Matthew 18:3 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
