@@ -14,6 +14,13 @@
 
 **(Matthew 18:3 KJV)**
 
+### Family, kids, etc.
+
+*"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
+hath an husband."*
+
+**(Galatians 4:27 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
