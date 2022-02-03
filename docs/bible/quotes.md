@@ -14,6 +14,10 @@
 
 **(Matthew 18:3 KJV)**
 
+*"Not every one that saith unto me, Lord, Lord, shall enter into the kingdom of heaven; but he that doeth the will of my Father which is in heaven."*
+
+**(Matthew 7:21 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
