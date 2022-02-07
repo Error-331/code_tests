@@ -1,5 +1,7 @@
 # General
 
+## Terms
+
 - DML - A data manipulation language is a computer programming language used for adding, deleting, and modifying data in a database. 
 A DML is often a sublanguage of a broader database language such as SQL, with the DML comprising some of the operators in the language;
 
@@ -22,3 +24,18 @@ and dedicated memory;
 обычно такая таблица сделана по типу 'снежинки';
 
 - Суррога́тный ключ - грубо говоря ключ не имеющий отношения к данным (пример id c автоинкрементом);
+
+## Locking
+
+### Optimistic concurrency control (OCC) 
+
+- allows multiple transactions to modify data without interfering with each other; 
+- while a transaction is running - the data that will be edited isn’t locked;
+- before a transaction commits, optimistic concurrency control checks whether a conflicting modification exists;
+- if a conflict exists, the committing transaction is rolled back;
+- MySQL supports pessimistic locking by default;
+
+### Pessimistic concurrency control
+
+- pessimistic locking applies a lock to the data so other transactions can’t access the same data; 
+- after the transaction commits, the lock is released;
