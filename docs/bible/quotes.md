@@ -18,6 +18,10 @@
 
 **(Matthew 7:21 KJV)**
 
+*"For we brought nothing into this world, and it is certain we can carry nothing out.""*
+
+**(1 Timothy 6:7 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
