@@ -1,5 +1,9 @@
 # Ссылки
 
+## Видео
+
+- https://www.youtube.com/watch?v=A0oqO8VD9xo - KINZA360° | Рифмир Шайхалиев | Практика применения голосовых роботов и смс в финансовом лидгене;
+
 ## Биржи
 
 - https://freelancehunt.ua/ - биржа фриланса (можно заказать виде для тикток);
@@ -29,18 +33,41 @@
 
 ## CPA
 
+### Мультивертикаль
+
+- https://www.clickdealer.com/meetup/ - СlickDealer;
+- https://luckyads.pro/ - LuckyAds;
+
+### Пуши
+
+- https://joinpropeller.com/ - PropellerAds;
+
 ### Финансовая вертикаль
 
 - https://pdl-profit.com/?utm_source=zorbasmedia&utm_medium=banner - PDL-profit;
+
+### Нутра
+
+- https://leadreaktor.com/;
+- https://everad.com/;
+
+### Крипта
+
+- https://aivix.com/ru/;
+
+### Геймблинг
+
+- https://pin-up.partners/;
+- https://gambling.pro/;
+
+### Дейтинг
+
+- https://www.imonetizeit.com/;
 
 ### Покупка траффика
 
 - https://www.kadam.net/en;
 - https://clickadu.com/ru;
-
-### Сети
-
-- https://leadreaktor.com/ (нутка)
 
 ## Обучение
 
