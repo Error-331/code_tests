@@ -179,6 +179,18 @@ https://rozetka.com.ua/ua/178402659/p178402659/ - ньюк кола
 https://woodposters.com.ua/poster-vntazhn-nozh-na-derevyanomu-fon.html - ножи
 https://woodposters.com.ua/poster-les-fromages-francais-frantsuzk-siri-art.html - сыр
 
+https://rozetka.com.ua/318559018/p318559018/ - лицо
+https://rozetka.com.ua/318557992/p318557992/ - гриб
+https://rozetka.com.ua/318555418/p318555418/ - африканские танцы
+https://rozetka.com.ua/318562333/p318562333/ - еда
+https://rozetka.com.ua/318562180/p318562180/ - еда
+https://rozetka.com.ua/314098930/p314098930/ - aloha
+https://rozetka.com.ua/318561499/p318561499/ - джаз
+https://rozetka.com.ua/314098705/p314098705/ - audi
+https://rozetka.com.ua/281575138/p281575138/ - рок
+https://rozetka.com.ua/318562945/p318562945/ - бычки
+https://rozetka.com.ua/97659016/p97659016/ - рыбки
+
 ### Часы
 
 https://bt.rozetka.com.ua/ua/art_life_collection_1pvh_13_30x30/p53399526/

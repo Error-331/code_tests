@@ -6,8 +6,8 @@ const assert = require('assert').strict;
 // internal imports
 const {
     adjacencyList3_1,
-    adjacencyList4_1,
     adjacencyList5_1,
+    adjacencyList6_1,
 } = require('./adjacency_list_representation');
 
 // implementation
@@ -42,10 +42,10 @@ function depthFirstSearch(adjacencyList, vertexRowId = null, visitedVertexesIds 
 let result = depthFirstSearch(adjacencyList3_1, null);
 assert.deepStrictEqual(result, [0, 2, 1, 4, 3]);
 
-result = depthFirstSearch(adjacencyList4_1, null);
+result = depthFirstSearch(adjacencyList5_1, null);
 assert.deepStrictEqual(result, [0, 1, 2, 4, 3]);
 
-result = depthFirstSearch(adjacencyList5_1, null);
+result = depthFirstSearch(adjacencyList6_1, null);
 assert.deepStrictEqual(result, [0, 1, 2, 3]);
 
 // exports
