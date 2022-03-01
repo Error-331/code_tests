@@ -58,7 +58,7 @@ const adjacencyList6_1 = [ // directed unweighted graph
     [ [2, null], [3, null] ],
     [ [3, null] ],
     [ [0, null] ]
-]; // 0 1 2 3
+];
 
 const adjacencyList6_2 = [ // directed weighted graph
     [ [1, 5] ],
