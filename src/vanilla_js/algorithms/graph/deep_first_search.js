@@ -30,7 +30,6 @@ function depthFirstSearch(adjacencyList, vertexRowId = null, visitedVertexesIds 
     }
 
     for (const edge of adjacencyList[preparedVertexRowId]) {
-
         const [ vertexId ] = edge;
 
         if (visitedVertexesIds[vertexId] === false) {
