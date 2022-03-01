@@ -172,8 +172,6 @@ testAdjacencyListData7[3].push(1);
 testAdjacencyListData7[4] = [];
 testAdjacencyListData7[4].push(3);
 
-console.log(testAdjacencyListData7);
-
 const testAdjacencyMatrixData1 = [
     [0, 1, 0, 1],
     [1, 0, 1, 0],
