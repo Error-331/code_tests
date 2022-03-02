@@ -22,6 +22,10 @@
 
 **(1 Timothy 6:7 KJV)**
 
+*"Therefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them."*
+
+**(Mark 11:24)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
