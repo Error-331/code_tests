@@ -24,7 +24,12 @@
 
 *"Therefore I say unto you, What things soever ye desire, when ye pray, believe that ye receive them, and ye shall have them."*
 
-**(Mark 11:24)**
+**(Mark 11:24 KJV)**
+
+*"Jesus answered them, Verily, verily, I say unto you, Whosoever committeth sin is the servant of sin."*
+*"And the servant abideth not in the house for ever: but the Son abideth ever."*
+
+**(John 8:34-35 KJV)**
 
 ### Family, kids, etc.
 
