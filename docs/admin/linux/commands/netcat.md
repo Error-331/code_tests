@@ -2,10 +2,10 @@
 
 ## Examples
 
-- Open TCP connection to specific *IP/Port* and send some text to it:
+- Open TCP connection to specific *IP/Port* (after connection is established - text can be sent):
 
 ```bash
 
-netcat 127.0.0.1 9000 some_text
+netcat 127.0.0.1 9000
 
 ```
