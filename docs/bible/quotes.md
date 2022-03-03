@@ -97,6 +97,18 @@ that moves the bough...
 
 ...Men need to stand up and be counted...
 
+#### Believing in Jesus
+
+*"For whatsoever is born of God overcometh the world: and this is the victory that overcometh the world, even our faith."*
+
+**(1 John 5:4 KJV)**
+
+*"Who is he that overcometh the world, but he that believeth that Jesus is the Son of God?"*
+
+**(1 John 5:5 KJV)**
+
+...Christianity in a nutshell is believing that Jesus Christ is the Son of God. He is not some god, He is God. He is God made flesh...
+
 ## Various authors
 
 ### Strength for Today (for men)
