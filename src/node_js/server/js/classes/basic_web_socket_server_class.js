@@ -97,7 +97,7 @@ class BasicWebSocketServerClass extends EventEmitter {
             outboundBuffer.writeUInt8(secondByte, 1);
 
             // add two additional bytes of 'length'
-            outboundBuffer.writeUInt16BE(length, 2);
+            outboundBuffer.writeUInt16BE(payload.length, 2);
 
             // copy payload to outbound buffer
             payload.copy(outboundBuffer, 4);
@@ -230,7 +230,7 @@ class BasicWebSocketServerClass extends EventEmitter {
         // read second byte of incoming message
         const secondByte = this._incomingDataBuffer.readUInt8(1);
 
-        // find out whether incoming message is masked of not
+        // find out whether incoming message is masked or not
         // first bit of the second byte indicates whether message is masked or not (128)
         const isMasked = secondByte & 0x80; // 0x80 - 1000 0000
 
@@ -274,8 +274,11 @@ class BasicWebSocketServerClass extends EventEmitter {
         }
 
         // read mask bytes
-        const maskBytes = this._incomingDataBuffer.slice(readByteIndex, readByteIndex + 4);
-        readByteIndex += 4;
+        let maskBytes = null;
+        if (isMasked) {
+            maskBytes = this._incomingDataBuffer.slice(readByteIndex, readByteIndex + 4);
+            readByteIndex += 4;
+        }
 
         // extract payload
         let payload = this._incomingDataBuffer.slice(readByteIndex, readByteIndex + incomingMessageLength);
@@ -313,8 +316,7 @@ class BasicWebSocketServerClass extends EventEmitter {
             payload = message;
         } else if (typeof message === 'string') {
             opcode = MESSAGE_TYPE_TO_OPCODE.TEXT;
-
-            payload = Buffer.alloc(message.length, message, 'utf8');
+            payload = Buffer.alloc(Buffer.byteLength(message), message, 'utf8');
         } else {
             throw new Error('Cannot send object. Must be string or Buffer.');
         }
