@@ -2,7 +2,7 @@
 
 const { Writable } = require('stream');
 
-const { NAME_TO_CLOSE_CODE } = require('./../../constants/web_socket_server_close_codes_constants');
+const NAME_TO_CLOSE_CODE = require('./../../../constants/web_socket_server_close_codes_constants');
 
 const WebsocketServerErrorClass = require('./../../errors/websocket_server_error_class');
 
@@ -25,16 +25,15 @@ const SERVER_ERROR_CODE_WEBSOCKET_FRAME_PROCESSING_MODE_NOT_SET = 1002;
 
 class BasicWebSocketReceiverStreamClass extends Writable {
     #incomingDataBuffer = null;
+    #readByteIndex = 0;
 
     #frameProcessingState = null;
     #frameProcessingStarted = false;
     #frameProcessingMode = WEBSOCKET_FRAME_PROCESSING_MODE_CONCAT;
 
-    #readByteIndex = 0;
-
     #opCode = null;
     #finBit = null;
-    #isMasked = null;
+    #isMasked = false;
     #maskBits = null;
     #incomingPayloadLength = null;
 
@@ -69,7 +68,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
         }
 
         // read second byte of incoming message
-        const secondByte = this.#incomingDataBuffer.readUInt8(1);
+        const secondByte = this.#incomingDataBuffer.readUInt8(this.#readByteIndex);
 
         // find out whether incoming message is masked or not
         // first bit of the second byte indicates whether message is masked or not (128)
@@ -98,7 +97,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
             return;
         }
 
-        this.#incomingPayloadLength = this.#incomingDataBuffer.readUInt16BE(2);
+        this.#incomingPayloadLength = this.#incomingDataBuffer.readUInt16BE(this.#readByteIndex);
         this.#readByteIndex += 2;
 
         this.#frameProcessingState = WEBSOCKET_RECEIVER_MASK_PROCESSING_STATE;
@@ -111,7 +110,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
         }
 
         // 8 byte extended payload length
-        const firstFourBytes = this.#incomingDataBuffer.readUInt32BE(2);
+        const firstFourBytes = this.#incomingDataBuffer.readUInt32BE(this.#readByteIndex);
 
         // discard high 4 bytes because this server cannot handle huge lengths
         if (firstFourBytes !== 0) {
@@ -156,9 +155,8 @@ class BasicWebSocketReceiverStreamClass extends Writable {
 
     #processPayload() {
         if (this.#incomingDataBuffer.length === this.#incomingPayloadLength) {
-            console.log('payload ready');
+            this.#resetSocketReceiver();
         }
-
     }
 
     #processIncomingData() {
@@ -208,8 +206,11 @@ class BasicWebSocketReceiverStreamClass extends Writable {
             );
         }
 
-        this.#clearIncomingDataBuffer();
-        this.#incomingDataBuffer = Buffer.alloc(this.#incomingPayloadLength);
+        const tempBuffer = Buffer.allocUnsafe(this.#incomingPayloadLength);
+        this.#incomingDataBuffer.copy(tempBuffer, 0, this.#readByteIndex);
+
+        this.#incomingDataBuffer = tempBuffer;
+        this.#readByteIndex = this.#incomingPayloadLength;
     }
 
     #clearIncomingDataBuffer() {
@@ -218,13 +219,13 @@ class BasicWebSocketReceiverStreamClass extends Writable {
     }
 
     #resetFrameProcessing() {
-        this.#frameProcessingStarted = false;
         this.#frameProcessingState = WEBSOCKET_RECEIVER_FIRST_BYTE_PROCESSING_STATE;
+        this.#frameProcessingStarted = false;
         this.#switchToConcatFrameProcessing();
 
         this.#opCode = null;
         this.#finBit = null;
-        this.#isMasked = null;
+        this.#isMasked = false;
         this.#maskBits = null;
         this.#incomingPayloadLength = null;
     }
@@ -237,17 +238,29 @@ class BasicWebSocketReceiverStreamClass extends Writable {
     _write(chunk, encoding, callback) {
         if (this.#frameProcessingMode === WEBSOCKET_FRAME_PROCESSING_MODE_CONCAT) {
             this.#incomingDataBuffer = Buffer.concat([this.#incomingDataBuffer, chunk]);
-            this.#processIncomingData();
+
+            try {
+                this.#processIncomingData();
+                callback();
+            } catch (error) {
+                callback(error);
+            }
         } else if(this.#frameProcessingMode === WEBSOCKET_FRAME_PROCESSING_MODE_COPY) {
             chunk.copy(this.#incomingDataBuffer, this.#readByteIndex, 0);
             this.#readByteIndex += chunk.length;
-            this.#processIncomingData();
+
+            try {
+                this.#processIncomingData();
+                callback();
+            } catch(error) {
+                callback(error);
+            }
         } else {
-            throw new WebsocketServerErrorClass(
+            callback(new WebsocketServerErrorClass(
                 NAME_TO_CLOSE_CODE.INTERNAL_ERROR,
                 SERVER_ERROR_CODE_WEBSOCKET_FRAME_PROCESSING_MODE_NOT_SET ,
                 'Frame processing mode not set'
-            );
+            ));
         }
     }
 
