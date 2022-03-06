@@ -15,4 +15,4 @@ const NAME_TO_CLOSE_CODE = Object.freeze({
     'TRY_AGAIN_LATER': 1013,      // Try Again Later code; temporary server condition forced to block client's request
 });
 
-module.exports.CLOSE_CODE = NAME_TO_CLOSE_CODE;
+module.exports = NAME_TO_CLOSE_CODE;
