@@ -1,4 +1,6 @@
-class WebsocketServerErrorClass extends Error {
+const ServerErrorClass = require('./server_error_class');
+
+class WebsocketServerErrorClass extends ServerErrorClass {
     constructor(statusCode = null, ...params) {
         super(...params);
 
@@ -7,6 +9,7 @@ class WebsocketServerErrorClass extends Error {
         }
 
         this.name = 'WebsocketServerError';
+        this.statusCode = statusCode;
     }
 }
 
