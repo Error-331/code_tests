@@ -19,4 +19,24 @@
 
 In modern convention a seed phrase is now utilised which is a random 12 to 24 (or even greater) list of dictionary words which is an unencrypted form of the private key. (Words are easier to memorize than numerals.) When online, exchange and hardware wallets are generated using random numbers, and a seed phrase is asked to be recorded by the user, hence when access to the wallet becomes misplaced, damaged or compromised, the seed phrase can be used to re-access the wallet and associated keys and cryptocurrency en toto. [7]
 
+## Coins and Tokens
+
+### Coin
+
+- A coin usually is native to a blockchain and is used to trade currency and store value;
+- Coins directly represent a proposed medium of exchange;
+- Crypto coin transactions are handled by blockchain;
+- A coin doesn't have to be moved from one place to another;
+- All transactions are recorded on blockchains;
+- A coin denotes what a person capable to own;
+
+### Token
+
+- A token tends to use another coin's blockchain (several other tokens like **BAT** and **Loopring** operate on **Ethereum**);
+- Tokens, represent an asset; 
+- Tokens can be held for value, or traded and staked to earn interest (Uniswap, Chainlink, Polygon and etc.); 
+- Tokens rely on smart contracts for trade;
+- When a token is spent, it moves from one place to another (NFTs);  
+- A token represents what a person owns;
+
 ## Wallets
