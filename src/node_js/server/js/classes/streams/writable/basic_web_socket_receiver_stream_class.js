@@ -2,19 +2,26 @@
 
 const { Writable } = require('stream');
 
-const NAME_TO_CLOSE_CODE = require('./../../../constants/web_socket_server_close_codes_constants');
+const NAME_TO_CLOSE_CODE = require('./../../../constants/websocket/web_socket_close_codes');
+const { MESSAGE_TYPE_TO_OPCODE } = require('./../../../constants/websocket/web_socket_opcodes');
+
+const {
+    WEBSOCKET_FRAME_PROCESSING_MODE_CONCAT,
+    WEBSOCKET_FRAME_PROCESSING_MODE_COPY,
+} = require('./../../../constants/websocket/web_socket_receiver_frame_processing_modes');
+
+const {
+    WEBSOCKET_RECEIVER_FIRST_BYTE_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_MASK_AND_LENGTH_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_EXTENDED_LENGTH_16_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_EXTENDED_LENGTH_64_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_MASK_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_PAYLOAD_UNMASKING_PROCESSING_STATE,
+    WEBSOCKET_RECEIVER_FINALIZE_PROCESSING_STATE,
+} = require('./../../../constants/websocket/web_socket_receiver_processing_states');
 
 const WebsocketServerErrorClass = require('./../../errors/websocket_server_error_class');
-
-const WEBSOCKET_FRAME_PROCESSING_MODE_CONCAT = 'WEBSOCKET_FRAME_PROCESSING_MODE_CONCAT';
-const WEBSOCKET_FRAME_PROCESSING_MODE_COPY = 'WEBSOCKET_FRAME_PROCESSING_MODE_COPY';
-
-const WEBSOCKET_RECEIVER_FIRST_BYTE_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_FIRST_BYTE_PROCESSING_STATE';
-const WEBSOCKET_RECEIVER_MASK_AND_LENGTH_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_MASK_AND_LENGTH_PROCESSING_STATE';
-const WEBSOCKET_RECEIVER_EXTENDED_LENGTH_16_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_EXTENDED_LENGTH_16_PROCESSING_STATE';
-const WEBSOCKET_RECEIVER_EXTENDED_LENGTH_64_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_EXTENDED_LENGTH_64_PROCESSING_STATE';
-const WEBSOCKET_RECEIVER_MASK_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_MASK_PROCESSING_STATE';
-const WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE';
 
 // 0-999 - general
 // 1000-1999 - websocket
@@ -22,6 +29,8 @@ const WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE = 'WEBSOCKET_RECEIVER_PAYLOAD_
 const SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_LENGTH_NOT_SET = 1000;
 const SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_TOO_LARGE = 1001;
 const SERVER_ERROR_CODE_WEBSOCKET_FRAME_PROCESSING_MODE_NOT_SET = 1002;
+const SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_OPCODE = 1003;
+const SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_PROCESSING_STATE = 1004;
 
 class BasicWebSocketReceiverStreamClass extends Writable {
     #incomingDataBuffer = null;
@@ -34,7 +43,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
     #opCode = null;
     #finBit = null;
     #isMasked = false;
-    #maskBits = null;
+    #maskBytes = null;
     #incomingPayloadLength = null;
 
     #processFirstByte() {
@@ -136,7 +145,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
             }
 
             // read mask bytes
-            this.#maskBits = this.#incomingDataBuffer.slice(this.#readByteIndex, this.#readByteIndex + 4);
+            this.#maskBytes = this.#incomingDataBuffer.slice(this.#readByteIndex, this.#readByteIndex + 4);
             this.#readByteIndex += 4;
 
             this.#frameProcessingState = WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE;
@@ -155,8 +164,53 @@ class BasicWebSocketReceiverStreamClass extends Writable {
 
     #processPayload() {
         if (this.#incomingDataBuffer.length === this.#incomingPayloadLength) {
-            this.#resetSocketReceiver();
+            this.#frameProcessingState = WEBSOCKET_RECEIVER_PAYLOAD_UNMASKING_PROCESSING_STATE;
+            this.#processIncomingData();
         }
+    }
+
+    #unmaskPayload() {
+        if (this.#isMasked) {
+            for (let byteIdx = 0; byteIdx < this.#incomingDataBuffer.length; byteIdx++) {
+                this.#incomingDataBuffer[byteIdx] = this.#maskBytes[byteIdx % 4] ^ this.#incomingDataBuffer[byteIdx];
+            }
+        }
+
+        this.#frameProcessingState = WEBSOCKET_RECEIVER_FINALIZE_PROCESSING_STATE;
+        this.#processIncomingData();
+    }
+
+    #finalizeFrameProcessing() {
+        switch (this.#opCode) {
+            case MESSAGE_TYPE_TO_OPCODE.TEXT:
+                this.emit('message', this.#incomingDataBuffer.toString('utf8'), this.#opCode);
+                break;
+
+            case MESSAGE_TYPE_TO_OPCODE.BINARY:
+                this.emit('message', this.#incomingDataBuffer, this.#opCode);
+                break;
+
+            case MESSAGE_TYPE_TO_OPCODE.PING:
+                this.emit('ping', this.#incomingDataBuffer, this.#opCode);
+                break;
+
+            case MESSAGE_TYPE_TO_OPCODE.PONG:
+                this.emit('pong', this.#incomingDataBuffer, this.#opCode);
+                break;
+
+            case MESSAGE_TYPE_TO_OPCODE.CLOSE:
+                this.emit('close_request', this.#incomingDataBuffer, this.#opCode);
+                break;
+
+            default:
+                throw new WebsocketServerErrorClass(
+                    NAME_TO_CLOSE_CODE.INTERNAL_ERROR,
+                    SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_OPCODE,
+                    `Undefined opcode received ${this.#opCode}`
+                );
+        }
+
+        this.#resetSocketReceiver();
     }
 
     #processIncomingData() {
@@ -186,6 +240,21 @@ class BasicWebSocketReceiverStreamClass extends Writable {
             case WEBSOCKET_RECEIVER_PAYLOAD_PROCESSING_STATE:
                 this.#processPayload();
                 break;
+
+            case WEBSOCKET_RECEIVER_PAYLOAD_UNMASKING_PROCESSING_STATE:
+                this.#unmaskPayload();
+                break;
+
+            case WEBSOCKET_RECEIVER_FINALIZE_PROCESSING_STATE:
+                this.#finalizeFrameProcessing();
+                break;
+
+            default:
+                throw new WebsocketServerErrorClass(
+                    NAME_TO_CLOSE_CODE.INTERNAL_ERROR,
+                    SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_PROCESSING_STATE,
+                    `Undefined processing state ${this.#frameProcessingState}`
+                );
         }
     }
 
@@ -226,7 +295,7 @@ class BasicWebSocketReceiverStreamClass extends Writable {
         this.#opCode = null;
         this.#finBit = null;
         this.#isMasked = false;
-        this.#maskBits = null;
+        this.#maskBytes = null;
         this.#incomingPayloadLength = null;
     }
 
