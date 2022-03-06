@@ -1,4 +1,4 @@
-## BEP2 (BTCB)
+# BEP2 (BTCB)
 
 The Bitcoin BEP2 (BTCB) wrapped token allows users of the Binance DEX to trade in Bitcoin pairs, expanding the utility of Bitcoin into the Binance smart contracts ecosystem.
 
