@@ -109,6 +109,14 @@ that moves the bough...
 
 ...Christianity in a nutshell is believing that Jesus Christ is the Son of God. He is not some god, He is God. He is God made flesh...
 
+#### Praising God through My Tears
+
+*For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.*
+
+**(Psalm 30:5 KJV)**
+
+...Living by faith means that you can smile through your tears. You know that you can trust your God no matter what comes your way...
+
 ## Various authors
 
 ### Strength for Today (for men)
