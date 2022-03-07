@@ -21,16 +21,15 @@ const {
     WEBSOCKET_RECEIVER_FINALIZE_PROCESSING_STATE,
 } = require('./../../../constants/websocket/web_socket_receiver_processing_states');
 
+const {
+    SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_LENGTH_NOT_SET,
+    SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_TOO_LARGE,
+    SERVER_ERROR_CODE_WEBSOCKET_FRAME_PROCESSING_MODE_NOT_SET,
+    SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_OPCODE,
+    SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_PROCESSING_STATE,
+} = require('./../../../constants/server/server_error_codes');
+
 const WebsocketServerErrorClass = require('./../../errors/websocket_server_error_class');
-
-// 0-999 - general
-// 1000-1999 - websocket
-
-const SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_LENGTH_NOT_SET = 1000;
-const SERVER_ERROR_CODE_WEBSOCKET_PAYLOAD_TOO_LARGE = 1001;
-const SERVER_ERROR_CODE_WEBSOCKET_FRAME_PROCESSING_MODE_NOT_SET = 1002;
-const SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_OPCODE = 1003;
-const SERVER_ERROR_CODE_WEBSOCKET_UNDEFINED_PROCESSING_STATE = 1004;
 
 class BasicWebSocketReceiverStreamClass extends Writable {
     #incomingDataBuffer = null;
