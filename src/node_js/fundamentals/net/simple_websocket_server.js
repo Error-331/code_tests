@@ -3,7 +3,7 @@
 const net = require('net');
 const simple_tcp_server = net.createServer();
 
-const BasicWebSocketServerClass = require('./../../server/js/classes/basic_web_socket_server_class');
+const BasicWebSocketServerClass = require('./../../server/js/classes/servers/basic_web_socket_server_class');
 
 const PORT = 9000;
 const HOST = 'localhost';
@@ -17,7 +17,7 @@ simple_tcp_server.on('connection', (socket) => {
 
     websocketServerInstance.on('data', (opcode, data) => {
         console.log(`Server WebSocket data received (opcode: ${opcode})`);
-        console.log(data);
+     //   console.log(data);
     });
 });
 

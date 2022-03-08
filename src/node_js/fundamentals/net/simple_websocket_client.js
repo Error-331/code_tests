@@ -3,7 +3,7 @@
 const net = require('net');
 const readline = require('readline');
 
-const BasicWebSocketServerClass = require('./../../server/js/classes/basic_web_socket_server_class');
+const BasicWebSocketServerClass = require('./../../server/js/classes/servers/basic_web_socket_server_class');
 
 const readlineInterface = readline.createInterface({
     input: process.stdin,
