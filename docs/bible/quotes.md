@@ -61,6 +61,14 @@ that moves the bough...
 
 ...On the promise of thy God hang time and eternity...
 
+#### Whose Battle?
+
+*"And all this assembly shall know that the Lord saveth not with sword and spear: for the battle is the Lord's, and he will give you into our hands."*
+
+**(1 Samuel 17:47 KJV)**
+
+...If we are contending for truth and righteousness, do not tarry till we have talent ore wealth, or any other form of visible power at ur disposal...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
@@ -90,9 +98,11 @@ that moves the bough...
 #### Manage Your Home Wisely
 
 *"Wherefore be ye not unwise, but understanding what the will of the Lord is."*
+
 **(Ephesians 5:17 KJV)**
 
 *"And be not drunk with wine, wherein is excess; but be filled with the Spirit;"*
+
 **(Ephesians 5:18)**
 
 ...Men need to stand up and be counted...
@@ -116,6 +126,12 @@ that moves the bough...
 **(Psalm 30:5 KJV)**
 
 ...Living by faith means that you can smile through your tears. You know that you can trust your God no matter what comes your way...
+
+#### Extending God's Grace to Others
+
+...The acronym for G.R.A.C.E. God's riches at Christ's expense...
+
+...It cost God everything to extend His grace to you and me. Therefore He understand when you are wrestling with a difficult situation and grace does not come easily to you...
 
 ## Various authors
 
