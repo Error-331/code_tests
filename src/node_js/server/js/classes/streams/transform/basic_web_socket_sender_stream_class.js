@@ -24,7 +24,7 @@ class BasicWebSocketSenderStreamClass extends Transform {
         const payloadLength = payload.length;
 
         // 2 bytes of service data + unmasked data
-        let outboundBuffer = Buffer.alloc(payloadLength + 2);
+        let outboundBuffer = Buffer.allocUnsafe(payloadLength + 2);
 
         // add payload length to second byte (no masking)
         secondByte |= payloadLength;
@@ -50,7 +50,7 @@ class BasicWebSocketSenderStreamClass extends Transform {
         const payloadLength = payload.length;
 
         // 2 bytes of service data + 2 bytes of extra length + unmasked data
-        let outboundBuffer = Buffer.alloc(payloadLength + 4);
+        let outboundBuffer = Buffer.allocUnsafe(payloadLength + 4);
 
         // add payload length to second byte (no masking)
         // 126 - extra two bytes of length will be used
@@ -74,7 +74,7 @@ class BasicWebSocketSenderStreamClass extends Transform {
         const payloadLength = payload.length;
 
         // 2 bytes of service data + 8 bytes of extra length + unmasked data
-        let outboundBuffer = Buffer.alloc(payloadLength + 10);
+        let outboundBuffer = Buffer.allocUnsafe(payloadLength + 10);
 
         // add payload length to second byte (no masking)
         // 127 - extra 8 bytes of length will be used
@@ -145,11 +145,11 @@ class BasicWebSocketSenderStreamClass extends Transform {
                 callback(error);
             }
         } else {
-            throw new WebsocketServerErrorClass(
+            callback(new WebsocketServerErrorClass(
                 null,
                 SERVER_ERROR_CODE_WEBSOCKET_INVALID_PAYLOAD_TYPE,
                 `Invalid payload type ${typeof chunk}`
-            );
+            ));
         }
     }
 }
