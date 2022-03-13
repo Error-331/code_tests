@@ -18,4 +18,4 @@ A type of application that runs on a decentralized network, avoiding a single po
 ## Examples
 
 - Augur (REP) prediction market platform;
-- The Golem (GNT) market for idle computer power and the Basic Attention Token (BAT) blockchain-based digital advertising platform;
+- The Golem (GNT) market for **idle computer power** and the **Basic Attention Token (BAT)** blockchain-based digital advertising platform;
