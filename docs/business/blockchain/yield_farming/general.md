@@ -120,3 +120,82 @@ liquidity to a specific pool;
 - it’s usually safer to add more collateral than required to reduce liquidation risk even more; 
 - with that said, many systems will use very high collateralization ratios (such as 750%) to keep the entire platform relatively safe from 
 liquidation risk;
+
+## Risks
+
+- the most profitable yield farming strategies are highly complex and only recommended for advanced users;
+- yield farming is generally more suited to those that have a lot of capital to deploy (whales);
+- yield farming isn’t as easy as it seems, and if you don’t understand what you’re doing, you’ll likely lose money;
+- due to the nature of DeFi, many protocols are built and developed by small teams with limited budgets (risk of smart contract bugs); 
+- vulnerabilities and bugs are discovered all the time;
+- composability (компонуемость);
+
+### Example of composability impact on risks
+
+- DeFi protocols are permissionless and can seamlessly integrate with each other (DeFi ecosystem is heavily reliant on each of its building blocks); 
+- applications are composable - they can easily work together;
+- if just one of the building blocks doesn’t work as intended, the whole ecosystem may suffer;
+- you not only have to trust the protocol you deposit your funds to but all the others it may be reliant upon;
+
+## Platforms and protocols
+
+### Compound Finance
+
+- algorithmic money market that allows users to lend and borrow assets;
+- anyone with an Ethereum wallet can supply assets to Compound’s liquidity pool and earn rewards that immediately begin compounding (Сложные проценты);
+- the rates are adjusted algorithmically based on supply and demand;
+- compound is one of the core protocols of the yield farming ecosystem;
+
+### MakerDAO
+
+- decentralized credit platform that supports the creation of DAI, a stablecoin algorithmically pegged to the value of USD;
+- anyone can open a Maker Vault where they lock collateral assets, such as ETH, BAT, USDC, or WBTC; 
+- they can generate DAI as debt against this collateral that they locked;
+- this debt incurs interest over time called the stability fee - the rate of which is set by MKR token holders;
+- yield farmers may use Maker to mint DAI to use in yield farming strategies;
+
+### Synthetix
+
+- synthetic asset protocol; 
+- it allows anyone to lock up (stake) Synthetix Network Token (SNX) or ETH as collateral and mint synthetic assets against it; 
+- synthetic asset - practically anything that has a reliable price feed; 
+- this allows virtually any financial asset to be added to the Synthetix platform;
+- synthetix may allow all sorts of assets to be used for yield farming in the future;
+
+### Aave
+
+- is a decentralized protocol for lending and borrowing; 
+- interest rates are adjusted algorithmically, based on current market conditions; 
+- lenders get 'aTokens' in return for their funds; 
+- these tokens immediately start earning and compounding interest upon depositing; 
+- allows other more advanced functionality, such as **flash loans**;
+- is heavily used by yield farmers;
+
+### Uniswap
+
+- is a decentralized exchange (DEX) protocol that allows for trustless token swaps;
+- liquidity providers deposit an equivalent value of two tokens to create a market; 
+- traders can then trade against that liquidity pool; 
+- in return for supplying liquidity, liquidity providers earn fees from trades that happen in their pool;
+- one of the most popular platforms for trustless token swaps due to its frictionless nature;
+
+### Curve Finance
+
+- is a decentralized exchange protocol specifically designed for efficient stablecoin swaps; 
+- unlike other similar protocols like Uniswap, Curve allows users to make high-value stablecoin swaps with relatively low slippage;
+- due to the abundance of stablecoins in the yield farming scene, Curve pools are a key part of the infrastructure;
+
+### Balancer
+
+- is a liquidity protocol similar to Uniswap and Curve; 
+- the key difference is that it allows for custom token allocations in a liquidity pool; 
+- this allows liquidity providers to create custom Balancer pools instead of the 50/50 allocation required by Uniswap;
+- just like with Uniswap, LPs earn fees for the trades that happen in their liquidity pool;
+- is an important innovation for yield farming strategies;
+
+### Yearn.finance
+
+- is a decentralized ecosystem of aggregators for lending services such as Aave, Compound, and others; 
+- it aims to optimize token lending by algorithmically finding the most profitable lending services;
+- funds are converted to yTokens upon depositing that periodically rebalance to maximize profit;
+- is useful for farmers who want a protocol that automatically chooses the best strategies for them;
