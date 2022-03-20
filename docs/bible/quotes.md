@@ -69,6 +69,15 @@ that moves the bough...
 
 ...If we are contending for truth and righteousness, do not tarry till we have talent ore wealth, or any other form of visible power at ur disposal...
 
+#### Fear to Fear
+
+*"Do not be afraid of them, for I am with you and will rescue you,” declares the Lord."*
+
+**(Jeremiah 1:8 NIV)**
+
+...Fear to fear...
+... Be afraid to be afraid...
+
 ## Angus Buchan
 
 ### In Quietness and Trust

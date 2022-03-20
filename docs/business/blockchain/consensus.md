@@ -40,6 +40,56 @@ decisions are made collectively;
 **Example:**
 
 - a miner who owns 10% of coins of Bitcoin will only be able to mine 10% of the blocks;
+- purpose is to prevent the centralization of power by large stakeholders on the network;
+
+#### Effective Proof-of-Stake
+
+- uses random state sharding to ensure decentralization;
+- was developed for _Harmony_;
+
+#### Proof-of-Validation (PoV)
+
+- consensus mechanism that works to achieve consensus through staked validator nodes;
+- each node within a PoV system keeps a complete copy of the sequence of transactions in blocks;
+- a copy of all of the user accounts can then be identified by a user's public key, as well as whichever crypto token that node owns;
+- a user can stake their coins inside of the validator nodes;
+- the number of tokens staked within each validator will consequently determine the number of nodes that a specific validator possesses;
+- a new block is confirmed once a set of validators, with at least two-thirds of the network’s total voting power, send a commit vote for that block;
+- PoV protocols can be _Byzantine fault tolerant_;
+
+#### Delegated Proof-of-Stake (dPOS)
+
+- participants still stake coins;
+- rather than becoming responsible for validation themselves, stakeholders outsource that work to a delegate;
+- DPoS delegates are elected based on their reputation and perceived trustworthiness;
+- community has the right to vote for delegates (in theory);
+- DPoS blockchains are generally faster than blockchains run on PoW and PoS systems;
+
+### Proof-of-Authority (PoA)
+
+- delivers comparatively fast transactions using identity as a stake;
+- relies on known and reputable validators to produce blocks, and thus, provide computational power to a network;
+- it enables relatively faster transactions using a Byzantine Fault Tolerance (BFT) algorithm with identity as a stake;
+- PoA is a type of consensus mechanism geared towards enterprises or private organizations who want to build their own chains that are essentially closed;
+- this type of consensus mechanism isn’t resource intensive, but requires validators to preserve the integrity of their nodes;
+
+PoA requires three conditions to be met:
+
+1. Formal identification on-chain for validators;
+2. Eligibility based on certain criteria, including but not limited to, association with the organization or good reputation, etc.;
+3. Complete conformance to defined procedures required for producing blocks and validating on the network;
+
+### Proof-of-Burn  (PoB)
+
+- is an attempt at creating a system that can prevent fraudulent transactions on a blockchain and improve the overall efficiency;
+- allows miners to burn digital currency in order to gain the right to write blocks;
+- to burn coins, miners have to send them to a verifiably unspendable wallet address, essentially permanently removing them from circulation;
+- miners are allowed either to burn the blockchain’s native currency or the currency of an alternative chain;
+- Proof-of-Burn uses virtual mining rigs instead of physical ones to validate transactions;
+- how many coins a miner burns demonstrates his virtual mining power;
+- higher mining power improves the speed of finding new blocks;
+- consequently, the miner earns more rewards;
+- coins locked in PoS systems aren’t permanently erased, their holders can still access and sell them in case they want to leave the network;
 
 ## Hash
 
