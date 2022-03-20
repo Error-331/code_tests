@@ -40,3 +40,15 @@ In modern convention a seed phrase is now utilised which is a random 12 to 24 (o
 - A token represents what a person owns;
 
 ## Wallets
+
+## Layers
+
+### Layer 2
+
+- Layer 2 refers to a secondary framework or protocol that is built on top of an existing blockchain system;
+- The main goal of these protocols is to solve the transaction speed and scaling difficulties;
+- **Bitcoin** and **Ethereum** are still not able to process thousands of transactions per second (TPS);
+- the term **layer 2** refers to the multiple solutions being proposed to the blockchain scalability problem;
+- **layer 2** protocols create a secondary framework, where blockchain transactions and processes can take place independently of the **layer 1** (main chain);
+- one of the main advantages of using off-chain solutions is that the main chain doesn’t need to go through any structural change because the second layer is added as an extra layer;
+- **main chain** (layer 1) provides **security**, the second layer offers **high throughput**, being able to perform hundreds, or even thousands, of transactions per second;
