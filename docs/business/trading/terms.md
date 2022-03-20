@@ -5,6 +5,9 @@
 - Bid price - refers to the highest price a buyer will pay for a security;
   
 - Ask price - refers to the lowest price a seller will accept for a security;
+
+- Spot price - is the current price in the marketplace at which a given asset—such as a security, commodity, or currency—can be bought or sold for immediate 
+  delivery.
   
 - Spread - difference between Ask and Bid price, the smaller the spread, the greater the liquidity of the security;
 
