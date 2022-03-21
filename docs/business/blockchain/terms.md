@@ -7,6 +7,7 @@ USD $1.00;
 - Stablecoins - track traditional fiat currencies, like the dollar, the euro, or the Japanese yen, which are held in a designated bank account;
 - BEP2 (BTCB) - stablecoin launched by prominent cryptocurrency exchange Binance;
 - Digital asset - is anything that exists in a digital format and comes with the right to use;
+- Decentralized Autonomous Organization (DAO) - DAO is a system of hard-coded rules that define which actions a decentralized organization will take;
 - Commodity money - money whose value comes from a commodity of which it is made;
 - Medium of exchange - is any item that is widely acceptable in exchange for goods and services (usually currency);
 - Use value (Потребительная стоимость) -  способность товара удовлетворять те или иные потребности человека;
@@ -15,7 +16,20 @@ USD $1.00;
 приёму для любых платежей;
 - Spot contract - is a contract of buying or selling a commodity, security or currency for immediate settlement (payment and delivery) on the spot date, which is 
 normally **two business days** after the trade date (т.е. сделке производится немедленно);
+- Loan-to-value ratio (LTV)
 
+## Miners
+
+### EN
+
+Contributors to a blockchain taking part in the process of mining. They can be professional miners or organizations with large-scale operations, or hobbyists who set up mining rigs at home or in the office.
+
+## Distributed Ledger
+
+### EN
+
+Distributed ledgers are ledgers in which data is stored across a network of decentralized nodes. A distributed ledger does not necessarily involve a cryptocurrency and may be 
+permissioned and private.
 
 ## Fiat money (Фидуциарные деньги)
 
