@@ -165,12 +165,27 @@ servant, nor your animals, nor any foreigner residing in your towns."*
 
 #### Self-Control
 
-*"Are you running with a plan in place, or are you making things up as you go?"*
+...Are you running with a plan in place, or are you making things up as you go?...
 
-...So I do not run aimlessly; I do not box as one beating the air...
+*"So I do not run aimlessly; I do not box as one beating the air"*
 
 **(1 Corinthians 9:26 ESV)**
 
-...But I discipline my body and keep it under control,[a] lest after preaching to others I myself should be disqualified...
+*"But I discipline my body and keep it under control,[a] lest after preaching to others I myself should be disqualified"*
 
 **(1 Corinthians 9:27 ESV)**
+
+#### Listening
+
+*"Know this, my beloved brothers: let every person be quick to hear, slow to speak, slow to anger;"*
+
+**(James 1:19 ESV)**
+
+*"for the anger of man does not produce the righteousness of God."*
+
+**(James 1:20 ESV)**
+
+...We are quick to offer advice and criticism and quick to jump to conclusions...
+
+...But this often leads to fighting, bitterness, and grudges...
+
