@@ -78,6 +78,16 @@ that moves the bough...
 ...Fear to fear...
 ... Be afraid to be afraid...
 
+#### A Sure Guide
+
+*"I will bring the blind by a way they did not know"*
+
+**(Isaiah 42:16)**
+
+...As to the future, all of us are blind, but the Lord Jesus will lead us even to our journey's end...
+
+...We cannot guess how deliverance will come to us, but the Lord knows, and He will lead us till we have escaped every danger...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
