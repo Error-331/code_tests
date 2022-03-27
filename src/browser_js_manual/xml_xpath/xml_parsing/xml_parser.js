@@ -220,7 +220,7 @@ function parseTerritoriesXMLWithDOMParser(xmlString) {
   return jsonData;
 }
 
-function extractChildNodesValues(xmlDocument, $parentNode, nodeOptions = []) {
+function extractChildNodesValuesWithXPath(xmlDocument, $parentNode, nodeOptions = []) {
   const resultObj = {};
 
   for (const nodeOption of nodeOptions) {
@@ -263,7 +263,7 @@ function parseTerritoriesXMLWithXPath(xmlString) {
     }
 
     const nodeOptions = ['ct', 'descr', {name: 'id', type: XPathResult.NUMBER_TYPE}, 'name', 'sales', 'territoryseqnum', 'url', 'urlid'];
-    jsonData.regions.push(extractChildNodesValues(xmlDocument, $line, nodeOptions));
+    jsonData.regions.push(extractChildNodesValuesWithXPath(xmlDocument, $line, nodeOptions));
 
 
   } while($line)
@@ -291,7 +291,7 @@ function parseSalesFromTerritoryXMLWithXPath(xmlString) {
       { name: 'entity', type: XPathResult.NUMBER_TYPE }
     ];
 
-    return extractChildNodesValues(xmlDocument, $line, nodeOptions)
+    return extractChildNodesValuesWithXPath(xmlDocument, $line, nodeOptions)
 
   } while($line)
 }
