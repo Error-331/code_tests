@@ -31,6 +31,10 @@
 
 **(John 8:34-35 KJV)**
 
+*"Believest thou not that I am in the Father, and the Father in me? the words that I speak unto you I speak not of myself: but the Father that dwelleth in me, he doeth the works."*
+
+**(John 14:10 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
