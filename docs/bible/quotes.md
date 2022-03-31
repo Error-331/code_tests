@@ -46,6 +46,15 @@ hath an husband."*
 
 ### Faith's Checkbook
 
+### Presence of Mind
+
+*"Do not be afraid of sudden terror, nor of trouble from the wicked when it comes; for the Lord will be your confidence, 
+and will keep your foot from being caught"*
+
+**(Proverbs 3:25-26)**
+
+_Whole devotion_
+
 #### God Only, You Can Trust (December 26)
 
 *"Peter answered and said unto him, Though all men shall be offended because of Thee, yet will I never be offended"*
