@@ -114,6 +114,18 @@ that moves the bough...
 ...As to the future, all of us are blind, but the Lord Jesus will lead us even to our journey's end...
 ...We cannot guess how deliverance will come to us, but the Lord knows, and He will lead us till we have escaped every danger...
 
+#### True Heart Energy
+
+*"Meditate upon these things; give thyself wholly to them; that thy profiting may appear to all."*
+
+**(1 Timothy 4:15 KJV)**
+
+*"In all labour there is profit: but the talk of the lips tendeth only to penury."*
+
+**(Proverbs 14:23KJV)**
+
+...This is a promise that, by diligent meditation and the giving up of our whole mind to our work for the Lord, we shall make a progress which all can see...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
