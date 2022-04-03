@@ -114,15 +114,27 @@ that moves the bough...
 ...As to the future, all of us are blind, but the Lord Jesus will lead us even to our journey's end...
 ...We cannot guess how deliverance will come to us, but the Lord knows, and He will lead us till we have escaped every danger...
 
+#### True Heart Energy
+
+*"Meditate upon these things; give thyself wholly to them; that thy profiting may appear to all."*
+
+**(1 Timothy 4:15 KJV)**
+
+*"In all labour there is profit: but the talk of the lips tendeth only to penury."*
+
+**(Proverbs 14:23KJV)**
+
+...This is a promise that, by diligent meditation and the giving up of our whole mind to our work for the Lord, we shall make a progress which all can see...
+
 #### Sensitive to Warning
 
-*"Because thine heart was tender, and thou hast humbled thyself before the Lord, when thou heardest what I spake against 
-this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy 
+*"Because thine heart was tender, and thou hast humbled thyself before the Lord, when thou heardest what I spake against
+this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy
 clothes, and wept before me; I also have heard thee, saith the Lord."*
 
 **(2 Kings 22:19 KJV)**
 
-*"Behold therefore, I will gather thee unto thy fathers, and thou shalt be gathered into thy grave in peace; and thine 
+*"Behold therefore, I will gather thee unto thy fathers, and thou shalt be gathered into thy grave in peace; and thine
 eyes shall not see all the evil which I will bring upon this place. And they brought the king word again."*
 
 **(2 Kings 22:20)**
