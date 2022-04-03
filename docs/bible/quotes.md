@@ -114,6 +114,21 @@ that moves the bough...
 ...As to the future, all of us are blind, but the Lord Jesus will lead us even to our journey's end...
 ...We cannot guess how deliverance will come to us, but the Lord knows, and He will lead us till we have escaped every danger...
 
+#### Sensitive to Warning
+
+*"Because thine heart was tender, and thou hast humbled thyself before the Lord, when thou heardest what I spake against 
+this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy 
+clothes, and wept before me; I also have heard thee, saith the Lord."*
+
+**(2 Kings 22:19 KJV)**
+
+*"Behold therefore, I will gather thee unto thy fathers, and thou shalt be gathered into thy grave in peace; and thine 
+eyes shall not see all the evil which I will bring upon this place. And they brought the king word again."*
+
+**(2 Kings 22:20)**
+
+...The destroying angel is commanded to keep his sword in its sheath till the elect of God are sheltered...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
