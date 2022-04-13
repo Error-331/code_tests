@@ -2,12 +2,22 @@
 
 - is an incredibly popular platform for developing **decentralized applications** (DApps); 
 - But in recent years, a dramatic surge in adoption has seen the network pushed to its absolute limits — sending transaction fees through the roof and leading to rampant congestion.
-While some circles believe that the best way to scale Ethereum is through on-chain tweaks and upgrades, others are instead pursuing different routes, known as second layer solutions. 
+While some circles believe that the best way to scale Ethereum is through on-chain tweaks and upgrades, others are instead pursuing different routes, known as second layer solutions;
+- Ethash - similar to Bitcoin **proof-of-work** algorithm;
 
 ## Means to offset transaction fees
 
 - through on-chain tweaks and upgrades;
 - second layer solutions;
+
+## Ether and Gas
+
+- the unit of account in Ethereum is **ether**;
+- Ethereum behaves in a similar fashion to bitcoin, with similar transaction address nomenclature;
+- Ethereum tracks the balances in the **account state** (is like having all your funds in a bank account);
+- **Gas** enables developers to run applications on the Ethereum platform;
+- developers can run dapps on Ethereum without encountering **halting problem** (inability to prevent code that runs indefinitely or in infinite loops) due to the usage of **Gas**;
+- Ethereum requires **gas** to be used for computations of executed code within a smart contract, so that a dapp is as efficient as is possible;
 
 ## ERC-20
 
@@ -54,3 +64,11 @@ While some circles believe that the best way to scale Ethereum is through on-cha
 
 - a scenario where many users try to exit their Plasma chain at the same time, flooding the root chain and causing network congestion (скопление);
 - could be triggered by fraudulent activity, network attacks, or any other kind of critical failure that a Plasma child chain, or a group of chains;
+
+## Use Cases
+
+### ICOs
+
+- a project needing to raise money to launch a concept could set up a smart contract to take in **ether**; 
+- in return, it could give the donors a redeemable cryptocurrency built on top of Ethereum;
+- the legality of ICOs is questionable, and many projects have been ended prematurely because of legal problems they have caused;
