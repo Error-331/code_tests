@@ -65,6 +65,41 @@ While some circles believe that the best way to scale Ethereum is through on-cha
 - a scenario where many users try to exit their Plasma chain at the same time, flooding the root chain and causing network congestion (скопление);
 - could be triggered by fraudulent activity, network attacks, or any other kind of critical failure that a Plasma child chain, or a group of chains;
 
+## Stack
+
+### Level 1 - Ethereum virtual machine
+
+- runtime environment for smart contracts in Ethereum;
+- all smart contracts and state changes on the Ethereum blockchain are executed by transaction;
+
+### Level 2 - smart contracts
+
+- are the executable programs that run on the Ethereum blockchain;
+- smart contracts are written using specific programming languages that compile to EVM bytecode;
+- smart contracts serve as **open source libraries**;
+- smart contracts are essentially **open API services** that are always running and can't be taken down;
+- smart contracts provide **public functions** which users and applications (**dapps**) may interact with;
+
+### Level 3 - Ethereum nodes
+
+- for an application to interact with the Ethereum blockchain - it must connect to an **Ethereum node**;
+- **Ethereum nodes** are computers running software - an **Ethereum client**;
+- a client is an implementation of **Ethereum** that verifies all transactions in each block;
+- **Ethereum nodes are the Ethereum blockchain**;
+- **Ethereum nodes** collectively store the state of the Ethereum blockchain and reach consensus on transactions to mutate the blockchain state;
+- by connecting the application to an **Ethereum node** (via the JSON-RPC API) data can be read and write;
+
+### Level 4 - Ethereum client APIs
+
+- convenience libraries (built and maintained by Ethereum's open source community) allowing applications to connect to and communicate with the Ethereum blockchain;
+- while these APIs are not a necessary piece of the stack, they abstract away much of the complexity of interacting directly with an Ethereum node;
+- this APIs also provide utility functions (e.g. converting ETH to Gwei);
+
+### Level 5 - end-user applications
+
+- standard applications, regularly used by users (primarily web and mobile apps);
+- often users will not need to know the application they're using is built using a blockchain;
+
 ## Use Cases
 
 ### ICOs
