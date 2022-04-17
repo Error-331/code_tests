@@ -25,3 +25,12 @@
 ## Tools
 
 - https://www.omniexplorer.info/ - Omni Layer (Bitcoin) explorer;
+- https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js - Rmix IDE (dapp deployment);
+- https://trufflesuite.com/ - Framework for developing dapps on Ethereum;
+
+### Test networks for DAPPs
+
+- https://ropsten.etherscan.io/ - Ropsten;
+- https://www.rinkeby.io/#stats - Rinkeby;
+- https://kovan-testnet.github.io/website/ - Kovan;
+- https://goerli.net/ - Görli;
