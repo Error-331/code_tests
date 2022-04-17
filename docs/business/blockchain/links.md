@@ -20,5 +20,8 @@
 - https://ftx.com/ - crypto exchange;
 - https://www.binance.com/ - largest crypto exchange;
 
-
 ## Crypto lending projects 
+
+## Tools
+
+- https://www.omniexplorer.info/ - Omni Layer (Bitcoin) explorer;
