@@ -20,6 +20,11 @@
 - https://ftx.com/ - crypto exchange;
 - https://www.binance.com/ - largest crypto exchange;
 
+
+### NFT
+
+- https://theplaygrounds.io/?gclid=CjwKCAjwo8-SBhAlEiwAopc9W8vFyFtZib3AX6x2YCZlCTCKAjXcI1ABwwHxx9ZBU37bu4SL8naQoRoCjZAQAvD_BwE - playgrounds;
+
 ## Crypto lending projects 
 
 ## Tools
@@ -34,3 +39,8 @@
 - https://www.rinkeby.io/#stats - Rinkeby;
 - https://kovan-testnet.github.io/website/ - Kovan;
 - https://goerli.net/ - Görli;
+
+
+## Exploits
+
+- https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/- Analysis of the DAO exploit;
