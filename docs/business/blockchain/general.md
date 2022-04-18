@@ -1,4 +1,4 @@
-# General
+# Arbitrage trading
 
 - the underlying technology of Bitcoin is blockchain, which is a type of digital ledger;
 - you own bitcoin through the means of a private key; 
