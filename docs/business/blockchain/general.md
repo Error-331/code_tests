@@ -39,6 +39,18 @@ In modern convention a seed phrase is now utilised which is a random 12 to 24 (o
 - When a token is spent, it moves from one place to another (NFTs);  
 - A token represents what a person owns;
 
+## Protocols
+
+- a DeFi protocol uses computer code called **smart contracts** that run on the blockchain network; 
+- the source code of most of the DeFi projects are available for anyone in the world to check and audit; 
+- users of the DeFi protocol can communicate with these smart contracts using their wallets to transfer funds, borrow, lend or avail any service that the DeFi provides;
+
+### Types
+
+- Type 1: dApps that have and run on their own blockchain, like **Ethereum**;
+- Type 2: decentralized applications that use the blockchain of a _Type 1_ that are protocols and have tokens that are necessary for their function;
+- Type 3: decentralized applications that are built on top of and use the protocol of a _Type 1_ or 2 decentralized application (for example - decentralized exchanges);
+
 ## Wallets
 
 ## Layers
