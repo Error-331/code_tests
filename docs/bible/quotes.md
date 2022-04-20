@@ -141,6 +141,14 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 
 ...The destroying angel is commanded to keep his sword in its sheath till the elect of God are sheltered...
 
+### My Choice is His Choice
+
+*"He will choose our inheritance for us"*
+
+**(Psalm 47:8)**
+
+...The Lord will cause us to stand in our lot, and our place is appointed by His infinite wisdom...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
