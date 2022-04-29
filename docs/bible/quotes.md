@@ -40,6 +40,15 @@ belong to those who walk on the way; **even if they are fools, they shall not go
 
 **(Isaiah 35:8 ESV)**
 
+*"Speak not evil one of another, brethren. He that speaketh evil of his brother, and judgeth his brother, speaketh evil of the law, and judgeth the law: but if thou judge the law, thou 
+art not a doer of the law, but a judge."*
+
+**(James 4:11 KJV)**
+
+*"For that ye ought to say, If the Lord will, we shall live, and do this, or that."*
+
+**(James 4:15 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
