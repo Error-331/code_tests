@@ -35,6 +35,20 @@
 
 **(John 14:10 KJV)**
 
+*"And a highway shall be there, and it shall be called the Way of Holiness; the unclean shall not pass over it. It shall 
+belong to those who walk on the way; **even if they are fools, they shall not go astray**."*
+
+**(Isaiah 35:8 ESV)**
+
+*"Speak not evil one of another, brethren. He that speaketh evil of his brother, and judgeth his brother, speaketh evil of the law, and judgeth the law: but if thou judge the law, thou 
+art not a doer of the law, but a judge."*
+
+**(James 4:11 KJV)**
+
+*"For that ye ought to say, If the Lord will, we shall live, and do this, or that."*
+
+**(James 4:15 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
@@ -45,6 +59,15 @@ hath an husband."*
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
+
+### Presence of Mind
+
+*"Do not be afraid of sudden terror, nor of trouble from the wicked when it comes; for the Lord will be your confidence, 
+and will keep your foot from being caught"*
+
+**(Proverbs 3:25-26)**
+
+_Whole devotion_
 
 #### God Only, You Can Trust (December 26)
 
@@ -99,6 +122,41 @@ that moves the bough...
 
 ...As to the future, all of us are blind, but the Lord Jesus will lead us even to our journey's end...
 ...We cannot guess how deliverance will come to us, but the Lord knows, and He will lead us till we have escaped every danger...
+
+#### True Heart Energy
+
+*"Meditate upon these things; give thyself wholly to them; that thy profiting may appear to all."*
+
+**(1 Timothy 4:15 KJV)**
+
+*"In all labour there is profit: but the talk of the lips tendeth only to penury."*
+
+**(Proverbs 14:23KJV)**
+
+...This is a promise that, by diligent meditation and the giving up of our whole mind to our work for the Lord, we shall make a progress which all can see...
+
+#### Sensitive to Warning
+
+*"Because thine heart was tender, and thou hast humbled thyself before the Lord, when thou heardest what I spake against
+this place, and against the inhabitants thereof, that they should become a desolation and a curse, and hast rent thy
+clothes, and wept before me; I also have heard thee, saith the Lord."*
+
+**(2 Kings 22:19 KJV)**
+
+*"Behold therefore, I will gather thee unto thy fathers, and thou shalt be gathered into thy grave in peace; and thine
+eyes shall not see all the evil which I will bring upon this place. And they brought the king word again."*
+
+**(2 Kings 22:20)**
+
+...The destroying angel is commanded to keep his sword in its sheath till the elect of God are sheltered...
+
+### My Choice is His Choice
+
+*"He will choose our inheritance for us"*
+
+**(Psalm 47:8)**
+
+...The Lord will cause us to stand in our lot, and our place is appointed by His infinite wisdom...
 
 ## Angus Buchan
 

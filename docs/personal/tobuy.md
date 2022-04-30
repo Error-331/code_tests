@@ -210,8 +210,12 @@ https://ru.banggood.com/GAMEKM-M-ATX-Computer-Gaming-Case-Vertical-Graphics-Card
 
 https://rozetka.com.ua/274853088/p274853088/ - Адаптер переходник Kebidu AV RCA to HDMI
 https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
+https://rozetka.com.ua/150315698/p150315698/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0ingoHJHjGzcpF6Txk_kqMEp6fygDrMzS4yVATwc9f6BigCs6Fp3ZEaAmCIEALw_wcB - кабель для блока питания на usb
 
 ### Разное
 
 https://edisons.com.ua/retro-provodka/retro-vyklyuchateli/page-2/ - розетки/выключатели
 https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-Proportional-Control-RC-Vehicle-Model-Without-Electronic-Element-No-Transmitter-No-Battery-p-1697008.html?cur_warehouse=CN&ID=45586&rmmds=search
+https://rozetka.com.ua/colorway_cw_chs012_wt/p236817007/ - блок питания для usv хаба
+https://rozetka.com.ua/patron_con_rj_45_8p8c_40/p12600219/ - коннекторы сетевые
+https://brain.com.ua/ukr/Blok_jhivlennya_do_promislovogo_PK_Raspberry_Pi_5V_USB_3A_EU_bez_kabelya_UCR-530-p740658.html - еще блок питания (поидеи для винчестера)
