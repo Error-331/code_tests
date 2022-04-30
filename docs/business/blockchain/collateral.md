@@ -6,6 +6,20 @@
 - collateralized loans present much lower interest rates when compared to non-collateralized ones;
 - some of the most common types include mortgage collaterals, invoice financing, and margin trading collaterals;
 
+### Real world equivalent (pawnshop)
+
+- user can hand over jewelry (collateral) in exchange for a cash loan; 
+- user can then either pay the loan back plus a fee to return his collateral or allow the pawnshop to keep the collateral and recoup(окупить) their loss; 
+- collateral acts as a safety net, and the same concept applies to mortgages and car finance;
+
+## Overcollateralization
+
+**Example**: 
+
+- a project that asks for $400 of ETH in collateral for 400 tokens pegged to USD;
+- if the price of **ETH** drops suddenly, the lender's collateral won't cover the loan they've given out;
+- the lender instead asks for $600 of ETH when loaning out 400 tokens of their USD stablecoin;
+
 ## Mortgage / real estate collaterals
 
 - loans that are backed by real state properties;
