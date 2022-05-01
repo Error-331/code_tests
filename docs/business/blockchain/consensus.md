@@ -91,6 +91,13 @@ PoA requires three conditions to be met:
 - consequently, the miner earns more rewards;
 - coins locked in PoS systems aren’t permanently erased, their holders can still access and sell them in case they want to leave the network;
 
+### Zero-Knowledge Proofs
+
+- sometimes also referred to as a ZK protocol;
+- verification method that takes place between a prover and a verifier;
+- the prover is able to prove to the verifier that they have the knowledge of a particular piece of information  (like math equation) without revealing the information itself;
+- are mostly used for applications in which privacy and security are essential;
+
 ## Hash
 
 - a hash is the output result of a hashing algorithm, which creates a **unique**, **fixed-length string** to encrypt and secure a certain selection of arbitrary data;
