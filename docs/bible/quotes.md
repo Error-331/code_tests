@@ -18,7 +18,7 @@
 
 **(Matthew 7:21 KJV)**
 
-*"For we brought nothing into this world, and it is certain we can carry nothing out.""*
+*"For we brought nothing into this world, and it is certain we can carry nothing out."*
 
 **(1 Timothy 6:7 KJV)**
 

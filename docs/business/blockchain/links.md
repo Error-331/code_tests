@@ -20,6 +20,10 @@
 - https://ftx.com/ - crypto exchange;
 - https://www.binance.com/ - largest crypto exchange;
 
+## dAPPs
+
+- https://machina.storage/ - sharded data storage on NEAR;
+- https://medium.com/@nearprotocol - NEAR protocol on Medium;
 
 ### NFT
 
