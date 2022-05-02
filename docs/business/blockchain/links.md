@@ -25,6 +25,10 @@
 - https://machina.storage/ - sharded data storage on NEAR;
 - https://medium.com/@nearprotocol - NEAR protocol on Medium;
 
+## Games
+
+- https://stepn.com/howToPlay - STEPN;
+
 ### NFT
 
 - https://theplaygrounds.io/?gclid=CjwKCAjwo8-SBhAlEiwAopc9W8vFyFtZib3AX6x2YCZlCTCKAjXcI1ABwwHxx9ZBU37bu4SL8naQoRoCjZAQAvD_BwE - playgrounds;
@@ -43,7 +47,6 @@
 - https://www.rinkeby.io/#stats - Rinkeby;
 - https://kovan-testnet.github.io/website/ - Kovan;
 - https://goerli.net/ - Görli;
-
 
 ## Exploits
 
