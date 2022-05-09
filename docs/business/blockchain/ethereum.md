@@ -89,6 +89,24 @@ While some circles believe that the best way to scale Ethereum is through on-cha
 - **Ethereum nodes** collectively store the state of the Ethereum blockchain and reach consensus on transactions to mutate the blockchain state;
 - by connecting the application to an **Ethereum node** (via the JSON-RPC API) data can be read and write;
 
+#### Full node
+
+- Stores full blockchain data;
+- Participates in block validation, verifies all blocks and states;
+- All states can be derived from a full node;
+- **Serves the network and provides data on request**;
+
+#### Light node
+
+- Stores the header chain and requests everything else;
+- Can verify the validity of the data against the state roots in the block headers;
+- Useful for low capacity devices, such as embedded devices or mobile phones, which can't afford to store gigabytes of blockchain data;
+
+#### Archive node
+
+- Stores everything kept in the full node and builds an archive of historical states;
+- These data represent units of terabytes (can be handy for services like block explorers, wallet vendors, and chain analytics);
+
 ### Level 4 - Ethereum client APIs
 
 - convenience libraries (built and maintained by Ethereum's open source community) allowing applications to connect to and communicate with the Ethereum blockchain;
