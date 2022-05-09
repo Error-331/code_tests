@@ -64,3 +64,11 @@ The core idea behind technical analysis is that historical price action may indi
 - **markets are cyclical in nature**;
 - **it’s almost impossible to determine in any given moment where we currently are in a market cycle**;
 - this analysis can be done with high accuracy only after that part of the cycle has concluded;
+
+Example:
+
+- the perpetual futures market is trading higher than the spot market;
+- in this case, the funding rate will be positive, meaning that long positions (buyers) pay the funding fees to short positions (sellers);
+- this encourages buyers to sell, which then causes the price of the contract to drop, moving it closer to the spot price;
+- if the perpetual futures market is trading lower than the spot market, the funding rate will be negative;
+- this time, shorts pay longs to incentivize pushing up the price of the contract; 
