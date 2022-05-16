@@ -11,7 +11,7 @@
 
 ### Limit order
 
-- when the user sets a limit order, he choose a **maximum purchase** price or **minimum sale price**;
+- when the user sets a limit order, he chooses a **maximum purchase** price or **minimum sale price**;
 - exchange will automatically attempt to fill the limit order when the market price meets or is better than your limit price;
 - traders place sell limit orders above the current market price and buy limit orders below the current market price;
 
