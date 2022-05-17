@@ -7,3 +7,7 @@ It is the gap between the lowest **asking price** (sell order) and the highest *
 - the bid-ask spread is a common way of monetizing from trading activities;
 - high volume markets have a lower spread because of their higher liquidity;
 - markets that are not liquid enough and present low trading volume tend to have a more significant spread;
+
+## Bid-ask spread percentage
+
+Formula: `(Ask Price - Bid Price)/Ask Price x 100 = BidAsk Spread Percentage`;
