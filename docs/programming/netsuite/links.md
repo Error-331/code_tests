@@ -11,3 +11,4 @@
 ## Additional resources
 
 - https://blog.prolecto.com/ - blog about NetSuite;
+- https://cdn.cdata.com/help/DNF/ado/pg_SuiteQLtable-creditmemopartner.htm - SuiteQL tables;
