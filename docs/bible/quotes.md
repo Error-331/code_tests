@@ -49,6 +49,10 @@ art not a doer of the law, but a judge."*
 
 **(James 4:15 KJV)**
 
+*"Yet ye say, The way of the Lord is not equal. O ye house of Israel, I will judge you every one after his ways."*
+
+**(Ezekiel 33:20 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
