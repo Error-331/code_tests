@@ -273,3 +273,13 @@ servant, nor your animals, nor any foreigner residing in your towns."*
 
 ...But this often leads to fighting, bitterness, and grudges...
 
+#### Small Beginnings
+
+*"Do not despise these small beginnings, for the Lord rejoices to see the work begin, to see the plumb line in Zerubbabel’s hand"*
+
+**(Zecharia 4:10 NLT)**
+
+...As men, we often have grand goals for ourselves, but we don't know where or how to begin...
+
+...Start with a small goal, then keep building...
+
