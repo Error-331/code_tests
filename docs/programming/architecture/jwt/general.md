@@ -108,3 +108,36 @@ secret)
 
 The signature is used to verify the message wasn't changed along the way, and, in the case of tokens signed with a private key, it can also verify 
 that the sender of the JWT is who it says it is.
+
+## JSON Web Tokens
+
+- when the user successfully logs in using their credentials, a JSON Web Token will be returned;
+- since tokens are credentials, great care must be taken to prevent security issues;
+- tokens should not be longer than required;
+- tokens should not store sensitive session data in browser storage due to lack of security;
+- whenever the user wants to access a protected route or resource, the user agent should send the JWT, (Authorization header using the Bearer schema);
+- the server's protected routes will check for a valid JWT in the Authorization header, and if it's present, the user will be allowed to access protected resources;
+- if the JWT contains the necessary data, the need to query the database for certain operations may be reduced, though this may not always be the case;
+- some servers don't accept more than 8 KB in headers;
+- if the token is sent in the Authorization header, Cross-Origin Resource Sharing (CORS) won't be an issue as it doesn't use cookies;
+- the information contained within the token is exposed to users or other parties (secret information should not be put within the token);
+
+The content of the header should look like the following:
+
+```text
+
+Authorization: Bearer <token>
+
+```
+
+### Advantages
+
+- JSON is less verbose than XML, when it is encoded its size is also smaller, making JWT more compact than SAML;
+- makes JWT a good choice to be passed in HTML and HTTP environments;
+- SWT can only be symmetrically signed by a shared secret using the HMAC algorithm; 
+- JWT and SAML tokens can use a public/private key pair in the form of a X.509 certificate for signing;
+- signing XML with XML Digital Signature without introducing obscure security holes is very difficult when compared to the simplicity of signing JSON;
+- JSON parsers are common in most programming languages because they map directly to objects;
+- JWT is used at Internet scale; 
+- JWT can be easily processed on client-side of multiple platforms, especially mobile;
+

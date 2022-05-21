@@ -3,6 +3,7 @@
 ## Layers
 
 - http://www.omnilayer.org/ - Bitcoin Omni Layer;
+- https://www.hapi.one/ - Cybersecurity Layer;
 
 ## Wallets
 
@@ -19,6 +20,7 @@
 - https://www.kraken.com/ - crypto exchange;
 - https://ftx.com/ - crypto exchange;
 - https://www.binance.com/ - largest crypto exchange;
+- https://www.bitmex.com/ - crypto exchange;
 
 ## dAPPs
 
@@ -44,6 +46,8 @@
 - https://www.omniexplorer.info/ - Omni Layer (Bitcoin) explorer;
 - https://remix.ethereum.org/#optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.7+commit.e28d00a7.js - Rmix IDE (dapp deployment);
 - https://trufflesuite.com/ - Framework for developing dapps on Ethereum;
+- https://defillama.com/ - DeFi Liama
+- https://www.coingecko.com/ - Coingecko
 
 ### Test networks for DAPPs
 
