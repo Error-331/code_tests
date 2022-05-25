@@ -21,6 +21,7 @@
 - https://ftx.com/ - crypto exchange;
 - https://www.binance.com/ - largest crypto exchange;
 - https://www.bitmex.com/ - crypto exchange;
+- https://www.0x.org/ - decentralized crypto exchange for tokens;
 
 ## dAPPs
 
