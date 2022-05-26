@@ -33,6 +33,16 @@ wallet can interact with them;
 - it allows anyone to earn passive income using the decentralized ecosystem of **money legos** built on Ethereum; 
 - yield farming can be paralleled with staking;
 
+### For users
+
+- User (the lender) deposit **$1,000** worth of **USDC** into the smart contract using a blockchain application;
+- The borrower deposits **$2,000** worth of **ETH** as collateral into the smart contract; 
+- The smart contract gives the borrower **$1,000** worth of **USDC** while locking the **ETH** deposit;
+- When the borrower deposits **$1,000** worth of **USDC** back in the smart contract, the code will give him back the **ETH** deposited minus the interest needed to pay you;
+- User receives the $1,000 deposited plus any interest;
+- If, in the meantime, the value of ETH drops below a certain threshold, the smart contract will automatically sell ETH and pay the user back; 
+- This way, users funds are protected against any market drop thanks to the code that runs automatically;
+
 #### Liquidity pool
 
 - basically a smart contract that contains funds; 
