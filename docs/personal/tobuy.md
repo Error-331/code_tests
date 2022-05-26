@@ -214,6 +214,10 @@ https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
 https://rozetka.com.ua/150315698/p150315698/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0ingoHJHjGzcpF6Txk_kqMEp6fygDrMzS4yVATwc9f6BigCs6Fp3ZEaAmCIEALw_wcB - кабель для блока питания на usb
 https://www.aliexpress.com/item/4001300527726.html?spm=a2g0o.productlist.0.0.54da6da3ocvt9r&algo_pvid=324b65c4-08d1-4f3d-a89c-0e28565a0d3a&algo_exp_id=324b65c4-08d1-4f3d-a89c-0e28565a0d3a-24&pdp_ext_f=%7B%22sku_id%22%3A%2210000015673235510%22%7D&pdp_npi=2%40dis%21USD%21%2119.48%21%21%21%21%21%4021135c3816521128784571711ee6e6%2110000015673235510%21sea - usb hub в стол
 
+### Игры
+
+https://lordofboards.com.ua/chudo-v-peryakh-ludum/?gclid=Cj0KCQjwspKUBhCvARIsAB2IYusu_1hB4JW-DWQkIW6VT_CRxAJ9hopGJlT5OraQPt86IMNms2pq8FYaAuDZEALw_wcB - Настільна гра "Чудо у пір'ячку"
+
 ### Разное
 
 https://edisons.com.ua/retro-provodka/retro-vyklyuchateli/page-2/ - розетки/выключатели
