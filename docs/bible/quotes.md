@@ -283,3 +283,12 @@ servant, nor your animals, nor any foreigner residing in your towns."*
 
 ...Start with a small goal, then keep building...
 
+#### Be Strong
+
+*"Then Moses summoned Joshua and said to him in the presence of all Israel, “Be strong and courageous, for you must go with this people into the land that the Lord swore to their 
+ancestors to give them, and you must divide it among them as their inheritance."*
+
+**(Deuteronomy 31:7 NIV)**
+
+...God didn't simply give his people a set of rules and regulations to follow; he entered into their world, going with his people into the activities of their lives. 
+He struggled, faced temptations, and knew hunger and thirst. He was tired. He worked. He laughed. He confronted sin and selfish attitudes. Ad he is still with us today....
