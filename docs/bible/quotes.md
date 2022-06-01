@@ -292,3 +292,14 @@ ancestors to give them, and you must divide it among them as their inheritance."
 
 ...God didn't simply give his people a set of rules and regulations to follow; he entered into their world, going with his people into the activities of their lives. 
 He struggled, faced temptations, and knew hunger and thirst. He was tired. He worked. He laughed. He confronted sin and selfish attitudes. Ad he is still with us today....
+
+#### Gentleness
+
+*"A gentle answer turns away wrath, but a harsh word stirs up anger."*
+
+**(Proverbs 15:1 NIV)**
+
+...Because of this, the way we speak to people can reveal the degree to which the Holy Spirit influences and impacts our lives...
+
+...We all have that certain friend or family member who requires an extra measure of grace. This can try our patience, but the way we respond to them will often be directly 
+proportional to the level of grace we have received from the Holy Spirit...
