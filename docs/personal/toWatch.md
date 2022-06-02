@@ -24,3 +24,13 @@ https://en.wikipedia.org/wiki/Dr._Katz,_Professional_Therapist - Dr. Katz, Profe
 https://terribletvshows.miraheze.org/wiki/The_Mighty_B! - The Mighty B!
 https://terribletvshows.miraheze.org/wiki/Sanjay_and_Craig - Sanjay and Craig
 https://en.wikipedia.org/wiki/Jayce_and_the_Wheeled_Warriors - Jayce and the Wheeled Warriors
+
+## Готовое к просмотру
+
+- https://ling-online.com/ru/videos/serials/xena-warrior-princess/ - Xena: Warrior Princess;
+- https://ling-online.com/ru/videos/serials/primal/ - Primal;
+- https://ling-online.com/ru/videos/serials/tig-n-seek/ - Tig N' Seek;
+- https://ling-online.com/ru/videos/serials/john-wayne-gacy-devil-in-disguise/ - John Wayne Gacy: Devil in Disguise;
+- https://ling-online.com/ru/videos/serials/chicago-med_/ - Медики Чикаго;
+- https://ling-online.com/ru/videos/serials/how-to-get-away-with-murder/ - Как избежать наказания за убийство;
+- https://ling-online.com/ru/videos/serials/adventure-time/# - Время приключений;
