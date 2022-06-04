@@ -19,6 +19,27 @@ While some circles believe that the best way to scale Ethereum is through on-cha
 - developers can run dapps on Ethereum without encountering **halting problem** (inability to prevent code that runs indefinitely or in infinite loops) due to the usage of **Gas**;
 - Ethereum requires **gas** to be used for computations of executed code within a smart contract, so that a dapp is as efficient as is possible;
 
+### Gas
+
+- the pricing mechanism used on the Ethereum network;
+- calculates the costs (fees) for performing a transaction or executing a smart contract operation;
+- is a special unit that is used to measure how much "work" (computational resources) certain task requires;
+- **fees are still paid in ether (ETH)**;
+- each unit of gas has a "gas price" that is defined in **ether (ETH)**;
+- every transaction has a particular "gas price" for each unit of gas;
+- the gas cost is the amount of work, and the gas price is the price paid for "each hour" of work;
+- the gas pricing mechanism is important because it guarantees that fees are being charged in a fair and appropriate way;
+- **it prevents resources from being wasted on operations that are not valuable to the Ethereum network**;
+
+### Gas limit
+
+- the maximum price a cryptocurrency user is willing to pay when sending a transaction, or performing a smart contract function, in the Ethereum blockchain;
+- these fees are calculated in gas unit, and the gas limit defines the maximum value that the transaction or function can "charge" or take from the user;
+- the gas limit works as a security mechanism that prevents high fees from being incorrectly charged due to a bug or error in a smart contract;
+- if the gas limit and gas price (Gwei) are set to a higher level, the operation will occur much faster;
+- what really defines the value paid for transaction fees is the gas price;
+- the total cost of a transaction is the gas price (in Gwei) multiplied by the gas limit, which will result in the amount of Ether to be paid;
+
 ## ERC-20
 
 - ERC-20 is a technical standard used to issue and implement tokens on the Ethereum blockchain;
