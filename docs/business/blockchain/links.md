@@ -28,6 +28,10 @@
 - https://machina.storage/ - sharded data storage on NEAR;
 - https://medium.com/@nearprotocol - NEAR protocol on Medium;
 
+## Tools
+
+- https://www.alchemy.com/ - a developer platform that empowers companies to build scalable and reliable decentralized applications without the hassle of managing blockchain infrastructure in-house;
+
 ## Games
 
 - https://stepn.com/howToPlay - STEPN;
@@ -40,6 +44,10 @@
 
 - https://www.revault.network/ - revault;
 
+## Others
+
+- https://rugdoc.io/ - an organization that audits code on community projects and provides free educational resources to make DeFi safer;
+
 ## Crypto lending projects 
 
 ## Tools
@@ -49,6 +57,7 @@
 - https://trufflesuite.com/ - Framework for developing dapps on Ethereum;
 - https://defillama.com/ - DeFi Liama
 - https://www.coingecko.com/ - Coingecko
+- https://dcabtc.com/ - Dollar Cost Averaging Bitcoin;
 
 ### Test networks for DAPPs
 
