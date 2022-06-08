@@ -53,6 +53,10 @@ art not a doer of the law, but a judge."*
 
 **(Ezekiel 33:20 KJV)**
 
+*"For if we would judge ourselves, we should not be judged."*
+
+**(1 Corinthians 11:31 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
