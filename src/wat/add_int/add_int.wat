@@ -1,4 +1,5 @@
 (module
+    ;; Function that adds two ints
     (func (export "AddInt")
     (param $value_1 i32) (param $value_2 i32)
     (result i32)
