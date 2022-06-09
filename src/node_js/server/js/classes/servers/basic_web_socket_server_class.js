@@ -83,7 +83,7 @@ class BasicWebSocketServerClass extends EventEmitter {
 
     #bindReceiverStreamHandlers() {
         this.#receiverStream.on('message', (message, opcode) => {console.log('message', message, message.toString(), opcode)});
-        this.#receiverStream.on('error', (error) => console.log('receiver error'));
+        this.#receiverStream.on('error', (error) => console.log('receiver error', error.message));
     }
 
     #bindSenderSteamHandlers() {
