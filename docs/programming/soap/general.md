@@ -690,3 +690,7 @@ Content-Length: nnnn
 </s:Envelope>
 
 ```
+
+## SOAP service description
+
+Using WSDL, a web service can describe everything about what it does, how it does it, and how consumers of that web service can go about using it.
