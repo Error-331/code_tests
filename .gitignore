@@ -1,5 +1,6 @@
 .DS_STORE
 *.log
+*.wasm
 
 node_modules
 npm-debug.log

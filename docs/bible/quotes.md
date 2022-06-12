@@ -53,12 +53,26 @@ art not a doer of the law, but a judge."*
 
 **(Ezekiel 33:20 KJV)**
 
+*"For if we would judge ourselves, we should not be judged."*
+
+**(1 Corinthians 11:31 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
 hath an husband."*
 
 **(Galatians 4:27 KJV)**
+
+### Man / woman
+
+*"But I would have you know, that the head of every man is Christ; and the head of the woman is the man; and the head of Christ is God."*
+
+**(1 Corinthians 11:3 KJV)**
+
+*"For a man indeed ought not to cover his head, forasmuch as he is the image and glory of God: but the woman is the glory of the man."*
+
+**(1 Corinthians 11:7 KJV)**
 
 ## C.H. Spurgeon
 

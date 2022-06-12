@@ -3,9 +3,8 @@
 WebAssembly is a virtual Instruction Set Architecture (ISA) for a stack machine. Generally, an ISA is a binary format designed to execute 
 on a specific machine. 
 
-WebAssembly is designed to run on a virtual machine - it’s not designed for physical hardware.
-
-User must embed the WebAssembly binary in a host environment that controls the loading and initializing of a WebAssembly module.
+- WebAssembly is designed to run on a virtual machine - it’s not designed for physical hardware;
+- User must embed the WebAssembly binary in a host environment that controls the loading and initializing of a WebAssembly module;
 
 ## Libraries
 
@@ -33,4 +32,9 @@ It does it all with performance similar to native apps.
 
 Node.js can also run a WASI experimental preview using the `--experimental-wasi-unstable-preview1` flag. 
 
+## Tools
 
+### wat-wasm
+
+Installation: `npm install -g wat-wasm`;
+Usage: `wat2wasm file.wat`;

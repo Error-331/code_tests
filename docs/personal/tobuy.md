@@ -213,6 +213,7 @@ https://rozetka.com.ua/274853088/p274853088/ - Адаптер переходни
 https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
 https://rozetka.com.ua/150315698/p150315698/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0ingoHJHjGzcpF6Txk_kqMEp6fygDrMzS4yVATwc9f6BigCs6Fp3ZEaAmCIEALw_wcB - кабель для блока питания на usb
 https://www.aliexpress.com/item/4001300527726.html?spm=a2g0o.productlist.0.0.54da6da3ocvt9r&algo_pvid=324b65c4-08d1-4f3d-a89c-0e28565a0d3a&algo_exp_id=324b65c4-08d1-4f3d-a89c-0e28565a0d3a-24&pdp_ext_f=%7B%22sku_id%22%3A%2210000015673235510%22%7D&pdp_npi=2%40dis%21USD%21%2119.48%21%21%21%21%21%4021135c3816521128784571711ee6e6%2110000015673235510%21sea - usb hub в стол
+https://evse.com.ua/kontroller-pci-perekhodnik-na-5-usb-20-portov?gclid=CjwKCAjws8yUBhA1EiwAi_tpEQKfaZLFib_jtQiqgWFzGBuvzKu8zAh8DX68iPz0X7lMurtyEft6dRoCivgQAvD_BwE - Контроллер PCI переходник на 5 USB 2.0 портов
 
 ### Игры
 
