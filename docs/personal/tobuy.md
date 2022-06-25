@@ -226,3 +226,4 @@ https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-
 https://rozetka.com.ua/colorway_cw_chs012_wt/p236817007/ - блок питания для usv хаба
 https://rozetka.com.ua/patron_con_rj_45_8p8c_40/p12600219/ - коннекторы сетевые
 https://brain.com.ua/ukr/Blok_jhivlennya_do_promislovogo_PK_Raspberry_Pi_5V_USB_3A_EU_bez_kabelya_UCR-530-p740658.html - еще блок питания (поидеи для винчестера)
+https://hotline.ua/computer-istochniki-besperebojnogo-pitaniya/eaton-ellipse-eco-1200va-el1200usbdin/?gclid=EAIaIQobChMIlo7O2-2q-AIVByIYCh2ykwcNEAAYASAAEgLTyPD_BwE - УПС вертикальный

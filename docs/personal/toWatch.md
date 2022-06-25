@@ -24,6 +24,7 @@ https://en.wikipedia.org/wiki/Dr._Katz,_Professional_Therapist - Dr. Katz, Profe
 https://terribletvshows.miraheze.org/wiki/The_Mighty_B! - The Mighty B!
 https://terribletvshows.miraheze.org/wiki/Sanjay_and_Craig - Sanjay and Craig
 https://en.wikipedia.org/wiki/Jayce_and_the_Wheeled_Warriors - Jayce and the Wheeled Warriors
+https://filmix.ac/multserialy/nocat/93307-dzheys-i-voiny-na-kolesah-jayce-and-the-wheeled-warriors-multserial-1985.html - Jayce and the Wheeled Warriors;
 
 ## Готовое к просмотру
 
