@@ -95,3 +95,11 @@ Verify the password
 mysql -u root -p
 
 ```
+
+### Set UTC as default time zone
+
+```bash
+
+SET GLOBAL time_zone = 'UTC';
+
+```

@@ -57,6 +57,10 @@ art not a doer of the law, but a judge."*
 
 **(1 Corinthians 11:31 KJV)**
 
+*"Sin is not ended by multiplying words, but the prudent hold their tongues."*
+
+**(Proverbs 10:19 NIV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 

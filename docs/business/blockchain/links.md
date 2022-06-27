@@ -23,6 +23,10 @@
 - https://www.bitmex.com/ - crypto exchange;
 - https://www.0x.org/ - decentralized crypto exchange for tokens;
 
+## DeFi
+
+- https://curve.fi/ - Curve;
+
 ## dAPPs
 
 - https://machina.storage/ - sharded data storage on NEAR;
