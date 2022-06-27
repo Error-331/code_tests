@@ -2,6 +2,8 @@
 
 - A mutual fund is a collection of investment money pooled from many investors to be invested for a specific objective;
 - A mutual fund company is a type of financial intermediary;
+- sector funds, invest exclusively in stocks of a single industry (for instance, healthcare);
+- fund risk of bankruptcy is nil;
 
 ## Pros
 
@@ -25,6 +27,21 @@
 - close-end funds and ETFs trade at market price, which is heavily influenced by the value of the specific investments they own but can vary a bit based on supply and demand;
 - closed-end funds trade like securities on the stock exchange and because user must sell his shares to someone who wants to buy;
 - closed-end funds sometimes sell at a discount;
+
+## Basic steps to perform before investing
+
+1. Analyze company financial statements: financial reports of the companies (revenue, expenses, profits and losses, assets and liabilities, etc.);
+2. Talk with the muckety-mucks: talk to the persons running the companies;
+3. Analyze company and competitor strategies: the best fund managers and their researchers take a skeptical view of what a company’s execs say - they conduct own investigation work;
+4. Talk with company customers, suppliers, competitors, and industry consultants;
+5. Attend trade shows and review industry literature;
+6. Take a disciplined approach:  Discipline and process provides skilled managers with a clear framework to take advantage of good opportunities that others miss;
+
+## Types by asset
+
+1. Stock funds: if the user wants his money to grow over a long period of time (and he can put up with some bad years thrown in with the good);
+2. Bond funds: if the user needs current income and don’t want investments that fluctuate as widely in value as stocks do;
+3. Money market funds: if the user wants to be sure that he invested principal doesn’t drop in value because he may need to use his money in the short term;
 
 ## Mutual funds and exchange-traded funds
 
@@ -117,4 +134,4 @@ Early payback is a risk to bondholders because they may get their investment mon
 - an annuity gives no upfront tax deductions;
 - annuities also charge relatively high fees;
 
-Opting for Mutual Funds - 27
+Addressing the Drawbacks - 35
