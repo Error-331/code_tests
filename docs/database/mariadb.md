@@ -103,3 +103,16 @@ mysql -u root -p
 SET GLOBAL time_zone = 'UTC';
 
 ```
+
+### Create user and grant access to a DB
+
+```bash
+
+CREATE USER sergi@localhost IDENTIFIED BY 'password';
+
+DROP DATABASE IF EXISTS db_name;
+DROP DATABASE IF EXISTS trading_platform;
+GRANT ALL PRIVILEGES ON * . * TO 'serg'@'localhost';
+
+
+```
