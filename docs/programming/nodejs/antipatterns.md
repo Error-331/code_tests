@@ -1,6 +1,7 @@
 # Antipatterns
 
 ## Don’t starve the event loop 
+
 Running too much code in a single stack will stall the event loop and prevent other callbacks from firing. One way to fix this is to
 break CPU-heavy operations up across multiple stacks (using `setImmediate()`). It should never be done using `process.nextTick()`:
 
