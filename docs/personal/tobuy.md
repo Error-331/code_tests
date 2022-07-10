@@ -124,6 +124,7 @@ https://www.yakaboo.ua/ua/byt-piratom-kak-brosit-miru-vyzov-i-pobedit.html?utm_s
 https://www.yakaboo.ua/ua/last-days-of-summer.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop#proceed
 https://www.yakaboo.ua/ua/mamiglapinatapei-abo-ljubov-u-kiivs-kij-komunalci-1570986.html?gclid=Cj0KCQiAlZH_BRCgARIsAAZHSBkUvdzK8rsWPLARRPCJYA3-EfUK7Wp_Vo7BXJi4iWf_CHAcsifSb6gaApgzEALw_wcB
 https://www.yakaboo.ua/anatomija-boja-silovye-uprazhnenija-dlja-boevyh-iskusstv.html?gclid=CjwKCAjw1uiEBhBzEiwAO9B_HczraN7QOsWL_qknUYRwkUaQe4jyBqAzlqQc8c9tkogCCXhQb5CBOxoCejgQAvD_BwE#tab-reviews - Анатомия Боя. Силовые упражнения для боевых искусств
+https://www.amazon.com/Results-Obsession-ROI-Focused-Strategies-Transform/dp/0578686864/ref=sr_1_19?crid=2LTMGZZE2RK9R&keywords=etherium&qid=1649557121&s=books&sprefix=etherium%2Cstripbooks-intl-ship%2C152&sr=1-19 - The Results Obsession: ROI-Focused Digital Strategies to Transform Your Marketing
 
 https://biblia.in.ua/biblii/045zti-bibliya-oranzhevo-zheltaya-11918 - библия
 
@@ -194,12 +195,12 @@ https://bt.rozetka.com.ua/ua/179109694/p179109694/
 https://bt.rozetka.com.ua/ua/241983121/p241983121/
 https://bt.rozetka.com.ua/ua/71320642/p71320642/
 https://bt.rozetka.com.ua/ua/288802038/p288802038/
-https://bt.rozetka.com.ua/ua/95170335/p95170335/
-https://bt.rozetka.com.ua/ua/114036260/p114036260/
-https://bt.rozetka.com.ua/ua/120306946/p120306946/
+https://bt.rozetka.com.ua/ua/95170335/p95170335/ - !
+https://bt.rozetka.com.ua/ua/114036260/p114036260/ - !
+https://bt.rozetka.com.ua/ua/120306946/p120306946/ - !
 https://bt.rozetka.com.ua/ua/253885991/p253885991/
 https://bt.rozetka.com.ua/ua/257877226/p257877226/
-https://bt.rozetka.com.ua/ua/191126286/p191126286/
+https://bt.rozetka.com.ua/ua/191126286/p191126286/ - !
 
 ### Корпусы
 
@@ -210,8 +211,19 @@ https://ru.banggood.com/GAMEKM-M-ATX-Computer-Gaming-Case-Vertical-Graphics-Card
 
 https://rozetka.com.ua/274853088/p274853088/ - Адаптер переходник Kebidu AV RCA to HDMI
 https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
+https://rozetka.com.ua/150315698/p150315698/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0ingoHJHjGzcpF6Txk_kqMEp6fygDrMzS4yVATwc9f6BigCs6Fp3ZEaAmCIEALw_wcB - кабель для блока питания на usb
+https://www.aliexpress.com/item/4001300527726.html?spm=a2g0o.productlist.0.0.54da6da3ocvt9r&algo_pvid=324b65c4-08d1-4f3d-a89c-0e28565a0d3a&algo_exp_id=324b65c4-08d1-4f3d-a89c-0e28565a0d3a-24&pdp_ext_f=%7B%22sku_id%22%3A%2210000015673235510%22%7D&pdp_npi=2%40dis%21USD%21%2119.48%21%21%21%21%21%4021135c3816521128784571711ee6e6%2110000015673235510%21sea - usb hub в стол
+https://evse.com.ua/kontroller-pci-perekhodnik-na-5-usb-20-portov?gclid=CjwKCAjws8yUBhA1EiwAi_tpEQKfaZLFib_jtQiqgWFzGBuvzKu8zAh8DX68iPz0X7lMurtyEft6dRoCivgQAvD_BwE - Контроллер PCI переходник на 5 USB 2.0 портов
+
+### Игры
+
+https://lordofboards.com.ua/chudo-v-peryakh-ludum/?gclid=Cj0KCQjwspKUBhCvARIsAB2IYusu_1hB4JW-DWQkIW6VT_CRxAJ9hopGJlT5OraQPt86IMNms2pq8FYaAuDZEALw_wcB - Настільна гра "Чудо у пір'ячку"
 
 ### Разное
 
 https://edisons.com.ua/retro-provodka/retro-vyklyuchateli/page-2/ - розетки/выключатели
 https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-Proportional-Control-RC-Vehicle-Model-Without-Electronic-Element-No-Transmitter-No-Battery-p-1697008.html?cur_warehouse=CN&ID=45586&rmmds=search
+https://rozetka.com.ua/colorway_cw_chs012_wt/p236817007/ - блок питания для usv хаба
+https://rozetka.com.ua/patron_con_rj_45_8p8c_40/p12600219/ - коннекторы сетевые
+https://brain.com.ua/ukr/Blok_jhivlennya_do_promislovogo_PK_Raspberry_Pi_5V_USB_3A_EU_bez_kabelya_UCR-530-p740658.html - еще блок питания (поидеи для винчестера)
+https://hotline.ua/computer-istochniki-besperebojnogo-pitaniya/eaton-ellipse-eco-1200va-el1200usbdin/?gclid=EAIaIQobChMIlo7O2-2q-AIVByIYCh2ykwcNEAAYASAAEgLTyPD_BwE - УПС вертикальный

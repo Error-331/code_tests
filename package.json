@@ -25,7 +25,6 @@
         "@babel/plugin-proposal-private-methods": "7.12.1",
         "core-js": "3.1.2",
         "babel-loader": "8.0.6",
-        "elm": "^0.18.0",
         "json-loader": "^0.5.7",
         "jsonfile": "^4.0.0",
         "minimist": "^1.2.0",
@@ -38,6 +37,9 @@
         "worker-loader": "^0.7.1"
     },
     "dependencies": {
+        "@yfi/sdk": "2.1.0",
+        "@ethersproject/contracts": "5.6.2",
+        "@ethersproject/providers": "5.6.8",
         "fluture": "^5.0.0",
         "lodash": "4.17.11",
         "lodash-fantasy": "https://github.com/jlmorgan/node-lodash-fantasy/tarball/feature/refactor",
@@ -57,6 +59,8 @@
         "semver": "6.3.0",
         "chalk": "2.4.2",
         "gl-matrix": "^2.6.1",
-        "axios": "0.21.1"
+        "axios": "0.21.1",
+        "ws": "8.5.0",
+        "web3": "1.7.3"
     }
 }
