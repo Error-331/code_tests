@@ -321,3 +321,11 @@ He struggled, faced temptations, and knew hunger and thirst. He was tired. He wo
 
 ...We all have that certain friend or family member who requires an extra measure of grace. This can try our patience, but the way we respond to them will often be directly 
 proportional to the level of grace we have received from the Holy Spirit...
+
+#### Warning and Patience
+
+*"We urge you, brothers and sisters, warn those who are idle and disruptive, encourage the disheartened, help the weak, be patient with everyone."*
+
+**(1 Thessalonians 5:14 NIV)**
+
+...Correction and patience must go hand in hand. Correction without patience is anger. Patience without correction is avoidance. Being a godly leader requires both in equal balance...
