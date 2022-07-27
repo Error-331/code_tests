@@ -82,7 +82,7 @@ hath an husband."*
 
 ### Faith's Checkbook
 
-### Presence of Mind
+#### Presence of Mind
 
 *"Do not be afraid of sudden terror, nor of trouble from the wicked when it comes; for the Lord will be your confidence, 
 and will keep your foot from being caught"*
@@ -90,6 +90,14 @@ and will keep your foot from being caught"*
 **(Proverbs 3:25-26)**
 
 _Whole devotion_
+
+#### Nothing to Alarm Us
+
+*"As for you, go your way till the end. You will rest, and then at the end of the days you will rise to receive your allotted inheritance."*
+
+**(Daniel 12:13 NIV)**
+
+...Calmly resolute in duty, brave in conflict, patient in suffering, let us go our way, keeping to our road, neither swerving from it, nor loitering in it...
 
 #### God Only, You Can Trust (December 26)
 
