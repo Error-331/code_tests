@@ -2,6 +2,16 @@
 
 ## Examples
 
+### Simple
+
+- Open TCP connection and send some text via *telnet*:
+
+```bash
+
+curl telnet://192.168.0.170:59403 <<< someText
+
+```
+
 ### Complex
 
 - Example 1:
