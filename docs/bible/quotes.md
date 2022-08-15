@@ -84,6 +84,13 @@ hath an husband."*
 
 **(1 Corinthians 11:7 KJV)**
 
+### Unnatural
+
+*"These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and 
+pilgrims on the earth."*
+
+**(Hebrews 11:13 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
@@ -343,3 +350,13 @@ proportional to the level of grace we have received from the Holy Spirit...
 **(1 Thessalonians 5:14 NIV)**
 
 ...Correction and patience must go hand in hand. Correction without patience is anger. Patience without correction is avoidance. Being a godly leader requires both in equal balance...
+
+##### Overcoming Procrastination
+
+"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."
+
+**(Ecclesiastes 10:18 NIV)**
+
+...It may seem harsh, but laziness is a leaned behavior...
+
+...In the same way it takes time to develop patterns of procrastination...
