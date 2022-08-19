@@ -201,6 +201,15 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 
 ...The Lord will cause us to stand in our lot, and our place is appointed by His infinite wisdom...
 
+### Uncover and Confess Sin
+
+*"He who covers his sins will not prosper, but whoever confesses and forsakes them will have mercy"*
+
+**(Proverbs 28:13)**
+
+...He must cease from the habit of covering sin...
+...This is attempted by falsehood, which denies sin; by hypocrisy, which conceals it; by boasting, which justifies it, and by loud profession, which tries to make amends for it...
+
 ## Angus Buchan
 
 ### In Quietness and Trust
