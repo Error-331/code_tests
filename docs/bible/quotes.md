@@ -360,12 +360,22 @@ proportional to the level of grace we have received from the Holy Spirit...
 
 ...Correction and patience must go hand in hand. Correction without patience is anger. Patience without correction is avoidance. Being a godly leader requires both in equal balance...
 
-##### Overcoming Procrastination
+#### Overcoming Procrastination
 
-"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."
+*"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."*
 
 **(Ecclesiastes 10:18 NIV)**
 
 ...It may seem harsh, but laziness is a leaned behavior...
 
 ...In the same way it takes time to develop patterns of procrastination...
+
+#### Suffering
+
+*"For it has been granted to you that for the sake of Christ you should not only believe in him but also suffer for his sake."*
+
+**(Philippians 1:29)**
+
+...Yet, from a biblical standpoint, suffering is the means by which the Lord conforms us into the image of the Son (Romans 8:29)...
+
+...When "bad" things happen in our lives, may we not ask, "Why me?" but rather, "What are you teaching me?"
