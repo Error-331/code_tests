@@ -1,5 +1,11 @@
 # Quotes
 
+## Index
+
+### Betrayal
+
+**1 Samuel 23:11-13**
+
 ## Bible
 
 *"Now faith is the substance of things hoped for, the evidence of things not seen."*
@@ -78,11 +84,18 @@ hath an husband."*
 
 **(1 Corinthians 11:7 KJV)**
 
+### Unnatural
+
+*"These all died in faith, not having received the promises, but having seen them afar off, and were persuaded of them, and embraced them, and confessed that they were strangers and 
+pilgrims on the earth."*
+
+**(Hebrews 11:13 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
 
-### Presence of Mind
+#### Presence of Mind
 
 *"Do not be afraid of sudden terror, nor of trouble from the wicked when it comes; for the Lord will be your confidence, 
 and will keep your foot from being caught"*
@@ -90,6 +103,14 @@ and will keep your foot from being caught"*
 **(Proverbs 3:25-26)**
 
 _Whole devotion_
+
+#### Nothing to Alarm Us
+
+*"As for you, go your way till the end. You will rest, and then at the end of the days you will rise to receive your allotted inheritance."*
+
+**(Daniel 12:13 NIV)**
+
+...Calmly resolute in duty, brave in conflict, patient in suffering, let us go our way, keeping to our road, neither swerving from it, nor loitering in it...
 
 #### God Only, You Can Trust (December 26)
 
@@ -179,6 +200,15 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 **(Psalm 47:8)**
 
 ...The Lord will cause us to stand in our lot, and our place is appointed by His infinite wisdom...
+
+### Uncover and Confess Sin
+
+*"He who covers his sins will not prosper, but whoever confesses and forsakes them will have mercy"*
+
+**(Proverbs 28:13)**
+
+...He must cease from the habit of covering sin...
+...This is attempted by falsehood, which denies sin; by hypocrisy, which conceals it; by boasting, which justifies it, and by loud profession, which tries to make amends for it...
 
 ## Angus Buchan
 
@@ -321,3 +351,31 @@ He struggled, faced temptations, and knew hunger and thirst. He was tired. He wo
 
 ...We all have that certain friend or family member who requires an extra measure of grace. This can try our patience, but the way we respond to them will often be directly 
 proportional to the level of grace we have received from the Holy Spirit...
+
+#### Warning and Patience
+
+*"We urge you, brothers and sisters, warn those who are idle and disruptive, encourage the disheartened, help the weak, be patient with everyone."*
+
+**(1 Thessalonians 5:14 NIV)**
+
+...Correction and patience must go hand in hand. Correction without patience is anger. Patience without correction is avoidance. Being a godly leader requires both in equal balance...
+
+#### Overcoming Procrastination
+
+*"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."*
+
+**(Ecclesiastes 10:18 NIV)**
+
+...It may seem harsh, but laziness is a leaned behavior...
+
+...In the same way it takes time to develop patterns of procrastination...
+
+#### Suffering
+
+*"For it has been granted to you that for the sake of Christ you should not only believe in him but also suffer for his sake."*
+
+**(Philippians 1:29)**
+
+...Yet, from a biblical standpoint, suffering is the means by which the Lord conforms us into the image of the Son (Romans 8:29)...
+
+...When "bad" things happen in our lives, may we not ask, "Why me?" but rather, "What are you teaching me?"
