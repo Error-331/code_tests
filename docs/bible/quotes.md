@@ -67,6 +67,12 @@ art not a doer of the law, but a judge."*
 
 **(Proverbs 10:19 NIV)**
 
+*"Then Jesus said to them, 'Suppose you have a friend, and you go to him at midnight and say, `Friend, lend me three loaves of bread; a friend of mine on a journey has come to me, and 
+I have no food to offer him.` And suppose the one inside answers, `Don’t bother me. The door is already locked, and my children and I are in bed. I can’t get up and give you anything.`
+I tell you, even though he will not get up and give you the bread because of friendship, yet because of your shameless audacity he will surely get up and give you as much as you need.'"*
+
+**(Luke 11:5-8 NIV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
