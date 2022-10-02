@@ -385,3 +385,11 @@ proportional to the level of grace we have received from the Holy Spirit...
 ...Yet, from a biblical standpoint, suffering is the means by which the Lord conforms us into the image of the Son (Romans 8:29)...
 
 ...When "bad" things happen in our lives, may we not ask, "Why me?" but rather, "What are you teaching me?"
+
+#### The Lord's Prayer
+
+*"Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil."*
+
+**(Matthew 6:11-13)**
+
+...Prayer is an attitude of the heart that humbles itself before God and cries out, "I need you!"...
