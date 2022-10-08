@@ -393,3 +393,11 @@ proportional to the level of grace we have received from the Holy Spirit...
 **(Matthew 6:11-13)**
 
 ...Prayer is an attitude of the heart that humbles itself before God and cries out, "I need you!"...
+
+#### Walking in Love
+
+*"Therefore be imitators of God, as beloved children. 2 And walk in love, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God."*
+
+**(Ephesians 5:1-2)**
+
+...There's little room for complaining how hard it is to love another person because it is the love of Jesus, not our own, that we're giving.
