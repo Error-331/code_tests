@@ -53,6 +53,26 @@ While some circles believe that the best way to scale Ethereum is through on-cha
 - ERC-20 is not compliant with Ether (ETH), because it was created before the standard;
 - ERC-20 token that represents Ether at a **1:1** ratio (1 WETH = 1 ETH) is Wrapped Ether (WETH);
 
+### Stablecoins
+
+- Stablecoins (tokens pegged to fiat currencies) often use the ERC-20 token standard;
+- An issuer launches a contract with 10,000 tokens;
+- Then they’ll distribute them to users with the promise that they can later redeem the tokens for a proportionate amount of fiat currency;
+- Users  can buy goods and services with these tokens or use them in DApps;
+- Alternatively, they could request that the issuer exchange them right away (the issuer burns the returned tokens);
+
+### Security tokens
+
+- Security tokens are similar to stablecoins;
+- Security tokens represent securities, such as stocks, bonds, or physical assets;
+- Often they grant the holder some kind of stake in a business or good;
+
+###cUtility tokens
+
+- These tokens are not backed by anything; 
+- They serve a function, but they have no external value; 
+- Use cases: in-game currency, fuel for decentralized applications, loyalty points, etc.;
+
 ## Plasma
 
 - It is an off-chain scaling technique, or a framework for building scalable applications, which can be implemented in distinct ways by different research groups or companies;
