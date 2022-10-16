@@ -1,0 +1,142 @@
+{
+  "name": "bacon",
+  "version": "0.0.1",
+  "description": "BrightAuthor Connected",
+  "main": "index.js",
+  "author": "BrightSign LLC",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git@git.brightsign.biz:bacon"
+  },
+  "engines": {
+    "node": "14.16.0",
+    "npm": "6.14.11"
+  },
+  "scripts": {
+    "package-link": "exit 0",
+    "package-install": "exit 0",
+    "package-submodule": "npm run build-production-all",
+    "mk-dist": "node bin/mkDist.js",
+    "rm-dist": "node bin/rmDist.js",
+    "clean-dist": "npm run rm-dist && npm run mk-dist ",
+    "hmr-server-desktop": "npm run clean-dist && cross-env DEPLOYMENT_MODE=hmr NODE_ENV=development PLATFORM=desktop node bin/server.js",
+    "hmr-server-browser": "npm run clean-dist && cross-env DEPLOYMENT_MODE=hmr NODE_ENV=development PLATFORM=browser node bin/server.js",
+    "hmr-server-browser-with-maps": "npm run clean-dist && cross-env SOURCE_MAP=production DEPLOYMENT_MODE=hmr NODE_ENV=development PLATFORM=browser NODE_OPTIONS=--max_old_space_size=8192 node bin/server.js",
+    "static-builder-desktop": "npm run clean-dist && cross-env DEPLOYMENT_MODE=static NODE_ENV=development PLATFORM=desktop webpack --progress --config build/webpack.config.static.js",
+    "static-builder-browser": "npm run clean-dist && cross-env DEPLOYMENT_MODE=static NODE_ENV=development PLATFORM=browser webpack --progress --config build/webpack.config.static.js",
+    "hmr-client": "cross-env DEPLOYMENT_MODE=hmr NODE_ENV=development PLATFORM=desktop electron ./build/babel.electron.hmr.registerer.js",
+    "static-client": "cross-env DEPLOYMENT_MODE=static NODE_ENV=development PLATFORM=desktop electron ./build/babel.electron.hmr.registerer.js",
+    "build-production-browser": "cross-env DEPLOYMENT_MODE=static NODE_ENV=production PLATFORM=browser webpack --progress --config build/webpack.config.static.js",
+    "build-production-desktop-render": "cross-env DEPLOYMENT_MODE=static NODE_ENV=production PLATFORM=desktop webpack --progress --config build/webpack.config.static.js",
+    "build-production-desktop-main": "cross-env DEPLOYMENT_MODE=static NODE_ENV=production PLATFORM=desktop webpack --progress --config build/webpack.config.desktop.js",
+    "build-production-desktop": "npm run build-production-desktop-render && npm run build-production-desktop-main",
+    "build-production-all": "npm run clean-dist && npm run build-production-browser && npm run build-production-desktop",
+    "package-production": "node ./build/packaging/src/index.js",
+    "test": "cross-env NODE_ENV=test BABEL_DISABLE_CACHE=1 babel-node ./test/testRunner.js",
+    "lint-client": "eslint ./src",
+    "lint-platform": "eslint ./platform"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-redux": "^5.0.6",
+    "analytics-node": "^3.1.1",
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.17",
+    "@babel/core": "7.12.17",
+    "@babel/node": "^7.15.4",
+    "@babel/plugin-proposal-class-properties": "7.13.0",
+    "@babel/plugin-proposal-export-default-from": "7.12.13",
+    "@babel/preset-env": "7.12.17",
+    "@babel/preset-react": "7.12.13",
+    "@babel/preset-typescript": "7.13.0",
+    "@babel/register": "^7.13.16",
+    "@babel/runtime": "7.13.7",
+
+
+    "@types/prop-types": "^15.7.4",
+    "@types/react-addons-test-utils": "^0.14.20",
+    "@types/react-dnd-html5-backend": "^2.1.4",
+    "@types/regenerator-runtime": "^0.13.1",
+    "@typescript-eslint/eslint-plugin": "4.26.0",
+    "@typescript-eslint/parser": "4.26.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-loader": "8.2.2",
+    "babel-plugin-dev-expression": "0.2.2",
+    "chalk": "4.1.1",
+    "clean-webpack-plugin": "3.0.0",
+    "clone": "^2.1.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "cross-env": "^3.2.4",
+    "css-loader": "5.0.2",
+    "css-minimizer-webpack-plugin": "2.0.0",
+    "debug": "^2.2.0",
+    "devtron": "^1.4.0",
+    "electron": "12.0.11",
+    "electron-debug": "3.2.0",
+    "electron-devtools-installer": "3.2.0",
+    "enzyme": "^3.11.0",
+    "eslint": "7.27.0",
+    "eslint-formatter-pretty": "4.0.0",
+    "eslint-plugin-react": "7.24.0",
+    "eslint-webpack-plugin": "2.5.4",
+    "express": "^4.14.0",
+    "file-loader": "6.2.0",
+    "fs-extra": "^4.0.2",
+    "html-webpack-plugin": "5.2.0",
+    "image-size": "^0.6.2",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "1.5.0",
+    "node-sass": "5.0.0",
+    "postcss-loader": "5.0.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-app-polyfill": "^2.0.0",
+    "redux-mock-store": "^1.5.4",
+    "sass-loader": "11.0.1",
+    "source-map-support": "^0.4.14",
+    "style-loader": "2.0.0",
+    "typescript": "^4.0.5",
+    "uglifyjs-webpack-plugin": "^1.0.0-beta.3",
+    "url-loader": "4.1.1",
+    "source-map-loader": "3.0.0",
+    "webpack": "5.37.0",
+    "webpack-bundle-analyzer": "4.4.0",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-middleware": "4.1.0",
+    "webpack-hot-middleware": "2.25.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "devEngines": {
+    "node": ">=6.x",
+    "npm": ">=3.x"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/test/setupTests.js"
+    ],
+    "testMatch": [
+      "<rootDir>/test/**/**.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/test/mock/fileMock.js",
+      "\\.(css|less|scss)$": "<rootDir>/test/mock/styleMock.js"
+    },
+    "globals": {
+      "__PLATFORM__": "browser"
+    }
+  }
+}
