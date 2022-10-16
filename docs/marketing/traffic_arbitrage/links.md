@@ -103,18 +103,15 @@
 ### Статьи
 
 - https://everymatrix.com/the-art-of-giving-the-right-bonus-at-the-right-time-to-the-right-player/?utm_source=social&utm_medium=Linkedin&utm_campaign=BE2020&utm_content=article1 - удержка внимания;
-
 - https://apptica.com/ - сервис мобильной аналитики;
-
 - https://mobile.adplexity.com/ - большой сервис аналитики;
-
 - https://zorbasmedia.ru/intervyu-s-ovnerom-magicapps/ - Интервью с овнером MagicApps;
-
 - https://zorbasmedia.ru/ot-raboty-na-zavode-do-topovyh-vebmasterov-pdl-profit-s-oborotom-50-k-v-mesyats-za-polgoda/ - От работы на заводе до ТОПовых вебмастеров PDL-Profit с оборотом $50к+ в месяц за полгода;
-
 - https://zorbasmedia.ru/kejs-raskrutka-mobilnogo-prilozheniya-v-google-play/ - Кейс: Раскрутка мобильного приложения в Google Play;
-
 - https://zorbasmedia.ru/novyj-metod-identifikatsii-polzovatelya-bez-ispolzovaniya-cookies/ - etag;
+
+- https://vc.ru/u/596515-vasiliy-nashiba - Василий Нашиба, список статей по арбитражу;
+- https://vc.ru/u/596515-vasiliy-nashiba/247530-video-kak-pravilno-delat-kreativy-dlya-facebook - КАК ПРАВИЛЬНО ДЕЛАТЬ КРЕАТИВЫ ДЛЯ FACEBOOK;
 
 ## TikTok
 

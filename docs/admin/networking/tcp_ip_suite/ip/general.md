@@ -129,3 +129,77 @@ _Host ID - 0.0.13.177_
 
 - the devices must know how to use IP addresses on the network (must be able to tell which bits are used for each ID);
 - the dividing line in IP address is not predefined (depends on the type of addressing used in the network);
+- three main categories of IP addressing schemes: classful, subnetted, and classless;
+
+### Conventional (Classful) Addressing
+
+- three main classes of addresses—A, B, and C—are differentiated based on how many octets are used for the network ID and how many for the host ID;
+- this most basic addressing type uses the simplest method to divide the network and host IDs;
+- the class (dividing point), are encoded into the first few bits of each address;
+- routers can tell from these bits which octets belong to which identifier;
+
+Example:
+
+- Class C addresses devote 24 bits to the network ID and 8 bits to the host ID;
+
+### Subnetted Classful Addressing
+
+- the two-tier network and host division is made into a three-tier system by taking some number of bits from a Class A, B, or C host ID and using them 
+  for a subnet identifier (subnet ID); 
+- the network ID is unchanged; 
+- the subnet ID is used for routing within the different subnetworks that constitute a complete network; 
+- the dividing line between the subnet ID and the “subhost” ID is indicated by a 32-bit number called a *subnet mask*;
+
+Example: 
+
+- class C address that normally uses the first 24 bits for the network ID and remaining 8 bits for the host ID;
+- the host ID can be split into 3 bits for a subnet ID and 5 bits for the host ID;
+- this system is based on the original classful scheme (the dividing line between the network ID and full host ID is based on the first few bits 
+  of the address);
+- the subnet mask would be 27 ones followed by 5 zeros—the zeros indicate what part of the address is the host; 
+- in dotted decimal notation, this would be 255.255.255.224;
+
+### Classless Addressing
+
+- the division between the network ID and host ID can occur at an arbitrary point, not just on octet boundaries;
+- the dividing point is indicated by putting the number of bits used for the network ID, called the prefix length, after the address;
+
+Example:
+
+- 227.82.157.177 is part of a network where the first 27 bits are used for the network ID;
+- that network would be specified as 227.82.157.160/27; 
+- the /27 is conceptually the same as the 255.255.255.224 subnet mask, since it has 27 one bits followed by 5 zeros;
+
+### Subnet Mask and Default Gateway
+
+- if either subnetting or classless addressing is used, then the subnet mask (or slash number) is required to fully qualify the address; 
+- these numbers are considered adjuncts to the IP address and usually mentioned with the address itself;
+- one other number that is often specified along with the IP address for a device is the *default gateway identifier*; 
+- this is the IP address of the router that provides default routing functions for a particular device;
+
+## Number of IP Addresses and Multihoming
+
+- host = network interface;
+- if a device has more than one interface to the internetwork, it will have more than one IP address (example: router);
+- **multihomed** - when host have more than one IP address;
+- when **subnetting** is used, the same distinction can be made between multihoming to the same subnet or a different subnet;
+
+### Two or More Interfaces to the Same Network
+
+Devices such as servers or high-powered workstations may be equipped with two physical interfaces to the same network for performance and reliability reasons.
+
+### Interfaces to Two or More Different Networks
+
+- devices may have multiple interfaces to different networks;
+- the IP addresses will typically have different network IDs in them;
+
+## IP Address Management and Assignment Methods and Authorities
+
+- Internet Assigned Number Authority (IANA) - responsible for allocating IP addresses, along with other important centralized coordination functions 
+  such as managing universal parameters used for TCP/IP protocols;
+- Internet Corporation for Assigned Names and Numbers (ICANN) - successor to IANA;
+- Addressing is classless, using **CIDR’s** hierarchical addressing scheme;
+- IANA doesn’t assign addresses directly, but rather delegates them to regional Internet registries (RIRs);
+- RIRs: APNIC, ARIN, LACNIC, RIPE NCC;
+- Each RIR can, in turn, delegate blocks of addresses to lower-level registries such as national Internet registries (NIRs) and local Internet registries (LIRs);
+- Blocks of addresses are obtained by ISPs for distribution to end-user organizations;

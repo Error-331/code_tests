@@ -67,6 +67,12 @@ art not a doer of the law, but a judge."*
 
 **(Proverbs 10:19 NIV)**
 
+*"Then Jesus said to them, 'Suppose you have a friend, and you go to him at midnight and say, `Friend, lend me three loaves of bread; a friend of mine on a journey has come to me, and 
+I have no food to offer him.` And suppose the one inside answers, `Don’t bother me. The door is already locked, and my children and I are in bed. I can’t get up and give you anything.`
+I tell you, even though he will not get up and give you the bread because of friendship, yet because of your shameless audacity he will surely get up and give you as much as you need.'"*
+
+**(Luke 11:5-8 NIV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
@@ -200,6 +206,15 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 **(Psalm 47:8)**
 
 ...The Lord will cause us to stand in our lot, and our place is appointed by His infinite wisdom...
+
+### Uncover and Confess Sin
+
+*"He who covers his sins will not prosper, but whoever confesses and forsakes them will have mercy"*
+
+**(Proverbs 28:13)**
+
+...He must cease from the habit of covering sin...
+...This is attempted by falsehood, which denies sin; by hypocrisy, which conceals it; by boasting, which justifies it, and by loud profession, which tries to make amends for it...
 
 ## Angus Buchan
 
@@ -351,12 +366,38 @@ proportional to the level of grace we have received from the Holy Spirit...
 
 ...Correction and patience must go hand in hand. Correction without patience is anger. Patience without correction is avoidance. Being a godly leader requires both in equal balance...
 
-##### Overcoming Procrastination
+#### Overcoming Procrastination
 
-"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."
+*"If a man is lazy, the rafters sag; If his hands are idle, the house leaks."*
 
 **(Ecclesiastes 10:18 NIV)**
 
 ...It may seem harsh, but laziness is a leaned behavior...
 
 ...In the same way it takes time to develop patterns of procrastination...
+
+#### Suffering
+
+*"For it has been granted to you that for the sake of Christ you should not only believe in him but also suffer for his sake."*
+
+**(Philippians 1:29)**
+
+...Yet, from a biblical standpoint, suffering is the means by which the Lord conforms us into the image of the Son (Romans 8:29)...
+
+...When "bad" things happen in our lives, may we not ask, "Why me?" but rather, "What are you teaching me?"
+
+#### The Lord's Prayer
+
+*"Give us this day our daily bread, and forgive us our debts, as we also have forgiven our debtors. And lead us not into temptation, but deliver us from evil."*
+
+**(Matthew 6:11-13)**
+
+...Prayer is an attitude of the heart that humbles itself before God and cries out, "I need you!"...
+
+#### Walking in Love
+
+*"Therefore be imitators of God, as beloved children. 2 And walk in love, as Christ loved us and gave himself up for us, a fragrant offering and sacrifice to God."*
+
+**(Ephesians 5:1-2)**
+
+...There's little room for complaining how hard it is to love another person because it is the love of Jesus, not our own, that we're giving.
