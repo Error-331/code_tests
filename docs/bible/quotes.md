@@ -401,3 +401,11 @@ proportional to the level of grace we have received from the Holy Spirit...
 **(Ephesians 5:1-2)**
 
 ...There's little room for complaining how hard it is to love another person because it is the love of Jesus, not our own, that we're giving.
+
+#### Sacramental People
+
+*"Beloved, if God so loved us, we also ought to love one another."*
+
+**(1 John 4:11 ESV)**
+
+...Love gets down to the nitty-gritty details of reaching out to people's needs...
