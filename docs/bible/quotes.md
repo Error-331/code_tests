@@ -73,6 +73,10 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(Luke 11:5-8 NIV)**
 
+*"Take heed to yourselves: If thy brother trespass against thee, rebuke him; and if he repent, forgive him."*
+
+**(Luke 17:3 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
