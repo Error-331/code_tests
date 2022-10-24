@@ -43,6 +43,50 @@ class TestClass2 {
     }
 }
 
+class DBListClass {
+    onDataRowChanged(rowNumber, value) {
+        console.log(`Changed row number (list): ${rowNumber}; value: ${value}`);
+    }
+}
+
+class DBORowProxyClass {
+    #dataArrayProxy = null;
+    #rowNum = null;
+
+    constructor(dataArrayProxy, rowNum) {
+        this.#dataArrayProxy = dataArrayProxy;
+        this.#rowNum = rowNum;
+    }
+
+    set(target, property, value, receiver) {
+        console.log(`Changed row number (row): ${this.#rowNum}; value: ${value}`);
+        return Reflect.set(...arguments);
+    }
+}
+
+class DBArrayProxyClass {
+    #sublist = null;
+
+    constructor(sublist, dataArray) {
+        this.#sublist = sublist;
+
+        for (let rowIdx = 0; rowIdx < dataArray.length; rowIdx++) {
+            const rowHandlerObject = new DBORowProxyClass(this, rowIdx);
+            dataArray[rowIdx] = new Proxy(dataArray[rowIdx], rowHandlerObject);
+        }
+    }
+
+    set(target, property, value, receiver) {
+        const rowHandlerObject = new DBORowProxyClass(this, property);
+        const newObject = new Proxy(value, rowHandlerObject);
+
+        this.#sublist.onDataRowChanged(property, newObject);
+        target[property] = newObject;
+
+        return true;
+    }
+}
+
 const TestParentObjectConstructor1 = function(prop1) {
     this.testProp1 = prop1;
 };
@@ -59,7 +103,7 @@ const testObject1 = {
 };
 
 const testObject2Class1 = new TestClass1('test_private_prop1_val1');
-const testObject1Class2 = new TestClass1('test_private_prop1_val1');
+const testObject1Class2 = new TestClass2('test_private_prop1_val1');
 
 const testSubObject1 = new TestSubObjectConstructor1('test_prop1_val1', 'test_prop2_val1');
 
@@ -152,14 +196,21 @@ const testProxy2Object1Class1 = new Proxy(testObject2Class1, testObject1Class1Pr
 
 const testProxy1Object1Class2 = new Proxy(testObject1Class2, testObject1Class2Proxy1);
 
-const testProxy1Array1 = new Proxy([
+const networksArray1 = [
     { id: 1, network: 'Xitrix1', type: 'cloud' },
     { id: 2, network: 'Xitrix2', type: 'cloud' },
     { id: 3, network: 'ThreeFlags1', type: 'com' },
     { id: 4, network: 'ThreeFlags2', type: 'com' },
     { id: 5, network: 'Kia', type: 'cloud' },
     { id: 6, network: 'Keen', type: 'com' },
-], testArray1Proxy1);
+]
+
+const testProxy1Array1 = new Proxy(networksArray1, testArray1Proxy1);
+
+const dbListInstance = new DBListClass();
+const dbArrayProxyHandler = new DBArrayProxyClass(dbListInstance, networksArray1);
+
+const dbArrayProxy = new Proxy(networksArray1, dbArrayProxyHandler);
 
 console.log('Investigation of object proxy feature');
 console.log('=====================================');
@@ -196,7 +247,7 @@ console.log('testProxy2Object1Class1.pProp1:', testProxy2Object1Class1.pProp1);
 
 console.log('');
 
-console.log('testProxy1Object1Class2.pProp1:', testProxy1Object1Class2.pProp1);
+console.log('testProxy1Object1Class2.pProp1:', testProxy1Object1Class2.pProp1());
 
 console.log('');
 
@@ -217,3 +268,19 @@ console.log('');
 console.log('testProxy1Array1[1]:', testProxy1Array1[1]);
 console.log('testProxy1Array1[3]:', testProxy1Array1[3]);
 console.log('testProxy1Array1[6]:', testProxy1Array1[6]);
+
+console.log('');
+
+console.log('dbArrayProxy[4]:', dbArrayProxy[4]);
+dbArrayProxy[4] = {}
+console.log('dbArrayProxy[4]:', dbArrayProxy[4]);
+
+dbArrayProxy[4].testProp1 = 'test_prop1_value1';
+console.log(dbArrayProxy[4]);
+
+console.log('');
+
+console.log('dbArrayProxy[1].network:', dbArrayProxy[1].network);
+dbArrayProxy[1].network = 'test_network';
+console.log('dbArrayProxy[1].network:', dbArrayProxy[1].network);
+console.log('dbArrayProxy[1]:', dbArrayProxy[1]);
