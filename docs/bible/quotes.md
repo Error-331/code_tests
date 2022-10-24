@@ -77,6 +77,12 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(Luke 17:3 KJV)**
 
+*"So likewise ye, when ye shall have done all those things which are commanded you, say, We are unprofitable servants: we have done that which was our duty to do."*
+
+**(Luke 17:10 KJV)**
+
+...a servant does not have the right to be served...
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
