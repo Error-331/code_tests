@@ -278,7 +278,7 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 
 #### Praising God through My Tears
 
-*For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning.*
+*"For his anger endureth but a moment; in his favour is life: weeping may endure for a night, but joy cometh in the morning."*
 
 **(Psalm 30:5 KJV)**
 
@@ -289,6 +289,14 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 ...The acronym for G.R.A.C.E. God's riches at Christ's expense...
 
 ...It cost God everything to extend His grace to you and me. Therefore He understand when you are wrestling with a difficult situation and grace does not come easily to you...
+
+#### Vengeance is mine
+
+*"Beloved, do not avenge yourselves, but rather give place to wrath; for it is written, 'Vengeance is Mine, I will repay," says the Lord.'*
+
+**(Romans 12:19)**
+
+...Unforgiveness is a terrible thing; it eats away at you, slowly but surely destroying you...
 
 ## Various authors
 
