@@ -20,6 +20,11 @@ Balance sheet (the fundamental financial statement) - listing of a company's ass
 
 Main formula: Assets = Liability + Equity;
 
+|      | Assets    |           |      | Liabilities      |               |      | Equity        |
+|:----:|:---------:|:---------:|:----:|:----------------:|:-------------:|:----:|:-------------:|
+| Cash | Inventory | Equipment |  =   | Accounts Payable | Notes Payable |   +  | Capital Stock |
+
+
 Receivables - money owed to company;
 
 Assets:
@@ -189,3 +194,111 @@ _Multiple transactions_
 | Subtotal          | $75.000 | $14.000   | $0        | = | $14.000          |               | + |               |
 | 4                 | -15.000 |           | +15.000   |   |                  |               |   |               |
 | Total             | $60.000 | $14.000   | $15.000   | = | $14.000          | $25.000       | + | $50.000       |
+
+#### T Account
+
+T Account - Debit and Credit
+
+Example:
+
+_Cash_
+
+| Cash  |        |
+|:-----:|:------:|
+| Debit | Credit |
+
+Debit (DR) - left;
+Credit (CR) - right;
+
+- Asset accounts will usually have debit balances;
+- Liabilities and owner's equity accounts will typically have credit balances;
+
+Debits = Credits;
+
+- Debits on the left, credits on the right;
+- At least one debit and one credit;
+- Debits must always equal credits;
+
+Example:
+
+```text
+
+Business Activity (Transactions)                                          Effect in Terms of Accounting Equation
+
+                                                     Assets               =             Liabilities           +            Owner's equity
+                                        ────────────────┰────────────────   ────────────────┰────────────────   ────────────────┰────────────────
+1 Investment by owners                           Cash   │                                   │                                   │  Capital Stock
+                                                 (Dr) + │                                   │                                   │       (Cr) +
+                                                        │                                   │                                   │
+2 Borrow money from bank                         Cash   │                                   │ Notes Payable                     │
+                                                 (Dr) + │                                   │     (Cr) +                        │
+                                                        │                                   │                                   │
+3 Purchased inventory on credit               Inventory │                                   │   Accounts                        │
+                                                 (Dr) + │                                   │ Payable (Cr) +                    │
+                                                        │                                   │                                   │
+4 Purchased equipment with сash               Equipment │ Cash                              │                                   │
+                                                (Dr) +  │ (Cr) -                            │                                   │
+                                                
+```
+
+##### The Rules of Debits and Credits
+
+```text
+
+           Assets                    Liability                     Equity
+─────────────┰───────────── ─────────────┰───────────── ─────────────┰─────────────
+Debit        │ Credit        Debit       │ Credit       Debit        │ Credit
+Increase     │ Decrease      Decrease    │ Increase     Decrease     │ Increase
+             │                           │                           │
+
+```
+
+### Revenues, expenses and dividends
+
+Revenues describe where assets came from.
+
+Formula: Revenues - Expenses = Net income
+
+Examples:
+
+| Transaction | Cash from sale of product | Cash from bank loan        |
+|:-----------:|:-------------------------:|:--------------------------:|
+| Recorded as | Asset -> Cash             | Liability -> Notes payable |
+| Source      | Revenue                   | Liability                  |
+
+
+
+| Transaction | Cash paid load interest       | Cash paid for building |
+|:-----------:|:-----------------------------:|:----------------------:|
+| Recorded as | Liability -> Interest Expense | Asset - Property       |
+| Source      | Expense                       | Asset                  |
+
+
+```text
+
+                                     Owner's Equity                      
+                              ─────────────┰───────────── 
+                              Debit        │ Credit        
+                              Decrease     │ Increase     
+                                           │                          
+                             /                          \
+          Expenses                                                   Revenues        
+─────────────┰─────────────                                ─────────────┰───────────── 
+Debit        │ Credit                                      Debit        │ Credit     
+Increase     │ Decrease                                    Decrease     │ Increase    
+             │                                                          │ 
+
+
+                                     Owner's Equity                      
+                              ─────────────┰───────────── 
+                              Debit        │ Credit        
+                              Decrease     │ Increase     
+                                           │                          
+                             /                          \
+          Dividends                                                 Revenues        
+─────────────┰─────────────                                ─────────────┰───────────── 
+Debit        │ Credit                                      Debit        │ Credit     
+Increase     │ Decrease                                    Decrease     │ Increase    
+             │                                                          │ 
+
+```
