@@ -83,6 +83,10 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 ...a servant does not have the right to be served...
 
+*"For I am the Lord thy God, the Holy One of Israel, thy Saviour: I gave Egypt for thy ransom, Ethiopia and Seba for thee."*
+
+**(Isaiah 43:3)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
