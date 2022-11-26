@@ -302,6 +302,15 @@ eyes shall not see all the evil which I will bring upon this place. And they bro
 
 ...Unforgiveness is a terrible thing; it eats away at you, slowly but surely destroying you...
 
+#### Results of Premature Blessing
+
+*"His lord said to him. 'Well done, good and faithful servant; you have been faithful over a few things, I will make you ruler over many things. Enter into the joy of your lord.'"*
+
+**(Matthew 25:23)**
+
+...Job had to endure much suffering and hardship before God restored to him double what he had lost. We want everything and we want it now. We want to return to our 'Egypt', believing that
+live will be easier there...
+
 ## Various authors
 
 ### Strength for Today (for men)
