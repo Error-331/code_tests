@@ -17,14 +17,22 @@ https://www.imdb.com/title/tt4287464/ - Nightwatch
 
 ## Мультсериалы
 
-https://en.wikipedia.org/wiki/The_Grim_Adventures_of_Billy_%26_Mandy - The Grim Adventures of Billy & Mandy
-https://en.wikipedia.org/wiki/Harvey_Birdman,_Attorney_at_Law - Harvey Birdman, Attorney at Law
-https://en.wikipedia.org/wiki/Home_Movies_(TV_series) - Home Movies (TV series)
-https://en.wikipedia.org/wiki/Dr._Katz,_Professional_Therapist - Dr. Katz, Professional Therapist
-https://terribletvshows.miraheze.org/wiki/The_Mighty_B! - The Mighty B!
-https://terribletvshows.miraheze.org/wiki/Sanjay_and_Craig - Sanjay and Craig
-https://en.wikipedia.org/wiki/Jayce_and_the_Wheeled_Warriors - Jayce and the Wheeled Warriors
+https://en.wikipedia.org/wiki/The_Grim_Adventures_of_Billy_%26_Mandy - The Grim Adventures of Billy & Mandy;
+https://en.wikipedia.org/wiki/Harvey_Birdman,_Attorney_at_Law - Harvey Birdman, Attorney at Law;
+https://en.wikipedia.org/wiki/Home_Movies_(TV_series) - Home Movies (TV series);
+https://en.wikipedia.org/wiki/Dr._Katz,_Professional_Therapist - Dr. Katz, Professional Therapist;
+https://terribletvshows.miraheze.org/wiki/The_Mighty_B! - The Mighty B!;
+https://terribletvshows.miraheze.org/wiki/Sanjay_and_Craig - Sanjay and Craig;
+https://en.wikipedia.org/wiki/Jayce_and_the_Wheeled_Warriors - Jayce and the Wheeled Warriors;
 https://filmix.ac/multserialy/nocat/93307-dzheys-i-voiny-na-kolesah-jayce-and-the-wheeled-warriors-multserial-1985.html - Jayce and the Wheeled Warriors;
+https://zetflix.zone/multfilmy/invader-zim-enter-the-florpus - invader zim;
+https://zetflix.zone/multfilmy/the-cuphead-show/1-season/7-episode - cuphead;
+https://zetflix.zone/multfilmy/human-resources - human resources;
+https://theflixer.tv/movie/watch-flavors-of-youth-full-17116 - flavors of youth;
+https://theflixer.tv/tv/watch-tig-n-seek-full-62288 - tig n` seek;
+https://theflixer.tv/tv/watch-animaniacs-full-64959 - animaniacs;
+https://theflixer.tv/movie/watch-clown-full-75757 - clown;
+https://theflixer.tv/watch-tv/watch-i-tsushima-full-72307.4820287 - I, Tsushima;
 
 ## Готовое к просмотру
 
