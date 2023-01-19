@@ -272,6 +272,9 @@ https://rozetka.com.ua/100524415/p100524415/ - HDMI - AV
 https://rozetka.com.ua/150315698/p150315698/?gclid=Cj0KCQiA2sqOBhCGARIsAPuPK0ingoHJHjGzcpF6Txk_kqMEp6fygDrMzS4yVATwc9f6BigCs6Fp3ZEaAmCIEALw_wcB - кабель для блока питания на usb
 https://www.aliexpress.com/item/4001300527726.html?spm=a2g0o.productlist.0.0.54da6da3ocvt9r&algo_pvid=324b65c4-08d1-4f3d-a89c-0e28565a0d3a&algo_exp_id=324b65c4-08d1-4f3d-a89c-0e28565a0d3a-24&pdp_ext_f=%7B%22sku_id%22%3A%2210000015673235510%22%7D&pdp_npi=2%40dis%21USD%21%2119.48%21%21%21%21%21%4021135c3816521128784571711ee6e6%2110000015673235510%21sea - usb hub в стол
 https://evse.com.ua/kontroller-pci-perekhodnik-na-5-usb-20-portov?gclid=CjwKCAjws8yUBhA1EiwAi_tpEQKfaZLFib_jtQiqgWFzGBuvzKu8zAh8DX68iPz0X7lMurtyEft6dRoCivgQAvD_BwE - Контроллер PCI переходник на 5 USB 2.0 портов
+https://prom.ua/p363821826-pcie-kontroller-porta.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_war_tehnika_i_elektronika&gclid=CjwKCAiA8OmdBhAgEiwAShr408k-5RB5enu6TPQNjkcWs3D7p2sd5T03aUCoS8KDDujc4w0mCqSU4xoCZzkQAvD_BwE - PCIe контроллер 4 порта 1394a FireWire
+https://www.stall.com.ua/ru/product/1388/?gclid=CjwKCAiA8OmdBhAgEiwAShr40_bBcfKulsRU3PtEXjCz7wpDINQ_BCnsO1DGySKi1wPw5b8L0clGbhoCeJAQAvD_BwE - Кабель FireWire IEEE 1394 — USB для ноутбука, ПК (1.4 м)
+https://prom.ua/p1228018439-nabor-usb-perehodnikov.html - Набор USB переходников 7 в 1 Firewire 1394 AM BM
 
 ### Игры
 
