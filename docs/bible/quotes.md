@@ -332,6 +332,17 @@ servant, nor your animals, nor any foreigner residing in your towns."*
 
 ...Do something that honors God and fills you up...
 
+#### Freedom
+
+*"It is for freedom that Christ has set us free. Stand firm, then, and do not let yourselves be burdened again by a yoke of slavery. You, my brothers and sisters, were called 
+to be free. But do not use your freedom to indulge the flesh; rather, serve one another humbly in love."*
+
+**(Galatians 5:1-13 NIV)**
+
+...Paul challenged the Galatians because they made their faith all about rule adherence...
+
+...Paul wanted them to know that true faith means freedom from a religion strictly focused on rules and regulations...
+
 #### Self-Control
 
 ...Are you running with a plan in place, or are you making things up as you go?...

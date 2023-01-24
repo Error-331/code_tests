@@ -87,6 +87,10 @@ chvt 1
 - bidirectional parallel ports located at /dev/parport0 and /dev/parport1 ;
 - files can be sent to LPT via cat command (for printing);
 
+### PCI devices
+
+- located at /proc/bus/pci/devices;
+
 ### Audio devices
 
 - located at /dev/snd/*, /dev/dsp, /dev/audio ;
