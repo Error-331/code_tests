@@ -296,6 +296,7 @@ https://brain.com.ua/ukr/Blok_jhivlennya_do_promislovogo_PK_Raspberry_Pi_5V_USB_
 https://hotline.ua/computer-istochniki-besperebojnogo-pitaniya/eaton-ellipse-eco-1200va-el1200usbdin/?gclid=EAIaIQobChMIlo7O2-2q-AIVByIYCh2ykwcNEAAYASAAEgLTyPD_BwE - УПС вертикальный
 https://www.stall.com.ua/uk/product/533/ - часы на воде
 https://www.aliexpress.com/item/1005004981756670.html?spm=a2g0o.productlist.0.0.2b214becMkaR98&algo_pvid=e8ac663b-a3d0-4924-816d-9db1677885fd&aem_p4p_detail=2022121014344310768208386679960004439538&algo_exp_id=e8ac663b-a3d0-4924-816d-9db1677885fd-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000031231481548%22%7D&pdp_npi=2%40dis%21USD%2112.54%213.76%21%21%21%21%21%4021135c3216707116834686202e2f5d%2112000031231481548%21sea&curPageLogUid=Zw3UctP4AIBV&ad_pvid=2022121014344310768208386679960004439538_10&ad_pvid=2022121014344310768208386679960004439538_10 - картинки для туалета
+https://pipdecks.com/pages/storyteller-tactics-card-deck?utm_source=youtube&utm_medium=cpc&utm_campaign=howto&utm_id=storyteller&gclid=CjwKCAiA2rOeBhAsEiwA2Pl7Q3sXoyuUWCHzE0d4a7en1hWwP-V7dgGf0OyDfPJbjn4DNrBqCf_VURoC328QAvD_BwE - pip decks
 
 ## Купить НГ 2023
 
