@@ -29,7 +29,7 @@ https://terribletvshows.miraheze.org/wiki/The_Mighty_B! - The Mighty B!
 https://terribletvshows.miraheze.org/wiki/Sanjay_and_Craig - Sanjay and Craig
 https://en.wikipedia.org/wiki/Jayce_and_the_Wheeled_Warriors - Jayce and the Wheeled Warriors
 https://filmix.ac/multserialy/nocat/93307-dzheys-i-voiny-na-kolesah-jayce-and-the-wheeled-warriors-multserial-1985.html - Jayce and the Wheeled Warriors;
-
+https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%B1%D0%B5%D1%80%D0%BF%D0%B0%D0%BD%D0%BA:_%D0%91%D0%B5%D0%B3%D1%83%D1%89%D0%B8%D0%B5_%D0%BF%D0%BE_%D0%BA%D1%80%D0%B0%D1%8E - Киберпанк: Бегущие по краю;
 
 ## Готовое к просмотру
 

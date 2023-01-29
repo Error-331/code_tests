@@ -307,3 +307,10 @@ https://www.aliexpress.com/item/1005003034408338.html?spm=a2g0o.productlist.0.0.
 https://www.aliexpress.com/item/4000840417363.html?spm=a2g0o.productlist.0.0.7d944b89y2202p&algo_pvid=53b62741-9517-4a31-a870-69c045acfa76&aem_p4p_detail=202212082054082478724163462250006962448&algo_exp_id=53b62741-9517-4a31-a870-69c045acfa76-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000008948887440%22%7D&pdp_npi=2%40dis%21USD%210.98%210.86%21%21%21%21%21%4021135c3f16705616482006235e872b%2110000008948887440%21sea&curPageLogUid=pGjOv2ce7D35&ad_pvid=202212082054082478724163462250006962448_9&ad_pvid=202212082054082478724163462250006962448_9 - кабель (1 метр!)
 https://www.alibaba.com/product-detail/USB-Type-E-adapter-USB-3_1600403648981.html - type c female to type e male
 https://www.aliexpress.com/item/1005003458977858.html?spm=a2g0o.productlist.main.9.d860adc9w4tJRZ&algo_pvid=90bcbe44-5632-436b-892a-ee02553fd8bf&aem_p4p_detail=20221214231818626384305539810002647156&algo_exp_id=90bcbe44-5632-436b-892a-ee02553fd8bf-4&pdp_ext_f=%7B%22sku_id%22%3A%2212000025883316283%22%7D&pdp_npi=2%40dis%21USD%216.99%213.49%21%21%21%21%21%402145279016710886980076708d075c%2112000025883316283%21sea&curPageLogUid=rASHTHW0rLeQ&ad_pvid=20221214231818626384305539810002647156_1&ad_pvid=20221214231818626384305539810002647156_1 - usb 3 female to type e male
+
+## Купить провода 2023
+
+https://rozetka.com.ua/apple_mll82zm_a/p15015068/
+https://rozetka.com.ua/238026595/p238026595/?utm_l=r&gclid=CjwKCAiArNOeBhAHEiwAze_nKOMOEej94UdAXJF8QLjhQAOJZE_VFsNLtePEP_ja3AyvjNIKur8xnxoCnpUQAvD_BwE
+https://rozetka.com.ua/336010966/p336010966/
+https://rozetka.com.ua/329180443/p329180443/
