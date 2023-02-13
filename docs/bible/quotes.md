@@ -476,3 +476,12 @@ will turn away from listening to the truth and wander away to myths."*
 ...The apostle Paul was forecasting a time in future when his young son Timothy would be under serious pressure to conform to the overwhelming flow of his culture...
 
 ...The pressure to run with the pack would be so great, and the bright light of Timothy's calling would be extinguished...
+
+#### No Longer Anxious
+
+*"Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the 
+body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they?"*
+
+**(Matthew 6:25-26 ESV)**
+
+...We get locked into our own desires, and anxiety arises when we are left in want....
