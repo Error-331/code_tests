@@ -485,3 +485,15 @@ body more than clothing? Look at the birds of the air: they neither sow nor reap
 **(Matthew 6:25-26 ESV)**
 
 ...We get locked into our own desires, and anxiety arises when we are left in want....
+
+#### Love
+
+*"ove is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no 
+record of wrongs. Love does not delight in evil but rejoice with the truth. It always protects, always trusts, always hopes, always perseveres."*
+
+**(1 Corinthians 13:4-7)**
+
+...These verses are often shared at weddings, which is great, but the apostle Paul never mentioned a wedding...
+
+...Some people recommend taking out the word love in the verses and inserting our own name. If we do, we'll soon realize that we're really not those things 100 percent, but 
+Jesus is...
