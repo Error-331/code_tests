@@ -488,7 +488,7 @@ body more than clothing? Look at the birds of the air: they neither sow nor reap
 
 #### Love
 
-*"ove is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no 
+*"Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no 
 record of wrongs. Love does not delight in evil but rejoice with the truth. It always protects, always trusts, always hopes, always perseveres."*
 
 **(1 Corinthians 13:4-7)**
@@ -497,3 +497,14 @@ record of wrongs. Love does not delight in evil but rejoice with the truth. It a
 
 ...Some people recommend taking out the word love in the verses and inserting our own name. If we do, we'll soon realize that we're really not those things 100 percent, but 
 Jesus is...
+
+#### Courage
+
+*"But Jesus immediately said to them: “Take courage! It is I. Don’t be afraid.”"*
+*"“Lord, if it’s you,” Peter replied, “tell me to come to you on the water.”"*
+*"“Come,” he said."*
+*"Then Peter got down out of the boat, walked on the water and came toward Jesus."*
+
+**(Matthew 14:27-29 NIV)**
+
+...Courage is not the absence of fear but the presence of peace when fear is at hand...
