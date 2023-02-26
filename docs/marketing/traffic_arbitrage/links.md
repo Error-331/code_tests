@@ -1,8 +1,28 @@
 # Ссылки
 
+## Фарм аккаунтов
+
+- https://cpa.rip/blogs/accounts-farm-on-anti-detect-browser/ - Рекомендации по фарму аккаунтов через антидетект браузер;
+- https://cpa.rip/facebook/farm-account-facebook/Фарм аккаунтов Facebook 2021 – работа с разными аккаунтами, масштабируем фарм;
+- https://vc.ru/u/1025045-yanni-zheng/350791-farming-akkauntov-facebook-1-chto-eto-i-zachem-nuzhno#:~:text=%D0%A4%D0%B0%D1%80%D0%BC%D0%B8%D0%BD%D0%B3%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20%E2%80%93%20%D1%8D%D1%82%D0%BE%20%D0%BE%D0%B1%D1%89%D0%B5%D0%B5%20%D0%BF%D0%BE%D0%BD%D1%8F%D1%82%D0%B8%D0%B5,%D0%BF%D0%BE%D1%85%D0%BE%D0%B6%D0%B8%D0%BC%20%D0%BD%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%20%D0%B6%D0%B8%D0%B2%D0%BE%D0%B3%D0%BE%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0. - Фарминг аккаунтов Facebook(1) - что это и зачем нужно;
+- https://daddyaff.org/facebook/farm-akkauntov-facebook-2022/ - Фарм аккаунтов для Facebook: лучшая схема в 2022;
+- https://trafficcardinal.com/post/farm-akkauntov-v-facebook - фарм аккаунтов в Facebook;
+- https://scenum.io/multifarm-facebook/ - Создание фермы для фарма аккаунтов Facebook;
+- https://scenum.io/category/technology/ - блог по фарму аккаунтов;
+
+## Креативы
+
+- https://cpa.rip/facebook/facebook-ads-library/ - Библиотека рекламы Facebook – как искать креативы и связки;
+
 ## Инструменты
 
 - https://cpa.rip/roi/ - калькулятор ROI;
+- https://cpa.rip/blogs/proxy-for-antidetect-browser/ - Как выбрать прокси для антидетект браузера;
+- https://cpa.rip/blogs/check-antidetect-browser/ - Как проверить надёжность антидетект браузера;
+- https://www.colorpilot.com/exif.html - Exif Pilot – create, view and edit EXIF data;
+- https://progsoft.net/ru/software/metadata- - Metadata++ Редактировать, изменять, добавлять, удалять любые метаданные из аудио, видео, фото, текста;
+- https://sourceforge.net/projects/analogexif/ - AnalogExif;
+- https://inforesist.org/chto-takoe-mobilnyj-proksi/ - Что такое мобильный прокси?
 
 ## Видео
 
