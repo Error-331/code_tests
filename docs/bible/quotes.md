@@ -476,3 +476,37 @@ will turn away from listening to the truth and wander away to myths."*
 ...The apostle Paul was forecasting a time in future when his young son Timothy would be under serious pressure to conform to the overwhelming flow of his culture...
 
 ...The pressure to run with the pack would be so great, and the bright light of Timothy's calling would be extinguished...
+
+#### No Longer Anxious
+
+*"Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the 
+body more than clothing? Look at the birds of the air: they neither sow nor reap nor gather into barns, and yet your heavenly Father feeds them. Are you not of more value than they?"*
+
+**(Matthew 6:25-26 ESV)**
+
+...We get locked into our own desires, and anxiety arises when we are left in want....
+
+#### Love
+
+*"Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no 
+record of wrongs. Love does not delight in evil but rejoice with the truth. It always protects, always trusts, always hopes, always perseveres."*
+
+**(1 Corinthians 13:4-7)**
+
+...These verses are often shared at weddings, which is great, but the apostle Paul never mentioned a wedding...
+
+...Some people recommend taking out the word love in the verses and inserting our own name. If we do, we'll soon realize that we're really not those things 100 percent, but 
+Jesus is...
+
+#### Courage
+
+*"But Jesus immediately said to them: “Take courage! It is I. Don’t be afraid.”"*
+*"“Lord, if it’s you,” Peter replied, “tell me to come to you on the water.”"*
+*"“Come,” he said."*
+*"Then Peter got down out of the boat, walked on the water and came toward Jesus."*
+
+**(Matthew 14:27-29 NIV)**
+
+...Courage is not the absence of fear but the presence of peace when fear is at hand...
+
+...When our object of hope is greater than our object of fear, we can be courageous...

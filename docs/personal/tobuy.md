@@ -297,6 +297,7 @@ https://brain.com.ua/ukr/Blok_jhivlennya_do_promislovogo_PK_Raspberry_Pi_5V_USB_
 https://hotline.ua/computer-istochniki-besperebojnogo-pitaniya/eaton-ellipse-eco-1200va-el1200usbdin/?gclid=EAIaIQobChMIlo7O2-2q-AIVByIYCh2ykwcNEAAYASAAEgLTyPD_BwE - УПС вертикальный
 https://www.stall.com.ua/uk/product/533/ - часы на воде
 https://www.aliexpress.com/item/1005004981756670.html?spm=a2g0o.productlist.0.0.2b214becMkaR98&algo_pvid=e8ac663b-a3d0-4924-816d-9db1677885fd&aem_p4p_detail=2022121014344310768208386679960004439538&algo_exp_id=e8ac663b-a3d0-4924-816d-9db1677885fd-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000031231481548%22%7D&pdp_npi=2%40dis%21USD%2112.54%213.76%21%21%21%21%21%4021135c3216707116834686202e2f5d%2112000031231481548%21sea&curPageLogUid=Zw3UctP4AIBV&ad_pvid=2022121014344310768208386679960004439538_10&ad_pvid=2022121014344310768208386679960004439538_10 - картинки для туалета
+https://pipdecks.com/pages/storyteller-tactics-card-deck?utm_source=youtube&utm_medium=cpc&utm_campaign=howto&utm_id=storyteller&gclid=CjwKCAiA2rOeBhAsEiwA2Pl7Q3sXoyuUWCHzE0d4a7en1hWwP-V7dgGf0OyDfPJbjn4DNrBqCf_VURoC328QAvD_BwE - pip decks
 
 ## Купить НГ 2023
 
@@ -307,3 +308,38 @@ https://www.aliexpress.com/item/1005003034408338.html?spm=a2g0o.productlist.0.0.
 https://www.aliexpress.com/item/4000840417363.html?spm=a2g0o.productlist.0.0.7d944b89y2202p&algo_pvid=53b62741-9517-4a31-a870-69c045acfa76&aem_p4p_detail=202212082054082478724163462250006962448&algo_exp_id=53b62741-9517-4a31-a870-69c045acfa76-8&pdp_ext_f=%7B%22sku_id%22%3A%2210000008948887440%22%7D&pdp_npi=2%40dis%21USD%210.98%210.86%21%21%21%21%21%4021135c3f16705616482006235e872b%2110000008948887440%21sea&curPageLogUid=pGjOv2ce7D35&ad_pvid=202212082054082478724163462250006962448_9&ad_pvid=202212082054082478724163462250006962448_9 - кабель (1 метр!)
 https://www.alibaba.com/product-detail/USB-Type-E-adapter-USB-3_1600403648981.html - type c female to type e male
 https://www.aliexpress.com/item/1005003458977858.html?spm=a2g0o.productlist.main.9.d860adc9w4tJRZ&algo_pvid=90bcbe44-5632-436b-892a-ee02553fd8bf&aem_p4p_detail=20221214231818626384305539810002647156&algo_exp_id=90bcbe44-5632-436b-892a-ee02553fd8bf-4&pdp_ext_f=%7B%22sku_id%22%3A%2212000025883316283%22%7D&pdp_npi=2%40dis%21USD%216.99%213.49%21%21%21%21%21%402145279016710886980076708d075c%2112000025883316283%21sea&curPageLogUid=rASHTHW0rLeQ&ad_pvid=20221214231818626384305539810002647156_1&ad_pvid=20221214231818626384305539810002647156_1 - usb 3 female to type e male
+
+## Купить провода 2023
+
+https://rozetka.com.ua/apple_mll82zm_a/p15015068/
+https://rozetka.com.ua/238026595/p238026595/?utm_l=r&gclid=CjwKCAiArNOeBhAHEiwAze_nKOMOEej94UdAXJF8QLjhQAOJZE_VFsNLtePEP_ja3AyvjNIKur8xnxoCnpUQAvD_BwE
+https://rozetka.com.ua/336010966/p336010966/
+https://rozetka.com.ua/329180443/p329180443/
+
+## Все для 'ретро' компьютера
+
+https://rozetka.com.ua/64783523/p64783523/?utm_l=r&gclid=CjwKCAiA0JKfBhBIEiwAPhZXD51tVUosKQonnPyq2VSOM2n_Js1xrgyuMbwWxqN5ckU3enXru7H3DxoCJdwQAvD_BwE
+
+https://hard.rozetka.com.ua/gamemax_mt_301u3_np/p83826288/
+https://hard.rozetka.com.ua/gamemax_et_212_u3/p64947743/
+https://hard.rozetka.com.ua/gamemax_et_201_400/p5109827/
+https://hard.rozetka.com.ua/gamemax_m801_500w/p9361587/
+https://hard.rozetka.com.ua/fsp_cmt120a/p252627741/
+https://hard.rozetka.com.ua/vinga_cs112b/p335761591/
+https://hard.rozetka.com.ua/chieftec_cg_04b_op/p87987123/
+https://hard.rozetka.com.ua/chieftec_elox_ht01b/p4686682/
+https://hard.rozetka.com.ua/chieftec_cm_25b_op/p308038708/
+https://hard.rozetka.com.ua/gamemax_mt524_np_u3/p83794134/
+https://hard.rozetka.com.ua/gamemax_mt524_np_u3/p83794134/
+https://hard.rozetka.com.ua/chieftec_lt_01b_libra/p232554/
+https://hard.rozetka.com.ua/gamemax_mt307_4u3c/p274333658/
+https://hard.rozetka.com.ua/gamemax-mt816-2u3-tyc/p362134269/
+https://hard.rozetka.com.ua/gamemax-mt-308-2u3/p362134266/
+https://hard.rozetka.com.ua/vinga_cs301b/p212247445/
+https://hard.rozetka.com.ua/320690260/p320690260/
+https://hard.rozetka.com.ua/320688781/p320688781/
+https://hard.rozetka.com.ua/chieftec-xt-01b-350gpb/p359295924/
+https://hard.rozetka.com.ua/fractal_design_focus_g_mini_window_black/p17686248/
+https://hard.rozetka.com.ua/gamemax-mt-308-2u3/p362134266/
+https://hard.rozetka.com.ua/chieftec-ho-11b-op/p362027844/
+https://hard.rozetka.com.ua/gamemax_et_210_np/p332730823/

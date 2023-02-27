@@ -3,6 +3,7 @@
     "version": "0.0.1",
     "description": "code testing platform...",
     "main": "index.js",
+    "type": "module",
     "scripts": {
         "run-scripts": "node ./utils/compile_scripts.js --type=vanilla && node ./dist/bundle.js",
         "run-scripts-browser": "node ./utils/compile_all_browser_js.js && node ./src/browser_js/server.js",
@@ -33,8 +34,8 @@
         "tslib": "^1.9.0",
         "typescript": "^2.6.2",
         "typings": "^2.1.1",
-        "webpack": "^3.10.0",
-        "worker-loader": "^0.7.1"
+        "webpack": "5.75.0",
+        "worker-loader": "3.0.8"
     },
     "dependencies": {
         "@yfi/sdk": "2.1.0",
