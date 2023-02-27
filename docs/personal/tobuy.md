@@ -342,3 +342,13 @@ https://hard.rozetka.com.ua/fractal_design_focus_g_mini_window_black/p17686248/
 https://hard.rozetka.com.ua/gamemax-mt-308-2u3/p362134266/
 https://hard.rozetka.com.ua/chieftec-ho-11b-op/p362027844/
 https://hard.rozetka.com.ua/gamemax_et_210_np/p332730823/
+
+## Материнские платы для ника
+
+https://hotline.ua/ua/computer-materinskie-platy/gigabyte-z590-vision-d/?tab=about&chart=true
+https://pg.asrock.com/mb/AMD/X570S%20PG%20Riptide/index.asp
+https://www.asrock.com/mb/Intel/X299%20OC%20Formula/index.asp
+https://www.asrock.com/mb/Intel/Z590%20OC%20Formula/Specification.asp#Specification
+https://www.tradeinn.com/techinn/ru/asrock-wrx80-creator-wifi-%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D0%9F%D0%BB%D0%B0%D1%82%D0%B0/139634694/p
+
+https://asrock.com/mb/spec/product.asp?Model=Thunderbolt%204%20AIC
