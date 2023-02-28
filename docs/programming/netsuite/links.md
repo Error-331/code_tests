@@ -8,6 +8,7 @@
 ## SuiteScript documentation
 
 - https://2201854.app.netsuite.com/app/help/helpcenter.nl?fid=chapter_N3170023.html&whence= - SuiteScript Supported Records;
+- https://timdietrich.me/blog/netsuite-suiteql-pagination/ - NetSuite: Paginating SuiteQL Query Results;
 
 ## Additional resources
 
