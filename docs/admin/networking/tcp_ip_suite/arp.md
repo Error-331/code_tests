@@ -12,7 +12,7 @@
 
 ### Addressing at Layer 2 and Layer 3
 
-- layer 2 addresses  are used for local transmissions between hardware devices that can communicate directly (basic LAN, WLAN, WAN);
+- layer 2 addresses are used for local transmissions between hardware devices that can communicate directly (basic LAN, WLAN, WAN);
 
 - layer 3 addresses (IP) are used in internetworking (massive virtual network) at the network layer;
 
