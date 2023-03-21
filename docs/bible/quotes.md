@@ -111,6 +111,18 @@ pilgrims on the earth."*
 
 **(Hebrews 11:13 KJV)**
 
+### Politics
+
+*"It is not for kings, O Lemuel, it is not for kings to drink wine; nor for princes strong drink:"*
+
+*"Lest they drink, and forget the law, and pervert the judgment of any of the afflicted."*
+
+*"Give strong drink unto him that is ready to perish, and wine unto those that be of heavy hearts."*
+
+*"Let him drink, and forget his poverty, and remember his misery no more."*
+
+**(Proverbs 31:4-7 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
