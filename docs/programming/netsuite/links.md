@@ -14,3 +14,8 @@
 
 - https://blog.prolecto.com/ - blog about NetSuite;
 - https://cdn.cdata.com/help/DNF/ado/pg_SuiteQLtable-creditmemopartner.htm - SuiteQL tables;
+
+## Programming
+
+- https://dreamxtream.wordpress.com/2011/04/18/netsuite-transaction-status-codes/ - NetSuite Transaction Status Codes;
+- https://gist.github.com/W3BGUY/af08ddd92b87641e28df9c26d545d387 - NetSuite Transaction Status Codes;
