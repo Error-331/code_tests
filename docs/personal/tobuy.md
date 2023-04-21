@@ -344,6 +344,8 @@ https://hard.rozetka.com.ua/gamemax-mt-308-2u3/p362134266/
 https://hard.rozetka.com.ua/chieftec-ho-11b-op/p362027844/
 https://hard.rozetka.com.ua/gamemax_et_210_np/p332730823/
 
+https://www.amazon.ca/CRJ-9-Pin-Dupont-Header-Single/dp/B07Q4QZW57 - CRJ 9-Pin USB IDC Dupont Male Header to Single USB 2.0 Type A Male Cable
+
 ## Материнские платы для ника
 
 https://hotline.ua/ua/computer-materinskie-platy/gigabyte-z590-vision-d/?tab=about&chart=true
