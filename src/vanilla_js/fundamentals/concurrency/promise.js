@@ -1,4 +1,48 @@
+'use strict';
 
+console.log('Classes examples');
+console.log('================');
+console.log('');
+
+/*const testPromise1 = new Promise((resolve, reject) => {
+    console.log('testPromise1 resolve...');
+    resolve('testPromise1 val 1...');
+});
+
+testPromise1
+    .then((val) => {
+        console.log(`then val: ${val}`);
+
+        return new Promise(resolve => {
+           console.log('sub promise 1 resolve...');
+           resolve('sub promise 1 val 1...');
+        });
+    })
+    .then(val => {
+        console.log(`then val: ${val}`);
+    })
+    .catch(error => {
+        console.error(error);
+    });
+*/
+
+const testPromise2 = new Promise((resolve, reject) => {
+    console.log('testPromise2 resolve...');
+    resolve('testPromise2 val 1...');
+});
+
+testPromise2
+    .then((val) => {
+        console.log(`then val: ${val}`);
+
+        throw new Error('sub promise 1 error 1...');
+    })
+    .then(val => {
+        console.log(`then val: ${val}`);
+    })
+    .catch(error => {
+        console.error(`error: ${error.message}`);
+    });
 
 /*Promise
     .resolve('cc')
