@@ -2,6 +2,8 @@
 
 ## EN
 
+- Accounts - are the financial records of a business, all business transactions are recorded in the accounts, which are then aggregated into the financial statements;
+
 - Accounting records - are the original source documents, journal entries, and ledgers that describe the accounting transactions of a business;
 
 - Accounts Payable (AP) (Кредиторская задолженность) – A company’s current liability account that represent all owed and unpaid balances to its vendors;
@@ -42,6 +44,33 @@ general ledger;
 - Cash disbursement journal -  is a detailed record of the cash payments made by a business;
 
 - Balance sheet - lays out the ending balances in a company's **asset**, **liability**, and **equity** accounts as of the date stated on the report;
+
+- Income statement definition - the financial results of a business for a stated period of time;
+
+- Income tax expense - is the amount of expense that a business recognizes in an **accounting period** for the **government tax** related to its **taxable profit**;
+
+- Inventory - is an **asset** that is intended to be **sold in** the ordinary course of business;
+
+- Taxable profit - is the profit upon which income taxes are payable;
+
+- Operating earnings - are the profits remaining after all **operating expenses** are **subtracted** from **revenues**;
+
+- Customer - is an **entity** that buys goods or services from third parties;
+
+- Sales returns and allowances - ia a **deduction** from **sales** that shows the sale price of goods returned by customers, as well as discounts taken by them to retain
+  **defective goods**;
+
+- Contra asset - is a negative asset account that offsets the asset account with which it is paired;
+
+- Recognition - is the **recordation** of a business transaction in an entity's accounting records;
+
+- Gross margin - a company’s **net sales** minus its **cost of goods** sold;
+
+- Gross sales - are the **total sales** recorded prior to **sales discounts** and **sales returns**;
+
+- Reporting period - is the **span of time** covered by a set of **financial statements**;
+
+- Profit - is the **positive amount** remaining after subtracting **expenses** incurred from the revenues generated over a designated period of time;
 
 ## RU
 
