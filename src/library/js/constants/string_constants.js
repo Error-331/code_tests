@@ -1,0 +1,7 @@
+'use strict';
+
+const ALPHANUMERIC_LETTERS_EN_ALL = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const LOWERCASE_LETTERS_EN = 'abcdefghijklmnopqrstuvwxyz';
+
+module.exports.ALPHANUMERIC_LETTERS_EN_ALL = ALPHANUMERIC_LETTERS_EN_ALL;
+module.exports.LOWERCASE_LETTERS_EN = LOWERCASE_LETTERS_EN;
