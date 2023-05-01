@@ -49,8 +49,16 @@ const isClass = (input) => {
     }
 };
 
+const isUndefined = (value) => {
+    return value === undefined;
+};
+
+const isNull = (value) => {
+    return value === null;
+};
+
 const isNil = (value) => {
-    return value === undefined || value === null;
+    return isUndefined(value) || isNull(value);
 };
 
 const isNullOrEmpty = (value) => {
@@ -82,6 +90,8 @@ module.exports.isObject = isObject;
 module.exports.isArray = isArray;
 module.exports.isFunction = isFunction;
 module.exports.isClass = isClass;
+module.exports.isUndefined = isUndefined;
+module.exports.isNull = isNull;
 module.exports.isNil = isNil;
 module.exports.isNullOrEmpty = isNullOrEmpty;
 module.exports.defaultTo = defaultTo;
