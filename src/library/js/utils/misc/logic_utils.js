@@ -67,6 +67,14 @@ const isNullOrEmpty = (value) => {
     return false;
 };
 
+const defaultTo = (defaultValue, value) => {
+    if (isNullOrEmpty(value)) {
+        return defaultValue;
+    } else {
+        return value;
+    }
+};
+
 module.exports.isBoolean = isBoolean;
 module.exports.isNumber = isNumber;
 module.exports.isString = isString;
@@ -76,3 +84,4 @@ module.exports.isFunction = isFunction;
 module.exports.isClass = isClass;
 module.exports.isNil = isNil;
 module.exports.isNullOrEmpty = isNullOrEmpty;
+module.exports.defaultTo = defaultTo;
