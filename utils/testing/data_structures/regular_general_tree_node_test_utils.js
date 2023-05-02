@@ -28,7 +28,6 @@ function prepareDataForIterationTest(tree, parentNode, childData) {
             childDataItem,
         ]);
 
-
         childNodes.push(parentNode.addChild(childDataItem));
     }
 
