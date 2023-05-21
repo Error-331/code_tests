@@ -1,6 +1,6 @@
 'use strict';
 
-const { ASYNC_FUNC_EXEC_NUMBER_OF_ATTEMPTS, ASYNC_FUNC_EXEC_INTERVAL } = require('./../../constants/async_constants');
+const { ASYNC_FUNC_EXEC_NUMBER_OF_ATTEMPTS, ASYNC_FUNC_EXEC_TIMEOUT } = require('./../../constants/async_constants');
 
 function attemptAsyncFuncNext(func, attempt) {
     try {
@@ -28,31 +28,47 @@ function attemptAsyncFunc(func, attempts = ASYNC_FUNC_EXEC_NUMBER_OF_ATTEMPTS) {
 function executeAsyncFuncInIntervalNext(func, options) {
     const {
         params = [],
-        interval = ASYNC_FUNC_EXEC_INTERVAL,
+        signal,
         checkFunc = () => Promise.resolve(false),
     } = options;
 
-    return func(...params)
+    if (signal.aborted) {
+        return Promise.reject();
+    }
+
+    return func(signal, ...params)
         .then((data) => {
+            if (signal.aborted) {
+                return Promise.reject();
+            }
+
             return checkFunc(data)
                 .then((checkData) => {
                     if (checkData === true) {
-                        return new Promise((resolve, reject) => {
-                            setTimeout(() => {
-                                executeAsyncFuncInIntervalNext(func, options)
-                                    .then(resolve)
-                                    .catch(reject);
-                            }, interval);
-                        });
+                        if (signal.aborted) {
+                            return Promise.reject();
+                        }
+
+                        return executeAsyncFuncInIntervalNext(func, options);
                     } else {
                         return data;
                     }
                 })
-        })
+        });
 }
 
 function executeAsyncFuncInInterval(func, options = {}) {
-    return executeAsyncFuncInIntervalNext(func, options);
+    return new Promise((resolve, reject) => {
+        const {
+            timeout = ASYNC_FUNC_EXEC_TIMEOUT,
+        } = options;
+
+        const newOptions = { ...options, signal: AbortSignal.timeout(timeout) };
+
+        executeAsyncFuncInIntervalNext(func, newOptions)
+            .then(resolve)
+            .catch(reject)
+    });
 }
 
 module.exports.attemptAsyncFunc = attemptAsyncFunc;
