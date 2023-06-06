@@ -1,7 +1,7 @@
 'use strict';
 
-const { ALPHANUMERIC_LETTERS_EN_ALL } = require('./../../constants/string_constants');
-const { isNullOrEmpty, isString, isBoolean, isNumber } = require('./../misc/general_utils');
+import { ALPHANUMERIC_LETTERS_EN_ALL } from './../../constants/string_constants.js';
+import { isNullOrEmpty, isString, isBoolean, isNumber } from './../misc/logic_utils.js';
 
 function isOnlyDigits(str){
     return /^[0-9]+$/.test(str);
@@ -59,8 +59,10 @@ const toStringFOrTAsync = (value, name = '') => {
     }
 };
 
-module.exports.isOnlyDigits = isOnlyDigits;
-module.exports.generateRandomString = generateRandomString;
-module.exports.removeComa = removeComa;
-module.exports.toStringFOrT = toStringFOrT;
-module.exports.toStringFOrTAsync = toStringFOrTAsync;
+export {
+    isOnlyDigits,
+    generateRandomString,
+    removeComa,
+    toStringFOrT,
+    toStringFOrTAsync,
+}
