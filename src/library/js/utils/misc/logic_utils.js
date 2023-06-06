@@ -83,15 +83,17 @@ const defaultTo = (defaultValue, value) => {
     }
 };
 
-module.exports.isBoolean = isBoolean;
-module.exports.isNumber = isNumber;
-module.exports.isString = isString;
-module.exports.isObject = isObject;
-module.exports.isArray = isArray;
-module.exports.isFunction = isFunction;
-module.exports.isClass = isClass;
-module.exports.isUndefined = isUndefined;
-module.exports.isNull = isNull;
-module.exports.isNil = isNil;
-module.exports.isNullOrEmpty = isNullOrEmpty;
-module.exports.defaultTo = defaultTo;
+export {
+    isBoolean,
+    isNumber,
+    isString,
+    isObject,
+    isArray,
+    isFunction,
+    isClass,
+    isUndefined,
+    isNull,
+    isNil,
+    isNullOrEmpty,
+    defaultTo,
+}
