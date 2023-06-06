@@ -355,3 +355,8 @@ https://www.asrock.com/mb/Intel/Z590%20OC%20Formula/Specification.asp#Specificat
 https://www.tradeinn.com/techinn/ru/asrock-wrx80-creator-wifi-%D0%9C%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%B0%D1%8F-%D0%9F%D0%BB%D0%B0%D1%82%D0%B0/139634694/p
 
 https://asrock.com/mb/spec/product.asp?Model=Thunderbolt%204%20AIC
+
+## Радио
+
+https://rozetka.com.ua/ua/350858757/p350858757/?gclid=CjwKCAjwge2iBhBBEiwAfXDBR5g_EnjjKqzs8RIZQAsNw2xjQeYYPWElRezB6EQ0-r-6bKGbz_98PxoCxx4QAvD_BwE
+https://rozetka.com.ua/ua/283985233/p283985233/
