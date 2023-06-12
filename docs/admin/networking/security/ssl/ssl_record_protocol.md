@@ -202,9 +202,38 @@ server_write_IV
 
 ### Message Authentication
 
+- SSL cipher suite specifies a cryptographic hash function (not a MAC algorithm) and that some additional information is required to compute and verify a MAC;
+- The algorithm used by SSL is a predecessor of the HMAC construction that is specified in RFC 2104;
 
+### Encryption
 
+1. If a stream cipher is used, then no padding and IV are needed:
+   - the only stream cipher that is employed in SSL 3.0 is RC4 with either a 40-bit or 128-bit key;
+   - 40-bit keys are far too short to provide any reasonable level of security;
 
+2. If a block cipher is used:
+   - first, padding is needed to force the length of the plaintext to be a multiple of the cipher’s block size;
+   - the padding format of SSL is slightly different from the one employed by TLS;
+   - the last byte of the padding specifies the length of the padding;
+   - the other padding bytes can be randomly chosen;
+   - padding is assumed to be as short as possible;
+   - IV is needed in some encryption modes;
+   - IV is then used to encrypt the first record;
+   - the last ciphertext block of each record serves as the IV for the encryption of the next record;
+
+3. The algorithms that are specified in the cipher suite transform an _SSLCompressed_ structure into an _SSLCiphertext_ structure;
+4. Encryption should not increase the fragment length by more than another **1,024 bytes**;
+5. The total length of the SSLCiphertext fragment (encrypted data and MAC) should never exceed 2 ** 14 + 2,048 bytes;
+
+#### SSL Record header
+
+**Entire SSL record is sent to the recipient in a TCP segment**. If multiple SSL records need to be sent to the same recipient, then these records may be sent in a
+**single TCP segment**.
+
+- type;
+- version;
+- length;
+- fragment (comprises an _SSLCiphertext_ structure (optionally compressed) with a MAC in possibly encrypted form);
 
 
 
