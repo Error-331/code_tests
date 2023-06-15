@@ -72,6 +72,10 @@ general ledger;
 
 - Profit - is the **positive amount** remaining after subtracting **expenses** incurred from the revenues generated over a designated period of time;
 
+- Net loss - is the excess of **expenses** over **revenues**;
+
+- Net Profit - is the result after all **expenses** have been **subtracted** from **revenues**;
+
 ## RU
 
 - Дебиторская задолженность (Accounts receivable) — задолженность предприятию, организации или учреждению от юридических или физических лиц, являющихся их должниками, дебиторами. 
