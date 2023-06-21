@@ -1,6 +1,6 @@
 'use strict';
 
-import {convertToBinaryString} from './../../../library/js/utils/bitwise';
+import {convertToBinaryString} from '../../../library/js/utils/primitives/bitwise_utils';
 
 export default async () => {
     // mock data

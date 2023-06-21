@@ -1,6 +1,6 @@
 'use strict';
 
-const {convertToBinaryString} = require('./../../library/js/utils/bitwise');
+const {convertToBinaryString} = require('../../library/js/utils/primitives/bitwise_utils');
 
 module.exports = async () => {
 

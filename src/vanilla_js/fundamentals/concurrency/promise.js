@@ -4,6 +4,41 @@ console.log('Classes examples');
 console.log('================');
 console.log('');
 
+const testPromise1 = new Promise((resolve, reject) => {
+    console.log('testPromise1 resolve...');
+    resolve('testPromise1 resolve 1...');
+});
+
+testPromise1
+    .then(() => {
+        console.log('then 1...')
+        throw new Error('df');
+        return Promise.reject('Error');
+       // return 'testPromise1 sub resolve 1...';
+    })
+    .catch(error => {
+        console.log('error', error)
+        return 3;
+    })
+    .then((val) => console.log('then 2', val))
+
+/*const testPromise1 = new Promise((resolve, reject) => {
+    console.log('testPromise1 reject...');
+    reject('testPromise1 reject 1...');
+});*/
+
+/*testPromise1
+    .catch(error => console.log('Catch 1: ', error))
+    .catch(error => console.log('Catch 2: ', error))*/
+
+/*testPromise1
+    .catch(error => {
+        throw new Error('testPromise1 sub reject 1')
+    })
+    .catch(error => console.log('Catch 2: ', error))*/
+
+
+
 /*const testPromise1 = new Promise((resolve, reject) => {
     console.log('testPromise1 resolve...');
     resolve('testPromise1 val 1...');
@@ -26,7 +61,7 @@ testPromise1
     });
 */
 
-const testPromise2 = new Promise((resolve, reject) => {
+/*const testPromise2 = new Promise((resolve, reject) => {
     console.log('testPromise2 resolve...');
     resolve('testPromise2 val 1...');
 });
@@ -42,7 +77,7 @@ testPromise2
     })
     .catch(error => {
         console.error(`error: ${error.message}`);
-    });
+    });*/
 
 /*Promise
     .resolve('cc')
