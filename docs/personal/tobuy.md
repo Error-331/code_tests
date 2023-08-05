@@ -15,6 +15,29 @@ https://www.amazon.com/Results-Obsession-ROI-Focused-Strategies-Transform/dp/057
 
 ## Компьютер
 
+### Водяное охлаждение для процессора
+
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_Lian_Li_Galahad_AIO_360_Black_Liquid_Cooler_with_RGB_G89GA360B01-p885070.html
+https://brain.com.ua/ukr/Kuler_do_procesora_Fractal_Design_Celsius_S36_Blackout_FD-WCU-CELSIUS-S36-BKO-p667012.html
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_ThermalTake_Floe_RC360_CPU_Memory_AIO_Liquid_Cooler_CL-W290-PL12SW-A-p859472.html
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_Lian_Li_Galahad_SL_Edition_AIO_360_Black_Liquid_Cooler_with_RGB_G89GA360SLB01-p885071.html
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_NZXT_Kraken_360mm_AIO_RL-KN360-B1-p995774.html
+https://brain.com.ua/ukr/Kuler_do_procesora_ThermalTake_Floe_Riing_RGB_360_TT_Premium_Edition_CL-W158-PL12SW-A-p672202.html
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_NZXT_Kraken_Elite_360mm_AIO_RL-KN36E-B1-p995777.html
+https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_MSI_MAG_CORELIQUID_P360-p828649.html - эту Кузен рекомендует
+
+### Контроллеры кулеров/ARGB
+
+https://hard.rozetka.com.ua/zalman_zm_pwm10fh/p332066662/
+https://rozetka.com.ua/331435678/p331435678/
+https://hard.rozetka.com.ua/zalman_zm_pwm10fh/p332066662/
+https://rozetka.com.ua/379919721/p379919721/
+https://rozetka.com.ua/356293332/p356293332/
+
+### Кулера
+
+https://hard.rozetka.com.ua/noctua_nf_a15pwm/p269148/ - Noctua NF-A15 PWM
+
 ### PCI
 
 https://www.amazon.com/StarTech-com-Express-Slot-Expansion-System/dp/B000UZL1GC/ref=sr_1_5?keywords=pci%2Bexpansion%2Bcard&qid=1677341286&sr=8-5&ufe=app_do%3Aamzn1.fos.304cacc1-b508-45fb-a37f-a2c47c48c32f&th=1 - for old PCI cards (extender);
@@ -93,7 +116,7 @@ https://rozetka.com.ua/314098930/p314098930/ - aloha
 https://rozetka.com.ua/318562945/p318562945/ - бычки
 https://rozetka.com.ua/97659016/p97659016/ - рыбки
 
-### Кртины
+### Картины
 
 https://artsale.ua/pejzazhi-prirody/kupit-kartinu-pejzazh-maslom-art-lsn100 - !
 https://artsale.ua/pejzazhi-prirody/kupit-pejzazh-maslom-art-lsn110
