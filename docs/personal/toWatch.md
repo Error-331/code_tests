@@ -19,6 +19,7 @@ https://rezka.io/serialy/12501-allo-allo.html - «Allo «Allo!
 ## Мультфильмы
 
 https://rezka.ag/cartoons/fantasy/49861-bezbiletniki-na-noevom-kovchege-1988.html - Безбилетники на Ноевом ковчеге;
+https://www.youtube.com/watch?v=9zvRNKs9Z2M - Robotix: The Series (1985);
 
 ## Мультсериалы
 
