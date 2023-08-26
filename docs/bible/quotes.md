@@ -87,6 +87,10 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(Isaiah 43:3)**
 
+*"But foolish and unlearned questions avoid, knowing that they do gender strifes."*
+
+**(2 Timothy 2:23 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
