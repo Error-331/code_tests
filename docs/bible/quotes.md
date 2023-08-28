@@ -91,6 +91,20 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(2 Timothy 2:23 KJV)**
 
+### General habits
+
+*"Forbidding to marry, and commanding to abstain from meats, which God hath created to be received with thanksgiving of them which believe and know the truth."*
+
+*"For every creature of God is good, and nothing to be refused, if it be received with thanksgiving:"*
+
+*"For it is sanctified by the word of God and prayer."*
+
+*"If thou put the brethren in remembrance of these things, thou shalt be a good minister of Jesus Christ, nourished up in the words of faith and of good doctrine, whereunto thou hast attained."*
+
+*"But refuse profane and old wives' fables, and exercise thyself rather unto godliness."*
+
+**(1 Timothy 4:3-7 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
