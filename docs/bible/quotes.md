@@ -91,6 +91,12 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(2 Timothy 2:23 KJV)**
 
+### Love
+
+*"And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour."*
+
+**(Ephesians 5:2 KJV)**
+
 ### General habits
 
 *"Forbidding to marry, and commanding to abstain from meats, which God hath created to be received with thanksgiving of them which believe and know the truth."*
