@@ -36,7 +36,7 @@ https://www.amazon.com/Strength-Today-Teen-Girls-Devotionals/dp/1424565111/ref=s
 https://www.amazon.com/Devotions-Lovers-Broadstreet-Publishing-Group/dp/1424564999/ref=sr_1_97?qid=1692819353&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-97&text=BroadStreet+Publishing+Group+LLC - 52 Devotions for Cat Lovers
 https://www.amazon.com/Jesus-Red-365-Meditations-Words/dp/1424558840/ref=sr_1_129?qid=1692819393&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-129&text=BroadStreet+Publishing+Group+LLC - Jesus in Red: 365 Meditations on the Words of Jesus (Imitation Leather) – Daily Motivational Devotions for All Ages, Authored by Ray Comfort, Perfect ... Family, Birthdays, Holidays, and More.
 https://www.amazon.com/Breakfast-Bites-2-Minute-Devotions-Start/dp/1424555825/ref=sr_1_148?qid=1692819410&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-148&text=BroadStreet+Publishing+Group+LLC - Breakfast Bites: 2-Minute Devotions to Start Your Day
-https://www.amazon.com/Engaging-Heaven-Today-Daily-Devotions/dp/1424562724/ref=sr_1_193?qid=1692819458&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-193&text=BroadStreet+Publishing+Group+LLC  -Engaging Heaven Today: 365 Daily Devotions
+https://www.amazon.com/Engaging-Heaven-Today-Daily-Devotions/dp/1424562724/ref=sr_1_193?qid=1692819458&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-193&text=BroadStreet+Publishing+Group+LLC - Engaging Heaven Today: 365 Daily Devotions
 https://www.amazon.com/Prayers-Promises-First-Responders-Davis/dp/1424562783/ref=sr_1_203?qid=1692819458&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-203&text=BroadStreet+Publishing+Group+LLC - Prayers & Promises for First Responders
 https://www.amazon.com/Prayers-Promises-Leaders-BroadStreet-Publishing-ebook/dp/B0CFQ7PZRB/ref=sr_1_242?qid=1692819506&refinements=p_27%3ABroadStreet+Publishing+Group+LLC&s=books&sr=1-242&text=BroadStreet+Publishing+Group+LLC - Prayers & Promises for Leaders
 https://www.amazon.com/Little-God-Time-Men-faux/dp/1424564956/ref=sr_1_160?crid=8A54X54LNHMS&keywords=365+devotional&qid=1692810708&sprefix=365+devotional+%2Caps%2C195&sr=8-160 - A Little God Time for Men (faux) (365 Daily Devotions)
@@ -89,6 +89,11 @@ https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-
 ### Разное
 
 https://www.aliexpress.com/item/1005004981756670.html?spm=a2g0o.productlist.0.0.2b214becMkaR98&algo_pvid=e8ac663b-a3d0-4924-816d-9db1677885fd&aem_p4p_detail=2022121014344310768208386679960004439538&algo_exp_id=e8ac663b-a3d0-4924-816d-9db1677885fd-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000031231481548%22%7D&pdp_npi=2%40dis%21USD%2112.54%213.76%21%21%21%21%21%4021135c3216707116834686202e2f5d%2112000031231481548%21sea&curPageLogUid=Zw3UctP4AIBV&ad_pvid=2022121014344310768208386679960004439538_10&ad_pvid=2022121014344310768208386679960004439538_10 - картинки для туалета;
+
+### Для книг
+
+https://www.alibaba.com/product-detail/Cutebee-Handmade-Gift-3D-Wooden-Puzzle_1600830109911.html?spm=a2700.pcdrm.0.0.545eTVCsTVCsPw&s=p
+https://www.alibaba.com/product-detail/Cutebee-Chinese-Style-3D-Wooden-Puzzle_1600874853928.html?spm=a2700.pcdrm.0.0.712dHOo3HOo3Gi&s=p
 
 ### Постеры
 
