@@ -147,6 +147,12 @@ pilgrims on the earth."*
 
 **(Proverbs 31:4-7 KJV)**
 
+### Work
+
+*"And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"*
+
+**(Colossians 3:23 KJV)**
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
