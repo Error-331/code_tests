@@ -97,6 +97,10 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(Ephesians 5:2 KJV)**
 
+*"If a man say, I love God, and hateth his brother, he is a liar: for he that loveth not his brother whom he hath seen, how can he love God whom he hath not seen?"*
+
+**(1 John 4:20 KJV)**
+
 ### General habits
 
 *"Forbidding to marry, and commanding to abstain from meats, which God hath created to be received with thanksgiving of them which believe and know the truth."*
