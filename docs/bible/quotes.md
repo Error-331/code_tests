@@ -574,3 +574,18 @@ in plenty or in want."*
 **(Philippians 4:12 NIV)**
 
 ...God frequently reminds us that true peace and contentment comes from our relationship with him and not the circumstances of our life...
+
+#### Counting Our Blessings
+
+*"The blessings of thy father have prevailed above the blessings of my progenitors unto the utmost bound of the everlasting hills: they shall be on the head of Joseph, and on the crown of 
+the head of him that was separate from his brethren."*
+
+**(Genesis 49:26 KJV)**
+
+...Jacob began to count the rich mercies of God in his life...
+
+...It's easy to encounter adversity and think our lives are without meaning...
+
+...We can focus on people who disappoint us, work that is difficult, or a life that seems unfulfilled...
+
+...Or we can focus on the many ways God has blessed us...
