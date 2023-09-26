@@ -91,6 +91,14 @@ I tell you, even though he will not get up and give you the bread because of fri
 
 **(2 Timothy 2:23 KJV)**
 
+*"And when these lepers came to the uttermost part of the camp, they went into one tent, and did eat and drink, and carried thence silver, and gold, and raiment, and went and hid it; and 
+came again, and entered into another tent, and carried thence also, and went and hid it."*
+
+*"Then they said one to another, We do not well: this day is a day of good tidings, and we hold our peace: if we tarry till the morning light, some mischief will come upon us: now therefore
+come, that we may go and tell the king's household."*
+
+**(2 Kings 7:8-9 KJV)**
+
 ### Love
 
 *"And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour."*

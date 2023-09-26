@@ -12,3 +12,5 @@ Search the Intentions - August 29 (Love);
 
 Love is a Person - September 6 (??? - reread);
 Righteousness of Christ - September 7 (??? - reread);
+
+Sight of Vision - September 25 - (true vision, Gods plan, Gods work, true meaning);
