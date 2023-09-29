@@ -597,3 +597,14 @@ the head of him that was separate from his brethren."*
 ...We can focus on people who disappoint us, work that is difficult, or a life that seems unfulfilled...
 
 ...Or we can focus on the many ways God has blessed us...
+
+#### Experience
+
+*"Drink deeply of the pleasures of this God. Experience for yourself the joyous mercies he gives to all who turn to hide themselves in him. Worship in awe and wonder, all you who've made holy!
+For all who fear him will feast with plenty."*
+
+**(Psalm 34:8-9 TPT)**
+
+...The proper fear of God removes us from the fears of our daily life...
+
+...When we get a taste of the joy and goodness of God, both inner temptations and outer enemies lose their power against us...
