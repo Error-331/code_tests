@@ -4,6 +4,10 @@
 
 https://powertool.com.ua/grazhdanskie-protivogazy/4112-grazhdanskij-protivogaz-gp-7b-s-filtrom-pod-ammiak.html - ГРАЖДАНСКИЙ ПРОТИВОГАЗ ГП-7Б С ФИЛЬТРОМ ПОД АММИАК;
 
+## Статуэтки
+
+https://www.alibaba.com/product-detail/OEM-8-beautiful-girl-action-figure_755002632.html?spm=a2700.galleryofferlist.normal_offer.d_image.78f9777duwGsvU - OEM 8" beautiful girl action figure
+
 ## Книги
 
 https://www.bookovka.ua/ru/detskaya-literatura/22210-my-koshki.html?gclid=Cj0KCQjwhtT1BRCiARIsAGlY51IJa5e_lNediVuirDW-dZET6NLfHH5qql3VWh7jyo91soUoMJ_nuYMaAnJwEALw_wcB
