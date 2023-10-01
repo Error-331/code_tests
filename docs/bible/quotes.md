@@ -624,3 +624,14 @@ For all who fear him will feast with plenty."*
 ...God, you know the times when I've struggled with doubt, when I've wondered who I really am or even what I'm here for...
 
 ...I thank you that I have a shepherd, a good one, who has blessing planned for me as I follow your lead...
+
+#### Fear
+
+*"I, I am he who comforts you; who are you that you are afraid of man who dies, of the son of man who is made like grass, and have forgotten the Lord, your Maker, who stretched out the
+heavens and laid the foundations of the earth, and you fear continually all the day because of the wrath of the oppressor."*
+
+**(Isaiah 51:12-13 ESV)**
+
+...But when we fear people (verse 12), it demonstrates that we've forgotten God and his power (verse 13)...
+
+...John Calvin described fear as giving more power to the mortal man attacking you than to the power of God defending you...
