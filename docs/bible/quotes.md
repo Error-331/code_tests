@@ -109,6 +109,18 @@ come, that we may go and tell the king's household."*
 
 **(1 John 4:20 KJV)**
 
+### Spirit
+
+*"But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,"*
+
+*"Meekness, temperance: against such there is no law."*
+
+**(Galatians 5:22-23 KJV)**
+
+*"If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father give the Holy Spirit to them that ask him?"*
+
+**(Luke 11:13 KJV)**
+
 ### General habits
 
 *"Forbidding to marry, and commanding to abstain from meats, which God hath created to be received with thanksgiving of them which believe and know the truth."*
