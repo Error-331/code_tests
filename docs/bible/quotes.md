@@ -177,6 +177,24 @@ pilgrims on the earth."*
 
 **(Colossians 3:23 KJV)**
 
+## Rabbi Jason Sobel
+
+### Signs and Secrets of the Messiah
+
+#### Miracle of the nets
+
+...God doesn’t want you to be anxious or worried about what may or may not happen to you...
+
+...True faith believes the best, while fear thinks the worst...
+
+...Peter had anxiety and fear, but we must understand that fear is false faith...
+
+...True faith believes the best, while fear thinks the worst...
+
+...Fear brings cursing, but faith brings blessing...
+
+...Yeshua came for us to have victory and conquer the fears that can drag us down...
+
 ## C.H. Spurgeon
 
 ### Faith's Checkbook
