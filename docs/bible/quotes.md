@@ -183,6 +183,13 @@ pilgrims on the earth."*
 
 #### Miracle of the nets
 
+*"For I am the Lord your God
+who takes hold of your right hand
+and says to you, Do not fear;
+I will help you."*
+
+**(Isaiah 41:13 NIV)**
+
 ...God doesn’t want you to be anxious or worried about what may or may not happen to you...
 
 ...True faith believes the best, while fear thinks the worst...
