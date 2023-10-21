@@ -99,6 +99,10 @@ come, that we may go and tell the king's household."*
 
 **(2 Kings 7:8-9 KJV)**
 
+*"And we know that we are of God, and the whole world lieth in wickedness."*
+
+**(1 John 5:19 KJV)**
+
 ### Love
 
 *"And walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour."*
