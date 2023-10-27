@@ -100,6 +100,10 @@ https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-
 
 ## Электроника
 
+### Компьютеры
+
+https://evo.net.ua/palata-rasshireniya-nvidia-jetson-mate-with-cooling-fan-110991411/?gclid=Cj0KCQjwhL6pBhDjARIsAGx8D5-tf6ZGry3NpPG_YtPy-gqO0lZLSeUH7K2LVhaAZ25Y2wOEK_TltPYaAhwZEALw_wcB - SeeedStudio Jetson Mate With Cooling Fan
+
 ### USB
 
 https://www.aliexpress.com/item/1005004491850175.html?spm=a2g0o.store_pc_groupList.8148356.3.5daaa6a0aPya9i&pdp_npi=4%40dis%21PLN%21221%2C90%20z%C5%82%21224%2C67%20z%C5%82%21%21%2151.35%2151.99%21%4021165f1816984227196257320ef932%2112000029346126121%21sh%21PL%214291096233%21 - MECHANIC iCharge 8 Max 110W 8 Ports
