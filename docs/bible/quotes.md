@@ -181,6 +181,12 @@ pilgrims on the earth."*
 
 **(Colossians 3:23 KJV)**
 
+### Punishment
+
+*"Upon the wicked he shall rain snares, fire and brimstone, and an horrible tempest: this shall be the portion of their cup."*
+
+**(Psalm 11:6 KJV)**
+
 ## Rabbi Jason Sobel
 
 ### Signs and Secrets of the Messiah
