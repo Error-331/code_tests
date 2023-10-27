@@ -40,3 +40,8 @@ https://www.ebook3000.co/programming-kubernetes/
 https://www.ebook3000.co/react-design-patterns-and-best-practices-second-edition/
 https://www.ebook3000.co/react-cookbook/
 https://www.ebook3000.co/mastering-typescript-3-third-edition/
+
+### Algorithms
+
+https://dmkpress.com/catalog/computer/programming/algorithms/978-5-94074-804-5/ - СОВРЕМЕННЫЙ САМОУЧИТЕЛЬ ПО АЛГОРИТМАМ
+https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСКРЕТНАЯ МАТЕМАТИКА. АЛГОРИТМЫ: ТЕОРИЯ И ПРАКТИКА

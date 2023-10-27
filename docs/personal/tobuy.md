@@ -4,6 +4,14 @@
 
 https://powertool.com.ua/grazhdanskie-protivogazy/4112-grazhdanskij-protivogaz-gp-7b-s-filtrom-pod-ammiak.html - ГРАЖДАНСКИЙ ПРОТИВОГАЗ ГП-7Б С ФИЛЬТРОМ ПОД АММИАК;
 
+## Одежда
+
+https://www.cotosen.com/activity/hot-sale-6811/?tspu=SP230913UBY3,SP221012DPMO,SP230902V6L8,SP211123I6QY,SP2208263C4N,SP230817BMQH,SP230927D37V,SP230927Y3OJ,SP230927H1PS,SP230927MBTS&utm_source=google&utm_medium=7223384835&utm_campaign=15798102638~[U2164]~&utm_adset=134424598760&utm_content=675974945946&utm_term=U2164&gclid=CjwKCAjwg4SpBhAKEiwAdyLwvH6u5nWAfpnjmifWl9Rfs8W8xyQvTe0Hsznxm0VND5M1admToE45oRoCsQIQAvD_BwE
+
+## Игрушки
+
+https://www.alibaba.com/product-detail/Wholesale-Simulation-Cute-Plush-strong-Toy_1600848688511.html?spm=a2700.pcdrm.0.0.5e53q5ZVq5ZVS7&s=p - Wholesale Simulation Cute Plush Toy Lazy Cat Realistic Cat Plush Toy Cat Stuffed Animal Toy
+
 ## Статуэтки
 
 https://www.alibaba.com/product-detail/OEM-8-beautiful-girl-action-figure_755002632.html?spm=a2700.galleryofferlist.normal_offer.d_image.78f9777duwGsvU - OEM 8" beautiful girl action figure
@@ -82,11 +90,19 @@ https://www.aliexpress.com/item/4001300527726.html?spm=a2g0o.productlist.0.0.54d
 ### USB
 
 http://handheldsci.com/kb/ - Bluetooth Adapter for Keyboard & Mouse (BT-500)
+https://www.amazon.com/gp/product/B005QX7KYU/ref=oh_details_o02_s00_i00?tag=xdaforum01-20 - Insten Micro USB OTG to USB 2.0 Adapter Cable Compatible With Samsung Galaxy S7/S6/S6 Edge/Note 4/3
+https://www.aliexpress.com/item/1005003017387435.html?spm=a2g0o.productlist.main.77.79ba49c49sTno5&algo_pvid=cee0d4f5-188c-42fd-9ee3-033b98946a4c&aem_p4p_detail=202310270842023521368819000001707908&algo_exp_id=cee0d4f5-188c-42fd-9ee3-033b98946a4c-38&pdp_npi=4%40dis%21PLN%2119.71%2119.71%21%21%214.56%21%21%402116619216984213223505620e074f%2112000023254613183%21sea%21PL%214291096233%21&curPageLogUid=VDmyAIHsbEte&search_p4p_id=202310270842023521368819000001707908_39 - ​100W USB Type C Fast Charging Adapter Plug Connector Universal USB C Laptop Charger Converter for Dell Asus Hp Acer Lenovo
 
 ## Игры
 
 https://lordofboards.com.ua/chudo-v-peryakh-ludum/?gclid=Cj0KCQjwspKUBhCvARIsAB2IYusu_1hB4JW-DWQkIW6VT_CRxAJ9hopGJlT5OraQPt86IMNms2pq8FYaAuDZEALw_wcB - Настільна гра "Чудо у пір'ячку";
 https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-Proportional-Control-RC-Vehicle-Model-Without-Electronic-Element-No-Transmitter-No-Battery-p-1697008.html?cur_warehouse=CN&ID=45586&rmmds=search;
+
+## Электроника
+
+### USB
+
+https://www.aliexpress.com/item/1005004491850175.html?spm=a2g0o.store_pc_groupList.8148356.3.5daaa6a0aPya9i&pdp_npi=4%40dis%21PLN%21221%2C90%20z%C5%82%21224%2C67%20z%C5%82%21%21%2151.35%2151.99%21%4021165f1816984227196257320ef932%2112000029346126121%21sh%21PL%214291096233%21 - MECHANIC iCharge 8 Max 110W 8 Ports
 
 ## Декор
 
@@ -213,3 +229,7 @@ https://www.aliexpress.com/item/1005004515039214.html?spm=a2g0o.productlist.0.0.
 https://www.aliexpress.com/item/1005004869620544.html?spm=a2g0o.productlist.0.0.2b214becMkaR98&algo_pvid=20bb51fa-fe14-496b-8d01-1bd5e6e92d4f&aem_p4p_detail=20221210143824999160580181750004501932&algo_exp_id=20bb51fa-fe14-496b-8d01-1bd5e6e92d4f-43&pdp_ext_f=%7B%22sku_id%22%3A%2212000030824691521%22%7D&pdp_npi=2%40dis%21USD%2125.98%2112.99%21%21%21%21%21%40211675ce16707119040154627ea501%2112000030824691521%21sea&curPageLogUid=OdNVvgVRoxWn&ad_pvid=20221210143824999160580181750004501932_44&ad_pvid=20221210143824999160580181750004501932_44 - bar sign glass;
 https://www.aliexpress.com/item/1005005047393716.html?spm=a2g0o.productlist.0.0.2b214becMkaR98&algo_pvid=20bb51fa-fe14-496b-8d01-1bd5e6e92d4f&aem_p4p_detail=20221210143824999160580181750004501932&algo_exp_id=20bb51fa-fe14-496b-8d01-1bd5e6e92d4f-9&pdp_ext_f=%7B%22sku_id%22%3A%2212000031444793045%22%7D&pdp_npi=2%40dis%21USD%2150.64%2150.64%21%21%21%21%21%40211675ce16707119040154627ea501%2112000031444793045%21sea&curPageLogUid=k4uKdhtk4zuD&ad_pvid=20221210143824999160580181750004501932_10&ad_pvid=20221210143824999160580181750004501932_10 - chill pill;
 https://www.aliexpress.com/item/1005001817069153.html?spm=a2g0o.productlist.0.0.335416b3NJoatD&algo_pvid=8bbe216c-e3c9-4fb7-a219-74806d5603a9&algo_exp_id=8bbe216c-e3c9-4fb7-a219-74806d5603a9-39&pdp_ext_f=%7B%22sku_id%22%3A%2212000017730343758%22%7D&pdp_npi=2%40dis%21USD%2127.13%2120.35%21%21%21%21%21%4021135c3316707130273358638e2f4a%2112000017730343758%21sea&curPageLogUid=D4uFupEENe6R - different signs;
+
+### Магнитики
+
+https://www.aliexpress.com/item/4000123674350.html?spm=a2g0o.home.moretolove.190.65d52145VY0UdY&gps-id=pcJustForYou&scm=1007.13562.333647.0&scm_id=1007.13562.333647.0&scm-url=1007.13562.333647.0&pvid=4fe76da0-2b00-4f5c-a04b-1842eac3ecda&_t=gps-id:pcJustForYou,scm-url:1007.13562.333647.0,pvid:4fe76da0-2b00-4f5c-a04b-1842eac3ecda,tpp_buckets:668%232846%238110%231995&pdp_npi=4%40dis%21PLN%2121.30%218.73%21%21%214.93%21%21%4021038e8316984204902902360e6466%2110000000347726783%21rec%21PL%214291096233%21 - HACK THE PLANET Enamel Pin

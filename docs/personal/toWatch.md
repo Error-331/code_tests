@@ -41,7 +41,6 @@ https://theflixer.tv/tv/watch-animaniacs-full-64959 - animaniacs;
 https://theflixer.tv/movie/watch-clown-full-75757 - clown;
 https://theflixer.tv/watch-tv/watch-i-tsushima-full-72307.4820287 - I, Tsushima;
 
-
 ## Готовое к просмотру
 
 - https://ling-online.com/ru/videos/serials/xena-warrior-princess/ - Xena: Warrior Princess;
@@ -51,3 +50,12 @@ https://theflixer.tv/watch-tv/watch-i-tsushima-full-72307.4820287 - I, Tsushima;
 - https://ling-online.com/ru/videos/serials/chicago-med_/ - Медики Чикаго;
 - https://ling-online.com/ru/videos/serials/how-to-get-away-with-murder/ - Как избежать наказания за убийство;
 - https://ling-online.com/ru/videos/serials/adventure-time/# - Время приключений;
+
+## Курсы
+
+https://www.linkedin.com/learning/accounting-foundations-bookkeeping-2/quiz/urn:li:learningApiAssessment:4618143?resume=false - Accounting Foundations: Bookkeeping;
+https://www.linkedin.com/learning/financing-your-business - Financing Your Business;
+https://www.linkedin.com/learning/sales-fundamentals - Sales Fundamentals;
+https://www.linkedin.com/learning/no-code-solutions-for-websites-and-apps-14213368 - No-Code Solutions for Websites and Apps (2021);
+https://www.linkedin.com/learning/planning-your-no-code-website - Planning Your No-Code Website;
+https://www.linkedin.com/learning/cloud-architecture-design-decisions-16813225 - Cloud Architecture: Design Decisions;
