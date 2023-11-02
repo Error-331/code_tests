@@ -163,6 +163,10 @@ pilgrims on the earth."*
 
 **(Hebrews 11:13 KJV)**
 
+*"For whether we be beside ourselves, it is to God: or whether we be sober, it is for your cause."*
+
+**(2 Corinthians 5:13 KJV)**
+
 ### Politics
 
 *"It is not for kings, O Lemuel, it is not for kings to drink wine; nor for princes strong drink:"*
