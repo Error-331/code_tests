@@ -191,6 +191,16 @@ pilgrims on the earth."*
 
 **(Psalm 11:6 KJV)**
 
+### Anxiety
+
+*"Can any one of you by worrying add a single hour to your life?"*
+
+**(Matthew 6:27 NIV)**
+
+*"Therefore do not worry about tomorrow, for tomorrow will worry about itself. Each day has enough trouble of its own."*
+
+**(Matthew 6:34 NIV)**
+
 ## Rabbi Jason Sobel
 
 ### Signs and Secrets of the Messiah
