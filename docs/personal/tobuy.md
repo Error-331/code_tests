@@ -103,10 +103,17 @@ https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-
 ### Компьютеры
 
 https://evo.net.ua/palata-rasshireniya-nvidia-jetson-mate-with-cooling-fan-110991411/?gclid=Cj0KCQjwhL6pBhDjARIsAGx8D5-tf6ZGry3NpPG_YtPy-gqO0lZLSeUH7K2LVhaAZ25Y2wOEK_TltPYaAhwZEALw_wcB - SeeedStudio Jetson Mate With Cooling Fan
+https://www.aliexpress.com/item/1005005240443249.html?ug_edm_item_id=1005005240443249&pdp_npi=3%40dis%21PLN%21238%2C69z%C5%82%21238%2C69z%C5%82%21%21%21%21%21%402151e4a917003850147006508dc80c%2112000032328257103%21edm%21%21&edm_click_module=alg_product_l1r2_5163200840&abexp_id=180337&abexp_bkt=629463&abexp_rels=458342&creative_img_ind=1&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_23867_1_pl_PL_2023-11-19&rowan_msg_id=sergCOWS_23867_$bb52afad5c8d448687a77c2f7020fab2&ck=in_edm_other - Pironman Mini PC Case for Raspberry Pi - Aluminum Alloy Tower Case, M.2 SATA SSD Expansion Board for Raspberry Pi 4
+https://www.mini-itx.com/store/ - mini-itx store;
 
 ### USB
 
 https://www.aliexpress.com/item/1005004491850175.html?spm=a2g0o.store_pc_groupList.8148356.3.5daaa6a0aPya9i&pdp_npi=4%40dis%21PLN%21221%2C90%20z%C5%82%21224%2C67%20z%C5%82%21%21%2151.35%2151.99%21%4021165f1816984227196257320ef932%2112000029346126121%21sh%21PL%214291096233%21 - MECHANIC iCharge 8 Max 110W 8 Ports
+
+### Радио
+
+https://www.aliexpress.com/item/1005003871380878.html?ug_edm_item_id=1005003871380878&pdp_npi=3%40dis%21PLN%211%20756%2C84z%C5%82%21878%2C42z%C5%82%21%21%21%21%21%402151e7f817002986260042284d478e%2112000027363930896%21edm%21%21&edm_click_module=alg_product_l1r2_1375904380&abexp_id=180343&abexp_bkt=629481&abexp_rels=458348&creative_img_ind=1&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41180_1_pl_PL_2023-11-18&rowan_msg_id=sergCOWS_41180_$6215891b84da4533a4442a2d1457463d&ck=in_edm_other - HFDY 1.10D Firmware Enhanced Version 50KHz-2GHz Malachite SDR Receiver Radio Malahilteam DSP with Code Support Two Antenna
+https://www.aliexpress.com/item/1005005180164079.html?spm=a2g0o.detail.0.0.5cfeTeWNTeWNvp&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=0b30fa47-72f7-4531-9328-919db95b45d7&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:0b30fa47-72f7-4531-9328-919db95b45d7,tpp_buckets:668%232846%238107%231934&pdp_npi=4%40dis%21PLN%21297.83%21297.83%21%21%21520.59%21%21%40211b5db317005090313513477e9cf8%2112000036023012357%21rec%21PL%214291096233%21&search_p4p_id=202311201137115323287362653920382428_6 - Putikeeg Morse Code Practice Oscillator - Rechargeable CW Trainer For Beginner Practitioners
 
 ## Декор
 

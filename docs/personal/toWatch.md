@@ -7,6 +7,7 @@ https://en.wikipedia.org/wiki/Beach_party_film
 https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA_%D0%BA%D1%83%D1%81%D0%B0%D0%B5%D1%82_%D1%81%D0%BE%D0%B1%D0%B0%D0%BA%D1%83
 https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9_%D0%BF%D1%83%D1%82%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC) - Светлый путь
 https://rezka.ag/films/drama/30316-sten-i-olli-2018.html
+https://theflixer.tv/movie/watch-the-wonderful-story-of-henry-sugar-full-100696 - The Wonderful Story of Henry Sugar
 
 ## Сериалы
 
@@ -15,6 +16,9 @@ https://ru.wikipedia.org/wiki/%D0%97%D0%B0_%D0%B3%D1%80%D0%B0%D0%BD%D1%8C%D1%8E_
 https://en.wikipedia.org/wiki/Heartland_(Canadian_TV_series) - Heartland (Canadian TV series)
 https://www.imdb.com/title/tt4287464/ - Nightwatch
 https://rezka.io/serialy/12501-allo-allo.html - «Allo «Allo!
+https://theflixer.tv/movie/watch-vhs85-full-101191 - V/H/S/85
+https://theflixer.tv/tv/watch-below-deck-down-under-full-78508 - Below Deck Down Under
+https://theflixer.tv/tv/watch-adventure-time-fionna-cake-full-99835 - Adventure Time: Fionna & Cake
 
 ## Мультфильмы
 
@@ -59,3 +63,9 @@ https://www.linkedin.com/learning/sales-fundamentals - Sales Fundamentals;
 https://www.linkedin.com/learning/no-code-solutions-for-websites-and-apps-14213368 - No-Code Solutions for Websites and Apps (2021);
 https://www.linkedin.com/learning/planning-your-no-code-website - Planning Your No-Code Website;
 https://www.linkedin.com/learning/cloud-architecture-design-decisions-16813225 - Cloud Architecture: Design Decisions;
+
+## Youtube
+
+### Детям
+
+https://www.youtube.com/@user-xf6bb4vt3x - Кузюка
