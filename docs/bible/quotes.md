@@ -696,3 +696,14 @@ heavens and laid the foundations of the earth, and you fear continually all the 
 ...But when we fear people (verse 12), it demonstrates that we've forgotten God and his power (verse 13)...
 
 ...John Calvin described fear as giving more power to the mortal man attacking you than to the power of God defending you...
+
+#### Giving Thanks
+
+*"Whatever you do or say, do it as a representative of the Lord Jesus, giving thanks through him to God the Father"*
+
+**(Colossians 3:17 NLT)**
+
+...As humans practice being thankful in their mind and in their speech, it actually rewires pathways in their brain in a way that trains them to live their whole 
+lives through a lens of gratitude...
+
+...Consider keeping a journal of thankfulness or verbally practicing gratitude one or two times per day with the people in your life and see if it changes anything within you....
