@@ -201,6 +201,12 @@ pilgrims on the earth."*
 
 **(Matthew 6:34 NIV)**
 
+### Smarts and Brain
+
+*"For a dream cometh through the multitude of business; and a fool's voice is known by multitude of words."*
+
+**(Ecclesiastes 5:3 KVJ)**
+
 ## Rabbi Jason Sobel
 
 ### Signs and Secrets of the Messiah
@@ -707,3 +713,12 @@ heavens and laid the foundations of the earth, and you fear continually all the 
 lives through a lens of gratitude...
 
 ...Consider keeping a journal of thankfulness or verbally practicing gratitude one or two times per day with the people in your life and see if it changes anything within you....
+
+#### Worship
+
+*"Guard your steps when you go to the house of God; to draw near to listen is better than the sacrifice offered by fools; for they do not know how to keep from doing evil. Never be rash 
+with your mouth, not let your heart be quick to utter a word before God, for God is in heaven, and you upon earth; therefore let your words be few."*
+
+**(Ecclesiastes 5:1-2 NRSV)**
+
+...We often speak before we think...

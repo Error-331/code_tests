@@ -16,3 +16,5 @@ Righteousness of Christ - September 7 (??? - reread);
 Sight of Vision - September 25 - (true vision, Gods plan, Gods work, true meaning);
 
 Giving Thanks - November 24 (Psyche);
+
+Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
