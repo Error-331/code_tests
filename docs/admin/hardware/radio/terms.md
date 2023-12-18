@@ -21,3 +21,23 @@ members. Both operate with low power on UHF frequencies. FRS operation is unlice
 ways to VHF and UHF ham radios (require a license to operate);
 
 - WiFi - operates on the 2.4- or 5.6-GHz bands;
+
+- Scrambler - is a device that transposes or inverts signals or otherwise encodes (usually refers to operations carried out in the digital domain) a message at the sender's side to make the 
+message unintelligible at a receiver not equipped with an appropriately set descrambling device;
+
+- FRS (The Family Radio Service) - is an improved walkie-talkie radio system. This personal radio service uses channelized frequencies around 462 and 467 MHz in the 
+ultra high frequency (UHF) band;
+
+- Digital Code Squelch (DCS) or CDCSS - is a further development of the continuous tone-coded squelch system or **CTCSS** that uses a slow-speed, binary data stream passed as sub-audible 
+data along with the transmission;
+
+- Continuous Tone-Coded Squelch System (CTCSS) - it is a use of sub-audible tones that are transmitted along with the speech portion of the transmission which allows more than one agency 
+(or fleet) to use the same radio frequency without hearing the other agency on that frequency;
+
+- Demodulator (Demod) - recovers (demodulates) the original information from an intermediate frequency (IF) that is provided to it by a tuner;
+
+- Squelch (шумоподавление) - is a circuit function that acts to suppress the audio output of a receiver in the absence of a strong input signal (specialized type of noise 
+gate designed to suppress weak signal);
+
+- Scanner (radio scanner) - is a radio receiver that can automatically tune, or scan, two or more discrete frequencies, stopping when it finds a signal on one of them and then continuing 
+to scan other frequencies when the initial transmission ceases;
