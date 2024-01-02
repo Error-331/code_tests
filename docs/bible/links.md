@@ -18,3 +18,9 @@ Sight of Vision - September 25 - (true vision, Gods plan, Gods work, true meanin
 Giving Thanks - November 24 (Psyche);
 
 Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
+
+## Jesus in RED
+
+A Good Jewish Boy - January 1 (reach out, fathers business, gospel)
+
+The Cool, Inviting Door - January 2 (food, hunger, obesity, devil, resist)

@@ -722,3 +722,19 @@ with your mouth, not let your heart be quick to utter a word before God, for God
 **(Ecclesiastes 5:1-2 NRSV)**
 
 ...We often speak before we think...
+
+## Ray Comfort
+
+### Jesus in Red 
+
+#### The Cool, Inviting Door
+
+*"Man shall not live by bread alone, but by every word of God"*
+
+**(Luke 4:4)**
+
+...We must never forget that Satan came to kill, steal, and destroy, and overeating to a point of obesity is destructive...
+
+...And so when we are tempted to overindulge, we need to imitate Jesus and close the door. Tight...
+
+_Father, never let it be said of me that my god is my belly._
