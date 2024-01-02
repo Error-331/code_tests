@@ -77,23 +77,50 @@ More details:
 - FM - frequency of 88 to 108 MHz and wavelengths of 3 meters;
 - WiFi - 1⁄8 meter long;
 
+#### MW (medium wave) frequency
+
+- Medium wave (MW) is the part of the medium frequency (MF) radio band used mainly for AM radio broadcasting;
+- provides about 120 channels with more limited sound quality; 
+- during the **daytime**, reception is usually limited to more local stations; 
+- improved signal propagation at **night** allows the reception of much longer distance signals (within a range of about 2,000 km or 1,200 miles); 
+- **amplitude modulation (AM)** is often more prone to interference by various electronic devices, especially power supplies and computers; 
+- strong transmitters cover larger areas than on the FM broadcast band but require more energy and longer antennas; 
+- **digital modes are possible but have not reached momentum yet**;
+
+| Area              	  | kHz (centre) | Spacing | Channels |
+|:------------------------|:-------------|:--------|:---------|
+| Europe, Asia, Africa    |	531–1,602    | 9 kHz   | 120      |
+| Australia               |	531–1,701    | 9 kHz   | 131      |
+| North and South America |	530–1,700    | 10 kHz  | 118      |
+
+#### SW short wave frequency
+
+- is radio transmission using radio frequencies in the shortwave bands (SW); 
+- there is no official definition of the band range, but it always includes all of the high frequency band (HF) - 3 to 30 MHz (100 to 10 meters);
+- above the medium frequency band (MF), to the bottom of the VHF band;
+- radio waves in the shortwave band can be reflected or refracted from a layer of electrically charged atoms in the atmosphere called the ionosphere;
+- **shortwave radio can be used for communication over very long distances**;
+- SW is often used by airplanes;
+- in the developed world, shortwave reception is very difficult in urban areas because of excessive noise from switched-mode power adapters, fluorescent or LED light sources, 
+internet modems and routers, computers and many other sources of radio interference;
+
 ### IEEE classification of microwave range
 
-| Band designation | Frequency range | Explanation of meaning of letters |
-|:-----------------|:----------|:---------|
-| HF | 0.003 to 0.03 GHz | High Frequency |
-| VHF | 0.03 to 0.3 GHz | Very High Frequency |
-| UHF | 0.3 to 1 GHz | Ultra High Frequency | 
-| L | 1 to 2 GHz | Long wave |
-| S | 2 to 4 GHz | Short wave |
-| C | 4 to 8 GHz | Compromise between S and X |
-| X | 8 to 12 GHz | Used in WW II for fire control, X for cross (as in crosshair). Exotic. |
-| Ku | 12 to 18 GHz | Kurz-under |
-| K | 18 to 27 GHz | Kurz (German for “short”) |
-| Ka | 27 to 40 GHz | Kurz-above |
-| V | 40 to 75 GHz | | 
-| W | 75 to 110 GHz | W follows V in the alphabet |
-| mm or G | 110 to 300 GHz​ | Millimeter |
+| Band designation | Frequency range    | Explanation of meaning of letters                                      |
+|:-----------------|:-------------------|:-----------------------------------------------------------------------|
+| HF               | 0.003 to 0.03 GHz  | High Frequency                                                         |
+| VHF              | 0.03 to 0.3 GHz    | Very High Frequency                                                    |
+| UHF              | 0.3 to 1 GHz       | Ultra High Frequency                                                   | 
+| L                | 1 to 2 GHz         | Long wave                                                              |
+| S                | 2 to 4 GHz         | Short wave                                                             |
+| C                | 4 to 8 GHz         | Compromise between S and X                                             |
+| X                | 8 to 12 GHz        | Used in WW II for fire control, X for cross (as in crosshair). Exotic. |
+| Ku               | 12 to 18 GHz       | Kurz-under                                                             |
+| K                | 18 to 27 GHz       | Kurz (German for “short”)                                              |
+| Ka               | 27 to 40 GHz       | Kurz-above                                                             |
+| V                | 40 to 75 GHz       |                                                                        | 
+| W                | 75 to 110 GHz      | W follows V in the alphabet                                            |
+| mm or G          | 110 to 300 GHz​ | Millimeter                                                             |
 
 ## Radio wave propagation
 
@@ -115,3 +142,43 @@ One limiting factor for all wireless communication is noise.
 - FM was invented and used for broadcasting because of its noise-rejection properties. Even
 - by using sophisticated methods of turning speech and data into digital codes, digital technology strips away layers of noise, leaving only the desired signal;
 - using **WSJT-X** software, hams can communicate with signals hundreds of times weaker than the natural noise level, even bouncing their signals off the moon with simple equipment;
+
+## Misc
+
+### Demodulator
+
+A Demodulator (short Demod) recovers (demodulates) the original information from an intermediate frequency (IF) that is provided to it by a tuner. 
+
+- the type of demodulator IC used for this task of information recovery is specific and dependent upon the nature of the signal transmission scheme involved;
+- in the case of analog TV, the IF inputted into the demodulator contains the composite signal that was originally modulated onto the RF carrier; 
+- after recovery, the demodulator outputs a CVSB signal, which will then need to be digitized through sampling techniques performed by a A/V decoder;
+
+#### TV transmission schemes
+
+- in the case of digital TV transmission schemes, the IF inputted into the demodulator contains a MPEG-2 Transport Stream (TS) that was originally modulated onto the RF carrier; 
+- in the process of recovering digital TV TS, digital demodulators will perform Forward Error Correction (Convolutional Viterbi- and Block-Reed-Solomon-Decoding); 
+- this whole process is sometimes referred to as RF-to-bits, for, unlike the case with analog IF demodulators, the recovered signal outputted from the digital demodulator is
+already a digital bit stream (specifically a TS); 
+- the TS will in turn be sent to a decoder in order to display (and, depending upon what format the underlying video content contained within the TS was encoded with, this could be a 
+MPEG-2 or MPEG-4 decoder  and either hardware or software based);
+
+### Digital Code Squelch (DCS)
+
+- or CDCSS, or Digital Private Line (DPL);
+- is a further development of the continuous tone-coded squelch system or **CTCSS** that uses a slow-speed, binary data stream passed as sub-audible data along with the transmission;
+- consists of a 23-bit telegram sent repeatedly on the channel at 134 bits per second along with the voice transmission; 
+- allows for over 100 possible fleet codes to be used;
+- gives it an advantage over the CTCSS tones in that there are more possible codes to use;
+- **it does use more bandwidth and can be affected by voice tones below 300 Hz if not properly filtered by the radio circuitry**;
+
+### Continuous Tone-Coded Squelch System
+
+- known by a number of different trade names such as Private Line® (PL) by Motorola, Channel Guard® (CG) by General Electric and generically as tone **squelch**;
+- 
+- it is a use of sub-audible tones that are transmitted along with the speech portion of the transmission which allows more than one agency (or fleet) to use the same radio frequency 
+without hearing the other agency on that frequency; 
+
+- receivers for agency XYZ are set to only open their audio squelch when the proper sub-audible frequency tone is part of the transmission;
+
+- sharing of frequencies by agencies is less common than it once was, CTCSS is more commonly used by repeater systems to prevent noise or interference from causing the repeater squawk 
+obnoxiously, and by receivers as an extra measure of squelch (to prevent engine noise from breaking squelch);
