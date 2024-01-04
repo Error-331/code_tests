@@ -24,3 +24,5 @@ Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel)
 
 The Cool, Inviting Door - January 2 (food, hunger, obesity, devil, resist)
+
+A Shocking Thought - January 3 (Temptation, list of temptations, devil, resist)
