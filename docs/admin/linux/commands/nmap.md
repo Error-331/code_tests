@@ -344,3 +344,13 @@ nmap -T5 10.16.18.7
 nmap -T2 10.16.18.7
 
 ```
+
+### Samba
+
+Scan for Samba endpoints:
+
+```ssh
+
+nmap --script smb-protocols localhost
+
+```
