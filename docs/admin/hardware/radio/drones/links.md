@@ -10,9 +10,14 @@
 - https://www.aliexpress.com/item/1005006301600379.html?spm=a2g0o.productlist.main.37.32922552A0cxn1&algo_pvid=7635005a-26bd-416c-bf43-40c90e0e2520&aem_p4p_detail=202401040521031919862000755660000336692&algo_exp_id=7635005a-26bd-416c-bf43-40c90e0e2520-18&pdp_npi=4%40dis%21EUR%2133.03%2133.03%21%21%2135.22%21%21%4021164a7117043744636684021ec652%2112000036679538971%21sea%21UA%210%21AB&curPageLogUid=TKpMmKG93NeE&search_p4p_id=202401040521031919862000755660000336692_19 - направленная антена ручка;
 - https://www.aliexpress.com/item/1005002091937615.html?gps-id=pcStoreJustForYou&scm=1007.23125.137358.0&scm_id=1007.23125.137358.0&scm-url=1007.23125.137358.0&pvid=aca0da91-26e0-467d-abff-b8b112fe98ce&_t=gps-id:pcStoreJustForYou,scm-url:1007.23125.137358.0,pvid:aca0da91-26e0-467d-abff-b8b112fe98ce,tpp_buckets:668%232846%238109%231935&pdp_npi=4%40dis%21EUR%21187.54%21159.41%21%21%21200.00%21170.00%21%40211b813c17043745461561076e8c48%2112000031426947860%21rec%21UA%21%21AB&spm=a2g0o.store_pc_home.smartJustForYou_2007773503919.9 - SA6;
 - https://www.aliexpress.com/item/1005005240764525.html - SA6;
-- https://zeenko.aliexpress.com/store/5800447?spm=a2g0o.detail.0.0.55e0EhqmEhqmHI - мгазин где можно купить tinySA Ultra (оффициальный магазин);
+- https://zeenko.aliexpress.com/store/5800447?spm=a2g0o.detail.0.0.55e0EhqmEhqmHI - магазин где можно купить tinySA Ultra (оффициальный магазин);
 - https://www.olx.ua/d/uk/obyavlenie/korpus-tiny-sa-ultra-dlya-samostynogo-vigotovlennya-okopnogo-rer-IDTgHYh.html?bs=olx_pro_listing - корпус для РЭБа;
 - https://inlab.kyiv.ua/ - пример перепакованного рэба на базе tinySA Ultra;
+
+### Антены
+
+- https://a-radio.online/ua/p1840609327-napravlena-shirokopolosnaya-logoperiodicheskaya.html - направленная широкополосная антена SR_LPD003_V200 800 МГЦ - 6 ГГц;
+- https://a-radio.online/ua/p1894247175-shirokopolosnaya-napravlennaya-antenna.html - направленная широкополосная антена 730 МГц - 6,5 ГГц R101C vivaldi;
 
 ## Видео
 
@@ -20,3 +25,8 @@
 - https://www.youtube.com/watch?v=rHjl_krB0_Y&list=PL0_iu8qdzxNfiul5KmpoKsIBnkuxS9bE_&index=8 - 2 вида широкополосных антен для окопного РЭБ;
 - https://www.youtube.com/watch?v=JR1240bEySc&list=PL0_iu8qdzxNfiul5KmpoKsIBnkuxS9bE_&index=10 - Детектор дронов на базе TinySA Ultra (доработаный корпус);
 - https://www.youtube.com/watch?v=lD-LRIJafcA - детектор БПЛА на базе tinySA Ultra;
+
+## Разное 
+
+- https://docs.google.com/document/d/1i-dVdMa8PW__87ykt4xidixNP5UHANwGJ1JUw7cvI9o/edit?fbclid=IwAR1uIqFpI93tIQOOJY36qBG595JE7NdydHN0gaCPIYkwOCiMVqlzwWT41T4&pli=1#heading=h.jb125lelc7v5 - "сахарок" док.;
+- https://docs.google.com/document/d/1npUNmWINLrhVELVpNtR9he6u-SqzSZznAZTZe-DymkQ/edit - "сахарок" версии;

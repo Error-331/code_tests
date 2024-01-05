@@ -24,6 +24,8 @@ https://www.oberlo.com/ - облегчает дропшипинг;
 
 https://www.statista.com/ - trends;
 
+https://scanxscout.com/ - scan for best goods;
+
 ## Plugins
 
 https://apps.shopify.com/oberlo

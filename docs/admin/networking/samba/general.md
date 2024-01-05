@@ -81,6 +81,14 @@ chmod 777 /samba/guest
 
 ```
 
+Install cifs utils:
+
+```text
+
+sudo apt install cifs-utils
+
+```
+
 Mount remote Samba folder to local one:
 
 ```text
