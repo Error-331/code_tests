@@ -21,12 +21,14 @@ Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
 
 ## Jesus in RED
 
-A Good Jewish Boy - January 1 (reach out, fathers business, gospel)
+A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
 
-The Cool, Inviting Door - January 2 (food, hunger, obesity, devil, resist)
+The Cool, Inviting Door - January 2 (food, hunger, obesity, devil, resist);
 
-A Shocking Thought - January 3 (Temptation, list of temptations, devil, resist)
+A Shocking Thought - January 3 (Temptation, list of temptations, devil, resist);
 
-Tempted to Jump - January 4 (temptation, resist, word of God, yield to God)
+Tempted to Jump - January 4 (temptation, resist, word of God, yield to God);
 
-How Could We Not Follow - January 5 (following, why, words, Jesus, sin, suffering)
+How Could We Not Follow - January 5 (following, why, words, Jesus, sin, suffering);
+
+A Divine Invitation - January 6 (just see, follow Jesus, believe in God);
