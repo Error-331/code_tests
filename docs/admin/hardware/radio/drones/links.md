@@ -25,6 +25,7 @@
 - https://www.youtube.com/watch?v=rHjl_krB0_Y&list=PL0_iu8qdzxNfiul5KmpoKsIBnkuxS9bE_&index=8 - 2 вида широкополосных антен для окопного РЭБ;
 - https://www.youtube.com/watch?v=JR1240bEySc&list=PL0_iu8qdzxNfiul5KmpoKsIBnkuxS9bE_&index=10 - Детектор дронов на базе TinySA Ultra (доработаный корпус);
 - https://www.youtube.com/watch?v=lD-LRIJafcA - детектор БПЛА на базе tinySA Ultra;
+- https://www.youtube.com/watch?v=BnS8XLKLZl8 - tinySA ULTRA для фиксации RUR БПЛА;
 
 ## Разное 
 
