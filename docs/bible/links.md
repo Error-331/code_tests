@@ -32,3 +32,5 @@ Tempted to Jump - January 4 (temptation, resist, word of God, yield to God);
 How Could We Not Follow - January 5 (following, why, words, Jesus, sin, suffering);
 
 A Divine Invitation - January 6 (just see, follow Jesus, believe in God);
+
+The Use of the Trumpet - January 7 (true law, true faith, Moses, Nathaniel);

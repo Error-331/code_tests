@@ -183,6 +183,10 @@ pilgrims on the earth."*
 
 **(Galatians 6:13 KJV)**
 
+*"Wherefore the law was our schoolmaster to bring us unto Christ, that we might be justified by faith."*
+
+**(Galatians 3:24 KJV)**
+
 ### Work
 
 *"And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"*
