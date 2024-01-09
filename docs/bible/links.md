@@ -34,3 +34,5 @@ How Could We Not Follow - January 5 (following, why, words, Jesus, sin, sufferin
 A Divine Invitation - January 6 (just see, follow Jesus, believe in God);
 
 The Use of the Trumpet - January 7 (true law, true faith, Moses, Nathaniel);
+
+Every Individual Hair - January 8 (God sees all, God understands all, God knows you);
