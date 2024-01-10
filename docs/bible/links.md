@@ -36,3 +36,5 @@ A Divine Invitation - January 6 (just see, follow Jesus, believe in God);
 The Use of the Trumpet - January 7 (true law, true faith, Moses, Nathaniel);
 
 Every Individual Hair - January 8 (God sees all, God understands all, God knows you);
+
+The Greatest Revelation - January 9 (revelation of Jesus, repentance, rock foundation);
