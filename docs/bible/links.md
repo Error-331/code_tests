@@ -38,3 +38,5 @@ The Use of the Trumpet - January 7 (true law, true faith, Moses, Nathaniel);
 Every Individual Hair - January 8 (God sees all, God understands all, God knows you);
 
 The Greatest Revelation - January 9 (revelation of Jesus, repentance, rock foundation);
+
+Under the Tree - January 10 (our testimony for God, who God is, God's omniscience, God knows all about us);
