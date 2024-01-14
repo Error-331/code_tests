@@ -19,6 +19,10 @@ Giving Thanks - November 24 (Psyche);
 
 Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
 
+## Strength for Today (for Women)
+
+On the Calendar - January 12 (busy life, fast life, find time for God, refreshment);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -40,3 +44,5 @@ Every Individual Hair - January 8 (God sees all, God understands all, God knows 
 The Greatest Revelation - January 9 (revelation of Jesus, repentance, rock foundation);
 
 Under the Tree - January 10 (our testimony for God, who God is, God's omniscience, God knows all about us);
+
+The Symbol of Life - January 12
