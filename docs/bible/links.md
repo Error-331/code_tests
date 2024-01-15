@@ -23,6 +23,10 @@ Worship - November 29 (fools, sacrifice, evil, plan, do not rash);
 
 On the Calendar - January 12 (busy life, fast life, find time for God, refreshment);
 
+Give Me Joy - January 13 (gifts, gift of joy, just ask God, step of faith);
+
+Slap Happy - January 14 (share joy, joyful heart, encourage others, help others, rest for hearts and souls);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -45,4 +49,10 @@ The Greatest Revelation - January 9 (revelation of Jesus, repentance, rock found
 
 Under the Tree - January 10 (our testimony for God, who God is, God's omniscience, God knows all about us);
 
-The Symbol of Life - January 12
+The Only Ladder - January 11 (Jesus is the pathway to heaven, eternal justice);
+
+The Symbol of Life - January 12 (cross before you, baptism of suffering, marriage supper of the Lamb, church, agony of the cross, grateful for Calvary);
+
+Do Whatever He Says - January 13 (obedience, salvation, way to reborn, commandments);
+
+The Holy Whip - January 14 (selfishness, greed, fear of God, material gain, sin, repentance);
