@@ -27,6 +27,8 @@ Give Me Joy - January 13 (gifts, gift of joy, just ask God, step of faith);
 
 Slap Happy - January 14 (share joy, joyful heart, encourage others, help others, rest for hearts and souls);
 
+Successful Efforts - January 15 (daily work);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
