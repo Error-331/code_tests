@@ -58,3 +58,5 @@ The Symbol of Life - January 12 (cross before you, baptism of suffering, marriag
 Do Whatever He Says - January 13 (obedience, salvation, way to reborn, commandments);
 
 The Holy Whip - January 14 (selfishness, greed, fear of God, material gain, sin, repentance);
+
+Study and Search - January 15 (true meaning of the word, context, find truth);
