@@ -187,6 +187,12 @@ pilgrims on the earth."*
 
 **(Galatians 3:24 KJV)**
 
+### The True Way
+
+*"Wherefore the law was our schoolmaster to bring us unto Christ, that we might be justified by faith."*
+
+**(Galatians 3:24 KJV)**
+
 ### Work
 
 *"And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"*
@@ -746,3 +752,11 @@ with your mouth, not let your heart be quick to utter a word before God, for God
 ...And so when we are tempted to overindulge, we need to imitate Jesus and close the door. Tight...
 
 _Father, never let it be said of me that my god is my belly._
+
+#### The New Birth
+
+*"Most assuredly, I say to you, unless one is born again, he cannot see the kingdom of God"*
+
+**(John 3:3 KJV)**
+
+...When a sinner sees himself in the light of the Law, the need for mercy comes clear and paves the way to an understanding of the cross...

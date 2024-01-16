@@ -29,6 +29,8 @@ Slap Happy - January 14 (share joy, joyful heart, encourage others, help others,
 
 Successful Efforts - January 15 (daily work);
 
+Love One Another - January 16 (love, unrelenting love, Christ teachings, basis of Bible, God is love);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -60,3 +62,5 @@ Do Whatever He Says - January 13 (obedience, salvation, way to reborn, commandme
 The Holy Whip - January 14 (selfishness, greed, fear of God, material gain, sin, repentance);
 
 Study and Search - January 15 (true meaning of the word, context, find truth);
+
+The New Birth - January 16 (spiritual blindness, law, mercy, commandments, treatment);
