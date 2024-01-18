@@ -31,6 +31,10 @@ Successful Efforts - January 15 (daily work);
 
 Love One Another - January 16 (love, unrelenting love, Christ teachings, basis of Bible, God is love);
 
+External Confidence - January 17 (confidence within God, confidence within Jesus Christ, righteous source of confidence, trust in God, trust in Jesus Christ, access to throne of God);
+
+Choosing Compassion - January 18 (sin, past do not matter, God is love);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -64,3 +68,5 @@ The Holy Whip - January 14 (selfishness, greed, fear of God, material gain, sin,
 Study and Search - January 15 (true meaning of the word, context, find truth);
 
 The New Birth - January 16 (spiritual blindness, law, mercy, commandments, treatment);
+
+Natural Birth - January 17(true source of salvation);

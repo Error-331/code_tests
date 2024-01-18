@@ -760,3 +760,12 @@ _Father, never let it be said of me that my god is my belly._
 **(John 3:3 KJV)**
 
 ...When a sinner sees himself in the light of the Law, the need for mercy comes clear and paves the way to an understanding of the cross...
+
+#### Natural Birth
+
+*"Most assuredly, I say to you, unless one is born of water and the Spirit, he cannot enter the kingdom of God. That which is born of the flesh is flesh, and that which is 
+born of the Spirit is spirit. Do not marvel that I said to you, 'You must be born again.'"*
+
+**(John 3:5-7)**
+
+...Salvation is by grace alone through faith alone, and nothing we do can merit it...
