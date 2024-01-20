@@ -35,6 +35,8 @@ External Confidence - January 17 (confidence within God, confidence within Jesus
 
 Choosing Compassion - January 18 (sin, past do not matter, God is love);
 
+Any Circumstance - January 19 (confidence in God brings contentment, rely on God, do not lose contentment, do not rely on worldly answers);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -69,4 +71,6 @@ Study and Search - January 15 (true meaning of the word, context, find truth);
 
 The New Birth - January 16 (spiritual blindness, law, mercy, commandments, treatment);
 
-Natural Birth - January 17(true source of salvation);
+Natural Birth - January 17 (true source of salvation);
+
+The Invisible Wind - January 18 (spread the word of God, God will take care of the word spread, God will take care of the word sown);
