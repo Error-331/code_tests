@@ -41,6 +41,8 @@ Being Brave - January 20 (righteous person, seek Father's help, be grateful for 
 
 Ark of Strength - January 21 (the presence of God is with you, God is in your heart, God's favor is with you);
 
+This Is the Day - January 22 (happy day, God's day, encouragement);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -82,3 +84,5 @@ The Invisible Wind - January 18 (spread the word of God, God will take care of t
 The Great Teacher - January 19 (faith, necessity of the new birth);
 
 Carry Some Salt - January 20 (fear of God, righteousness);
+
+The Biting Serpents - January 21 (the law, Jesus, the set of things);

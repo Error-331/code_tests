@@ -769,3 +769,11 @@ born of the Spirit is spirit. Do not marvel that I said to you, 'You must be bor
 **(John 3:5-7)**
 
 ...Salvation is by grace alone through faith alone, and nothing we do can merit it...
+
+#### The Biting Serpents
+
+*"And as Moses lifted up the serpent in the wilderness, even so must the Son of Man be lifted up."*
+
+**(John 3:14)**
+
+...The Law is a schoolmaster to bring people to Christ so they may be justified by faith...
