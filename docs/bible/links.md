@@ -4,7 +4,7 @@
 
 Proverbs 27 (General wisdom, relationship, fool and wise);
 
-## Strength for Today (for men)
+## Strength for Today (for Men)
 
 Relationships - August 24  (Friendship, people, relationship);
 
@@ -36,6 +36,10 @@ External Confidence - January 17 (confidence within God, confidence within Jesus
 Choosing Compassion - January 18 (sin, past do not matter, God is love);
 
 Any Circumstance - January 19 (confidence in God brings contentment, rely on God, do not lose contentment, do not rely on worldly answers);
+
+Being Brave - January 20 (righteous person, seek Father's help, be grateful for your salvation, give your troubles to the Lord);
+
+Ark of Strength - January 21 (the presence of God is with you, God is in your heart, God's favor is with you);
 
 ## Jesus in RED
 
@@ -74,3 +78,7 @@ The New Birth - January 16 (spiritual blindness, law, mercy, commandments, treat
 Natural Birth - January 17 (true source of salvation);
 
 The Invisible Wind - January 18 (spread the word of God, God will take care of the word spread, God will take care of the word sown);
+
+The Great Teacher - January 19 (faith, necessity of the new birth);
+
+Carry Some Salt - January 20 (fear of God, righteousness);
