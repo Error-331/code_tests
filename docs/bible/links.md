@@ -43,6 +43,10 @@ Ark of Strength - January 21 (the presence of God is with you, God is in your he
 
 This Is the Day - January 22 (happy day, God's day, encouragement);
 
+Aching Bones - January 23 (just ask God for help);
+
+Embracing Weakness - January 24 (salvation is in Christ Jesus alone, God cares for us, submit your weakness to God, humility);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
