@@ -86,3 +86,5 @@ The Great Teacher - January 19 (faith, necessity of the new birth);
 Carry Some Salt - January 20 (fear of God, righteousness);
 
 The Biting Serpents - January 21 (the law, Jesus, the set of things);
+
+Cereal and Milk - January 22 (faith in general, faith in God never lets you down, seek God first always);
