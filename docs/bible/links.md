@@ -49,6 +49,8 @@ Embracing Weakness - January 24 (salvation is in Christ Jesus alone, God cares f
 
 Be Sure - January 25 (inner peace, acceptance of who you are, no pride or arrogance, God hears you);
 
+Unfailing Goodness - January 26 (God will never fail, God has a plan for your life, it is ok to fail);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
