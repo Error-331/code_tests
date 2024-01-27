@@ -51,6 +51,8 @@ Be Sure - January 25 (inner peace, acceptance of who you are, no pride or arroga
 
 Unfailing Goodness - January 26 (God will never fail, God has a plan for your life, it is ok to fail);
 
+Crazy - January 27 (priorities, listen to Jesus);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -102,3 +104,5 @@ Diagnosis First - January 23 (first comes the law - than grace, law - diagnoses 
 Somebody Loves Me - January 24 (God is love, the right direction of faith, what is faith);
 
 Condemned Already - January 25 (about sin and sinners); 
+
+The Real Reason - January 26 (Gods light, how sinners try to hide, about sin and sinners);
