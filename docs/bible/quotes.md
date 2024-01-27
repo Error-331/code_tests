@@ -193,6 +193,10 @@ pilgrims on the earth."*
 
 **(Galatians 3:24 KJV)**
 
+*"For the preaching of the cross is to them that perish foolishness; but unto us which are saved it is the power of God."*
+
+**(1 Corinthians 1:18 KJV)**
+
 ### Work
 
 *"And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"*

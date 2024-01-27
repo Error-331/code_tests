@@ -100,3 +100,5 @@ Cereal and Milk - January 22 (faith in general, faith in God never lets you down
 Diagnosis First - January 23 (first comes the law - than grace, law - diagnoses of the sin, gospel is the cure);
 
 Somebody Loves Me - January 24 (God is love, the right direction of faith, what is faith);
+
+Condemned Already - January 25 (about sin and sinners); 
