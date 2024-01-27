@@ -47,6 +47,10 @@ Aching Bones - January 23 (just ask God for help);
 
 Embracing Weakness - January 24 (salvation is in Christ Jesus alone, God cares for us, submit your weakness to God, humility);
 
+Be Sure - January 25 (inner peace, acceptance of who you are, no pride or arrogance, God hears you);
+
+Unfailing Goodness - January 26 (God will never fail, God has a plan for your life, it is ok to fail);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -94,3 +98,5 @@ The Biting Serpents - January 21 (the law, Jesus, the set of things);
 Cereal and Milk - January 22 (faith in general, faith in God never lets you down, seek God first always);
 
 Diagnosis First - January 23 (first comes the law - than grace, law - diagnoses of the sin, gospel is the cure);
+
+Somebody Loves Me - January 24 (God is love, the right direction of faith, what is faith);
