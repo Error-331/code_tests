@@ -55,6 +55,8 @@ Crazy - January 27 (priorities, listen to Jesus);
 
 Promised - January 28 (seek God's favor);
 
+Thrive - January 29 (God always working in you);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -110,3 +112,5 @@ Condemned Already - January 25 (about sin and sinners);
 The Real Reason - January 26 (Gods light, how sinners try to hide, about sin and sinners);
 
 The Freeway Chase - January 27 (do not hide from God, step into the light, expose your sin);
+
+Being Wise - January 28 (how to converse with people, conversation openers, natural realm, spiritual realm);
