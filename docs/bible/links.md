@@ -57,6 +57,8 @@ Promised - January 28 (seek God's favor);
 
 Thrive - January 29 (God always working in you);
 
+Stillness - January 30 (stop, take a moment to be with God, throw away everything for a moment);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -114,3 +116,5 @@ The Real Reason - January 26 (Gods light, how sinners try to hide, about sin and
 The Freeway Chase - January 27 (do not hide from God, step into the light, expose your sin);
 
 Being Wise - January 28 (how to converse with people, conversation openers, natural realm, spiritual realm);
+
+Thirsting Horses - January 29 (thirst righteousness, Reveal the sin, to interest the sinner in salvation);
