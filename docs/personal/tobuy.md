@@ -59,6 +59,10 @@ https://www.amazon.com/Power-Prayer-One-Minute-Devotions-LuxLeather/dp/143210587
 
 ## Компьютер
 
+### Для лаборатории
+
+https://www.aliexpress.com/item/1005004302428997.html?af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&utm_source=epn&utm_medium=cpa&utm_campaign=4222243_1&utm_content=43361232&product_id=1005004302428997&afref=https%3A%2F%2Fwww.youtube.com&aff_fcid=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&aff_fsk=_9G57Xi&aff_platform=portals-hotproduct&sk=_9G57Xi&aff_trace_key=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&terminal_id=c5773ce7892f46359452df25378190e2&afSmartRedirect=y - Intel N100 Celeron N5105 Soft Router Fanless Mini PC 4x Intel i226 i225 2.5G LAN HDMI pfSense Firewall Appliance ESXI AES-NI;
+
 ### Водяное охлаждение для процессора
 
 https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_Lian_Li_Galahad_AIO_360_Black_Liquid_Cooler_with_RGB_G89GA360B01-p885070.html
