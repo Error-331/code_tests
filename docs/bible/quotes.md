@@ -781,3 +781,16 @@ born of the Spirit is spirit. Do not marvel that I said to you, 'You must be bor
 **(John 3:14)**
 
 ...The Law is a schoolmaster to bring people to Christ so they may be justified by faith...
+
+#### The Power of Believing
+
+*"Jesus saith unto her, Woman, believe me, the hour cometh, when ye shall neither in this mountain, nor yet at Jerusalem, worship the Father. Ye worship ye know not what: we know what we
+worship: for salvation is of the Jews. But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him."*
+
+**(John 4:21-23 KJV)**
+
+...Jesus asked the woman to believe Him. While skeptics often look down on believers with disdain, we know that believing something has life-changing ramification....
+
+...If you believed that you were drinking poison, you would stop... 
+
+...Beliefs govern our actions, and believing the gospel changes our eternal destiny...

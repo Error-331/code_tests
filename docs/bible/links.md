@@ -126,3 +126,5 @@ Thirsting Horses - January 29 (thirst righteousness, Reveal the sin, to interest
 Lasting Happiness - January 30 (righteousness through Christ, justified at the cross, everlasting life);
 
 He Sees All - January 31 (omniscience of God, God's everlasting presence);
+
+The Power of Believing - February 1 (how to believe, who we are preaching);
