@@ -128,3 +128,8 @@ Lasting Happiness - January 30 (righteousness through Christ, justified at the c
 He Sees All - January 31 (omniscience of God, God's everlasting presence);
 
 The Power of Believing - February 1 (how to believe, who we are preaching);
+
+The Life Source - February 2 (life is a treasure);
+
+Greatest Treasure - February 3 (spread the good news, victory over death, the sacrifice of Jesus);
+
