@@ -133,3 +133,9 @@ The Life Source - February 2 (life is a treasure);
 
 Greatest Treasure - February 3 (spread the good news, victory over death, the sacrifice of Jesus);
 
+Divine Priority - February 4 (commit yourself to save others, importance of evangelism);
+
+Our Food - February 5 (word of God is everything, abide in the word of God, do the Will of God);
+
+God grew the Tree - February 6 (respect those who worked before you, know that your labors can be reaped by others, persist);
+
