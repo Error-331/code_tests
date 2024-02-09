@@ -139,3 +139,6 @@ Our Food - February 5 (word of God is everything, abide in the word of God, do t
 
 God grew the Tree - February 6 (respect those who worked before you, know that your labors can be reaped by others, persist);
 
+The Inference of Faith - February 7 (trust is everything, childlike faith, God's grace);
+
+Unprecedented Savior - February 8 (Jesus is omnipotent, miracles of Jesus, focus on glorifying God);
