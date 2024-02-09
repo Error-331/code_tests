@@ -36,7 +36,7 @@ In this phase, callbacks that are triggered via setImmediate() are executed.
 
 #### Close
 
-This phase executes callbacks that are triggered via EventEmitter close  events. For example, when a net.Server TCP server closes, it emits a close event that 
+This phase executes callbacks that are triggered via EventEmitter close events. For example, when a net.Server TCP server closes, it emits a close event that 
 runs a callback in this phase.
 
 #### Timers

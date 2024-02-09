@@ -78,7 +78,17 @@ function longestPalindromeNaiveSolution(stringToExamine) {
 }*/
 
 function longestPalindromeDivideAndConquerNaiveSolution(stringToExamine) {
+    const stringLength = stringToExamine.length;
 
+    let reminder = stringLength % 2;
+    let middleIndex = Math.floor(stringLength / 2);
+    
+
+
+    for (let i = middleIndex - 1, j = middleIndex + (reminder > 0 ? 1 : 0);  i >= 0; i--, j++) {
+        console.log('i', i, stringToExamine[i]);
+        console.log('j', j, stringToExamine[j]);
+    }
 }
 
 
@@ -89,3 +99,4 @@ const testString3 = 'pan';
 
 //console.log(longestPalindromeNaiveSolution(testString3));
 //console.log(longestPalindromeBetterNaiveSolution(testString2));
+longestPalindromeDivideAndConquerNaiveSolution(testString2);
