@@ -82,7 +82,7 @@ function longestPalindromeDivideAndConquerNaiveSolution(stringToExamine) {
 
     let reminder = stringLength % 2;
     let middleIndex = Math.floor(stringLength / 2);
-    
+
 
 
     for (let i = middleIndex - 1, j = middleIndex + (reminder > 0 ? 1 : 0);  i >= 0; i--, j++) {
@@ -99,4 +99,29 @@ const testString3 = 'pan';
 
 //console.log(longestPalindromeNaiveSolution(testString3));
 //console.log(longestPalindromeBetterNaiveSolution(testString2));
-longestPalindromeDivideAndConquerNaiveSolution(testString2);
+
+
+function photoshopDropShadow2CSSBoxShadow(color, opacity, angle, distance, spread, size) {
+    // convert the angle to radians
+    angle = (180 - angle) * Math.PI / 180;
+
+    // the color is just an rgba() color with the opacity.
+    // for simplicity this function expects color to be an rgb string
+    // in CSS, opacity is a decimal between 0 and 1 instead of a percentage
+    color = "rgba(" + color + "," + opacity/100 + ")";
+
+    // other calculations
+    var offsetX = Math.round(Math.cos(angle) * distance) + "px",
+        offsetY = Math.round(Math.sin(angle) * distance) + "px",
+        spreadRadius = (size * spread / 100) + "px",
+        blurRadius = (size - parseInt(spreadRadius, 10)) + "px";
+    return offsetX + " " + offsetY + " " + blurRadius + " " + spreadRadius + " " + color;
+}
+
+console.log(photoshopDropShadow2CSSBoxShadow('89,89,89', 19, 120, 1, 0, 0));
+
+//
+
+//box-shadow: offset-x offset-y blur-radius spread-radius rgba(0, 0, 0, opacity) inset;
+
+//text-shadow: offset-x offset-y blur-radius rgba(0,0,0 opacity);

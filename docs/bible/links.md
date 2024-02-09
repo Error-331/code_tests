@@ -59,6 +59,10 @@ Thrive - January 29 (God always working in you);
 
 Stillness - January 30 (stop, take a moment to be with God, throw away everything for a moment);
 
+Our Gatekeeper - January 31 (center yourself in Christ, surround yourself with positive influences, immerse your heart in His Word);
+
+Choose Joy - February 1 (Look for Joy, Choose Joy, Find Joy, help others to find Joy);
+
 ## Jesus in RED
 
 A Good Jewish Boy - January 1 (reach out, fathers business, gospel);
@@ -118,3 +122,23 @@ The Freeway Chase - January 27 (do not hide from God, step into the light, expos
 Being Wise - January 28 (how to converse with people, conversation openers, natural realm, spiritual realm);
 
 Thirsting Horses - January 29 (thirst righteousness, Reveal the sin, to interest the sinner in salvation);
+
+Lasting Happiness - January 30 (righteousness through Christ, justified at the cross, everlasting life);
+
+He Sees All - January 31 (omniscience of God, God's everlasting presence);
+
+The Power of Believing - February 1 (how to believe, who we are preaching);
+
+The Life Source - February 2 (life is a treasure);
+
+Greatest Treasure - February 3 (spread the good news, victory over death, the sacrifice of Jesus);
+
+Divine Priority - February 4 (commit yourself to save others, importance of evangelism);
+
+Our Food - February 5 (word of God is everything, abide in the word of God, do the Will of God);
+
+God grew the Tree - February 6 (respect those who worked before you, know that your labors can be reaped by others, persist);
+
+The Inference of Faith - February 7 (trust is everything, childlike faith, God's grace);
+
+Unprecedented Savior - February 8 (Jesus is omnipotent, miracles of Jesus, focus on glorifying God);
