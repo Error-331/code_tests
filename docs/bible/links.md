@@ -142,3 +142,5 @@ God grew the Tree - February 6 (respect those who worked before you, know that y
 The Inference of Faith - February 7 (trust is everything, childlike faith, God's grace);
 
 Unprecedented Savior - February 8 (Jesus is omnipotent, miracles of Jesus, focus on glorifying God);
+
+Pretty Ugly - February 9 (poor in spirit, mirror of spiritual state, Ten Commandments);
