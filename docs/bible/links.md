@@ -144,3 +144,7 @@ The Inference of Faith - February 7 (trust is everything, childlike faith, God's
 Unprecedented Savior - February 8 (Jesus is omnipotent, miracles of Jesus, focus on glorifying God);
 
 Pretty Ugly - February 9 (poor in spirit, mirror of spiritual state, Ten Commandments);
+
+The Virtue of Contsition - February 10 (godly sorrow that works repentance, brokenhearted over sin);
+
+Dark Prison - February 11 (prison of sin, power of gospel);
