@@ -148,3 +148,5 @@ Pretty Ugly - February 9 (poor in spirit, mirror of spiritual state, Ten Command
 The Virtue of Contsition - February 10 (godly sorrow that works repentance, brokenhearted over sin);
 
 Dark Prison - February 11 (prison of sin, power of gospel);
+
+Another Blindness - February 12 (spiritual blindness, leave the darkness, step into the light);
