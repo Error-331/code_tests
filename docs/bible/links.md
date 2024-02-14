@@ -150,3 +150,5 @@ The Virtue of Contsition - February 10 (godly sorrow that works repentance, brok
 Dark Prison - February 11 (prison of sin, power of gospel);
 
 Another Blindness - February 12 (spiritual blindness, leave the darkness, step into the light);
+
+His Gentle Hand - February 13 (gentleness and everlasting mercy of the Lord, gentleness of the gospel, justifiable wrath of the Law);
