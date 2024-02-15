@@ -152,3 +152,5 @@ Dark Prison - February 11 (prison of sin, power of gospel);
 Another Blindness - February 12 (spiritual blindness, leave the darkness, step into the light);
 
 His Gentle Hand - February 13 (gentleness and everlasting mercy of the Lord, gentleness of the gospel, justifiable wrath of the Law);
+
+Resting from Work - February 14 (Jesus took upon Himself the vengeance of God for our sins, acceptance of God, spread the good news, unspeakable gift of salvation);
