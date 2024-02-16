@@ -156,3 +156,5 @@ His Gentle Hand - February 13 (gentleness and everlasting mercy of the Lord, gen
 Resting from Work - February 14 (Jesus took upon Himself the vengeance of God for our sins, acceptance of God, spread the good news, unspeakable gift of salvation);
 
 The Special Coat - February 16 (envy, jealousy, praise);
+
+The Weather Department - February 17 (God controls everything, ungodly world);
