@@ -74,6 +74,11 @@ or
 
 nvidia-smi
 
+Reinstall generic nvidia drivers (command line)
+-----------------------------------------------
+
+sudo apt install --reinstall nvidia-driver-525
+
 
 Users
 =====
