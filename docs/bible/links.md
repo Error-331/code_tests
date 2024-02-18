@@ -158,3 +158,5 @@ Resting from Work - February 14 (Jesus took upon Himself the vengeance of God fo
 The Special Coat - February 16 (envy, jealousy, praise);
 
 The Weather Department - February 17 (God controls everything, ungodly world);
+
+Remembering the Widow - February 18 (help downtrodden and neglected, comfort and assist the afflicted);
