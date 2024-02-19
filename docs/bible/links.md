@@ -160,3 +160,5 @@ The Special Coat - February 16 (envy, jealousy, praise);
 The Weather Department - February 17 (God controls everything, ungodly world);
 
 Remembering the Widow - February 18 (help downtrodden and neglected, comfort and assist the afflicted);
+
+Senseless Washing - February 19 (faith, humility, obedience);
