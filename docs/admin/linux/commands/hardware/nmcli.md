@@ -2,7 +2,7 @@
 
 Check network device statuses:
 
-```text
+```shell
 
 nmcli device status
 

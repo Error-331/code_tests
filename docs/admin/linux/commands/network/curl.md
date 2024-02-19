@@ -6,7 +6,7 @@
 
 - Open TCP connection and send some text via *telnet*:
 
-```bash
+```shell
 
 curl telnet://192.168.0.170:59403 <<< someText
 
@@ -16,7 +16,7 @@ curl telnet://192.168.0.170:59403 <<< someText
 
 - Example 1:
 
-```bash
+```shell
 
 curl \
 -H "accept:application/json" \
@@ -34,7 +34,7 @@ curl \
 
 - Example 2: 
 
-```bash
+```shell
 
 curl \
 -H "accept:application/json" \
@@ -50,7 +50,7 @@ https://a.b.c/2019/03/REST/Self/Networks/
 
 - Example 3:
 
-```bash
+```shell
 
 curl \
 -H "accept:application/json" \
@@ -68,7 +68,7 @@ curl \
 
 - Example 4:
 
-```bash
+```shell
 
 curl \
 -H "accept:application/json" \
@@ -84,7 +84,7 @@ https://a.bsn.c/2019/03/REST/Self/
 
 - Example 5:
 
-```bash
+```shell
 
 curl \
 -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9" \
@@ -107,7 +107,7 @@ https://www.b.biz/downloads/overview
 
 - Example 6:
 
-```bash
+```shell
 
 curl \
 -H "accept:application/json" \

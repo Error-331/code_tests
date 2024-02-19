@@ -6,7 +6,7 @@ Tool for enabling and disabling wireless devices.
 
 - Show available wifi devices:
 
-```bash
+```shell
 
 sudo rfkill list
 
@@ -14,7 +14,7 @@ sudo rfkill list
 
 - Unblock all wifi devices:
 
-```bash
+```shell
 
 sudo rfkill unblock all
 

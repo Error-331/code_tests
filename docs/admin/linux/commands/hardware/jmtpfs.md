@@ -2,7 +2,7 @@
 
 List available devices:
 
-```bash
+```shell
 
 jmtpfs -l
 
@@ -10,7 +10,7 @@ jmtpfs -l
 
 Mount first available device:
 
-```bash
+```shell
 
 jmtpfs ./phone
 
@@ -18,7 +18,7 @@ jmtpfs ./phone
 
 Unmount device:
 
-```bash
+```shell
 
 sudo umount ./phone 
 

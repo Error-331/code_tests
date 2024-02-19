@@ -2,7 +2,7 @@
 
 Show sensors data infinitely:
 
-```bash
+```shell
 
 watch -n 1 -d sensors
 

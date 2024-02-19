@@ -4,7 +4,7 @@
 
 Lists all the connections regardless of the state they are in:
 
-```
+```shell
 
 ss
 
@@ -12,7 +12,7 @@ ss
 
 List both listening and non-listening ports:
 
-```
+```shell
 
 ss -a
 
@@ -21,7 +21,7 @@ ss -a
 
 Display listening sockets only:
 
-```
+```shell
 
 ss -l
 
@@ -30,7 +30,7 @@ ss -l
 
 Display all TCP connection:
 
-```
+```shell
 
 ss -t
 
@@ -38,7 +38,7 @@ ss -t
 
 Display all the listening TCP socket connection:
 
-```
+```shell
 
 ss -lt
 
@@ -47,7 +47,7 @@ ss -lt
 
 Display all the UDP socket connections:
 
-```
+```shell
 
 ss -ua
 
@@ -55,7 +55,7 @@ ss -ua
 
 Display all listening UDP connections:
 
-```
+```shell
 
 ss -lu
 
@@ -63,7 +63,7 @@ ss -lu
 
 Display the Process IDs related to socket connections:
 
-```
+```shell
 
 ss -p
 
@@ -71,7 +71,7 @@ ss -p
 
 Display the summary statistics:
 
-```
+```shell
 
 ss -s
 
@@ -79,7 +79,7 @@ ss -s
 
 Display IPv4 socket connections:
 
-```
+```shell
 
 ss -4
 
@@ -87,7 +87,7 @@ ss -4
 
 Display IPv6 connections:
 
-```
+```shell
 
 ss -6
 
@@ -95,7 +95,7 @@ ss -6
 
 To display all socket connections with a destination or source port of ssh run the command:
 
-```
+```shell
 
 ss -at '( dport = :22 or sport = :22 )'
 
@@ -103,7 +103,7 @@ ss -at '( dport = :22 or sport = :22 )'
 
 List All Open Ports in Linux:
 
-```
+```shell
 
 sudo ss -tulpn
 
@@ -117,7 +117,7 @@ sudo ss -tulpn
 
 Watch TCP and UDP Open Ports in Real-Time:
 
-```
+```shell
 
 sudo watch ss -tulpn
 

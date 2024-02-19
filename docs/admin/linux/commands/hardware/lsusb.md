@@ -2,7 +2,8 @@
 
 - Show list of connected usb devices:
 
-```bash
+```shell
+
 
 lsusb
 

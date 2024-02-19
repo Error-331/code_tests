@@ -2,7 +2,7 @@
 
 - how to "identify" the PCI-like devices:
 
-```bash
+```shell
 
 spci -nn
 

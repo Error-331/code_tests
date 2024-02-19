@@ -22,7 +22,7 @@ Group permissions:
 
 Subtract read `permission` from `others` group:
 
-```text
+```shell
 
 chmod o-r file.txt
 
@@ -30,7 +30,7 @@ chmod o-r file.txt
 
 Make file `executable`:
 
-```text
+```shell
 
 chmod u+x file.sh
 
@@ -38,7 +38,7 @@ chmod u+x file.sh
 
 or
 
-```text
+```shell
 
 chmod a+x,o-r file.txt
 
@@ -46,7 +46,7 @@ chmod a+x,o-r file.txt
 
 Add multiple permissions:
 
-```text
+```shell
 
 chmod ug+x,o+w file.txt
 
@@ -55,7 +55,7 @@ chmod ug+x,o+w file.txt
 Subtract multiple permissions:
 
 
-```text
+```shell
 
 chmod a-x,o-rw file.txt
 
@@ -63,7 +63,7 @@ chmod a-x,o-rw file.txt
 
 Show default permissions for newly created files and folders:
 
-```text
+```shell
 
 umask
 

@@ -4,7 +4,7 @@
 
 - Open TCP connection to specific *IP/Port* (after connection is established - text can be sent):
 
-```bash
+```shell
 
 netcat 127.0.0.1 9000
 

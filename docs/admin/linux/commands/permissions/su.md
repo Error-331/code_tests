@@ -2,7 +2,7 @@
 
 Location of `sudo` users:
 
-```text
+```shell
 
 /etc/sudoers
 
@@ -10,7 +10,7 @@ Location of `sudo` users:
 
 Edit list of `sudo` users:
 
-```text
+```shell
 
 visudo
 
@@ -18,7 +18,7 @@ visudo
 
 Show environment variables for current user:
 
-```text
+```shell
 
 env
 
@@ -26,7 +26,7 @@ env
 
 Exit from `su`:
 
-```text
+```shell
 
 exit
 

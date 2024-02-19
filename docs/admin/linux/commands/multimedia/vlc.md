@@ -2,7 +2,7 @@
 
 Open VLC using pulse audio:
 
-```bash
+```shell
 
 vlc pulse://
 
@@ -10,7 +10,7 @@ vlc pulse://
 
 or
 
-```bash
+```shell
 
 vlc pulse://alsa_output.pci-0000_00_14.2.analog-stereo.monitor
 

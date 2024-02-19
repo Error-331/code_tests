@@ -2,7 +2,7 @@
 
 Add snap to 'bin':
 
-```text
+```shell
 
 Edit /etc/environment and add /snap/bin in the list then restart your system.
 
@@ -10,7 +10,7 @@ Edit /etc/environment and add /snap/bin in the list then restart your system.
 
 Start snapd service:
 
-```text
+```shell
 
 service snapd start
 
@@ -18,7 +18,7 @@ service snapd start
 
 Disable snap packages:
 
-```text
+```shell
 
 sudo systemctl stop snapd.service
 sudo systemctl disable snapd.service
@@ -27,7 +27,7 @@ sudo systemctl disable snapd.service
 
 Reenable snap packages:
 
-```text
+```shell
 
 sudo systemctl reenable snapd.service
 sudo systemctl start snapd.service
@@ -36,7 +36,7 @@ sudo systemctl start snapd.service
 
 Start snapd apparmor service:
 
-```text
+```shell
 
 service snapd.apparmor start 
 

@@ -3,7 +3,7 @@
 ## 'ps' example
 
 
-```
+```shell
 
 ps
 
@@ -17,7 +17,7 @@ ps
 
 ## 'ps aux' example
 
-```
+```sell
 
 ps aux
 
@@ -46,7 +46,7 @@ boot time and running in the background;
 ## Sorting
 
 
-```
+```shell
 
 ps aux --sort=-%mem
 

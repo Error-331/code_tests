@@ -25,7 +25,7 @@
 
 - general request:
 
-```bash
+```shell
 
 whois victim.com
 
@@ -33,19 +33,19 @@ whois victim.com
 
 - requests using specific `whois` servers:
 
-```bash
+```shell
 
 whois -h ru.whois-servers.net victim.ru
 
 ```
 
-```bash
+```shell
 
 whois -h whois.imena.ua victim.com
 
 ```
 
-```bash
+```shell
 
 whois -h whois.godaddy.com victim.biz
 
@@ -53,13 +53,13 @@ whois -h whois.godaddy.com victim.biz
 
 - requests which tries to find specific `whois` servers for specific domain:
 
-```bash
+```shell
 
 whois -h whois.iana.org ru
 
 ```
 
-```bash
+```shell
 
 whois -h whois.biz victim.biz
 

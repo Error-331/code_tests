@@ -2,7 +2,7 @@
 
 List all sound devices:
 
-```bash
+```shell
 
 arecord -l
 

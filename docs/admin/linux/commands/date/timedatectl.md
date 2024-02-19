@@ -4,7 +4,7 @@
 
 - Turn off NTP server usage:
 
-```bash
+```shell
 
 sudo timedatectl set-ntp false
 
@@ -12,7 +12,7 @@ sudo timedatectl set-ntp false
 
 - Turn on NTP server usage:
 
-```bash
+```shell
 
 sudo timedatectl set-ntp true
 

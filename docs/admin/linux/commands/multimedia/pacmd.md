@@ -2,7 +2,7 @@
 
 Show specific audio sources:
 
-```bash
+```shell
 
 pacmd list-sources | awk '/name:.+\.monitor/'
 

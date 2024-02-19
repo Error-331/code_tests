@@ -17,7 +17,7 @@
 
 - usage of dd with a character device and some common options (copies a single 1024-byte block from /dev/zero, a continuous stream of zero bytes, to new_file):
 
-```bash
+```shell
 
 dd if=/dev/zero of=new_file bs=1024 count=1
 
@@ -25,7 +25,7 @@ dd if=/dev/zero of=new_file bs=1024 count=1
 
 or
 
-```bash
+```shell
 
 dd if=/dev/zero of=new_file bs=1k count=1
 
