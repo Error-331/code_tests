@@ -162,3 +162,5 @@ The Weather Department - February 17 (God controls everything, ungodly world);
 Remembering the Widow - February 18 (help downtrodden and neglected, comfort and assist the afflicted);
 
 Senseless Washing - February 19 (faith, humility, obedience);
+
+The New Kingdom - February 20 (resist the sin, resist the source of evil, stand firm in the faith, discern between God's voice and the enemy's lies);
