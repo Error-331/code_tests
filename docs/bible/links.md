@@ -164,3 +164,5 @@ Remembering the Widow - February 18 (help downtrodden and neglected, comfort and
 Senseless Washing - February 19 (faith, humility, obedience);
 
 The New Kingdom - February 20 (resist the sin, resist the source of evil, stand firm in the faith, discern between God's voice and the enemy's lies);
+
+The Purpose of the Incarnation - February 21 (preach the gospel, destroy the works of the devil, seek and save the lost, this is urgent); 
