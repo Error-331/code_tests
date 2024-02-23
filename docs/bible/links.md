@@ -168,3 +168,5 @@ The New Kingdom - February 20 (resist the sin, resist the source of evil, stand 
 The Purpose of the Incarnation - February 21 (preach the gospel, destroy the works of the devil, seek and save the lost, this is urgent); 
 
 The Other Name - February 22 (Salvation from death is only in Christ, abide in Christ not only in difficult times, exclusivity of Christianity, talk to people about Christ);
+
+Launch Out and Let Down - February 23 (do not toil without Christ, continue spread the Gospel, God have given us pattern for preaching the Gospel);
