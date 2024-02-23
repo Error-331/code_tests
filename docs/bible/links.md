@@ -155,6 +155,8 @@ His Gentle Hand - February 13 (gentleness and everlasting mercy of the Lord, gen
 
 Resting from Work - February 14 (Jesus took upon Himself the vengeance of God for our sins, acceptance of God, spread the good news, unspeakable gift of salvation);
 
+The Light of the Word - February 15 (do not be blind, the Bible is a lamp to our feet and a light to our path, trust Jesus);
+
 The Special Coat - February 16 (envy, jealousy, praise);
 
 The Weather Department - February 17 (God controls everything, ungodly world);
@@ -170,3 +172,4 @@ The Purpose of the Incarnation - February 21 (preach the gospel, destroy the wor
 The Other Name - February 22 (Salvation from death is only in Christ, abide in Christ not only in difficult times, exclusivity of Christianity, talk to people about Christ);
 
 Launch Out and Let Down - February 23 (do not toil without Christ, continue spread the Gospel, God have given us pattern for preaching the Gospel);
+
