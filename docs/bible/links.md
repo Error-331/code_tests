@@ -173,3 +173,4 @@ The Other Name - February 22 (Salvation from death is only in Christ, abide in C
 
 Launch Out and Let Down - February 23 (do not toil without Christ, continue spread the Gospel, God have given us pattern for preaching the Gospel);
 
+From Now On - February 23 (do not fear, evangelism is a priority);
