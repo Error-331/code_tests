@@ -178,3 +178,5 @@ From Now On - February 24 (do not fear, evangelism is a priority);
 Full of Leprosy - February 25 (do not cast out any sinners, help sinners);
 
 A Testimony to Them - February 26 (are you really departed from iniquity? are you walking in statutes of Jesus?, keep Gods commandments, our behavior is our testimony);
+
+Both Were Impossible - February 27 (with God nothing is impossible);
