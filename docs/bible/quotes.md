@@ -139,6 +139,12 @@ come, that we may go and tell the king's household."*
 
 **(1 Timothy 4:3-7 KJV)**
 
+*"Trust in the Lord with all thine heart; and lean not unto thine own understanding.*"
+
+*"In all thy ways acknowledge him, and he shall direct thy paths."*
+
+**(Proverbs 3:5-6 KJV)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
@@ -243,8 +249,6 @@ I will help you."*
 ...True faith believes the best, while fear thinks the worst...
 
 ...Peter had anxiety and fear, but we must understand that fear is false faith...
-
-...True faith believes the best, while fear thinks the worst...
 
 ...Fear brings cursing, but faith brings blessing...
 
@@ -794,3 +798,13 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 ...If you believed that you were drinking poison, you would stop... 
 
 ...Beliefs govern our actions, and believing the gospel changes our eternal destiny...
+
+#### Boundless Faith
+
+*"Why are you reasoning in your hearts?"*
+
+**(Luke 5:22)**
+
+...It was Charles Spurgeon who rightly said that where faith may swim, reason may only paddle...
+
+...Reason has limits. Faith knows no bounds...
