@@ -184,3 +184,5 @@ Both Were Impossible - February 27 (with God nothing is impossible);
 The Great Letdown - February 28 (Faith without works is dead, seek forgiveness of your sins first);
 
 Boundless Faith - March 1 ("Reason has limits. Faith knows no bounds");
+
+Collecting Money - March 2 (follow Christ, do not spend your live pursuing material things);
