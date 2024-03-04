@@ -62,6 +62,8 @@ https://www.amazon.com/Power-Prayer-One-Minute-Devotions-LuxLeather/dp/143210587
 ### Для лаборатории
 
 https://www.aliexpress.com/item/1005004302428997.html?af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&utm_source=epn&utm_medium=cpa&utm_campaign=4222243_1&utm_content=43361232&product_id=1005004302428997&afref=https%3A%2F%2Fwww.youtube.com&aff_fcid=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&aff_fsk=_9G57Xi&aff_platform=portals-hotproduct&sk=_9G57Xi&aff_trace_key=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&terminal_id=c5773ce7892f46359452df25378190e2&afSmartRedirect=y - Intel N100 Celeron N5105 Soft Router Fanless Mini PC 4x Intel i226 i225 2.5G LAN HDMI pfSense Firewall Appliance ESXI AES-NI;
+https://www.aliexpress.com/item/1005006311813456.html?spm=a2g0o.productlist.main.5.6f5c54f8vBkwjt&algo_pvid=2ce76995-829e-4835-a529-eafe01f3f179&algo_exp_id=2ce76995-829e-4835-a529-eafe01f3f179-2&pdp_npi=4%40dis%21USD%21150.00%21118.50%21%21%21150.00%21118.50%21%40211b600b17087117936697641e5bfd%2112000036718159426%21sea%21UA%212780922484%21AB&curPageLogUid=0ISPtdDsUGdP&utparam-url=scene%3Asearch%7Cquery_from%3A
+https://hard.rozetka.com.ua/ua/kingston_skc600ms_1024g/p285061178/?utm_source=cpatrafmag
 
 ### Водяное охлаждение для процессора
 
@@ -120,6 +122,11 @@ https://www.aliexpress.com/item/1005003871380878.html?ug_edm_item_id=10050038713
 https://www.aliexpress.com/item/1005005180164079.html?spm=a2g0o.detail.0.0.5cfeTeWNTeWNvp&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=0b30fa47-72f7-4531-9328-919db95b45d7&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:0b30fa47-72f7-4531-9328-919db95b45d7,tpp_buckets:668%232846%238107%231934&pdp_npi=4%40dis%21PLN%21297.83%21297.83%21%21%21520.59%21%21%40211b5db317005090313513477e9cf8%2112000036023012357%21rec%21PL%214291096233%21&search_p4p_id=202311201137115323287362653920382428_6 - Putikeeg Morse Code Practice Oscillator - Rechargeable CW Trainer For Beginner Practitioners
 https://www.aliexpress.com/item/1005005986863460.html?ug_edm_item_id=1005005986863460&pdp_npi=3%40dis%21PLN%211%20530%2C51z%C5%82%211%20453%2C98z%C5%82%21%21%21%21%21%402151e3b017016918190693830db518%21%21edm%21%21&edm_click_module=alg_product_3_4586567300&abexp_id=180343&abexp_bkt=629481&abexp_rels=null&creative_img_ind=15&edm_log_data=edm-item-list-three-columns.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41180_1_pl_PL_2023-12-04&rowan_msg_id=sergCOWS_41180_$b9da5dd433c343d7842b63d8b237e5c4&ck=in_edm_other - Officia Registered DSP2 2.30C 50K-2GHz Malahiteam SDR Receiver Radio DSP 3.5" Touch LCD Russian Genuine Authorized with Code
 https://www.aliexpress.com/item/1005004451798577.html?ug_edm_item_id=1005004451798577&pdp_npi=3%40dis%21PLN%21898%2C53z%C5%82%21449%2C27z%C5%82%21%21%21%21%21%402151e3b017016918190693830db518%21%21edm%21%21&edm_click_module=alg_product_3_4586567300&abexp_id=180343&abexp_bkt=629481&abexp_rels=null&creative_img_ind=11&edm_log_data=edm-item-list-three-columns.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41180_1_pl_PL_2023-12-04&rowan_msg_id=sergCOWS_41180_$b9da5dd433c343d7842b63d8b237e5c4&ck=in_edm_other - TZT GA-800 Active Loop Antenna Shortwave Antenna 10KHz-159MHz HF Antenna with Portable Design for Radios
+
+https://rozetka.com.ua/ua/387359634/p387359634/?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU70OYSe3eGR3mpSq0xzyM2fzIPOALI5i7HHBwoEH-gfgW-IrjvPyChRoCqMEQAvD_BwE - Перехідник антенний SMA Male - PAL Female TV IEC з'єднувач коннектор адаптер для антени радіо- і ТВ- систем;
+https://www.gsmsota.ua/perekhodnik-mcx-male-sma-female/ - Переходник MCX male - SMA female;
+https://www.gsmsota.ua/sma-male-to-f-female/ - Переходник SMA male - F female;
+https://www.gsmsota.ua/perekhodnik-sma-male-sma-female/ - Переходник SMA male - SMA female;
 
 
 ## Декор
