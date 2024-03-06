@@ -188,3 +188,5 @@ Boundless Faith - March 1 ("Reason has limits. Faith knows no bounds");
 Collecting Money - March 2 (follow Christ, do not spend your live pursuing material things);
 
 Only the Sick - March 3 (the unspeakable gift of Everlasting life, repentance is a prerequisite, we must forsake sin at the cross of Christ, keep saving the lost);
+
+God is Working - March 5 (God is working all things out for your good, God is working on your behalf);
