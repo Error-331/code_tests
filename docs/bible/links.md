@@ -190,3 +190,5 @@ Collecting Money - March 2 (follow Christ, do not spend your live pursuing mater
 Only the Sick - March 3 (the unspeakable gift of Everlasting life, repentance is a prerequisite, we must forsake sin at the cross of Christ, keep saving the lost);
 
 God is Working - March 5 (God is working all things out for your good, God is working on your behalf);
+
+Overwhelming Thoughts - March 6 (Jesus was the express image of the invisible God - this is the foundational teaching of Christianity);
