@@ -194,3 +194,5 @@ God is Working - March 5 (God is working all things out for your good, God is wo
 Overwhelming Thoughts - March 6 (Jesus was the express image of the invisible God - this is the foundational teaching of Christianity);
 
 Those Dry Bones - March 7 (We weren't given a religion in Christ, rather forgiveness for our sins and life eternal; judgment day will come; shelter yourself in the shadow of the cross);
+
+The Preachers - March 8 (share the gospel, be a preacher, do not forget about sinners);
