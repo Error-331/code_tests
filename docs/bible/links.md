@@ -192,3 +192,5 @@ Only the Sick - March 3 (the unspeakable gift of Everlasting life, repentance is
 God is Working - March 5 (God is working all things out for your good, God is working on your behalf);
 
 Overwhelming Thoughts - March 6 (Jesus was the express image of the invisible God - this is the foundational teaching of Christianity);
+
+Those Dry Bones - March 7 (We weren't given a religion in Christ, rather forgiveness for our sins and life eternal; judgment day will come; shelter yourself in the shadow of the cross);
