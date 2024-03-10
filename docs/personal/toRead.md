@@ -14,6 +14,13 @@ https://www.w3.org/TR/resource-hints/
 https://www.smashingmagazine.com/2021/07/dynamic-header-intersection-observer/
 https://www.keycdn.com/blog/resource-hints
 
+https://www.amazon.in/gp/product/B094YJ1K13?&linkCode=sl1&tag=opengenus02-21 - Binary Tree Problems: Must for Interviews and Competitive Coding (Coding Interviews: Algorithm and Data Structure Proficiency Book 1);
+https://www.amazon.in/gp/product/B09VZRDHQS?notRedirectToSDP=1&ref_=dbs_mng_calw_1&storeType=ebooks - Linked List Problems: For Interviews and Competitive Programming: 2 (Coding Interviews: Algorithm and Data Structure Proficiency);
+https://www.amazon.in/gp/product/B0B1YDYP4S?notRedirectToSDP=1&ref_=dbs_mng_calw_5&storeType=ebooks - Mathematical Dynamic Programming: 6 (Coding Interviews: Algorithm and Data Structure Proficiency);
+https://www.amazon.in/gp/product/B09R4QN2PB?notRedirectToSDP=1&ref_=dbs_mng_calw_6&storeType=ebooks - Dynamic Programming on Trees (Coding Interviews: Algorithm and Data Structure Proficiency Book 9)
+https://www.amazon.in/Greedy-Algorithms-before-Coding-Interview-ebook/dp/B0876JFTWY/ref=zg-te-pba_d_sccl_2_5/258-6207502-3713153?pd_rd_w=I7nH1&content-id=amzn1.sym.19fd9d5f-cb83-4468-ba97-e75ea6b21028&pf_rd_p=19fd9d5f-cb83-4468-ba97-e75ea6b21028&pf_rd_r=R6T7BC1BETQS5YHAT2T4&pd_rd_wg=LT7cN&pd_rd_r=78cc7bdf-f5a9-4a46-adac-ae6477e9e2c5&pd_rd_i=B0876JFTWY&psc=1 - Greedy Algorithms for the day before your Coding Interview (Day before Coding Interview Book 1)
+
+
 ## Social
 
 https://batenka.ru/explore/field/football-refugee-part-i/
