@@ -65,6 +65,13 @@ https://www.aliexpress.com/item/1005004302428997.html?af=4222243_1&cv=43361232&c
 https://www.aliexpress.com/item/1005006311813456.html?spm=a2g0o.productlist.main.5.6f5c54f8vBkwjt&algo_pvid=2ce76995-829e-4835-a529-eafe01f3f179&algo_exp_id=2ce76995-829e-4835-a529-eafe01f3f179-2&pdp_npi=4%40dis%21USD%21150.00%21118.50%21%21%21150.00%21118.50%21%40211b600b17087117936697641e5bfd%2112000036718159426%21sea%21UA%212780922484%21AB&curPageLogUid=0ISPtdDsUGdP&utparam-url=scene%3Asearch%7Cquery_from%3A
 https://hard.rozetka.com.ua/ua/kingston_skc600ms_1024g/p285061178/?utm_source=cpatrafmag
 
+### Провода
+
+- https://www.amazon.com/CRJ-2-Pin-Female-Adapter-2-Pack/dp/B0BT68NGFR - CRJ 2-Pin Micro PH 2.0mm Female to Mini XH 2.5mm Male Connector Adapter Cable for Cooling Fans, Sensors, and Other Devices (2-Pack);
+- https://prom.ua/p1734505066-jst-pin-shag.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_elektrooborudovanie&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtcNOGBegR0IsYE69RaYStJVQMwCunTjGZutTR71OZ7BSI-L-8N5oUUaAnQcEALw_wcB - JST XH 2 pin 1S (шаг 2.54 мм) разъем папа+мама кабель 10 см (iMAX B6 7.4v LiPo для балансировки Turnigy Accuc;
+- https://www.amazon.de/-/en/2-Pin-Standard-3-Pin-Adapter-Cable/dp/B08713DG35 - CRJ Mini 2-Pin Male Fan to Standard 3-Pin PC Fan Adapter Cable;
+- https://rozetka.com.ua/ua/410586765/p410586765/?utm_l=r&gad_source=1&gclid=Cj0KCQiAoKeuBhCoARIsAB4WxtezaEcge-noqoZuN4ECbgt1h_BdIU0F9ZfqYZLGcF9jbweSpDf3RSkaAgD4EALw_wcB - Перехідник Y-подібний розгалужувач SM-4P мама на XH2.54 тато;
+
 ### Водяное охлаждение для процессора
 
 https://brain.com.ua/ukr/Sistema_vodyanogo_oholodjhennya_Lian_Li_Galahad_AIO_360_Black_Liquid_Cooler_with_RGB_G89GA360B01-p885070.html

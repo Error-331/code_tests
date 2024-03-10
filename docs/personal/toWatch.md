@@ -24,6 +24,9 @@ https://theflixer.tv/tv/watch-adventure-time-fionna-cake-full-99835 - Adventure 
 
 https://rezka.ag/cartoons/fantasy/49861-bezbiletniki-na-noevom-kovchege-1988.html - Безбилетники на Ноевом ковчеге;
 https://www.youtube.com/watch?v=9zvRNKs9Z2M - Robotix: The Series (1985);
+https://en.wikipedia.org/wiki/A_Cat_in_Paris - A Cat in Paris;
+https://en.wikipedia.org/wiki/Gay_Purr-ee - Gay Purr-ee;
+https://en.wikipedia.org/wiki/The_Aristocats - The Aristocats;
 
 ## Мультсериалы
 
