@@ -202,3 +202,5 @@ The Preachers - March 8 (share the gospel, be a preacher, do not forget about si
 Legitimate Pleasures - March 9 (order your priorities, save the sinners, preach now, look for a divine opportunity);
 
 Don't be Impressed - March 10 (justice will be done, God is omnipotent, tremble before God);
+
+Helpless without Him - March 11 (pray about everything, prayer is the oxygen of the Christian life, without Him we can do nothing);
