@@ -206,3 +206,5 @@ Don't be Impressed - March 10 (justice will be done, God is omnipotent, tremble 
 Helpless without Him - March 11 (pray about everything, prayer is the oxygen of the Christian life, without Him we can do nothing);
 
 The Brilliant Light - March 12 (the words of the gospel are backed by the power of God, we must never tire of our labor, be thoroughly familiar with the gospel);
+
+The Lighthouse - March 13 (seek only the smile of God even if it means getting the frown of this evil world);
