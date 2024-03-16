@@ -210,3 +210,5 @@ The Brilliant Light - March 12 (the words of the gospel are backed by the power 
 The Lighthouse - March 13 (seek only the smile of God even if it means getting the frown of this evil world);
 
 Living Hope - March 14 (Jesus is everything);
+
+The Fears of the Lord - March 15 (fear the God, Idolatry);
