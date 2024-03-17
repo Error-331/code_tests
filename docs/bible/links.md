@@ -212,3 +212,6 @@ The Lighthouse - March 13 (seek only the smile of God even if it means getting t
 Living Hope - March 14 (Jesus is everything);
 
 The Fears of the Lord - March 15 (fear the God, Idolatry);
+
+Simple Faith - March 16 (through faith the weak are made strong, simple faith in Jesus - delivers from death);
+
