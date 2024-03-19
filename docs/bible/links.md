@@ -216,3 +216,5 @@ The Fears of the Lord - March 15 (fear the God, Idolatry);
 Simple Faith - March 16 (through faith the weak are made strong, simple faith in Jesus - delivers from death);
 
 The Missed Tree - March 17 (bow your knee in humility before the Lord);
+
+Honoring the Truth - March 18 (embrace the Word of God, do not be a false prophet, keep his love inside you);
