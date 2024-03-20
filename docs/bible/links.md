@@ -218,3 +218,5 @@ Simple Faith - March 16 (through faith the weak are made strong, simple faith in
 The Missed Tree - March 17 (bow your knee in humility before the Lord);
 
 Honoring the Truth - March 18 (embrace the Word of God, do not be a false prophet, keep his love inside you);
+
+The Honor of Men - March 19 (never let the praise of the world overtake you, seek the honor that comes from God);
