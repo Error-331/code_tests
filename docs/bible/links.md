@@ -220,3 +220,5 @@ The Missed Tree - March 17 (bow your knee in humility before the Lord);
 Honoring the Truth - March 18 (embrace the Word of God, do not be a false prophet, keep his love inside you);
 
 The Honor of Men - March 19 (never let the praise of the world overtake you, seek the honor that comes from God);
+
+Ten Cannons - March 20 (The law makes us aware of our sins and leads us to the Savior);
