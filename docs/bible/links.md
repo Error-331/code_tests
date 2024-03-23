@@ -224,3 +224,5 @@ The Honor of Men - March 19 (never let the praise of the world overtake you, see
 Ten Cannons - March 20 (The law makes us aware of our sins and leads us to the Savior);
 
 Wordly Accusations - March 21 (Have faith in Christ and do not pay attention to anyone, you only responsible to him);
+
+Common Sense - March 22 (spirit of the law - common sense, Jesus used common sense);
