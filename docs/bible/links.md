@@ -228,3 +228,5 @@ Wordly Accusations - March 21 (Have faith in Christ and do not pay attention to 
 Common Sense - March 22 (spirit of the law - common sense, Jesus used common sense);
 
 Rise Up in the Midst - March 23 (do not wait for ungodly - reach them with the gospel);
+
+Blessed Poor - March 24 (do not be righteous in your own eyes, apply the Ten Commandments to the conscience of the lost, moral law);
