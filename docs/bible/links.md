@@ -230,3 +230,5 @@ Common Sense - March 22 (spirit of the law - common sense, Jesus used common sen
 Rise Up in the Midst - March 23 (do not wait for ungodly - reach them with the gospel);
 
 Blessed Poor - March 24 (do not be righteous in your own eyes, apply the Ten Commandments to the conscience of the lost, moral law);
+
+Spiritual Hunger - March 25 (the Law is satisfied with the cross, need for the righteousness);
