@@ -39,8 +39,8 @@ A wave with a frequency of 3.75 MHz has a wavelength of 300 / 3.75 = 80 meters. 
 
 - VLF - 3 kHz - 30 kHz, maritime radio, navigation;
 - LF - 30 kHz - 300 kHz, maritime radio, navigation;
-- MF - 300 kHz - 3 MHz, AM radio, aviation radio navigation;
-- HF - 3MHz - 30MHz, shortwave radio;
+- MF (MW) - 300 kHz - 3 MHz, AM radio, aviation radio navigation;
+- HF (SW) - 3MHz - 30MHz, shortwave radio;
 - VHF - 30MHz - 300MHz, VHF television, FM radio;
 - UHF - 300MHz - 3GHz, UHF television, mobile phones, GPS, WI-FI, 4G;
 - SHF - 3GHz - 30GHz, satellite communications, Wi-Fi;
@@ -86,6 +86,7 @@ More details:
 - **amplitude modulation (AM)** is often more prone to interference by various electronic devices, especially power supplies and computers; 
 - strong transmitters cover larger areas than on the FM broadcast band but require more energy and longer antennas; 
 - **digital modes are possible but have not reached momentum yet**;
+- the broadcast part of this band (531 kHz to 1602 kHz);
 
 | Area              	  | kHz (centre) | Spacing | Channels |
 |:------------------------|:-------------|:--------|:---------|
@@ -103,6 +104,15 @@ More details:
 - SW is often used by airplanes;
 - in the developed world, shortwave reception is very difficult in urban areas because of excessive noise from switched-mode power adapters, fluorescent or LED light sources, 
 internet modems and routers, computers and many other sources of radio interference;
+
+##### International broadcast bands
+
+- used by powerful long range AM radio stations (mostly operated by governments - which broadcast to multiple countries); 
+- most international broadcasters use amplitude modulation with 5 kHz steps between channels;
+
+#### VHF 
+
+- FM full power, low power, translator and booster stations operate in the 88 – 108 MHz band;
 
 ### IEEE classification of microwave range
 

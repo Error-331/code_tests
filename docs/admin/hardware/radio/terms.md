@@ -1,5 +1,7 @@
 # Terms
 
+- AM broadcasting -  is radio broadcasting using amplitude modulation (AM) transmissions;
+
 - Modulation/demodulation - is the process of adding information to a radio signal so that the information can be transmitted over the air. Ham radios primarily use two kinds of modulation: 
 amplitude modulation(AM) and frequency modulation (FM), similar to what you receive on your car radio or home stereo;
 
