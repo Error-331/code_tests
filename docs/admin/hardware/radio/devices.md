@@ -1,9 +1,13 @@
 # Devices
 
 - NooElec R820 SDR & DVB-T NESDR Mini 25MHz-1750MHz;
-- Astrometa DVB-T2  25 - 1766 MHz;
-- rtl2832u 25 - 1766 MHz;
+- Astrometa DVB-T2  25 MHz - 1766 MHz;
+- rtl2832u 25 MHz - 1766 MHz;
 - Icom IC-R20;
+- BladeRF - 47 MHz - 6 GHz;
+- LimeSDR - 100 kHz – 3.8 GHz;
+- RSP1A - 1kHz to 2GHz;
+- RSP1B - 1kHz to 2GHz;
 
 ## TinySA Ultra
 
