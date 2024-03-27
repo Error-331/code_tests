@@ -232,3 +232,5 @@ Rise Up in the Midst - March 23 (do not wait for ungodly - reach them with the g
 Blessed Poor - March 24 (do not be righteous in your own eyes, apply the Ten Commandments to the conscience of the lost, moral law);
 
 Spiritual Hunger - March 25 (the Law is satisfied with the cross, need for the righteousness);
+
+The State of Contrition - March 26 (true love of Christ and God, manifestation of true love);
