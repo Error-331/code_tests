@@ -234,3 +234,5 @@ Blessed Poor - March 24 (do not be righteous in your own eyes, apply the Ten Com
 Spiritual Hunger - March 25 (the Law is satisfied with the cross, need for the righteousness);
 
 The State of Contrition - March 26 (true love of Christ and God, manifestation of true love);
+
+Remember to Leap - March 27 (obey the word);
