@@ -236,3 +236,5 @@ Spiritual Hunger - March 25 (the Law is satisfied with the cross, need for the r
 The State of Contrition - March 26 (true love of Christ and God, manifestation of true love);
 
 Remember to Leap - March 27 (obey the word);
+
+The Desire to Be Rich - March 28 (do not be consumed with covetousness, our sole consolation should be in our godliness);
