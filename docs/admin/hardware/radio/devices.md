@@ -8,6 +8,7 @@
 - LimeSDR - 100 kHz – 3.8 GHz;
 - RSP1A - 1kHz to 2GHz;
 - RSP1B - 1kHz to 2GHz;
+- HackRF - 1 MHz to 6 GHz;
 
 ## TinySA Ultra
 
