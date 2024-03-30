@@ -238,3 +238,5 @@ The State of Contrition - March 26 (true love of Christ and God, manifestation o
 Remember to Leap - March 27 (obey the word);
 
 The Desire to Be Rich - March 28 (do not be consumed with covetousness, our sole consolation should be in our godliness);
+
+Spiritual Hunger - March 29 (take care of your unsaved neighbor, be rich toward God, love your neighbors);
