@@ -240,3 +240,5 @@ Remember to Leap - March 27 (obey the word);
 The Desire to Be Rich - March 28 (do not be consumed with covetousness, our sole consolation should be in our godliness);
 
 Spiritual Hunger - March 29 (take care of your unsaved neighbor, be rich toward God, love your neighbors);
+
+The Joy of Laughter - March 30 (turn back from sin now, remember of the judgment day);

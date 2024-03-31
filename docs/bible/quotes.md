@@ -145,6 +145,10 @@ come, that we may go and tell the king's household."*
 
 **(Proverbs 3:5-6 KJV)**
 
+*"A merry heart doeth good like a medicine: but a broken spirit drieth the bones."*
+
+**(Proverbs 17:22)**
+
 ### Family, kids, etc.
 
 *"For it is written, Rejoice, thou barren that bearest not; break forth and cry, thou that travailest not: for the desolate hath many more children than she which 
