@@ -242,3 +242,5 @@ The Desire to Be Rich - March 28 (do not be consumed with covetousness, our sole
 Spiritual Hunger - March 29 (take care of your unsaved neighbor, be rich toward God, love your neighbors);
 
 The Joy of Laughter - March 30 (turn back from sin now, remember of the judgment day);
+
+The Smile of Man - March 31 (do not seek the smile of men, fear God, live your faith in Christ boldly, preach the truth in love);

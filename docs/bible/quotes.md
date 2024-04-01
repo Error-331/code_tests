@@ -813,7 +813,6 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 
 ...Reason has limits. Faith knows no bounds...
 
-
 #### Worldly Accusations
 
 *"Hast thou faith? have it to thyself before God. Happy is he that condemneth not himself in that thing which he alloweth."*
@@ -821,3 +820,11 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 **(Romans 14:22 KVJ)**
 
 ...Never let the words of an accusing world steal your joy...
+
+#### The Smile of Man
+
+*"Woe to you when all men speak well of you, For so did their fathers to the false prophets*"
+
+**(Luke 6:26)**
+
+...God help us to be motivated by His fear rather than the fear of man...
