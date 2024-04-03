@@ -246,3 +246,5 @@ The Joy of Laughter - March 30 (turn back from sin now, remember of the judgment
 The Smile of Man - March 31 (do not seek the smile of men, fear God, live your faith in Christ boldly, preach the truth in love);
 
 Loving Enemies - April 1 (love your enemies, share your love with the lost);
+
+Evident Token - April 2 (love everybody, do not be angry at people who hate you);
