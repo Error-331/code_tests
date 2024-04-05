@@ -250,3 +250,5 @@ Loving Enemies - April 1 (love your enemies, share your love with the lost);
 Evident Token - April 2 (love everybody, do not be angry at people who hate you);
 
 Let God Handle It - April 3 (do not take the law into own hands, commit yourself to God in prayer, show love to those who hate us);
+
+Give to Everyone - April 4 (be generous and kind to people; but whatever we give, we need to make sure it points people to the gospel);
