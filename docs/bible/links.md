@@ -254,3 +254,5 @@ Let God Handle It - April 3 (do not take the law into own hands, commit yourself
 Give to Everyone - April 4 (be generous and kind to people; but whatever we give, we need to make sure it points people to the gospel);
 
 The Rule of Thumb - April 5 (love your neighbor as yourself);
+
+Love...No Matter What - April 6 (exhibit God's love to others; but to love when we are hated is divine);
