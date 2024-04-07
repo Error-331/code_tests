@@ -256,3 +256,5 @@ Give to Everyone - April 4 (be generous and kind to people; but whatever we give
 The Rule of Thumb - April 5 (love your neighbor as yourself);
 
 Love...No Matter What - April 6 (exhibit God's love to others; but to love when we are hated is divine);
+
+Personal Rights - April 7 (this world isn't your home, love thine enemies, always obey words of Jesus);
