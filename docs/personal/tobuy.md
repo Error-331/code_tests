@@ -64,6 +64,9 @@ https://www.amazon.com/Power-Prayer-One-Minute-Devotions-LuxLeather/dp/143210587
 https://www.aliexpress.com/item/1005004302428997.html?af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&af=4222243_1&cv=43361232&cn=42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&dp=v5_42s7ddt5bw2kq0bdtvtnt4p99m3f0pnp&utm_source=epn&utm_medium=cpa&utm_campaign=4222243_1&utm_content=43361232&product_id=1005004302428997&afref=https%3A%2F%2Fwww.youtube.com&aff_fcid=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&aff_fsk=_9G57Xi&aff_platform=portals-hotproduct&sk=_9G57Xi&aff_trace_key=340cac08984048be83e0f45461e533a7-1705434665666-05455-_9G57Xi&terminal_id=c5773ce7892f46359452df25378190e2&afSmartRedirect=y - Intel N100 Celeron N5105 Soft Router Fanless Mini PC 4x Intel i226 i225 2.5G LAN HDMI pfSense Firewall Appliance ESXI AES-NI;
 https://www.aliexpress.com/item/1005006311813456.html?spm=a2g0o.productlist.main.5.6f5c54f8vBkwjt&algo_pvid=2ce76995-829e-4835-a529-eafe01f3f179&algo_exp_id=2ce76995-829e-4835-a529-eafe01f3f179-2&pdp_npi=4%40dis%21USD%21150.00%21118.50%21%21%21150.00%21118.50%21%40211b600b17087117936697641e5bfd%2112000036718159426%21sea%21UA%212780922484%21AB&curPageLogUid=0ISPtdDsUGdP&utparam-url=scene%3Asearch%7Cquery_from%3A
 https://hard.rozetka.com.ua/ua/kingston_skc600ms_1024g/p285061178/?utm_source=cpatrafmag
+https://www.aliexpress.us/item/3256806303041012.html?gatewayAdapt=4itemAdapt - Topton N9 NAS Motherboard 8*2.5G i226 Intel i7-8705G Discrete Graphics AMD Radeon RX Vega M 4GB 2*DDR4 17x17 ITX Firewall Router;
+https://www.aliexpress.us/item/3256806212383111.html?ug_edm_item_id=1005006398697863&pdp_npi=3%40dis%21PLN%212%20306%2C82z%C5%82%211%20084%2C21z%C5%82%21%21%21%21%21%4021011e7417114514168051728dcd32%2112000037025767708%21edm%21%21&edm_click_module=alg_product_3_8959364170&creative_img_ind=8&edm_log_data=edm-item-list-three-columns.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41198_1_pl_PL_2024-03-26&rowan_msg_id=sergCOWS_41198_%240e0706d9c7d748d7ad1bcba858afb252&ck=in_edm_other&gatewayAdapt=glo2usa4itemAdapt - Higole 2 Pro Tablet Pad Industrial Windows 11 Tablet Mini PC 5.5 inch Touch Screen Mini Computer Fan Intel N5095 16GB+256GB+WIFI;
+https://www.aliexpress.us/item/1005004302428997.html?ug_edm_item_id=1005004302428997&pdp_npi=3%40dis%21PLN%21764%2C44z%C5%82%21580%2C98z%C5%82%21%21%21%21%21%4021410ce117119158582594304db04b%2112000030761524521%21edm%21%21&edm_click_module=alg_product_l1r2_5501784330&creative_img_ind=1&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_22516_1_pl_PL_2024-03-31&rowan_msg_id=sergCOWS_22516_%245b7599cac3634968a937e3b0d4c06bea&ck=in_edm_other&gatewayAdapt=glo2usa - Intel N100 Celeron N5105 Soft Router Fanless Mini PC 4x Intel i226 i225 2.5G LAN HD DP pfSense Firewall Appliance ESXI AES-NI;
 
 ### Провода
 
@@ -135,6 +138,9 @@ https://www.gsmsota.ua/perekhodnik-mcx-male-sma-female/ - Переходник M
 https://www.gsmsota.ua/sma-male-to-f-female/ - Переходник SMA male - F female;
 https://www.gsmsota.ua/perekhodnik-sma-male-sma-female/ - Переходник SMA male - SMA female;
 
+https://tehbezpeka.ua/p1422855856-razvetvitelsummator-spliter-antennyj.html?source=merchant_center&gad_source=1&gclid=Cj0KCQjw8J6wBhDXARIsAPo7QA9tZMS4pnSoiXch49h6X27BnvRwsNV4sEj-zWKYZt6JBNXUrdthfIQaAjSIEALw_wcB - Разветвитель/сумматор сплитер антенный радио 100 - 2700 МГц, позолоченный микрополосный сплиттер HAMY 2.7M;
+https://sdr.in.ua/product/bcfm/ - Режекторний фільтр FM для RTL-SDR;
+https://sdr.in.ua/product/rtl-sdr-v3/ - RTL SDR V3 blog Радіоприймач 500кГц-1.7ГГц RTL2832U R860(R820T2);
 
 ## Декор
 
