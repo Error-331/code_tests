@@ -262,3 +262,5 @@ Personal Rights - April 7 (this world isn't your home, love thine enemies, alway
 The Power of Mercy - April 8 (How can you not be merciful if your father showed mercy to you?);
 
 Judge Not - April 9 (righteous judgment only, we are free to make a moral judgments);
+
+A Giving Heart - April 10 (money is not sinful in itself, live with an open hand, God is our peace and joy);
