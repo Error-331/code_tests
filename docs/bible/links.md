@@ -260,3 +260,5 @@ Love...No Matter What - April 6 (exhibit God's love to others; but to love when 
 Personal Rights - April 7 (this world isn't your home, love thine enemies, always obey words of Jesus);
 
 The Power of Mercy - April 8 (How can you not be merciful if your father showed mercy to you?);
+
+Judge Not - April 9 (righteous judgment only, we are free to make a moral judgments);
