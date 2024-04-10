@@ -203,3 +203,23 @@ The .dockerignore file allows you to define files and directories that you do no
 
 docker build -t welcome-to-docker .
 
+sudo docker run -d -p 127.0.0.1:8080:8080 --name test_container2 --env-file .env test_image
+
+
+
+docker rm mycontainer
+docker rm 418c28b4b04e
+
+docker ps -a
+
+docker rm c223ec695e2d mycontainer2 23c70ec6e724
+
+docker rm $(docker ps -qa)
+
+docker container prune -f
+
+docker rm -f mycontainer
+
+
+docker build -t test_image .
+sudo docker run -d -p 127.0.0.1:8080:8080 --name test_container2 --env-file .env test_image
