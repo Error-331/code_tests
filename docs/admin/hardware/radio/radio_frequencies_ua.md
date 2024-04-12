@@ -1,6 +1,18 @@
+# Radio frequencies ranges
+
+## FM radio frequencies
+
+65.9 mHz - 74.0 mHz - OIRT (Russia) FM band;
+76.0 mHz - 95.0 mHz - Japan FM band
+87.5 mHz - 108 mHz - Standard FM band;
+
 # Ukraine
 
 ## General
+
+### FM radio frequencies
+
+88 mHz – 108 mHz - FM broadcasting
 
 148.000 mHz - 149.000 mHz / 171.000-174.000 mHz - main subbands (A: B: X on VHF);
 148.025 mHz - 148.100 mHz - national guard;
