@@ -272,3 +272,5 @@ The Plank - April 12 (be aware of your own sins, do not justify your own failing
 Black Kettles - April 13 (Galatians 6:1);
 
 Locker Room Talk - April 14 (we are all sinners without exception, God's law);
+
+God's Will and Ours - April 15 (surrender wholly to Jesus, do not be a hypocrite);
