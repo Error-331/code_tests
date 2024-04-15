@@ -266,3 +266,9 @@ Judge Not - April 9 (righteous judgment only, we are free to make a moral judgme
 A Giving Heart - April 10 (money is not sinful in itself, live with an open hand, God is our peace and joy);
 
 Learning of the Savior - April 11 (goal in life - Christlikeness, exhibit the virtues of the Savior, feed upon the words of Christ);
+
+The Plank - April 12 (be aware of your own sins, do not justify your own failings, do not judge others);
+
+Black Kettles - April 13 (Galatians 6:1);
+
+Locker Room Talk - April 14 (we are all sinners without exception, God's law);

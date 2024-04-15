@@ -828,3 +828,13 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 **(Luke 6:26)**
 
 ...God help us to be motivated by His fear rather than the fear of man...
+
+#### Black Kettles
+
+*"Brethren, if a man be overtaken in a fault, ye which are spiritual, restore such an one in the spirit of meekness; considering thyself, lest thou also be tempted."*
+
+**(Luke 6:42 KJV)**
+
+...If we see a problem with a brother or sister in Christ, we should handle it with much prayer, with gentleness, and in a spirit of love...
+
+...We are very dirty pots, and looking for spots on black kettles shouldn't be our business...
