@@ -274,3 +274,5 @@ Black Kettles - April 13 (Galatians 6:1);
 Locker Room Talk - April 14 (we are all sinners without exception, God's law);
 
 God's Will and Ours - April 15 (surrender wholly to Jesus, do not be a hypocrite);
+
+Wise Building - April 16 (fruit of salvation is obedience);
