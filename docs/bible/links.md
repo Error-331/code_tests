@@ -278,3 +278,5 @@ God's Will and Ours - April 15 (surrender wholly to Jesus, do not be a hypocrite
 Wise Building - April 16 (fruit of salvation is obedience);
 
 Watch for the Curveball - April 17 (hear and obey, build your life on a solid foundation in Jesus);
+
+Faith Pleases God - April 18 (pray a believing prayer, exercise faith, share the gospel);
