@@ -280,3 +280,5 @@ Wise Building - April 16 (fruit of salvation is obedience);
 Watch for the Curveball - April 17 (hear and obey, build your life on a solid foundation in Jesus);
 
 Faith Pleases God - April 18 (pray a believing prayer, exercise faith, share the gospel);
+
+We Don't React Like This World - April 19 (do not fear death);
