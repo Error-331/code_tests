@@ -282,3 +282,5 @@ Watch for the Curveball - April 17 (hear and obey, build your life on a solid fo
 Faith Pleases God - April 18 (pray a believing prayer, exercise faith, share the gospel);
 
 We Don't React Like This World - April 19 (do not fear death);
+
+Nowhere Else to Go - April 20 (God's grace - savior from death, stand still before God, still your heart before God);
