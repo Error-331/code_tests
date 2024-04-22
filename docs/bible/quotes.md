@@ -838,3 +838,11 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 ...If we see a problem with a brother or sister in Christ, we should handle it with much prayer, with gentleness, and in a spirit of love...
 
 ...We are very dirty pots, and looking for spots on black kettles shouldn't be our business...
+
+#### The Nature of Repentance
+
+*"Woe to you, Chorazin! Woe to you, Bethsaida! For if the mighty works which were done in you had been done in Tyre and Sidon, they would have repented long ago in sackcloth and ashes."*
+
+**(Matthew 11:21)**
+
+...Repentance is a hatred of sin; it is a turning from sin and a determination in the strength of God to forsake it... (Charles Spurgeon)
