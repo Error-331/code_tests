@@ -286,3 +286,5 @@ We Don't React Like This World - April 19 (do not fear death);
 Nowhere Else to Go - April 20 (God's grace - savior from death, stand still before God, still your heart before God);
 
 The Nature of Repentance - April 21 (value of repentance, change mind about sin, change direction from sin to Christ);
+
+True Justice - April 22 (God is always right in His judgments, God is just);
