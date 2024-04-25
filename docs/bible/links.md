@@ -290,3 +290,5 @@ The Nature of Repentance - April 21 (value of repentance, change mind about sin,
 True Justice - April 22 (God is always right in His judgments, God is just);
 
 No Longer Called Sin - April 23 (repent, warn the sinners, become new creation in Christ);
+
+As Little Children - April 24 (God resists the proud and gives grace to the humble);
