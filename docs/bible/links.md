@@ -294,3 +294,5 @@ No Longer Called Sin - April 23 (repent, warn the sinners, become new creation i
 As Little Children - April 24 (God resists the proud and gives grace to the humble);
 
 One of the Biggest - April 25 (John 14:21);
+
+Roses and Thorns - April 26 (salvation is a free gift of God, Christian life is not trouble-free);
