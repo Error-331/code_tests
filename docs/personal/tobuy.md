@@ -134,9 +134,6 @@ https://www.aliexpress.com/item/1005005986863460.html?ug_edm_item_id=10050059868
 https://www.aliexpress.com/item/1005004451798577.html?ug_edm_item_id=1005004451798577&pdp_npi=3%40dis%21PLN%21898%2C53z%C5%82%21449%2C27z%C5%82%21%21%21%21%21%402151e3b017016918190693830db518%21%21edm%21%21&edm_click_module=alg_product_3_4586567300&abexp_id=180343&abexp_bkt=629481&abexp_rels=null&creative_img_ind=11&edm_log_data=edm-item-list-three-columns.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41180_1_pl_PL_2023-12-04&rowan_msg_id=sergCOWS_41180_$b9da5dd433c343d7842b63d8b237e5c4&ck=in_edm_other - TZT GA-800 Active Loop Antenna Shortwave Antenna 10KHz-159MHz HF Antenna with Portable Design for Radios
 
 https://rozetka.com.ua/ua/387359634/p387359634/?gad_source=1&gclid=CjwKCAiA_5WvBhBAEiwAZtCU70OYSe3eGR3mpSq0xzyM2fzIPOALI5i7HHBwoEH-gfgW-IrjvPyChRoCqMEQAvD_BwE - Перехідник антенний SMA Male - PAL Female TV IEC з'єднувач коннектор адаптер для антени радіо- і ТВ- систем;
-https://www.gsmsota.ua/perekhodnik-mcx-male-sma-female/ - Переходник MCX male - SMA female;
-https://www.gsmsota.ua/sma-male-to-f-female/ - Переходник SMA male - F female;
-https://www.gsmsota.ua/perekhodnik-sma-male-sma-female/ - Переходник SMA male - SMA female;
 
 https://tehbezpeka.ua/p1422855856-razvetvitelsummator-spliter-antennyj.html?source=merchant_center&gad_source=1&gclid=Cj0KCQjw8J6wBhDXARIsAPo7QA9tZMS4pnSoiXch49h6X27BnvRwsNV4sEj-zWKYZt6JBNXUrdthfIQaAjSIEALw_wcB - Разветвитель/сумматор сплитер антенный радио 100 - 2700 МГц, позолоченный микрополосный сплиттер HAMY 2.7M;
 https://sdr.in.ua/product/bcfm/ - Режекторний фільтр FM для RTL-SDR;
