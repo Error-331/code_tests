@@ -300,3 +300,5 @@ Roses and Thorns - April 26 (salvation is a free gift of God, Christian life is 
 Tell the Things - April 27 (hear the gospel and come to Jesus, until that - you are dead);
 
 His Name - April 28 (forever honor Jesus Christ as the name above all names);
+
+Be the Same - April 29 (be that voice that will point sinners to the Savior);
