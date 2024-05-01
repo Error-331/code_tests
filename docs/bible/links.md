@@ -304,3 +304,5 @@ His Name - April 28 (forever honor Jesus Christ as the name above all names);
 Be the Same - April 29 (be that voice that will point sinners to the Savior);
 
 More Than a Prophet - April 30 (prepare the world for Jesus, share the gospel);
+
+Mountain Movers - May 1 (do not stop, learn how to use God's law, repent, prepare the way for Jesus);
