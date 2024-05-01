@@ -302,3 +302,5 @@ Tell the Things - April 27 (hear the gospel and come to Jesus, until that - you 
 His Name - April 28 (forever honor Jesus Christ as the name above all names);
 
 Be the Same - April 29 (be that voice that will point sinners to the Savior);
+
+More Than a Prophet - April 30 (prepare the world for Jesus, share the gospel);
