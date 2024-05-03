@@ -308,3 +308,5 @@ More Than a Prophet - April 30 (prepare the world for Jesus, share the gospel);
 Mountain Movers - May 1 (do not stop, learn how to use God's law, repent, prepare the way for Jesus);
 
 The Greatest Prophet - May 2 (be faithful in Christ no matter what);
+
+Childish Children - May 3 (Mark 16:15);
