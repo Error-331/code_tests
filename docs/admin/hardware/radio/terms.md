@@ -43,3 +43,7 @@ gate designed to suppress weak signal);
 
 - Scanner (radio scanner) - is a radio receiver that can automatically tune, or scan, two or more discrete frequencies, stopping when it finds a signal on one of them and then continuing 
 to scan other frequencies when the initial transmission ceases;
+
+- WSPR - _Weak Signal Propagation Reporter_, protocol, implemented in a computer program, used for weak-signal radio communication between amateur radio operators;
+
+- Pigtail cable - a cable that has an appropriate connector on one end and loose wires on the other. It is designed to patch into an existing line or to terminate the ends of a long run;
