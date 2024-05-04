@@ -25,6 +25,7 @@
 
 - https://www.sigintos.com/ - Linux distribution for Signal Intelligence;
 - https://www.dsdplus.com/ - DSDPlus;
+- https://www.hdsdr.de/index.html - HDSDR;
 
 ## Hacking
 
