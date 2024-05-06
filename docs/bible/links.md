@@ -314,3 +314,5 @@ Childish Children - May 3 (Mark 16:15);
 Overzealous Ref - May 4 (don't be an overzealous judge, be a thick skin person, try to be blameless in the eyes of this world);
 
 To the Pure - May 5 (be eager to hear God's voice through His Word);
+
+Those Who Love Much - May 6 (ask God for a revelation of your own sinful state);
