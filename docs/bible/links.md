@@ -312,3 +312,5 @@ The Greatest Prophet - May 2 (be faithful in Christ no matter what);
 Childish Children - May 3 (Mark 16:15);
 
 Overzealous Ref - May 4 (don't be an overzealous judge, be a thick skin person, try to be blameless in the eyes of this world);
+
+To the Pure - May 5 (be eager to hear God's voice through His Word);
