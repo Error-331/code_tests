@@ -316,3 +316,5 @@ Overzealous Ref - May 4 (don't be an overzealous judge, be a thick skin person, 
 To the Pure - May 5 (be eager to hear God's voice through His Word);
 
 Those Who Love Much - May 6 (ask God for a revelation of your own sinful state);
+
+The Sacrifices of God - May 7 (find a place of contrition, genuine remorse, mercy of the Christ);
