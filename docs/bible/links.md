@@ -320,3 +320,7 @@ Those Who Love Much - May 6 (ask God for a revelation of your own sinful state);
 The Sacrifices of God - May 7 (find a place of contrition, genuine remorse, mercy of the Christ);
 
 Great Mercy - May 8 (do not hide or trivialize your sins, the love and mercy of God);
+
+The Done Deal - May 9 (incredibly great and wonderful truth);
+
+Peace with God - May 10 (We are saved by grace through faith, not of works.);
