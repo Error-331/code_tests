@@ -323,4 +323,6 @@ Great Mercy - May 8 (do not hide or trivialize your sins, the love and mercy of 
 
 The Done Deal - May 9 (incredibly great and wonderful truth);
 
-Peace with God - May 10 (We are saved by grace through faith, not of works.);
+Peace with God - May 10 (We are saved by grace through faith, not of works);
+
+The Seed of a Woman - May 11 (our souls are eternal - thanks to God - they are preserved in Jesus Christ);
