@@ -328,3 +328,5 @@ Peace with God - May 10 (We are saved by grace through faith, not of works);
 The Seed of a Woman - May 11 (our souls are eternal - thanks to God - they are preserved in Jesus Christ);
 
 Heart of Stone - May 12 (we fall far short of loving God with all of our heart, love God, love neighbor as ourselves);
+
+Useless Weeds - May 13 (God's mercy);
