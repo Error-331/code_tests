@@ -330,3 +330,5 @@ The Seed of a Woman - May 11 (our souls are eternal - thanks to God - they are p
 Heart of Stone - May 12 (we fall far short of loving God with all of our heart, love God, love neighbor as ourselves);
 
 Useless Weeds - May 13 (God's mercy);
+
+True and False - May 14 (the false sit alongside the true and will be sorted out on judgment day);
