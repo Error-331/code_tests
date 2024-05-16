@@ -332,3 +332,5 @@ Heart of Stone - May 12 (we fall far short of loving God with all of our heart, 
 Useless Weeds - May 13 (God's mercy);
 
 True and False - May 14 (the false sit alongside the true and will be sorted out on judgment day);
+
+The Mystery - May 15 (grasp the awesome truth that Jesus Christ in me, my hope of glory);
