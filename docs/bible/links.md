@@ -335,4 +335,6 @@ True and False - May 14 (the false sit alongside the true and will be sorted out
 
 The Mystery - May 15 (grasp the awesome truth that Jesus Christ in me, my hope of glory);
 
-The Life-Giving Seed - May 16 (The seed is the word of God, seed of life.);
+The Life-Giving Seed - May 16 (The seed is the word of God, seed of life);
+
+The Reason - May 17 (it is essential to preach future punishment according to the Law, because of God's holiness and His love of justice that each of us needs a savior);
