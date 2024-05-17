@@ -334,3 +334,5 @@ Useless Weeds - May 13 (God's mercy);
 True and False - May 14 (the false sit alongside the true and will be sorted out on judgment day);
 
 The Mystery - May 15 (grasp the awesome truth that Jesus Christ in me, my hope of glory);
+
+The Life-Giving Seed - May 16 (The seed is the word of God, seed of life.);
