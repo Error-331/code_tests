@@ -340,3 +340,5 @@ The Life-Giving Seed - May 16 (The seed is the word of God, seed of life);
 The Reason - May 17 (it is essential to preach future punishment according to the Law, because of God's holiness and His love of justice that each of us needs a savior);
 
 Things That Accompany Salvation - May 18 (do not hide your sins, confess them and forsake; learn to understand God's word);
+
+Sobering Responsibility - May 19 (don't let your Gospel fire go out, live to let your light be seen by the unsaved);
