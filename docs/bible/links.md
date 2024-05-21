@@ -342,3 +342,5 @@ The Reason - May 17 (it is essential to preach future punishment according to th
 Things That Accompany Salvation - May 18 (do not hide your sins, confess them and forsake; learn to understand God's word);
 
 Sobering Responsibility - May 19 (don't let your Gospel fire go out, live to let your light be seen by the unsaved);
+
+Dirty Old Dirt - May 20 (The Kingdom of God);
