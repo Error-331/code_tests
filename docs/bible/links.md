@@ -344,3 +344,5 @@ Things That Accompany Salvation - May 18 (do not hide your sins, confess them an
 Sobering Responsibility - May 19 (don't let your Gospel fire go out, live to let your light be seen by the unsaved);
 
 Dirty Old Dirt - May 20 (The Kingdom of God);
+
+Genuine and False - May 21 (fear the Lord, The kingdom of heaven is like a farm field);
