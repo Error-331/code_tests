@@ -346,3 +346,5 @@ Sobering Responsibility - May 19 (don't let your Gospel fire go out, live to let
 Dirty Old Dirt - May 20 (The Kingdom of God);
 
 Genuine and False - May 21 (fear the Lord, The kingdom of heaven is like a farm field);
+
+Love of Justice - May 22 (Do not forget about the day of judgment, God is good, remind about the day of Judgment to sinners);
