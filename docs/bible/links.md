@@ -350,3 +350,5 @@ Genuine and False - May 21 (fear the Lord, The kingdom of heaven is like a farm 
 Love of Justice - May 22 (Do not forget about the day of judgment, God is good, remind about the day of Judgment to sinners);
 
 Within the Church - May 23 (Are you are truly in faith?);
+
+Let Them See - May 24 (Is my invisible faith seen by my visible works?);
