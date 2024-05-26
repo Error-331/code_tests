@@ -352,3 +352,5 @@ Love of Justice - May 22 (Do not forget about the day of judgment, God is good, 
 Within the Church - May 23 (Are you are truly in faith?);
 
 Let Them See - May 24 (Is my invisible faith seen by my visible works?);
+
+They Are Ready - May 25 (Plead with God to make your words come alive, and then use the Law to bring the knowledge of sin; hurry up to bring Gospel to this dying world);
