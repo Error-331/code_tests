@@ -358,3 +358,5 @@ They Are Ready - May 25 (Plead with God to make your words come alive, and then 
 Labor Shortage - May 26 (pray to the Lord of the harvest to raise up more laborers; reach for the lost);
 
 The Name of Jesus - May 27 (For what are you standing for? Do not be offended because of Jesus);
+
+The Local Attraction - May 28 (prepare the way for Jesus);
