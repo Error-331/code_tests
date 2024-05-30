@@ -310,3 +310,55 @@ Mountain Movers - May 1 (do not stop, learn how to use God's law, repent, prepar
 The Greatest Prophet - May 2 (be faithful in Christ no matter what);
 
 Childish Children - May 3 (Mark 16:15);
+
+Overzealous Ref - May 4 (don't be an overzealous judge, be a thick skin person, try to be blameless in the eyes of this world);
+
+To the Pure - May 5 (be eager to hear God's voice through His Word);
+
+Those Who Love Much - May 6 (ask God for a revelation of your own sinful state);
+
+The Sacrifices of God - May 7 (find a place of contrition, genuine remorse, mercy of the Christ);
+
+Great Mercy - May 8 (do not hide or trivialize your sins, the love and mercy of God);
+
+The Done Deal - May 9 (incredibly great and wonderful truth);
+
+Peace with God - May 10 (We are saved by grace through faith, not of works);
+
+The Seed of a Woman - May 11 (our souls are eternal - thanks to God - they are preserved in Jesus Christ);
+
+Heart of Stone - May 12 (we fall far short of loving God with all of our heart, love God, love neighbor as ourselves);
+
+Useless Weeds - May 13 (God's mercy);
+
+True and False - May 14 (the false sit alongside the true and will be sorted out on judgment day);
+
+The Mystery - May 15 (grasp the awesome truth that Jesus Christ in me, my hope of glory);
+
+The Life-Giving Seed - May 16 (The seed is the word of God, seed of life);
+
+The Reason - May 17 (it is essential to preach future punishment according to the Law, because of God's holiness and His love of justice that each of us needs a savior);
+
+Things That Accompany Salvation - May 18 (do not hide your sins, confess them and forsake; learn to understand God's word);
+
+Sobering Responsibility - May 19 (don't let your Gospel fire go out, live to let your light be seen by the unsaved);
+
+Dirty Old Dirt - May 20 (The Kingdom of God);
+
+Genuine and False - May 21 (fear the Lord, The kingdom of heaven is like a farm field);
+
+Love of Justice - May 22 (Do not forget about the day of judgment, God is good, remind about the day of Judgment to sinners);
+
+Within the Church - May 23 (Are you are truly in faith?);
+
+Let Them See - May 24 (Is my invisible faith seen by my visible works?);
+
+They Are Ready - May 25 (Plead with God to make your words come alive, and then use the Law to bring the knowledge of sin; hurry up to bring Gospel to this dying world);
+
+Labor Shortage - May 26 (pray to the Lord of the harvest to raise up more laborers; reach for the lost);
+
+The Name of Jesus - May 27 (For what are you standing for? Do not be offended because of Jesus);
+
+The Local Attraction - May 28 (prepare the way for Jesus);
+
+Violent Sinners - May 29 (the Law brings the knowledge of sin);

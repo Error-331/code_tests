@@ -207,6 +207,10 @@ pilgrims on the earth."*
 
 **(1 Corinthians 1:18 KJV)**
 
+*"For the law was given by Moses, but grace and truth came by Jesus Christ."*
+
+**(John 1:17 KJV)**
+
 ### Work
 
 *"And whatsoever ye do, do it heartily, as to the Lord, and not unto men;"*
