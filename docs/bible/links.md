@@ -360,3 +360,5 @@ Labor Shortage - May 26 (pray to the Lord of the harvest to raise up more labore
 The Name of Jesus - May 27 (For what are you standing for? Do not be offended because of Jesus);
 
 The Local Attraction - May 28 (prepare the way for Jesus);
+
+Violent Sinners - May 29 (the Law brings the knowledge of sin);
