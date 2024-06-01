@@ -69,3 +69,31 @@ Weight: 0.2 kg
 - Channel Power - мощьность в канале;
 - Linear - ???;
 - Noise Figure - профиль шума;
+
+
+## LNA
+
+### RTL-SDR BLOG 1090 MHZ ADS-B LNA
+
+- high gain LNA;
+- expected to be used at the antenna side, with some 3+ db loss expected on the coax;
+- for improving 1090 MHz ADS-B reception mostly;
+- helping to overcome losses in the coax cable and/or any other components such as switches and connector in the signal path;
+- the LNA needs to be positioned close to the antenna, before the coax to the radio;
+- attenuation in the broadcast FM band and below 800 MHz is actually closer to over 100 dB's;
+- in the LNA signal path there is first a low insertion loss high pass filter that reduces the strength of any broadcast FM, TV, pager or other similar signals;
+- in between the first and second stage of the LNA is a SAW filter tuned for 1090 MHz;
+- a second SAW filter sits on the output of the LNA;
+- bias tee power is required (DC power comes through the coax cable);
+
+#### Specs
+
+**Frequency**: 1090 MHz;
+**Gain**: 27 dB @ 1090 MHz;
+**Return Loss**: -16 dB @ 1090 MHz (SWR = 1.377);
+**Noise Figure**: ~1 dB;
+**Out of band attenuation**: More than 60 dB;
+**ESD Protection**: Dual with GDT and ESD Diode;
+**Power**: 3.3 - 5V via bias tee only, 150 mA current draw;
+**Enclosure**: Aluminum enclosure;
+**Connectors**: Two SMA Female (Male to Male adapter included);

@@ -362,3 +362,7 @@ The Name of Jesus - May 27 (For what are you standing for? Do not be offended be
 The Local Attraction - May 28 (prepare the way for Jesus);
 
 Violent Sinners - May 29 (the Law brings the knowledge of sin);
+
+Childlike Faith - May 30 (do not deny the obvious, do not be child of wrath, do not be child of disobedience);
+
+Just Do It - May 31 (Faith without works is dead);
