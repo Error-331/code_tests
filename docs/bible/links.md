@@ -368,3 +368,5 @@ Childlike Faith - May 30 (do not deny the obvious, do not be child of wrath, do 
 Just Do It - May 31 (Faith without works is dead);
 
 It Will Happen - June 1 (God's promises always come true - remember that, search God's word as one who seeks great treasure);
+
+Face It with Faith - June 2 (Every storm that God allows to come our way works for our good if we love Him and are called according to His purposes);
