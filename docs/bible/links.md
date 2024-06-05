@@ -372,3 +372,5 @@ It Will Happen - June 1 (God's promises always come true - remember that, search
 Face It with Faith - June 2 (Every storm that God allows to come our way works for our good if we love Him and are called according to His purposes);
 
 Natural Concern - June 3 (win souls for Him);
+
+Texas Thunder - June 4 (never doubt God's ability to do the impossible);
