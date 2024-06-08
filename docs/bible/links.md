@@ -380,3 +380,5 @@ Our Unworthy Worth - June 5 (Draw nigh to God, and he will draw nigh to you. Cle
 The Fullness of God - June 6 (The Creator became a human being for the purpose of reconciling the world to Himself);
 
 Unconditional Invitation - June 7 (Romans 10:13, Whoever is without condition; It is in Christ and Christ alone that we find wholeness);
+
+The Weight of Tears - June 8 (Faith is the antidote to fear; lean on God's strength by having faith in him);
