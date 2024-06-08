@@ -378,3 +378,5 @@ Texas Thunder - June 4 (never doubt God's ability to do the impossible);
 Our Unworthy Worth - June 5 (Draw nigh to God, and he will draw nigh to you. Cleanse your hands, ye sinners; and purify your hearts, ye double minded);
 
 The Fullness of God - June 6 (The Creator became a human being for the purpose of reconciling the world to Himself);
+
+Unconditional Invitation - June 7 (Romans 10:13, Whoever is without condition; It is in Christ and Christ alone that we find wholeness);
