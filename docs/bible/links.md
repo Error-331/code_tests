@@ -382,3 +382,5 @@ The Fullness of God - June 6 (The Creator became a human being for the purpose o
 Unconditional Invitation - June 7 (Romans 10:13, Whoever is without condition; It is in Christ and Christ alone that we find wholeness);
 
 The Weight of Tears - June 8 (Faith is the antidote to fear; lean on God's strength by having faith in him);
+
+Delivered from Death - June 9 (Jesus kept his word; Jesus abolished death);
