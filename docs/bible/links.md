@@ -384,3 +384,5 @@ Unconditional Invitation - June 7 (Romans 10:13, Whoever is without condition; I
 The Weight of Tears - June 8 (Faith is the antidote to fear; lean on God's strength by having faith in him);
 
 Delivered from Death - June 9 (Jesus kept his word; Jesus abolished death);
+
+In His Hand - June 10 (Jesus is your friend; carry everything to God in prayer);
