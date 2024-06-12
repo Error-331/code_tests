@@ -387,4 +387,6 @@ Delivered from Death - June 9 (Jesus kept his word; Jesus abolished death);
 
 In His Hand - June 10 (Jesus is your friend; carry everything to God in prayer);
 
-Our Needs Will Be Supplied - June 11 (If you have a genuine need today, trust Him to take care of it; God will provide.);
+Our Needs Will Be Supplied - June 11 (If you have a genuine need today, trust Him to take care of it; God will provide);
+
+Even the Dust - June 12 (Spread the gospel; do not be concerned about the wicked - commit that person to God);
