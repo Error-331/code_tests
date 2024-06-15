@@ -392,3 +392,5 @@ Our Needs Will Be Supplied - June 11 (If you have a genuine need today, trust Hi
 Even the Dust - June 12 (Spread the gospel; do not be concerned about the wicked - commit that person to God);
 
 Be of Good Cheers - June 13 (Do not be afraid; Jesus is with you; do not let fear overtake you);
+
+Walking on Water - June 14 (Instead of sinking in fear, get a good grip on yourself and trust Him; live above our circumstances; walk hand-in-hand with God);
