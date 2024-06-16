@@ -396,3 +396,5 @@ Be of Good Cheers - June 13 (Do not be afraid; Jesus is with you; do not let fea
 Walking on Water - June 14 (Instead of sinking in fear, get a good grip on yourself and trust Him; live above our circumstances; walk hand-in-hand with God);
 
 Godly Priorities - June 15 (we must cultivate a tender conscience and walk in the fear of the Lord);
+
+The Work of God - June 16 (When we trust in the Son, we are doing the work of God);
