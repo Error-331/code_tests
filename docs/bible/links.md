@@ -398,3 +398,5 @@ Walking on Water - June 14 (Instead of sinking in fear, get a good grip on yours
 Godly Priorities - June 15 (we must cultivate a tender conscience and walk in the fear of the Lord);
 
 The Work of God - June 16 (When we trust in the Son, we are doing the work of God);
+
+Thank the Teacher - June 17 (Law strips us of self-righteousness; grace and truth came by Jesus Christ; Moses brought us to Christ);
