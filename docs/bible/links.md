@@ -400,3 +400,5 @@ Godly Priorities - June 15 (we must cultivate a tender conscience and walk in th
 The Work of God - June 16 (When we trust in the Son, we are doing the work of God);
 
 Thank the Teacher - June 17 (Law strips us of self-righteousness; grace and truth came by Jesus Christ; Moses brought us to Christ);
+
+The End of Religion - June 18 (Only Jesus has the authority on earth to wash away our sins);
