@@ -402,3 +402,5 @@ The Work of God - June 16 (When we trust in the Son, we are doing the work of Go
 Thank the Teacher - June 17 (Law strips us of self-righteousness; grace and truth came by Jesus Christ; Moses brought us to Christ);
 
 The End of Religion - June 18 (Only Jesus has the authority on earth to wash away our sins);
+
+The Power of Rejection - June 19 (Jesus will never reject those who come to Him; do not fear to be rejected when sharing the gospel);
