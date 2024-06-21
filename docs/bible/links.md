@@ -404,3 +404,5 @@ Thank the Teacher - June 17 (Law strips us of self-righteousness; grace and trut
 The End of Religion - June 18 (Only Jesus has the authority on earth to wash away our sins);
 
 The Power of Rejection - June 19 (Jesus will never reject those who come to Him; do not fear to be rejected when sharing the gospel);
+
+Do We See Him? - June 20 (you have immutable promises from the One who cannot lie; everyone who sees the Son and believes in Him has everlasting life);
