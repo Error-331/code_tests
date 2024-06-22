@@ -406,3 +406,5 @@ The End of Religion - June 18 (Only Jesus has the authority on earth to wash awa
 The Power of Rejection - June 19 (Jesus will never reject those who come to Him; do not fear to be rejected when sharing the gospel);
 
 Do We See Him? - June 20 (you have immutable promises from the One who cannot lie; everyone who sees the Son and believes in Him has everlasting life);
+
+Murmuring and Complaining - June 21 (In the light of such love, may we never be guilty of murmuring or complaining);
