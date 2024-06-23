@@ -408,3 +408,5 @@ The Power of Rejection - June 19 (Jesus will never reject those who come to Him;
 Do We See Him? - June 20 (you have immutable promises from the One who cannot lie; everyone who sees the Son and believes in Him has everlasting life);
 
 Murmuring and Complaining - June 21 (In the light of such love, may we never be guilty of murmuring or complaining);
+
+Our Earnest Prayer - June 22 (do not forget about the unsaved; We are to instruct sinners, using the Law to point them to Jesus - specifically Christ crucified for the sin of the world);
