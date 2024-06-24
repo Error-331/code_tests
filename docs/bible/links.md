@@ -412,3 +412,5 @@ Murmuring and Complaining - June 21 (In the light of such love, may we never be 
 Our Earnest Prayer - June 22 (do not forget about the unsaved; We are to instruct sinners, using the Law to point them to Jesus - specifically Christ crucified for the sin of the world);
 
 The Foundation - June 23 (Moses showed us the nature of sins and give us the death sentence; Jesus - is everlasting life; feed upon the word of God);
+
+The Mothers of Knowledge - June 24 (We must never tire of repeating the same gospel to sinners);
