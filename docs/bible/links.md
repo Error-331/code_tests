@@ -416,3 +416,7 @@ The Foundation - June 23 (Moses showed us the nature of sins and give us the dea
 The Mothers of Knowledge - June 24 (We must never tire of repeating the same gospel to sinners);
 
 Tasting the Goodness of God - June 25 (Psalm 34:8, 2 Timothy 2:24-26);
+
+Taking Communion - June 26 (We should never forget what we deserve and what grace has done for us; God should have given us hell, but instead He have us heaven);
+
+The Fogged Mirror - June 27 (Fear God, listen to the Law, love the Christ);
