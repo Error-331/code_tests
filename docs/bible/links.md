@@ -420,3 +420,5 @@ Tasting the Goodness of God - June 25 (Psalm 34:8, 2 Timothy 2:24-26);
 Taking Communion - June 26 (We should never forget what we deserve and what grace has done for us; God should have given us hell, but instead He have us heaven);
 
 The Fogged Mirror - June 27 (Fear God, listen to the Law, love the Christ);
+
+Spotting Guilt - June 28 (No one will escape the judgment of God);
