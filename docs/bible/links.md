@@ -422,3 +422,5 @@ Taking Communion - June 26 (We should never forget what we deserve and what grac
 The Fogged Mirror - June 27 (Fear God, listen to the Law, love the Christ);
 
 Spotting Guilt - June 28 (No one will escape the judgment of God);
+
+Out of the Mouth - June 29 (What does matter is guarding our hearts and lips with all diligence because it is out of heart that come the issues of life);
