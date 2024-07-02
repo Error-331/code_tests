@@ -129,3 +129,10 @@ sudo watch ss -tulpn
 - n - shows the port number;
 - p - show process/program name;
 
+Show what is listening port 25:
+
+```shell
+
+sudo ss -tlpn sport 25
+
+```
