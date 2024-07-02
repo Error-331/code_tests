@@ -426,3 +426,5 @@ Spotting Guilt - June 28 (No one will escape the judgment of God);
 Blind Leaders - June 30 (there are a lot of false converts nowadays; always do the will of the God thy Father);
 
 Take Hold of Understanding - July 1 (Run from sin);
+
+The Law is Spiritual - July 2 (Learn to open up the spiritual nature of the Ten Commandments);
