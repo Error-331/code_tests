@@ -274,3 +274,4 @@ https://www.aliexpress.com/item/4000123674350.html?spm=a2g0o.home.moretolove.190
 ### MP3 проигрыватели
 
 https://hotline.ua/ua/av-mp3--i-mediapleery/hiby-rs2-black/?tab=about - Портативний Hi-Res програвач Hiby RS2 Black;
+https://hotline.ua/ua/av-mp3--i-mediapleery/lotoo-paw-gold/?tab=prices&utm_source=rtbhouse&utm_medium=cpc&utm_campaign=main_cpa&rtbhc=JiVEfS0GYCIpIal0C07i2qdkA91FzhXexTKSUChwYpw.8650686.1719945557276.0.L6f3uu6qECv7G5pze69E - Портативний Hi-Res програвач Lotoo PAW Gold;
