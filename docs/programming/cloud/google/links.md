@@ -8,6 +8,7 @@
 - https://gist.github.com/coryodaniel/13eaee16a87a7fdca5e738123216862a - GCP List of API Services;
 - https://gcp.permissions.cloud/iam/firebasestorage - Permissions Reference for Cloud Storage for Firebase;
 - https://cloud.google.com/docs/quotas/quota-project - Quota project overview;
+- https://cloud.google.com/nodejs/docs/reference - Node.js Cloud Client Libraries;
 
 ### Identity platform
 

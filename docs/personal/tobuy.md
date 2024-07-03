@@ -268,4 +268,10 @@ https://www.aliexpress.com/item/1005001817069153.html?spm=a2g0o.productlist.0.0.
 
 ### Магнитики
 
-https://www.aliexpress.com/item/4000123674350.html?spm=a2g0o.home.moretolove.190.65d52145VY0UdY&gps-id=pcJustForYou&scm=1007.13562.333647.0&scm_id=1007.13562.333647.0&scm-url=1007.13562.333647.0&pvid=4fe76da0-2b00-4f5c-a04b-1842eac3ecda&_t=gps-id:pcJustForYou,scm-url:1007.13562.333647.0,pvid:4fe76da0-2b00-4f5c-a04b-1842eac3ecda,tpp_buckets:668%232846%238110%231995&pdp_npi=4%40dis%21PLN%2121.30%218.73%21%21%214.93%21%21%4021038e8316984204902902360e6466%2110000000347726783%21rec%21PL%214291096233%21 - HACK THE PLANET Enamel Pin
+https://www.aliexpress.com/item/4000123674350.html?spm=a2g0o.home.moretolove.190.65d52145VY0UdY&gps-id=pcJustForYou&scm=1007.13562.333647.0&scm_id=1007.13562.333647.0&scm-url=1007.13562.333647.0&pvid=4fe76da0-2b00-4f5c-a04b-1842eac3ecda&_t=gps-id:pcJustForYou,scm-url:1007.13562.333647.0,pvid:4fe76da0-2b00-4f5c-a04b-1842eac3ecda,tpp_buckets:668%232846%238110%231995&pdp_npi=4%40dis%21PLN%2121.30%218.73%21%21%214.93%21%21%4021038e8316984204902902360e6466%2110000000347726783%21rec%21PL%214291096233%21 - HACK THE PLANET Enamel Pin;
+
+
+### MP3 проигрыватели
+
+https://hotline.ua/ua/av-mp3--i-mediapleery/hiby-rs2-black/?tab=about - Портативний Hi-Res програвач Hiby RS2 Black;
+https://hotline.ua/ua/av-mp3--i-mediapleery/lotoo-paw-gold/?tab=prices&utm_source=rtbhouse&utm_medium=cpc&utm_campaign=main_cpa&rtbhc=JiVEfS0GYCIpIal0C07i2qdkA91FzhXexTKSUChwYpw.8650686.1719945557276.0.L6f3uu6qECv7G5pze69E - Портативний Hi-Res програвач Lotoo PAW Gold;
