@@ -432,3 +432,5 @@ Take Hold of Understanding - July 1 (Run from sin);
 The Law is Spiritual - July 2 (Learn to open up the spiritual nature of the Ten Commandments);
 
 The Advantage - July 3 (the Christ was made a curse for us in order to redeem us from the curse of the Law);
+
+Crumbs of the Bread of Life - July 4 (God didn't confine the gospel to the Jews);
