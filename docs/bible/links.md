@@ -434,3 +434,5 @@ The Law is Spiritual - July 2 (Learn to open up the spiritual nature of the Ten 
 The Advantage - July 3 (the Christ was made a curse for us in order to redeem us from the curse of the Law);
 
 Crumbs of the Bread of Life - July 4 (God didn't confine the gospel to the Jews);
+
+Make Him Marvel - July 5 (We can not please God by our own works - but only by faith);
