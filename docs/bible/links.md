@@ -440,3 +440,5 @@ Make Him Marvel - July 5 (We can not please God by our own works - but only by f
 The Hidden Enemy - July 6 (Identify any areas of temptation and bring them to the cross; Don't hide the Gospel - spread it);
 
 Be Opened - July 7 (The gospel opens a whole new world to us);
+
+Entering into Suffering - July 8 (We must also enter into the suffering of others and do all we can to help them; The thought of the suffering of those who will be damned in their sins should motivate us to preach the love of God in Christ);
