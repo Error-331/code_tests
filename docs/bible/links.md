@@ -437,4 +437,6 @@ Crumbs of the Bread of Life - July 4 (God didn't confine the gospel to the Jews)
 
 Make Him Marvel - July 5 (We can not please God by our own works - but only by faith);
 
-The Hidden Enemy - July 6 (Identify any areas of temptation and bring them to the cross; Don't hide the Gospel - spread it.);
+The Hidden Enemy - July 6 (Identify any areas of temptation and bring them to the cross; Don't hide the Gospel - spread it);
+
+Be Opened - July 7 (The gospel opens a whole new world to us);
