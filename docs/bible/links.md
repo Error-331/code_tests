@@ -442,3 +442,7 @@ The Hidden Enemy - July 6 (Identify any areas of temptation and bring them to th
 Be Opened - July 7 (The gospel opens a whole new world to us);
 
 Entering into Suffering - July 8 (We must also enter into the suffering of others and do all we can to help them; The thought of the suffering of those who will be damned in their sins should motivate us to preach the love of God in Christ);
+
+The Good Seed - July 9 (God can take our lack of ability, our nothingness, and multiply it to reach multitudes);
+
+The Sign of Jonah - July 10 (The gospel, and the message has the power to instantly transform any sinner);
