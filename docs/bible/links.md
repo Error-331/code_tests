@@ -446,3 +446,5 @@ Entering into Suffering - July 8 (We must also enter into the suffering of other
 The Good Seed - July 9 (God can take our lack of ability, our nothingness, and multiply it to reach multitudes);
 
 The Sign of Jonah - July 10 (The gospel, and the message has the power to instantly transform any sinner);
+
+Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give me knowledge and help me to stay low as I grow);
