@@ -448,3 +448,5 @@ The Good Seed - July 9 (God can take our lack of ability, our nothingness, and m
 The Sign of Jonah - July 10 (The gospel, and the message has the power to instantly transform any sinner);
 
 Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give me knowledge and help me to stay low as I grow);
+
+Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Keep your doctrine pure);
