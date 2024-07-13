@@ -450,3 +450,5 @@ The Sign of Jonah - July 10 (The gospel, and the message has the power to instan
 Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give me knowledge and help me to stay low as I grow);
 
 Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Keep your doctrine pure);
+
+Taking the Initiative - July 13 (Use any means necessary to reach the lost; Take the initiative; God will multiply our effort);
