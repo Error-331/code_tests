@@ -452,3 +452,5 @@ Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give 
 Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Keep your doctrine pure);
 
 Taking the Initiative - July 13 (Use any means necessary to reach the lost; Take the initiative; God will multiply our effort);
+
+The Wisdom of God - July 14 (Be in peace with people always; Seek God for His wisdom on all things);
