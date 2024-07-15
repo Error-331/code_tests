@@ -54,6 +54,15 @@ Orientation: 12-26 dB
 Size: 3.70 cm x 3.70 cm x 13.70 cm;
 Weight: 0.2 kg
 
+### YouLoop
+
+HF Response: 10kHz to 30 MHz
+VHF Response: up to 300 MHz
+Maximum Power: 250 mW
+Passive Design
+No Tuning required
+Low-Loss Wide-Band BALUN with 0.28 dB loss typ.
+
 ## TinySA Ultra
 
 ### Measure
@@ -97,3 +106,21 @@ Weight: 0.2 kg
 **Power**: 3.3 - 5V via bias tee only, 150 mA current draw;
 **Enclosure**: Aluminum enclosure;
 **Connectors**: Two SMA Female (Male to Male adapter included);
+
+### Nooelec LaNA HF
+
+- LF, MF and HF band amplification;
+- Software-defined radio;
+- HF-capable radios and rigs;
+- HAM radio reception;
+- Wideband reception;
+- Noise-sensitive applications;
+
+### Specs
+
+- High linearity;
+- +20dB of RF gain for 50KHz-150MHz;
+- 2.5dB average noise figure across the band;
+- 50Ω low noise gain block;
+- +3.3V - 5V single supply;
+- 25mA current draw;
