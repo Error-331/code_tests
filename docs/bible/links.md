@@ -454,3 +454,5 @@ Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Kee
 Taking the Initiative - July 13 (Use any means necessary to reach the lost; Take the initiative; God will multiply our effort);
 
 The Wisdom of God - July 14 (Be in peace with people always; Seek God for His wisdom on all things);
+
+Who is He? - July 15 (The Bible teaches that our eternity as individuals depends upon how we answer the questions of who Jesus was?; always rightly reflect the light of the Savior);
