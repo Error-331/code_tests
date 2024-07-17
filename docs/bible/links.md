@@ -458,3 +458,5 @@ The Wisdom of God - July 14 (Be in peace with people always; Seek God for His wi
 Who is He? - July 15 (The Bible teaches that our eternity as individuals depends upon how we answer the questions of who Jesus was?; always rightly reflect the light of the Savior);
 
 Who is He to You? - July 16 (Romans 10:9);
+
+The Suffering Savior - July 17 ("Lost! Lost! Lost! Better a whole world on fire than a soul lost! Better every star quenched and the skies a wreck than a single soul to be lost!");
