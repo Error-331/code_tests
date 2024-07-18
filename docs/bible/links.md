@@ -448,7 +448,7 @@ The Good Seed - July 9 (God can take our lack of ability, our nothingness, and m
 The Sign of Jonah - July 10 (The gospel, and the message has the power to instantly transform any sinner);
 
 Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give me knowledge and help me to stay low as I grow);
-
+cd 
 Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Keep your doctrine pure);
 
 Taking the Initiative - July 13 (Use any means necessary to reach the lost; Take the initiative; God will multiply our effort);
@@ -460,3 +460,5 @@ Who is He? - July 15 (The Bible teaches that our eternity as individuals depends
 Who is He to You? - July 16 (Romans 10:9);
 
 The Suffering Savior - July 17 ("Lost! Lost! Lost! Better a whole world on fire than a soul lost! Better every star quenched and the skies a wreck than a single soul to be lost!");
+
+Self-Denial - July 18 (We do this not to merit eternal life but because we have eternal life);
