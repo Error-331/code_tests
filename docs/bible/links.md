@@ -462,3 +462,5 @@ Who is He to You? - July 16 (Romans 10:9);
 The Suffering Savior - July 17 ("Lost! Lost! Lost! Better a whole world on fire than a soul lost! Better every star quenched and the skies a wreck than a single soul to be lost!");
 
 Self-Denial - July 18 (We do this not to merit eternal life but because we have eternal life);
+
+Letting go and Holding On - July 19 (being a Christian means a daily letting go of sin and resolving to hold fast to God's gift of salvation and eternal life);
