@@ -464,3 +464,5 @@ The Suffering Savior - July 17 ("Lost! Lost! Lost! Better a whole world on fire 
 Self-Denial - July 18 (We do this not to merit eternal life but because we have eternal life);
 
 Letting go and Holding On - July 19 (being a Christian means a daily letting go of sin and resolving to hold fast to God's gift of salvation and eternal life);
+
+Profit or Loss - July 20 (What a tragedy it is a life devoid of any reference to God);
