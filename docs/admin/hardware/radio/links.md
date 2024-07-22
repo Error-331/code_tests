@@ -20,6 +20,18 @@
 - https://www.reddit.com/r/RTLSDR/comments/s6ddo/rtlsdr_compatibility_list_v2_work_in_progress/ - RTL-SDR compatibility list v.2;
 - https://electrosense.org/ - extension for RTL-SDR;
 - https://flightaware.store/products/pro-stick - Pro Stick;
+- https://www.aliexpress.com/item/1005006084935735.html?albagn=888888&&src=google&albch=search&acnt=479-062-3723&isdl=y&aff_short_key=UneMJZVf&albcp=15034475726&albag=134062032172&slnk=&trgt=dsa-42862830006&plac=&crea=555011960799&netw=g&device=c&mtctp=&memo1=&albbt=Google_7_search&aff_platform=google&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyWAo1Sz1EVn_M860-_wna7zeZ7u1dp2t_V_IcMJ1xGNZYscn-frIfYaAgUVEALw_wcB&gclsrc=aw.ds - KIRISUN DP990 DMR professional portable radio walkie talkie with AES256 and display compatible to DP4800;
+
+### Handheld
+
+- https://www.joom.com/uk/products/6343f1fcc44e6401fb55de97?variant_id=6343f1fcc44e649dfb55de99 - ATS25;
+- https://www.joom.com/uk/products/6343f1fcc44e6401fb55de97?variant_id=6343f1fcc44e649dfb55de99 - ATS25;
+- https://www.joom.com/uk/products/61a70b6066691101d17d0397?variant_id=61d7b57453bb9e46c19f0cff - ATS-20 SI4735;
+- https://www.joom.com/uk/products/65a11801da06b701935066b9?variant_id=65a11801da06b76f935066bb - ATS25 Si4732;
+
+### Antennas
+
+- https://www.aliexpress.com/item/1005006818794615.html?src=google&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005006818794615&ds_e_product_merchant_id=5337748526&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19373879459&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjwg8qzBhAoEiwAWagLrFWIW06N61QV2VGZWxg55DfqjBha-yQZZeubet_FmnBaajwVMDOm7BoCunIQAvD_BwE&aff_fcid=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&terminal_id=c706d8eac47948cebdf6f377cbecd6b1&afSmartRedirect=y - Latest PAC-12 7MHz-50MHz 100W Multi Band HF Shortwave GP Outdoor Slide Regulator Portable Antenna QRP For Ham Radio; 
 
 ## Software
 
@@ -30,3 +42,13 @@
 ## Hacking
 
 - https://www.rtl-sdr.com/eavesdropping-on-lte-calls-with-a-usrp-software-defined-radio/ - EAVESDROPPING ON LTE CALLS WITH A USRP SOFTWARE DEFINED RADIO;
+
+## Math
+
+- https://chemandy.com/calculators/return-loss-and-mismatch-calculator.htm - Calculates the absolute load impedance, reflection coefficient, VSWR, return loss and mismatch loss of a load;
+
+
+## Shops
+
+- https://gpio.com/ ;
+- https://janilab.hu/ ;

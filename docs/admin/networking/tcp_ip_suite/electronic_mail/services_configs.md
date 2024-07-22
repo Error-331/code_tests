@@ -39,3 +39,34 @@
 - Host: `smtp.mail.yahoo.com`;
 - Port: `465` or `587`;
 - Encryption: `TLS/SSL`;
+
+## GMail
+
+### IMAP
+
+- Host: `imap.gmail.com`;
+- Port: `993`;
+- Encryption: `TlS`;
+- Password: `XOAuth2 (SASL)`;
+
+XOAuth2 function example:
+
+```typescript
+
+    function prepareXOAuth2Token(accessToken: string): string {
+        const user = this.user;
+
+        return Buffer
+            .from([`user=${user}`, `auth=Bearer ${accessToken}`, '', '']
+                .join('\x01'), 'utf-8')
+            .toString('base64');
+    }
+
+```
+
+### SMTP
+
+- Host: `smtp.gmail.com`;
+- Port: `465`;
+- Encryption: `TLS`;
+- Password: `OAuth2`;

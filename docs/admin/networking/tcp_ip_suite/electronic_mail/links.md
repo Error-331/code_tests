@@ -20,6 +20,8 @@
 - https://dev.to/heyvenatdev/how-internet-message-access-protocol-imap-works-in-node-js-1jh5 - How Internet Message Access Protocol(IMAP) works in Node JS;
 - https://ardianbudi.medium.com/how-to-read-email-download-attachment-and-set-it-to-read-in-nestjs-with-node-imap-999e3e10570c - How to Read Email, Download Attachment and set it to “Read” on NestJS with Node-IMAP;
 - https://mailtrap.io/blog/sending-emails-with-nodemailer/ - How to install Nodemailer;
+- https://dev.to/scottwrobinson/using-to-the-gmail-api-with-nodejs-51kh - Using to the Gmail API with Node.js;
+- https://rupali.hashnode.dev/send-emails-in-nodejs-using-nodemailer-gmail-oauth2 - Send emails in Node.js using Nodemailer, Gmail & oAuth2;
 
 ### Libraries
 

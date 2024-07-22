@@ -466,3 +466,7 @@ Self-Denial - July 18 (We do this not to merit eternal life but because we have 
 Letting go and Holding On - July 19 (being a Christian means a daily letting go of sin and resolving to hold fast to God's gift of salvation and eternal life);
 
 Profit or Loss - July 20 (What a tragedy it is a life devoid of any reference to God);
+
+His Offensive Words - July 21 (If we want to be true and faithful witnesses, we must never be ashamed of Jesus's words);
+
+The Coming Kingdom - July 22 (The Kingdom of God will surely come);

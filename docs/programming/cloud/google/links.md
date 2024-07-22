@@ -97,3 +97,14 @@
 ### Indexes
 
 - https://firebase.google.com/docs/firestore/reference/rest/v1/projects.databases.collectionGroups.indexes/get - Method: projects.databases.collectionGroups.indexes.get;
+
+## OAuth2
+
+- https://developers.google.com/identity/protocols/oauth2/web-server#node.js - Using OAuth 2.0 for Web Server Applications;
+- https://developers.google.com/workspace/guides/configure-oauth-consent - Configure the OAuth consent screen and choose scopes;
+- https://developers.google.com/oauthplayground/ - OAuth2 playground;
+
+## Email
+
+- https://developers.google.com/gmail/imap/imap-smtp - IMAP, POP, and SMTP;
+- https://developers.google.com/gmail/imap/xoauth2-protocol - OAuth 2.0 Mechanism;
