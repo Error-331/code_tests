@@ -470,3 +470,5 @@ Profit or Loss - July 20 (What a tragedy it is a life devoid of any reference to
 His Offensive Words - July 21 (If we want to be true and faithful witnesses, we must never be ashamed of Jesus's words);
 
 The Coming Kingdom - July 22 (The Kingdom of God will surely come);
+
+Remove Hindrances - July 23 (We should be a burning and shining light to those who sit in darkness and in the shadow of death; We should be a burning and shining light to those who sit in darkness and in the shadow of death);
