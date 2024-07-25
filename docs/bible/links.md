@@ -448,7 +448,7 @@ The Good Seed - July 9 (God can take our lack of ability, our nothingness, and m
 The Sign of Jonah - July 10 (The gospel, and the message has the power to instantly transform any sinner);
 
 Puffed with Pride - July 11 (Knowledge puffs up, but love edifies; Father, give me knowledge and help me to stay low as I grow);
-cd 
+
 Leaven - July 12 ("Pharisees and Sadducees" are both leavening the churches; Keep your doctrine pure);
 
 Taking the Initiative - July 13 (Use any means necessary to reach the lost; Take the initiative; God will multiply our effort);
@@ -474,3 +474,5 @@ The Coming Kingdom - July 22 (The Kingdom of God will surely come);
 Remove Hindrances - July 23 (We should be a burning and shining light to those who sit in darkness and in the shadow of death; We should be a burning and shining light to those who sit in darkness and in the shadow of death);
 
 Perverse Generation - July 24 (Pray for this lost generation);
+
+Preparing Fish - July 25 (Having faith in Jesus opens the door to every impossibility the mind can imagine);
