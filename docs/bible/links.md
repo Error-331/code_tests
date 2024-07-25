@@ -472,3 +472,5 @@ His Offensive Words - July 21 (If we want to be true and faithful witnesses, we 
 The Coming Kingdom - July 22 (The Kingdom of God will surely come);
 
 Remove Hindrances - July 23 (We should be a burning and shining light to those who sit in darkness and in the shadow of death; We should be a burning and shining light to those who sit in darkness and in the shadow of death);
+
+Perverse Generation - July 24 (Pray for this lost generation);
