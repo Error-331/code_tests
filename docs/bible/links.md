@@ -476,3 +476,5 @@ Remove Hindrances - July 23 (We should be a burning and shining light to those w
 Perverse Generation - July 24 (Pray for this lost generation);
 
 Preparing Fish - July 25 (Having faith in Jesus opens the door to every impossibility the mind can imagine);
+
+Dull of Hearing - July 26 (It was for us that the Son of Man was delivered into the hands of men, so we could have everlasting life);
