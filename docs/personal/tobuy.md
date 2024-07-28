@@ -137,8 +137,8 @@ https://rozetka.com.ua/ua/387359634/p387359634/?gad_source=1&gclid=CjwKCAiA_5WvB
 https://www.gsmsota.ua/sma-male-to-f-female/ - Переходник SMA male - F female;
 
 https://tehbezpeka.ua/p1422855856-razvetvitelsummator-spliter-antennyj.html?source=merchant_center&gad_source=1&gclid=Cj0KCQjw8J6wBhDXARIsAPo7QA9tZMS4pnSoiXch49h6X27BnvRwsNV4sEj-zWKYZt6JBNXUrdthfIQaAjSIEALw_wcB - Разветвитель/сумматор сплитер антенный радио 100 - 2700 МГц, позолоченный микрополосный сплиттер HAMY 2.7M;
-https://sdr.in.ua/product/bcfm/ - Режекторний фільтр FM для RTL-SDR;
-https://sdr.in.ua/product/rtl-sdr-v3/ - RTL SDR V3 blog Радіоприймач 500кГц-1.7ГГц RTL2832U R860(R820T2);
+https://www.aliexpress.com/item/1005006727312273.html?ug_edm_item_id=1005006727312273&pdp_npi=4%40dis%21PLN%2127%2C53z%C5%82%2127%2C53z%C5%82%21%21%21%21%21%40214110b517219058222511200d19e5%2112000038106708528%21edm%21%21%21&edm_click_module=alg_product_l1r2_6583117370&creative_img_ind=2&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_41198_1_pl_PL_2024-07-25&rowan_msg_id=sergCOWS_41198_$f70cdb9660b9416fb1b670111ce34487&ck=in_edm_other - 1PCS BPF Bandpass Filter 10M 10MHz BPF Band-pass Filter Low Insertion Loss New;
+
 
 ## Декор
 
