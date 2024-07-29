@@ -482,3 +482,5 @@ Dull of Hearing - July 26 (It was for us that the Son of Man was delivered into 
 Children are People Too - July 27 (Make yourself small in your own eyes; In the kingdom of God, the way down is the way up);
 
 Birds of a Feather - July 28 (Do not look condescendingly upon those with different beliefs within the Body of Christ);
+
+Sons of Wrath - July 29 (May love and kindness be at the core of everything you do);
