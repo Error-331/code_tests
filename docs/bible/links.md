@@ -484,3 +484,5 @@ Children are People Too - July 27 (Make yourself small in your own eyes; In the 
 Birds of a Feather - July 28 (Do not look condescendingly upon those with different beliefs within the Body of Christ);
 
 Sons of Wrath - July 29 (May love and kindness be at the core of everything you do);
+
+Mercy There was great - July 30 (Father, let the light of your mercy shine through me);
