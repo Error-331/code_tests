@@ -488,3 +488,5 @@ Sons of Wrath - July 29 (May love and kindness be at the core of everything you 
 Mercy There was great - July 30 (Father, let the light of your mercy shine through me);
 
 The Gauntlet - July 31 (The law is convincing in bringing us to the Gospel; Law brings the knowledge of sin to sinners);
+
+Lawbreakers - August 1 (Never be afraid to take a sinner through the moral Law; Father, never let me fear anything but you.);
