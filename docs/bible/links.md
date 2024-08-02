@@ -489,4 +489,6 @@ Mercy There was great - July 30 (Father, let the light of your mercy shine throu
 
 The Gauntlet - July 31 (The law is convincing in bringing us to the Gospel; Law brings the knowledge of sin to sinners);
 
-Lawbreakers - August 1 (Never be afraid to take a sinner through the moral Law; Father, never let me fear anything but you.);
+Lawbreakers - August 1 (Never be afraid to take a sinner through the moral Law; Father, never let me fear anything but you);
+
+Marvelous Work - August 2 (Father, today, help me keep my eyes on you);
