@@ -492,3 +492,5 @@ The Gauntlet - July 31 (The law is convincing in bringing us to the Gospel; Law 
 Lawbreakers - August 1 (Never be afraid to take a sinner through the moral Law; Father, never let me fear anything but you);
 
 Marvelous Work - August 2 (Father, today, help me keep my eyes on you);
+
+How to Judge - August 3 (Judge according to God's righteousness; Do not be tempted to prejudge people);
