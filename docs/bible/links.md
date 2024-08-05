@@ -494,3 +494,5 @@ Lawbreakers - August 1 (Never be afraid to take a sinner through the moral Law; 
 Marvelous Work - August 2 (Father, today, help me keep my eyes on you);
 
 How to Judge - August 3 (Judge according to God's righteousness; Do not be tempted to prejudge people);
+
+The Fear of the Lord - August 4 (The gospel is only understood by those who fear God);
