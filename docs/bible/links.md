@@ -498,3 +498,5 @@ How to Judge - August 3 (Judge according to God's righteousness; Do not be tempt
 The Fear of the Lord - August 4 (The gospel is only understood by those who fear God);
 
 Known Future - August 5 (Father, I groan for the redemption of my body. Save the lost and then come quickly);
+
+The Required Thirst - August 6 (Thirst for righteousness);
