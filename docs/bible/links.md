@@ -500,3 +500,7 @@ The Fear of the Lord - August 4 (The gospel is only understood by those who fear
 Known Future - August 5 (Father, I groan for the redemption of my body. Save the lost and then come quickly);
 
 The Required Thirst - August 6 (Thirst for righteousness);
+
+Written with His Fingers - August 7 (The Commandments were written in sand so that they could be easily erased by the grace of God. In Christ, our sins are easily washed away);
+
+Sin no More - August 8 (How could we ever go back to sin after seeing the cross? Such a thought is loathsome);
