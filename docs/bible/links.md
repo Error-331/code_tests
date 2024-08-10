@@ -504,3 +504,7 @@ The Required Thirst - August 6 (Thirst for righteousness);
 Written with His Fingers - August 7 (The Commandments were written in sand so that they could be easily erased by the grace of God. In Christ, our sins are easily washed away);
 
 Sin no More - August 8 (How could we ever go back to sin after seeing the cross? Such a thought is loathsome);
+
+The Light of the World - August 9 (It is in the darkness of the Law that we see the light of the Savior);
+
+The Appointment - August 10 (John 8:31-32);
