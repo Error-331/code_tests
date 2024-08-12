@@ -508,3 +508,5 @@ Sin no More - August 8 (How could we ever go back to sin after seeing the cross?
 The Light of the World - August 9 (It is in the darkness of the Law that we see the light of the Savior);
 
 The Appointment - August 10 (John 8:31-32);
+
+True and Faithful Witness - August 11 (Let your faith not stand in the wisdom of men, but in the power of God; Do not excuse yourself from the task of evangelism because you are not gifted);
