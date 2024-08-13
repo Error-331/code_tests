@@ -510,3 +510,5 @@ The Light of the World - August 9 (It is in the darkness of the Law that we see 
 The Appointment - August 10 (John 8:31-32);
 
 True and Faithful Witness - August 11 (Let your faith not stand in the wisdom of men, but in the power of God; Do not excuse yourself from the task of evangelism because you are not gifted);
+
+Jesus Is God - August 12 (**Jesus Christ is the exact representation of the God who created every atom in the universe**; Jhon 5:23);
