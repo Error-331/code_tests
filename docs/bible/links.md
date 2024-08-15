@@ -512,3 +512,9 @@ The Appointment - August 10 (John 8:31-32);
 True and Faithful Witness - August 11 (Let your faith not stand in the wisdom of men, but in the power of God; Do not excuse yourself from the task of evangelism because you are not gifted);
 
 Jesus Is God - August 12 (**Jesus Christ is the exact representation of the God who created every atom in the universe**; Jhon 5:23);
+
+Dying to Sin - August 13 (Every word spoken in unjust anger will be proof of your guilt; Please, don't entertain sin for a second because it demands payment for the pleasure it affords);
+
+Two Kingdoms - August 14 (This world is not your home; Romans 5:10);
+
+The Enduring Love - August 15 (If I ever become weary in my soul it may be because I'm not considering the suffering of my Savior;We must never for a moment forget that breathtaking sacrifice);
