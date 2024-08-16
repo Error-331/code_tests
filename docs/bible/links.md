@@ -518,3 +518,5 @@ Dying to Sin - August 13 (Every word spoken in unjust anger will be proof of you
 Two Kingdoms - August 14 (This world is not your home; Romans 5:10);
 
 The Enduring Love - August 15 (If I ever become weary in my soul it may be because I'm not considering the suffering of my Savior;We must never for a moment forget that breathtaking sacrifice);
+
+The Revelation of the Cross - August 16 (Realize that today is an opportunity to reach sinners with the message of everlasting life);
