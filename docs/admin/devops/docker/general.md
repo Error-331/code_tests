@@ -3,18 +3,116 @@
 - The Docker server is a separate binary from the client and is used to manage most of the Docker infrastructure;
 - Docker can be set up to know about multiple `Docker servers` by using the `docker context command`;
 
+## How Docker Works
+
+- Docker uses of a client-server architecture; 
+- Docker client works in pair with docker daemon;
+- Docker daemon builds, runs, and distributes the docker containers;
+- Docker client runs with the daemon on the same system or can be connected to the Docker daemon remotely;
+- Docker client and daemon interact with each other via REST API over a UNIX socket or a network;
+
+## Main moving parts
+
+### Dockerfile
+
+- dockerfile uses DSL (Domain Specific Language) and contains instructions for generating a Docker image;
+- dockerfile will define the processes to quickly produce an image;
+- user should create a Dockerfile in order which will then be run by `Docker daemon`;
+
+### Docker Image
+
+- It is a file, comprised of multiple layers, used to execute code in a Docker container; 
+- They are a set of instructions used to create docker containers; 
+- Docker Image is an executable package of software that includes everything needed to run an application; 
+- This image informs how a container should instantiate, determining which software components will run and how; 
+- Docker Container is a virtual environment that bundles application code with all the dependencies required to run the application. 
+- The application runs quickly and reliably from one computing environment to another;
+
+### Docker Container
+
+- is a runtime instance of an image; 
+- allows developers to package applications with all parts needed such as libraries and other dependencies; 
+- containers contain the whole kit required for an application, so the application can be run in an isolated way;
+
+### Docker Hub
+
+- Docker Hub is a repository service and it is a cloud-based which stores Docker Container Images;
+
+### Docker Compose
+
+- Docker Compose will execute a YAML-based multi-container application; 
+- The YAML file consists of all configurations needed to deploy containers Docker Compose, which is integrated with Docker Swarm, and provides directions for building and deploying containers; 
+- With Docker Compose, each container is constructed to run on a single host;
+
+### Docker Engine
+
+- Docker Engine - the software that hosts the containers; 
+- Docker Engine is a client-server based application. The docker engine has 3 main components:
+
+Components:
+
+- Server (daemon process) - responsible for creating and managing Docker images, containers, networks, and volumes on the Docker;
+- REST API - specifies how the applications can interact with the Server and instructs it what to do;
+- Client (command-line interface (CLI)) - allows to interact with Docker using the docker commands;
+
+### AWS
+
+- Amazon Elastic Container Service (Amazon ECS) - fully managed container service;
+- integrated with the other AWS Service like load balancing, service discovery, and container health monitoring;
+
 ## Installation
 
 Remove conflicting packages: 
 
 ```shell
 
-for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
-
+sudo apt-get remove docker docker-engine docker.io containerd runc
 
 ```
 
-**Then reference the doc.**
+or
+
+```shell
+
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+
+```
+
+Install docker engine:
+
+```shell
+
+sudo apt-get update
+
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+    
+sudo mkdir -p /etc/apt/keyrings
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+sudo groupadd docker
+sudo usermod -aG docker $USER
+  
+```
+
+Verify Docker Installation:
+
+```shell
+
+sudo docker run hello-world
+
+```
+
 
 ### Configuration
 
@@ -223,3 +321,101 @@ docker rm -f mycontainer
 
 docker build -t test_image .
 sudo docker run -d -p 127.0.0.1:8080:8080 --name test_container2 --env-file .env test_image
+
+//////
+
+To view an image's labels, use the docker image inspect command. You can use the --format option to show just the labels;
+
+docker image inspect --format='{{json .Config.Labels}}' myimage
+
+//////
+
+
+
+
+
+# Most used docker commands
+
+Docker Run
+Docker Pull
+Docker PS
+Docker Stop
+Docker Start
+Docker rm
+Docker RMI
+Docker Images
+Docker exec
+Docker Login
+
+# Docker Engine
+The software that hosts the containers is named Docker Engine. Docker Engine is a client-server based application. The docker engine has 3 main components:
+
+Server: It is responsible for creating and managing Docker images, containers, networks, and volumes on the Docker. It is referred to as a daemon process.
+REST API: It specifies how the applications can interact with the Server and instructs it what to do.
+Client: The Client is a docker command-line interface (CLI), that allows us to interact with Docker using the docker commands.
+
+
+# example
+
+Create a docker image
+
+sudo docker build -t python-test .
+
+Run the Docker image
+
+sudo docker run python-test
+
+# Fetch and run the image from Docker Hub
+
+1. To remove all versions of a particular image from our local system, we use the Image ID for it.
+
+$ docker rmi -f af939ee31fdc
+
+2. Now run the image, it will fetch the image from the docker hub if it doesn’t exist on your local machine.
+
+$ docker run afrozchakure/python-test
+
+## Instructions
+
+- `ADD`	- add local or remote files and directories;
+- `ARG` - use build-time variables;
+- `CMD` - specify default commands;
+- `COPY` - copy files and directories;
+- `ENTRYPOINT` - specify default executable;
+- `ENV` - set environment variables;
+- `EXPOSE` - describe which ports your application is listening on;
+- `FROM` - create a new build stage from a base image;
+- `HEALTHCHECK`- check a container's health on startup;
+- `LABEL` - add metadata to an image;
+- `MAINTAINER` - specify the author of an image;
+- `ONBUILD` - specify instructions for when the image is used in a build;
+- `RUN` - execute build commands;
+- `SHELL` - set the default shell of an image;
+- `STOPSIGNAL` - specify the system call signal for exiting a container;
+- `USER` - set user and group ID;
+- `VOLUME` - create volume mounts;
+- `WORKDIR` - change working directory;
+
+## Build variables
+
+- _**build arguments and environment variables are inappropriate for passing secrets to your build;**_
+- _**use secret mounts or SSH mounts;**_
+
+### Build arguments
+
+- build arguments are variables for the Dockerfile itself; 
+- used to parametrize values of Dockerfile instructions;
+- have no effect on the build unless it's used in an instruction; 
+- they're *not accessible* or present in containers unless *explicitly() passed through from the Dockerfile into the image filesystem or configuration;
+- They may persist in the image metadata (not suitable for holding secrets);
+
+### Environment variables
+
+- environment variables are *passed through to the build execution environment*, and *persist* in containers instantiated from the image;
+- used to configure the execution environment for builds;
+- used to set default environment variables for containers;
+- can directly influence the execution the build, and the behavior or configuration of the application;
+- user can not override or set an environment variable at build-time;
+- values for environment variables must be declared in the Dockerfile;
+- environment variables can be combined with build arguments to allow environment variables to be configured at build-time;
+

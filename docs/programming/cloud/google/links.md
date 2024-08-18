@@ -9,6 +9,7 @@
 - https://gcp.permissions.cloud/iam/firebasestorage - Permissions Reference for Cloud Storage for Firebase;
 - https://cloud.google.com/docs/quotas/quota-project - Quota project overview;
 - https://cloud.google.com/nodejs/docs/reference - Node.js Cloud Client Libraries;
+- https://cloud.google.com/docs/authentication/application-default-credentials - How Application Default Credentials works;
 
 ### Identity platform
 
@@ -41,6 +42,21 @@
 ## Secret manager
 
 - https://cloud.google.com/secret-manager/docs/configuring-secret-manager - Enable the Secret Manager API;
+
+## Service Usage
+
+- https://cloud.google.com/service-usage/docs/reference/rest/Shared.Types/Quota#QuotaLimit - Quota;
+
+## Cloud Quotas
+
+- https://cloud.google.com/docs/quotas/api-overview - Cloud Quotas API overview;
+- https://cloud.google.com/docs/quotas/view-manage - View and manage quotas;
+- https://cloud.google.com/docs/quotas/implement-common-use-cases - Implement common use case;
+- https://cloud.google.com/docs/quotas/reference/rest/v1/projects.locations.quotaPreferences - REST Resource: projects.locations.quotaPreferences;
+- https://cloud.google.com/docs/quotas/reference/rest/v1/projects.locations.quotaPreferences/list - Method: projects.locations.quotaPreferences.list;
+- https://cloud.google.com/docs/quotas/reference/rest/v1/projects.locations.quotaPreferences/get - Method: projects.locations.quotaPreferences.get;
+- https://cloud.google.com/docs/quotas/reference/rest/v1/organizations.locations.quotaPreferences/create - Method: organizations.locations.quotaPreferences.create;
+- https://cloud.google.com/docs/quotas/reference/rest/v1/projects.locations.quotaPreferences/patch - Method: projects.locations.quotaPreferences.patch;
 
 ## Firebase
 
