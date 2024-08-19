@@ -522,3 +522,5 @@ The Enduring Love - August 15 (If I ever become weary in my soul it may be becau
 The Revelation of the Cross - August 16 (Realize that today is an opportunity to reach sinners with the message of everlasting life);
 
 Daily Food - August 17 (God's Word nourishes us, makes us strong, and causes us to grow in Christ; The fruit of such discipline is the knowledge of the truth that sets us free);
+
+Sin's Partners - August 18 (John 8:34-36; Walk in the fear of the Lord;Read and believe the Bible's revelation of God's holy character and let it make you tremble);
