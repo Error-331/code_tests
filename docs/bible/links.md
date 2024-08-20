@@ -524,3 +524,5 @@ The Revelation of the Cross - August 16 (Realize that today is an opportunity to
 Daily Food - August 17 (God's Word nourishes us, makes us strong, and causes us to grow in Christ; The fruit of such discipline is the knowledge of the truth that sets us free);
 
 Sin's Partners - August 18 (John 8:34-36; Walk in the fear of the Lord;Read and believe the Bible's revelation of God's holy character and let it make you tremble);
+
+Their True Identity - August 19 (Jesus is the litmus test of one's spirituality;  May I never be overly familiar with God or take anything for granted);
