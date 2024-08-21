@@ -526,3 +526,7 @@ Daily Food - August 17 (God's Word nourishes us, makes us strong, and causes us 
 Sin's Partners - August 18 (John 8:34-36; Walk in the fear of the Lord;Read and believe the Bible's revelation of God's holy character and let it make you tremble);
 
 Their True Identity - August 19 (Jesus is the litmus test of one's spirituality;  May I never be overly familiar with God or take anything for granted);
+
+An Eye on Eternity - August 20 (How come a person can say that he believes in God, who loves everybody, and think about murder? even the murder of the enemy?; Remember about eternal life ahead);
+
+The Future - August 21 (Those who deliberately stiffen their necks in unbelief close their ears to the words of everlasting life);
