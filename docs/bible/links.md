@@ -530,3 +530,5 @@ Their True Identity - August 19 (Jesus is the litmus test of one's spirituality;
 An Eye on Eternity - August 20 (How come a person can say that he believes in God, who loves everybody, and think about murder? even the murder of the enemy?; Remember about eternal life ahead);
 
 The Future - August 21 (Those who deliberately stiffen their necks in unbelief close their ears to the words of everlasting life);
+
+The Truth in Love - August 22 (Father, help me to always speak the truth in love; Tell the lost about sin and the consequences);
