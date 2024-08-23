@@ -532,3 +532,5 @@ An Eye on Eternity - August 20 (How come a person can say that he believes in Go
 The Future - August 21 (Those who deliberately stiffen their necks in unbelief close their ears to the words of everlasting life);
 
 The Truth in Love - August 22 (Father, help me to always speak the truth in love; Tell the lost about sin and the consequences);
+
+Sinless Savior - August 23 (Feeling anger at evil is not a sin; Anger against sin and evil is a righteous anger);
