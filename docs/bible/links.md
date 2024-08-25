@@ -534,3 +534,5 @@ The Future - August 21 (Those who deliberately stiffen their necks in unbelief c
 The Truth in Love - August 22 (Father, help me to always speak the truth in love; Tell the lost about sin and the consequences);
 
 Sinless Savior - August 23 (Feeling anger at evil is not a sin; Anger against sin and evil is a righteous anger);
+
+The Life Source - August 24 (1 Corinthians 15:54-57);
