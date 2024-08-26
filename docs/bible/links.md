@@ -536,3 +536,5 @@ The Truth in Love - August 22 (Father, help me to always speak the truth in love
 Sinless Savior - August 23 (Feeling anger at evil is not a sin; Anger against sin and evil is a righteous anger);
 
 The Life Source - August 24 (1 Corinthians 15:54-57);
+
+The Honor of God - August 25 (Psalm 19:14; Do not seek the honor of men, only seek the honor from God);
