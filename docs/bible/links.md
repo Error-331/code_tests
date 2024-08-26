@@ -538,3 +538,5 @@ Sinless Savior - August 23 (Feeling anger at evil is not a sin; Anger against si
 The Life Source - August 24 (1 Corinthians 15:54-57);
 
 The Honor of God - August 25 (Psalm 19:14; Do not seek the honor of men, only seek the honor from God);
+
+Claiming the Name - August 26 (John 8:58);
