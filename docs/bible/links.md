@@ -523,7 +523,7 @@ The Revelation of the Cross - August 16 (Realize that today is an opportunity to
 
 Daily Food - August 17 (God's Word nourishes us, makes us strong, and causes us to grow in Christ; The fruit of such discipline is the knowledge of the truth that sets us free);
 
-Sin's Partners - August 18 (John 8:34-36; Walk in the fear of the Lord;Read and believe the Bible's revelation of God's holy character and let it make you tremble);
+Sin's Partners - August 18 (John 8:34-36; Walk in the fear of the Lord; Read and believe the Bible's revelation of God's holy character and let it make you tremble);
 
 Their True Identity - August 19 (Jesus is the litmus test of one's spirituality;  May I never be overly familiar with God or take anything for granted);
 
@@ -542,3 +542,8 @@ The Honor of God - August 25 (Psalm 19:14; Do not seek the honor of men, only se
 Claiming the Name - August 26 (John 8:58);
 
 God's Judgments - August 27 (Do not be quick to make judgments about what may or may not be God's judgments; Marvel on God's works);
+
+Come Back Seeing - August 28 (Sinners without faith must exercise God-given repentance and place their trust alone in Jesus Christ as Lord and Savior);
+
+Another Miracle - August 29 (Implicitly rely on Jesus as our sin-bearer; Become spiritually enlightened);
+
