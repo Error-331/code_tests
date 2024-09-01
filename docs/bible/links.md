@@ -548,3 +548,5 @@ Come Back Seeing - August 28 (Sinners without faith must exercise God-given repe
 Another Miracle - August 29 (Implicitly rely on Jesus as our sin-bearer; Become spiritually enlightened);
 
 Blinding Pride - August 30 (When we are enlightened by the Holy Spirit, we discover our previous sight to have been blindness indeed);
+
+Many Trials - August 31 (James 1:12; Romans 8:28; It is in His permissive will that He allows tribulation to come to us because He has the end product in mind);
