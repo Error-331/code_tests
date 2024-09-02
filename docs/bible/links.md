@@ -552,3 +552,5 @@ Blinding Pride - August 30 (When we are enlightened by the Holy Spirit, we disco
 Many Trials - August 31 (James 1:12; Romans 8:28; It is in His permissive will that He allows tribulation to come to us because He has the end product in mind);
 
 Follow Me - September 1 (Choose the light - follow Jesus, do not cover your sins and deeds in the darkness);
+
+The Father's Priority - September 2 (The main thing you should be concerned about is reaching out to the lost - warning them about the necessity of repentance);
