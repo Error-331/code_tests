@@ -556,3 +556,5 @@ Follow Me - September 1 (Choose the light - follow Jesus, do not cover your sins
 The Father's Priority - September 2 (The main thing you should be concerned about is reaching out to the lost - warning them about the necessity of repentance);
 
 Examine Yourself - September 3 (We need to make sure that we have genuinely repented with no concealed or secret sin in our hearts);
+
+Special Prayer - September 4 (Ask God to give you love enough to reach out to the lost and to pray earnestly for more laborers);
