@@ -558,3 +558,7 @@ The Father's Priority - September 2 (The main thing you should be concerned abou
 Examine Yourself - September 3 (We need to make sure that we have genuinely repented with no concealed or secret sin in our hearts);
 
 Special Prayer - September 4 (Ask God to give you love enough to reach out to the lost and to pray earnestly for more laborers);
+
+True Converts - September 5 (Jesus was able to send his lambs our among wolves because they were genuinely converted; A true convert, one whose seed fell on good soil, will send his roots deep when tribulations and temptations come rather than fall away from the faith);
+
+Our Priority - September 6 (The main goal of a believer and the church is to preach the Gospel and save the lost - this should not be forgotten);
