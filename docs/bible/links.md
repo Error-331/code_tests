@@ -562,3 +562,5 @@ Special Prayer - September 4 (Ask God to give you love enough to reach out to th
 True Converts - September 5 (Jesus was able to send his lambs our among wolves because they were genuinely converted; A true convert, one whose seed fell on good soil, will send his roots deep when tribulations and temptations come rather than fall away from the faith);
 
 Our Priority - September 6 (The main goal of a believer and the church is to preach the Gospel and save the lost - this should not be forgotten);
+
+True Peace - September 7 (But God's love came to us with a plan of peace that through the cross, we could have the peace of God and peace with God through trusting in our Lord Jesus);
