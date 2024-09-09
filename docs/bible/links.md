@@ -564,3 +564,5 @@ True Converts - September 5 (Jesus was able to send his lambs our among wolves b
 Our Priority - September 6 (The main goal of a believer and the church is to preach the Gospel and save the lost - this should not be forgotten);
 
 True Peace - September 7 (But God's love came to us with a plan of peace that through the cross, we could have the peace of God and peace with God through trusting in our Lord Jesus);
+
+Worthy of Wages - September 8 (Preaching to the same people every week can be laborious and, at times, disheartening; Love and take care of those people who have the courage to spread the Gospel);
