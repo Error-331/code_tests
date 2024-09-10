@@ -566,3 +566,5 @@ Our Priority - September 6 (The main goal of a believer and the church is to pre
 True Peace - September 7 (But God's love came to us with a plan of peace that through the cross, we could have the peace of God and peace with God through trusting in our Lord Jesus);
 
 Worthy of Wages - September 8 (Preaching to the same people every week can be laborious and, at times, disheartening; Love and take care of those people who have the courage to spread the Gospel);
+
+True Thanksgiving - September 9 (Fast a couple of meals each week, and when you sit down to eat, the familiarity that breeds contempt won't be there);
