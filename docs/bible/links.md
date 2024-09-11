@@ -568,3 +568,5 @@ True Peace - September 7 (But God's love came to us with a plan of peace that th
 Worthy of Wages - September 8 (Preaching to the same people every week can be laborious and, at times, disheartening; Love and take care of those people who have the courage to spread the Gospel);
 
 True Thanksgiving - September 9 (Fast a couple of meals each week, and when you sit down to eat, the familiarity that breeds contempt won't be there);
+
+The Irrelevant Cross - September 10 (The value of the cross only becomes relevant to sinners on the day of wrath, when only Jesus can save them);
