@@ -572,3 +572,5 @@ True Thanksgiving - September 9 (Fast a couple of meals each week, and when you 
 The Irrelevant Cross - September 10 (The value of the cross only becomes relevant to sinners on the day of wrath, when only Jesus can save them);
 
 The Unclean - September 11 (We must have compassion on sinners and speak to them of the cleansing of the gospel; We must keep our own heart free from sin);
+
+God's Perfect Justice - September 12 (Father, let my life express my gratitude for your mercy in Christ; God judges just);
