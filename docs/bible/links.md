@@ -580,3 +580,5 @@ Unearned Favor - September 13 (There is wonderful irony in contrasting God's per
 The Fear of Man - September 14 (We should rather have the frown of the world because we preach hell that the frown of God because we didn't);
 
 Rejection - September 15 (Romans 8:7-8 AMP);
+
+The Silliness of Conceit - September 16 (Father, remind me as I go through today that everything I have comes from your gracious hand);
