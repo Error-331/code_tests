@@ -578,3 +578,5 @@ God's Perfect Justice - September 12 (Father, let my life express my gratitude f
 Unearned Favor - September 13 (There is wonderful irony in contrasting God's perfection and our unworthiness, and it is this: God loved us and saved us anyway; He is love itself);
 
 The Fear of Man - September 14 (We should rather have the frown of the world because we preach hell that the frown of God because we didn't);
+
+Rejection - September 15 (Romans 8:7-8 AMP);
