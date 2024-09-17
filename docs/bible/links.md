@@ -582,3 +582,5 @@ The Fear of Man - September 14 (We should rather have the frown of the world bec
 Rejection - September 15 (Romans 8:7-8 AMP);
 
 The Silliness of Conceit - September 16 (Father, remind me as I go through today that everything I have comes from your gracious hand);
+
+Seeming Contradiction - September 17 (God keeps His word; Faithful christians will not be hurt);
