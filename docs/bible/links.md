@@ -584,3 +584,5 @@ Rejection - September 15 (Romans 8:7-8 AMP);
 The Silliness of Conceit - September 16 (Father, remind me as I go through today that everything I have comes from your gracious hand);
 
 Seeming Contradiction - September 17 (God keeps His word; Faithful christians will not be hurt);
+
+The Object of Our Joy - September 18 (It is the joy of the Lord that is our strength; Nothing and no one can take our joy from us);
