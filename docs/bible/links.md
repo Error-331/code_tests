@@ -586,3 +586,5 @@ The Silliness of Conceit - September 16 (Father, remind me as I go through today
 Seeming Contradiction - September 17 (God keeps His word; Faithful christians will not be hurt);
 
 The Object of Our Joy - September 18 (It is the joy of the Lord that is our strength; Nothing and no one can take our joy from us);
+
+Foolish Things - September 19 (Matthew 18:3);
