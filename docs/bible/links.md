@@ -588,3 +588,5 @@ Seeming Contradiction - September 17 (God keeps His word; Faithful christians wi
 The Object of Our Joy - September 18 (It is the joy of the Lord that is our strength; Nothing and no one can take our joy from us);
 
 Foolish Things - September 19 (Matthew 18:3);
+
+His Identity - September 20 (Father, I believe in Jesus with all my heart and trust alone in Him for my eternal salvation);
