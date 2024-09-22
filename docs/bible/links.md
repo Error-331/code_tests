@@ -592,3 +592,5 @@ Foolish Things - September 19 (Matthew 18:3);
 His Identity - September 20 (Father, I believe in Jesus with all my heart and trust alone in Him for my eternal salvation);
 
 Treasure Beyond Words - September 21 (The riches of this world pale in significance to what we have in Christ);
+
+The Treasure - September 22 (May we never take for granted the gift from the God);
