@@ -590,3 +590,5 @@ The Object of Our Joy - September 18 (It is the joy of the Lord that is our stre
 Foolish Things - September 19 (Matthew 18:3);
 
 His Identity - September 20 (Father, I believe in Jesus with all my heart and trust alone in Him for my eternal salvation);
+
+Treasure Beyond Words - September 21 (The riches of this world pale in significance to what we have in Christ);
