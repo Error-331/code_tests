@@ -594,3 +594,5 @@ His Identity - September 20 (Father, I believe in Jesus with all my heart and tr
 Treasure Beyond Words - September 21 (The riches of this world pale in significance to what we have in Christ);
 
 The Treasure - September 22 (May we never take for granted the gift from the God);
+
+What is Written? - September 23 (It humbles us so that we can understand the mercy of God revealed in the gospel; We must have childlike faith and humility of heart, seeking the truth about salvation);
