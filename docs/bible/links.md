@@ -596,3 +596,5 @@ Treasure Beyond Words - September 21 (The riches of this world pale in significa
 The Treasure - September 22 (May we never take for granted the gift from the God);
 
 What is Written? - September 23 (It humbles us so that we can understand the mercy of God revealed in the gospel; We must have childlike faith and humility of heart, seeking the truth about salvation);
+
+Our Interpretation - September 24 (We must set aside proud bias and approach the Law with humility of heart; The Law brings us the knowledge of sin);
