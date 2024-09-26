@@ -598,3 +598,5 @@ The Treasure - September 22 (May we never take for granted the gift from the God
 What is Written? - September 23 (It humbles us so that we can understand the mercy of God revealed in the gospel; We must have childlike faith and humility of heart, seeking the truth about salvation);
 
 Our Interpretation - September 24 (We must set aside proud bias and approach the Law with humility of heart; The Law brings us the knowledge of sin);
+
+Do This and You Shall Live - September 25 (The Law humbles us and prepares our hearts for the grace, and once we see ourselves in truth, the sacrifice of the cross makes sense);
