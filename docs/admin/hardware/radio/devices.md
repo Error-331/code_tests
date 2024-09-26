@@ -56,12 +56,31 @@ Weight: 0.2 kg
 
 ### YouLoop
 
-HF Response: 10kHz to 30 MHz
-VHF Response: up to 300 MHz
-Maximum Power: 250 mW
-Passive Design
-No Tuning required
-Low-Loss Wide-Band BALUN with 0.28 dB loss typ.
+- HF Response: 10kHz to 30 MHz;
+- VHF Response: up to 300 MHz;
+- Maximum Power: 250 mW;
+- Passive Design;
+- No Tuning required;
+- Low-Loss Wide-Band BALUN with 0.28 dB loss typ;
+
+### HT8 HTOOL Log Periodic Antenna
+
+- Spectrum range: 100MHz-12GHz;
+- Polarization: horizontal polarization/vertical polarization;
+- Directional gain: 7-12dBi;
+- Voltage VSWR:<2;
+- Antenna size: 40.5 * 25.5cm/15.94 * 10.04 inches;
+- Weight: 205 grams;
+- Output connector: SMA;
+- Output impedance: 50Q;
+
+* 100 МГц и 400 МГц - почти не работает;
+* работает поле 500 МГц (хорош для детекции FPV);
+* для детекции FPV нужно держать горизонтально;
+
+### Vivaldi
+
+* пеленговать будет от 3-4 Ггц и выше;
 
 ## TinySA Ultra
 
