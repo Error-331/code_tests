@@ -600,3 +600,5 @@ What is Written? - September 23 (It humbles us so that we can understand the mer
 Our Interpretation - September 24 (We must set aside proud bias and approach the Law with humility of heart; The Law brings us the knowledge of sin);
 
 Do This and You Shall Live - September 25 (The Law humbles us and prepares our hearts for the grace, and once we see ourselves in truth, the sacrifice of the cross makes sense);
+
+Passing By - September 26 (Evangelism should be our number one consuming priority);
