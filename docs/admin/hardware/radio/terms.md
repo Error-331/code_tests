@@ -47,3 +47,9 @@ to scan other frequencies when the initial transmission ceases;
 - WSPR - _Weak Signal Propagation Reporter_, protocol, implemented in a computer program, used for weak-signal radio communication between amateur radio operators;
 
 - Pigtail cable - a cable that has an appropriate connector on one end and loose wires on the other. It is designed to patch into an existing line or to terminate the ends of a long run;
+
+- ППРЧ (Псевдослучайная перестройка рабочей частоты) - метод передачи информации по радио, особенность которого заключается в частой смене несущей частоты;
+
+- ФАПЧ (Фазовая автоподстройка частоты, он же PLL) - система автоматического регулирования, подстраивающая фазу управляемого генератора так, чтобы она была равна фазе опорного сигнала либо отличалась на известную функцию от времени;
+
+- ФНЧ (Фильтр ни́жних часто́т) - электронный или любой другой фильтр, эффективно пропускающий частотный спектр сигнала ниже некоторой частоты (частоты среза) и подавляющий частоты сигнала выше этой частоты;
