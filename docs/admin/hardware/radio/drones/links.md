@@ -31,3 +31,8 @@
 
 - https://docs.google.com/document/d/1i-dVdMa8PW__87ykt4xidixNP5UHANwGJ1JUw7cvI9o/edit?fbclid=IwAR1uIqFpI93tIQOOJY36qBG595JE7NdydHN0gaCPIYkwOCiMVqlzwWT41T4&pli=1#heading=h.jb125lelc7v5 - "сахарок" док.;
 - https://docs.google.com/document/d/1npUNmWINLrhVELVpNtR9he6u-SqzSZznAZTZe-DymkQ/edit - "сахарок" версии;
+
+## Soft
+
+- https://github.com/portapack-mayhem/mayhem-firmware/wiki/Analog-TV-Receiver - Analog TV Receiver (portapack);
+- https://github.com/BatchDrake/SigDigger - free digital signal analyzer (video analog video demodulation);
