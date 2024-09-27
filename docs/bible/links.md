@@ -602,3 +602,5 @@ Our Interpretation - September 24 (We must set aside proud bias and approach the
 Do This and You Shall Live - September 25 (The Law humbles us and prepares our hearts for the grace, and once we see ourselves in truth, the sacrifice of the cross makes sense);
 
 Passing By - September 26 (Evangelism should be our number one consuming priority);
+
+The Selfish Gene - September 27 (The essence of the Law is a standard by which we may measure ourselves. It is a moral mirror, and what it reveals is not pleasant);
