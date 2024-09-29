@@ -604,3 +604,5 @@ Do This and You Shall Live - September 25 (The Law humbles us and prepares our h
 Passing By - September 26 (Evangelism should be our number one consuming priority);
 
 The Selfish Gene - September 27 (The essence of the Law is a standard by which we may measure ourselves. It is a moral mirror, and what it reveals is not pleasant);
+
+Life's Busyness - September 28 (No matter how busy or how necessary our endeavors may be, nothing should come before our relationship with God);
