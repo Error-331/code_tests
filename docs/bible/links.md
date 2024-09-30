@@ -606,3 +606,5 @@ Passing By - September 26 (Evangelism should be our number one consuming priorit
 The Selfish Gene - September 27 (The essence of the Law is a standard by which we may measure ourselves. It is a moral mirror, and what it reveals is not pleasant);
 
 Life's Busyness - September 28 (No matter how busy or how necessary our endeavors may be, nothing should come before our relationship with God);
+
+Our Father - September 29 (Prayer isn't an option; This prayer tells us that God can be approached as we would approach a loving father who cares for our smallest needs; When we respond back to God - it becomes prayer);
