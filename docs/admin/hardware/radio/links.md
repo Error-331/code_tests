@@ -39,6 +39,7 @@
 - https://www.sigintos.com/ - Linux distribution for Signal Intelligence;
 - https://www.dsdplus.com/ - DSDPlus;
 - https://www.hdsdr.de/index.html - HDSDR;
+- https://www.open-tx.org/ - OpenTX is open source firmware for RC radio transmitters;
 
 ## Hacking
 
@@ -48,7 +49,6 @@
 ## Math
 
 - https://chemandy.com/calculators/return-loss-and-mismatch-calculator.htm - Calculates the absolute load impedance, reflection coefficient, VSWR, return loss and mismatch loss of a load;
-
 
 ## Shops
 

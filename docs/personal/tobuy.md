@@ -142,6 +142,8 @@ https://www.aliexpress.com/item/1005006331048805.html?ug_edm_item_id=10050063310
 https://www.aliexpress.com/item/1005006850618914.html?src=google&src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005006850618914&ds_e_product_merchant_id=5337748526&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19373879459&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=5&gclid=Cj0KCQjwn9y1BhC2ARIsAG5IY-5wrqLiRk09UIKyJyFtAnrkbDV08YfK2CiJlo_oaZoXmwPkl9cSzhEaAt7tEALw_wcB - MSI-SDR RSP1 10kHz To 2GHz Panadapter SDR Receiver TCXO 0.5ppm 12-bit ADC HF UHF VHF FM;
 https://www.aliexpress.com/item/1005006356682421.html?af=4810729_1&cv=46313710&cn=42shi6u9rhge7h6yg4cl7oxg12fxuln1&dp=v5_42shi6u9rhge7h6yg4cl7oxg12fxuln1&af=4810729_1&cv=46313710&cn=42shi6u9rhge7h6yg4cl7oxg12fxuln1&dp=v5_42shi6u9rhge7h6yg4cl7oxg12fxuln1&utm_source=epn&utm_medium=cpa&utm_campaign=4810729_1&utm_content=46313710&product_id=1005006356682421&afref=https%3A%2F%2Fhabr.com%2Fru%2Fcompanies%2Fruvds%2Farticles%2F787828&aff_fcid=bc99493b0003463691f2b64d3038d952-1722455074473-08397-_9G57Xi&aff_fsk=_9G57Xi&aff_platform=portals-hotproduct&sk=_9G57Xi&aff_trace_key=bc99493b0003463691f2b64d3038d952-1722455074473-08397-_9G57Xi&terminal_id=c706d8eac47948cebdf6f377cbecd6b1 - NAGOYA UT-106UV Car Ham Radio Antenna Baofeng UV5R UV Dual Band VHF UHF Magnetic Base Antenna;
 
+https://dronhack.com/hackrf-one-portapack-h2-komplekt-maximum/ - HackRF one PortaPack H2 Комплект Maximum 2;
+
 ## Декор
 
 ### Разное
