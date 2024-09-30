@@ -104,3 +104,30 @@ const myConst = 3.14;
 
 ```
 Вывод: `error`. If we remove `myConst;` everything works fine.
+
+## Задача 7
+
+```javascript
+
+new Promise(resolve => { // promise1
+   console.log('5');
+	resolve();
+}).then(() => {
+	setTimeout( () => { // setTimeout2
+		console.log('6')	
+	})
+   console.log('7')
+});
+
+setTimeout( () => { // setTimeout3
+        console.log('8')    
+    });
+
+setImmediate( () => { // setImmediate1
+        console.log('9')    
+    });
+    
+
+```
+
+Вывод: 5 7 8 9 6
