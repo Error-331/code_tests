@@ -608,3 +608,7 @@ The Selfish Gene - September 27 (The essence of the Law is a standard by which w
 Life's Busyness - September 28 (No matter how busy or how necessary our endeavors may be, nothing should come before our relationship with God);
 
 Our Father - September 29 (Prayer isn't an option; This prayer tells us that God can be approached as we would approach a loving father who cares for our smallest needs; When we respond back to God - it becomes prayer);
+
+That Name - September 30 (Do not use the name of the God in vain; Use God's name with reverence and fear; We must pray that God in His mercy opens sinners blind eyes before the day of judgment);
+
+New World Coming - October 1 (Dwell on the joys of the coming kingdom);
