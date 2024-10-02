@@ -283,3 +283,11 @@ https://www.ixbt.com/live/digs/fiio-ja11-obzor-portativnogo-capa-nachalnogo-urov
 ## Разное
 
 - https://www.aliexpress.com/item/1005006102821847.html?ug_edm_item_id=1005006102821847&pdp_npi=4%40dis%21PLN%2196%2C90z%C5%82%2153%2C29z%C5%82%21%21%21%21%21%402151e79417202282461291922d6ce5%2112000035756591695%21edm%21%21%21&edm_click_module=alg_product_l1r2_3840108750&creative_img_ind=2&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_23869_1_pl_PL_2024-07-05&rowan_msg_id=sergCOWS_23869_$aeae9e77c0174e2fbfe5e0c7ef7d7b16&ck=in_edm_other - Battery Organizer bag;
+
+## На ближайшее время
+
+- https://www.amazon.com/Anchor-My-Soul-Devotions-Encouragement/dp/1424565030/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1692819274&sr=1-56 - Anchor for My Soul: 365 Daily Devotions of Hope and Encouragement (33$);
+- https://www.nooelec.com/store/sdr/sdr-addons/ham-filter-bank.html - Nooelec Ham Filter Bank Barebones - Multiband Radio Module with 5 Separate Bandpass Filters and Passthrough. Operates at 5 Common ISM Frequencies to Cover the 2m, 1.25m, 70cm, 33cm, and 23cm Ham Bands (59.95$);
+- https://www.nooelec.com/store/sdr/sdr-addons/ham-it-down.html - Nooelec Ham It Down 3GHz Downconverter - Extends The Frequency of Your RTL-SDR or Radio to 3.1GHz! Receive UHF & L-Band Transmissions with Ease. TCXO, SMA Connectivity & Multiple Power Options (89.95$);
+
+33 + 59.95 + 89.95 = 182,9
