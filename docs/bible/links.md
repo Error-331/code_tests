@@ -614,3 +614,5 @@ That Name - September 30 (Do not use the name of the God in vain; Use God's name
 New World Coming - October 1 (Dwell on the joys of the coming kingdom);
 
 The Blessing of Bread - October 2 (Matthew 4:4);
+
+Escape the Corruption - October 3 (Full payment for the sin one will see only on the other side of the grave);
