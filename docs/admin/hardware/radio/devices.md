@@ -3,7 +3,7 @@
 ## SDR
 
 - NooElec R820 SDR & DVB-T NESDR Mini 25MHz-1750MHz;
-- Astrometa DVB-T2  25 MHz - 1766 MHz;
+- Astrometa DVB-T2 - 25 MHz - 1766 MHz;
 - rtl2832u 25 MHz - 1766 MHz;
 - Icom IC-R20;
 - BladeRF - 47 MHz - 6 GHz;
@@ -11,6 +11,18 @@
 - RSP1A - 1kHz to 2GHz;
 - RSP1B - 1kHz to 2GHz;
 - HackRF - 1 MHz to 6 GHz;
+
+### Key points
+
+- complex sample rate must be greater than the bandwidth of the signal being processed;
+- DO NOT use AUTOMATIC GAIN CONTROL;
+
+Decimation factor example: 
+
+Sample rate - 1.024 MHz;
+Decimation factor - 16;
+
+Resulting sample rate: 1.024 MHz / 16 = 64 kHz;
 
 ## Portable consumer radio
 
@@ -48,11 +60,11 @@ Antenna length: 52 cm;
 
 ### DAT - 01
 
-Frequency: 174 MHz - 230 MHz, 470 MHz - 862 MHz;
-Gain: 12-18 dB
-Orientation: 12-26 dB
-Size: 3.70 cm x 3.70 cm x 13.70 cm;
-Weight: 0.2 kg
+- Frequency: 174 MHz - 230 MHz, 470 MHz - 862 MHz;
+- Gain: 12-18 dB;
+- Orientation: 12-26 dB;
+- Size: 3.70 cm x 3.70 cm x 13.70 cm;
+- Weight: 0.2 kg;
 
 ### YouLoop
 
@@ -97,7 +109,6 @@ Weight: 0.2 kg
 - Channel Power - мощьность в канале;
 - Linear - ???;
 - Noise Figure - профиль шума;
-
 
 ## LNA
 

@@ -48,20 +48,20 @@ A wave with a frequency of 3.75 MHz has a wavelength of 300 / 3.75 = 80 meters. 
 
 ### RF frequency bands
 
-| Band name | Abbreviation | ITU band number | Frequency | Wavelength | Example Uses |
-|:----------------------------------------:|:---------:|:---------:|:---------:|:---------:|:----------|
-| Extremely low frequency                  | ELF | 1 | 3–30 Hz | 100,000–10,000 km | Communication with submarines  |
-| Super low frequency                      | SLF | 2 | 30–300 Hz | 10,000–1,000 km | Communication with submarines |
-| Ultra low frequency                      | ULF | 3 | 300–3,000 Hz | 1,000–100 km | Submarine communication, communication within mines |
-| Very low frequency                       | VLF | 4 | 3–30 kHz | 100–10 km | Navigation, time signals, submarine communication, wireless heart rate monitors, geophysics |
-| Low frequency                            | LF | 5 | 30–300 kHz | 10–1 km | Navigation, time signals, AM longwave broadcasting (Europe and parts of Asia), RFID, amateur radio |
-| Medium frequency                         | MF | 6 | 300–3,000 kHz | 1,000–100 m | AM (medium-wave) broadcasts, amateur radio, avalanche beacons |
-| High frequency                           | HF | 7 | 3–30 MHz | 100–10 m | Shortwave broadcasts, citizens band radio, amateur radio and over-the-horizon aviation communications, RFID, over-the-horizon radar, automatic link establishment (ALE) / near-vertical incidence skywave (NVIS) radio communications, marine and mobile radio telephony |
-| Very high frequency                      | VHF | 8 | 30–300 MHz | 10–1 m | FM, television broadcasts, line-of-sight ground-to-aircraft and aircraft-to-aircraft communications, land mobile and maritime mobile communications, amateur radio, weather radio |
-| Ultra high frequency                     | UHF | 9 | 300–3,000 MHz | 1–0.1 m | Television broadcasts, microwave oven, microwave devices/communications, radio astronomy, mobile phones, wireless LAN, Bluetooth, ZigBee, GPS and two-way radios such as land mobile, FRS and GMRS radios, amateur radio, satellite radio, Remote control Systems, ADSB |
-| Super high frequency                     | SHF | 10 | 3–30 GHz | 100–10 mm | Radio astronomy, microwave devices/communications, wireless LAN, DSRC, most modern radars, communications satellites, cable and satellite television broadcasting, DBS, amateur radio, satellite radio |
-| Extremely high frequency                 | EHF | 11 | 30–300 GHz | 10–1 mm | Radio astronomy, high-frequency microwave radio relay, microwave remote sensing, amateur radio, directed-energy weapon, millimeter wave scanner, wireless LAN (802.11ad) |
-| Terahertz or Tremendously high frequency | THz or THF | 12 | 300–3,000 GHz | 1–0.1 mm | Experimental medical imaging to replace X-rays, ultrafast molecular dynamics, condensed-matter physics, terahertz time-domain spectroscopy, terahertz computing/communications, remote sensing |
+|               Band name                  | Abbreviation | ITU band number |   Frequency   |    Wavelength     | Example Uses                                                                                                                                                                                                                                                             |
+|:----------------------------------------:|:------------:|:---------------:|:-------------:|:-----------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Extremely low frequency          |     ELF      |        1        |   3–30 Hz     | 100,000–10,000 km | Communication with submarines                                                                                                                                                                                                                                            |
+|           Super low frequency            |     SLF      |        2        |   30–300 Hz   |  10,000–1,000 km  | Communication with submarines                                                                                                                                                                                                                                            |
+|           Ultra low frequency            |     ULF      |        3        | 300–3,000 Hz  |   1,000–100 km    | Submarine communication, communication within mines                                                                                                                                                                                                                      |
+|            Very low frequency            |     VLF      |        4        |   3–30 kHz    |     100–10 km     | Navigation, time signals, submarine communication, wireless heart rate monitors, geophysics                                                                                                                                                                              |
+|              Low frequency               |      LF      |        5        |  30–300 kHz   |      10–1 km      | Navigation, time signals, AM longwave broadcasting (Europe and parts of Asia), RFID, amateur radio                                                                                                                                                                       |
+|             Medium frequency             |      MF      |        6        | 300–3,000 kHz |    1,000–100 m    | AM (medium-wave) broadcasts, amateur radio, avalanche beacons                                                                                                                                                                                                            |
+|              High frequency              |      HF      |        7        |   3–30 MHz    |     100–10 m      | Shortwave broadcasts, citizens band radio, amateur radio and over-the-horizon aviation communications, RFID, over-the-horizon radar, automatic link establishment (ALE) / near-vertical incidence skywave (NVIS) radio communications, marine and mobile radio telephony |
+|           Very high frequency            |     VHF      |        8        |  30–300 MHz   |      10–1 m       | FM, television broadcasts, line-of-sight ground-to-aircraft and aircraft-to-aircraft communications, land mobile and maritime mobile communications, amateur radio, weather radio                                                                                        |
+|           Ultra high frequency           |     UHF      |        9        | 300–3,000 MHz |      1–0.1 m      | Television broadcasts, microwave oven, microwave devices/communications, radio astronomy, mobile phones, wireless LAN, Bluetooth, ZigBee, GPS and two-way radios such as land mobile, FRS and GMRS radios, amateur radio, satellite radio, Remote control Systems, ADSB  |
+|           Super high frequency           |     SHF      |       10        |   3–30 GHz    |     100–10 mm     | Radio astronomy, microwave devices/communications, wireless LAN, DSRC, most modern radars, communications satellites, cable and satellite television broadcasting, DBS, amateur radio, satellite radio                                                                   |
+|         Extremely high frequency         |     EHF      |       11        |  30–300 GHz   |      10–1 mm      | Radio astronomy, high-frequency microwave radio relay, microwave remote sensing, amateur radio, directed-energy weapon, millimeter wave scanner, wireless LAN (802.11ad)                                                                                                 |
+| Terahertz or Tremendously high frequency |  THz or THF  |       12        | 300–3,000 GHz |     1–0.1 mm      | Experimental medical imaging to replace X-rays, ultrafast molecular dynamics, condensed-matter physics, terahertz time-domain spectroscopy, terahertz computing/communications, remote sensing                                                                           |
 
 More details:
 
@@ -88,11 +88,11 @@ More details:
 - **digital modes are possible but have not reached momentum yet**;
 - the broadcast part of this band (531 kHz to 1602 kHz);
 
-| Area              	  | kHz (centre) | Spacing | Channels |
-|:------------------------|:-------------|:--------|:---------|
-| Europe, Asia, Africa    |	531–1,602    | 9 kHz   | 120      |
-| Australia               |	531–1,701    | 9 kHz   | 131      |
-| North and South America |	530–1,700    | 10 kHz  | 118      |
+| Area                    | kHz (centre) | Spacing | Channels   |
+|:------------------------|:-------------|:--------|:-----------|
+| Europe, Asia, Africa    | 531–1,602    | 9 kHz   | 120        |
+| Australia               | 531–1,701    | 9 kHz   | 131        |
+| North and South America | 530–1,700    | 10 kHz  | 118        |
 
 #### SW short wave frequency
 
@@ -116,21 +116,21 @@ internet modems and routers, computers and many other sources of radio interfere
 
 ### IEEE classification of microwave range
 
-| Band designation | Frequency range    | Explanation of meaning of letters                                      |
-|:-----------------|:-------------------|:-----------------------------------------------------------------------|
-| HF               | 0.003 to 0.03 GHz  | High Frequency                                                         |
-| VHF              | 0.03 to 0.3 GHz    | Very High Frequency                                                    |
-| UHF              | 0.3 to 1 GHz       | Ultra High Frequency                                                   | 
-| L                | 1 to 2 GHz         | Long wave                                                              |
-| S                | 2 to 4 GHz         | Short wave                                                             |
-| C                | 4 to 8 GHz         | Compromise between S and X                                             |
-| X                | 8 to 12 GHz        | Used in WW II for fire control, X for cross (as in crosshair). Exotic. |
-| Ku               | 12 to 18 GHz       | Kurz-under                                                             |
-| K                | 18 to 27 GHz       | Kurz (German for “short”)                                              |
-| Ka               | 27 to 40 GHz       | Kurz-above                                                             |
-| V                | 40 to 75 GHz       |                                                                        | 
-| W                | 75 to 110 GHz      | W follows V in the alphabet                                            |
-| mm or G          | 110 to 300 GHz​ | Millimeter                                                             |
+| Band designation | Frequency range   | Explanation of meaning of letters                                      |
+|:-----------------|:------------------|:-----------------------------------------------------------------------|
+| HF               | 0.003 to 0.03 GHz | High Frequency                                                         |
+| VHF              | 0.03 to 0.3 GHz   | Very High Frequency                                                    |
+| UHF              | 0.3 to 1 GHz      | Ultra High Frequency                                                   | 
+| L                | 1 to 2 GHz        | Long wave                                                              |
+| S                | 2 to 4 GHz        | Short wave                                                             |
+| C                | 4 to 8 GHz        | Compromise between S and X                                             |
+| X                | 8 to 12 GHz       | Used in WW II for fire control, X for cross (as in crosshair). Exotic. |
+| Ku               | 12 to 18 GHz      | Kurz-under                                                             |
+| K                | 18 to 27 GHz      | Kurz (German for “short”)                                              |
+| Ka               | 27 to 40 GHz      | Kurz-above                                                             |
+| V                | 40 to 75 GHz      |                                                                        | 
+| W                | 75 to 110 GHz     | W follows V in the alphabet                                            |
+| mm or G          | 110 to 300 GHz    | Millimeter                                                             |
 
 ## Radio wave propagation
 
@@ -184,7 +184,7 @@ MPEG-2 or MPEG-4 decoder  and either hardware or software based);
 ### Continuous Tone-Coded Squelch System
 
 - known by a number of different trade names such as Private Line® (PL) by Motorola, Channel Guard® (CG) by General Electric and generically as tone **squelch**;
-- 
+
 - it is a use of sub-audible tones that are transmitted along with the speech portion of the transmission which allows more than one agency (or fleet) to use the same radio frequency 
 without hearing the other agency on that frequency; 
 

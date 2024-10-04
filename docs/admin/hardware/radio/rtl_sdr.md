@@ -1,5 +1,7 @@
 # RTL-SDR
 
+- Sample rates: 225.001 kHz - 300 kHz, 900.001 kHz - 3.2 MHz;
+
 main parts:
 
 - RF front end;
@@ -12,6 +14,7 @@ main parts:
 - sampling rate - is the speed of ADC to measure the analog signal; 
 - dynamic range is the precision of the minimum and maximum signal values of the ADC block (determines the number of bits of ADC digital output);
 - the sampling rate of an ADC should at least be twice of the target signal bandwidth to enable an AD conversion without aliasing (Nyquist Theorem);
+- 
 
 Example 1:
 
