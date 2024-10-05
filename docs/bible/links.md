@@ -616,3 +616,5 @@ New World Coming - October 1 (Dwell on the joys of the coming kingdom);
 The Blessing of Bread - October 2 (Matthew 4:4);
 
 Escape the Corruption - October 3 (Full payment for the sin one will see only on the other side of the grave);
+
+Persistent Prayer - October 4 (Be persistent in your prayer, never be discouraged; God is faithful; Push until you give birth to your requests of your Father);
