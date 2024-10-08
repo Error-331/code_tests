@@ -619,4 +619,4 @@ Escape the Corruption - October 3 (Full payment for the sin one will see only on
 
 Persistent Prayer - October 4 (Be persistent in your prayer, never be discouraged; God is faithful; Push until you give birth to your requests of your Father);
 
-Prayer`s Qualifications - October 5 (Our requests must be without a sinful motive; aAk in faith; Exercise importunity);
+Prayer`s Qualifications - October 5 (Our requests must be without a sinful motive; Ask in faith; Exercise importunity);
