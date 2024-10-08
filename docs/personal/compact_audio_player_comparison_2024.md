@@ -1,4 +1,3 @@
-https://www.activostyle.com/p1 - activo p1
 https://en.shanling.com/product/424 - Shanling M3 Ultra Green
 
 # Players
@@ -90,6 +89,18 @@ Pluses:
 Minuses:
 
 - время работы от одного заряда;
+
+## ACTIVO P1
+
+- Price: 440$;
+- OS: Android;
+- Headphones output: 3.5 mm, 4.4 mm;
+- Balanced audio output: yes;
+- DAC: ESS ES9219Q SABRE;
+- Codecs:
+- Bluetooth: yes;
+- Wi-Fi: yes;
+- Signals: PCM 32 bit/384 kHz, DSD - DSD256;
 
 ## iBasso DX180
 
