@@ -9,6 +9,9 @@
 - Accounts Payable (AP) (Кредиторская задолженность) – A company’s current liability account that represent all owed and unpaid balances to its vendors;
 - Accounts Receivable (AR) – A company’s current asset account that represent all outstanding and unpaid balances owed to it from their customers;
 
+- Customer relationship management (CRM) -
+- Enterprise Resource Management (ERP) - 
+
 - Exchange transaction - is one in which each party receives and sacrifices something of approximate equal value;
 
 - Know your client (KYC) - guidelines in financial services requires that professionals make an effort to verify the identity, suitability, and risks involved with maintaining 
