@@ -624,3 +624,5 @@ Prayer`s Qualifications - October 5 (Our requests must be without a sinful motiv
 The Shadow - October 6 (We are to approach Him in the shadow of the cross, knowing that He will never deceive us. Ever);
 
 The Great Priority - October 7 (Sound doctrine should not overshadow the Great Commission; Father, help us to be unified in the evangelistic endeavor);
+
+The Power of God - October 8 (Romans 8:31);
