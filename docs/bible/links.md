@@ -622,3 +622,5 @@ Persistent Prayer - October 4 (Be persistent in your prayer, never be discourage
 Prayer`s Qualifications - October 5 (Our requests must be without a sinful motive; aAk in faith; Exercise importunity);
 
 The Shadow - October 6 (We are to approach Him in the shadow of the cross, knowing that He will never deceive us. Ever);
+
+The Great Priority - October 7 (Sound doctrine should not overshadow the Great Commission; Father, help us to be unified in the evangelistic endeavor);
