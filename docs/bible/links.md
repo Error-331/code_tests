@@ -626,3 +626,7 @@ The Shadow - October 6 (We are to approach Him in the shadow of the cross, knowi
 The Great Priority - October 7 (Sound doctrine should not overshadow the Great Commission; Father, help us to be unified in the evangelistic endeavor);
 
 The Power of God - October 8 (Romans 8:31);
+
+The Strong Man - October 9 (Our trust is in God, and we are, therefore, never in danger of being overcome by the demonic world; God is faithful);
+
+Gathering or Scattering? - October 10 (The way to be for Jesus is to surrender to Him; We are God's fellow workers);
