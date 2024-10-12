@@ -630,3 +630,7 @@ The Power of God - October 8 (Romans 8:31);
 The Strong Man - October 9 (Our trust is in God, and we are, therefore, never in danger of being overcome by the demonic world; God is faithful);
 
 Gathering or Scattering? - October 10 (The way to be for Jesus is to surrender to Him; We are God's fellow workers);
+
+Seven Other Spirits - October 11 (Today, be resolute to walk in the light; Do not let the Devil in);
+
+The Blessed - October 12 (Luke 11:28);
