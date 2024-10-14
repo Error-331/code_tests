@@ -634,3 +634,7 @@ Gathering or Scattering? - October 10 (The way to be for Jesus is to surrender t
 Seven Other Spirits - October 11 (Today, be resolute to walk in the light; Do not let the Devil in);
 
 The Blessed - October 12 (Luke 11:28);
+
+The Sign - October 13 (Humanity knows that God exists because of creation, and they are therefore without excuse; When the cross is appropriated and out lives are transformed by the power of the gospel, we receive the only sign needed);
+
+The Wisdom of Solomon - October 14 ("Call unto me, and I will answer thee, and show thee great and mighty things which thou knowest not");
