@@ -638,3 +638,5 @@ The Blessed - October 12 (Luke 11:28);
 The Sign - October 13 (Humanity knows that God exists because of creation, and they are therefore without excuse; When the cross is appropriated and out lives are transformed by the power of the gospel, we receive the only sign needed);
 
 The Wisdom of Solomon - October 14 ("Call unto me, and I will answer thee, and show thee great and mighty things which thou knowest not");
+
+Swallowed by Fears - October 15 (We let love swallow our fears rather than allowing fear to swallow us, leaving us feeling guilty);
