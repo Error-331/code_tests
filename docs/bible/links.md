@@ -640,3 +640,5 @@ The Sign - October 13 (Humanity knows that God exists because of creation, and t
 The Wisdom of Solomon - October 14 ("Call unto me, and I will answer thee, and show thee great and mighty things which thou knowest not");
 
 Swallowed by Fears - October 15 (We let love swallow our fears rather than allowing fear to swallow us, leaving us feeling guilty);
+
+The Little Light - October 16 (We live in a dark and sinful world where the blind lead the blind and where the light of God in you is desperately needed);
