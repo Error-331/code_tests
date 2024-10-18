@@ -642,3 +642,5 @@ The Wisdom of Solomon - October 14 ("Call unto me, and I will answer thee, and s
 Swallowed by Fears - October 15 (We let love swallow our fears rather than allowing fear to swallow us, leaving us feeling guilty);
 
 The Little Light - October 16 (We live in a dark and sinful world where the blind lead the blind and where the light of God in you is desperately needed);
+
+The Light of the Eye - October 17 (Philippians 4:8);
