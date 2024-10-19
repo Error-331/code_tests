@@ -644,3 +644,5 @@ Swallowed by Fears - October 15 (We let love swallow our fears rather than allow
 The Little Light - October 16 (We live in a dark and sinful world where the blind lead the blind and where the light of God in you is desperately needed);
 
 The Light of the Eye - October 17 (Philippians 4:8);
+
+Superficial Piety - October 18 (Be clean inside before God);
