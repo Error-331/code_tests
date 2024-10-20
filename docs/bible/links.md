@@ -646,3 +646,5 @@ The Little Light - October 16 (We live in a dark and sinful world where the blin
 The Light of the Eye - October 17 (Philippians 4:8);
 
 Superficial Piety - October 18 (Be clean inside before God);
+
+The Motive - October 19 (2 Timothy 4:2);
