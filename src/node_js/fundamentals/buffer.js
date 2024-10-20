@@ -1,6 +1,6 @@
 'use strict';
 
-const {convertToBinaryString} = require('../../library/js/utils/primitives/bitwise_utils');
+import { convertToBinaryString } from '../../library/ js/utils/primitives/bitwise_utils';
 
 module.exports = async () => {
 
@@ -24,6 +24,8 @@ module.exports = async () => {
 
     const testBuffer1 = Buffer.from([1, 2, 3, 4, 5, 6, 7, 8]); // 0001 0010 0011 0100 0101 0110 0111 1000
     const testBuffer2 = Buffer.from([119, 85, 127, 255, 256]); // 01110111 01010101 01111111 11111111 100000000
+
+    const testBuffer3 = Buffer.from('48656C6C6F20776F726C6421', 'hex');
 
     console.log('NodeJS "buffer" examples');
     console.log('========================');
@@ -214,6 +216,10 @@ module.exports = async () => {
 
     console.log('testBuffer2.readUInt32LE()  - ', format4ByteString(testBuffer2.readUInt32LE()));  // 1111 1111 - 0111 1111 - 0101 0101 - 0111 0111
     console.log('testBuffer2.readUInt32LE(1) - ', format4ByteString(testBuffer2.readUInt32LE(1))); // 0000 0000 - 1111 1111 - 0111 1111 - 0101 0101
+
+    console.log('');
+
+    console.log('console.log(testBuffer3.toString("utf8")) - ', console.log(testBuffer3.toString('utf8')));
 
     console.log('');
     console.log('--------------------------------------------------------');
