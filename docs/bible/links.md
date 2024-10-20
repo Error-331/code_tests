@@ -648,3 +648,5 @@ The Light of the Eye - October 17 (Philippians 4:8);
 Superficial Piety - October 18 (Be clean inside before God);
 
 The Motive - October 19 (2 Timothy 4:2);
+
+Woe to You - October 20 (Pride should be resisted and humility exalted);
