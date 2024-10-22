@@ -650,3 +650,5 @@ Superficial Piety - October 18 (Be clean inside before God);
 The Motive - October 19 (2 Timothy 4:2);
 
 Woe to You - October 20 (Pride should be resisted and humility exalted);
+
+Our Legacy - October 21 (You will not be forgotten by God);
