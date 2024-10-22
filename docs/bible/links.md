@@ -652,3 +652,5 @@ The Motive - October 19 (2 Timothy 4:2);
 Woe to You - October 20 (Pride should be resisted and humility exalted);
 
 Our Legacy - October 21 (You will not be forgotten by God);
+
+Our Liberty - October 22 (May we be as biblical lawyers for this godless generation by expounding the Law, as Jesus did, and make it applicable to them);
