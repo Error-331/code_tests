@@ -654,3 +654,5 @@ Woe to You - October 20 (Pride should be resisted and humility exalted);
 Our Legacy - October 21 (You will not be forgotten by God);
 
 Our Liberty - October 22 (May we be as biblical lawyers for this godless generation by expounding the Law, as Jesus did, and make it applicable to them);
+
+Deeds of Their Fathers - October 23 (Father, you are the discerner of all thoughts and intents. Help me remember to live in the light of that knowledge);
