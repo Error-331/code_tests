@@ -656,3 +656,5 @@ Our Legacy - October 21 (You will not be forgotten by God);
 Our Liberty - October 22 (May we be as biblical lawyers for this godless generation by expounding the Law, as Jesus did, and make it applicable to them);
 
 Deeds of Their Fathers - October 23 (Father, you are the discerner of all thoughts and intents. Help me remember to live in the light of that knowledge);
+
+Nothing is Impossible - October 24 (On judgment day, all creation will be silenced with the knowledge that justice will be done; Men and women will give an account of every idle word and thought);
