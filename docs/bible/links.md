@@ -660,3 +660,6 @@ Deeds of Their Fathers - October 23 (Father, you are the discerner of all though
 Nothing is Impossible - October 24 (On judgment day, all creation will be silenced with the knowledge that justice will be done; Men and women will give an account of every idle word and thought);
 
 The Lost Key - October 25 (The lawyers weren't faithful to God of His Word. They bent the key out of shape, rendering it useless, and so left themselves and their hearers locked in the prison of sin to their own just damnation);
+
+Baking Powder - October 26 (When the Law is used correctly, it strips us of our so-called righteousness, leaving us morally broken and humble before God; It shows us that our 
+robes should be made of sackcloth, our prayers should be discreet, and our giving should be done in secret);
