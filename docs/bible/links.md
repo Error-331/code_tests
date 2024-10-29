@@ -665,3 +665,5 @@ Baking Powder - October 26 (When the Law is used correctly, it strips us of our 
 robes should be made of sackcloth, our prayers should be discreet, and our giving should be done in secret);
 
 The Day - October 27 (We should cultivate a tender conscience - confessing and forsaking any sin that creeps into our hearts);
+
+Fear God - October 28 (May your attitude toward sin reflect the fear of the Lord);
