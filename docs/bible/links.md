@@ -667,3 +667,5 @@ robes should be made of sackcloth, our prayers should be discreet, and our givin
 The Day - October 27 (We should cultivate a tender conscience - confessing and forsaking any sin that creeps into our hearts);
 
 Fear God - October 28 (May your attitude toward sin reflect the fear of the Lord);
+
+Special Creation - October 29 (If God takes note of the common sparrow, how much more is He aware of you and me?);
