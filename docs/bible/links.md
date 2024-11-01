@@ -673,3 +673,5 @@ Special Creation - October 29 (If God takes note of the common sparrow, how much
 The Universal Call - October 30 (Anyone can be saved because He is able to save anyone who humbles himself and calls upon His name);
 
 Rebellious Children - October 31 (Father, I cry out for blind and lost sinners);
+
+What We Ought to Say - November 1 (We ought to speak also);
