@@ -675,3 +675,5 @@ The Universal Call - October 30 (Anyone can be saved because He is able to save 
 Rebellious Children - October 31 (Father, I cry out for blind and lost sinners);
 
 What We Ought to Say - November 1 (We ought to speak also);
+
+Real Treasure - November 2 (Financial riches are worthless on the day of wrath, but righteousness delivers from death; be content in Christ);
