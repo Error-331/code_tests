@@ -675,3 +675,5 @@ The Universal Call - October 30 (Anyone can be saved because He is able to save 
 Rebellious Children - October 31 (Father, I cry out for blind and lost sinners);
 
 What We Ought to Say - November 1 (We ought to speak also);
+
+The Will of God - November 2 (If we fear God we should never use God's Word to justify our actions. Rather, we will always be guided to His will by His Word);
