@@ -676,4 +676,6 @@ Rebellious Children - October 31 (Father, I cry out for blind and lost sinners);
 
 What We Ought to Say - November 1 (We ought to speak also);
 
-Real Treasure - November 2 (Financial riches are worthless on the day of wrath, but righteousness delivers from death; be content in Christ);
+Real Treasure - November 3 (Financial riches are worthless on the day of wrath, but righteousness delivers from death; be content in Christ);
+
+Trampled Underfoot - November 4 (Think about how incredible our God is to hide so much potential life in the soil);
