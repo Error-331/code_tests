@@ -679,3 +679,5 @@ What We Ought to Say - November 1 (We ought to speak also);
 Real Treasure - November 3 (Financial riches are worthless on the day of wrath, but righteousness delivers from death; be content in Christ);
 
 Trampled Underfoot - November 4 (Think about how incredible our God is to hide so much potential life in the soil);
+
+On Loan - November 5 (We don't own anything in life - it's all on loan from God);
