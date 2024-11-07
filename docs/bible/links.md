@@ -683,3 +683,5 @@ Real Treasure - November 3 (Financial riches are worthless on the day of wrath, 
 Trampled Underfoot - November 4 (Think about how incredible our God is to hide so much potential life in the soil);
 
 On Loan - November 5 (We don't own anything in life - it's all on loan from God);
+
+The Soul - November 6 (Be rich toward God and do not hoard material treasures);
