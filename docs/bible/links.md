@@ -677,3 +677,9 @@ Rebellious Children - October 31 (Father, I cry out for blind and lost sinners);
 What We Ought to Say - November 1 (We ought to speak also);
 
 The Will of God - November 2 (If we fear God we should never use God's Word to justify our actions. Rather, we will always be guided to His will by His Word);
+
+Real Treasure - November 3 (Financial riches are worthless on the day of wrath, but righteousness delivers from death; be content in Christ);
+
+Trampled Underfoot - November 4 (Think about how incredible our God is to hide so much potential life in the soil);
+
+On Loan - November 5 (We don't own anything in life - it's all on loan from God);
