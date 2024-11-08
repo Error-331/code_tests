@@ -685,3 +685,8 @@ Trampled Underfoot - November 4 (Think about how incredible our God is to hide s
 On Loan - November 5 (We don't own anything in life - it's all on loan from God);
 
 The Soul - November 6 (Be rich toward God and do not hoard material treasures);
+
+Worry and Trust - November 7 (Worry doesn't do anything for tomorrow - it just saps today of its strength; Jesus is saying that we need not be stressed about our needs, even though 
+they are legitimate; Look to God as the supplier of our needs);
+
+Check the Birds - November 8 (Luke 12:24);
