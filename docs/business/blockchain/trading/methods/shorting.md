@@ -26,3 +26,8 @@
 
 - if the stock price increases thanks to some unexpected news, the spike up can quickly "trap" short sellers;
 - if the user shorting a borrowed asset and the price increases and keeps going up, he will keep incurring losses;
+
+
+////
+
+Short selling is the act of borrowing shares and selling it at current market price with the expectation that the stock price will drop in the future and you can buy back the borrowed shares at a lower price and make a profit in the difference between the two points.
