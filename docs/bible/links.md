@@ -692,3 +692,5 @@ they are legitimate; Look to God as the supplier of our needs);
 Check the Birds - November 8 (Luke 12:24);
 
 Consider the Lilies - November 9 (We are made in the image of God, so how much more will He take care of us?);
+
+Total Surrender - November 10 (It's by our obedience that we prove our love for God; Those who don't surrender to God will never know perfect liberty);
