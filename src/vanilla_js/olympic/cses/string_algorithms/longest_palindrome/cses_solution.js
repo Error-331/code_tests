@@ -1,50 +1,79 @@
 const readline = require('readline');
 
-function longestPalindromeNaiveSolution(stringToExamine) {
-    const stringLength = stringToExamine.length;
+function extractPalindrome(sequence, leftIdx, rightIdx) {
+    const palindromePart = [];
+    const isMiddle = (rightIdx - leftIdx) > 1;
+    const sequenceLength = sequence.length;
 
-    let longestPalindrome = null;
-    let longestPalindromeLength = 0;
+    let leftValue = sequence[leftIdx];
+    let rightValue = sequence[rightIdx];
 
-    for (let palLength = stringLength; palLength >= 2 ; palLength--) {
-        let endIndex = palLength;
+    if (isMiddle) {
+        palindromePart.push(sequence[leftIdx + 1]);
+    }
 
-        do {
-            const middleIndex = Math.floor(palLength / 2);
-            const palindrome = new Array(palLength);
+    while (
+        leftValue === rightValue &&
+        leftIdx > -1 &&
+        rightIdx < sequenceLength
+        ) {
+        palindromePart.push(rightValue);
 
-            let isFound = true;
+        leftIdx -= 1;
+        rightIdx += 1;
 
-            for (let letterIndex = 0; letterIndex < middleIndex; letterIndex++) {
-                if (stringToExamine[endIndex - palLength + letterIndex] !== stringToExamine[endIndex - 1 - letterIndex]) {
-                    isFound = false;
-                    break;
-                }
+        leftValue = sequence[leftIdx];
+        rightValue = sequence[rightIdx];
+    }
 
-                palindrome[letterIndex] = stringToExamine[endIndex - palLength + letterIndex];
-                palindrome[palLength - 1 - letterIndex] = stringToExamine[endIndex - 1 - letterIndex];
+    if (palindromePart.length > 0) {
+        const palindromeCopy = isMiddle ? palindromePart.slice(1) : palindromePart.slice();
+        return palindromeCopy.reverse().concat(palindromePart);
+    } else {
+        return [];
+    }
+}
+
+function longestPalindromeNaiveBetterSolution(sequence) {
+    const sequenceLength = sequence.length;
+
+    let maxPalindromeLength = 0;
+    let maxPalindrome = [];
+
+    for (let possibleSeqLength = sequenceLength; possibleSeqLength > 1; possibleSeqLength--) {
+        const numberOfSequences = (sequenceLength - possibleSeqLength) + 1;
+        const possibleSeqHalfLength = Math.floor(possibleSeqLength / 2);
+
+        let leftIdx = null;
+        let rightIdx = null;
+
+        if (possibleSeqLength % 2 > 0) {
+            leftIdx = possibleSeqHalfLength - 1;
+            rightIdx = leftIdx + 2;
+        } else {
+            leftIdx = possibleSeqHalfLength - 1;
+            rightIdx = leftIdx + 1;
+        }
+
+        if (possibleSeqLength <= maxPalindromeLength) {
+            return maxPalindrome.join('');
+        }
+
+        for (let idxShift = 0; idxShift < numberOfSequences; idxShift++) {
+            const resultPalindrome = extractPalindrome(sequence, leftIdx + idxShift, rightIdx + idxShift);
+
+            if (resultPalindrome.length === possibleSeqLength) {
+                return resultPalindrome.join('');
             }
 
-            if (isFound === true) {
-                if (palLength % 2 > 0) {
-                    palindrome[middleIndex] = stringToExamine[endIndex - 1 - middleIndex];
-                }
-
-                if (palindrome.length > longestPalindromeLength) {
-                    longestPalindrome = palindrome;
-                    longestPalindromeLength = palindrome.length;
-                }
+            if (resultPalindrome.length > maxPalindromeLength) {
+                maxPalindromeLength = resultPalindrome.length;
+                maxPalindrome = resultPalindrome;
             }
-
-            endIndex += 1;
-        } while(endIndex <= stringLength);
-
-        if (longestPalindrome !== null) {
-            return longestPalindrome.join('');
         }
     }
 
-    return longestPalindrome === null ? '' : longestPalindrome.join('');
+    return maxPalindromeLength > 1 ? maxPalindrome.join('') : sequence[0];
 }
 
 const readlineInstance = readline.createInterface({
@@ -54,5 +83,5 @@ const readlineInstance = readline.createInterface({
 });
 
 readlineInstance.on('line', (input) => {
-    console.log(longestPalindromeNaiveSolution(input));
+    console.log(longestPalindromeNaiveBetterSolution(input));
 });
