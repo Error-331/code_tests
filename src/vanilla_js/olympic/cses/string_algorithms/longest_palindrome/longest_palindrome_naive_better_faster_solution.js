@@ -1,3 +1,17 @@
+function composePalindrome([length, middle, palindromePart1, palindromePart2]) {
+    if (length <= 0) {
+        return null;
+    }
+
+    if (palindromePart2 !== null) {
+        const fullRightPartCopy = palindromePart2.concat(palindromePart1.reverse()).slice();
+        return (fullRightPartCopy.slice().reverse().concat(middle ? [middle] : [], fullRightPartCopy)).join('');
+    } else {
+        const palindromePart1Copy = palindromePart1.slice();
+        return (palindromePart1Copy.reverse().concat(middle ? [middle] : [], palindromePart1)).join('');
+    }
+}
+
 function extractPalindrome(sequence, possibleSeqLength, idxShift) {
     const possibleSeqHalfLength = Math.floor(possibleSeqLength / 2);
 
@@ -65,22 +79,13 @@ function extractPalindrome(sequence, possibleSeqLength, idxShift) {
     let palindromeLengthWithoutMiddle = (palindromePart1.length + palindromePart2.length) * 2;
 
     if (palindromePart2.length > 0) {
-        let result = [];
-
-        if (middle) {
-            result.push(middle);
-        }
-
-        const palindromeCopy2 = palindromePart2.slice();
-
         if ((middle && palindromeLengthWithoutMiddle + 1 === possibleSeqLength) || (!middle && palindromeLengthWithoutMiddle === possibleSeqLength)) {
-            const fullRightPartCopy = palindromePart2.concat(palindromePart1.reverse()).slice();
-            return fullRightPartCopy.slice().reverse().concat(result, fullRightPartCopy);
+            return [possibleSeqLength, middle, palindromePart1, palindromePart2];
         } else {
-            return palindromeCopy2.reverse().concat(result, palindromePart2);
+            return [(palindromePart2 * 2) + (middle ? 1 : 0), middle, palindromePart2, null];
         }
     } else {
-        return [];
+        return [0];
     }
 }
 
@@ -88,30 +93,30 @@ function longestPalindromeNaiveBetterFasterSolution(sequence) {
     const sequenceLength = sequence.length;
 
     let maxPalindromeLength = 0;
-    let maxPalindrome = [];
+    let maxPalindromeData = [];
 
     for (let possibleSeqLength = sequenceLength; possibleSeqLength > 1; possibleSeqLength--) {
         const numberOfSequences = (sequenceLength - possibleSeqLength) + 1;
 
         if (possibleSeqLength <= maxPalindromeLength) {
-            return maxPalindrome.join('');
+            return composePalindrome(maxPalindromeData);
         }
 
         for (let idxShift = 0; idxShift < numberOfSequences; idxShift++) {
-            const resultPalindrome = extractPalindrome(sequence, possibleSeqLength, idxShift);
+            const resultPalindromeData = extractPalindrome(sequence, possibleSeqLength, idxShift);
 
-            if (resultPalindrome.length === possibleSeqLength) {
-                return resultPalindrome.join('');
+            if (resultPalindromeData[0] === possibleSeqLength) {
+                return composePalindrome(resultPalindromeData);
             }
 
-            if (resultPalindrome.length > maxPalindromeLength) {
-                maxPalindromeLength = resultPalindrome.length;
-                maxPalindrome = resultPalindrome;
+            if (resultPalindromeData[0] > maxPalindromeLength) {
+                maxPalindromeLength = resultPalindromeData[0];
+                maxPalindromeData = resultPalindromeData;
             }
         }
     }
 
-    return maxPalindromeLength > 1 ? maxPalindrome.join('') : sequence[0];
+    return maxPalindromeLength > 1 ? composePalindrome(maxPalindromeData) : sequence[0];
 }
 
 export default longestPalindromeNaiveBetterFasterSolution;
