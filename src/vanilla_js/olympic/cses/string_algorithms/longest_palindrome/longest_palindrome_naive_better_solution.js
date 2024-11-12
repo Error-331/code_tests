@@ -1,22 +1,3 @@
-import { readFileSync } from 'node:fs';
-
-const userSequence1 = '54321512346';
-
-const csesSequence1 = 'aaaaaaaaaa';
-const csesSequence2 = 'ababababab';
-const csesSequence9 = 'ihpohpzoffel';
-const csesSequence10 = 'flexflexvpqxierullgcfckjqflexflex';
-const csesSequence12 = 'obsession';
-const csesSequence13 = 'abcxcbaxcba';
-const csesSequence14 = 'zzabc';
-const csesSequence15 = 'aaccaabbaaccaaccaabbaaccaa';
-const csesSequence17 = 'pan';
-const csesSequence18 = 'a';
-const csesSequence19 = 'abcdba';
-const csesSequence20 = 'abb';
-
-//const csesSequenceLarge = readFileSync('./test_input8.txt').toString();
-
 function extractPalindrome(sequence, leftIdx, rightIdx) {
     const palindromePart = [];
     const isMiddle = (rightIdx - leftIdx) > 1;
@@ -93,12 +74,4 @@ function longestPalindromeNaiveBetterSolution(sequence) {
     return maxPalindromeLength > 1 ? maxPalindrome.join('') : sequence[0];
 }
 
-
-console.log(longestPalindromeNaiveBetterSolution(csesSequence10));
-//aaccaabbaaccaaccaabbaaccaa - c
-//aaccaabbaaccaaccaabbaaccaa
-
-
-
-
-
+export default longestPalindromeNaiveBetterSolution;

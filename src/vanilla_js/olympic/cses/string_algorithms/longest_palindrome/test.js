@@ -1,127 +1,94 @@
-function longestPalindromeNaiveSolution(stringToExamine) {
-    const stringLength = stringToExamine.length;
+import test from 'node:test';
+import assert from 'node:assert/strict';
 
-    let longestPalindrome = null;
-    let longestPalindromeLength = 0;
+import longestPalindromeNaiveBetterSolution from './longest_palindrome_naive_better_solution.js';
 
-    for (let palLength = stringLength; palLength >= 2 ; palLength--) {
-        let endIndex = palLength;
+const userSequence1 = '54321512346';
 
-        do {
-            const middleIndex = Math.floor(palLength / 2);
-            const palindrome = new Array(palLength);
+const csesSequence1 = 'aaaaaaaaaa';
+const csesSequence2 = 'ababababab';
+const csesSequence9 = 'ihpohpzoffel';
+const csesSequence10 = 'flexflexvpqxierullgcfckjqflexflex';
+const csesSequence12 = 'obsession';
+const csesSequence13 = 'abcxcbaxcba';
+const csesSequence14 = 'zzabc';
+const csesSequence15 = 'aaccaabbaaccaaccaabbaaccaa';
+const csesSequence17 = 'pan';
+const csesSequence18 = 'a';
+const csesSequence19 = 'abcdba';
+const csesSequence20 = 'abb';
 
-            let isFound = true;
+const userSequence1Solution = '432151234';
 
-            for (let letterIndex = 0; letterIndex < middleIndex; letterIndex++) {
-                if (stringToExamine[endIndex - palLength + letterIndex] !== stringToExamine[endIndex - 1 - letterIndex]) {
-                    isFound = false;
-                    break;
-                }
+const csesSequence1Solution = 'aaaaaaaaaa';
+const csesSequence2Solution = 'ababababa';
+const csesSequence9Solution = 'ff';
+const csesSequence10Solution = 'cfc';
+const csesSequence12Solution = 'ses';
+const csesSequence13Solution = 'abcxcba';
+const csesSequence14Solution = 'zz';
+const csesSequence15Solution = 'aaccaabbaaccaaccaabbaaccaa';
+const csesSequence17Solution = 'p';
+const csesSequence18Solution = 'a';
+const csesSequence19Solution = 'a';
+const csesSequence20Solution = 'bb';
 
-                palindrome[letterIndex] = stringToExamine[endIndex - palLength + letterIndex];
-                palindrome[palLength - 1 - letterIndex] = stringToExamine[endIndex - 1 - letterIndex];
-            }
+//const csesSequenceLarge = readFileSync('./test_input8.txt').toString();
 
-            if (isFound === true) {
-                if (palLength % 2 > 0) {
-                    palindrome[middleIndex] = stringToExamine[endIndex - 1 - middleIndex];
-                }
+test('longestPalindromeNaiveBetterSolution() tests...', async (t) => {
+    await t.test('Custom test cases...', async (t) => {
+        await t.test('Longest palindrome - case 1', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(userSequence1), userSequence1Solution);
+        });
+    });
 
-                if (palindrome.length > longestPalindromeLength) {
-                    longestPalindrome = palindrome;
-                    longestPalindromeLength = palindrome.length;
-                }
-            }
+    await t.test('CSES test cases...', async (t) => {
+        await t.test('Longest palindrome - case 1', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence1), csesSequence1Solution);
+        });
 
-            endIndex += 1;
-        } while(endIndex <= stringLength);
+        await t.test('Longest palindrome - case 2', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence2), csesSequence2Solution);
+        });
 
-        if (longestPalindrome !== null) {
-            return longestPalindrome.join('');
-        }
-    }
+        await t.test('Longest palindrome - case 9', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence9), csesSequence9Solution);
+        });
 
-    return longestPalindrome === null ? '' : longestPalindrome.join('');
-}
+        await t.test('Longest palindrome - case 10', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence10), csesSequence10Solution);
+        });
 
-// 0 - two letter palindrome, 1 - three letter palindrome, etc.
-/*function longestPalindromeBetterNaiveSolution(stringToExamine) {
-    const stringLength = stringToExamine.length;
-    const lettersToPalindromeList = new Array(stringLength);
+        await t.test('Longest palindrome - case 12', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence12), csesSequence12Solution);
+        });
 
-    lettersToPalindromeList.push([false, false])
+        await t.test('Longest palindrome - case 13', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence13), csesSequence13Solution);
+        });
 
-    for (let letterIdx = 1; letterIdx < stringLength; letterIdx++) {
-        const letterPalindromeList = new Array(letterIdx);
-        const currentLetter = stringToExamine[letterIdx];
+        await t.test('Longest palindrome - case 14', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence14), csesSequence14Solution);
+        });
 
-        lettersToPalindromeList.push(letterPalindromeList);
+        await t.test('Longest palindrome - case 15', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence15), csesSequence15Solution);
+        });
 
-        if (currentLetter === stringToExamine[letterIdx - 1]) {
-            letterPalindromeList[0] = true;
-        }
+        await t.test('Longest palindrome - case 17', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence17), csesSequence17Solution);
+        });
 
-        if (letterIdx > 1 && currentLetter === stringToExamine[letterIdx - 2]) {
-            letterPalindromeList[1] = true;
-        }
+        await t.test('Longest palindrome - case 18', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence18), csesSequence18Solution);
+        });
 
+        await t.test('Longest palindrome - case 19', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence19), csesSequence19Solution);
+        });
 
-        const middleLetterIndex = Math.floor(letterIdx / 2);
-
-        for (let i = letterIdx; i > middleLetterIndex; i--) {
-
-        }
-    }
-
-    return lettersToPalindromeList;
-}*/
-
-function longestPalindromeDivideAndConquerNaiveSolution(stringToExamine) {
-    const stringLength = stringToExamine.length;
-
-    let reminder = stringLength % 2;
-    let middleIndex = Math.floor(stringLength / 2);
-
-
-
-    for (let i = middleIndex - 1, j = middleIndex + (reminder > 0 ? 1 : 0);  i >= 0; i--, j++) {
-        console.log('i', i, stringToExamine[i]);
-        console.log('j', j, stringToExamine[j]);
-    }
-}
-
-
-const dString = '12345';
-const testString1 = 'bbaabbaabbbaaaaaaaaaaaabbbaa';
-const testString2 = 'aybabtutabaabba';
-const testString3 = 'pan';
-
-//console.log(longestPalindromeNaiveSolution(testString3));
-//console.log(longestPalindromeBetterNaiveSolution(testString2));
-
-
-function photoshopDropShadow2CSSBoxShadow(color, opacity, angle, distance, spread, size) {
-    // convert the angle to radians
-    angle = (180 - angle) * Math.PI / 180;
-
-    // the color is just an rgba() color with the opacity.
-    // for simplicity this function expects color to be an rgb string
-    // in CSS, opacity is a decimal between 0 and 1 instead of a percentage
-    color = "rgba(" + color + "," + opacity/100 + ")";
-
-    // other calculations
-    var offsetX = Math.round(Math.cos(angle) * distance) + "px",
-        offsetY = Math.round(Math.sin(angle) * distance) + "px",
-        spreadRadius = (size * spread / 100) + "px",
-        blurRadius = (size - parseInt(spreadRadius, 10)) + "px";
-    return offsetX + " " + offsetY + " " + blurRadius + " " + spreadRadius + " " + color;
-}
-
-console.log(photoshopDropShadow2CSSBoxShadow('89,89,89', 19, 120, 1, 0, 0));
-
-//
-
-//box-shadow: offset-x offset-y blur-radius spread-radius rgba(0, 0, 0, opacity) inset;
-
-//text-shadow: offset-x offset-y blur-radius rgba(0,0,0 opacity);
+        await t.test('Longest palindrome - case 20', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence20), csesSequence20Solution);
+        });
+    });
+});
