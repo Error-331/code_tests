@@ -694,3 +694,5 @@ Check the Birds - November 8 (Luke 12:24);
 Consider the Lilies - November 9 (We are made in the image of God, so how much more will He take care of us?);
 
 Total Surrender - November 10 (It's by our obedience that we prove our love for God; Those who don't surrender to God will never know perfect liberty);
+
+God's Good Pleasure - November 11 (He is the One who gave His life for the sheep, and we hear His wonderful voice telling us the most comforting words of our Father's great love);
