@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import longestPalindromeNaiveBetterSolution from './longest_palindrome_naive_better_solution.js';
+import longestPalindromeNaiveBetterFasterSolution from './longest_palindrome_naive_better_faster_solution.js';
 
 const userSequence1 = '54321512346';
 
@@ -89,6 +90,64 @@ test('longestPalindromeNaiveBetterSolution() tests...', async (t) => {
 
         await t.test('Longest palindrome - case 20', () => {
             assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence20), csesSequence20Solution);
+        });
+    });
+});
+
+test('longestPalindromeNaiveBetterFasterSolution() tests...', async (t) => {
+    await t.test('Custom test cases...', async (t) => {
+        await t.test('Longest palindrome - case 1', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(userSequence1), userSequence1Solution);
+        });
+    });
+
+    await t.test('CSES test cases...', async (t) => {
+        await t.test('Longest palindrome - case 1', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence1), csesSequence1Solution);
+        });
+
+        await t.test('Longest palindrome - case 2', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence2), csesSequence2Solution);
+        });
+
+        await t.test('Longest palindrome - case 9', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence9), csesSequence9Solution);
+        });
+
+        await t.test('Longest palindrome - case 10', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence10), csesSequence10Solution);
+        });
+
+        await t.test('Longest palindrome - case 12', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence12), csesSequence12Solution);
+        });
+
+        await t.test('Longest palindrome - case 13', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence13), csesSequence13Solution);
+        });
+
+        await t.test('Longest palindrome - case 14', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence14), csesSequence14Solution);
+        });
+
+        await t.test('Longest palindrome - case 15', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence15), csesSequence15Solution);
+        });
+
+        await t.test('Longest palindrome - case 17', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence17), csesSequence17Solution);
+        });
+
+        await t.test('Longest palindrome - case 18', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence18), csesSequence18Solution);
+        });
+
+        await t.test('Longest palindrome - case 19', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence19), csesSequence19Solution);
+        });
+
+        await t.test('Longest palindrome - case 20', () => {
+            assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence20), csesSequence20Solution);
         });
     });
 });
