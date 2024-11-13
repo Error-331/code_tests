@@ -32,7 +32,7 @@ function extractPalindrome(sequence, possibleSeqLength, idxShift) {
     leftInnerIdx += idxShift;
     rightInnerIdx += idxShift;
 
-    const palindromePart1 = [];
+    let palindromePart1 = [];
     const palindromePart2 = [];
 
     const middle = (rightInnerIdx - leftInnerIdx) > 1 ? sequence[leftInnerIdx + 1] : null;
@@ -45,7 +45,7 @@ function extractPalindrome(sequence, possibleSeqLength, idxShift) {
     let rightOuterValue = sequence[rightOuterIdx];
 
     while (
-        leftOuterValue === rightOuterValue &&
+        //leftOuterValue === rightOuterValue &&
         leftInnerValue === rightInnerValue &&
 
         leftOuterIdx < leftInnerIdx &&
@@ -54,7 +54,14 @@ function extractPalindrome(sequence, possibleSeqLength, idxShift) {
         leftInnerIdx > -1 &&
         rightInnerIdx < sequenceLength
         ) {
-        palindromePart1.push(leftOuterValue);
+        if (leftOuterValue === rightOuterValue) {
+            palindromePart1.push(leftOuterValue);
+        } else {
+            if (palindromePart1.length > 0) {
+                palindromePart1 = [];
+            }
+        }
+
         palindromePart2.push(rightInnerValue);
 
         leftOuterIdx += 1;
