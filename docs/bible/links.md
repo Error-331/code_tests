@@ -698,3 +698,5 @@ Total Surrender - November 10 (It's by our obedience that we prove our love for 
 God's Good Pleasure - November 11 (He is the One who gave His life for the sheep, and we hear His wonderful voice telling us the most comforting words of our Father's great love);
 
 The Root of All Evil - November 12 (For where your treasure is, there your heart will be also);
+
+The Lord of the Earth - November 13 (Our Creator is the Master. He is the Lord. No one and nothing can change that; He is not everyone's Lord until they personally yield to His Lordship through faith in Jesus; That's when we are made whole);
