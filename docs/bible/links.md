@@ -702,3 +702,5 @@ The Root of All Evil - November 12 (For where your treasure is, there your heart
 The Lord of the Earth - November 13 (Our Creator is the Master. He is the Lord. No one and nothing can change that; He is not everyone's Lord until they personally yield to His Lordship through faith in Jesus; That's when we are made whole);
 
 Servants of Christ - November 14 (As servants who have been bought with a price, we look to the Father to discern His will, and we are quick to do it; We were slaves to the sin and now we are humble servants of the God);
+
+Be Ready - November 15 (Keep your heart free from sin at all cost);
