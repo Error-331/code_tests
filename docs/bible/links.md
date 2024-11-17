@@ -704,3 +704,5 @@ The Lord of the Earth - November 13 (Our Creator is the Master. He is the Lord. 
 Servants of Christ - November 14 (As servants who have been bought with a price, we look to the Father to discern His will, and we are quick to do it; We were slaves to the sin and now we are humble servants of the God);
 
 Be Ready - November 15 (Keep your heart free from sin at all cost);
+
+Our Unanswered Questions - November 16 (Our trust in God's integrity helps us to settle our finite minds and to lay a hand on our often unwise mouths);
