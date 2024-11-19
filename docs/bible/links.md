@@ -708,3 +708,5 @@ Be Ready - November 15 (Keep your heart free from sin at all cost);
 Our Unanswered Questions - November 16 (Our trust in God's integrity helps us to settle our finite minds and to lay a hand on our often unwise mouths);
 
 The Fertile Mind - November 17 (Once sin comes in, compromise and hypocrisy come with it, whispering that God doesn't see or that He doesn't mind a little sin here and there);
+
+Self-Examination - November 18 (We should walk so that if the heavens should roll back and Jesus came today, we would have nothing to hide; It is, therefore, wise to obey the admonition to examine ourselves to see if our faith is genuine);
