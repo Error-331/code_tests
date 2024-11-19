@@ -710,3 +710,5 @@ Our Unanswered Questions - November 16 (Our trust in God's integrity helps us to
 The Fertile Mind - November 17 (Once sin comes in, compromise and hypocrisy come with it, whispering that God doesn't see or that He doesn't mind a little sin here and there);
 
 Self-Examination - November 18 (We should walk so that if the heavens should roll back and Jesus came today, we would have nothing to hide; It is, therefore, wise to obey the admonition to examine ourselves to see if our faith is genuine);
+
+Our Responsibility - November 19 (We have been given the message of everlasting life and have been commanded to take it to every creature (Mark 16:15));
