@@ -712,3 +712,5 @@ The Fertile Mind - November 17 (Once sin comes in, compromise and hypocrisy come
 Self-Examination - November 18 (We should walk so that if the heavens should roll back and Jesus came today, we would have nothing to hide; It is, therefore, wise to obey the admonition to examine ourselves to see if our faith is genuine);
 
 Our Responsibility - November 19 (We have been given the message of everlasting life and have been commanded to take it to every creature (Mark 16:15));
+
+The Revelation - November 20 (Father, may I shudder as I think of what I would have had to suffer for eternity had it not been for the suffering of the Savior);
