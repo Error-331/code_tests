@@ -714,3 +714,7 @@ Self-Examination - November 18 (We should walk so that if the heavens should rol
 Our Responsibility - November 19 (We have been given the message of everlasting life and have been commanded to take it to every creature (Mark 16:15));
 
 The Revelation - November 20 (Father, may I shudder as I think of what I would have had to suffer for eternity had it not been for the suffering of the Savior);
+
+The Division - November 21 (If we find ourselves shunned by loved ones, the wisest thing to do is show them our faith by our works);
+
+The Future - November 22 (God knows the future, God knows the past - he never gets wrong);
