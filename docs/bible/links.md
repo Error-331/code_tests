@@ -720,3 +720,5 @@ The Division - November 21 (If we find ourselves shunned by loved ones, the wise
 The Future - November 22 (God knows the future, God knows the past - he never gets wrong);
 
 We are Hear - November 23 (Live with one eye on the headlines and the other on the heavens);
+
+Stay Clear of Trouble - November 24 (It is good for us to stay away from the waters of strife. Bite your tongue. Don't cross people. Ask questions rather than make acquisitions; Forgive and forget;);
