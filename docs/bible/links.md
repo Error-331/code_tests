@@ -721,4 +721,6 @@ The Future - November 22 (God knows the future, God knows the past - he never ge
 
 We are Hear - November 23 (Live with one eye on the headlines and the other on the heavens);
 
-Stay Clear of Trouble - November 24 (It is good for us to stay away from the waters of strife. Bite your tongue. Don't cross people. Ask questions rather than make acquisitions; Forgive and forget;);
+Stay Clear of Trouble - November 24 (It is good for us to stay away from the waters of strife. Bite your tongue. Don't cross people. Ask questions rather than make acquisitions; Forgive and forget);
+
+The Problem of Evil - November 25 (The answer is to defer our judgment because we don't know the mind of the Lord. It is wise to lay our hands on our mouths and leave these questions to God. He allows evil for a reason, and real faith is satisfied without an immediate answer);
