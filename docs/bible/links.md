@@ -718,3 +718,7 @@ The Revelation - November 20 (Father, may I shudder as I think of what I would h
 The Division - November 21 (If we find ourselves shunned by loved ones, the wisest thing to do is show them our faith by our works);
 
 The Future - November 22 (God knows the future, God knows the past - he never gets wrong);
+
+We are Hear - November 23 (Live with one eye on the headlines and the other on the heavens);
+
+Stay Clear of Trouble - November 24 (It is good for us to stay away from the waters of strife. Bite your tongue. Don't cross people. Ask questions rather than make acquisitions; Forgive and forget;);
