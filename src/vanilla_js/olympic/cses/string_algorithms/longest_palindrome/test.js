@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 
 import longestPalindromeNaiveBetterSolution from './longest_palindrome_naive_better_solution.js';
 import longestPalindromeNaiveBetterFasterSolution from './longest_palindrome_naive_better_faster_solution.js';
-import binarySearchLikePalindromeNaiveSolution from "./binary_search_like_palindrome_naive_solution.js";
+import binarySearchLikePalindromeNaiveSolution from './binary_search_like_palindrome_naive_solution.js';
 
 const userSequence1 = '54321512346';
 
@@ -25,7 +25,7 @@ const userSequence1Solution = '432151234';
 
 const csesSequence1Solution = 'aaaaaaaaaa';
 const csesSequence2Solution = 'ababababa';
-const csesSequence7 = 'babbbabbbaabbbbaabbbbbbbbaabbbbaabbbabbbab';
+const csesSequence7Solution = 'babbbabbbaabbbbaabbbbbbbbaabbbbaabbbabbbab';
 const csesSequence9Solution = 'ff';
 const csesSequence10Solution = 'cfc';
 const csesSequence12Solution = 'ses';
@@ -38,7 +38,7 @@ const csesSequence19Solution = 'a';
 const csesSequence20Solution = 'bb';
 
 //const csesSequenceLarge = readFileSync('./test_input8.txt').toString();
-/*
+
 test('longestPalindromeNaiveBetterSolution() tests...', async (t) => {
     await t.test('Custom test cases...', async (t) => {
         await t.test('Longest palindrome - case 1', () => {
@@ -95,8 +95,8 @@ test('longestPalindromeNaiveBetterSolution() tests...', async (t) => {
             assert.strictEqual(longestPalindromeNaiveBetterSolution(csesSequence20), csesSequence20Solution);
         });
     });
-});*/
-/*
+});
+
 test('longestPalindromeNaiveBetterFasterSolution() tests...', async (t) => {
     await t.test('Custom test cases...', async (t) => {
         await t.test('Longest palindrome - case 1', () => {
@@ -153,7 +153,7 @@ test('longestPalindromeNaiveBetterFasterSolution() tests...', async (t) => {
             assert.strictEqual(longestPalindromeNaiveBetterFasterSolution(csesSequence20), csesSequence20Solution);
         });
     });
-});*/
+});
 
 test('binarySearchLikePalindromeNaiveSolution() tests...', async (t) => {
     await t.test('Custom test cases...', async (t) => {
@@ -213,9 +213,16 @@ test('binarySearchLikePalindromeNaiveSolution() tests...', async (t) => {
     });
 
     await t.test('CSES test cases (big sequences)...', async (t) => {
-        await t.test('Longest palindrome - case 1 (CSES case 7)', () => {
+        await t.test('Longest palindrome - case 1 (CSES case 3)', () => {
+            /*const csesSequence = readFileSync('./test_input3.txt').toString();
+
+            const g = binarySearchLikePalindromeNaiveSolution(csesSequence);
+            console.log('g', g);*/
+        });
+
+        await t.test('Longest palindrome - case 2 (CSES case 7)', () => {
             const csesSequence = readFileSync('./test_input7.txt').toString();
-            assert.strictEqual(binarySearchLikePalindromeNaiveSolution(csesSequence), csesSequence7);
+            assert.strictEqual(binarySearchLikePalindromeNaiveSolution(csesSequence), csesSequence7Solution);
         });
     });
 });

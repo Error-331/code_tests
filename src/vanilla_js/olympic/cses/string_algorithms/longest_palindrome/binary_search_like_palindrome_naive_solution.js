@@ -1,228 +1,210 @@
-function composePalindrome([length, middle, palindromePart1, palindromePart2]) {
-    if (length <= 0) {
-        return null;
-    }
-
-    if (length === 1) {
-        return palindromePart1[0];
-    }
-
-    if (palindromePart2 !== null) {
-        const fullRightPartCopy = palindromePart2.concat(palindromePart1.reverse()).slice();
-        return (fullRightPartCopy.slice().reverse().concat(middle ? [middle] : [], fullRightPartCopy)).join('');
-    } else {
-        const palindromePart1Copy = palindromePart1.slice();
-        return (palindromePart1Copy.reverse().concat(middle ? [middle] : [], palindromePart1)).join('');
-    }
-}
-
-function extractPalindrome(sequence, possibleSeqLength, idxShift) {
+function extractPalindrome(sequence, possibleSeqLength, currentMaxSeqLength, idxShift, palindromeMap) {
     const possibleSeqHalfLength = Math.floor(possibleSeqLength / 2);
+    const sequenceLength = sequence.length;
 
-    let leftOuterIdx = idxShift;
-    let rightOuterIdx = idxShift + (possibleSeqLength - 1);
-
-    let leftInnerIdx = null;
-    let rightInnerIdx = null;
-
-    if (possibleSeqLength % 2 > 0) {
-        leftInnerIdx = possibleSeqHalfLength - 1;
-        rightInnerIdx = leftInnerIdx + 2;
-    } else {
-        leftInnerIdx = possibleSeqHalfLength - 1;
-        rightInnerIdx = leftInnerIdx + 1;
-    }
+    let leftInnerIdx = possibleSeqHalfLength - 1;
+    let rightInnerIdx = possibleSeqLength % 2 > 0 ? leftInnerIdx + 2 : leftInnerIdx + 1;
 
     leftInnerIdx += idxShift;
     rightInnerIdx += idxShift;
 
-    let palindromePart1 = [];
-    const palindromePart2 = [];
+    const palindromeMapIdx  = `${leftInnerIdx}-${rightInnerIdx}`;
 
-    const middle = (rightInnerIdx - leftInnerIdx) > 1 ? sequence[leftInnerIdx + 1] : null;
-    const sequenceLength = sequence.length;
+    let palindromePart = [];
+    let middle = null;
+
+    if (palindromeMap.has(palindromeMapIdx)) {
+        const palindromeData = palindromeMap.get(palindromeMapIdx);
+
+        if (palindromeData[0] === 0) {
+            return palindromeData;
+        }
+
+        middle = palindromeData[1];
+
+        leftInnerIdx = palindromeData[4][0];
+        rightInnerIdx = palindromeData[4][1];
+
+        palindromePart = palindromeData[2];
+    } else {
+        middle = (rightInnerIdx - leftInnerIdx) > 1 ? sequence[leftInnerIdx + 1] : null;
+    }
 
     let leftInnerValue = sequence[leftInnerIdx];
     let rightInnerValue = sequence[rightInnerIdx];
 
-    let leftOuterValue = sequence[leftOuterIdx];
-    let rightOuterValue = sequence[rightOuterIdx];
-
     while (
         leftInnerValue === rightInnerValue &&
-
-        leftOuterIdx < leftInnerIdx &&
-        rightOuterIdx > rightInnerIdx &&
 
         leftInnerIdx > -1 &&
         rightInnerIdx < sequenceLength
         ) {
-
-        if (leftOuterValue === rightOuterValue) {
-            palindromePart1.push(leftOuterValue);
-        } else {
-            if (palindromePart1.length > 0) {
-                palindromePart1 = [];
-            }
-        }
-
-        palindromePart2.push(rightInnerValue);
-
-        leftOuterIdx += 1;
-        rightOuterIdx -= 1;
+        palindromePart.push(rightInnerValue);
 
         leftInnerIdx -= 1;
         rightInnerIdx += 1;
-
-        leftOuterValue = sequence[leftOuterIdx];
-        rightOuterValue = sequence[rightOuterIdx];
 
         leftInnerValue = sequence[leftInnerIdx];
         rightInnerValue = sequence[rightInnerIdx];
     }
 
-    if ((possibleSeqLength === 2 || possibleSeqLength === 3) && leftInnerValue === rightInnerValue) {
-        palindromePart2.push(rightInnerValue);
-    } else if (leftOuterIdx === leftInnerIdx && leftOuterValue === rightOuterValue) {
-        palindromePart2.push(leftOuterValue);
+    const palindromeDataIndexes = [leftInnerIdx, rightInnerIdx];
+    let palindromeData;
+
+    if (palindromePart.length > 0) {
+        palindromeData = [(palindromePart.length * 2) + (middle ? 1 : 0), middle, palindromePart, possibleSeqLength, palindromeDataIndexes];
+    } else {
+        palindromeData = possibleSeqLength === 1 ? [1, null, [sequence[idxShift]], possibleSeqLength, palindromeDataIndexes] : [0];
     }
 
-    let palindromeLengthWithoutMiddle = (palindromePart1.length + palindromePart2.length) * 2;
+    palindromeMap.set(palindromeMapIdx, palindromeData)
+    return palindromeData;
+}
 
-    if (palindromePart2.length > 0) {
-        if ((middle && palindromeLengthWithoutMiddle + 1 === possibleSeqLength) || (!middle && palindromeLengthWithoutMiddle === possibleSeqLength)) {
-            return [possibleSeqLength, middle, palindromePart1, palindromePart2];
-        } else {
-            return [(palindromePart2.length * 2) + (middle ? 1 : 0), middle, palindromePart2, null];
-        }
+function calcMiddlePossibleSequenceLength(isOddGenerator, lowerBoundary, upperBoundary) {
+    const middlePossibleSequenceLength = Math.floor(lowerBoundary + ((upperBoundary - lowerBoundary) / 2));
+
+    if (isOddGenerator) {
+        return middlePossibleSequenceLength % 2 === 0 ? middlePossibleSequenceLength + 1 : middlePossibleSequenceLength;
     } else {
-        return possibleSeqLength === 1 ? [1, null, [sequence[idxShift]]] : [0];
+        return middlePossibleSequenceLength % 2 === 0 ? middlePossibleSequenceLength : middlePossibleSequenceLength + 1;
     }
 }
 
-function binarySearchLikePalindromeNaiveSolution(sequence) {
+function *searchSequencePartGenerator(isOddGenerator, sequence, palindromeMap) {
     const sequenceLength = sequence.length;
     const isSequenceOdd = sequenceLength % 2 > 0;
 
-    let upperOddBoundary = isSequenceOdd ? sequenceLength : sequenceLength - 1;
-    let upperEvenBoundary = isSequenceOdd ? sequenceLength - 1 : sequenceLength;
+    let upperBoundary = null;
+    let lowerBoundary = 1;
+    let middlePossibleSequenceLength = null;
 
-    let lowerOddBoundary = 1;
-    let lowerEvenBoundary = 1;
+    if (isOddGenerator) {
+        upperBoundary = isSequenceOdd ? sequenceLength : sequenceLength - 1;
+    } else {
+        upperBoundary = isSequenceOdd ? sequenceLength - 1 : sequenceLength;
+    }
 
-    let oddMiddle = null;
-    let evenMiddle = null;
+    let maxPalindromeLength = 0;
+    let maxPalindromeData = null;
 
-    let maxOddPalindromeLength = 0;
-    let maxEvenPalindromeLength = 0;
+    while (lowerBoundary !== upperBoundary) {
+        middlePossibleSequenceLength = calcMiddlePossibleSequenceLength(isOddGenerator, lowerBoundary, upperBoundary);
 
-    let maxOddPalindromeData = [];
-    let maxEvenPalindromeData = [];
+        let numberOfSequences = (sequenceLength - middlePossibleSequenceLength) + 1;
 
-    while (
-        (!((lowerOddBoundary === upperOddBoundary) && lowerOddBoundary  === oddMiddle)) &&
-        (!((lowerEvenBoundary === upperEvenBoundary) && lowerEvenBoundary === evenMiddle))
-        ) {
+        let currentMaxPalindromeLength = 0;
+        let currentMaxPalindromeData = null;
 
-        if (!((lowerEvenBoundary === upperEvenBoundary) && lowerEvenBoundary === evenMiddle)) {
-            evenMiddle = Math.floor(lowerEvenBoundary + ((upperEvenBoundary - lowerEvenBoundary) / 2));
-            evenMiddle = evenMiddle % 2 === 0 ? evenMiddle : evenMiddle + 1;
+        let idxShiftLeft = Math.floor(numberOfSequences / 2) - 1;
+        let idxShiftRight = idxShiftLeft + 1;
 
-            let numberOfEvenSequences = (sequenceLength - evenMiddle) + 1;
+        while (idxShiftLeft > -1 || idxShiftRight < numberOfSequences) {
+            if (idxShiftLeft > -1) {
+                const resultPalindromeData = extractPalindrome(sequence, middlePossibleSequenceLength, maxPalindromeLength, idxShiftLeft, palindromeMap);
 
-            let currentMaxEvenPalindromeLength = 0;
-            let currentMaxEvenPalindromeData = [];
-
-            for (let idxShift = 0; idxShift < numberOfEvenSequences; idxShift++) {
-                const resultPalindromeData = extractPalindrome(sequence, evenMiddle, idxShift);
-
-                if (resultPalindromeData[0] > currentMaxEvenPalindromeLength) {
-                    currentMaxEvenPalindromeLength = resultPalindromeData[0];
-                    currentMaxEvenPalindromeData = resultPalindromeData;
-
-                    if (currentMaxEvenPalindromeLength === evenMiddle) {
-                        break;
-                    }
+                if (resultPalindromeData[0] === upperBoundary) {
+                    return resultPalindromeData;
                 }
+
+                if (resultPalindromeData[0] > currentMaxPalindromeLength) {
+                    currentMaxPalindromeLength = resultPalindromeData[0];
+                    currentMaxPalindromeData = resultPalindromeData;
+                }
+
+                idxShiftLeft -= 1;
             }
 
-            if (currentMaxEvenPalindromeLength > 0) {
-                if (currentMaxEvenPalindromeLength > maxEvenPalindromeLength) {
-                    maxEvenPalindromeLength = currentMaxEvenPalindromeLength;
-                    maxEvenPalindromeData = currentMaxEvenPalindromeData;
+            if (idxShiftRight < numberOfSequences) {
+                const resultPalindromeData = extractPalindrome(sequence, middlePossibleSequenceLength, maxPalindromeLength, idxShiftRight, palindromeMap);
+
+                if (resultPalindromeData[0] === upperBoundary) {
+                    return resultPalindromeData;
                 }
 
-                if (currentMaxEvenPalindromeLength === evenMiddle) {
-                    if (upperEvenBoundary - lowerEvenBoundary === 2) {
-                        lowerEvenBoundary = upperEvenBoundary;
-                    } else {
-                        lowerEvenBoundary = evenMiddle;
-                    }
-                } else {
-                    lowerEvenBoundary = evenMiddle;
-                    lowerEvenBoundary = upperEvenBoundary;
+                if (resultPalindromeData[0] > currentMaxPalindromeLength) {
+                    currentMaxPalindromeLength = resultPalindromeData[0];
+                    currentMaxPalindromeData = resultPalindromeData;
                 }
-            } else {
-                if (upperEvenBoundary - lowerEvenBoundary === 2) {
-                    upperEvenBoundary = lowerEvenBoundary;
-                } else {
-                    upperEvenBoundary = evenMiddle;
-                }
+
+                idxShiftRight += 1;
             }
         }
 
-        if (!((lowerOddBoundary === upperOddBoundary) && lowerOddBoundary === oddMiddle)) {
-            oddMiddle = Math.floor(lowerOddBoundary + ((upperOddBoundary - lowerOddBoundary) / 2));
-            oddMiddle = oddMiddle % 2 === 0 ? oddMiddle + 1 : oddMiddle;
+        if (currentMaxPalindromeLength > maxPalindromeLength) {
+            maxPalindromeLength = currentMaxPalindromeLength;
+            maxPalindromeData = currentMaxPalindromeData;
 
-            let numberOfOddSequences = (sequenceLength - oddMiddle) + 1;
-
-            let currentMaxOddPalindromeLength = 0;
-            let currentMaxOddPalindromeData = [];
-
-            for (let idxShift = 0; idxShift < numberOfOddSequences; idxShift++) {
-                const resultPalindromeData = extractPalindrome(sequence, oddMiddle, idxShift);
-
-                if (resultPalindromeData[0] > currentMaxOddPalindromeLength) {
-                    currentMaxOddPalindromeLength = resultPalindromeData[0];
-                    currentMaxOddPalindromeData = resultPalindromeData;
-
-                    if (currentMaxOddPalindromeLength === oddMiddle) {
-                        break;
-                    }
-                }
-            }
-
-            if (currentMaxOddPalindromeLength > 0) {
-                if (currentMaxOddPalindromeLength > maxOddPalindromeLength) {
-                    maxOddPalindromeLength = currentMaxOddPalindromeLength;
-                    maxOddPalindromeData = currentMaxOddPalindromeData;
-                }
-
-                if (currentMaxOddPalindromeLength === oddMiddle) {
-                    if (upperOddBoundary - lowerOddBoundary === 2) {
-                        lowerOddBoundary = upperOddBoundary;
-                    } else {
-                        lowerOddBoundary = oddMiddle;
-                    }
+            if (currentMaxPalindromeLength === middlePossibleSequenceLength) {
+                if (upperBoundary - lowerBoundary === 2) {
+                    lowerBoundary = upperBoundary;
                 } else {
-                    lowerOddBoundary = oddMiddle;
-                    lowerOddBoundary = upperOddBoundary;
+                    lowerBoundary = middlePossibleSequenceLength;
                 }
             } else {
-                if (upperOddBoundary - lowerOddBoundary === 2) {
-                    upperOddBoundary = lowerOddBoundary;
-                } else {
-                    upperOddBoundary = oddMiddle;
-                }
+                upperBoundary = middlePossibleSequenceLength;
             }
+        } else {
+            if (upperBoundary - lowerBoundary <= 2) {
+                upperBoundary = lowerBoundary;
+            } else {
+                upperBoundary = middlePossibleSequenceLength;
+            }
+
+            if (calcMiddlePossibleSequenceLength(isOddGenerator, lowerBoundary, upperBoundary) <= maxPalindromeLength) {
+                return maxPalindromeData
+            }
+        }
+
+        currentMaxPalindromeLength = 0;
+        currentMaxPalindromeData = null;
+
+        yield maxPalindromeData;
+    }
+
+    return maxPalindromeData;
+}
+
+function binarySearchLikePalindromeNaiveSolution(sequence) {
+    const oddPalindromesMap = new Map();
+    const evenPalindromesMap = new Map();
+
+    const oddSearchPartGenerator = searchSequencePartGenerator(true, sequence, oddPalindromesMap);
+    const evenSearchPartGenerator = searchSequencePartGenerator(false, sequence, evenPalindromesMap);
+
+    let oddGeneratorResult;
+    let evenGeneratorResult;
+
+    const isSequenceOdd = sequence % 2 !== 0;
+
+    if (isSequenceOdd) {
+        oddGeneratorResult = oddSearchPartGenerator.next();
+        evenGeneratorResult = evenSearchPartGenerator.next();
+    } else {
+        evenGeneratorResult = evenSearchPartGenerator.next();
+        oddGeneratorResult = oddSearchPartGenerator.next();
+    }
+
+    while(!(oddGeneratorResult.done && evenGeneratorResult.done)) {
+        if (isSequenceOdd) {
+            oddGeneratorResult = oddGeneratorResult.done ? oddGeneratorResult : oddSearchPartGenerator.next();
+            evenGeneratorResult = evenGeneratorResult.done ? evenGeneratorResult : evenSearchPartGenerator.next();
+        } else {
+            evenGeneratorResult = evenGeneratorResult.done ? evenGeneratorResult : evenSearchPartGenerator.next();
+            oddGeneratorResult = oddGeneratorResult.done ? oddGeneratorResult : oddSearchPartGenerator.next();
         }
     }
 
-    if (maxOddPalindromeLength > maxEvenPalindromeLength) {
-        return composePalindrome(maxOddPalindromeData)
+    oddGeneratorResult.value = oddGeneratorResult.value === null ? [1, null, [sequence[0]]] : oddGeneratorResult.value;
+    evenGeneratorResult.value = evenGeneratorResult.value === null ? [1, null, [sequence[0]]] : evenGeneratorResult.value;
+
+    const palindromeData = oddGeneratorResult.value[0] > evenGeneratorResult.value[0] ? oddGeneratorResult.value : evenGeneratorResult.value;
+
+    if (palindromeData[0] === 1) {
+        return palindromeData[2][0];
     } else {
-        return composePalindrome(maxEvenPalindromeData);
+        const fullRightPartCopy = palindromeData[2].slice();
+        return (fullRightPartCopy.slice().reverse().concat(palindromeData[1] ? palindromeData[1] : [], fullRightPartCopy)).join('');
     }
 }
 
