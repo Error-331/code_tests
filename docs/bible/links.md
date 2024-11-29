@@ -730,3 +730,5 @@ Amazing Grace - November 26 (It is grace and grace alone that saves a sinner fro
 This Issue of Tragedies - November 27 (repent or you will perish);
 
 Check Your Parachute - November 28 (If there's no evidence of salvation, we need to get on our knees and plead with God to help us to make our calling and election sure; Psalm 51);
+
+Delusional Sinners - November 29 (May I never mistake God's mercy for His permission to sin);
