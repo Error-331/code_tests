@@ -728,3 +728,5 @@ The Problem of Evil - November 25 (The answer is to defer our judgment because w
 Amazing Grace - November 26 (It is grace and grace alone that saves a sinner from wrath; Repentance and faith are the means by which we partake of the grace of God);
 
 This Issue of Tragedies - November 27 (repent or you will perish);
+
+Check Your Parachute - November 28 (If there's no evidence of salvation, we need to get on our knees and plead with God to help us to make our calling and election sure; Psalm 51);
