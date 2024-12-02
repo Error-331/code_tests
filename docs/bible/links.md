@@ -734,3 +734,5 @@ Check Your Parachute - November 28 (If there's no evidence of salvation, we need
 Delusional Sinners - November 29 (May I never mistake God's mercy for His permission to sin);
 
 We are Loosed - November 30 (Ephesians 4: 18-24; Jesus spoke to us in our hopelessness. He loosed us from the infirmity of sin and death, taking us from darkness to light, from the kingdom of this world into the kingdom of God);
+
+The Most Feared Word - December 1 (Hypocrisy is to despise Calvary's sacrifice);
