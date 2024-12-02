@@ -736,3 +736,5 @@ Delusional Sinners - November 29 (May I never mistake God's mercy for His permis
 We are Loosed - November 30 (Ephesians 4: 18-24; Jesus spoke to us in our hopelessness. He loosed us from the infirmity of sin and death, taking us from darkness to light, from the kingdom of this world into the kingdom of God);
 
 The Most Feared Word - December 1 (Hypocrisy is to despise Calvary's sacrifice);
+
+Crooked Rulers - December 2 (Do not be tempted to lie to yourself about certain sins that still attract you; Father, protect me from myself);
