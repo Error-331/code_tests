@@ -738,3 +738,5 @@ We are Loosed - November 30 (Ephesians 4: 18-24; Jesus spoke to us in our hopele
 The Most Feared Word - December 1 (Hypocrisy is to despise Calvary's sacrifice);
 
 Crooked Rulers - December 2 (Do not be tempted to lie to yourself about certain sins that still attract you; Father, protect me from myself);
+
+Eighteen Long Years - December 3 (Be confident in God);
