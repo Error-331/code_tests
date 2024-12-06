@@ -24,6 +24,10 @@ https://www.yakaboo.ua/ua/mistectvo-strategii-putivnik-do-uspihu-v-zhitti-ta-biz
 https://www.yakaboo.ua/ua/byt-piratom-kak-brosit-miru-vyzov-i-pobedit.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop - Быть пиратом. Как бросить миру вызов и победить
 https://www.yakaboo.ua/ua/last-days-of-summer.html?utm_source=rtbhouse&utm_medium=retargeting&utm_campaign=rtbhouse-desktop#proceed
 https://www.amazon.com/Results-Obsession-ROI-Focused-Strategies-Transform/dp/0578686864/ref=sr_1_19?crid=2LTMGZZE2RK9R&keywords=etherium&qid=1649557121&s=books&sprefix=etherium%2Cstripbooks-intl-ship%2C152&sr=1-19 - The Results Obsession: ROI-Focused Digital Strategies to Transform Your Marketing
+https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-ledyanaya-trilogiya-put-bro-led-i-23000-IDVFysx.html - Владимир Сорокин "Ледяная Трилогия";
+https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-tridtsataya-lyubov-mariny-IDVC52g.html - Владимир Сорокин Тридцатая любовь Марины;
+https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-nasledie-IDUapzv.html?isPreviewActive=0&sliderIndex=6 - Владимир Сорокин Наследие;
+https://www.olx.ua/d/uk/obyavlenie/pir-vladimir-sorokin-original-novaya-seriya-ves-sorokin-IDTt8Kr.html - "Пир" Владимир Сорокин;
 
 ### Святое писание
 
@@ -126,6 +130,7 @@ https://brain.com.ua/ukr/Zaryadniy_pristriy_dlya_akumulyatoriv_PowerPlant_PP-UM2
 https://evo.net.ua/palata-rasshireniya-nvidia-jetson-mate-with-cooling-fan-110991411/?gclid=Cj0KCQjwhL6pBhDjARIsAGx8D5-tf6ZGry3NpPG_YtPy-gqO0lZLSeUH7K2LVhaAZ25Y2wOEK_TltPYaAhwZEALw_wcB - SeeedStudio Jetson Mate With Cooling Fan
 https://www.aliexpress.com/item/1005005240443249.html?ug_edm_item_id=1005005240443249&pdp_npi=3%40dis%21PLN%21238%2C69z%C5%82%21238%2C69z%C5%82%21%21%21%21%21%402151e4a917003850147006508dc80c%2112000032328257103%21edm%21%21&edm_click_module=alg_product_l1r2_5163200840&abexp_id=180337&abexp_bkt=629463&abexp_rels=458342&creative_img_ind=1&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_23867_1_pl_PL_2023-11-19&rowan_msg_id=sergCOWS_23867_$bb52afad5c8d448687a77c2f7020fab2&ck=in_edm_other - Pironman Mini PC Case for Raspberry Pi - Aluminum Alloy Tower Case, M.2 SATA SSD Expansion Board for Raspberry Pi 4
 https://www.mini-itx.com/store/ - mini-itx store;
+https://us.creative.com/p/sound-blaster/sound-blaster-x4 - Sound Blaster X4;
 
 ### USB
 

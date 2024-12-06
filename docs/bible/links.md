@@ -740,3 +740,5 @@ The Most Feared Word - December 1 (Hypocrisy is to despise Calvary's sacrifice);
 Crooked Rulers - December 2 (Do not be tempted to lie to yourself about certain sins that still attract you; Father, protect me from myself);
 
 Eighteen Long Years - December 3 (Be confident in God);
+
+The Third Eye - December 4 (We need to be well-versed in God's Word to know the true from the false; Father, keep me close. Lead me and guide me into all truth);
