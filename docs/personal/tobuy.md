@@ -111,6 +111,16 @@ https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-
 
 ## Электроника
 
+### Батарейки
+
+https://rozetka.com.ua/ua/387787854/p387787854/ - Акумулятор 18650, Ultro Fite, 6800mAh (800), 3.7V, красный;
+https://rozetka.com.ua/ua/433934354/p433934354/ - Акумулятор Li-ion UltraFire18650 4800mAh 3.7V, Red;
+https://rozetka.com.ua/ua/324286459/p324286459/ - Батарейка GP 23А Ultra 12V blist 5;
+
+### Зарядные устройства
+
+https://brain.com.ua/ukr/Zaryadniy_pristriy_dlya_akumulyatoriv_PowerPlant_PP-UM2_Ni-Mh_Ni-Cd_Li-ion_LiFePO4_input_DC_5V_2A_AA620180-p1073765.html - PowerPlant PP-UM2 (Ni-Mh, Ni-Cd, Li-ion, LiFePO4 / input DC 5V/2A) (AA620180);
+
 ### Компьютеры
 
 https://evo.net.ua/palata-rasshireniya-nvidia-jetson-mate-with-cooling-fan-110991411/?gclid=Cj0KCQjwhL6pBhDjARIsAGx8D5-tf6ZGry3NpPG_YtPy-gqO0lZLSeUH7K2LVhaAZ25Y2wOEK_TltPYaAhwZEALw_wcB - SeeedStudio Jetson Mate With Cooling Fan
