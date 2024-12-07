@@ -744,3 +744,5 @@ Eighteen Long Years - December 3 (Be confident in God);
 The Third Eye - December 4 (We need to be well-versed in God's Word to know the true from the false; Father, keep me close. Lead me and guide me into all truth);
 
 The Heart of a Child - December 5 (Father keep me simple in my faith; Proverbs 6:16-17);
+
+The Agonizing Birth - December 6 (Our repentance should be mixed with contrition, a sorrow for our sins, and for the cost of our redemption; Father, help me to be sorry for my sins);
