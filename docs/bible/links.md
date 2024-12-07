@@ -746,3 +746,5 @@ The Third Eye - December 4 (We need to be well-versed in God's Word to know the 
 The Heart of a Child - December 5 (Father keep me simple in my faith; Proverbs 6:16-17);
 
 The Agonizing Birth - December 6 (Our repentance should be mixed with contrition, a sorrow for our sins, and for the cost of our redemption; Father, help me to be sorry for my sins);
+
+Knock, Knock - December 7 (Knowing the Lord in a true sense is an intimate relationship with our Creator based on a childlike trust; He will work all things out for our good; 1 John 2:3);
