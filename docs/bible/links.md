@@ -750,3 +750,5 @@ The Agonizing Birth - December 6 (Our repentance should be mixed with contrition
 Knock, Knock - December 7 (Knowing the Lord in a true sense is an intimate relationship with our Creator based on a childlike trust; He will work all things out for our good; 1 John 2:3);
 
 Followers of Jesus - December 8 (Luke 8:13; Proverbs 16:6);
+
+To the Jew First - December 9 (The gospel was birthed in the land of the Jews and taken to the Jew first before it went to the Gentiles; Jews who were saved by grace through justification by faith);
