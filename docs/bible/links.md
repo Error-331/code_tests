@@ -752,3 +752,5 @@ Knock, Knock - December 7 (Knowing the Lord in a true sense is an intimate relat
 Followers of Jesus - December 8 (Luke 8:13; Proverbs 16:6);
 
 To the Jew First - December 9 (The gospel was birthed in the land of the Jews and taken to the Jew first before it went to the Gentiles; Jews who were saved by grace through justification by faith);
+
+East from West - December 10 (You will sit down in the kingdom because it's your Father's good pleasure to see you there);
