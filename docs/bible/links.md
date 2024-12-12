@@ -754,3 +754,7 @@ Followers of Jesus - December 8 (Luke 8:13; Proverbs 16:6);
 To the Jew First - December 9 (The gospel was birthed in the land of the Jews and taken to the Jew first before it went to the Gentiles; Jews who were saved by grace through justification by faith);
 
 East from West - December 10 (You will sit down in the kingdom because it's your Father's good pleasure to see you there);
+
+More Than a Conqueror - December 11 (Luke 13:30);
+
+He has the Power - December 12 (Father, open up my mind to your power; John 10:18);
