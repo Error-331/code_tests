@@ -758,3 +758,5 @@ East from West - December 10 (You will sit down in the kingdom because it's your
 More Than a Conqueror - December 11 (Luke 13:30);
 
 He has the Power - December 12 (Father, open up my mind to your power; John 10:18);
+
+Stubborn Agenda - December 13 (We have a gospel that must be preached to dying sinners, and neither demon nor king should be able to stop us from fulfilling the Great Commission);
