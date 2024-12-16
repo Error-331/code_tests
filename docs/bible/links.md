@@ -763,4 +763,6 @@ Stubborn Agenda - December 13 (We have a gospel that must be preached to dying s
 
 He shall not fail - December 14 (Luke 12:50);
 
-The Farmer and the Hen - December 15 (In Christ, God made a way for us to be sheltered from the wrath to come.);
+The Farmer and the Hen - December 15 (In Christ, God made a way for us to be sheltered from the wrath to come);
+
+Desolate House - December 16 (There is nothing between sinners and eternal happiness, but their proud and unbelieving unwillingness);
