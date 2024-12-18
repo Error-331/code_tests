@@ -768,3 +768,5 @@ The Farmer and the Hen - December 15 (In Christ, God made a way for us to be she
 Desolate House - December 16 (There is nothing between sinners and eternal happiness, but their proud and unbelieving unwillingness);
 
 Pride and Prejudice - December 17 (Father, help me see past the externals and into the souls of people);
+
+Stay Low - December 18 (Stay low in your own eyes, and God will lift you high; Humility is perfect quietness of heart);
