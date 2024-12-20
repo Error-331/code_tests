@@ -772,3 +772,5 @@ Pride and Prejudice - December 17 (Father, help me see past the externals and in
 Stay Low - December 18 (Stay low in your own eyes, and God will lift you high; Humility is perfect quietness of heart);
 
 Animal Rescue - December 19 (May God give us half the concern that we have for our animals so that we immediately run to the lost and pull them ou of the pit of death and an impending hell);
+
+The Bride - December 20 (The marriage supper of the Lamb will be the glorious culmination of our faith in Jesus!);
