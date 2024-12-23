@@ -778,3 +778,5 @@ The Bride - December 20 (The marriage supper of the Lamb will be the glorious cu
 My Way - December 21 (Father, may I see myself as you see me);
 
 Humiliation - December 22 (Just be humble);
+
+The Low Room - December 23 (Love and humility are the highest attainments in the school of Christ; Be a good and faithful servant of God);
