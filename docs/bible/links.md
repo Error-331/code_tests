@@ -776,3 +776,5 @@ Animal Rescue - December 19 (May God give us half the concern that we have for o
 The Bride - December 20 (The marriage supper of the Lamb will be the glorious culmination of our faith in Jesus!);
 
 My Way - December 21 (Father, may I see myself as you see me);
+
+Humiliation - December 22 (Just be humble);
