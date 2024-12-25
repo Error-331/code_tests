@@ -780,3 +780,5 @@ My Way - December 21 (Father, may I see myself as you see me);
 Humiliation - December 22 (Just be humble);
 
 The Low Room - December 23 (Love and humility are the highest attainments in the school of Christ; Be a good and faithful servant of God);
+
+Giving to get Nothing - December 24 (It isn't easy for us to give with no strings attached, but we must);
