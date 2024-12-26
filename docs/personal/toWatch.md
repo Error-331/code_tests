@@ -8,6 +8,8 @@ https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA_%D0%BA%
 https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%BB%D1%8B%D0%B9_%D0%BF%D1%83%D1%82%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC) - Светлый путь
 https://rezka.ag/films/drama/30316-sten-i-olli-2018.html
 https://theflixer.tv/movie/watch-the-wonderful-story-of-henry-sugar-full-100696 - The Wonderful Story of Henry Sugar
+https://theflixertv.to/movie/watch-the-russian-job-full-1609 - The Russian Job;
+https://theflixertv.to/movie/watch-fog-city-full-101773 - Fog City;
 
 ## Сериалы
 
@@ -19,6 +21,7 @@ https://rezka.io/serialy/12501-allo-allo.html - «Allo «Allo!
 https://theflixer.tv/movie/watch-vhs85-full-101191 - V/H/S/85
 https://theflixer.tv/tv/watch-below-deck-down-under-full-78508 - Below Deck Down Under
 https://theflixer.tv/tv/watch-adventure-time-fionna-cake-full-99835 - Adventure Time: Fionna & Cake
+https://theflixertv.to/movie/watch-in-the-moscow-slums-full-114394 - In the Moscow Slums;
 
 ## Мультфильмы
 
@@ -27,6 +30,9 @@ https://www.youtube.com/watch?v=9zvRNKs9Z2M - Robotix: The Series (1985);
 https://en.wikipedia.org/wiki/A_Cat_in_Paris - A Cat in Paris;
 https://en.wikipedia.org/wiki/Gay_Purr-ee - Gay Purr-ee;
 https://en.wikipedia.org/wiki/The_Aristocats - The Aristocats;
+https://theflixertv.to/tv/watch-junji-ito-maniac-japanese-tales-of-the-macabre-full-92398 - Junji Ito Maniac: Japanese Tales of the Macabre;
+https://theflixertv.to/tv/watch-interspecies-reviewers-full-68815 - Interspecies Reviewers;
+https://theflixertv.to/movie/watch-isleen-pines-full-114772 - Isleen Pines;
 
 ## Мультсериалы
 
@@ -47,6 +53,8 @@ https://theflixer.tv/tv/watch-tig-n-seek-full-62288 - tig n` seek;
 https://theflixer.tv/tv/watch-animaniacs-full-64959 - animaniacs;
 https://theflixer.tv/movie/watch-clown-full-75757 - clown;
 https://theflixer.tv/watch-tv/watch-i-tsushima-full-72307.4820287 - I, Tsushima;
+https://theflixertv.to/tv/watch-big-city-greens-full-32942 - Big City Greens;
+https://theflixertv.to/tv/watch-ugly-americans-full-37622 - Ugly Americans;
 
 ## Готовое к просмотру
 
