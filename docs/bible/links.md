@@ -784,3 +784,5 @@ The Low Room - December 23 (Love and humility are the highest attainments in the
 Giving to get Nothing - December 24 (It isn't easy for us to give with no strings attached, but we must);
 
 How to be Blessed - December 25 (Strive to be blessed with God's smile and not with prosperity);
+
+A Certain Man - December 26 (We must never give up on the hardest of sinners or be so shallow in character to even think You will be sorry without a tear in our eye);
