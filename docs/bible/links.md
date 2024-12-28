@@ -786,3 +786,5 @@ Giving to get Nothing - December 24 (It isn't easy for us to give with no string
 How to be Blessed - December 25 (Strive to be blessed with God's smile and not with prosperity);
 
 A Certain Man - December 26 (We must never give up on the hardest of sinners or be so shallow in character to even think You will be sorry without a tear in our eye);
+
+The Work has Been Done - December 27 (The gospel is a universal call to all of humanity. Come);
