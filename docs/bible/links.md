@@ -788,3 +788,5 @@ How to be Blessed - December 25 (Strive to be blessed with God's smile and not w
 A Certain Man - December 26 (We must never give up on the hardest of sinners or be so shallow in character to even think You will be sorry without a tear in our eye);
 
 The Work has Been Done - December 27 (The gospel is a universal call to all of humanity. Come);
+
+The Excuses - December 28 (Father, give me the wisdom I need to contend for the faith; Make no excuses - surrender to God);
