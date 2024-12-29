@@ -790,3 +790,5 @@ A Certain Man - December 26 (We must never give up on the hardest of sinners or 
 The Work has Been Done - December 27 (The gospel is a universal call to all of humanity. Come);
 
 The Excuses - December 28 (Father, give me the wisdom I need to contend for the faith; Make no excuses - surrender to God);
+
+No Excuses - December 29 (Father, I don't offer excuses today. I offer myself as a servant to reach the unsaved);
