@@ -792,3 +792,7 @@ The Work has Been Done - December 27 (The gospel is a universal call to all of h
 The Excuses - December 28 (Father, give me the wisdom I need to contend for the faith; Make no excuses - surrender to God);
 
 No Excuses - December 29 (Father, I don't offer excuses today. I offer myself as a servant to reach the unsaved);
+
+Go Quickly - December 30 (If you are wasting your time with other things while sinners are going to hell, please get on your knees before the Lord and ask God to give you a love that will swallow your fears);
+
+Today, if you Hear His Voice - December 31 (We must plead, exhort, and encourage them with a sense of overwhelming urgency to get right with God by repenting and trusting in Jesus);
