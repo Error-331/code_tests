@@ -800,3 +800,5 @@ Today, if you Hear His Voice - December 31 (We must plead, exhort, and encourage
 ## Anchor For My Soul
 
 Wonderful Gift - January 1 (God does not condemn us in our sin; he liberates us in his love);
+
+Trustworthy Help - January 2 (No matter the situation you are in today, God can help you through it);
