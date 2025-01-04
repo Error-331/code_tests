@@ -802,3 +802,5 @@ Today, if you Hear His Voice - December 31 (We must plead, exhort, and encourage
 Wonderful Gift - January 1 (God does not condemn us in our sin; he liberates us in his love);
 
 Trustworthy Help - January 2 (No matter the situation you are in today, God can help you through it);
+
+Love One Another - January 3 (We love because he first loved us; Even when our love runs dry, we can choose to act in kindness to one another and fill up on the kindness God ceaselessly offers us);
