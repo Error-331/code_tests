@@ -28,6 +28,7 @@ https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-ledyanaya-trilogiya-put-bro-
 https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-tridtsataya-lyubov-mariny-IDVC52g.html - Владимир Сорокин Тридцатая любовь Марины;
 https://www.olx.ua/d/uk/obyavlenie/vladimir-sorokin-nasledie-IDUapzv.html?isPreviewActive=0&sliderIndex=6 - Владимир Сорокин Наследие;
 https://www.olx.ua/d/uk/obyavlenie/pir-vladimir-sorokin-original-novaya-seriya-ves-sorokin-IDTt8Kr.html - "Пир" Владимир Сорокин;
+https://www.yakaboo.ua/ua/kulinarna-mandrivka-v-get-manschinu.html?srsltid=AfmBOoqG7VSkq0eqAQn9YpmYn2aUYMb3e4dq20smmnRDVemzbzQ1-taw - Книга Кулінарна мандрівка в Гетьманщину;
 
 ### Святое писание
 
