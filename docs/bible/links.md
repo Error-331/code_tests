@@ -804,3 +804,5 @@ Wonderful Gift - January 1 (God does not condemn us in our sin; he liberates us 
 Trustworthy Help - January 2 (No matter the situation you are in today, God can help you through it);
 
 Love One Another - January 3 (We love because he first loved us; Even when our love runs dry, we can choose to act in kindness to one another and fill up on the kindness God ceaselessly offers us);
+
+Empowering Presence - January 4 (The powerful presence of God is both our source and sufficiency; We need never do a thing without him; All it takes is a subtle reorienting of your thoughts, and he comes rushing to meet you; 2 Corinthians 3:5 KJV);
