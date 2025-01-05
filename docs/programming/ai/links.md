@@ -58,3 +58,4 @@
 ## Frameworkds
 
 - https://gpt-index.readthedocs.io/en/latest/ - LlamaIndex;
+- https://docs.chainlit.io/get-started/overview - Chainlit is an open-source Python package to build production ready Conversational AI;
