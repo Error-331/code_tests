@@ -5,7 +5,9 @@
 - https://claude.ai/ - code generation;
 - https://platform.openai.com/playground/chat - ChatGTP playground;
 - https://www.harvey.ai/products/assistant - personal assistant;
-- https://huggingface.co/ - AI collaborating platform
+- https://huggingface.co/ - AI collaborating platform;
+- https://civitai.com - thousands of high-quality Stable Diffusion & Flux models, share your AI-generated art, and engage with a vibrant community of creators;
+- https://betterwaifu.com/ - hentai and "nude" models;
 
 ## Image generation
 
