@@ -806,3 +806,7 @@ Trustworthy Help - January 2 (No matter the situation you are in today, God can 
 Love One Another - January 3 (We love because he first loved us; Even when our love runs dry, we can choose to act in kindness to one another and fill up on the kindness God ceaselessly offers us);
 
 Empowering Presence - January 4 (The powerful presence of God is both our source and sufficiency; We need never do a thing without him; All it takes is a subtle reorienting of your thoughts, and he comes rushing to meet you; 2 Corinthians 3:5 KJV);
+
+Of One Mind - January 5 (It takes intentionality, humility, and lived-out love to truly be unified and at peace with others; Jesus is a standard of how God's love looks like);
+
+In God Alone - January 6 (Matthew 11:28-29; Exodus 15:2);
