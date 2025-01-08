@@ -810,3 +810,5 @@ Empowering Presence - January 4 (The powerful presence of God is both our source
 Of One Mind - January 5 (It takes intentionality, humility, and lived-out love to truly be unified and at peace with others; Jesus is a standard of how God's love looks like);
 
 In God Alone - January 6 (Matthew 11:28-29; Exodus 15:2);
+
+Signs and Wonders - January 7 (God does not confirm people through power and privilege but through surrendered hearts and the power of his Spirit; His powerful miracles are merciful acts of kindness that align with his character);
