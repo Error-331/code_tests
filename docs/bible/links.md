@@ -812,3 +812,5 @@ Of One Mind - January 5 (It takes intentionality, humility, and lived-out love t
 In God Alone - January 6 (Matthew 11:28-29; Exodus 15:2);
 
 Signs and Wonders - January 7 (God does not confirm people through power and privilege but through surrendered hearts and the power of his Spirit; His powerful miracles are merciful acts of kindness that align with his character);
+
+Raised Up - January 8 (God calls us to represent his love through sacrifices and generosity instead of ignoring the needy around us; We partner with God's heart and bless others with overflow of our resources; God has more than enough to provide);
