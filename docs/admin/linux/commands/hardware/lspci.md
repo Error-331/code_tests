@@ -29,5 +29,3 @@ lspci | grep -i “nvidia”
 lsmod | grep -i “nvidia”
 
 ```
-
-nvtop
