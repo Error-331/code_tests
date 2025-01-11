@@ -816,3 +816,6 @@ Signs and Wonders - January 7 (God does not confirm people through power and pri
 Raised Up - January 8 (God calls us to represent his love through sacrifices and generosity instead of ignoring the needy around us; We partner with God's heart and bless others with overflow of our resources; God has more than enough to provide);
 
 Blessings Cover Us - January 9 (The experiences of his grace meeting us where we are is the blessing of his presence; Instead of recoiling from hard things, let's press in and find where God meets us in it);
+
+Goodness in Store - January 10 (1 Corinthians 2:9; When you are in a waiting season, longing for breakthrough, shift your eyes to the faithfulness of God; We can find comfort as we trust him);
+
