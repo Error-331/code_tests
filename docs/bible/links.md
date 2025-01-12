@@ -819,3 +819,5 @@ Blessings Cover Us - January 9 (The experiences of his grace meeting us where we
 
 Goodness in Store - January 10 (1 Corinthians 2:9; When you are in a waiting season, longing for breakthrough, shift your eyes to the faithfulness of God; We can find comfort as we trust him);
 
+Go And Do - January 11 (Live out the particle, merciful kindness of our Savior);
+
