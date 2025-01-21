@@ -821,3 +821,9 @@ Goodness in Store - January 10 (1 Corinthians 2:9; When you are in a waiting sea
 
 Go And Do - January 11 (Live out the particle, merciful kindness of our Savior);
 
+Cry Out - January 12 (God wants us to lean on him for what we don't have);
+
+Authentic Ministry - January 13 (Instead of getting caught up in what a successful ministry looks like, focus on the foundation of your character and how you treat everyone around you);
+
+Blessed Either Way - January 14 (Instead of counting our blessings through the levels of ease we have, let's look at the persistent and powerful presence of God no matter the circumstances we face);
+
