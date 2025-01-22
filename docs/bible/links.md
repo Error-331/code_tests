@@ -827,3 +827,9 @@ Authentic Ministry - January 13 (Instead of getting caught up in what a successf
 
 Blessed Either Way - January 14 (Instead of counting our blessings through the levels of ease we have, let's look at the persistent and powerful presence of God no matter the circumstances we face);
 
+Favor of His Presence - January 15 (No matter what people say about you, God knows your heart; He knows what is true and what is false; In just or unjust punishment, he won't leave you alone);
+
+Unoffendable - January 16 (A humble heart is an unoffendable one);
+
+Ancient Paths - January 17 (When we listen for God's voice, we will hear wisdom's guidance);
+
