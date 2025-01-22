@@ -833,3 +833,5 @@ Unoffendable - January 16 (A humble heart is an unoffendable one);
 
 Ancient Paths - January 17 (When we listen for God's voice, we will hear wisdom's guidance);
 
+Hold On To Him - January 18 (When we love God with everything we are, we walk in obedience to his ways; He is our sufficiency and strength, and his love is our covering and comfort);
+
