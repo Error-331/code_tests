@@ -835,3 +835,5 @@ Ancient Paths - January 17 (When we listen for God's voice, we will hear wisdom'
 
 Hold On To Him - January 18 (When we love God with everything we are, we walk in obedience to his ways; He is our sufficiency and strength, and his love is our covering and comfort);
 
+Messengers of Peace - January 19 (May we be bearers of the goodness of God by deliberately sharing the kindness of his heart and the power of his transformative love);
+
