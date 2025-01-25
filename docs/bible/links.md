@@ -837,3 +837,4 @@ Hold On To Him - January 18 (When we love God with everything we are, we walk in
 
 Messengers of Peace - January 19 (May we be bearers of the goodness of God by deliberately sharing the kindness of his heart and the power of his transformative love);
 
+Holy Expectation - January 20 (As we focus our attention on Jesus, the perfection of his love lights up the expectations of our hearts. Jesus joy ws knowing we would be his);
