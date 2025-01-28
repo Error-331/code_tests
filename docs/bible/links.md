@@ -840,3 +840,9 @@ Messengers of Peace - January 19 (May we be bearers of the goodness of God by de
 Holy Expectation - January 20 (As we focus our attention on Jesus, the perfection of his love lights up the expectations of our hearts. Jesus joy ws knowing we would be his);
 
 Incredible Mercy - January 21 (Romans 9:16 KJV);
+
+Abundant Source - January 22 (In transition, God is our constant source of stability; In him is an abundance of what we seek, so let's run into his presence for all we need today);
+
+Sabbath Rest - January 23 (Be intentional when carving out time to simply be and enjoy what is available to you);
+
+Held Firm - January 24 (Romans 8:38-39; No matter what you are going through, God's love has a firm hold on you);
