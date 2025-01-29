@@ -846,3 +846,5 @@ Abundant Source - January 22 (In transition, God is our constant source of stabi
 Sabbath Rest - January 23 (Be intentional when carving out time to simply be and enjoy what is available to you);
 
 Held Firm - January 24 (Romans 8:38-39; No matter what you are going through, God's love has a firm hold on you);
+
+Easy To Please - January 25 (Join your life to his and you will find true refreshment and rest in him);
