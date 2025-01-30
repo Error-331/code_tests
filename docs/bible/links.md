@@ -848,3 +848,7 @@ Sabbath Rest - January 23 (Be intentional when carving out time to simply be and
 Held Firm - January 24 (Romans 8:38-39; No matter what you are going through, God's love has a firm hold on you);
 
 Easy To Please - January 25 (Join your life to his and you will find true refreshment and rest in him);
+
+Doing Right - January 26 (Psalm 37:3 KJV);
+
+Dwelling Places - January 27 (Every person submitted to Christ is being altered into a dwelling place of the Holy Spirit);
