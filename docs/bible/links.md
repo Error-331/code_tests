@@ -852,3 +852,7 @@ Easy To Please - January 25 (Join your life to his and you will find true refres
 Doing Right - January 26 (Psalm 37:3 KJV);
 
 Dwelling Places - January 27 (Every person submitted to Christ is being altered into a dwelling place of the Holy Spirit);
+
+Undivided Devotion - January 28 (Adore God with undivided hearts and offering him our devotion and you will find wisdom);
+
+Freedom in Worship - January 29 (There is nothing wrong with finding success in our efforts but relying on them to qualify us or to earn our way to goodness or salvation is an empty venture);
