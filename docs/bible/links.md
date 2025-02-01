@@ -860,3 +860,5 @@ Freedom in Worship - January 29 (There is nothing wrong with finding success in 
 Set Sail - January 30 (It's important to recognize the necessary actions for where we are - either be anchored or set sail; Trust the pull toward the unknown and yet compelling new land in front of you);
 
 Prayer of Restoration - January 31 (God promises to never abandon those who are his; Ask God to restore your experience of his presence even if he has not gone anywhere);
+
+Who is Like Him - February 1 (When we rely on God to defend us and reject the temptation to compromise our integrity or to blame him for what we are going through, we can rest in trust; You don't measure a person's worth based on what they can offer but on who you say they are);
