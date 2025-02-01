@@ -856,3 +856,7 @@ Dwelling Places - January 27 (Every person submitted to Christ is being altered 
 Undivided Devotion - January 28 (Adore God with undivided hearts and offering him our devotion and you will find wisdom);
 
 Freedom in Worship - January 29 (There is nothing wrong with finding success in our efforts but relying on them to qualify us or to earn our way to goodness or salvation is an empty venture);
+
+Set Sail - January 30 (It's important to recognize the necessary actions for where we are - either be anchored or set sail; Trust the pull toward the unknown and yet compelling new land in front of you);
+
+Prayer of Restoration - January 31 (God promises to never abandon those who are his; Ask God to restore your experience of his presence even if he has not gone anywhere);
