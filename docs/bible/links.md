@@ -862,3 +862,5 @@ Set Sail - January 30 (It's important to recognize the necessary actions for whe
 Prayer of Restoration - January 31 (God promises to never abandon those who are his; Ask God to restore your experience of his presence even if he has not gone anywhere);
 
 Who is Like Him - February 1 (When we rely on God to defend us and reject the temptation to compromise our integrity or to blame him for what we are going through, we can rest in trust; You don't measure a person's worth based on what they can offer but on who you say they are);
+
+Sound Mind - February 2 (It is important to recognize when we are being pushed into a fear response rather than given the space to soundly consider the truth of what is presented);
