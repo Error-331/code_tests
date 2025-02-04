@@ -864,3 +864,5 @@ Prayer of Restoration - January 31 (God promises to never abandon those who are 
 Who is Like Him - February 1 (When we rely on God to defend us and reject the temptation to compromise our integrity or to blame him for what we are going through, we can rest in trust; You don't measure a person's worth based on what they can offer but on who you say they are);
 
 Sound Mind - February 2 (It is important to recognize when we are being pushed into a fear response rather than given the space to soundly consider the truth of what is presented);
+
+Faithful Love - February 3 (Psalm 89:33 KJV; We can't manipulate of mess up what God has decided to do; When we know the generosity of God's heart, we can't hide behind exclusivity or fear; We get to join with his extravagant love and live out of it);
