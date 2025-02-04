@@ -849,4 +849,18 @@ Held Firm - January 24 (Romans 8:38-39; No matter what you are going through, Go
 
 Easy To Please - January 25 (Join your life to his and you will find true refreshment and rest in him);
 
-Doing Right - January 26 (Wisdom directs us to fix our hearts on the promises of God; I choose to follow your ways over the shortcuts of the world that only want to get ahead);
+Doing Right - January 26 (Psalm 37:3 KJV; Wisdom directs us to fix our hearts on the promises of God; I choose to follow your ways over the shortcuts of the world that only want to get ahead);
+
+Dwelling Places - January 27 (Every person submitted to Christ is being altered into a dwelling place of the Holy Spirit);
+
+Undivided Devotion - January 28 (Adore God with undivided hearts and offering him our devotion and you will find wisdom);
+
+Freedom in Worship - January 29 (There is nothing wrong with finding success in our efforts but relying on them to qualify us or to earn our way to goodness or salvation is an empty venture);
+
+Set Sail - January 30 (It's important to recognize the necessary actions for where we are - either be anchored or set sail; Trust the pull toward the unknown and yet compelling new land in front of you);
+
+Prayer of Restoration - January 31 (God promises to never abandon those who are his; Ask God to restore your experience of his presence even if he has not gone anywhere);
+
+Who is Like Him - February 1 (When we rely on God to defend us and reject the temptation to compromise our integrity or to blame him for what we are going through, we can rest in trust; You don't measure a person's worth based on what they can offer but on who you say they are);
+
+Sound Mind - February 2 (It is important to recognize when we are being pushed into a fear response rather than given the space to soundly consider the truth of what is presented);
