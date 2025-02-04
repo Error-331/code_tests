@@ -866,3 +866,5 @@ Who is Like Him - February 1 (When we rely on God to defend us and reject the te
 Sound Mind - February 2 (It is important to recognize when we are being pushed into a fear response rather than given the space to soundly consider the truth of what is presented);
 
 Faithful Love - February 3 (Psalm 89:33 KJV; We can't manipulate of mess up what God has decided to do; When we know the generosity of God's heart, we can't hide behind exclusivity or fear; We get to join with his extravagant love and live out of it);
+
+Rich in Mercy - February 4 (We are to be merciful because God is merciful; Our Father who overflows with mercy will fill us up; God - you are my source, and your love is the light of my life);
