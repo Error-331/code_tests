@@ -872,3 +872,5 @@ Rich in Mercy - February 4 (We are to be merciful because God is merciful; Our F
 When Troubles Come - February 5 (2 Peter 2:9; Integrity guards our souls from becoming corrupted by the ways of this world; God you are not only my leader but also my protector);
 
 Comfort of Kindness - February 6 (When we choose to be kind to others, we offer them a breath of fresh air without the need to be recognized or repaid; Often, the simplest gestures offered in love can bring great joy and comfort to others);
+
+Great High Priest - February 7 (Let's humble ourselves and have the courage to come to him with all we are and not only what we want to be true of us);
