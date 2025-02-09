@@ -874,3 +874,5 @@ When Troubles Come - February 5 (2 Peter 2:9; Integrity guards our souls from be
 Comfort of Kindness - February 6 (When we choose to be kind to others, we offer them a breath of fresh air without the need to be recognized or repaid; Often, the simplest gestures offered in love can bring great joy and comfort to others);
 
 Great High Priest - February 7 (Let's humble ourselves and have the courage to come to him with all we are and not only what we want to be true of us);
+
+Safest Place - February 8 (Jesus will not keep us from experiencing trouble in this world, but he will be with us through everything; Yahweh, you are a safe place for the disadvantaged; I run into your presence for comfort and strength, and I go out with your compassion as my generous portion to bring relief to others);
