@@ -876,3 +876,5 @@ Comfort of Kindness - February 6 (When we choose to be kind to others, we offer 
 Great High Priest - February 7 (Let's humble ourselves and have the courage to come to him with all we are and not only what we want to be true of us);
 
 Safest Place - February 8 (Jesus will not keep us from experiencing trouble in this world, but he will be with us through everything; Yahweh, you are a safe place for the disadvantaged; I run into your presence for comfort and strength, and I go out with your compassion as my generous portion to bring relief to others);
+
+Just You Wait - February 9 (Remember what you have already journeyed through, take courage, and keep going; Don't be ashamed of your lack in this life, for God has abundantly more than you can think of or imagine in store for those who love him and yield their lives to him);
