@@ -878,3 +878,5 @@ Great High Priest - February 7 (Let's humble ourselves and have the courage to c
 Safest Place - February 8 (Jesus will not keep us from experiencing trouble in this world, but he will be with us through everything; Yahweh, you are a safe place for the disadvantaged; I run into your presence for comfort and strength, and I go out with your compassion as my generous portion to bring relief to others);
 
 Just You Wait - February 9 (Remember what you have already journeyed through, take courage, and keep going; Don't be ashamed of your lack in this life, for God has abundantly more than you can think of or imagine in store for those who love him and yield their lives to him);
+
+Pervasive Peace - February 10 (Romans 5:1-2; We could never add to what Jesus offers us through the gift of his grace);
