@@ -880,3 +880,5 @@ Safest Place - February 8 (Jesus will not keep us from experiencing trouble in t
 Just You Wait - February 9 (Remember what you have already journeyed through, take courage, and keep going; Don't be ashamed of your lack in this life, for God has abundantly more than you can think of or imagine in store for those who love him and yield their lives to him);
 
 Pervasive Peace - February 10 (Romans 5:1-2; We could never add to what Jesus offers us through the gift of his grace);
+
+Even in Crisis - February 11 (Direct the attention of your soul to the one who never fails; Write a prayer of honesty, whether it be a plea, a declaration, a turning of your heart in praise, or a combination, and offer it to God today);
