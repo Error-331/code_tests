@@ -882,3 +882,5 @@ Just You Wait - February 9 (Remember what you have already journeyed through, ta
 Pervasive Peace - February 10 (Romans 5:1-2; We could never add to what Jesus offers us through the gift of his grace);
 
 Even in Crisis - February 11 (Direct the attention of your soul to the one who never fails; Write a prayer of honesty, whether it be a plea, a declaration, a turning of your heart in praise, or a combination, and offer it to God today);
+
+Restored Joy - February 12 (You can't avoid the cycles of grief that come, but you also will not miss out on seasons of joy; If you are in a barren and hard-pressed place in your soul, don't give up hope. Your restoration is coming);
