@@ -888,3 +888,5 @@ Restored Joy - February 12 (You can't avoid the cycles of grief that come, but y
 Heart of Jesus - February 13 (The heart of Jesus is that we remain in his love; May we not wither in our failures but come to Jesus who restores and frees us in his love);
 
 Deep Hope - February 14 (Even when our souls are downcast, we can praise him; We don't have to get rid of grief or sweep our sadness under the rug to hope in God; Wash over me, refresh my hope, and hold me in the comfort of your presence);
+
+Not Impossible - February 15 (What God promises to do, he does; I trust your character and power more than my limited understanding.);
