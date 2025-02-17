@@ -889,4 +889,6 @@ Heart of Jesus - February 13 (The heart of Jesus is that we remain in his love; 
 
 Deep Hope - February 14 (Even when our souls are downcast, we can praise him; We don't have to get rid of grief or sweep our sadness under the rug to hope in God; Wash over me, refresh my hope, and hold me in the comfort of your presence);
 
-Not Impossible - February 15 (What God promises to do, he does; I trust your character and power more than my limited understanding.);
+Not Impossible - February 15 (What God promises to do, he does; I trust your character and power more than my limited understanding);
+
+Witness of Faith - February 16 (It is important to know the values guiding your life; Your choices will reflect your heart, so embrace the hope rather than the fear that resides within you; Spend time with those who live the way you want to);
