@@ -892,3 +892,5 @@ Deep Hope - February 14 (Even when our souls are downcast, we can praise him; We
 Not Impossible - February 15 (What God promises to do, he does; I trust your character and power more than my limited understanding);
 
 Witness of Faith - February 16 (It is important to know the values guiding your life; Your choices will reflect your heart, so embrace the hope rather than the fear that resides within you; Spend time with those who live the way you want to);
+
+Touch His Robe - February 17 (When your faith carries you to Christ, you will be met with grace and kindness. He is your healer);
