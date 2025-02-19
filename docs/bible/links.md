@@ -814,3 +814,83 @@ In God Alone - January 6 (Matthew 11:28-29; Exodus 15:2);
 Signs and Wonders - January 7 (God does not confirm people through power and privilege but through surrendered hearts and the power of his Spirit; His powerful miracles are merciful acts of kindness that align with his character);
 
 Raised Up - January 8 (God calls us to represent his love through sacrifices and generosity instead of ignoring the needy around us; We partner with God's heart and bless others with overflow of our resources; God has more than enough to provide);
+
+Blessings Cover Us - January 9 (The experiences of his grace meeting us where we are is the blessing of his presence; Instead of recoiling from hard things, let's press in and find where God meets us in it);
+
+Goodness in Store - January 10 (1 Corinthians 2:9; When you are in a waiting season, longing for breakthrough, shift your eyes to the faithfulness of God; We can find comfort as we trust him);
+
+Go And Do - January 11 (Live out the particle, merciful kindness of our Savior);
+
+Cry Out - January 12 (God wants us to lean on him for what we don't have);
+
+Authentic Ministry - January 13 (Instead of getting caught up in what a successful ministry looks like, focus on the foundation of your character and how you treat everyone around you);
+
+Blessed Either Way - January 14 (Instead of counting our blessings through the levels of ease we have, let's look at the persistent and powerful presence of God no matter the circumstances we face);
+
+Favor of His Presence - January 15 (No matter what people say about you, God knows your heart; He knows what is true and what is false; In just or unjust punishment, he won't leave you alone);
+
+Unoffendable - January 16 (A humble heart is an unoffendable one);
+
+Ancient Paths - January 17 (When we listen for God's voice, we will hear wisdom's guidance);
+
+Hold On To Him - January 18 (When we love God with everything we are, we walk in obedience to his ways; He is our sufficiency and strength, and his love is our covering and comfort);
+
+Messengers of Peace - January 19 (May we be bearers of the goodness of God by deliberately sharing the kindness of his heart and the power of his transformative love);
+
+Holy Expectation - January 20 (As we focus our attention on Jesus, the perfection of his love lights up the expectations of our hearts. Jesus joy ws knowing we would be his);
+
+Incredible Mercy - January 21 (Romans 9:16 KJV);
+
+Abundant Source - January 22 (In transition, God is our constant source of stability; In him is an abundance of what we seek, so let's run into his presence for all we need today);
+
+Sabbath Rest - January 23 (Be intentional when carving out time to simply be and enjoy what is available to you);
+
+Held Firm - January 24 (Romans 8:38-39; No matter what you are going through, God's love has a firm hold on you);
+
+Easy To Please - January 25 (Join your life to his and you will find true refreshment and rest in him);
+
+Doing Right - January 26 (Psalm 37:3 KJV; Wisdom directs us to fix our hearts on the promises of God; I choose to follow your ways over the shortcuts of the world that only want to get ahead);
+
+Dwelling Places - January 27 (Every person submitted to Christ is being altered into a dwelling place of the Holy Spirit);
+
+Undivided Devotion - January 28 (Adore God with undivided hearts and offering him our devotion and you will find wisdom);
+
+Freedom in Worship - January 29 (There is nothing wrong with finding success in our efforts but relying on them to qualify us or to earn our way to goodness or salvation is an empty venture);
+
+Set Sail - January 30 (It's important to recognize the necessary actions for where we are - either be anchored or set sail; Trust the pull toward the unknown and yet compelling new land in front of you);
+
+Prayer of Restoration - January 31 (God promises to never abandon those who are his; Ask God to restore your experience of his presence even if he has not gone anywhere);
+
+Who is Like Him - February 1 (When we rely on God to defend us and reject the temptation to compromise our integrity or to blame him for what we are going through, we can rest in trust; You don't measure a person's worth based on what they can offer but on who you say they are);
+
+Sound Mind - February 2 (It is important to recognize when we are being pushed into a fear response rather than given the space to soundly consider the truth of what is presented);
+
+Faithful Love - February 3 (Psalm 89:33 KJV; We can't manipulate of mess up what God has decided to do; When we know the generosity of God's heart, we can't hide behind exclusivity or fear; We get to join with his extravagant love and live out of it);
+
+Rich in Mercy - February 4 (We are to be merciful because God is merciful; Our Father who overflows with mercy will fill us up; God - you are my source, and your love is the light of my life);
+
+When Troubles Come - February 5 (2 Peter 2:9; Integrity guards our souls from becoming corrupted by the ways of this world; God you are not only my leader but also my protector);
+
+Comfort of Kindness - February 6 (When we choose to be kind to others, we offer them a breath of fresh air without the need to be recognized or repaid; Often, the simplest gestures offered in love can bring great joy and comfort to others);
+
+Great High Priest - February 7 (Let's humble ourselves and have the courage to come to him with all we are and not only what we want to be true of us);
+
+Safest Place - February 8 (Jesus will not keep us from experiencing trouble in this world, but he will be with us through everything; Yahweh, you are a safe place for the disadvantaged; I run into your presence for comfort and strength, and I go out with your compassion as my generous portion to bring relief to others);
+
+Just You Wait - February 9 (Remember what you have already journeyed through, take courage, and keep going; Don't be ashamed of your lack in this life, for God has abundantly more than you can think of or imagine in store for those who love him and yield their lives to him);
+
+Pervasive Peace - February 10 (Romans 5:1-2; We could never add to what Jesus offers us through the gift of his grace);
+
+Even in Crisis - February 11 (Direct the attention of your soul to the one who never fails; Write a prayer of honesty, whether it be a plea, a declaration, a turning of your heart in praise, or a combination, and offer it to God today);
+
+Restored Joy - February 12 (You can't avoid the cycles of grief that come, but you also will not miss out on seasons of joy; If you are in a barren and hard-pressed place in your soul, don't give up hope. Your restoration is coming);
+
+Heart of Jesus - February 13 (The heart of Jesus is that we remain in his love; May we not wither in our failures but come to Jesus who restores and frees us in his love);
+
+Deep Hope - February 14 (Even when our souls are downcast, we can praise him; We don't have to get rid of grief or sweep our sadness under the rug to hope in God; Wash over me, refresh my hope, and hold me in the comfort of your presence);
+
+Not Impossible - February 15 (What God promises to do, he does; I trust your character and power more than my limited understanding);
+
+Witness of Faith - February 16 (It is important to know the values guiding your life; Your choices will reflect your heart, so embrace the hope rather than the fear that resides within you; Spend time with those who live the way you want to);
+
+Touch His Robe - February 17 (When your faith carries you to Christ, you will be met with grace and kindness. He is your healer);
