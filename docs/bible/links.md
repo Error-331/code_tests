@@ -894,3 +894,5 @@ Not Impossible - February 15 (What God promises to do, he does; I trust your cha
 Witness of Faith - February 16 (It is important to know the values guiding your life; Your choices will reflect your heart, so embrace the hope rather than the fear that resides within you; Spend time with those who live the way you want to);
 
 Touch His Robe - February 17 (When your faith carries you to Christ, you will be met with grace and kindness. He is your healer);
+
+Tender Devotion - February 18 (God's grace usher's you in as you surrender to love, and you get to show the same grace to others; Offer God your attention and your willingness as he lovingly guides you through every encounter today);
