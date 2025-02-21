@@ -898,3 +898,5 @@ Touch His Robe - February 17 (When your faith carries you to Christ, you will be
 Tender Devotion - February 18 (God's grace usher's you in as you surrender to love, and you get to show the same grace to others; Offer God your attention and your willingness as he lovingly guides you through every encounter today);
 
 Kinsman-Redeemer - February 19 (Jesus became our Kinsman-Redeemer and stepped in on our behalf to save us from our trouble);
+
+Faithful Leader - February 20 (He leads us on paths of his righteousness so we can bring honor to his name; Surrender is our posture, and humble trust is a strong anchor to his unwavering mercy and truth.);
