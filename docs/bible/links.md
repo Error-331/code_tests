@@ -899,4 +899,6 @@ Tender Devotion - February 18 (God's grace usher's you in as you surrender to lo
 
 Kinsman-Redeemer - February 19 (Jesus became our Kinsman-Redeemer and stepped in on our behalf to save us from our trouble);
 
-Faithful Leader - February 20 (He leads us on paths of his righteousness so we can bring honor to his name; Surrender is our posture, and humble trust is a strong anchor to his unwavering mercy and truth.);
+Faithful Leader - February 20 (He leads us on paths of his righteousness so we can bring honor to his name; Surrender is our posture, and humble trust is a strong anchor to his unwavering mercy and truth);
+
+Good News - February 21 (The strength of God is not absent in our lives; its present through the Holy Spirit sent from the Father and revealed through Christ);
