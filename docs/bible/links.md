@@ -902,3 +902,7 @@ Kinsman-Redeemer - February 19 (Jesus became our Kinsman-Redeemer and stepped in
 Faithful Leader - February 20 (He leads us on paths of his righteousness so we can bring honor to his name; Surrender is our posture, and humble trust is a strong anchor to his unwavering mercy and truth);
 
 Good News - February 21 (The strength of God is not absent in our lives; its present through the Holy Spirit sent from the Father and revealed through Christ);
+
+Even in Disappointment - February 22 (True worship is found in honesty, acceptance, and surrender; Let's give God all the realities of our present sufferings and invite him to meet us in the middle of it);
+
+Our Cornerstone - February 23 (While we are prone to putting people on pedestals, Christ is the only one who belongs there);
