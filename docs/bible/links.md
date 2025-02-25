@@ -906,3 +906,5 @@ Good News - February 21 (The strength of God is not absent in our lives; its pre
 Even in Disappointment - February 22 (True worship is found in honesty, acceptance, and surrender; Let's give God all the realities of our present sufferings and invite him to meet us in the middle of it);
 
 Our Cornerstone - February 23 (While we are prone to putting people on pedestals, Christ is the only one who belongs there);
+
+Anchor of Hope - February 24 (Hebrews 6:19; Jesus, you are my anchor and hope, and my life is tethered to you);
