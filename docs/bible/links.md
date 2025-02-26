@@ -908,3 +908,5 @@ Even in Disappointment - February 22 (True worship is found in honesty, acceptan
 Our Cornerstone - February 23 (While we are prone to putting people on pedestals, Christ is the only one who belongs there);
 
 Anchor of Hope - February 24 (Hebrews 6:19; Jesus, you are my anchor and hope, and my life is tethered to you);
+
+Helpful Instructions - February 25 (Love is the highest law as demonstrated by Jesus; Let's put first things first and align our lives in the love of Christ in practicality and purpose);
