@@ -913,4 +913,6 @@ Helpful Instructions - February 25 (Love is the highest law as demonstrated by J
 
 Glory Not Shame - February 27 (We must be willing to draw close to the vulnerable, hear their stories, and advocate for them; Let's be like Jesus and offer honor where they have only experienced mockery and shame);
 
-Brought Near - February 28 (Psalm 139:7-8);
+Brought Near - February 28 (Psalm 139:7-8 KJV);
+
+Wholehearted Trust - March 1 (Proverbs 3:5 KJV; Lords perspective doesn't miss a thing; it accounts for what we don't even know to look for; Press into him with your questions);
