@@ -912,3 +912,5 @@ Anchor of Hope - February 24 (Hebrews 6:19; Jesus, you are my anchor and hope, a
 Helpful Instructions - February 25 (Love is the highest law as demonstrated by Jesus; Let's put first things first and align our lives in the love of Christ in practicality and purpose);
 
 Glory Not Shame - February 27 (We must be willing to draw close to the vulnerable, hear their stories, and advocate for them; Let's be like Jesus and offer honor where they have only experienced mockery and shame);
+
+Brought Near - February 28 (Psalm 139:7-8);
