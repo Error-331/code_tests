@@ -910,3 +910,5 @@ Our Cornerstone - February 23 (While we are prone to putting people on pedestals
 Anchor of Hope - February 24 (Hebrews 6:19; Jesus, you are my anchor and hope, and my life is tethered to you);
 
 Helpful Instructions - February 25 (Love is the highest law as demonstrated by Jesus; Let's put first things first and align our lives in the love of Christ in practicality and purpose);
+
+Personal Foundation - February 26 (Christ is our foundation; his values will last; The Spirit allows us to discern what is right, true, and in line with your will for our life);
