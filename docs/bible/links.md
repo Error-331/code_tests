@@ -912,3 +912,9 @@ Anchor of Hope - February 24 (Hebrews 6:19; Jesus, you are my anchor and hope, a
 Helpful Instructions - February 25 (Love is the highest law as demonstrated by Jesus; Let's put first things first and align our lives in the love of Christ in practicality and purpose);
 
 Personal Foundation - February 26 (Christ is our foundation; his values will last; The Spirit allows us to discern what is right, true, and in line with your will for our life);
+
+Glory Not Shame - February 27 (We must be willing to draw close to the vulnerable, hear their stories, and advocate for them; Let's be like Jesus and offer honor where they have only experienced mockery and shame);
+
+Brought Near - February 28 (Psalm 139:7-8 KJV);
+
+Wholehearted Trust - March 1 (Proverbs 3:5 KJV; Lords perspective doesn't miss a thing; it accounts for what we don't even know to look for; Press into him with your questions);
