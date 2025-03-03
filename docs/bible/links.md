@@ -918,3 +918,5 @@ Glory Not Shame - February 27 (We must be willing to draw close to the vulnerabl
 Brought Near - February 28 (Psalm 139:7-8 KJV);
 
 Wholehearted Trust - March 1 (Proverbs 3:5 KJV; Lords perspective doesn't miss a thing; it accounts for what we don't even know to look for; Press into him with your questions);
+
+Wait on Him - March 2 (Psalm 62:1 KJV; Wait on him; You are the strength of my soul, the fervor for my faith, and the love that rejuvenates my passion for life.);
