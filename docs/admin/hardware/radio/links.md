@@ -22,6 +22,7 @@
 - https://flightaware.store/products/pro-stick - Pro Stick;
 - https://www.aliexpress.com/item/1005006084935735.html?albagn=888888&&src=google&albch=search&acnt=479-062-3723&isdl=y&aff_short_key=UneMJZVf&albcp=15034475726&albag=134062032172&slnk=&trgt=dsa-42862830006&plac=&crea=555011960799&netw=g&device=c&mtctp=&memo1=&albbt=Google_7_search&aff_platform=google&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyWAo1Sz1EVn_M860-_wna7zeZ7u1dp2t_V_IcMJ1xGNZYscn-frIfYaAgUVEALw_wcB&gclsrc=aw.ds - KIRISUN DP990 DMR professional portable radio walkie talkie with AES256 and display compatible to DP4800;
 - https://www.sbitx.net/ - sBitx;
+- https://deeprad.co/QuickStartGuide/ - DeepRAD;
 
 ### Handheld
 

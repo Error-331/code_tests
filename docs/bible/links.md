@@ -919,4 +919,10 @@ Brought Near - February 28 (Psalm 139:7-8 KJV);
 
 Wholehearted Trust - March 1 (Proverbs 3:5 KJV; Lords perspective doesn't miss a thing; it accounts for what we don't even know to look for; Press into him with your questions);
 
-Wait on Him - March 2 (Psalm 62:1 KJV; Wait on him; You are the strength of my soul, the fervor for my faith, and the love that rejuvenates my passion for life.);
+Wait on Him - March 2 (Psalm 62:1 KJV; Wait on him; You are the strength of my soul, the fervor for my faith, and the love that rejuvenates my passion for life);
+
+Persevering Hope - March 3 (Romans 8:24-25 KJV; Romans 15:5 KJV; As we press on, taking hold of the hope of Christ and all that awaits us in the fullness of his forever kingdom, we are encouraged by his presence and strengthened by his power; Empower me to persevere, Lord);
+
+## Misc
+
+Христос и Крест (Франко);
