@@ -923,6 +923,8 @@ Wait on Him - March 2 (Psalm 62:1 KJV; Wait on him; You are the strength of my s
 
 Persevering Hope - March 3 (Romans 8:24-25 KJV; Romans 15:5 KJV; As we press on, taking hold of the hope of Christ and all that awaits us in the fullness of his forever kingdom, we are encouraged by his presence and strengthened by his power; Empower me to persevere, Lord);
 
+Building With Prayer - March 4 (Life with God is a journey of growth, and as we actively engage with him in prayer, we enlarge our experience, understanding, and expectation; I will worship you by opening my heart to you throughout my day);
+
 ## Misc
 
 Христос и Крест (Франко);
