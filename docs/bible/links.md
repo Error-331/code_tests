@@ -925,6 +925,8 @@ Persevering Hope - March 3 (Romans 8:24-25 KJV; Romans 15:5 KJV; As we press on,
 
 Building With Prayer - March 4 (Life with God is a journey of growth, and as we actively engage with him in prayer, we enlarge our experience, understanding, and expectation; I will worship you by opening my heart to you throughout my day);
 
+Law of Love - March 5 (Rather than slander others, we get curious with compassion; Our duty is to obey what Christ set out for us, and there is nothing he did not emulate himself; Let's follow Christs example of laid-down love);
+
 ## Misc
 
 Христос и Крест (Франко);
