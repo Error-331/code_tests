@@ -26,6 +26,7 @@
 - https://fliki.ai/ - Fliki;
 - https://synthesys.io/ - Synthesys;
 - https://github.com/dbclinton/Complete_Obsolete_Guide_AI/blob/main/GenAI_Resources.md - more AI tools;
+- https://openai.com/sora/ - Sora (video editing and replacement);
 
 ## Presentation resources generation
 
@@ -44,6 +45,7 @@
 - https://www.summarize.tech/ - Summarize.tech;
 - https://github.com/openai/whisper - OpenAI’s Whisper;
 - https://cloud.google.com/speech-to-text -  Google’s Speech-to-Text
+- https://www.riffusion.com/ - Riffusion;
 
 ## Music generation
 
