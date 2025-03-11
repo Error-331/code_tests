@@ -935,6 +935,10 @@ Our Champion - March 8 (When you are submitted to Christ, everything in your lif
 
 Led Into Love - March 9 (Open yourself to love today, and you will be led into the endurance of Christ and the holy hope of his promise; Love gave Christ the patience to endure what came his way);
 
+Now is The Time - March 10 (We must consciously live out our days with eternal values instead of buckling under the seeming urgency of endless tasks; You only get one life; be proactive with it);
+
+Sing and Shout - March 11 (God's mercy is palpable, and it moves on our behalf to liberate us; We have fellowship with God because of all he provided);
+
 ## Misc
 
 Христос и Крест (Франко);
