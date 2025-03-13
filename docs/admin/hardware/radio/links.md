@@ -7,6 +7,8 @@
 ## Articles
 
 - https://en.wikipedia.org/wiki/Digital_mobile_radio - Digital mobile radio;
+- https://www.a-centauri.com/articoli/noaa-poes-satellites-reception - NOAA Satellite Reception;
+- https://tech-geek.ru/interception-and-analysis-radio-signals/ - 
 
 ## Frequencies
 

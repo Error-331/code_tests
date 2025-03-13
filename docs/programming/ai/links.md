@@ -8,6 +8,7 @@
 - https://huggingface.co/ - AI collaborating platform;
 - https://civitai.com - thousands of high-quality Stable Diffusion & Flux models, share your AI-generated art, and engage with a vibrant community of creators;
 - https://betterwaifu.com/ - hentai and "nude" models;
+- https://github.com/elizaOS/eliza?tab=readme-ov-file - Eliza;
 
 ## Image generation
 

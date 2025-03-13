@@ -939,6 +939,10 @@ Now is The Time - March 10 (We must consciously live out our days with eternal v
 
 Sing and Shout - March 11 (God's mercy is palpable, and it moves on our behalf to liberate us; We have fellowship with God because of all he provided);
 
+Love is Gentle - March 12 (If we walk in the ways of our Savior, than the fruit of his Spirit will be evident in our lives; We must not quarrel easily; We must be gentle, patient, and instruct in kindness);
+
+Such Tender Love - March 13 (May we not take for granted anything God has done for us, and may we willingly align our lives with his love);
+
 ## Misc
 
 Христос и Крест (Франко);
