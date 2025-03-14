@@ -927,6 +927,22 @@ Building With Prayer - March 4 (Life with God is a journey of growth, and as we 
 
 Law of Love - March 5 (Rather than slander others, we get curious with compassion; Our duty is to obey what Christ set out for us, and there is nothing he did not emulate himself; Let's follow Christs example of laid-down love);
 
+Living Sacrifice - March 6 (In response to God's marvelous mercies poured over us, offering our lives to him as living sacrifices is our genuine expression of worship);
+
+Willing to Wait - March 7 (Fear pushes us to move without thinking, but the peace of God grounds us in the present; Patience, coupled with an open heart of faith, paves the way for peace as we await the answers to our prayers);
+
+Our Champion - March 8 (When you are submitted to Christ, everything in your life must bow to the power of his mercy; Whatever struggles you are facing, trust God, partner with his promises, and follow his lead);
+
+Led Into Love - March 9 (Open yourself to love today, and you will be led into the endurance of Christ and the holy hope of his promise; Love gave Christ the patience to endure what came his way);
+
+Now is The Time - March 10 (We must consciously live out our days with eternal values instead of buckling under the seeming urgency of endless tasks; You only get one life; be proactive with it);
+
+Sing and Shout - March 11 (God's mercy is palpable, and it moves on our behalf to liberate us; We have fellowship with God because of all he provided);
+
+Love is Gentle - March 12 (If we walk in the ways of our Savior, than the fruit of his Spirit will be evident in our lives; We must not quarrel easily; We must be gentle, patient, and instruct in kindness);
+
+Such Tender Love - March 13 (May we not take for granted anything God has done for us, and may we willingly align our lives with his love);
+
 ## Misc
 
 Христос и Крест (Франко);
