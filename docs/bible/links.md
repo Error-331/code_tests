@@ -943,6 +943,8 @@ Love is Gentle - March 12 (If we walk in the ways of our Savior, than the fruit 
 
 Such Tender Love - March 13 (May we not take for granted anything God has done for us, and may we willingly align our lives with his love);
 
+Room to Move - March 14 (Even when you wander alone, creating difficulties and problems, God's presence brings wisdom, humility, and clarity to recognize your part, repent, and repair);
+
 ## Misc
 
 Христос и Крест (Франко);
