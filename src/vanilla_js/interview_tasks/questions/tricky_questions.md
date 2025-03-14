@@ -131,3 +131,56 @@ setImmediate( () => { // setImmediate1
 ```
 
 Вывод: 5 7 8 9 6
+
+## Задача 8
+
+```javascript
+setTimeout(function timeout() {
+  console.log(1);
+}, 0);
+
+let p = new Promise(function(resolve, reject) {
+  console.log(2);
+  resolve();
+});
+
+p.then(function() {
+  console.log(3);
+});
+
+console.log(4);
+
+// 2 4 3 1
+
+```
+Вывод: 2 4 3 1
+
+## Задача 9
+
+```javascript
+
+const fullname = 'John Doe';
+
+const obj = {
+  fullname: 'Colin Ihrig',
+  prop: {
+    fullname: 'Aurelio De Rosa',
+    getFullname: function() {
+      return this.fullname;
+    },
+  },
+};
+console.log(obj.prop.getFullname()); // 'Aurelio De Rosa',
+
+const test = obj.prop.getFullname;
+
+console.log(test()); // undefined
+console.log(test.call(obj)); // Colin Ihriq
+
+global.fullname = 'John Doe';
+
+console.log(test()); // 'John Doe'
+
+```
+
+Вывод: Aurelio De Rosa, undefined, Colin Ihrig, John Doe
