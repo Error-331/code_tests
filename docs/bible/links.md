@@ -947,6 +947,8 @@ Room to Move - March 14 (Even when you wander alone, creating difficulties and p
 
 Secret Place - March 15 (We can't avoid the turbulence of this world, but our hearts can remain at rest in Gods peace);
 
+Cling to Him - March 16 (Joshua 22:5 KJV);
+
 ## Misc
 
 Христос и Крест (Франко);
