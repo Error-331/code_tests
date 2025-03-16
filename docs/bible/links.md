@@ -945,6 +945,8 @@ Such Tender Love - March 13 (May we not take for granted anything God has done f
 
 Room to Move - March 14 (Even when you wander alone, creating difficulties and problems, God's presence brings wisdom, humility, and clarity to recognize your part, repent, and repair);
 
+Secret Place - March 15 (We can't avoid the turbulence of this world, but our hearts can remain at rest in Gods peace);
+
 ## Misc
 
 Христос и Крест (Франко);
