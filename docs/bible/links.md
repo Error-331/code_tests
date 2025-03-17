@@ -949,6 +949,8 @@ Secret Place - March 15 (We can't avoid the turbulence of this world, but our he
 
 Cling to Him - March 16 (Joshua 22:5 KJV);
 
+Bold Freedom - March 17 (Hebrews 4:15 KJV; Whenever we have an urgent need, we can run to God without fear of whether he will meet us with mercy or not; he will every single time);
+
 ## Misc
 
 Христос и Крест (Франко);
