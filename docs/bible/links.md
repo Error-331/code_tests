@@ -951,6 +951,8 @@ Cling to Him - March 16 (Joshua 22:5 KJV);
 
 Bold Freedom - March 17 (Hebrews 4:15 KJV; Whenever we have an urgent need, we can run to God without fear of whether he will meet us with mercy or not; he will every single time);
 
+Not Far Away - March 18 (Jesus does not take our pain lightly; We don't have to fix the emotional pain of others, but we can bear witness to it; May we follow God's example and draw close to those who need comfort);
+
 ## Misc
 
 Христос и Крест (Франко);
