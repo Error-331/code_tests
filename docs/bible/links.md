@@ -953,6 +953,8 @@ Bold Freedom - March 17 (Hebrews 4:15 KJV; Whenever we have an urgent need, we c
 
 Not Far Away - March 18 (Jesus does not take our pain lightly; We don't have to fix the emotional pain of others, but we can bear witness to it; May we follow God's example and draw close to those who need comfort);
 
+Restored and Raised - March 19 (Prayers of faith can bring strength and relief; Forgiveness and restoration are available when we present ourselves before the Lord and others in humility);
+
 ## Misc
 
 Христос и Крест (Франко);
