@@ -939,7 +939,7 @@ Now is The Time - March 10 (We must consciously live out our days with eternal v
 
 Sing and Shout - March 11 (God's mercy is palpable, and it moves on our behalf to liberate us; We have fellowship with God because of all he provided);
 
-Love is Gentle - March 12 (If we walk in the ways of our Savior, than the fruit of his Spirit will be evident in our lives; We must not quarrel easily; We must be gentle, patient, and instruct in kindness);
+Love is Gentle - March 12 (If we walk in the ways of our Savior, then the fruit of his Spirit will be evident in our lives; We must not quarrel easily; We must be gentle, patient, and instruct in kindness);
 
 Such Tender Love - March 13 (May we not take for granted anything God has done for us, and may we willingly align our lives with his love);
 
@@ -954,6 +954,10 @@ Bold Freedom - March 17 (Hebrews 4:15 KJV; Whenever we have an urgent need, we c
 Not Far Away - March 18 (Jesus does not take our pain lightly; We don't have to fix the emotional pain of others, but we can bear witness to it; May we follow God's example and draw close to those who need comfort);
 
 Restored and Raised - March 19 (Prayers of faith can bring strength and relief; Forgiveness and restoration are available when we present ourselves before the Lord and others in humility);
+
+Lean on Him - March 20 (2 Corinthians 12:9 KJV; We are multi-faceted and made in the image of an emotional and complex God; Weakness is where Christ meets us with the generosity of his mercy and strength);
+
+Outgrowing Old Ways - March 21 (We should not be discouraged or scared when we find old patterns insufficient to hold our growing experience; God is in the unknown as much as he is in the foundations of our faith);
 
 ## Misc
 
