@@ -959,6 +959,8 @@ Lean on Him - March 20 (2 Corinthians 12:9 KJV; We are multi-faceted and made in
 
 Outgrowing Old Ways - March 21 (We should not be discouraged or scared when we find old patterns insufficient to hold our growing experience; God is in the unknown as much as he is in the foundations of our faith);
 
+Choosing Trust - March 22 (When we put our trust in God, we create room for his pools of peace to reside within us);
+
 ## Misc
 
 Христос и Крест (Франко);
