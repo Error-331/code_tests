@@ -961,6 +961,8 @@ Outgrowing Old Ways - March 21 (We should not be discouraged or scared when we f
 
 Choosing Trust - March 22 (When we put our trust in God, we create room for his pools of peace to reside within us);
 
+God of All Comfort - March 23 (Let's not shy away from shouting his goodness from the rooftops when he meets us with miraculous mercy; Let's extend the power of our experience to others through declarations and prayers of faith over others);
+
 ## Misc
 
 Христос и Крест (Франко);
