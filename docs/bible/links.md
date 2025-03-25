@@ -963,6 +963,8 @@ Choosing Trust - March 22 (When we put our trust in God, we create room for his 
 
 God of All Comfort - March 23 (Let's not shy away from shouting his goodness from the rooftops when he meets us with miraculous mercy; Let's extend the power of our experience to others through declarations and prayers of faith over others);
 
+Injustice - March 24 (Psalm 37:7 KJV; When we are worried about how God will deal with others who act with selfish pride and abusive power, the injustice can overwhelm us);
+
 ## Misc
 
 Христос и Крест (Франко);
