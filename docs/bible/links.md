@@ -965,6 +965,8 @@ God of All Comfort - March 23 (Let's not shy away from shouting his goodness fro
 
 Injustice - March 24 (Psalm 37:7 KJV; When we are worried about how God will deal with others who act with selfish pride and abusive power, the injustice can overwhelm us);
 
+Bring Me Closer - March 25 (Don't hesitate to cry out to the Lord, for he answers his people with strength and covers them with his palpable peace);
+
 ## Misc
 
 Христос и Крест (Франко);
