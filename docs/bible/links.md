@@ -967,6 +967,8 @@ Injustice - March 24 (Psalm 37:7 KJV; When we are worried about how God will dea
 
 Bring Me Closer - March 25 (Don't hesitate to cry out to the Lord, for he answers his people with strength and covers them with his palpable peace);
 
+Loosening Expectations - March 26 (Ephesians 4:2 NLT; We must leave room for each other's humanity as we venture in life and relationships; Patience is paramount in keeping the peace, and humility and gentleness allow us to repair relationships when necessary);
+
 ## Misc
 
 Христос и Крест (Франко);
