@@ -969,6 +969,8 @@ Bring Me Closer - March 25 (Don't hesitate to cry out to the Lord, for he answer
 
 Loosening Expectations - March 26 (Ephesians 4:2 NLT; We must leave room for each other's humanity as we venture in life and relationships; Patience is paramount in keeping the peace, and humility and gentleness allow us to repair relationships when necessary);
 
+Miracles of Mercy - March 27 (Invite God to bring to mind his miracles of mercy in your life; If you are having trouble seeing the fingerprints of his kindness, ask the Spirit to reveal where he has been working in the details of your story; Praise God for all he has done in your life);
+
 ## Misc
 
 Христос и Крест (Франко);
