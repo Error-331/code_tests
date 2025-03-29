@@ -971,6 +971,8 @@ Loosening Expectations - March 26 (Ephesians 4:2 NLT; We must leave room for eac
 
 Miracles of Mercy - March 27 (Invite God to bring to mind his miracles of mercy in your life; If you are having trouble seeing the fingerprints of his kindness, ask the Spirit to reveal where he has been working in the details of your story; Praise God for all he has done in your life);
 
+Always Available - March 28 (Our guardian never sleeps; He draws near to the vulnerable and heals the sick; He strengthens the weak and resurrects dead dreams; Never hesitate to call on him, for he sees all and is quick to come to your aid);
+
 ## Misc
 
 Христос и Крест (Франко);
