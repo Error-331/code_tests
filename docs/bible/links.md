@@ -973,6 +973,8 @@ Miracles of Mercy - March 27 (Invite God to bring to mind his miracles of mercy 
 
 Always Available - March 28 (Our guardian never sleeps; He draws near to the vulnerable and heals the sick; He strengthens the weak and resurrects dead dreams; Never hesitate to call on him, for he sees all and is quick to come to your aid);
 
+Wonderful Destiny - March 29 (While we await the full restoration of this world, our lives, and our hopes, the Spirit of God gives us glimpses of the abundant goodness of Christ's eternal kingdom);
+
 ## Misc
 
 Христос и Крест (Франко);
