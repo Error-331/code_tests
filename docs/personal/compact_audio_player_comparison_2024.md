@@ -1,6 +1,15 @@
-https://en.shanling.com/product/424 - Shanling M3 Ultra Green
-
 # Players
+
+## FiiO SnowSky Echo Mini
+
+Link: https://www.ixbt.com/live/digs/fiio-snowsky-echo-mini-stilno-i-moschno-obzor-portativnogo-pleera-s-dopolnitelnym-balansnym-razemom-44.html ;
+
+- Price: 50$;
+- Headphones output: 3.5 mm, 4.4 mm;
+- Internal memory: 8 Gb (up to 256 Gb with microSD);
+- DAC: 2*CS43131;
+- DSD64/128/256 WAV: 24 bits/192 kHz
+- FLAC: 24 bits/192 kb APE: 24 bits/96 kb;
 
 ## Shanling M0s
 
@@ -210,6 +219,29 @@ Pluses:
 - мощный усилитель; 
 - солидный аккумулятор;
 
+## FiiO SnowSky Echo Mini
+
+Link: https://www.ixbt.com/live/digs/fiio-snowsky-echo-mini-stilno-i-moschno-obzor-portativnogo-pleera-s-dopolnitelnym-balansnym-razemom-44.html ;
+
+- Price: 50$;
+- Headphones output: 3.5 mm, 4.4 mm;
+- Internal memory: 8 Gb (up to 256 Gb with microSD);
+- DAC: 2*CS43131;
+- DSD64/128/256 WAV: 24 bits/192 kHz
+- FLAC: 24 bits/192 kb APE: 24 bits/96 kb;
+
 # DACs
 
+## Tanchjim Stargate 2
+
+- Price: 38$;
+- DAC: 1*CS43131;
+- Signals: PCM384kHz/32Bit DSD64/128/256;
+
 ## FiiO Jade Audio KA15
+
+Link: https://www.ixbt.com/live/digs/fiio-jade-audio-ka15-funkcionalnost-i-mosch-obzor-obnovlennogo-portativnogo-capa-s-zhk-ekranom.html ;
+
+- Price: 120$;
+- DAC: 2*CS43198;
+- Amplifier: 2*SGM8262;
