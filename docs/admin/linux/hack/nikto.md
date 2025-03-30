@@ -71,3 +71,13 @@ crontab -e
 Где sites.txt — файл, в котором уже присутствуют нужные сайты.
 
 nikto -e 1 -h webscantest.com   - evasion mode
+
+---------------------------------------------
+
+metagoofil -d kali.org -t pdf,xls -l 200 -n 25 -f results.html
+
+nikto -h <IP address or host name>
+nikto -e 1 -h <IP address or host name> - stealth mode
+nikto -h <IP address or host name> -o <filename>
+
+parsero -u <website domain name>
