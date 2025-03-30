@@ -111,4 +111,27 @@ new Promise((resolve, reject) => {
     return value;
 });*/
 
+doSomethingCritical()
+    .then((result) =>
+        doSomethingOptional(result)
+            .then((optionalResult) => doSomethingExtraNice(optionalResult))
+            .catch((e) => {}),
+    ) // Ignore if optional stuff fails; proceed.
+    .then(() => moreCriticalStuff())
+    .catch((e) => console.error(`Critical failure: ${e.message}`));
+
+
+doSomething()
+    .then(() => {
+        throw new Error("Something failed");
+
+        console.log("Do this");
+    })
+    .catch(() => {
+        console.error("Do that");
+    })
+    .then(() => {
+        console.log("Do this, no matter what happened before");
+    });
+
 
