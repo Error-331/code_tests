@@ -424,7 +424,6 @@ Examples:
 - Fan Page created;
 - User-Agent;
 
-
 #### Ubar Store
 
 Link: https://ubar.store/
@@ -625,7 +624,6 @@ Examples:
 1. V.14 | Via United States Siêu Cổ (No2FA) ;
 - Price: 21.80$ per account;
 - Friend: 30-1000 LIVE ADS Change mail trên 30 ngày Chưa dính IP Việt Năm tạo: 2005-2010 ;
-
 
 ##### Fbsmash.com
 
@@ -858,7 +856,7 @@ Cons:
 - Higher Transaction Fees than Other Marketplaces;
 
 
-#### SocialTradia Review
+#### SocialTradia
 
 Link: https://socialtradia.com/
 
@@ -897,134 +895,163 @@ Examples:
 - Price: 110.00$;
 
 5. About Felines (30.2 k Followers);
-- Link: https://socialtradia.com/product/about-felines-8-1-k-followers/;
+- Link: https://socialtradia.com/product/about-felines-8-1-k-followers/ ;
 - Price: 715.00$;
 
+#### Toofame
 
-Swapd Review
-https://swapd.co/
+Link: https://www.toofame.com/ ;
 
-Types of accounts: YouTube, Facebook, Instagram, TikTok
-Total number of accounts: Hundreds of active forum listings
-Founded: 2012
-Swapd was founded with the idea of vetting members upfront to create a business forum where the buying, selling, and exchanging of social media accounts happens. It doesn’t cost money to become a member, but individuals are checked and verified to ensure the membership forums are full of legitimate buyers and sellers.
-
-This isn’t a full-on auction setup or conventional marketplace, but the marketplace forum threads offer plenty of options for buyers looking for social media accounts.
-
-YouTube, Facebook Groups, and Instagram appear to consist of most marketplace listings.
+- Types of accounts: Instagram ;
+- Total number of accounts: 100+ ;
+- Founded: 2014;
 
 Pros:
 
-Excellent reviews & high level of trust
-Filtering membership upfront helps raise the quality of the forums and marketplace
-High value accounts from multiple social media sites commonly available
+- Excellent display of multiple pictures per account that gives visual feel for account;
+- Very good search function;
+- Rare 7-day money back guarantee;
+- Some potentially undervalued deals among older listings set to 50% off;
+
 Cons:
 
-Filtering system isn’t very good when searching for something specific
-Need to get approved to get access
-Sale support and escrow system not as clearly explained
+- Only focuses on Instagram accounts;
+- Toofame handles the transaction via credit card or PayPal, which will scare off some who prefer to use Escrow.com;
 
-Toofame Review
-https://www.toofame.com/
+Examples:
 
-Types of accounts: Instagram
-Total number of accounts: 100+
-Founded: 2014
-Toofame focuses on niche Instagram accounts that have an active and engaged user base. There are no accounts with 100K followers but no interaction here. The Instagram accounts offered for sale might be slightly smaller on average but the activity level on each is very high, which makes them more valuable.
+1. LAMBORGHINI 124K;
+- Link: https://www.toofame.com/product/lamborghini-124k/ ;
+- Price: 999.00$ ;
+- Followers: 124,133;
+- Average Likes: 2,748;
+- Username: lamborghini_unite;
 
-They even offer a one-week money-back guarantee, something that is unheard of in the social media brokerage world.
+2. CARS 2.3K;
+- Link: https://www.toofame.com/product/cars-2-3k/ ;
+- Price: 49.00$ ;
+- Followers: 2,313;
+- Average Likes: 122;
+- Username: vroomvibe_ss;
+
+3. MOTORCYCLES 4.2K;
+- Link: https://www.toofame.com/product/motorcycles-4-2k/;
+- Price: 139.00$;
+- Followers: 4,209;
+- Average Likes: 136;
+- Username: Motorcyclestrev;
+
+4. FOOD 165K:
+- Link: https://www.toofame.com/product/food-165k/ ;
+- Price: 1,499.00$
+- Followers: 165,032;
+- Average Likes: 7,958;
+- Username: 60sfoodculture;
+
+5. FOOD 23K;
+- Link: https://www.toofame.com/product/fast-food-23k/ ;
+- Price: 199.00$ ;
+- Followers: 23,003;
+- Average Likes: 1,611;
+- Username: food.lover3264;
+
+6. FOOD 8.5K;
+- Link: https://www.toofame.com/product/food-8-5k-2/ ;
+- Price: 89.00$;
+- Followers: 8,542;
+- Average Likes: 110;
+- Username: foodieshouse01;
+
+#### Accs-Market
+
+Link: https://accs-market.com/
+
+- Types of accounts: Instagram, Facebook, YouTube, Twitter, TikTok, Discord, Telegram;
+- Total number of accounts: Approximately 100;
+- Founded: 2013;
+
+* mostly sell pages;
 
 Pros:
 
-Excellent display of multiple pictures per account that gives visual feel for account
-Very good search function
-Rare 7-day money back guarantee
-Some potentially undervalued deals among older listings set to 50% off
+- Listings from a wide array of social media platforms;
+- Some very competitively priced listings;
+- Offerings from a variety of niches;
+- 
 Cons:
 
-Only focuses on Instagram accounts
-Toofame handles the transaction via credit card or PayPal, which will scare off some who prefer to use Escrow.com
+- Some serious concerns about Escrow and issues with scammers;
+- A lot of small listings – fewer middle to large ones to pick from;
+- Quality of listings can vary greatly;
 
+Examples:
 
-Accs-Market Review
-https://accs-market.com/
+1. Profile Facebook ip USA;
+- Link: https://accs-market.com/group/398408 ;
+- Price: 10$ per account;
+- 1 800 — subscribers;
 
-Types of accounts: Instagram, Facebook, YouTube, Twitter, TikTok, Discord, Telegram
-Total number of accounts: Approximately 100
-Founded: 2013
-ACCS-Market has multiple listings from a wide array of social media platforms. That variety can lead to some interesting opportunities not available on other marketplaces that focus on Instagram or just on YouTube.
+2. Top USA;
+- Link: https://accs-market.com/group/406069 ;
+- Price 25$ per account: 
+- 6 700 — subscribers;
 
-The site promises mediation and escrow protection, though there are some mixed reviews on those services. It’s important to be wary of the potential bad, as well. This brokerage has a large number of negative reviews, especially from 2020-2021, as can be seen on TrustPilot here.
+#### EpicNPC
 
-The most recent huge slew of reviews that knock the bad reviews off the top two pages look a lot like a bought reputation management package. Use the filters to look at the reviews and make your own judgements.
+Link: https://www.epicnpc.com/
 
-The majority of reviews are positive, but it’s always important to do proper due diligence.
+- Types of accounts: All social media accounts, mostly gaming focused;
+- Total number of accounts: Hundreds;
+- Founded: 2012;
 
 Pros:
 
-Listings from a wide array of social media platforms
-Some very competitively priced listings
-Offerings from a variety of niches
+- Stunning number (and history) of positive reviews;
+- Excellent social media;
+- Offers refund protection if you get scammed despite their Middleman protections;
+- Long trusted source with over a decade-long track record;
+- 
 Cons:
 
-Some serious concerns about Escrow and issues with scammers
-A lot of small listings – fewer middle to large ones to pick from
-Quality of listings can vary greatly
+- Mostly gaming focused;
+- Separating gaming character accounts from actual social media accounts for sale can take time;
+- Not a lot to choose from outside of gaming-related topics;
 
-EpicNPC Review
-https://www.epicnpc.com/
+#### ViralAccounts
 
-Types of accounts: All social media accounts, mostly gaming focused
-Total number of accounts: Hundreds
-Founded: 2012
-EpicNPC was around in the form of gaming guides since 2010 but the modern form of account trading and social media account buying and selling in their current forum form came in 2012.
+Link: https://viralaccounts.com/
 
-The main focus started as players selling their MMO gaming accounts. This is still a major part of EpicNPC, and most of the social media accounts being sold are going to be gaming related.
-
-This is a niche seller, but it’s one with a sterling reputation for investors looking for something in that space.
-
+- Types of accounts: Facebook, Instagram, YouTube, Twitter, Tumblr
+- Total number of accounts: Unknown
+- Founded: 2010
+- 
 Pros:
 
-Stunning number (and history) of positive reviews
-Excellent social media
-Offers refund protection if you get scammed despite their Middleman protections
-Long trusted source with over a decade-long track record
+- Match potential buyers with on-sale properties that match their needs
+- Wide array of social media profiles accepted for sale
+- Over a decade of experience selling online assets
+
 Cons:
 
-Mostly gaming focused
-Separating gaming character accounts from actual social media accounts for sale can take time
-Not a lot to choose from outside of gaming-related topics
+- No public marketplace to scan for deals
+- Not a lot of transparency about how the process works
+- No guarantee of a response from brokers, or a timetable on when a good fit could be acquired
 
+* Basically you submit your request and wait when the staff on the site will find suitable deal for you; 
+* You cannot browse deals on the site at all;
 
-ViralAccounts Review
-https://viralaccounts.com/
+## Summary (so far)
 
-Types of accounts: Facebook, Instagram, YouTube, Twitter, Tumblr
-Total number of accounts: Unknown
-Founded: 2010
-ViralAccounts focuses on anonymity for buyers and taking the information they provide to create the best matches with social media accounts brought to their brokerage for selling. Unlike many of the other brokers on this list they offer not only social media accounts but websites and online businesses.
+Price range (FB account): 0.21$ - 449$;
+Farm accounts price cap (roughly): 20$;
+Aged account start from (roughly): 15$ and up to 300$ or higher;
 
-The buying process is done by submitting information and being added to a buyer’s list. Instead of having an open marketplace, they contact you when something that meets your needs is entrusted to ViralAccounts for selling.
+Most stores functions like stock exchange - so you need to monitor them from time to time;
 
-Pros:
+## Links
 
-Match potential buyers with on-sale properties that match their needs
-Wide array of social media profiles accepted for sale
-Over a decade of experience selling online assets
-Cons:
-
-No public marketplace to scan for deals
-Not a lot of transparency about how the process works
-No guarantee of a response from brokers, or a timetable on when a good fit could be acquired
-
-
-=====
-
-https://dolphin-anty.com/blog/gde-pokupat-akkaunty-socsetej-top-luchshih-magazinov/
-https://www.blackhatworld.com/
-https://www.blackhatworld.com/forums/social-media.200/
-https://www.morelogin.com/blog/top-10-site-to-buy-facebook-accounts-and-manage-safely
-https://thewebsiteflip.com/review/marketplace-buy-sell-social-accounts/
-
-https://scenum.io/en/
-https://socrobotic.ru/
+- https://dolphin-anty.com/blog/gde-pokupat-akkaunty-socsetej-top-luchshih-magazinov/ - links to shops (ru/ua segment);
+- https://www.morelogin.com/blog/top-10-site-to-buy-facebook-accounts-and-manage-safely - links to shops (us segment);
+- https://www.blackhatworld.com/forums/social-media.200/ - vast amount of FB accounts (not limited by them) related deals;
+- https://scenum.io/en/ - soft account warming up;
+- https://socrobotic.ru/ - soft for account farming (ru language only);
