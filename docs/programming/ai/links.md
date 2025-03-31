@@ -17,6 +17,7 @@
 - https://stability.ai/stable-image - Stable Diffusion (can use for free);
 - https://beta.dreamstudio.ai/generate - Dream Studio;
 - https://easydiffusion.github.io/ - Easy Diffusion (can use for free)
+- https://habr.com/ru/companies/selectel/articles/886120/ - Генератор картинок от разработчиков DeepSeek. Тест-драйв новой нейросети ;
 
 ## Video generation
 
@@ -62,3 +63,9 @@
 
 - https://gpt-index.readthedocs.io/en/latest/ - LlamaIndex;
 - https://docs.chainlit.io/get-started/overview - Chainlit is an open-source Python package to build production ready Conversational AI;
+
+## Hacking
+
+- https://habr.com/ru/news/867828/ - Представлен BoN (Best-of-N) — открытый метод обхода фильтров больших языковых моделей ;
+- https://github.com/jplhughes/bon-jailbreaking - bon-jailbreaking (LLM jailbreaking);
+- https://gandalf.lakera.ai/baseline - Lakera Gandalf security game;
