@@ -977,6 +977,8 @@ Wonderful Destiny - March 29 (While we await the full restoration of this world,
 
 Deepening Friendship - March 30 (be intentional in deepening your relationship with God; It is an ever-deepening relationship with his Spirit where he encourages us in his comforting love, instructs us in his wisdom, and reveals the power of his perspective; Be intentional in deepening your relationship with God);
 
+Like Mighty Waters - March 31 (Psalm 36:6 KJV; Even so, as I perceive glimpses of your glory, expand my wonder and trust; I am but a small part in the larger whole of creation, and that brings me peace, clarity, and relief);
+
 ## Misc
 
 Христос и Крест (Франко);

@@ -25,6 +25,9 @@
 - https://www.aliexpress.com/item/1005006084935735.html?albagn=888888&&src=google&albch=search&acnt=479-062-3723&isdl=y&aff_short_key=UneMJZVf&albcp=15034475726&albag=134062032172&slnk=&trgt=dsa-42862830006&plac=&crea=555011960799&netw=g&device=c&mtctp=&memo1=&albbt=Google_7_search&aff_platform=google&gad_source=1&gclid=Cj0KCQjw4MSzBhC8ARIsAPFOuyWAo1Sz1EVn_M860-_wna7zeZ7u1dp2t_V_IcMJ1xGNZYscn-frIfYaAgUVEALw_wcB&gclsrc=aw.ds - KIRISUN DP990 DMR professional portable radio walkie talkie with AES256 and display compatible to DP4800;
 - https://www.sbitx.net/ - sBitx;
 - https://deeprad.co/QuickStartGuide/ - DeepRAD;
+- https://tigertronics.com/slusbmain.htm - SignaLinkTM USB;
+- https://www.giga.co.za/ocart/index.php?route=product/product&product_id=351 - "EASY DIGI" Baofeng UV-5R INTERFACE for laptops, desktops and Raspberry with usb audio (Easy Digi) Assembled;
+- https://www.ebay.com/itm/321221531105?chn=ps&_trkparms=ispr%3D1&amdata=enc%3A1m53OV6o2SNubmCWV-pBRwQ36&norover=1&mkevt=1&mkrid=711-167653-853678-5&mkcid=2&itemid=321221531105&targetid=325425753764&device=c&mktype=pla&googleloc=9194773&poi=&campaignid=22148080055&mkgroupid=175386547804&rlsatarget=pla-325425753764&abcId=&merchantid=6296724&gad_source=1&gclid=Cj0KCQjwtJ6_BhDWARIsAGanmKcLggc2v_GgnS-RwoAAROURPkyjYIgEaKozSYcDb7KnK3eBRWeNU6kaAle_EALw_wcB - "EASY DIGI™" UV-5R INTERFACE for IPhone/IPad/IPod Touch ;
 
 ### Handheld
 

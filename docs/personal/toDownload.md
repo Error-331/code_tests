@@ -45,3 +45,7 @@ https://www.ebook3000.co/mastering-typescript-3-third-edition/
 
 https://dmkpress.com/catalog/computer/programming/algorithms/978-5-94074-804-5/ - СОВРЕМЕННЫЙ САМОУЧИТЕЛЬ ПО АЛГОРИТМАМ
 https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСКРЕТНАЯ МАТЕМАТИКА. АЛГОРИТМЫ: ТЕОРИЯ И ПРАКТИКА
+
+## Games
+
+- https://dosgames.com/game/radix-beyond-the-void/#google_vignette - Radix: Beyond the Void;
