@@ -979,6 +979,8 @@ Deepening Friendship - March 30 (be intentional in deepening your relationship w
 
 Like Mighty Waters - March 31 (Psalm 36:6 KJV; Even so, as I perceive glimpses of your glory, expand my wonder and trust; I am but a small part in the larger whole of creation, and that brings me peace, clarity, and relief);
 
+Rest in Hope - April 1 (Hope is not only an anchor for our souls; it's also a place where we can rest; Rejoicing is an appropriate response to the Lord's faithfulness; Instead of rushing through times of grounded trust, we can ease deeply into the rest available there; We don't always need to be riding high or sinking low);
+
 ## Misc
 
 Христос и Крест (Франко);
