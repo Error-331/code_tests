@@ -981,6 +981,8 @@ Like Mighty Waters - March 31 (Psalm 36:6 KJV; Even so, as I perceive glimpses o
 
 Rest in Hope - April 1 (Hope is not only an anchor for our souls; it's also a place where we can rest; Rejoicing is an appropriate response to the Lord's faithfulness; Instead of rushing through times of grounded trust, we can ease deeply into the rest available there; We don't always need to be riding high or sinking low);
 
+Satisfied By Presence - April 2 (God's touch is enough to quiet our anxiety and bring relief to our overwhelmed senses; God's touch is enough to quiet our anxiety and bring relief to our overwhelmed senses; God - you are my perfect parent);
+
 ## Misc
 
 Христос и Крест (Франко);
