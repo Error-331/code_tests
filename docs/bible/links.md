@@ -983,6 +983,8 @@ Rest in Hope - April 1 (Hope is not only an anchor for our souls; it's also a pl
 
 Satisfied By Presence - April 2 (God's touch is enough to quiet our anxiety and bring relief to our overwhelmed senses; God's touch is enough to quiet our anxiety and bring relief to our overwhelmed senses; God - you are my perfect parent);
 
+Patient Endurance - April 3 (No matter where this finds you today - whether you are going through a dark night of the soul, facing challenges you don't know how to overcome, or living in the ease of a peaceful season - God's grace is available);
+
 ## Misc
 
 Христос и Крест (Франко);
