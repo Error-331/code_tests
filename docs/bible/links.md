@@ -985,6 +985,8 @@ Satisfied By Presence - April 2 (God's touch is enough to quiet our anxiety and 
 
 Patient Endurance - April 3 (No matter where this finds you today - whether you are going through a dark night of the soul, facing challenges you don't know how to overcome, or living in the ease of a peaceful season - God's grace is available);
 
+Close to His Heart - April 4 (Isaiah 40:11 NLT; As I relax into your arms, I want to hear your heartbeat as you carry me through the storm; I trust you, and I love you; Keep me safe in your embrace);
+
 ## Misc
 
 Христос и Крест (Франко);
