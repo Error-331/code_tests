@@ -987,6 +987,8 @@ Patient Endurance - April 3 (No matter where this finds you today - whether you 
 
 Close to His Heart - April 4 (Isaiah 40:11 NLT; As I relax into your arms, I want to hear your heartbeat as you carry me through the storm; I trust you, and I love you; Keep me safe in your embrace);
 
+We Need Each Other - April 5 (May we not overlook the power of testimonies of faith from those before us and with us; Take me outside my limited experience and encourage me through the testimonies of faith around and before me);
+
 ## Misc
 
 Христос и Крест (Франко);
