@@ -989,6 +989,8 @@ Close to His Heart - April 4 (Isaiah 40:11 NLT; As I relax into your arms, I wan
 
 We Need Each Other - April 5 (May we not overlook the power of testimonies of faith from those before us and with us; Take me outside my limited experience and encourage me through the testimonies of faith around and before me);
 
+Infused with Strength - April 6 (Isaiah 41:10 KJV);
+
 ## Misc
 
 Христос и Крест (Франко);
