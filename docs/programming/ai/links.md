@@ -69,3 +69,7 @@
 - https://habr.com/ru/news/867828/ - Представлен BoN (Best-of-N) — открытый метод обхода фильтров больших языковых моделей ;
 - https://github.com/jplhughes/bon-jailbreaking - bon-jailbreaking (LLM jailbreaking);
 - https://gandalf.lakera.ai/baseline - Lakera Gandalf security game;
+
+## Articles (misc)
+
+- https://habr.com/ru/companies/amvera/articles/897830/ - Личный ИИ-ассистент на ваших данных. Часть 1: Векторная база ChromaDB + DeepSeek | GPT ;

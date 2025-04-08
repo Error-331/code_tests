@@ -991,6 +991,10 @@ We Need Each Other - April 5 (May we not overlook the power of testimonies of fa
 
 Infused with Strength - April 6 (Isaiah 41:10 KJV);
 
+Breaking Through - April 7 (The promise of abundant life is not in how much wealth we garner of how easy our lives may seem. It is in the abundance of peace, joy, love, and the other wonderful fruits of the Spirit's work in our lives!);
+
 ## Misc
 
 Христос и Крест (Франко);
+
+Though the night seems like it may never end, morning always comes and with it, and the hope of a new day.
