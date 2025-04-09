@@ -3,7 +3,6 @@
 - SMS activators are services that provide phone numbers for SMS activation for profiles on major websites or social networks;
 - In order not to look for physical SIM cards, user can use SMS activation services;
 
-
 ## Sms-activate
 
 Link: https://sms-activate.world/
@@ -12,14 +11,14 @@ One of the popular services for SMS activation. According to the service, it is 
 
 Features:
 
-Buying numbers for popular sites. It is possible to order for any other site or application, if it is not on the list.
-Full number rental.
-Number rental for one site.
-Repeated reception of SMS messages after activation is complete. Available for numbers that are still online.
-You can order access restoration for MTT operator numbers. Service cost: 100 rubles for each month from the date of activation.
-Call forwarding for Avito, Yula, Yandex. You can also order call forwarding for any other service.
-185 countries of the world.
-Statistics of the best-selling countries.
+- Buying numbers for popular sites. It is possible to order for any other site or application, if it is not on the list;
+- Full number rental;
+- Number rental for one site;
+- Repeated reception of SMS messages after activation is complete. Available for numbers that are still online;
+- You can order access restoration for MTT operator numbers. Service cost: 100 rubles for each month from the date of activation;
+- Call forwarding for Avito, Yula, Yandex. You can also order call forwarding for any other service;
+- 185 countries of the world;
+- Statistics of the best-selling countries;
 
 ## Grizzly SMS
 
@@ -30,13 +29,13 @@ Link: https://grizzlysms.com/
 
 Features: 
 
-Numbers for popular services, websites, social networks, payment systems and other resources.
-If the required service is not in the list, you can select the "Other number" option;
-More than 100 countries for ordering a number;
-Special conditions for wholesale buyers;
-API for work;
-Rent a number for 20 minutes;
-10% cashback on the first top-up from 1,000 rubles.
+- Numbers for popular services, websites, social networks, payment systems and other resources;
+- If the required service is not in the list, you can select the "Other number" option;
+- More than 100 countries for ordering a number;
+- Special conditions for wholesale buyers;
+- API for work;
+- Rent a number for 20 minutes;
+- 10% cashback on the first top-up from 1,000 rubles;
 
 ## OnlineSIM
 
@@ -48,10 +47,10 @@ Link: https://onlinesim.io/
 
 Features:
 
-Receiving SMS messages for many popular sites.
-The "Other sites" button if the required resource is not in the list. You can also send a request to add a site to the list.
-49 countries of the world.
-Rent a number for 14 countries for 1, 3, 7, 15 and 30 days. You can receive SMS messages from any sites and applications without restrictions.
+- Receiving SMS messages for many popular sites;
+- The "Other sites" button if the required resource is not in the list. You can also send a request to add a site to the list;
+- 49 countries of the world;
+- Rent a number for 14 countries for 1, 3, 7, 15 and 30 days. You can receive SMS messages from any sites and applications without restrictions;
 
 ## VAK-sms
 
@@ -62,10 +61,10 @@ Link: https://vak-sms.com/
 
 Features: 
 
-14 countries.
-Selection of operators for each GEO.
-Accept messages from over 90 services.
-If you need to re-receive an SMS message to a previously ordered number, you can order a number extension. To do this, the number must be online.
+- 14 countries;
+- Selection of operators for each GEO;
+- Accept messages from over 90 services;
+- If you need to re-receive an SMS message to a previously ordered number, you can order a number extension. To do this, the number must be online;
 
 ## SimSMS
 
@@ -77,10 +76,11 @@ Link: https://simsms.org/
 
 Features:
 
-42 countries with the ability to choose an operator.
-More than 100 services for ordering SMS activation. You can buy a number for any other site that is not on the list.
-There is call forwarding.
-Long-term number rental. Payment is made for the specified period for one selected service.
+- 42 countries with the ability to choose an operator;
+- More than 100 services for ordering SMS activation. You can buy a number for any other site that is not on the list;
+- There is call forwarding;
+- Long-term number rental. Payment is made for the specified period for one selected service;
+
 
 ## 5sim
 
@@ -92,11 +92,11 @@ Link: https://5sim.net/
 
 Features:
 
-186 countries.
-Work with popular sites and applications. The number of available platforms for booking numbers depends on the selected GEO.
-If the required platform is not in the list, you can select "Other". This option is not available in all GEOs.
-Long-term rental of a number for 3 hours, 1 day, 10 days and 1 month.
-Large reserve of numbers in popular countries.
+- 186 countries;
+- Work with popular sites and applications. The number of available platforms for booking numbers depends on the selected GEO;
+- If the required platform is not in the list, you can select "Other". This option is not available in all GEOs;
+- Long-term rental of a number for 3 hours, 1 day, 10 days and 1 month;
+- Large reserve of numbers in popular countries;
 
 ## SMS-REG
 
@@ -108,10 +108,10 @@ Link: https://sms-reg.com/
 
 Features:
 
-4 countries are available for one-time use: Russia, Ukraine, Kazakhstan and China.
-30 sites and applications for activation. If the desired site is not on the list, you can select "Other".
-If the previously purchased number is still working, you can order reactivation.
-Rent a virtual number for 6 countries: Russia, Ukraine, Kazakhstan, Great Britain, Poland and Sweden.
+- 4 countries are available for one-time use: Russia, Ukraine, Kazakhstan and China;
+- 30 sites and applications for activation. If the desired site is not on the list, you can select "Other";
+- If the previously purchased number is still working, you can order reactivation;
+- Rent a virtual number for 6 countries: Russia, Ukraine, Kazakhstan, Great Britain, Poland and Sweden;
 
 ## SMS-acktiwator
 
@@ -122,12 +122,12 @@ Link: https://sms-acktiwator.ru/
 
 Features:
 
-Accepts SMS messages from 6 countries: Russia, Ukraine, Uzbekistan, Great Britain, Indonesia and Estonia.
-For each country there is a choice of operators.
-More than 150 sites are available.
-Rent a number for 1, 7, 20, 30 and 90 days.
-Call forwarding for Avito, VKontakte, Yula and Yandex.
-
+- Accepts SMS messages from 6 countries: Russia, Ukraine, Uzbekistan, Great Britain, Indonesia and Estonia;
+- For each country there is a choice of operators;
+- More than 150 sites are available;
+- Rent a number for 1, 7, 20, 30 and 90 days;
+- Call forwarding for Avito, VKontakte, Yula and Yandex;
+- 
 ## SMS-MAN
 
 Link: https://sms-man.ru/
@@ -138,13 +138,13 @@ Link: https://sms-man.ru/
 
 Features: 
 
-2300+ services for activation;
-Numbers from 182 countries;
-Number rental from 1 hour to 90 days;
-All possible services are available for number rental, numbers from 23 countries;
-Telegram bot for receiving SMS messages (authorization via API Key, which is available in your personal account);
-API for mass and automated work with accounts;
-There is a PC application through which you can use the service.
+- 2300+ services for activation;
+- Numbers from 182 countries;
+- Number rental from 1 hour to 90 days;
+- All possible services are available for number rental, numbers from 23 countries;
+- Telegram bot for receiving SMS messages (authorization via API Key, which is available in your personal account);
+- API for mass and automated work with accounts;
+- There is a PC application through which you can use the service;
 
 ## PVACodes
 
@@ -154,26 +154,26 @@ SMS receiving service with a user-friendly interface and a large number of count
 
 Features: 
 
-A large number of countries
-Many supported services
-Clear interface
-When replenishing, a certain package of credits is purchased.
+- A large number of countries;
+- Many supported services;
+- Clear interface;
+- When replenishing, a certain package of credits is purchased;
 
 ## SIMOnline
 
 Link: https://simonline.su/ru
 
-SMS reception online is carried out on Ukrainian numbers. 
-Not all functions of the service work. 
-One of the advantages is the ability to receive SMS for free.
+- SMS reception online is carried out on Ukrainian numbers;
+- Not all functions of the service work;
+- One of the advantages is the ability to receive SMS for free;
 
 Features:
 
-Public numbers for free SMS reception
-Pages take a long time to load
-Some functionality does not work.
-Only Ukrainian numbers
-Problems may arise when working from the Russian Federation
+- Public numbers for free SMS reception;
+- Pages take a long time to load;
+- Some functionality does not work;
+- Only Ukrainian numbers;
+- Problems may arise when working from the Russian Federation;
 
 ## 365SMS
 
@@ -183,11 +183,11 @@ The 365SMS service provides the ability to receive SMS messages to a virtual num
 
 Features: 
 
-Fully automated service ensures low cost and high speed of service provision.
-The number is issued for 20 minutes. During this time, you can receive an unlimited number of SMS absolutely free of charge.
-You pay only for the received message. If the number does not receive the SMS, the money will be returned to the balance.
-Wide range of services and countries for SMS activations.
-Convenient API for comfortable work with third-party software.
+- Fully automated service ensures low cost and high speed of service provision;
+- The number is issued for 20 minutes. During this time, you can receive an unlimited number of SMS absolutely free of charge;
+- You pay only for the received message. If the number does not receive the SMS, the money will be returned to the balance;
+- Wide range of services and countries for SMS activations;
+- Convenient API for comfortable work with third-party software;
 
 ## SMSpva
 
@@ -197,12 +197,12 @@ English language service. Real SIM cards are used to receive SMS.
 
 Features:
 
-Large number of countries
-Many supported services
-English language site – automatic translation
-Real SIM cards
-Long-term lease of phone numbers
-Shop of ready-made accounts
+- Large number of countries;
+- Many supported services;
+- English language site – automatic translation;
+- Real SIM cards;
+- Long-term lease of phone numbers;
+- Shop of ready-made accounts;
 
 ## CheapSMS
 
@@ -213,11 +213,11 @@ Link: https://cheap-sms.com/
 
 Features:
 
-Russian numbers only
-Many supported services
-Rent for 30 minutes
-Numbers for one person
-API
+- Russian numbers only;
+- Many supported services;
+- Rent for 30 minutes;
+- Numbers for one person;
+- API;
 
 ## Give-SMS
 
@@ -226,12 +226,12 @@ Link: https://give-sms.com/
 - An online service offering rental of virtual numbers to confirm accounts on certain sites and applications that require confirmation via SMS or an incoming call.
 - More than 80 countries and more than 500 services are available to choose from. Long-term rental of phone numbers is available.
 
-Features
+Features:
 
-API
-80+ countries
-500+ services
-Long-term lease
+- API;
+- 80+ countries;
+- 500+ services;
+- Long-term lease;
 
 ## GetSMS
 
@@ -243,11 +243,11 @@ Link: https://getsms.online/ru/
 
 Features:
 
-Only RU and KZ
-Free repeat SMS
-Long-term lease of numbers
-API
-Ability to activate accounts in 200 threads
+- Only RU and KZ;
+- Free repeat SMS;
+- Long-term lease of numbers;
+- API;
+- Ability to activate accounts in 200 threads;
 
 ## getsmscode.com
 
@@ -269,11 +269,11 @@ Link: https://sms-online.pro/
 - Fully automated service for receiving SMS messages online;
 - Receive SMS messages to a virtual number from any available services;
 
-Features
+Features:
 
-API
-Demo mode
-Long loading pages
+- API;
+- Demo mode;
+- Long loading pages;
 
 ## Proovl
 
@@ -284,9 +284,9 @@ Link: https://www.proovl.com/
 
 Features:
 
-English language service
-Free numbers for test SMS reception
-Number rental from 7 days.
+- English language service;
+- Free numbers for test SMS reception;
+- Number rental from 7 days;
 
 ## Textverified
 
@@ -310,10 +310,10 @@ Link: https://smshub.org/ru/home
 
 Features:
 
-Does not work with RU ip.
-Activation prices are set by number providers.
-Many available services
-API
+- Does not work with RU ip;
+- Activation prices are set by number providers;
+- Many available services;
+- API;
 
 ## SMS SERVICE
 
@@ -324,9 +324,9 @@ Link: https://sms-activation-service.net/
 
 Features:
 
-API
-Rent a room for 20 minutes
-Long term rent
+- API;
+- Rent a room for 20 minutes;
+- Long term rent;
 
 ## freeje
 
@@ -339,8 +339,8 @@ Link: https://www.freeje.com/
 
 Features: 
 
-3 personal accounts
-There is a Telegram bot
+- 3 personal accounts;
+- There is a Telegram bot;
 
 ## SMMSMS
 
@@ -350,10 +350,10 @@ SMS numbers from 125 rubles (short or long term).
 
 Features:
 
-You may not receive a letter with authorization information
-Quite expensive prices
-Room rental from 15 minutes
-Long-term rental from 1 day
+- You may not receive a letter with authorization information;
+- Quite expensive prices;
+- Room rental from 15 minutes;
+- Long-term rental from 1 day;
 
 ## sms-area
 
@@ -363,8 +363,8 @@ A service for renting numbers for receiving SMS with limited functionality and a
 
 Features:
 
-Few countries
-Flexible rental period
+- Few countries;
+- Flexible rental period;
 
 ## TIGER SMS
 
@@ -375,9 +375,9 @@ Link: https://tiger-sms.store/
 
 Features:
 
-There are free numbers
-There is a Telegram bot
-1 SMS to 1 number
+- There are free numbers;
+- There is a Telegram bot;
+- 1 SMS to 1 number;
 
 ## SMSCodes.io
 
@@ -388,10 +388,10 @@ Link: https://www.smscodes.io/#google_vignette
 
 Features:
 
-Registration bonus - $0.50
-Long-term arena
-Real numbers
-Receiving calls for verification
+- Registration bonus - $0.50;
+- Long-term arena;
+- Real numbers;
+- Receiving calls for verification;
 
 ## PVAPins
 
@@ -401,9 +401,9 @@ Simple and clear SMS receiving service.
 
 Features:
 
-API
-Many countries
-Many supported services
+- API;
+- Many countries;
+- Many supported services;
 
 ## Sms-receive
 
@@ -413,8 +413,8 @@ A phone number rental service with minimal functionality.
 
 Features:
 
-No personal account
-Rent rooms from 15 days
+- No personal account;
+- Rent rooms from 15 days;
 
 ## SMSI.VIP
 
@@ -425,10 +425,10 @@ Link: https://smsi.vip/
 
 Features:
 
-Few countries
-Not all emails can be registered
-There are free numbers
-API
+- Few countries;
+- Not all emails can be registered;
+- There are free numbers;
+- API;
 
 ## TOP SMS BOT
 
@@ -440,8 +440,8 @@ Link: https://t.me/TOPSMSBOT
 
 Features:
 
-Variety of services and countries
-Possibility of balance withdrawal
+- Variety of services and countries;
+- Possibility of balance withdrawal;
 
 ## SMSBest_bot
 
@@ -451,8 +451,8 @@ Functional Telegram bot for SMS activations.
 
 Features:
 
-More than 100 countries and 600 services
-Rent up to 2 weeks
-Receiving up to 100 SMS per number while the number is active.
-Multiservice – several services per 1 number
-Can accept a call
+- More than 100 countries and 600 services;
+- Rent up to 2 weeks;
+- Receiving up to 100 SMS per number while the number is active;
+- Multiservice – several services per 1 number;
+- Can accept a call;
