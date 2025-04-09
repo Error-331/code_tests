@@ -1459,3 +1459,23 @@ Prices:
 - 30 days: $3;
 - 60 days: $6;
 - 90 days: $9;
+
+## HydraProxy
+
+Residential Proxy Pricing:
+
+- 1 Gb - 50 Gb: $5 per Gb;
+- 50 Gb - 150 Gb: $4 per Gb;
+- 150 GB - 1000 GB: $3 per Gb;
+- More Than 1 TB: $2.5 per Gb;
+
+Mobile Proxy Pricing:
+
+- 1 Day Access: $2.95;
+- 3 Days Access: $7.95;
+- 7 Days Access: $15.95;
+- 30 Days Access: $59.95;
+
+Static Mobile Proxy Pricing:
+
+- 1 Port / 24: $3.00 per day;
