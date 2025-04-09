@@ -54,7 +54,7 @@ This allows you to use multiple accounts on services such as Facebook, Instagram
 Anti-detect Browser helps to bypass the protection of websites from data collection and is a convenient tool for quick web scraping without the need to install and configure 
 complex programs.
 
-## Мультиаккаунтинг в Digital-агентствах
+## Multi-accounting in Digital Agencies
 
 - Many agencies do not launch advertising from their own accounts, but try to create a separate account for each client;
 - Social networks and advertising networks are against any multi-accounting and can ban these working accounts;
