@@ -993,6 +993,8 @@ Infused with Strength - April 6 (Isaiah 41:10 KJV);
 
 Breaking Through - April 7 (The promise of abundant life is not in how much wealth we garner of how easy our lives may seem. It is in the abundance of peace, joy, love, and the other wonderful fruits of the Spirit's work in our lives!);
 
+Confident Freedom - April 8 (We don't need to convince God of anything; we simply offer our lives as reflections of gratitude, honor, and love; Let's go into the day free from fear and live as Christ has shown us how to live);
+
 ## Misc
 
 Христос и Крест (Франко);
