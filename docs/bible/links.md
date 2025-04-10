@@ -995,6 +995,8 @@ Breaking Through - April 7 (The promise of abundant life is not in how much weal
 
 Confident Freedom - April 8 (We don't need to convince God of anything; we simply offer our lives as reflections of gratitude, honor, and love; Let's go into the day free from fear and live as Christ has shown us how to live);
 
+Benefits Of Discipline - April 9 (Hebrews 12:7 KJV; As we remain open to his correction, he teaches us);
+
 ## Misc
 
 Христос и Крест (Франко);
