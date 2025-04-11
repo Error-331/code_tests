@@ -997,6 +997,8 @@ Confident Freedom - April 8 (We don't need to convince God of anything; we simpl
 
 Benefits Of Discipline - April 9 (Hebrews 12:7 KJV; As we remain open to his correction, he teaches us);
 
+Family of Faith - April 10 (Ephesians 4:4-6; We are connected through a common bond, and we get to choose to put on the cloak of love in all our relationships);
+
 ## Misc
 
 Христос и Крест (Франко);
