@@ -999,6 +999,8 @@ Benefits Of Discipline - April 9 (Hebrews 12:7 KJV; As we remain open to his cor
 
 Family of Faith - April 10 (Ephesians 4:4-6; We are connected through a common bond, and we get to choose to put on the cloak of love in all our relationships);
 
+Strengthened by Grace - April 11 (We aren't brought into the kingdom of God by grace only to strive to keep our standing from there on out);
+
 ## Misc
 
 Христос и Крест (Франко);
