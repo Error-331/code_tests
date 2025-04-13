@@ -1001,6 +1001,8 @@ Family of Faith - April 10 (Ephesians 4:4-6; We are connected through a common b
 
 Strengthened by Grace - April 11 (We aren't brought into the kingdom of God by grace only to strive to keep our standing from there on out);
 
+Poetry of God - April 12 (As we live with intention and surrender to God, we are working out the poetry of God; May we be filled with divine strength to reveal the poetry of God's will in and through our lives);
+
 ## Misc
 
 Христос и Крест (Франко);
