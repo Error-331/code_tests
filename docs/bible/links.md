@@ -1003,6 +1003,8 @@ Strengthened by Grace - April 11 (We aren't brought into the kingdom of God by g
 
 Poetry of God - April 12 (As we live with intention and surrender to God, we are working out the poetry of God; May we be filled with divine strength to reveal the poetry of God's will in and through our lives);
 
+Sacrificial Praise - April 13 (This life is the only opportunity we have to offer God our sacrifice of praise; Still, when we choose to offer God our "yet, will I praise" with sincere and hopeful (trusting, desperate) hearts, we honor him; A gratitude of grace emanates from our surrendered lives);
+
 ## Misc
 
 Христос и Крест (Франко);
