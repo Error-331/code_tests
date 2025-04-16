@@ -1009,6 +1009,8 @@ Courageous Hope - April 14 (Whatever you need, whatever you lack, is found in th
 
 Spirit of Belonging - April 15 (Our Father is not to be feared but honored and adored, for that is how he treats us; Thank you. As many ways as I can say it: thank you);
 
+Never Ignored - April 16 (God, the ever-present one, guides us through obstacle courses in front of us as well listen and look to him);
+
 ## Misc
 
 Христос и Крест (Франко);
