@@ -1005,6 +1005,10 @@ Poetry of God - April 12 (As we live with intention and surrender to God, we are
 
 Sacrificial Praise - April 13 (This life is the only opportunity we have to offer God our sacrifice of praise; Still, when we choose to offer God our "yet, will I praise" with sincere and hopeful (trusting, desperate) hearts, we honor him; A gratitude of grace emanates from our surrendered lives);
 
+Courageous Hope - April 14 (Whatever you need, whatever you lack, is found in the abundant and gracious presence of God; Come boldly: come as often as you like);
+
+Spirit of Belonging - April 15 (Our Father is not to be feared but honored and adored, for that is how he treats us; Thank you. As many ways as I can say it: thank you);
+
 ## Misc
 
 Христос и Крест (Франко);
