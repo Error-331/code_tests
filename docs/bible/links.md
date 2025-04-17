@@ -1011,6 +1011,8 @@ Spirit of Belonging - April 15 (Our Father is not to be feared but honored and a
 
 Never Ignored - April 16 (God, the ever-present one, guides us through obstacle courses in front of us as well listen and look to him);
 
+Fullness of Love - April 17 (If your understanding of the love of God has felt stale, may you encounter the extravagance of it in new ways today; Walk in faith and expect him to meet you as  you venture through the ordinary and extraordinary areas of life);
+
 ## Misc
 
 Христос и Крест (Франко);
