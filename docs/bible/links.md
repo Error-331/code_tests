@@ -1013,6 +1013,10 @@ Never Ignored - April 16 (God, the ever-present one, guides us through obstacle 
 
 Fullness of Love - April 17 (If your understanding of the love of God has felt stale, may you encounter the extravagance of it in new ways today; Walk in faith and expect him to meet you as  you venture through the ordinary and extraordinary areas of life);
 
+Enlightened - April 18 (The hope of Christ's calling and the riches of his inheritance were not reserved for those who came before but for all throughout history who come to Christ and yield their lives to him, and this includes you);
+
+Only Hope - April 19 (Psalm 39:7; Even when you struggle to believe God is near, he will not let you down or leave you alone);
+
 ## Misc
 
 Христос и Крест (Франко);
