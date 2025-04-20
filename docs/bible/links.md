@@ -1017,6 +1017,8 @@ Enlightened - April 18 (The hope of Christ's calling and the riches of his inher
 
 Only Hope - April 19 (Psalm 39:7; Even when you struggle to believe God is near, he will not let you down or leave you alone);
 
+Led By Truth - April 20 (We get to partner with the God and experience his help whenever we need it, but we also get to choose to walk in the ways of his love);
+
 ## Misc
 
 Христос и Крест (Франко);
