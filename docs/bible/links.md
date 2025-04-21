@@ -1019,6 +1019,8 @@ Only Hope - April 19 (Psalm 39:7; Even when you struggle to believe God is near,
 
 Led By Truth - April 20 (We get to partner with the God and experience his help whenever we need it, but we also get to choose to walk in the ways of his love);
 
+What Reward - April 21 (Though there is pressures to endlessly perform or figure things out on our own, we find wisdom, strength, and strategy when we take a step back; Instead of rushing ahead to meet needs that come up today, take some time to wait on God when you are overwhelmed);
+
 ## Misc
 
 Христос и Крест (Франко);
