@@ -1021,6 +1021,8 @@ Led By Truth - April 20 (We get to partner with the God and experience his help 
 
 What Reward - April 21 (Though there is pressures to endlessly perform or figure things out on our own, we find wisdom, strength, and strategy when we take a step back; Instead of rushing ahead to meet needs that come up today, take some time to wait on God when you are overwhelmed);
 
+True Children - April 22 (Our identities are made new in him as he offers us his name; If we follow his ways and lead with love, mercy, kindness, and justice, we reflect God's image in our lives);
+
 ## Misc
 
 Христос и Крест (Франко);
