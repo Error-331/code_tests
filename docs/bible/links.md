@@ -1023,6 +1023,8 @@ What Reward - April 21 (Though there is pressures to endlessly perform or figure
 
 True Children - April 22 (Our identities are made new in him as he offers us his name; If we follow his ways and lead with love, mercy, kindness, and justice, we reflect God's image in our lives);
 
+Unfastened Chains - April 23 (Whether it's physical, emotional, or spiritual freedom we seek, it is found in the power of God);
+
 ## Misc
 
 Христос и Крест (Франко);
