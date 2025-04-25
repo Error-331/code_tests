@@ -1025,6 +1025,10 @@ True Children - April 22 (Our identities are made new in him as he offers us his
 
 Unfastened Chains - April 23 (Whether it's physical, emotional, or spiritual freedom we seek, it is found in the power of God);
 
+Choose Life - April 24 (Abundant life is not found in wealth or power; it is sharing the riches of his mercy; Christ is the key);
+
+Return to Him - April 25 (His presence empowers us even in our turning);
+
 ## Misc
 
 Христос и Крест (Франко);
