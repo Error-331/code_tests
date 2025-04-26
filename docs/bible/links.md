@@ -1029,6 +1029,8 @@ Choose Life - April 24 (Abundant life is not found in wealth or power; it is sha
 
 Return to Him - April 25 (His presence empowers us even in our turning);
 
+Fully Accounted For - April 26 (When we make room for others` grief, our solidarity conveys that their sorrow matters; May we trust the Lord, and may we show up for each other in times of grief without trying to fix it);
+
 ## Misc
 
 Христос и Крест (Франко);
