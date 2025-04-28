@@ -1031,6 +1031,8 @@ Return to Him - April 25 (His presence empowers us even in our turning);
 
 Fully Accounted For - April 26 (When we make room for others` grief, our solidarity conveys that their sorrow matters; May we trust the Lord, and may we show up for each other in times of grief without trying to fix it);
 
+Expectations of Glory - April 27 (Tune in to the presence of God that is not only around you but settled inside you; Try to get known and experience this wonderful reality in ways that expand your understanding of his nature and deepen your love);
+
 ## Misc
 
 Христос и Крест (Франко);
