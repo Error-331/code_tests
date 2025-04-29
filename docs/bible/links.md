@@ -1033,6 +1033,8 @@ Fully Accounted For - April 26 (When we make room for others` grief, our solidar
 
 Expectations of Glory - April 27 (Tune in to the presence of God that is not only around you but settled inside you; Try to get known and experience this wonderful reality in ways that expand your understanding of his nature and deepen your love);
 
+Good God - April 28 (Psalm 25:8 KJV; Recount the ways you have experienced God's goodness in the land of the living in the details and in larger picture; The Lord is good);
+
 ## Misc
 
 Христос и Крест (Франко);
