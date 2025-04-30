@@ -1035,6 +1035,8 @@ Expectations of Glory - April 27 (Tune in to the presence of God that is not onl
 
 Good God - April 28 (Psalm 25:8 KJV; Recount the ways you have experienced God's goodness in the land of the living in the details and in larger picture; The Lord is good);
 
+Reliable Messengers - April 29 (There is healing in the ease of trustworthy friends; Be faithful to your word, let integrity guard your heart, and say no when you can't follow through);
+
 ## Misc
 
 Христос и Крест (Франко);
