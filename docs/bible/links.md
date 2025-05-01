@@ -1037,6 +1037,8 @@ Good God - April 28 (Psalm 25:8 KJV; Recount the ways you have experienced God's
 
 Reliable Messengers - April 29 (There is healing in the ease of trustworthy friends; Be faithful to your word, let integrity guard your heart, and say no when you can't follow through);
 
+Help the Weak - April 30 (It is more blessed to give than to receive; Helping the weak isn't an optional add-on to our faith; it's a core principal; May God be glorified in our generosity);
+
 ## Misc
 
 Христос и Крест (Франко);
