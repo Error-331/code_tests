@@ -1041,8 +1041,12 @@ Help the Weak - April 30 (It is more blessed to give than to receive; Helping th
 
 Stronghold of Love - May 1 (As we partner with his peace, and we follow in the ways of Christ, we sow seeds of trust as we choose his love);
 
+Dawn of Healing - May 2 (MALACHI 4:2 NASB; This God of ours sent his Son to rise on us with healing, peace, and salvation);
+
 ## Misc
 
 Христос и Крест (Франко);
 
 Though the night seems like it may never end, morning always comes and with it, and the hope of a new day.
+
+...go forth and frolic... (MALACHI 4:2 NASB)
