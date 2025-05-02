@@ -1039,6 +1039,8 @@ Reliable Messengers - April 29 (There is healing in the ease of trustworthy frie
 
 Help the Weak - April 30 (It is more blessed to give than to receive; Helping the weak isn't an optional add-on to our faith; it's a core principal; May God be glorified in our generosity);
 
+Stronghold of Love - May 1 (As we partner with his peace, and we follow in the ways of Christ, we sow seeds of trust as we choose his love);
+
 ## Misc
 
 Христос и Крест (Франко);
