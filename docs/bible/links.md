@@ -1045,6 +1045,8 @@ Dawn of Healing - May 2 (MALACHI 4:2 NASB; This God of ours sent his Son to rise
 
 Like You Promised - May 3 (Reminding yourself that God will come through while connecting with him in prayer is a way to build faith and hold on to hope);
 
+Shine Bright - May 4 (There is nothing better than coming alive to whom God has created you to be; Who are you is not a mistake, and he loves you completely; You can't offend God with your thoughts - he's seen it all; Trust God to redirect you when necessary);
+
 ## Misc
 
 Христос и Крест (Франко);
