@@ -1043,6 +1043,8 @@ Stronghold of Love - May 1 (As we partner with his peace, and we follow in the w
 
 Dawn of Healing - May 2 (MALACHI 4:2 NASB; This God of ours sent his Son to rise on us with healing, peace, and salvation);
 
+Like You Promised - May 3 (Reminding yourself that God will come through while connecting with him in prayer is a way to build faith and hold on to hope);
+
 ## Misc
 
 Христос и Крест (Франко);
