@@ -1049,6 +1049,8 @@ Shine Bright - May 4 (There is nothing better than coming alive to whom God has 
 
 No Matter What - May 5 (We can't escape the presence of God. What good news!);
 
+Soul Worth - May 6 (When we offer our lives to Christ we find security, peace, and wisdom; "I refuse to be enchanted by the empty promises of the world or trade my integrity for a thrill");
+
 ## Misc
 
 Христос и Крест (Франко);

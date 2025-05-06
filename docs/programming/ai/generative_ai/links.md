@@ -30,3 +30,7 @@
 ### Nude art
 
 - https://m.joyreactor.cc/post/5468538;
+
+### Hacks
+
+- https://www.rumidocs.com/newsroom/new-chatgpt-models-seem-to-leave-watermarks-on-text?utm_source=Securitylab.ru - New ChatGPT Models Seem to Leave Watermarks on Text;

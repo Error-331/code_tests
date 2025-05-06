@@ -46,6 +46,9 @@
 - https://www.dsdplus.com/ - DSDPlus;
 - https://www.hdsdr.de/index.html - HDSDR;
 - https://www.open-tx.org/ - OpenTX is open source firmware for RC radio transmitters;
+- https://www.flexradio.com/ssdr/?srsltid=AfmBOoovMJNhrIM8ERo2QE-WJbMCqbHJ2kQ77vamo-wZSJxmZgIxShcO - Flex Radio;
+- https://magicsdr.com/ - Magic SDR (macOS, IOS,Android);
+- https://sourceforge.net/projects/hampi/files/ - HamPi;
 
 ## Hacking
 
