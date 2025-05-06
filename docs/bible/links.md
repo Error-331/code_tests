@@ -1047,6 +1047,8 @@ Like You Promised - May 3 (Reminding yourself that God will come through while c
 
 Shine Bright - May 4 (There is nothing better than coming alive to whom God has created you to be; Who are you is not a mistake, and he loves you completely; You can't offend God with your thoughts - he's seen it all; Trust God to redirect you when necessary);
 
+No Matter What - May 5 (We can't escape the presence of God. What good news!);
+
 ## Misc
 
 Христос и Крест (Франко);
