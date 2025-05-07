@@ -1051,6 +1051,8 @@ No Matter What - May 5 (We can't escape the presence of God. What good news!);
 
 Soul Worth - May 6 (When we offer our lives to Christ we find security, peace, and wisdom; "I refuse to be enchanted by the empty promises of the world or trade my integrity for a thrill");
 
+Kindness to All - May 7 (Matthew 5:47-48; It's time to rise above the status quo and live the way Christ told us to);
+
 ## Misc
 
 Христос и Крест (Франко);
