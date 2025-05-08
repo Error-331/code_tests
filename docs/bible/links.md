@@ -1053,6 +1053,8 @@ Soul Worth - May 6 (When we offer our lives to Christ we find security, peace, a
 
 Kindness to All - May 7 (Matthew 5:47-48; It's time to rise above the status quo and live the way Christ told us to);
 
+Honorable Hope - May 8 (When we live with hope even in the heaviest times, others will take notice; If someone sees your hope, peace, or love and asks where it comes from, be ready to give a thoughtful answer);
+
 ## Misc
 
 Христос и Крест (Франко);
