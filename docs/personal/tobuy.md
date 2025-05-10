@@ -167,6 +167,8 @@ https://www.aliexpress.com/item/1005006356682421.html?af=4810729_1&cv=46313710&c
 https://dronhack.com/hackrf-one-portapack-h2-komplekt-maximum/ - HackRF one PortaPack H2 Комплект Maximum 2;
 https://www.aliexpress.com/item/1005006484571411.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.10.7c4dcMtOcMtOLt&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40196.417130.0&scm_id=1007.40196.417130.0&scm-url=1007.40196.417130.0&pvid=3b9ed038-fdac-4427-b595-869cb51bdcc6&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40196.417130.0,pvid:3b9ed038-fdac-4427-b595-869cb51bdcc6,tpp_buckets:668%232846%238109%231935&pdp_ext_f=%7B%22order%22%3A%2217%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=4%40dis%21UAH%211457.78%211436.65%21%21%2134.50%2134.00%21%40210388c917453602664216228e805e%2112000037379246047%21rec%21UA%21%21ABX&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A - 40km LOS Long Range Wireless Transmitter and Receiver 1.2Ghz 1.3Ghz 8W for FPV UAV Application;
 
+https://mysku.club/blog/china-stores/54239.html - Eachine ROTG01 UVC (fpv приемник);
+
 ## Декор
 
 ### Разное
