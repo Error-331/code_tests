@@ -1055,6 +1055,8 @@ Kindness to All - May 7 (Matthew 5:47-48; It's time to rise above the status quo
 
 Honorable Hope - May 8 (When we live with hope even in the heaviest times, others will take notice; If someone sees your hope, peace, or love and asks where it comes from, be ready to give a thoughtful answer);
 
+Treasures of Wisdom - May 9 (It is our honor to search out the wisdom of God like hidden treasure);
+
 ## Misc
 
 Христос и Крест (Франко);
