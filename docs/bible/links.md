@@ -1057,6 +1057,10 @@ Honorable Hope - May 8 (When we live with hope even in the heaviest times, other
 
 Treasures of Wisdom - May 9 (It is our honor to search out the wisdom of God like hidden treasure);
 
+Intentional Pursuit - May 10 (The intentional pursuit of our hearts should not be on what we can build for ourselves in this world; Money can buy many things, but it can't buy soul satisfaction);
+
+Wholehearted Living - May 11 (Matthew 22:37 KJV);
+
 ## Misc
 
 Христос и Крест (Франко);
