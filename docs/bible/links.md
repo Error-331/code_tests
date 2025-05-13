@@ -1061,6 +1061,10 @@ Intentional Pursuit - May 10 (The intentional pursuit of our hearts should not b
 
 Wholehearted Living - May 11 (Matthew 22:37 KJV);
 
+Faith Rewards - May 12 (God is not a narcissist who asks for more than we can give or more than he deserves. What he asks us to do, he has already done himself);
+
+Guard Your Heart - May 13 (Luke 12:15 TPT; We don't judge others based on what they have; we focus on the fixations of our hearts);
+
 ## Misc
 
 Христос и Крест (Франко);

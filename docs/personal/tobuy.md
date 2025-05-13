@@ -311,6 +311,8 @@ https://www.ixbt.com/live/digs/fiio-ja11-obzor-portativnogo-capa-nachalnogo-urov
 - https://www.1701.cz/produkt/podtacek-disketa/ - Podtácek – disketa;
 - https://www.1701.cz/produkt/retro-podlozka-pod-mys-kvalita-b-ruzne-motivy/ - Retro podložka pod myš, kvalita B, různé motivy;
 - https://www.1701.cz/?utm_source=firmy.cz&utm_medium=ppd&utm_campaign=firmy.cz-13326382 - Retroherní a retroIT „věci“ vlastní výroby;
+- https://www.aliexpress.com/item/1005008358278774.html?spm=a2g0o.tm1000009216.d130.1.5924474cu9ZIMl&sourceType=561&pvid=3106baac-7659-4e24-a197-328714f12155&pdp_ext_f=%7B%22ship_from%22:%22CN%22,%22sku_id%22:%2212000044711729813%22%7D&scm=1007.28480.425796.0&scm-url=1007.28480.425796.0&scm_id=1007.28480.425796.0&pdp_npi=4%40dis%21UAH%211%C2%A0062%2C14%20%D0%B3%D1%80%D0%BD.%21350%2C52%20%D0%B3%D1%80%D0%BD.%21%21%21180.55%2159.59%21%40211b680e17468285222521752e4afc%2112000044711729813%21gsd%21UA%21%21X&channel=sd&aecmd=true - MTG Card Deck Box, Copyrighted Design，Fits 100+ Single Sleeved Cards, Magnetic Closure PU Leather Card Box for TCG Cards;
+- https://www.waveshare.com/wiki/SIM7600-dongle-test - SIM7600X 4G DONGLE;
 
 ## На ближайшее время
 
