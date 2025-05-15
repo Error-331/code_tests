@@ -1065,6 +1065,10 @@ Faith Rewards - May 12 (God is not a narcissist who asks for more than we can gi
 
 Guard Your Heart - May 13 (Luke 12:15 TPT; We don't judge others based on what they have; we focus on the fixations of our hearts);
 
+Wonderful Fruit - May 14 (Instead of looking for piety in specific religious traditions, we should look for evidence of the fruit of the Spirit: the values of Christ and his  eternal kingdom; Where there is true love, there is God; Where there is overflowing joy, Spirit is at work);
+
+Obedience Reveals - May 15 (1 John 2:5-6; Let's be people of our word and wearing integrity as a cloak, not to hide, but to reveal ourselves as true followers of Christ);
+
 ## Misc
 
 Христос и Крест (Франко);
