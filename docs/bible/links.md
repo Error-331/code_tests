@@ -1069,6 +1069,8 @@ Wonderful Fruit - May 14 (Instead of looking for piety in specific religious tra
 
 Obedience Reveals - May 15 (1 John 2:5-6; Let's be people of our word and wearing integrity as a cloak, not to hide, but to reveal ourselves as true followers of Christ);
 
+Enduring Hope - May 16 (Put your faith into practice and let love motivate you to serve others; Through it all, allow Christ's hope-filled patience to inspire your endurance);
+
 ## Misc
 
 Христос и Крест (Франко);
