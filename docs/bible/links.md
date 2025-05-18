@@ -1071,6 +1071,8 @@ Obedience Reveals - May 15 (1 John 2:5-6; Let's be people of our word and wearin
 
 Enduring Hope - May 16 (Put your faith into practice and let love motivate you to serve others; Through it all, allow Christ's hope-filled patience to inspire your endurance);
 
+Selah - May 17 (God is a benevolent father and fiercely trustworthy; Breaks are as important to the art of living as active participation; Learn to embrace the rest and reflect on God's faithfulness through it all);
+
 ## Misc
 
 Христос и Крест (Франко);
