@@ -1073,6 +1073,8 @@ Enduring Hope - May 16 (Put your faith into practice and let love motivate you t
 
 Selah - May 17 (God is a benevolent father and fiercely trustworthy; Breaks are as important to the art of living as active participation; Learn to embrace the rest and reflect on God's faithfulness through it all);
 
+Re-Created - May 18 (In Christ, we find more than hope; we find a refreshed vision for life; His life within ours brings us into deep union with the Father);
+
 ## Misc
 
 Христос и Крест (Франко);
