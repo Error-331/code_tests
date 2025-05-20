@@ -1075,6 +1075,8 @@ Selah - May 17 (God is a benevolent father and fiercely trustworthy; Breaks are 
 
 Re-Created - May 18 (In Christ, we find more than hope; we find a refreshed vision for life; His life within ours brings us into deep union with the Father);
 
+Powerful Patience - May 19 (Engaging in arguments rarely works in the favor of one desiring change; gentle wisdom can melt the strongest defense);
+
 ## Misc
 
 Христос и Крест (Франко);
