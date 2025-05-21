@@ -1077,6 +1077,8 @@ Re-Created - May 18 (In Christ, we find more than hope; we find a refreshed visi
 
 Powerful Patience - May 19 (Engaging in arguments rarely works in the favor of one desiring change; gentle wisdom can melt the strongest defense);
 
+Everlasting Life - May 20 (Read through the verse (JOHN 3:16 ESV) again, but before you do, ask the Holy Spirit to bring it to life in you with revelation and deeper understanding; As you allow the light of the Spirit to guide your understanding, meditate on the aspects he illuminates throughout your day and let his truth sink deeper with each reflection);
+
 ## Misc
 
 Христос и Крест (Франко);
@@ -1084,3 +1086,5 @@ Powerful Patience - May 19 (Engaging in arguments rarely works in the favor of o
 Though the night seems like it may never end, morning always comes and with it, and the hope of a new day.
 
 ...go forth and frolic... (MALACHI 4:2 NASB)
+
+Spirit of God, enlighten the eyes of my heart and reveal deeper meaning through the reading of your Word today. I want to know you more.
