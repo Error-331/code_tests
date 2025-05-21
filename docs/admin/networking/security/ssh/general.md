@@ -216,6 +216,24 @@ mUP/w/jfqb9ByDtG97tUJF6nFMP5WzhM= user2@client1.net
 
 ```
 
+#### Manual adding of public keys
+
+Create `.ssh` directory in the `home` directory of the user:
+
+```shell
+
+mkdir -p ~/.ssh
+
+```
+
+Copy key to `authorized_keys` file:
+
+```shell
+
+echo {public_key_string} >> ~/.ssh/authorized_keys
+
+```
+
 ## The SSH Agent
 
 - user can run a single ssh-agent in his/her local login session, before running any SSH clients; 
