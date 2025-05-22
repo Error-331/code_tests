@@ -1079,6 +1079,8 @@ Powerful Patience - May 19 (Engaging in arguments rarely works in the favor of o
 
 Everlasting Life - May 20 (Read through the verse (JOHN 3:16 ESV) again, but before you do, ask the Holy Spirit to bring it to life in you with revelation and deeper understanding; As you allow the light of the Spirit to guide your understanding, meditate on the aspects he illuminates throughout your day and let his truth sink deeper with each reflection);
 
+Led By The Spirit - May 21 (The life of Christ within us is more than enough to satisfy the Father; In areas of life where we have settled into resentment and resistance, may we taste the liberty that is ours in Christ);
+
 ## Misc
 
 Христос и Крест (Франко);
@@ -1088,3 +1090,5 @@ Though the night seems like it may never end, morning always comes and with it, 
 ...go forth and frolic... (MALACHI 4:2 NASB)
 
 Spirit of God, enlighten the eyes of my heart and reveal deeper meaning through the reading of your Word today. I want to know you more.
+
+Spirit, lead me. Set me free from cycles of fear, shame, and striving. I want to rest in the peace of your presence knowing your life in mine is worth more than anything I could find on earth. I am yours.
