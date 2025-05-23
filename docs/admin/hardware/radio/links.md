@@ -36,6 +36,12 @@
 - https://www.joom.com/uk/products/61a70b6066691101d17d0397?variant_id=61d7b57453bb9e46c19f0cff - ATS-20 SI4735;
 - https://www.joom.com/uk/products/65a11801da06b701935066b9?variant_id=65a11801da06b76f935066bb - ATS25 Si4732;
 
+### Transceivers
+
+- https://www.hfsignals.com/index.php/zbitx/ - zbitx;
+- https://qrp-labs.com/qmx.html - QMX;
+- https://www.amazon.com/transceiver-5-Band-Multimode-Assembled-PE1NNZ/dp/B0BJ247SNL?pd_rd_w=CfM5c&content-id=amzn1.sym.751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_p=751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_r=RDBHEW0TMN376Z3Q110D&pd_rd_wg=vGwWR&pd_rd_r=9a09bf1c-245a-4e7b-a0ca-94032f4122ab&pd_rd_i=B0BJ247SNL&psc=1&linkCode=sl1&tag=leahnass0b-20&linkId=3fce31cee51f84e1bb2336fde323e09e&language=en_US&ref_=as_li_ss_tl - tr usdx;
+
 ### Antennas
 
 - https://www.aliexpress.com/item/1005006818794615.html?src=google&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005006818794615&ds_e_product_merchant_id=5337748526&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19373879459&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjwg8qzBhAoEiwAWagLrFWIW06N61QV2VGZWxg55DfqjBha-yQZZeubet_FmnBaajwVMDOm7BoCunIQAvD_BwE&aff_fcid=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&terminal_id=c706d8eac47948cebdf6f377cbecd6b1&afSmartRedirect=y - Latest PAC-12 7MHz-50MHz 100W Multi Band HF Shortwave GP Outdoor Slide Regulator Portable Antenna QRP For Ham Radio; 
