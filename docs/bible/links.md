@@ -1081,6 +1081,8 @@ Everlasting Life - May 20 (Read through the verse (JOHN 3:16 ESV) again, but bef
 
 Led By The Spirit - May 21 (The life of Christ within us is more than enough to satisfy the Father; In areas of life where we have settled into resentment and resistance, may we taste the liberty that is ours in Christ);
 
+Time to Retell - May 22 (When we remember what God has done in the past, our present hopes can be strengthened; The faithfulness of God in our history fuels our faith as we look to the future;);
+
 ## Misc
 
 Христос и Крест (Франко);
