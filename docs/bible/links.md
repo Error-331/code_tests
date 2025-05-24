@@ -1083,6 +1083,8 @@ Led By The Spirit - May 21 (The life of Christ within us is more than enough to 
 
 Time to Retell - May 22 (When we remember what God has done in the past, our present hopes can be strengthened; The faithfulness of God in our history fuels our faith as we look to the future;);
 
+Perfect Love - May 23 (Fear is related to punishment, but love removes that fear from our hearts; Where there is fear, ask the perfect love of your God and Father to flood your being);
+
 ## Misc
 
 Христос и Крест (Франко);
