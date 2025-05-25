@@ -1085,6 +1085,8 @@ Time to Retell - May 22 (When we remember what God has done in the past, our pre
 
 Perfect Love - May 23 (Fear is related to punishment, but love removes that fear from our hearts; Where there is fear, ask the perfect love of your God and Father to flood your being);
 
+More to Discover - May 24 (Let's dare to let our imaginations expand our understanding of God's great goodness toward all);
+
 ## Misc
 
 Христос и Крест (Франко);
