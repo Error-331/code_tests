@@ -1087,6 +1087,8 @@ Perfect Love - May 23 (Fear is related to punishment, but love removes that fear
 
 More to Discover - May 24 (Let's dare to let our imaginations expand our understanding of God's great goodness toward all);
 
+Our Only Way - May 25 (John 14:6 KJV; Christ is the way; Jesus is the source of every good thing);
+
 ## Misc
 
 Христос и Крест (Франко);
