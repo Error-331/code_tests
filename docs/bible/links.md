@@ -1089,6 +1089,8 @@ More to Discover - May 24 (Let's dare to let our imaginations expand our underst
 
 Our Only Way - May 25 (John 14:6 KJV; Christ is the way; Jesus is the source of every good thing);
 
+Carried By God - May 26 (God graciously carries us when we don't know where to go);
+
 ## Misc
 
 Христос и Крест (Франко);
