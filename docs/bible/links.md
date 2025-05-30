@@ -1091,6 +1091,8 @@ Our Only Way - May 25 (John 14:6 KJV; Christ is the way; Jesus is the source of 
 
 Carried By God - May 26 (God graciously carries us when we don't know where to go);
 
+Joy in Waiting - May 27 (There is wisdom in practices of patience; Nothing is better than encountering God; Wait upon the Lord);
+
 ## Misc
 
 Христос и Крест (Франко);
