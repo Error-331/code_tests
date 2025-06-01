@@ -1097,6 +1097,8 @@ True Wisdom Acts - May 28 (Wisdom is not in hearing but in doing; We can respect
 
 No Shame - May 29 (Shame is the sensation of distress we get when we feel we've done wrong or being foolish in our choices; Putting our hope in God will not lead us to this breaking point; he leads us to victory);
 
+Lift Holy Hands - May 30 (Prayer is a tool that connects us to God; Whenever you feel frustration creeping in, turn to God in prayer);
+
 ## Misc
 
 Христос и Крест (Франко);
