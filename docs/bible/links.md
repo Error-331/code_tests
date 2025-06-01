@@ -1093,6 +1093,8 @@ Carried By God - May 26 (God graciously carries us when we don't know where to g
 
 Joy in Waiting - May 27 (There is wisdom in practices of patience; Nothing is better than encountering God; Wait upon the Lord);
 
+True Wisdom Acts - May 28 (Wisdom is not in hearing but in doing; We can respect Jesus all we like, but if we never walk in his ways, the foundation we build on is faulty);
+
 ## Misc
 
 Христос и Крест (Франко);
