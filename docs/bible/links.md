@@ -1095,6 +1095,8 @@ Joy in Waiting - May 27 (There is wisdom in practices of patience; Nothing is be
 
 True Wisdom Acts - May 28 (Wisdom is not in hearing but in doing; We can respect Jesus all we like, but if we never walk in his ways, the foundation we build on is faulty);
 
+No Shame - May 29 (Shame is the sensation of distress we get when we feel we've done wrong or being foolish in our choices; Putting our hope in God will not lead us to this breaking point; he leads us to victory);
+
 ## Misc
 
 Христос и Крест (Франко);

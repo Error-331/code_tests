@@ -10,6 +10,7 @@
 - https://cloud.google.com/docs/quotas/quota-project - Quota project overview;
 - https://cloud.google.com/nodejs/docs/reference - Node.js Cloud Client Libraries;
 - https://cloud.google.com/docs/authentication/application-default-credentials - How Application Default Credentials works;
+- https://github.com/googleapis/gax-nodejs/blob/main/client-libraries.md#creating-the-client-instance - Client Libraries HOWTO;
 
 ### Identity platform
 
