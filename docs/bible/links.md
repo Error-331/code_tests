@@ -1099,6 +1099,8 @@ No Shame - May 29 (Shame is the sensation of distress we get when we feel we've 
 
 Lift Holy Hands - May 30 (Prayer is a tool that connects us to God; Whenever you feel frustration creeping in, turn to God in prayer);
 
+Creative Energy - May 31 (Our hearts can learn to recognize the creative energy of his Spirit; He is still making all things new; Look to your Creator and find the spark of inspiration to carry you through the looming night ahead);
+
 ## Misc
 
 Христос и Крест (Франко);
