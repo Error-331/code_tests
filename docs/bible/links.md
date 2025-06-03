@@ -1101,6 +1101,10 @@ Lift Holy Hands - May 30 (Prayer is a tool that connects us to God; Whenever you
 
 Creative Energy - May 31 (Our hearts can learn to recognize the creative energy of his Spirit; He is still making all things new; Look to your Creator and find the spark of inspiration to carry you through the looming night ahead);
 
+Preserved by Integrity - June 1 (Wisdom practices restraint and makes space before rushing ahead; Fear and anxiety are quick motivators, but they are poor planners; We wait because the one we wait upon is faithful.);
+
+Holding You Back - June 2 (Open your heart, mind, and life to God and watch how he fulfills his promises);
+
 ## Misc
 
 Христос и Крест (Франко);
