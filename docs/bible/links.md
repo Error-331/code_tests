@@ -1105,6 +1105,8 @@ Preserved by Integrity - June 1 (Wisdom practices restraint and makes space befo
 
 Holding You Back - June 2 (Open your heart, mind, and life to God and watch how he fulfills his promises);
 
+Hospitable Hearts - June 3 (When we treat the "least" with care and respect, we partner with God's heart);
+
 ## Misc
 
 Христос и Крест (Франко);
