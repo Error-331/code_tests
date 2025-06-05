@@ -1107,6 +1107,8 @@ Holding You Back - June 2 (Open your heart, mind, and life to God and watch how 
 
 Hospitable Hearts - June 3 (When we treat the "least" with care and respect, we partner with God's heart);
 
+Proven Authenticity - June 4 (2 Corinthians 6:4 NCV);
+
 ## Misc
 
 Христос и Крест (Франко);
