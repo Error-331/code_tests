@@ -1109,6 +1109,8 @@ Hospitable Hearts - June 3 (When we treat the "least" with care and respect, we 
 
 Proven Authenticity - June 4 (2 Corinthians 6:4 NCV);
 
+Banner of Love - June 5 (God is love; The virtues of God are expressions of love in its various  forms);
+
 ## Misc
 
 Христос и Крест (Франко);
