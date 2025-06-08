@@ -1111,6 +1111,8 @@ Proven Authenticity - June 4 (2 Corinthians 6:4 NCV);
 
 Banner of Love - June 5 (God is love; The virtues of God are expressions of love in its various  forms);
 
+Unshakeable Peace - June 6 (The peace of God is unshakeable; God will not remove his covenant of peace with you - no matter what);
+
 ## Misc
 
 Христос и Крест (Франко);
