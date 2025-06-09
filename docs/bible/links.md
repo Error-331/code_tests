@@ -1113,6 +1113,12 @@ Banner of Love - June 5 (God is love; The virtues of God are expressions of love
 
 Unshakeable Peace - June 6 (The peace of God is unshakeable; God will not remove his covenant of peace with you - no matter what);
 
+Multiplied Measures - June 7 (God has infinitely more to offer in the plentiful presence of his being);
+
+Woven In - June 8 (Colossians 2:2 KJV; Each of us is a beautiful thread in the tapestry of his goodness);
+
+Healing Fragrance - June 9 (The love of Christ reveals the love the Father has for us; His powerful mercy can restore what seems beyond repair);
+
 ## Misc
 
 Христос и Крест (Франко);
