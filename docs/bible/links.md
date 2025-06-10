@@ -1119,6 +1119,8 @@ Woven In - June 8 (Colossians 2:2 KJV; Each of us is a beautiful thread in the t
 
 Healing Fragrance - June 9 (The love of Christ reveals the love the Father has for us; His powerful mercy can restore what seems beyond repair);
 
+Tempered Strength - June 10 (Proverbs 16:32 KJV; Seek counsel, find outlets that don't harm others, and remain accountable; Seek repair and be humble);
+
 ## Misc
 
 Христос и Крест (Франко);

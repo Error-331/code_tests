@@ -59,6 +59,10 @@
 - https://cloud.google.com/docs/quotas/reference/rest/v1/organizations.locations.quotaPreferences/create - Method: organizations.locations.quotaPreferences.create;
 - https://cloud.google.com/docs/quotas/reference/rest/v1/projects.locations.quotaPreferences/patch - Method: projects.locations.quotaPreferences.patch;
 
+## Compute
+
+- https://cloud.google.com/compute/docs/disks/resize-persistent-disk#console_1 - Increase the size of a persistent disk;
+
 ## Firebase
 
 - https://firebase.google.com/docs/projects/api/workflow_set-up-and-manage-project?platform=web - Set up and manage a Firebase project using the Management REST API;
