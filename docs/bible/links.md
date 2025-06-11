@@ -1121,6 +1121,8 @@ Healing Fragrance - June 9 (The love of Christ reveals the love the Father has f
 
 Tempered Strength - June 10 (Proverbs 16:32 KJV; Seek counsel, find outlets that don't harm others, and remain accountable; Seek repair and be humble);
 
+Covered And Confident - June 11 (Psalm 91:4 KJV);
+
 ## Misc
 
 Христос и Крест (Франко);
