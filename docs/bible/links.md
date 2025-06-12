@@ -1123,6 +1123,8 @@ Tempered Strength - June 10 (Proverbs 16:32 KJV; Seek counsel, find outlets that
 
 Covered And Confident - June 11 (Psalm 91:4 KJV);
 
+He Truly Understands - June 12 (When we are tempted to sin in our weakness, may we remember God understands temptation, and he has a way to help us out of it; Let's lean into the leadership of God and ask for grace to choose his ways.);
+
 ## Misc
 
 Христос и Крест (Франко);
