@@ -1129,6 +1129,8 @@ All For Freedom - June 13 (God never intended for people to be slaves under the 
 
 A Taste - June 14 (When we know the tender care of a loving parent, it is but a taste of what God feels for us; When we consider all the ways we have known mortal love in its most tender, truest forms, they can direct our expectation and hope to the God who loves in grander and greater measure);
 
+How Much Longer - June 15 (Psalm 6:8 KJV; The book of Psalms reveals the range of our human experience as well as the ability to be honest before the Lord);
+
 ## Misc
 
 Христос и Крест (Франко);
