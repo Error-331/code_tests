@@ -1131,6 +1131,8 @@ A Taste - June 14 (When we know the tender care of a loving parent, it is but a 
 
 How Much Longer - June 15 (Psalm 6:8 KJV; The book of Psalms reveals the range of our human experience as well as the ability to be honest before the Lord);
 
+Comforted By Christ - June 16 (Instead of shying away from pain, either in ourselves or in others, may we become more like Christ and meet the pain with loving acceptance, support, and even defiant hope);
+
 ## Misc
 
 Христос и Крест (Франко);
