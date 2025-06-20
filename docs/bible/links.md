@@ -1139,6 +1139,8 @@ Living Stones - June 18 (We choose kindness rather than judgment, for we know th
 
 Not Lacking - June 19 (James 1:4 KJV; Endurance is not the most exciting thing to focus on, yet it is absolutely necessary);
 
+For Your Sake - June 20 (It is better to build a private practice of righteousness than to flaunt our so-called goodness for others to praise us; Let's be consistent in righteousness and goodness whether no one is looking your way or whether others recognize us);
+
 ## Misc
 
 Христос и Крест (Франко);
