@@ -1133,6 +1133,12 @@ How Much Longer - June 15 (Psalm 6:8 KJV; The book of Psalms reveals the range o
 
 Comforted By Christ - June 16 (Instead of shying away from pain, either in ourselves or in others, may we become more like Christ and meet the pain with loving acceptance, support, and even defiant hope);
 
+Keep Holding On - June 17 (Choosing to walk in the ways of his mercy will always keep us on his path; Persevering through hard times with hope alive in your heart is a beautiful reflection of holding on);
+
+Living Stones - June 18 (We choose kindness rather than judgment, for we know that to be human is to struggle; With our spiritual sacrifices, we lay our lives down in practical love to our Savior);
+
+Not Lacking - June 19 (James 1:4 KJV; Endurance is not the most exciting thing to focus on, yet it is absolutely necessary);
+
 ## Misc
 
 Христос и Крест (Франко);

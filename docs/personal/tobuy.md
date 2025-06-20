@@ -169,6 +169,17 @@ https://www.aliexpress.com/item/1005006484571411.html?spm=a2g0o.detail.pcDetailT
 
 https://mysku.club/blog/china-stores/54239.html - Eachine ROTG01 UVC (fpv приемник);
 
+
+#### FPV
+
+https://prom.ua/p2346834419-peredatchik-fpv-vtx.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_b2b_265945592&gad_source=1&gad_campaignid=20690754680&gbraid=0AAAAADBxJSWhY4BYy6wrSNdid57YMXhiO&gclid=CjwKCAjw6s7CBhACEiwAuHQcknMKCe94gLJIudS_oIwSyTJoOL6FVMap7QMfrbi6MoHR132gsT1KRRoC1skQAvD_BwE - Передатчик FPV, VTX 1,5GHz, 1500mW;
+https://prom.ua/p2180554607-besprovodnyj-peredatchik-video.html - Беспроводный передатчик видео и аудио 1.2GHz 1,5W 8Ch PARTOM TX 1500T ;
+https://www.aliexpress.com/item/1005007050164301.html?src=google&pdp_npi=4%40dis!UAH!5490.66!1592.27!!!!!%40!12000039267609384!ppc!!!&snps=y&snpsid=1&src=google&albch=shopping&acnt=742-864-1166&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005007050164301&ds_e_product_merchant_id=5377477686&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=22482221664&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22482221274&gbraid=0AAAAA99aYpc_zQ0ZMbDnk6f9sfzsfsWvV&gclid=CjwKCAjw6s7CBhACEiwAuHQckhxa95zDPq4M39hSW8FMfq5dFp48c6CnRrmKYbjhgFuV3ZjjOqH96BoCumIQAvD_BwE - FPV 1.2Ghz 1.2G 8CH 1500mw Wireless AV Sender TV Audio Video Transmitter Receiver For QAV250 250 FPV RC Quadcopter;
+https://prom.ua/p2346834422-peredatchik-dlya-fpv.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_b2b_265945592&gad_source=1&gad_campaignid=20690754680&gbraid=0AAAAADBxJSWhY4BYy6wrSNdid57YMXhiO&gclid=CjwKCAjw6s7CBhACEiwAuHQckg6IYQIM26xsdYpccBMvCDXvMJ5hZoYVEyrzRrmTsNGJkmPs5a96iRoCzVMQAvD_BwE - Передатчик для FPV, VTX 1,2GHz, 1000mW ;
+https://www.aliexpress.com/item/1005007472566694.html?src=google&pdp_npi=4%40dis!UAH!3915.30!1331.21!!!!!%40!12000040899516604!ppc!!!&snps=y&snpsid=1&src=google&albch=shopping&acnt=742-864-1166&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&&albagn=888888&&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005007472566694&ds_e_product_merchant_id=5354444177&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=22482221664&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=22482221274&gbraid=0AAAAA99aYpc_zQ0ZMbDnk6f9sfzsfsWvV&gclid=CjwKCAjw6s7CBhACEiwAuHQckg9o2UhoYVmPxf9jt_NylG7zGwMKzu31CqV4Kxt3sbEEUKsPQOJ1GxoC1r4QAvD_BwE - LST 1.2Ghz 1W 1.6W 2W 2-8S Switchable VTX Video Transmitter Module 1.2G 8Ch VRX Heat Dissipation Shell For Long Range FPV Drone;
+https://dron-shop.com.ua/ru-ru/fpv/vtx/rush-dual-band-vtx - Rush 1.3G/3.3G Dual-Band VTX – видеопередатчик на две частоты - Dron-Shop;
+https://ekran.in.ua/p2576480728-videokonverter-cvbs-usb.html?source=merchant_center&gad_source=1&gad_campaignid=15532087393&gbraid=0AAAAADFv1LAgNkCNVfaZw3ExJEfAw380x&gclid= - Видеоконвертер AV CVBS в USB, плата видеозахвата 1080p, UVC (работают без драйверов), для FPV камер и т.д.;
+
 ## Декор
 
 ### Разное
