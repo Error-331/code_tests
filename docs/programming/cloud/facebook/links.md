@@ -9,6 +9,7 @@
 - https://developers.facebook.com/docs/graph-api/overview - Обзор;
 - https://developers.facebook.com/docs/graph-api/ - Graph API;
 - https://developers.facebook.com/docs/graph-api/get-started - Начало работы;
+- https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-long-lived/#get-a-long-lived-user-access-token - Long-Lived Access Tokens;
 
 ## Apps
 

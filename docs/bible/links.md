@@ -1141,6 +1141,10 @@ Not Lacking - June 19 (James 1:4 KJV; Endurance is not the most exciting thing t
 
 For Your Sake - June 20 (It is better to build a private practice of righteousness than to flaunt our so-called goodness for others to praise us; Let's be consistent in righteousness and goodness whether no one is looking your way or whether others recognize us);
 
+Reconciled - June 21 (Through Christ, you have been reconciled to God and restored without sin or blemish; You are holy and blameless as you stand before the Father because you have Christ; If he does not condemn you, why do you insist on condemning yourself?);
+
+Keep It Close - June 22 (Wisdom does not only teach; it also corrects; If we want to spiritually mature, we must take hold of the corrections and teachings of wisdom);
+
 ## Misc
 
 Христос и Крест (Франко);
