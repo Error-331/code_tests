@@ -1145,6 +1145,8 @@ Reconciled - June 21 (Through Christ, you have been reconciled to God and restor
 
 Keep It Close - June 22 (Wisdom does not only teach; it also corrects; If we want to spiritually mature, we must take hold of the corrections and teachings of wisdom);
 
+Above All Else - June 23 (Where there is love, there is God himself; If we forget that love is what God is all about, we will drift from being living reflections of him to trying to box him in to our limited understanding);
+
 ## Misc
 
 Христос и Крест (Франко);
