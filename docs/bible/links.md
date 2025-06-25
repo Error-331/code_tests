@@ -1147,6 +1147,8 @@ Keep It Close - June 22 (Wisdom does not only teach; it also corrects; If we wan
 
 Above All Else - June 23 (Where there is love, there is God himself; If we forget that love is what God is all about, we will drift from being living reflections of him to trying to box him in to our limited understanding);
 
+Joyful Restoration - June 24 (God has not forgotten us; In the throes of grief, it's hard to imagine feeling joy again, but it will come; Seasons don't last for a lifetime);
+
 ## Misc
 
 Христос и Крест (Франко);
