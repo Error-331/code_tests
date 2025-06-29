@@ -1153,6 +1153,10 @@ Earnest Hope - June 25 (He is faithful, and he will come through for us again an
 
 Foster Generosity - June 26 (Grow in generosity);
 
+Nurture the Planted - June 27 (Faith keeps us persevering under trial, and when we have endured, the nurtured seed will grow into a tender shoot, then a budding vine, until it is fully formed and fruitful);
+
+Right Expectations - June 28 (Are we more concerned with our status and comfort than we are with helping others?);
+
 ## Misc
 
 Христос и Крест (Франко);
