@@ -1149,6 +1149,10 @@ Above All Else - June 23 (Where there is love, there is God himself; If we forge
 
 Joyful Restoration - June 24 (God has not forgotten us; In the throes of grief, it's hard to imagine feeling joy again, but it will come; Seasons don't last for a lifetime);
 
+Earnest Hope - June 25 (He is faithful, and he will come through for us again and gain until we see his face in Zion);
+
+Foster Generosity - June 26 (Grow in generosity);
+
 ## Misc
 
 Христос и Крест (Франко);
