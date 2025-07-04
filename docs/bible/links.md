@@ -1157,6 +1157,14 @@ Nurture the Planted - June 27 (Faith keeps us persevering under trial, and when 
 
 Right Expectations - June 28 (Are we more concerned with our status and comfort than we are with helping others?);
 
+Savior Sustains - June 29 (May your heart find its humble reliance on God alone; No matter what comes, your Savior promises to sustain you; If you have done wrong, do what you can to make it right);
+
+Stand Strong - June 30 (When you have done all you know to do, there is one thing left: to stand; When you remain alert and hold firmly to what you believe, you can persevere in courage);
+
+Life Giving Word - July 1 (John 1:4 KJV; In Christ, we can thrive; Even rhythms of nature that speak of dormancy and death make room for the resurrection that comes with spring);
+
+Open-Handed Kindness - July 2 (2 Corinthians 9:10-11; Don't hesitate to partner with God's heart in giving);
+
 ## Misc
 
 Христос и Крест (Франко);
