@@ -1165,6 +1165,8 @@ Life Giving Word - July 1 (John 1:4 KJV; In Christ, we can thrive; Even rhythms 
 
 Open-Handed Kindness - July 2 (2 Corinthians 9:10-11; Don't hesitate to partner with God's heart in giving);
 
+Hopes To Reality - July 3 (Faith grows as we exercise it; Faith takes hold of hope and bets everything on it; May we too answer the call of God with obedience, hold on to his love, and trust his faithfulness);
+
 ## Misc
 
 Христос и Крест (Франко);
