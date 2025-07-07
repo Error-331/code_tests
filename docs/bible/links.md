@@ -1167,6 +1167,10 @@ Open-Handed Kindness - July 2 (2 Corinthians 9:10-11; Don't hesitate to partner 
 
 Hopes To Reality - July 3 (Faith grows as we exercise it; Faith takes hold of hope and bets everything on it; May we too answer the call of God with obedience, hold on to his love, and trust his faithfulness);
 
+Take Your Time - July 4 (Instead of treating everything as an emergency, consider how you can approach necessary tasks throughout your day; A simple turning of your thoughts to God can make all the difference in the peace and hope of your heart);
+
+Fully Supplied - July 5 (To God be the glory, for he shall supply what we need);
+
 ## Misc
 
 Христос и Крест (Франко);
