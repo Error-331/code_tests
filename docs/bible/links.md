@@ -1171,6 +1171,10 @@ Take Your Time - July 4 (Instead of treating everything as an emergency, conside
 
 Fully Supplied - July 5 (To God be the glory, for he shall supply what we need);
 
+Looking At You - July 6 (God does not put conditions on his love; He loves you because he is moved to love you);
+
+Right on Time - July 7 (In a world that values people as commodities, may we be known for our love; In a world that values people as commodities, may we be know for our love.);
+
 ## Misc
 
 Христос и Крест (Франко);
