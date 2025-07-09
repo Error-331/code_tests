@@ -1175,6 +1175,8 @@ Looking At You - July 6 (God does not put conditions on his love; He loves you b
 
 Right on Time - July 7 (In a world that values people as commodities, may we be known for our love; In a world that values people as commodities, may we be know for our love.);
 
+Heavenly Gifts - July 8 (Jesus Christ is the pure reflection of God's affection; We can't replace each other in God's kingdom, and there is room for all of us; Let's embrace what we've been given with gratitude and leave room for honoring others and their unique gifts);
+
 ## Misc
 
 Христос и Крест (Франко);
