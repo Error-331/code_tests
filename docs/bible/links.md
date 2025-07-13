@@ -1179,6 +1179,10 @@ Heavenly Gifts - July 8 (Jesus Christ is the pure reflection of God's affection;
 
 Live As Called - July 9 (Choosing love as our aim, even when we fail and hurt others, we can repair these relationships with humility and honesty);
 
+Protected By Mercy - July 10 (God cannot be separated from his love, for it is who he is and not just what he does; If we do not know the extravagant  goodness of God's love, we have not yet encountered the essence of who he is);
+
+Goodness OF God - July 11 (If we keep drawing our attention to the reality of God's goodness, we can't help but become more like him: lavish in love, generosity, and peace);
+
 ## Misc
 
 Христос и Крест (Франко);
