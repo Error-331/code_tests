@@ -1183,7 +1183,9 @@ Protected By Mercy - July 10 (God cannot be separated from his love, for it is w
 
 Goodness OF God - July 11 (If we keep drawing our attention to the reality of God's goodness, we can't help but become more like him: lavish in love, generosity, and peace);
 
-Look Forward To - July 12 (Let's hold tightly to the hope we have in Christ and take advantage of the time we have with our loved ones.);
+Look Forward To - July 12 (Let's hold tightly to the hope we have in Christ and take advantage of the time we have with our loved ones);
+
+Grace Strength - July 13 (Whenever you find your energy waning today, ask God for his grace to persevere);
 
 ## Misc
 
