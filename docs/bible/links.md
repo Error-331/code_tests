@@ -1187,6 +1187,8 @@ Look Forward To - July 12 (Let's hold tightly to the hope we have in Christ and 
 
 Grace Strength - July 13 (Whenever you find your energy waning today, ask God for his grace to persevere);
 
+Choosing Trust - July 14 (There are troubles we can't avoid in life but, we can take agency of what we allow to influence us in our down time; Trust God with the unknowns and harsh realities of this world);
+
 ## Misc
 
 Христос и Крест (Франко);
