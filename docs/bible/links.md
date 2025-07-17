@@ -1189,6 +1189,8 @@ Grace Strength - July 13 (Whenever you find your energy waning today, ask God fo
 
 Choosing Trust - July 14 (There are troubles we can't avoid in life but, we can take agency of what we allow to influence us in our down time; Trust God with the unknowns and harsh realities of this world);
 
+Against the Odds - July 15 (God fulfills each and every one of his promises; Keep walking in faith);
+
 ## Misc
 
 Христос и Крест (Франко);
