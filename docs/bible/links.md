@@ -1191,6 +1191,8 @@ Choosing Trust - July 14 (There are troubles we can't avoid in life but, we can 
 
 Against the Odds - July 15 (God fulfills each and every one of his promises; Keep walking in faith);
 
+Great Provider - July 16 (To say that "God, I trust you to provide what I need for sustenance" is to trust him with what we can't control);
+
 ## Misc
 
 Христос и Крест (Франко);
