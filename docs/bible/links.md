@@ -1193,6 +1193,8 @@ Against the Odds - July 15 (God fulfills each and every one of his promises; Kee
 
 Great Provider - July 16 (To say that "God, I trust you to provide what I need for sustenance" is to trust him with what we can't control);
 
+Tenacious Love - July 17 (May you be refreshed in the safe shelter of God's overwhelming extravagant love today, and may it recharge your heart in hope);
+
 ## Misc
 
 Христос и Крест (Франко);
