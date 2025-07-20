@@ -1195,6 +1195,10 @@ Great Provider - July 16 (To say that "God, I trust you to provide what I need f
 
 Tenacious Love - July 17 (May you be refreshed in the safe shelter of God's overwhelming extravagant love today, and may it recharge your heart in hope);
 
+Strong Character - July 18 (Romans 5:4 NLT; Even suffering can deepen our fellowship with the Lord);
+
+Prisoners of Hope - July 19 (Return to your place of safety and find your peace in his presence; Gods love replenishes even the direst wells);
+
 ## Misc
 
 Христос и Крест (Франко);
