@@ -1199,6 +1199,10 @@ Strong Character - July 18 (Romans 5:4 NLT; Even suffering can deepen our fellow
 
 Prisoners of Hope - July 19 (Return to your place of safety and find your peace in his presence; Gods love replenishes even the direst wells);
 
+Better Than Guests - July 20 (If we have yielded our lives to Christ, we are firmly in the family of God);
+
+Trial As Opportunity - July 21 (Instead of looking with dread at the uncertainty of our troubles, may we learn to look with eyes of opportunity knowing God will come through; Let us rejoice in the little victories as well as the big, for God's love lights up our lives in flashing little miracles of mercy);
+
 ## Misc
 
 Христос и Крест (Франко);
