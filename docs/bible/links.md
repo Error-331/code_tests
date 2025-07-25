@@ -1203,6 +1203,8 @@ Better Than Guests - July 20 (If we have yielded our lives to Christ, we are fir
 
 Trial As Opportunity - July 21 (Instead of looking with dread at the uncertainty of our troubles, may we learn to look with eyes of opportunity knowing God will come through; Let us rejoice in the little victories as well as the big, for God's love lights up our lives in flashing little miracles of mercy);
 
+Always - July 22 (No matter what comes, no matter how hard the days and nights, God is our present help and strength; Fear is not our master or our friend, for love is our companion to the end);
+
 ## Misc
 
 Христос и Крест (Франко);
