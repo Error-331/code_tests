@@ -1205,6 +1205,8 @@ Trial As Opportunity - July 21 (Instead of looking with dread at the uncertainty
 
 Always - July 22 (No matter what comes, no matter how hard the days and nights, God is our present help and strength; Fear is not our master or our friend, for love is our companion to the end);
 
+Words that Heal - July 23 (Pleasant words-heartfelt ones, not just skin-deep words - are a salve to the soul and strength to the bones; Even when we mess up and harm others with careless words, it is important we humble ourselves, repent, and speak truth rather than excuses);
+
 ## Misc
 
 Христос и Крест (Франко);
