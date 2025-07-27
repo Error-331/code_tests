@@ -1207,6 +1207,8 @@ Always - July 22 (No matter what comes, no matter how hard the days and nights, 
 
 Words that Heal - July 23 (Pleasant words-heartfelt ones, not just skin-deep words - are a salve to the soul and strength to the bones; Even when we mess up and harm others with careless words, it is important we humble ourselves, repent, and speak truth rather than excuses);
 
+Resurrection Power - July 24 (Romans 8:11 KJV; We taste and see God's goodness knowing one day we will see and experience it fully);
+
 ## Misc
 
 Христос и Крест (Франко);
