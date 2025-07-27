@@ -1209,6 +1209,12 @@ Words that Heal - July 23 (Pleasant words-heartfelt ones, not just skin-deep wor
 
 Resurrection Power - July 24 (Romans 8:11 KJV; We taste and see God's goodness knowing one day we will see and experience it fully);
 
+Reasons to Rejoice - July 25 (The relationships, the expressions of creativity, the thoughtfulness of others, everything you can think of, they are all gifts from a good father);
+
+So Much Love - July 26 (The love of God supplies our needs, gives us strength, and covers the cracks we miss in the details of our lives);
+
+This One Thing - July 27 (Christ is a safe landing place for all, and he welcomes us to rest at his feet and let him handle the overwhelming details we can't cover ourselves);
+
 ## Misc
 
 Христос и Крест (Франко);
