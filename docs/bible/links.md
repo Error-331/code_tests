@@ -1215,6 +1215,8 @@ So Much Love - July 26 (The love of God supplies our needs, gives us strength, a
 
 This One Thing - July 27 (Christ is a safe landing place for all, and he welcomes us to rest at his feet and let him handle the overwhelming details we can't cover ourselves);
 
+Marvelous Mercy - July 28 (The mercy of God can't be contained, controlled, or capped; If we want to grow in faith, we must actively stretch in practical love; If we give ourselves to transforming in mercy, our character strengthens as we use the muscle of compassion and forgiveness);
+
 ## Misc
 
 Христос и Крест (Франко);
