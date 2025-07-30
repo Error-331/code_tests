@@ -1217,6 +1217,8 @@ This One Thing - July 27 (Christ is a safe landing place for all, and he welcome
 
 Marvelous Mercy - July 28 (The mercy of God can't be contained, controlled, or capped; If we want to grow in faith, we must actively stretch in practical love; If we give ourselves to transforming in mercy, our character strengthens as we use the muscle of compassion and forgiveness);
 
+Armed With Strength - July 30 (Trust God with your life and follow him in obedience, and his power will not fail you; Thank you for thinking of me still and loving me to life);
+
 ## Misc
 
 Христос и Крест (Франко);
