@@ -1221,6 +1221,8 @@ Follow the Spirit - July 29 (Galatians 5:16 NCV; The Spirit gives us the desires
 
 Armed With Strength - July 30 (Trust God with your life and follow him in obedience, and his power will not fail you; Thank you for thinking of me still and loving me to life);
 
+
+
 ## Misc
 
 Христос и Крест (Франко);
