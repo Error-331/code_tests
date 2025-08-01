@@ -1217,6 +1217,8 @@ This One Thing - July 27 (Christ is a safe landing place for all, and he welcome
 
 Marvelous Mercy - July 28 (The mercy of God can't be contained, controlled, or capped; If we want to grow in faith, we must actively stretch in practical love; If we give ourselves to transforming in mercy, our character strengthens as we use the muscle of compassion and forgiveness);
 
+Follow the Spirit - July 29 (Galatians 5:16 NCV; The Spirit gives us the desires of God, and the fruit of his work in our lives is clear; I choose the path of Christ's laid-down love and not the path of revenge, easy answers, and pride);
+
 Armed With Strength - July 30 (Trust God with your life and follow him in obedience, and his power will not fail you; Thank you for thinking of me still and loving me to life);
 
 Lifestyle Matters - July 31 (Charismatic people, without follow-through and integrity, are unreliable leaders; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts);
