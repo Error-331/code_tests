@@ -1219,6 +1219,8 @@ Marvelous Mercy - July 28 (The mercy of God can't be contained, controlled, or c
 
 Follow the Spirit - July 29 (Galatians 5:16 NCV; The Spirit gives us the desires of God, and the fruit of his work in our lives is clear; I choose the path of Christ's laid-down love and not the path of revenge, easy answers, and pride);
 
+Armed With Strength - July 30 (Trust God with your life and follow him in obedience, and his power will not fail you; Thank you for thinking of me still and loving me to life);
+
 ## Misc
 
 Христос и Крест (Франко);
