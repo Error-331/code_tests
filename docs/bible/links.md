@@ -1219,6 +1219,8 @@ Marvelous Mercy - July 28 (The mercy of God can't be contained, controlled, or c
 
 Armed With Strength - July 30 (Trust God with your life and follow him in obedience, and his power will not fail you; Thank you for thinking of me still and loving me to life);
 
+Lifestyle Matters - July 31 (Charismatic people, without follow-through and integrity, are unreliable leaders; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts);
+
 ## Misc
 
 Христос и Крест (Франко);
