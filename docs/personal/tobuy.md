@@ -119,6 +119,7 @@ https://www.aliexpress.com/item/1005003017387435.html?spm=a2g0o.productlist.main
 
 https://lordofboards.com.ua/chudo-v-peryakh-ludum/?gclid=Cj0KCQjwspKUBhCvARIsAB2IYusu_1hB4JW-DWQkIW6VT_CRxAJ9hopGJlT5OraQPt86IMNms2pq8FYaAuDZEALw_wcB - Настільна гра "Чудо у пір'ячку";
 https://ru.banggood.com/RB01K-1203-1-12-2_4G-Drift-RC-Tank-Car-Kit-Version-Full-Proportional-Control-RC-Vehicle-Model-Without-Electronic-Element-No-Transmitter-No-Battery-p-1697008.html?cur_warehouse=CN&ID=45586&rmmds=search;
+https://marconisignalsolutions.com/shop/propagation/ - PROPAGATION;
 
 ## Электроника
 
@@ -138,6 +139,8 @@ https://evo.net.ua/palata-rasshireniya-nvidia-jetson-mate-with-cooling-fan-11099
 https://www.aliexpress.com/item/1005005240443249.html?ug_edm_item_id=1005005240443249&pdp_npi=3%40dis%21PLN%21238%2C69z%C5%82%21238%2C69z%C5%82%21%21%21%21%21%402151e4a917003850147006508dc80c%2112000032328257103%21edm%21%21&edm_click_module=alg_product_l1r2_5163200840&abexp_id=180337&abexp_bkt=629463&abexp_rels=458342&creative_img_ind=1&edm_log_data=edm-item-list-left-one-right-two.store-product-log-link&tracelog=rowan&rowan_id1=aeug_edm_23867_1_pl_PL_2023-11-19&rowan_msg_id=sergCOWS_23867_$bb52afad5c8d448687a77c2f7020fab2&ck=in_edm_other - Pironman Mini PC Case for Raspberry Pi - Aluminum Alloy Tower Case, M.2 SATA SSD Expansion Board for Raspberry Pi 4
 https://www.mini-itx.com/store/ - mini-itx store;
 https://us.creative.com/p/sound-blaster/sound-blaster-x4 - Sound Blaster X4;
+https://darstar.com.ua/ru/product/14044012604/ - Переключатель kvm manhattan 151252 2/1 usb;
+https://darstar.com.ua/ru/product/16284557422/ - Startech. com 4 port vga/usb kvm switch;
 
 ### USB
 
@@ -168,7 +171,6 @@ https://dronhack.com/hackrf-one-portapack-h2-komplekt-maximum/ - HackRF one Port
 https://www.aliexpress.com/item/1005006484571411.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.10.7c4dcMtOcMtOLt&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40196.417130.0&scm_id=1007.40196.417130.0&scm-url=1007.40196.417130.0&pvid=3b9ed038-fdac-4427-b595-869cb51bdcc6&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40196.417130.0,pvid:3b9ed038-fdac-4427-b595-869cb51bdcc6,tpp_buckets:668%232846%238109%231935&pdp_ext_f=%7B%22order%22%3A%2217%22%2C%22eval%22%3A%221%22%2C%22sceneId%22%3A%2230050%22%7D&pdp_npi=4%40dis%21UAH%211457.78%211436.65%21%21%2134.50%2134.00%21%40210388c917453602664216228e805e%2112000037379246047%21rec%21UA%21%21ABX&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A - 40km LOS Long Range Wireless Transmitter and Receiver 1.2Ghz 1.3Ghz 8W for FPV UAV Application;
 
 https://mysku.club/blog/china-stores/54239.html - Eachine ROTG01 UVC (fpv приемник);
-
 
 #### FPV
 

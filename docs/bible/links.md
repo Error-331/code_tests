@@ -1223,6 +1223,10 @@ Armed With Strength - July 30 (Trust God with your life and follow him in obedie
 
 Lifestyle Matters - July 31 (Charismatic people, without follow-through and integrity, are unreliable leaders; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts; Let's not overlook the importance of people's actions in displaying the beliefs of their hearts);
 
+Our Intercessor - August 1 (When words fail us, it does not mean we have failed. It is an opportunity to lean further into the aid of the Holy Spirit);
+
+Promise of Power - August 2 (The power of the Holy Spirit is the strength of God in us; God uses his power to reveal the kindness, generosity, and purity of his heart);
+
 ## Misc
 
 Христос и Крест (Франко);
