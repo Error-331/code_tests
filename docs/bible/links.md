@@ -1229,6 +1229,20 @@ Promise of Power - August 2 (The power of the Holy Spirit is the strength of God
 
 Wonderful Advantages - August 3 (Romans 6:22 CSB);
 
+With A Word - August 4 (God is pure love, quick in mercy, and Redeemer of all that seems lost in our hands);
+
+Ask Again - August 5 (*Gods help*);
+
+## Gods help
+
+- It is never too much to ask God for help even if you find yourself asking repeatedly;
+- When you feel poor and needy, pray;
+- When you need the reassurance of God's presence, ask him for it;
+- He is not offended by your need of him;
+- He delights in coming to the rescue of his beloved children;
+- He loves you, and he will not ignore you;
+- Your true Savior and helper will show up on your behalf;
+
 ## Misc
 
 Христос и Крест (Франко);
