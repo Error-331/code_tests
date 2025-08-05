@@ -1227,6 +1227,8 @@ Our Intercessor - August 1 (When words fail us, it does not mean we have failed.
 
 Promise of Power - August 2 (The power of the Holy Spirit is the strength of God in us; God uses his power to reveal the kindness, generosity, and purity of his heart);
 
+Wonderful Advantages - August 3 (Romans 6:22 CSB);
+
 ## Misc
 
 Христос и Крест (Франко);
