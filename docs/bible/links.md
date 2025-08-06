@@ -1233,6 +1233,8 @@ With A Word - August 4 (God is pure love, quick in mercy, and Redeemer of all th
 
 Ask Again - August 5 (*Gods help*);
 
+Sojourners - August 6 (God is faithful to his promises; We are only visitors passing through on this earth);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1242,6 +1244,10 @@ Ask Again - August 5 (*Gods help*);
 - He delights in coming to the rescue of his beloved children;
 - He loves you, and he will not ignore you;
 - Your true Savior and helper will show up on your behalf;
+
+## Future generations
+
+May we pass the baton to other generations by caring for the earth, for the people in it, and holding on to hope when we don't know how to make a difference.
 
 ## Misc
 
