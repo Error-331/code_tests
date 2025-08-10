@@ -1235,6 +1235,8 @@ Ask Again - August 5 (*Gods help*);
 
 Sojourners - August 6 (God is faithful to his promises; We are only visitors passing through on this earth);
 
+Imparted Inspiration - August 7 (Romans 15:4 KJV; When all seems lost, it is often an opportunity to wait upon the restoration, redemption and miracle power of the Lord);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
