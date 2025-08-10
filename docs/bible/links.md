@@ -1237,6 +1237,10 @@ Sojourners - August 6 (God is faithful to his promises; We are only visitors pas
 
 Imparted Inspiration - August 7 (Romans 15:4 KJV; When all seems lost, it is often an opportunity to wait upon the restoration, redemption and miracle power of the Lord);
 
+This is the Way - August 8 (1 Corinthians 13:4-7 KJV; Sharing love is - showing up, seeking restoration, and staying humble and connected);
+
+Steadfast Faith - August 9 (It may not feel like you're thriving when you are afflicted, but don't give up when life gets hard; Press into fellowship and find encouragement and strength in the support of family and community);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
