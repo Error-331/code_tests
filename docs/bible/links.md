@@ -1243,6 +1243,8 @@ Steadfast Faith - August 9 (It may not feel like you're thriving when you are af
 
 In Your Midst - August 10 (Zephaniah 3:17 NKJV; Stand under the waterfall of God's mercy and tune your ear to his voice);
 
+Overflowing Vessels - August 11 (How do we receive? We connect to his Holy Spirit living within us, and we ask God to fill us to the brim from his fountain of hope);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
