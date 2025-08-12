@@ -1241,6 +1241,8 @@ This is the Way - August 8 (1 Corinthians 13:4-7 KJV; Sharing love is - showing 
 
 Steadfast Faith - August 9 (It may not feel like you're thriving when you are afflicted, but don't give up when life gets hard; Press into fellowship and find encouragement and strength in the support of family and community);
 
+In Your Midst - August 10 (Zephaniah 3:17 NKJV; Stand under the waterfall of God's mercy and tune your ear to his voice);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
