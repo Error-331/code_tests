@@ -1251,6 +1251,8 @@ Get Ready - August 13 (Don't hesitate to ask God to reveal himself to you in new
 
 Unwavering Hope - August 14 (We can hold tightly to Christ, the essence of our hope, without wavering because God is unfailing; God moves in the details of our lives, and he does not overlook a single one);
 
+Complete Victory - August 15 (Jesus is the overcomer, and through his resurrection power, we are overcomers as well; Jesus is our victory, and we are victorious in and through him);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
