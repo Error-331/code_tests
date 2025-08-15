@@ -1245,6 +1245,12 @@ In Your Midst - August 10 (Zephaniah 3:17 NKJV; Stand under the waterfall of God
 
 Overflowing Vessels - August 11 (How do we receive? We connect to his Holy Spirit living within us, and we ask God to fill us to the brim from his fountain of hope);
 
+Opposite Spirit - August 12 (Yet when it comes to the people involved, let's put on love and venture to forgive them; We can treat others the way we want to be treated even when not given the same courtesy; We can remain kind, gracious, and grounded in God's love);
+
+Get Ready - August 13 (Don't hesitate to ask God to reveal himself to you in new ways; He loves to reveal himself to those who seek him);
+
+Unwavering Hope - August 14 (We can hold tightly to Christ, the essence of our hope, without wavering because God is unfailing; God moves in the details of our lives, and he does not overlook a single one);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;

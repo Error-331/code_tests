@@ -172,6 +172,8 @@ https://www.aliexpress.com/item/1005006484571411.html?spm=a2g0o.detail.pcDetailT
 
 https://mysku.club/blog/china-stores/54239.html - Eachine ROTG01 UVC (fpv приемник);
 
+https://mktechnic.com/product/usb-to-cvbs-adapter-rca-uvc-1080p-usb-camera-converter/?srsltid=AfmBOorM9tmTxwdY5D3330M5biNHu8w_-GXDxUW1LnKiPgnumNIX6jqK - UVC Drive-free 1080P USB Camera to AV CVBS RCA Video Adapter Adaptor Converter Module|1Pcs ;
+
 #### FPV
 
 https://prom.ua/p2346834419-peredatchik-fpv-vtx.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_b2b_265945592&gad_source=1&gad_campaignid=20690754680&gbraid=0AAAAADBxJSWhY4BYy6wrSNdid57YMXhiO&gclid=CjwKCAjw6s7CBhACEiwAuHQcknMKCe94gLJIudS_oIwSyTJoOL6FVMap7QMfrbi6MoHR132gsT1KRRoC1skQAvD_BwE - Передатчик FPV, VTX 1,5GHz, 1500mW;
