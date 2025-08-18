@@ -1253,6 +1253,8 @@ Unwavering Hope - August 14 (We can hold tightly to Christ, the essence of our h
 
 Complete Victory - August 15 (Jesus is the overcomer, and through his resurrection power, we are overcomers as well; Jesus is our victory, and we are victorious in and through him);
 
+Released from Law - August 16 (Christ, the pure and spotless Lamb of God, took our place and became our salvation; God's mercy has always met us and covered us, but it was Christ who revealed this truth in full; Our failures are covered in his mercy, and we transform in the power of his Spirit as we live for him);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
