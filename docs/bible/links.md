@@ -1255,6 +1255,8 @@ Complete Victory - August 15 (Jesus is the overcomer, and through his resurrecti
 
 Released from Law - August 16 (Christ, the pure and spotless Lamb of God, took our place and became our salvation; God's mercy has always met us and covered us, but it was Christ who revealed this truth in full; Our failures are covered in his mercy, and we transform in the power of his Spirit as we live for him);
 
+Influence - August 17 (Honoring the Lord with our lives, judgments, and places of influence matters; We should not only pay lip service to loving the Lord; it should reflect in every interaction and choice we make; We should honor the Lord with truth, humility, and submission);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
