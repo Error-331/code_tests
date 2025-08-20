@@ -1257,6 +1257,8 @@ Released from Law - August 16 (Christ, the pure and spotless Lamb of God, took o
 
 Influence - August 17 (Honoring the Lord with our lives, judgments, and places of influence matters; We should not only pay lip service to loving the Lord; it should reflect in every interaction and choice we make; We should honor the Lord with truth, humility, and submission);
 
+Ultimate Refuge - August 18 (God is a safe shelter and refuge you can run to anytime, anywhere; God is with you; he makes his home in you through his Spirit);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
