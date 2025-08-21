@@ -1259,6 +1259,8 @@ Influence - August 17 (Honoring the Lord with our lives, judgments, and places o
 
 Ultimate Refuge - August 18 (God is a safe shelter and refuge you can run to anytime, anywhere; God is with you; he makes his home in you through his Spirit);
 
+Diligently Seek - August 19 (All who search are met by love's image; May you rest in the peace you find; He is worthy of your surrender, he is trustworthy of your life and he will prove himself faithful to the end);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
