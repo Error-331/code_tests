@@ -1261,6 +1261,8 @@ Ultimate Refuge - August 18 (God is a safe shelter and refuge you can run to any
 
 Diligently Seek - August 19 (All who search are met by love's image; May you rest in the peace you find; He is worthy of your surrender, he is trustworthy of your life and he will prove himself faithful to the end);
 
+Personal - August 20 (We can trust God to guard, guide, and teach us in every way until we stand before him in glory; Father, you are the perfect caregiver);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
