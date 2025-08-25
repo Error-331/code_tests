@@ -1265,6 +1265,8 @@ Personal - August 20 (We can trust God to guard, guide, and teach us in every wa
 
 According to Mercy - August 21 (Nothing we do can add to or take away from Christ's sufficient sacrifice; May we embrace humble love and gratitude that allows us to remain open to God's wisdom; If we build our lives upon Christ's mercy, we will find the goodness and loving kindness of God grows in our hearts and lives);
 
+Prayers for Mercy - August 22 (Faith directs us back to the Father and Savior; We can pray to God for mercy and still have a deeply rooted belief in God's faithfulness; Life is nuanced, and as we go through it twists and turns, we can always pray to God for his mercy to become evident to us);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
