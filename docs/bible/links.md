@@ -1263,6 +1263,8 @@ Diligently Seek - August 19 (All who search are met by love's image; May you res
 
 Personal - August 20 (We can trust God to guard, guide, and teach us in every way until we stand before him in glory; Father, you are the perfect caregiver);
 
+According to Mercy - August 21 (Nothing we do can add to or take away from Christ's sufficient sacrifice; May we embrace humble love and gratitude that allows us to remain open to God's wisdom; If we build our lives upon Christ's mercy, we will find the goodness and loving kindness of God grows in our hearts and lives);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
