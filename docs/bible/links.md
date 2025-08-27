@@ -1267,6 +1267,8 @@ According to Mercy - August 21 (Nothing we do can add to or take away from Chris
 
 Prayers for Mercy - August 22 (Faith directs us back to the Father and Savior; We can pray to God for mercy and still have a deeply rooted belief in God's faithfulness; Life is nuanced, and as we go through it twists and turns, we can always pray to God for his mercy to become evident to us);
 
+Understand the Season - August 23 (James 5:7 NLT; The earth around us speaks of the glory of God, and the wisdom in creation points us to the wisdom of God's kingdom);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
