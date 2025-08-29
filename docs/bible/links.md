@@ -1269,6 +1269,8 @@ Prayers for Mercy - August 22 (Faith directs us back to the Father and Savior; W
 
 Understand the Season - August 23 (James 5:7 NLT; The earth around us speaks of the glory of God, and the wisdom in creation points us to the wisdom of God's kingdom);
 
+Worth Waiting For - August 24 (There is a peace that passes all understanding in the presence of God);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
