@@ -1271,6 +1271,8 @@ Understand the Season - August 23 (James 5:7 NLT; The earth around us speaks of 
 
 Worth Waiting For - August 24 (There is a peace that passes all understanding in the presence of God);
 
+Remember His Works - August 25 (God mends broken hearts and works miracles large and small; God is good, and he does good things that transform our understanding of his love);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
