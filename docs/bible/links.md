@@ -1273,6 +1273,8 @@ Worth Waiting For - August 24 (There is a peace that passes all understanding in
 
 Starting Point - August 26 (The Holy Spirit is not poured out on those who are caught up in keeping every religious tradition and kept from those who are more lax; The starting point of the miraculous power of God is not in our devotion to rules and regulations but in the person of God; The Holy Spirit is given to us equally through the power of faith);
 
+Mighty God - August 27 (The divine nature of God is engraved upon our hearts by the Word and through fellowship with his Spirit; God leads us on pleasant paths from glory to glory until we arrive in our future and true home: his eternal kingdom);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
