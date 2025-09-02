@@ -1277,6 +1277,8 @@ Starting Point - August 26 (The Holy Spirit is not poured out on those who are c
 
 Mighty God - August 27 (The divine nature of God is engraved upon our hearts by the Word and through fellowship with his Spirit; God leads us on pleasant paths from glory to glory until we arrive in our future and true home: his eternal kingdom);
 
+Contented Trust - August 28 (Our hope will not be dashed or put to shame, for God is our deliverer and strength; Though our earthly expectations will not always be met, God will exceed our expectations of his goodness);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;

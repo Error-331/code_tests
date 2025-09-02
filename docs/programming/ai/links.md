@@ -30,6 +30,10 @@
 - https://github.com/dbclinton/Complete_Obsolete_Guide_AI/blob/main/GenAI_Resources.md - more AI tools;
 - https://openai.com/sora/ - Sora (video editing and replacement);
 
+## Avatar generation
+
+- https://creatify.ai/ - Creatify;
+
 ## Presentation resources generation
 
 - https://gamma.app/ - Gamma;
