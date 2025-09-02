@@ -154,3 +154,10 @@ Antenna length: 52 cm;
 - 50Ω low noise gain block;
 - +3.3V - 5V single supply;
 - 25mA current draw;
+
+## Downconverters
+
+### Nooelec Ham It Down 3GHz Downconverter
+
+Range: 1.55GHz to 3.1GHz;
+Offset: -1500000000.000000 Hz (1.5GHz);
