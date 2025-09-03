@@ -1279,6 +1279,8 @@ Mighty God - August 27 (The divine nature of God is engraved upon our hearts by 
 
 Contented Trust - August 28 (Our hope will not be dashed or put to shame, for God is our deliverer and strength; Though our earthly expectations will not always be met, God will exceed our expectations of his goodness);
 
+Wise Kindness - August 29 (Wisdom is a powerful tool, and kindness is paramount in God's kingdom; When we grow in relationship with God by learning more of his nature and following Christ's wisdom, we learn to tell the difference between God's ways and the wisdom of this world);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1304,3 +1306,5 @@ Though the night seems like it may never end, morning always comes and with it, 
 Spirit of God, enlighten the eyes of my heart and reveal deeper meaning through the reading of your Word today. I want to know you more.
 
 Spirit, lead me. Set me free from cycles of fear, shame, and striving. I want to rest in the peace of your presence knowing your life in mine is worth more than anything I could find on earth. I am yours.
+
+Truth spoken harshly cannot be denied, but it also may not win over those who heart it.
