@@ -19,7 +19,9 @@
 - `docker cp` - copy the file from docker host to the docker container;
 - `docker attach` - connect to existing container;
 
-## Docker run
+## Commands list and examples
+
+### Docker run
 
 ```shell
 
@@ -45,7 +47,7 @@ sudo docker run -d -p 127.0.0.1:8080:8080 --name test_container2 --env-file .env
 
 ```
 
-## Docker pull
+### Docker pull
 
 ```shell
 
@@ -53,7 +55,7 @@ docker pull <image_name>
 
 ```
 
-## Docker ps
+### Docker ps
 
 Flags:
 
@@ -67,7 +69,7 @@ docker ps [options..]
 
 ```
 
-## Docker stop
+### Docker stop
 
 
 ```shell
@@ -92,7 +94,7 @@ docker stop container1 container2 container3
 
 ```
 
-## Docker start
+### Docker start
 
 ```shell
 
@@ -100,7 +102,7 @@ docker container start <container_ID>
 
 ```
 
-## Docker rm
+### Docker rm
 
 Flags:
 
@@ -153,6 +155,7 @@ Flags:
 - `-d` - run the commands in the background;
 - `-i` - keep STDIN open even when not attached;
 - `-e` - sets the environment variables;
+- `-t` - allocates a pseudo-TTY (terminal), when used with `-i`, this provides a fully interactive terminal session within the container;
 
 ```shell
 
@@ -160,7 +163,7 @@ docker exec {options}
 
 ```
 
-example:
+Example 1:
 
 ```shell
 
@@ -168,7 +171,15 @@ docker exec -d some_container bash
 
 ```
 
-## Docker login
+Example 2 (execute multiple commands):
+
+```shell
+
+docker exec -it <container_id> sh -c "apt-get update && apt-get install nodejs && echo 'test'"
+
+```
+
+### Docker login
 
 ```shell
 
@@ -176,7 +187,7 @@ docker login
 
 ```
 
-## Docker push
+### Docker push
 
 ```shell
 
@@ -184,7 +195,7 @@ docker push <Image name/Image ID>
 
 ```
 
-## Docker build
+### Docker build
 
 Build Docker image in the current directory:
 
@@ -194,7 +205,7 @@ docker build -t image_name:tag .
 
 ```
 
-## Docker prune
+### Docker prune
 
 By default, following entities will be removed:
 
@@ -225,7 +236,7 @@ docker container prune -f
 
 ```
 
-## Docker restart
+### Docker restart
 
 ```shell
 
@@ -233,7 +244,7 @@ docker restart container_name_or_id
 
 ```
 
-## Docker inspect
+### Docker inspect
 
 ```shell
 
@@ -241,7 +252,7 @@ docker inspect container_name_or_id
 
 ```
 
-## Docker container top
+### Docker container top
 
 ```shell
 
@@ -249,10 +260,70 @@ docker container top <container_id_or_name>
 
 ```
 
-## Docker commit
+### Docker commit
 
 ```shell
 
 docker commit container_name_or_id new_image_name:tag
 
 ```
+
+## Running commands inside a container
+
+### Docker run
+
+Starts a new container and immediately get a command prompt (like bash) inside it.
+
+Flags: 
+
+- `-i (--interactive)` - keeps standard input (STDIN) open, allowing user to type commands;
+- `-t (--tty)` - allocates a pseudo-terminal, which gives user the interactive shell experience;
+
+Example 1 (runs an Ubuntu container and fires up its bash):
+
+```shell
+
+sudo docker run -it ubuntu bash
+
+```
+
+### Docker exec
+
+Runs a command inside a container that is already running (useful for debugging, checking logs, or installing a package on the fly).
+
+Example 1:
+
+```shell
+
+sudo docker exec -it s75b11630693 echo "Test"
+
+```
+
+### Using Dockerfile
+
+Specify commands in the Dockerfile.
+
+Example 1:
+
+```dockerfile
+
+FROM ubuntu:latest
+RUN echo "test"
+
+```
+
+## Docker Attach and Exec comparison
+
+Exec:
+
+- run a new command or process inside a running container;
+- creates a new process inside the container;
+- used for debugging, running admin tasks, or opening a second shell;
+- does not stop the container;
+
+Attach:
+
+- connect to the main running process (PID 1) of a container;
+- does not create a new process (connects to the existing primary process);
+- used for interacting with a foreground application that is already running;
+- exiting the attached process (if it's PID 1) will stop the container;
