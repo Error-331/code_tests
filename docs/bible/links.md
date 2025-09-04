@@ -1281,6 +1281,8 @@ Contented Trust - August 28 (Our hope will not be dashed or put to shame, for Go
 
 Wise Kindness - August 29 (Wisdom is a powerful tool, and kindness is paramount in God's kingdom; When we grow in relationship with God by learning more of his nature and following Christ's wisdom, we learn to tell the difference between God's ways and the wisdom of this world);
 
+Moved by Compassion - August 30 (We can choose to help without compassion, but when we pair compassion with action, kindness can go even further);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
