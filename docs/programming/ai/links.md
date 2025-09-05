@@ -18,6 +18,8 @@
 - https://beta.dreamstudio.ai/generate - Dream Studio;
 - https://easydiffusion.github.io/ - Easy Diffusion (can use for free)
 - https://habr.com/ru/companies/selectel/articles/886120/ - Генератор картинок от разработчиков DeepSeek. Тест-драйв новой нейросети ;
+- https://hailuoai.video/ - HailuoAI;
+- https://nijijourney.com/ - NIJIJourney;
 
 ## Video generation
 
@@ -29,6 +31,7 @@
 - https://synthesys.io/ - Synthesys;
 - https://github.com/dbclinton/Complete_Obsolete_Guide_AI/blob/main/GenAI_Resources.md - more AI tools;
 - https://openai.com/sora/ - Sora (video editing and replacement);
+- https://hailuoai.video/ - HailuoAI;
 
 ## Avatar generation
 

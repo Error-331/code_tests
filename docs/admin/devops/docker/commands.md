@@ -18,6 +18,12 @@
 - `docker commit` -  create an image from a container;
 - `docker cp` - copy the file from docker host to the docker container;
 - `docker attach` - connect to existing container;
+- `docker image build` - builds an image from a Dockerfile;
+- `docker image history` - shows history of the docker image;
+- `docker image inspect` - used for displaying the detailed information on one or more images;
+- `docker image prune` - used for removing unused images that are not associated with any containers;
+- `docker image save` - used to save the docker images into a tar archived files;
+- `docker image tag` - used to create a tag to the target image that refers to the source image;
 
 ## Commands list and examples
 
@@ -284,6 +290,14 @@ Example 1 (runs an Ubuntu container and fires up its bash):
 ```shell
 
 sudo docker run -it ubuntu bash
+
+```
+
+Example 2 (uses a privileged Debian container that contains the `nsenter` command to manipulate the Linux kernel namespaces so that in can be possible to navigate the filesystem of the underlying VM or host):
+
+```shell
+
+docker container run --rm -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
 
 ```
 
