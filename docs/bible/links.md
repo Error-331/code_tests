@@ -1283,6 +1283,8 @@ Wise Kindness - August 29 (Wisdom is a powerful tool, and kindness is paramount 
 
 Moved by Compassion - August 30 (We can choose to help without compassion, but when we pair compassion with action, kindness can go even further);
 
+Sacred and Human - August 31 (God sent his Son to live the human experience - all of its ups and downs - and to reunite us with the merciful heart of our Father);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
