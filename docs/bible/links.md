@@ -1285,6 +1285,8 @@ Moved by Compassion - August 30 (We can choose to help without compassion, but w
 
 Sacred and Human - August 31 (God sent his Son to live the human experience - all of its ups and downs - and to reunite us with the merciful heart of our Father);
 
+Created with Purpose - September 1 (Romans 12:8 NCV; You were created with a purpose. Your creativity reflects a creative God; What has God given you? Consider the ways you can use your gifts to build others up today);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1312,3 +1314,5 @@ Spirit of God, enlighten the eyes of my heart and reveal deeper meaning through 
 Spirit, lead me. Set me free from cycles of fear, shame, and striving. I want to rest in the peace of your presence knowing your life in mine is worth more than anything I could find on earth. I am yours.
 
 Truth spoken harshly cannot be denied, but it also may not win over those who heart it.
+
+God, you created me with purpose, and even the weirdest parts of my personality are beneficial to you.
