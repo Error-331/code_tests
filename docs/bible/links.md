@@ -1287,6 +1287,8 @@ Sacred and Human - August 31 (God sent his Son to live the human experience - al
 
 Created with Purpose - September 1 (Romans 12:8 NCV; You were created with a purpose. Your creativity reflects a creative God; What has God given you? Consider the ways you can use your gifts to build others up today);
 
+Joyous Mercies - September 2 (Every act of mercy extended to you is a pool of God's pleasure you can freely drink from; Meditate on the Lord's practical goodness in your life);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
