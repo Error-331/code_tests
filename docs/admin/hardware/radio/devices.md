@@ -161,3 +161,10 @@ Antenna length: 52 cm;
 
 Range: 1.55GHz to 3.1GHz;
 Offset: -1500000000.000000 Hz (1.5GHz);
+
+## Attenuators
+
+### 1AA300494-3
+
+- Bandwidth: 8 GHz;
+- Attenuation: 30 DB;

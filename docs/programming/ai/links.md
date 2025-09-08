@@ -32,6 +32,7 @@
 - https://github.com/dbclinton/Complete_Obsolete_Guide_AI/blob/main/GenAI_Resources.md - more AI tools;
 - https://openai.com/sora/ - Sora (video editing and replacement);
 - https://hailuoai.video/ - HailuoAI;
+- https://videoexpress.ai/ - Video express;
 
 ## Avatar generation
 

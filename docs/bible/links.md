@@ -1289,6 +1289,8 @@ Created with Purpose - September 1 (Romans 12:8 NCV; You were created with a pur
 
 Joyous Mercies - September 2 (Every act of mercy extended to you is a pool of God's pleasure you can freely drink from; Meditate on the Lord's practical goodness in your life);
 
+Give Thanks - September 3 (Offer the Lord your gratitude not for what seems spiritual but for what feels true; Scripture says God loves a cheerful giver, and this is true of our gratitude and thanks too);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
