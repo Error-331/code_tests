@@ -1291,6 +1291,8 @@ Joyous Mercies - September 2 (Every act of mercy extended to you is a pool of Go
 
 Give Thanks - September 3 (Offer the Lord your gratitude not for what seems spiritual but for what feels true; Scripture says God loves a cheerful giver, and this is true of our gratitude and thanks too);
 
+He Pays Attention - September 4 (God pays attention to the things on your heart. He delights in the things you delight in; God loves it when you share your day with him);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
