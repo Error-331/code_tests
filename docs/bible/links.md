@@ -1295,6 +1295,8 @@ He Pays Attention - September 4 (God pays attention to the things on your heart.
 
 Grace That Builds - September 5 (The gift of God is that he offers us salvation freely through the power of his grace; That grace also builds us up; it does not tear us down);
 
+Continue in Faith - September 6 (There are times when the waiting seasons of life grow long, and if we do not learn to endure patiently, we may give up hope);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1326,3 +1328,5 @@ Truth spoken harshly cannot be denied, but it also may not win over those who he
 God, you created me with purpose, and even the weirdest parts of my personality are beneficial to you.
 
 When you give others the benefit of the doubt and are clear about your expectations while still encouraging others, you become a builder just as God is a builder.
+
+The fullness of God is yours in the fellowship in the Holy Spirit.
