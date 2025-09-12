@@ -1297,6 +1297,8 @@ Grace That Builds - September 5 (The gift of God is that he offers us salvation 
 
 Continue in Faith - September 6 (There are times when the waiting seasons of life grow long, and if we do not learn to endure patiently, we may give up hope);
 
+A Father's Help - September 7 (God is a faithful father and a loyal friend);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
