@@ -1299,6 +1299,8 @@ Continue in Faith - September 6 (There are times when the waiting seasons of lif
 
 A Father's Help - September 7 (God is a faithful father and a loyal friend);
 
+Spiritual Clothes - September 8 (Colossians 3:12 NASB);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
