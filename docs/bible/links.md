@@ -1303,6 +1303,8 @@ Spiritual Clothes - September 8 (Colossians 3:12 NASB);
 
 Lifted to Safety - September 9 (We can't rush through grief as if it were a dark room on our way to a light-filled kitchen; Dark nights of the soul come, but they won't last forever);
 
+Leave Your Worries* - September 10 (1 Peter 5:7 TPT; Leave your worries and stress with God today and walk in the peace of his persistent presence);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
