@@ -1305,6 +1305,8 @@ Lifted to Safety - September 9 (We can't rush through grief as if it were a dark
 
 Leave Your Worries* - September 10 (1 Peter 5:7 TPT; Leave your worries and stress with God today and walk in the peace of his persistent presence);
 
+Wonderful Savior - September 11 (Consider the wonderful ways of your Savior and be refreshed by his overwhelming goodness that meets you still);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
