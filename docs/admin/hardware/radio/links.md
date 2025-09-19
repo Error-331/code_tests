@@ -8,7 +8,8 @@
 
 - https://en.wikipedia.org/wiki/Digital_mobile_radio - Digital mobile radio;
 - https://www.a-centauri.com/articoli/noaa-poes-satellites-reception - NOAA Satellite Reception;
-- https://tech-geek.ru/interception-and-analysis-radio-signals/ - 
+- https://tech-geek.ru/interception-and-analysis-radio-signals/ - Перехват и анализ радиосигнала;
+- https://panoradio-sdr.de/analog-digital-conversion/ - Basics of Analog-to-Digital Conversion;
 
 ## Frequencies
 

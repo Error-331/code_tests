@@ -1307,6 +1307,8 @@ Leave Your Worries* - September 10 (1 Peter 5:7 TPT; Leave your worries and stre
 
 Wonderful Savior - September 11 (Consider the wonderful ways of your Savior and be refreshed by his overwhelming goodness that meets you still);
 
+Grounded in Wisdom - September 12 (When our lives are grounded in wisdom and our hearts are attuned to the discernment of the Spirit, we can walk confidently under the protection of integrity);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
