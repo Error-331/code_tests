@@ -1309,6 +1309,8 @@ Wonderful Savior - September 11 (Consider the wonderful ways of your Savior and 
 
 Grounded in Wisdom - September 12 (When our lives are grounded in wisdom and our hearts are attuned to the discernment of the Spirit, we can walk confidently under the protection of integrity);
 
+Slow to Anger - September 13 (Exodus 34:7 KJV; God never fails in mercy; Seek out God's grace to seek forgiveness);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
