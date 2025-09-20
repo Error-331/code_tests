@@ -1311,6 +1311,8 @@ Grounded in Wisdom - September 12 (When our lives are grounded in wisdom and our
 
 Slow to Anger - September 13 (Exodus 34:7 KJV; God never fails in mercy; Seek out God's grace to seek forgiveness);
 
+Doers of Good - September 14 (The wisdom of Christ's kingdom instructs us to be gracious, generous, and loving; Do good whenever you can);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
