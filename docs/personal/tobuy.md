@@ -129,6 +129,10 @@ https://rozetka.com.ua/ua/387787854/p387787854/ - Акумулятор 18650, Ul
 https://rozetka.com.ua/ua/433934354/p433934354/ - Акумулятор Li-ion UltraFire18650 4800mAh 3.7V, Red;
 https://rozetka.com.ua/ua/324286459/p324286459/ - Батарейка GP 23А Ultra 12V blist 5;
 
+### Powerbank
+
+https://www.alibaba.com/product-detail/High-Capacity-AC-Outdoor-Home-USB_1600949103863.html?spm=a2700.shop_plgr.41413.49.19887121AlvDmF - High Capacity AC Outdoor Home USB 300W 400w Lifepo4 Portable Power Station 600W for Emergency;
+
 ### Зарядные устройства
 
 https://brain.com.ua/ukr/Zaryadniy_pristriy_dlya_akumulyatoriv_PowerPlant_PP-UM2_Ni-Mh_Ni-Cd_Li-ion_LiFePO4_input_DC_5V_2A_AA620180-p1073765.html - PowerPlant PP-UM2 (Ni-Mh, Ni-Cd, Li-ion, LiFePO4 / input DC 5V/2A) (AA620180);

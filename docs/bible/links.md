@@ -1313,6 +1313,8 @@ Slow to Anger - September 13 (Exodus 34:7 KJV; God never fails in mercy; Seek ou
 
 Doers of Good - September 14 (The wisdom of Christ's kingdom instructs us to be gracious, generous, and loving; Do good whenever you can);
 
+Hope in Him - September 15 (Lamentations 3:22; The Lord is faithful to those who hope in him);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
