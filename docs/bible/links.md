@@ -1193,7 +1193,7 @@ Against the Odds - July 15 (God fulfills each and every one of his promises; Kee
 
 Great Provider - July 16 (To say that "God, I trust you to provide what I need for sustenance" is to trust him with what we can't control);
 
-Tenacious Love - July 17 (May you be refreshed in the safe shelter of God's overwhelming extravagant love today, and may it recharge your heart in hope);
+Tenacious Love - July 17 (1 Corinthians 13:7 KJV; May you be refreshed in the safe shelter of God's overwhelming extravagant love today, and may it recharge your heart in hope; The love of God is not weak; it is tenacious, enduring, and victorious at every turn);
 
 Strong Character - July 18 (Romans 5:4 NLT; Even suffering can deepen our fellowship with the Lord);
 
@@ -1314,6 +1314,14 @@ Slow to Anger - September 13 (Exodus 34:7 KJV; God never fails in mercy; Seek ou
 Doers of Good - September 14 (The wisdom of Christ's kingdom instructs us to be gracious, generous, and loving; Do good whenever you can);
 
 Hope in Him - September 15 (Lamentations 3:22; The Lord is faithful to those who hope in him);
+
+Trust His Timing - September 16 (God has given us incredible access to his heart, and he offers us the wisdom of his kingdom to guide us through life; Live the life God has given you with confidence, humility, and perseverance, and trust him with the rest);
+
+Christ in Us - September 17 (As we walk hand in hand with the Savior of our souls, we allow him to lead us along depths of his truth and goodness);
+
+Secret Place - September 18 (It doesn't matter where our bodies are in any given moment; our souls can find refuge in the secret place of God's presence where our spirits become one with his);
+
+Hold Fast - September 19 (Perseverance is paramount to our faith; It is patience that endures: a fruit of the Spirit; It is faith that prevails by not giving up or giving in);
 
 ## Gods help
 

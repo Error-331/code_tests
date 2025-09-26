@@ -33,6 +33,7 @@
 - https://openai.com/sora/ - Sora (video editing and replacement);
 - https://hailuoai.video/ - HailuoAI;
 - https://videoexpress.ai/ - Video express;
+- https://talkingphotos.ai/go/ - Talking Photos;
 
 ## Avatar generation
 
