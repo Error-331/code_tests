@@ -1323,6 +1323,8 @@ Secret Place - September 18 (It doesn't matter where our bodies are in any given
 
 Hold Fast - September 19 (Perseverance is paramount to our faith; It is patience that endures: a fruit of the Spirit; It is faith that prevails by not giving up or giving in);
 
+Confident Trust - September 20 (Where there is dread in your heart, may you feel the sweet relief of God's faithful love wrapping your heart in his peace);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
