@@ -1325,6 +1325,8 @@ Hold Fast - September 19 (Perseverance is paramount to our faith; It is patience
 
 Confident Trust - September 20 (Where there is dread in your heart, may you feel the sweet relief of God's faithful love wrapping your heart in his peace);
 
+Living Hope - September 21 (The true fulfillment of our hearts is found in the fullness of Christ's kingdom, and it has yet to be fully unveiled);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
