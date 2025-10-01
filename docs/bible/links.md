@@ -1327,6 +1327,10 @@ Confident Trust - September 20 (Where there is dread in your heart, may you feel
 
 Living Hope - September 21 (The true fulfillment of our hearts is found in the fullness of Christ's kingdom, and it has yet to be fully unveiled);
 
+Established by God - September 22 (After we have suffered "a little while," God promises to powerfully restore us and build us up; When troubles and trials come, they are temporary, but the overwhelming glory of living in and with Christ is our forever reward);
+
+Refreshment - September 23 (Inner strength is found in the Lord, and he is the saving strength of all who look to him for help);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
