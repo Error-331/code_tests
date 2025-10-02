@@ -1331,6 +1331,8 @@ Established by God - September 22 (After we have suffered "a little while," God 
 
 Refreshment - September 23 (Inner strength is found in the Lord, and he is the saving strength of all who look to him for help);
 
+Fresh Portion - September 24 (No matter how desperate it feels, God's got you);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
