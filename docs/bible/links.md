@@ -1333,6 +1333,8 @@ Refreshment - September 23 (Inner strength is found in the Lord, and he is the s
 
 Fresh Portion - September 24 (No matter how desperate it feels, God's got you);
 
+Inside Out - September 25 (Allow holy spirit to move in power and follow through on his work by partnering with Christ's commands);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
