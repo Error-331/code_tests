@@ -1335,6 +1335,10 @@ Fresh Portion - September 24 (No matter how desperate it feels, God's got you);
 
 Inside Out - September 25 (Allow holy spirit to move in power and follow through on his work by partnering with Christ's commands);
 
+Take Care - September 26 (Showing mercy to the poor and acting in kindness is what it means to "do good."; True love is love lived out loud; Give me eyes of compassion, creativity, and resolve when I see need);
+
+All We Need - September 27 (We get to choose how we will live, but we always have a source to draw from when we choose Christs ways; Everything you need is found in Holy Spirit, so don't hesitate to ask him for help);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
