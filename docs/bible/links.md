@@ -1339,6 +1339,10 @@ Take Care - September 26 (Showing mercy to the poor and acting in kindness is wh
 
 All We Need - September 27 (We get to choose how we will live, but we always have a source to draw from when we choose Christs ways; Everything you need is found in Holy Spirit, so don't hesitate to ask him for help);
 
+The Redeemed Speak - September 28 (God will not fail to guide you through the many trials of life);
+
+Praise Every Step - September 29 (With every blessing, give thanks, and your attention will be drawn to all there is to be grateful for);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
