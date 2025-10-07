@@ -1343,6 +1343,12 @@ The Redeemed Speak - September 28 (God will not fail to guide you through the ma
 
 Praise Every Step - September 29 (With every blessing, give thanks, and your attention will be drawn to all there is to be grateful for);
 
+Already Said - September 30 (God is concerned with the values you prioritize in life and how you treat people; What is good in the eyes of God: to do justice, love kindness, and walk humbly with the Lord);
+
+Full Expression - October 1 (Love reaches its goal in our lives when we are in constant fellowship with God; God doesn't put conditions on his love, and we shouldn't put any conditions on it either);
+
+Never Alone - October 2 (We need to make sure our expectations are grounded in the goodness of Gods presence and not the allure of avoiding life's undesired experiences);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
