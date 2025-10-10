@@ -1351,6 +1351,8 @@ Never Alone - October 2 (We need to make sure our expectations are grounded in t
 
 It Is Done - October 3 (Everything you hope for is being worked out, and according to Christ, it is already done; Rest in the peace of God's presence and trust in his loyal love);
 
+Overlook Offenses - October 4 (Overlooking offenses is a display of your virtue; By knowing your true identity and worth, you can forgive someone while adjusting your expectations of the relationship);
+
 Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
 
 ## Gods help
