@@ -57,6 +57,10 @@ https://www.amazon.com/365-Days-Prayer-Couples-Devotional/dp/1424560098/ref=sr_1
 https://www.amazon.com/Walking-God-365-Daily-Devotions/dp/1642723991/ref=sr_1_29?crid=8A54X54LNHMS&keywords=365+devotional&qid=1692810461&sprefix=365+devotional+%2Caps%2C195&sr=8-29 - Walking with God 365 Daily Devotions, Large Print Brown Faux Leather
 https://www.amazon.com/Power-Prayer-One-Minute-Devotions-LuxLeather/dp/1432105876/ref=sr_1_94?crid=8A54X54LNHMS&keywords=365+devotional&qid=1692810502&sprefix=365+devotional+%2Caps%2C195&sr=8-94 - One-Minute Devotions The Power of Prayer
 
+https://www.amazon.com/Mystic-Bible-Randolph-Dr-Stone/dp/B07ZJ9TM42 - Mystic Bible;
+https://www.eastonpress.com/all-categories/bibles-and-religion/the-essential-writings-of-christian-mysticism-3904.html?srsltid=AfmBOoohQtk3hWo1HG5V7WWDXrzf8DVDWQNKvbL07xNjuyer0dc9vb6M - The Essential Writings of Christian Mysticism;
+
+
 ### AI
 
 - https://www.amazon.com/AI-ECOMMERCE-Mastering-Ecommerce-ChatGPT-ebook/dp/B0DK3SYDWN/ref=sr_1_11_sspa?crid=F90QOR6TLBY0&dib=eyJ2IjoiMSJ9.3OY-W_nt-egNPuTmjA9wC-CMF0UIi2gy3NosxhQI5LYgVRNgKlO8JOUE7CwhRuk8sB7PFjHUwXeswEnoe1t-m4olquV-anVeXsEYBEmxaPhrRUiYF-xAQulxRpQN1inBVC_FUTjQtK4GRkNAOS5Ip_NqhuLUL3hUX5BZO0G0wvq1boYMktvJBAlYxC3zmcwh7ZFQfYmSYj6_8sQIPaaZrnc79CKBXOr1wWw6guQxhB7SrJjW_MtfkUOKfhwaG-egWfvh9TO8MgUiphK4dNS0lKGlknFDZgBG3y4Fo95fDOg.YDhzx4Ns0p6v0JhCB6GF-O8oZROFuBcqD39qK8hZTZY&dib_tag=se&keywords=ai+agents&qid=1739475350&sprefix=ai+agent%2Caps%2C216&sr=8-11-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1 - AI ECOMMERCE: Mastering Ecommerce with AI and ChatGPT;

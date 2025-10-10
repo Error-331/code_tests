@@ -1349,6 +1349,10 @@ Full Expression - October 1 (Love reaches its goal in our lives when we are in c
 
 Never Alone - October 2 (We need to make sure our expectations are grounded in the goodness of Gods presence and not the allure of avoiding life's undesired experiences);
 
+It Is Done - October 3 (Everything you hope for is being worked out, and according to Christ, it is already done; Rest in the peace of God's presence and trust in his loyal love);
+
+Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
