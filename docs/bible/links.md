@@ -1355,6 +1355,8 @@ Overlook Offenses - October 4 (Overlooking offenses is a display of your virtue;
 
 Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
 
+Remembrance - October 10 (If we return to the Lord and obey his law of love, we will awake from the slumber of indifference);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
