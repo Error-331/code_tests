@@ -21,6 +21,10 @@
 - https://hailuoai.video/ - HailuoAI;
 - https://nijijourney.com/ - NIJIJourney;
 
+## Image processing
+
+- https://www.edimakor.net/sem/video-editor-video-to-video.html?gad_source=2&gad_campaignid=23024096855&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_Xng-tmU3dC2f74_whUQYtCOkgEGDXSC-b5Cw9dgD8MitR2TDgvN14aAh7FEALw_wcB;
+
 ## Video generation
 
 - https://www.imagine.art/ - RunwayML;
@@ -38,6 +42,7 @@
 ## Avatar generation
 
 - https://creatify.ai/ - Creatify;
+- https://humanpal.io/ ;
 
 ## Presentation resources generation
 
@@ -50,6 +55,7 @@
 - https://elevenlabs.io/ ;
 - https://www.ibm.com/products/text-to-speech ;
 - https://cloud.google.com/text-to-speech/?hl=en ;
+- https://clonevoice.ai/ ;
 
 ## Audio transcriptions
 
@@ -67,6 +73,10 @@
 - https://github.com/facebookresearch/audiocraft - AudioCraft;
 - https://github.com/facebookresearch/audiocraft/blob/main/docs/MBD.md - MultiBand Diffusion;
 - https://github.com/facebookresearch/encodec - encodec;
+
+## Site generation
+
+- https://clicksites.ai/gdeal/index.html - site generation;
 
 ## Frameworkds
 

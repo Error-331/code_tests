@@ -1357,6 +1357,8 @@ Come Alive - October 9 (We are not dead in our transgressions; we are alive in t
 
 Remembrance - October 10 (If we return to the Lord and obey his law of love, we will awake from the slumber of indifference);
 
+Walk in His Ways - October 11 (As we remain open to the Lord, connected to him through spirit-to-Spirit fellowship, we are enriched by the gratitude flowing freely.);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
