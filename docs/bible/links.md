@@ -1353,6 +1353,8 @@ It Is Done - October 3 (Everything you hope for is being worked out, and accordi
 
 Overlook Offenses - October 4 (Overlooking offenses is a display of your virtue; By knowing your true identity and worth, you can forgive someone while adjusting your expectations of the relationship);
 
+Trustworthy Fortress - October 5 (God fills us with the perfection of his peace to calm our fears and steady our thoughts);
+
 Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
 
 Remembrance - October 10 (If we return to the Lord and obey his law of love, we will awake from the slumber of indifference);
@@ -1360,6 +1362,8 @@ Remembrance - October 10 (If we return to the Lord and obey his law of love, we 
 Walk in His Ways - October 11 (As we remain open to the Lord, connected to him through spirit-to-Spirit fellowship, we are enriched by the gratitude flowing freely);
 
 Thankful Prayers - October 12 (We can use the anxiety that crops up in our hearts and thoughts as fuel for our prayer lives; Every time you feel your heart flutter with uncertainty today, pray);
+
+Take Heart - October 13 (Wisdom is found in waiting on God when we would rather run toward or away from a threat; Fear tries to rush us into action while the peace of God ground us as we wait; Be courageous and bold and never lose your focus on God);
 
 ## Gods help
 
