@@ -1355,6 +1355,8 @@ Overlook Offenses - October 4 (Overlooking offenses is a display of your virtue;
 
 Trustworthy Fortress - October 5 (God fills us with the perfection of his peace to calm our fears and steady our thoughts);
 
+Ripple Effects - October 6 (When we are weighed down by our troubles, it means there's more room for comfort to meet us; As we are comforted in times of distress, we can share comfort and grace with others; Love expands to fill the spaces of our experience);
+
 Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
 
 Remembrance - October 10 (If we return to the Lord and obey his law of love, we will awake from the slumber of indifference);
@@ -1364,6 +1366,12 @@ Walk in His Ways - October 11 (As we remain open to the Lord, connected to him t
 Thankful Prayers - October 12 (We can use the anxiety that crops up in our hearts and thoughts as fuel for our prayer lives; Every time you feel your heart flutter with uncertainty today, pray);
 
 Take Heart - October 13 (Wisdom is found in waiting on God when we would rather run toward or away from a threat; Fear tries to rush us into action while the peace of God ground us as we wait; Be courageous and bold and never lose your focus on God);
+
+No One Like Him - October 14 (God is worthy of our devotion when we understand his ways and when there is mystery in the waiting; God is unfailing in love, and he follows through on every single one of his promises);
+
+A Creator's Help - October 15 (When you feel your heart growing overwhelmed by the stresses of life, step into nature);
+
+On the Goodness - October 16 (Psalm 85:10 KJV; There is endless goodness in the truth of Christ, and love is inherent to its message; Goodness and peace are connected, for they are reflections of the divinely good Father; I worship you even as I hunger to know you more);
 
 ## Gods help
 
