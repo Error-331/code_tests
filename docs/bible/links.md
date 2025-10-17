@@ -1373,6 +1373,8 @@ A Creator's Help - October 15 (When you feel your heart growing overwhelmed by t
 
 On the Goodness - October 16 (Psalm 85:10 KJV; There is endless goodness in the truth of Christ, and love is inherent to its message; Goodness and peace are connected, for they are reflections of the divinely good Father; I worship you even as I hunger to know you more);
 
+Heart Longings - October 17 (The presence of God is accessible to all in the same abundant measure; No matter how rich or poor you are, no matter how well-traveled or how little exposed you've been in this world, no matter what-your longings for the courts of the Lord lead you to the presence of God within you);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
