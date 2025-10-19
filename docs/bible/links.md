@@ -1375,6 +1375,8 @@ On the Goodness - October 16 (Psalm 85:10 KJV; There is endless goodness in the 
 
 Heart Longings - October 17 (The presence of God is accessible to all in the same abundant measure; No matter how rich or poor you are, no matter how well-traveled or how little exposed you've been in this world, no matter what-your longings for the courts of the Lord lead you to the presence of God within you);
 
+Unchangeable God - October 18 (The faithfulness of God is not only our hope; it is a safe place to hide; Strength and comfort come from dwelling in God's faithfulness);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
