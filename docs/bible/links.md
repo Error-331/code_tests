@@ -1357,6 +1357,10 @@ Trustworthy Fortress - October 5 (God fills us with the perfection of his peace 
 
 Ripple Effects - October 6 (When we are weighed down by our troubles, it means there's more room for comfort to meet us; As we are comforted in times of distress, we can share comfort and grace with others; Love expands to fill the spaces of our experience);
 
+Faithful Fruit - October 7 (We must stay focused on our part and try not to micromanage the responses of others; Our priority is to remain surrendered to the Lord and obedient to his love);
+
+Calm Blessing - October 8 (The calm places of rest we dwell in are gifts; Greet calmness as the blessing it is; There is goodness in rest; The peace of God is everywhere in his presence, and we don't have to be in motion to experience it);
+
 Come Alive - October 9 (We are not dead in our transgressions; we are alive in the resurrection life of Christ; Arise in the victory of Christ and shake off the old ways of coping that no longer serve you);
 
 Remembrance - October 10 (If we return to the Lord and obey his law of love, we will awake from the slumber of indifference);
@@ -1374,6 +1378,8 @@ A Creator's Help - October 15 (When you feel your heart growing overwhelmed by t
 On the Goodness - October 16 (Psalm 85:10 KJV; There is endless goodness in the truth of Christ, and love is inherent to its message; Goodness and peace are connected, for they are reflections of the divinely good Father; I worship you even as I hunger to know you more);
 
 Heart Longings - October 17 (The presence of God is accessible to all in the same abundant measure; No matter how rich or poor you are, no matter how well-traveled or how little exposed you've been in this world, no matter what-your longings for the courts of the Lord lead you to the presence of God within you);
+
+Unchangeable God - October 18 (Strength and comfort come from dwelling in God's faithfulness; God remains the same regardless, so learn to rest in his faithfulness and find strength and comfort there);
 
 ## Gods help
 
