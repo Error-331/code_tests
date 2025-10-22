@@ -1381,6 +1381,8 @@ Heart Longings - October 17 (The presence of God is accessible to all in the sam
 
 Unchangeable God - October 18 (Strength and comfort come from dwelling in God's faithfulness; God remains the same regardless, so learn to rest in his faithfulness and find strength and comfort there);
 
+Unchangeable God - October 18 (The faithfulness of God is not only our hope; it is a safe place to hide; Strength and comfort come from dwelling in God's faithfulness);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
