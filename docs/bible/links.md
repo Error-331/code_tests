@@ -1379,9 +1379,11 @@ On the Goodness - October 16 (Psalm 85:10 KJV; There is endless goodness in the 
 
 Heart Longings - October 17 (The presence of God is accessible to all in the same abundant measure; No matter how rich or poor you are, no matter how well-traveled or how little exposed you've been in this world, no matter what-your longings for the courts of the Lord lead you to the presence of God within you);
 
-Unchangeable God - October 18 (Strength and comfort come from dwelling in God's faithfulness; God remains the same regardless, so learn to rest in his faithfulness and find strength and comfort there);
+Unchangeable God - October 18 (The faithfulness of God is not only our hope; it is a safe place to hide; Strength and comfort come from dwelling in God's faithfulness; God remains the same regardless, so learn to rest in his faithfulness and find strength and comfort there);
 
-Unchangeable God - October 18 (The faithfulness of God is not only our hope; it is a safe place to hide; Strength and comfort come from dwelling in God's faithfulness);
+Never Forget - October 19 (As we receive the grace of God, we are empowered to stand strong in the integrity of his purposes and the mercy of his heart; The resurrection power of God is our hope, strength, and overcoming victory in life and death);
+
+Drawn In - October 20 (God's love is purer than our best attempts; God is perfect in all his ways, yet he is humble, merciful, and gentle; Anything less than the perfection of God's love is not him; God is better than the greatest love we have known in life);
 
 ## Gods help
 
