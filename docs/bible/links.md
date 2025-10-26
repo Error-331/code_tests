@@ -1385,6 +1385,10 @@ Never Forget - October 19 (As we receive the grace of God, we are empowered to s
 
 Drawn In - October 20 (God's love is purer than our best attempts; God is perfect in all his ways, yet he is humble, merciful, and gentle; Anything less than the perfection of God's love is not him; God is better than the greatest love we have known in life);
 
+Overflowing Hope - October 21 (God was not moved to save us because of what we could offer him; God saved us because of his extravagant mercy toward us; We can't earn our way into God's kingdom; it is the gift of grace; Christ made us innocent by clothing us in his own righteousness);
+
+Stand Firm - October 22 (You must put into practice what you believe in order to make it a true value in your life);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
