@@ -1393,6 +1393,10 @@ Direct Your Soul - October 23 (You can't ignore a feeling away, but you can feel
 
 Examples To Follow - October 24 (Spiritual endurance is not for some but necessary for all who follow the Lord; Knowing there will be times we need to press on in faith and endure against all odds, we can lean into the Spirit more readily);
 
+Returned in Full - October 25 (A fresh portion is waiting for you as you do. God's love will meet you in it until giving becomes a reflex of his compassion alive in you;  I choose to give and grow in generosity because God prioritize it);
+
+Even More - October 26 (God always feeds a hungry heart. He satisfies the thirsty soul. Don't limit what you receive because you want to control his love's portion for you);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;

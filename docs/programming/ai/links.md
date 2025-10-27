@@ -38,6 +38,8 @@
 - https://hailuoai.video/ - HailuoAI;
 - https://videoexpress.ai/ - Video express;
 - https://talkingphotos.ai/go/ - Talking Photos;
+- https://www.hitpaw.net/ - video upscale;
+- https://verv.fm/ - video generation;
 
 ## Avatar generation
 
