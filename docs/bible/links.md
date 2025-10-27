@@ -1389,6 +1389,10 @@ Overflowing Hope - October 21 (God was not moved to save us because of what we c
 
 Stand Firm - October 22 (You must put into practice what you believe in order to make it a true value in your life);
 
+Direct Your Soul - October 23 (You can't ignore a feeling away, but you can feel it and lead it to God);
+
+Examples To Follow - October 24 (Spiritual endurance is not for some but necessary for all who follow the Lord; Knowing there will be times we need to press on in faith and endure against all odds, we can lean into the Spirit more readily);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
