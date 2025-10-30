@@ -1397,6 +1397,10 @@ Returned in Full - October 25 (A fresh portion is waiting for you as you do. God
 
 Even More - October 26 (God always feeds a hungry heart. He satisfies the thirsty soul. Don't limit what you receive because you want to control his love's portion for you);
 
+Can't Wait - October 27 (We can connect with the Lord in prayer; When we in a desperate emergency, it is not a lack of faith to ask God to hurry to us; it acknowledges the moment we are in);
+
+Completely Reliant - October 28 (It is not weakness to admit your reliance on the Lord; It is a great relief when we call on the Lord for help, for he is faithful to come to our aid; When we admit our need and cry out to God, he faithfully answers us);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1430,3 +1434,5 @@ God, you created me with purpose, and even the weirdest parts of my personality 
 When you give others the benefit of the doubt and are clear about your expectations while still encouraging others, you become a builder just as God is a builder.
 
 The fullness of God is yours in the fellowship in the Holy Spirit.
+
+Lord my God, I cry out to you for help in my day of need, and I rely on you in my weakness. Be my strength and help me.
