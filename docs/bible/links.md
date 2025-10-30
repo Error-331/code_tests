@@ -1401,6 +1401,8 @@ Can't Wait - October 27 (We can connect with the Lord in prayer; When we in a de
 
 Completely Reliant - October 28 (It is not weakness to admit your reliance on the Lord; It is a great relief when we call on the Lord for help, for he is faithful to come to our aid; When we admit our need and cry out to God, he faithfully answers us);
 
+Until He Comes - October 29 (Take stock of the gifts and blessings you do have instead of wishing for what you don't; A simple redirection of your focus can be enough to empower you instead of leaving you feeling helpless; We need the encouragement and support of loved ones and community as much as we need the Holy Spirit's help);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
@@ -1436,3 +1438,5 @@ When you give others the benefit of the doubt and are clear about your expectati
 The fullness of God is yours in the fellowship in the Holy Spirit.
 
 Lord my God, I cry out to you for help in my day of need, and I rely on you in my weakness. Be my strength and help me.
+
+If you are having trouble recognizing what you have, ask a friend to share what strengths they see in you.
