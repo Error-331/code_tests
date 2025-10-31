@@ -1403,6 +1403,8 @@ Completely Reliant - October 28 (It is not weakness to admit your reliance on th
 
 Until He Comes - October 29 (Take stock of the gifts and blessings you do have instead of wishing for what you don't; A simple redirection of your focus can be enough to empower you instead of leaving you feeling helpless; We need the encouragement and support of loved ones and community as much as we need the Holy Spirit's help);
 
+Treasures of Darkness - October 30 (There is no reason to fear dark seasons of grief, suffering, or unanswered questions, for God is with us in it. As we look to him, he reveals treasures hidden within the darkest moments of our lives);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
