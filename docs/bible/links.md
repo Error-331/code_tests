@@ -1405,6 +1405,8 @@ Until He Comes - October 29 (Take stock of the gifts and blessings you do have i
 
 Treasures of Darkness - October 30 (There is no reason to fear dark seasons of grief, suffering, or unanswered questions, for God is with us in it. As we look to him, he reveals treasures hidden within the darkest moments of our lives);
 
+Living Expression - October 31 (Christ is the loving Father, present Spirit, and devoted Son);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
