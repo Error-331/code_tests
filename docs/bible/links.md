@@ -1407,6 +1407,8 @@ Treasures of Darkness - October 30 (There is no reason to fear dark seasons of g
 
 Living Expression - October 31 (Christ is the loving Father, present Spirit, and devoted Son);
 
+Sun and Rain - November 1 (Every day is an opportunity to put Christ's love into practice. It may not be the easy or popular thing to do, but it is the best choice you could ever make);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
