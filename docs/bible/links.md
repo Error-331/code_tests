@@ -1413,6 +1413,8 @@ Holy Endurance - November 2 (You can't escape the trials of life, but God promis
 
 Shepherd of Peace - November 3 (All Christ want from us is our submission; Everything he offers us is lined with his lavish, loving kindness);
 
+Now and Forever - November 4 (Though we are constantly changing, God is not. He is a steady foundation and a sure help.);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
