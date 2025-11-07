@@ -1413,7 +1413,9 @@ Holy Endurance - November 2 (You can't escape the trials of life, but God promis
 
 Shepherd of Peace - November 3 (All Christ want from us is our submission; Everything he offers us is lined with his lavish, loving kindness);
 
-Now and Forever - November 4 (Though we are constantly changing, God is not. He is a steady foundation and a sure help.);
+Now and Forever - November 4 (Though we are constantly changing, God is not. He is a steady foundation and a sure help);
+
+Demonstrated Love - November 5 (When it comes to the peace that passes all understanding, the salvation of our souls, and the hope of eternal life, it all comes down to the demonstrated love and sacrifice of the Anointed One; Lord remove the burden of proof from your shoulders and became the gate by which we come to him; We don't stand on our merit but on Christ's);
 
 ## Gods help
 
