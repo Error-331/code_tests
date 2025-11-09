@@ -1417,6 +1417,10 @@ Now and Forever - November 4 (Though we are constantly changing, God is not. He 
 
 Demonstrated Love - November 5 (When it comes to the peace that passes all understanding, the salvation of our souls, and the hope of eternal life, it all comes down to the demonstrated love and sacrifice of the Anointed One; Lord remove the burden of proof from your shoulders and became the gate by which we come to him; We don't stand on our merit but on Christ's);
 
+Easy And Light - November 6 (We come with all our burdens in tow, and Christ takes the weight and gives us rest; Christ offers rest for our souls, and he promises to teach us through divine partnership);
+
+Look to Jesus - November 7 (Instead of looking for excuses as to why we don't need to do what Christ taught, let's look to what he actually said, did, and encouraged others to do);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
