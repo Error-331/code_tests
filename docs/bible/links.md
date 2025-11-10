@@ -1421,6 +1421,10 @@ Easy And Light - November 6 (We come with all our burdens in tow, and Christ tak
 
 Look to Jesus - November 7 (Instead of looking for excuses as to why we don't need to do what Christ taught, let's look to what he actually said, did, and encouraged others to do);
 
+Faith Journey - November 8 (If you have determination in your heart, passion to pursue, and an idea of even one step, you can take that step of faith and trust that God will lead you as you go; Ever direction and redirection is part of the journey. Just get moving);
+
+Joyful Generosity - November 9 (Joy is not reserved for times of ease; May we look for ways to relieve the pain of others no matter what our current circumstances are. We will find joy as we do);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
