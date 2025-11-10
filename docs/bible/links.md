@@ -1425,6 +1425,8 @@ Faith Journey - November 8 (If you have determination in your heart, passion to 
 
 Joyful Generosity - November 9 (Joy is not reserved for times of ease; May we look for ways to relieve the pain of others no matter what our current circumstances are. We will find joy as we do);
 
+Sow Your Community - November 10 (As God's people, we are not to neglect the responsibility of giving to others - we reflect our love and thus God's love; It is important to sow into our communities and not just causes that are far from our doorsteps);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
