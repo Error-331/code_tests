@@ -1427,6 +1427,8 @@ Joyful Generosity - November 9 (Joy is not reserved for times of ease; May we lo
 
 Sow Your Community - November 10 (As God's people, we are not to neglect the responsibility of giving to others - we reflect our love and thus God's love; It is important to sow into our communities and not just causes that are far from our doorsteps);
 
+Faith Fruit - November 11 (Will you focus on the faithfulness of God rather than the improbable circumstances you have to overcome?; Put your hope in God and let the seeds of your faith grow in the soil of God's love; He will do what he has said he will do);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
