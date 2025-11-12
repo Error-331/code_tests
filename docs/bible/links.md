@@ -1429,6 +1429,8 @@ Sow Your Community - November 10 (As God's people, we are not to neglect the res
 
 Faith Fruit - November 11 (Will you focus on the faithfulness of God rather than the improbable circumstances you have to overcome?; Put your hope in God and let the seeds of your faith grow in the soil of God's love; He will do what he has said he will do);
 
+Not Silent - November 12 (It is not a lack of faith to desperately need the  Lord's intervention; We can come to God just as we are, in whatever emotional state we are in, and be met by the overwhelming love of God);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
