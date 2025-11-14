@@ -1431,6 +1431,10 @@ Faith Fruit - November 11 (Will you focus on the faithfulness of God rather than
 
 Not Silent - November 12 (It is not a lack of faith to desperately need the  Lord's intervention; We can come to God just as we are, in whatever emotional state we are in, and be met by the overwhelming love of God);
 
+Give Your Heart - November 13 (There is no safe love to rest in than the pure love of Christ; He does not put demands on you; Everything he invites you into is a partnership with his powerful mercy, peace, and justice);
+
+Redemption Life - November 14 (There is redemption in the love of Christ; Christ transforms us from the inside out with his lavish love; Christ offers us new opportunities to live out his mercy; Christ has redeemed us);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
