@@ -1435,6 +1435,8 @@ Give Your Heart - November 13 (There is no safe love to rest in than the pure lo
 
 Redemption Life - November 14 (There is redemption in the love of Christ; Christ transforms us from the inside out with his lavish love; Christ offers us new opportunities to live out his mercy; Christ has redeemed us);
 
+Children of Peace - November 15 (The ones who pursue peace are known as reflections of God's living love; Consider this truth when you are inundated with reasons to fight for your freedom rather than submit to the leadership and wisdom of Christ; Peace is not a weak person's aim; Pursuing peace shows you take the Word of God seriously);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
