@@ -1437,6 +1437,8 @@ Redemption Life - November 14 (There is redemption in the love of Christ; Christ
 
 Children of Peace - November 15 (The ones who pursue peace are known as reflections of God's living love; Consider this truth when you are inundated with reasons to fight for your freedom rather than submit to the leadership and wisdom of Christ; Peace is not a weak person's aim; Pursuing peace shows you take the Word of God seriously);
 
+Inexpressible Goodness - November 16 (If our understanding of God's grace isn't astonishing in its generosity and goodness, we don't realize the fullness of it; God's love isn't his only limitless virtue; his grace never diminishes or ends; We should never venture to limit God's grace with the bounds of our experiences and limits);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
