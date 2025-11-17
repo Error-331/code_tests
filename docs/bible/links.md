@@ -1439,6 +1439,8 @@ Children of Peace - November 15 (The ones who pursue peace are known as reflecti
 
 Inexpressible Goodness - November 16 (If our understanding of God's grace isn't astonishing in its generosity and goodness, we don't realize the fullness of it; God's love isn't his only limitless virtue; his grace never diminishes or ends; We should never venture to limit God's grace with the bounds of our experiences and limits);
 
+Bless the Lord - November 17 (For all God has already done in your life, direct your soul in blessing his name; Bless the Lord and do not forget his benefits);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
