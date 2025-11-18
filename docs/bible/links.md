@@ -1441,6 +1441,8 @@ Inexpressible Goodness - November 16 (If our understanding of God's grace isn't 
 
 Bless the Lord - November 17 (For all God has already done in your life, direct your soul in blessing his name; Bless the Lord and do not forget his benefits);
 
+Openhearted Living - November 18 (1 John 3:17 TPT; Compassion and generosity go hand in hand; When we remain open hearted to compassion and allow it to move us, we will be generous with what we have);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
