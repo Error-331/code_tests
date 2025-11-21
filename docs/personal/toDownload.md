@@ -49,3 +49,28 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 ## Games
 
 - https://dosgames.com/game/radix-beyond-the-void/#google_vignette - Radix: Beyond the Void;
+
+### Old games
+
+#### Arcade
+
+- https://www.old-games.ru/game/3509.html - Inner Worlds;
+
+#### Rts
+
+- https://www.old-games.ru/game/screenshots/13706.html - Gangland: Trouble in Paradise;
+- https://www.old-games.ru/game/5617.html - Impact of Power – Destroyers;
+
+#### Tycoon 
+
+- https://www.old-games.ru/game/5827.html - C.E.O. (AIV Network$, A4 Networks);
+
+#### Racing
+
+- https://www.old-games.ru/game/9175.html - Motor City Online;
+- https://www.old-games.ru/game/247.html - Carmageddon;
+- https://www.old-games.ru/game/476.html - Carmageddon: Splat Pack;
+
+#### Quest
+
+- https://www.old-games.ru/game/1755.html - Future Wars: Adventures in Time;

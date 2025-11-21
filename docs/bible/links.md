@@ -1445,6 +1445,8 @@ Openhearted Living - November 18 (1 John 3:17 TPT; Compassion and generosity go 
 
 Groaning of Creation - November 19 (Though we see in part now, one day, when every tear is wiped away and death is but a memory, we will see and know fully the glorious realm of God);
 
+Overflow of Goodness - November 20 ("Freely you received, freely give"; All the goodness you have received from God is goodness you can share; Let's give generously in every way - spiritually, emotionally, and physically - we have received; There is blessing in it);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
