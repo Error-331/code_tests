@@ -56,14 +56,61 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 
 - https://www.old-games.ru/game/3509.html - Inner Worlds;
 
-#### Rts
+#### RTS
 
-- https://www.old-games.ru/game/screenshots/13706.html - Gangland: Trouble in Paradise;
+- https://www.old-games.ru/game/13706.html - Gangland: Trouble in Paradise;
 - https://www.old-games.ru/game/5617.html - Impact of Power – Destroyers;
+- https://www.old-games.ru/game/2310.html - 1869;
+- https://www.old-games.ru/game/5774.html - 8th Wonder of the World;
+- https://www.old-games.ru/game/583.html - A.R.S.E.N.A.L: Taste the Power;
+- https://www.old-games.ru/game/606.html - Abomination: The Nemesis Project;
+- https://www.old-games.ru/game/4399.html - Action in the North Atlantic;
+- https://www.old-games.ru/game/13455.html - Against Rome;
+- https://www.old-games.ru/game/3261.html - Age of Sail;
+- https://www.old-games.ru/game/2822.html - Air Force Commander;
+- https://www.old-games.ru/game/4963.html - Akte Europa;
+- https://www.old-games.ru/game/4937.html - Alchemist;
+- https://www.old-games.ru/game/176.html - Allied General;
+- https://www.old-games.ru/game/2889.html - The Ancient Art of War in the Skies;
+- https://www.old-games.ru/game/1274.html - Ancient Conquest: Quest for the Golden Fleece;
+- https://www.old-games.ru/game/11536.html - Area 88: Etranger 1995;
+- https://www.old-games.ru/game/8009.html - Armies of Exigo;
+- https://www.old-games.ru/game/5687.html - Armageddon: For the Crimson Glory (StarCraft like);
+- https://www.old-games.ru/game/418.html - Armored Moon: The Next Eden;
+- https://www.old-games.ru/game/9576.html - Army Men RTS;
+- https://www.old-games.ru/game/1561.html - Atrox (StarCraft like);
+- https://www.old-games.ru/game/10128.html - Axis & Allies;
+- https://www.old-games.ru/game/2624.html - Balance of Power;
+- https://www.old-games.ru/game/922.html - Baldies;
+- https://www.old-games.ru/game/927.html - Battle Bugs;
+- https://www.old-games.ru/game/1559.html - Battle Commander (C&C like);
+- https://www.old-games.ru/game/487.html - Battle Isle;
+- https://www.old-games.ru/game/1523.html - Battle Realms;
+- https://www.old-games.ru/game/1762.html - Battle Realms: Winter of the Wolf;
+- https://www.old-games.ru/game/13452.html - Beach Life;
+- https://www.old-games.ru/game/929.html - Beasts & Bumpkins;
+- https://www.old-games.ru/game/342.html - Blood & Magic
+- https://www.old-games.ru/game/5528.html - Boss 1999 (!!!);
+- https://www.old-games.ru/game/800.html - Burntime;
+- https://www.old-games.ru/game/8430.html - Capture the Flag;
 
 #### Tycoon 
 
 - https://www.old-games.ru/game/5827.html - C.E.O. (AIV Network$, A4 Networks);
+- https://www.old-games.ru/game/7722.html - Airport Tycoon;
+- https://www.old-games.ru/game/6960.html - Das Amt;
+- https://www.old-games.ru/game/5560.html - MAG!!!;
+- https://www.old-games.ru/game/2536.html - Ashes of Empire;
+- https://www.old-games.ru/game/3035.html - Atlas;
+- https://www.old-games.ru/game/3041.html - Big Sea: The Better One Will Win;
+- https://www.old-games.ru/game/9388.html - Biing!: Sex, Intrigue and Scalpels;
+- https://www.old-games.ru/game/11328.html - Biznesman;
+- https://www.old-games.ru/game/2205.html - Black Gold;
+- https://www.old-games.ru/game/5688.html - Black Monday;
+- https://www.old-games.ru/game/4579.html - Bus Empire;
+- https://www.old-games.ru/game/5456.html - Canton: An Atlas Pathfinder Adventure
+- https://www.old-games.ru/game/405.html - Capitalism;
+- https://www.old-games.ru/game/11548.html - Capitalism Plus;
 
 #### Racing
 

@@ -1447,6 +1447,8 @@ Groaning of Creation - November 19 (Though we see in part now, one day, when eve
 
 Overflow of Goodness - November 20 ("Freely you received, freely give"; All the goodness you have received from God is goodness you can share; Let's give generously in every way - spiritually, emotionally, and physically - we have received; There is blessing in it);
 
+Kindness Relief - November 21 (Proverbs 12:25 NIV; One act of kindness, one caring word offered genuinely, can cheer us up; May we be drenched in kindness and deliberately offer the relief of life-giving encouragement that can restore joy to the heart);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
