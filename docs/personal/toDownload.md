@@ -93,6 +93,10 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/5528.html - Boss 1999 (!!!);
 - https://www.old-games.ru/game/800.html - Burntime;
 - https://www.old-games.ru/game/8430.html - Capture the Flag;
+- https://www.old-games.ru/game/2593.html - The Cardinal of the Kremlin;
+- https://www.old-games.ru/game/12846.html - Celtic Kings: Rage of War;
+- https://www.old-games.ru/game/2198.html - Celtic Tales: Balor of the Evil Eye;
+- https://www.old-games.ru/game/4938.html - Vital Device: Entrapped by the Queen (StarCraft like);
 
 #### Tycoon 
 
@@ -111,6 +115,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/5456.html - Canton: An Atlas Pathfinder Adventure
 - https://www.old-games.ru/game/405.html - Capitalism;
 - https://www.old-games.ru/game/11548.html - Capitalism Plus;
+- https://www.old-games.ru/game/8860.html - Car Tycoon;
+- https://www.old-games.ru/game/2120.html - Exploration;
+- https://www.old-games.ru/game/4270.html - Caveland;
 
 #### Racing
 

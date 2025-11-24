@@ -1449,6 +1449,8 @@ Overflow of Goodness - November 20 ("Freely you received, freely give"; All the 
 
 Kindness Relief - November 21 (Proverbs 12:25 NIV; One act of kindness, one caring word offered genuinely, can cheer us up; May we be drenched in kindness and deliberately offer the relief of life-giving encouragement that can restore joy to the heart);
 
+At Home - November 22 (The more Christ is at home in you, the more you grow in his love; Welcome him in, partner with his purposes, and invite him to lead you; He is full of wisdom for your quandaries and clarity for your confusion);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
