@@ -97,6 +97,8 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/12846.html - Celtic Kings: Rage of War;
 - https://www.old-games.ru/game/2198.html - Celtic Tales: Balor of the Evil Eye;
 - https://www.old-games.ru/game/4938.html - Vital Device: Entrapped by the Queen (StarCraft like);
+- https://www.old-games.ru/game/13346.html - Chaos (StarCraft like);
+- https://www.old-games.ru/game/2420.html - Champion of the Raj;
 
 #### Tycoon 
 
@@ -118,6 +120,8 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/8860.html - Car Tycoon;
 - https://www.old-games.ru/game/2120.html - Exploration;
 - https://www.old-games.ru/game/4270.html - Caveland;
+- https://www.old-games.ru/game/4034.html - Central Intelligence;
+- https://www.old-games.ru/game/12512.html - CEO City;
 
 #### Racing
 

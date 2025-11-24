@@ -1451,6 +1451,10 @@ Kindness Relief - November 21 (Proverbs 12:25 NIV; One act of kindness, one cari
 
 At Home - November 22 (The more Christ is at home in you, the more you grow in his love; Welcome him in, partner with his purposes, and invite him to lead you; He is full of wisdom for your quandaries and clarity for your confusion);
 
+Records of Honor - November 23 (Your submission to Lord's mercy is a beautiful act of worship; May your fellowship with Christ through the Holy Spirit encourage you to keep enduring and choosing lived-out love; He does not promise an easy life, but he does promise you a fulfilling one with his presence as your constant companion);
+
+Hopeful Plans - November 24 (Proverbs 16:3 KJV-TPT; God's plan and purposes are good. We can trust his heart as we follow his leadership; His wisdom is filled with loving kindness);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
