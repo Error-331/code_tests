@@ -1455,6 +1455,10 @@ Records of Honor - November 23 (Your submission to Lord's mercy is a beautiful a
 
 Hopeful Plans - November 24 (Proverbs 16:3 KJV-TPT; God's plan and purposes are good. We can trust his heart as we follow his leadership; His wisdom is filled with loving kindness);
 
+Motivation - November 25 (If you are running low on motivation today, you can find renewed courage, strength, and vision in the presence of God; The hope of God will never fail, for it is built on his unchanging character);
+
+No Created Thing - November 26 (Nothing can keep us from God's love; In everything we face, we are more than conquerors through Christ, for his unfailing love covers us; The love of Christ is overwhelming and victorious);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;

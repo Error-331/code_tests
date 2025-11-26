@@ -99,6 +99,8 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/4938.html - Vital Device: Entrapped by the Queen (StarCraft like);
 - https://www.old-games.ru/game/13346.html - Chaos (StarCraft like);
 - https://www.old-games.ru/game/2420.html - Champion of the Raj;
+- https://www.old-games.ru/game/895.html - Chaos Island;
+- https://www.old-games.ru/game/890.html - Chaos Overlords;
 
 #### Tycoon 
 
@@ -122,6 +124,8 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/4270.html - Caveland;
 - https://www.old-games.ru/game/4034.html - Central Intelligence;
 - https://www.old-games.ru/game/12512.html - CEO City;
+- https://www.old-games.ru/game/9747.html - Chartbuster;
+- https://www.old-games.ru/game/6087.html - Chengshi Baifenbai;
 
 #### Racing
 
