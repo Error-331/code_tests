@@ -1459,6 +1459,8 @@ Motivation - November 25 (If you are running low on motivation today, you can fi
 
 No Created Thing - November 26 (Nothing can keep us from God's love; In everything we face, we are more than conquerors through Christ, for his unfailing love covers us; The love of Christ is overwhelming and victorious);
 
+On Your Way - November 27 (Lord is full of goodness, and his love for you draws you in with kindness and the promise of true rest for your soul; Take today as it comes and invite the Lord into every part of your day; Lord's peace is pervasive, he has plenty of creativity to inspire you, and he has solutions for the dilemmas you face);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
