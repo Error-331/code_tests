@@ -1461,6 +1461,8 @@ No Created Thing - November 26 (Nothing can keep us from God's love; In everythi
 
 On Your Way - November 27 (Lord is full of goodness, and his love for you draws you in with kindness and the promise of true rest for your soul; Take today as it comes and invite the Lord into every part of your day; Lord's peace is pervasive, he has plenty of creativity to inspire you, and he has solutions for the dilemmas you face);
 
+Seek and Find - November 28 (It is not weakness to depend on the Lord; He is our Father after all; He is an infinitely better father than any on earth);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
