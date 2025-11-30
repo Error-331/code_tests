@@ -1463,6 +1463,8 @@ On Your Way - November 27 (Lord is full of goodness, and his love for you draws 
 
 Seek and Find - November 28 (It is not weakness to depend on the Lord; He is our Father after all; He is an infinitely better father than any on earth);
 
+Wonderful Deliverer - November 29 (God is our rock of rescue where none can reach us; When you are fearfully and wonder where you can turn, run to the rock that is higher than you or your circumstances; Your God is a wonderful deliverer. He will not let you waste away under the fear, terror, and abuse of the world or the powerful within it);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
