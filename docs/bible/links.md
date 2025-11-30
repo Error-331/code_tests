@@ -1465,6 +1465,8 @@ Seek and Find - November 28 (It is not weakness to depend on the Lord; He is our
 
 Wonderful Deliverer - November 29 (God is our rock of rescue where none can reach us; When you are fearfully and wonder where you can turn, run to the rock that is higher than you or your circumstances; Your God is a wonderful deliverer. He will not let you waste away under the fear, terror, and abuse of the world or the powerful within it);
 
+Renewed Strength - November 30 (God is good to all who hope in him);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
