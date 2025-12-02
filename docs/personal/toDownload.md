@@ -101,6 +101,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/2420.html - Champion of the Raj;
 - https://www.old-games.ru/game/895.html - Chaos Island;
 - https://www.old-games.ru/game/890.html - Chaos Overlords;
+- https://www.old-games.ru/game/2679.html - Colonial Project;
+- https://www.old-games.ru/game/3057.html - Command Adventures: Starship;
+- https://www.old-games.ru/game/3216.html - Computer Diplomacy;
 
 #### Tycoon 
 
@@ -126,6 +129,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/12512.html - CEO City;
 - https://www.old-games.ru/game/9747.html - Chartbuster;
 - https://www.old-games.ru/game/6087.html - Chengshi Baifenbai;
+- https://www.old-games.ru/game/13333.html - ColonyQuest;
 
 #### Racing
 

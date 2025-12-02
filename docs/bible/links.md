@@ -1467,6 +1467,10 @@ Wonderful Deliverer - November 29 (God is our rock of rescue where none can reac
 
 Renewed Strength - November 30 (God is good to all who hope in him);
 
+Peace of Mind - December 1 (John 14:27 NLT; God's inescapable and perfect peace cannot be disturbed or taken from us; Lord offers fresh portions of his loving peace to settle our hearts and clear our minds);
+
+No More Delay - December 2 (It is good to wait in hope, and it is also refreshing to experience the fulfillment of our hope; Even a small promise fulfilled is enough to bolster and encourage our hearts; Proverbs 13:12 KJV);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
