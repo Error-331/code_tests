@@ -104,6 +104,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/2679.html - Colonial Project;
 - https://www.old-games.ru/game/3057.html - Command Adventures: Starship;
 - https://www.old-games.ru/game/3216.html - Computer Diplomacy;
+- https://www.old-games.ru/game/608.html - Seven Years War;
+- https://www.old-games.ru/game/6496.html - Seven Years War 2;
+- https://www.old-games.ru/game/2108.html - War Diary;
 
 #### Tycoon 
 
