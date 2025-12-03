@@ -7,6 +7,10 @@
 3. Run `mkcert example.com "*.example.com" example.test localhost 127.0.0.1 ::5173`;
 4. Copy generated files to `Caddy` folder;
 
+Troubleshooting
+
+- If `Chrome` browser still does not accept certificate, gor to `chrome://settings/certificates` and manually add a certificate file;
+
 ## Caddy configuration
 
 1. Make sure that testing domain is pointing to local host (hosts file example: `127.0.0.1 example.com`);
