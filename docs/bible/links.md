@@ -1471,6 +1471,10 @@ Peace of Mind - December 1 (John 14:27 NLT; God's inescapable and perfect peace 
 
 No More Delay - December 2 (It is good to wait in hope, and it is also refreshing to experience the fulfillment of our hope; Even a small promise fulfilled is enough to bolster and encourage our hearts; Proverbs 13:12 KJV);
 
+Answer the call - December 3 (Romans 2:4 TPT; He doesn't ridicule us into change, and he doesn't' manipulate us into transformation; His living love removes the weight of shame, fear, and sin.);
+
+Dwelling Life - December 4 (As you apply Christ's rich wisdom to your life, you can teach and instruct one another; There is power in music, and there is encouragement in the spoken and sung Word; As we use worship music in our personal devotion time and in communal settings, we allow the Word of Christ to both dwell and grow in our hearts);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
