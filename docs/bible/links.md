@@ -1475,6 +1475,8 @@ Answer the call - December 3 (Romans 2:4 TPT; He doesn't ridicule us into change
 
 Dwelling Life - December 4 (As you apply Christ's rich wisdom to your life, you can teach and instruct one another; There is power in music, and there is encouragement in the spoken and sung Word; As we use worship music in our personal devotion time and in communal settings, we allow the Word of Christ to both dwell and grow in our hearts);
 
+Confident Peace - December 5 (When we set our minds on Christ, his absolute peace surrounds us; Confident trust leads to peace of mind and of heart; Why not lay back in the rest of his presence and turn our attention and imaginations over to his wonderful love?);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
