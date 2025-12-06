@@ -1477,6 +1477,8 @@ Dwelling Life - December 4 (As you apply Christ's rich wisdom to your life, you 
 
 Confident Peace - December 5 (When we set our minds on Christ, his absolute peace surrounds us; Confident trust leads to peace of mind and of heart; Why not lay back in the rest of his presence and turn our attention and imaginations over to his wonderful love?);
 
+A Great Cloud - December 6 (People around us choose to lay down their live in surrender and service daily; Wherever we see faith and love at work, there is evidence of Christ among us.);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
