@@ -1479,6 +1479,8 @@ Confident Peace - December 5 (When we set our minds on Christ, his absolute peac
 
 A Great Cloud - December 6 (People around us choose to lay down their live in surrender and service daily; Wherever we see faith and love at work, there is evidence of Christ among us.);
 
+Gracious Acceptance - December 7 (1 Corinthians 15:10 KJV; There is tremendous grace and peace in accepting who we are; We don't have to fight our personalities or our talents; We don't need to be held back by who others think we are or what part we've played; We find our peace in the gracious acceptance of who God made us to be and who he is making us into);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
