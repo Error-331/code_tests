@@ -1481,6 +1481,8 @@ A Great Cloud - December 6 (People around us choose to lay down their live in su
 
 Gracious Acceptance - December 7 (1 Corinthians 15:10 KJV; There is tremendous grace and peace in accepting who we are; We don't have to fight our personalities or our talents; We don't need to be held back by who others think we are or what part we've played; We find our peace in the gracious acceptance of who God made us to be and who he is making us into);
 
+Arise in Fullness - December 8 (When we practice the law of Christ's love and put our love for God and for one another at the forefront, we arise in the fullness of our union with God; When his mercy has free reign in our hearts, our lives reveal the fruit of his kindness; There is nothing greater than living with God's love as our highest priorit);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
