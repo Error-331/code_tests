@@ -1483,6 +1483,8 @@ Gracious Acceptance - December 7 (1 Corinthians 15:10 KJV; There is tremendous g
 
 Arise in Fullness - December 8 (When we practice the law of Christ's love and put our love for God and for one another at the forefront, we arise in the fullness of our union with God; When his mercy has free reign in our hearts, our lives reveal the fruit of his kindness; There is nothing greater than living with God's love as our highest priorit);
 
+Wisdom and Grace - December 9 (Jesus was full of wisdom and grace: wisdom to know when to leave and grace to heal those who needed a miracle; Gracious Jesus, I'm grateful for your wisdom and tender grace. Meet me with the power of your sound discernment and lavish love today);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;

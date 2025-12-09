@@ -55,6 +55,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 #### Arcade
 
 - https://www.old-games.ru/game/3509.html - Inner Worlds;
+- https://www.old-games.ru/game/13341.html - Perestroyka;
 
 #### RTS
 
@@ -107,6 +108,13 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/608.html - Seven Years War;
 - https://www.old-games.ru/game/6496.html - Seven Years War 2;
 - https://www.old-games.ru/game/2108.html - War Diary;
+- https://www.old-games.ru/game/169.html - Deadlock: Planetary Conquest;
+- https://www.old-games.ru/game/468.html - Deadlock II: Shrine Wars;
+- https://www.old-games.ru/game/4919.html - Colony Wars 2492;
+- https://www.old-games.ru/game/1687.html - Conquest: Frontier Wars;
+- https://www.old-games.ru/game/2952.html - Corsairs: Conquest at Sea;
+- https://www.old-games.ru/game/6362.html - Counter Blow;
+- https://www.old-games.ru/game/1961.html - Cultures;
 
 #### Tycoon 
 
@@ -133,12 +141,17 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/9747.html - Chartbuster;
 - https://www.old-games.ru/game/6087.html - Chengshi Baifenbai;
 - https://www.old-games.ru/game/13333.html - ColonyQuest;
+- https://www.old-games.ru/game/2387.html - Crisis in the Kremlin;
 
 #### Racing
 
 - https://www.old-games.ru/game/9175.html - Motor City Online;
 - https://www.old-games.ru/game/247.html - Carmageddon;
 - https://www.old-games.ru/game/476.html - Carmageddon: Splat Pack;
+
+#### RPG
+
+- https://www.old-games.ru/game/1528.html - Entomorph: Plague of the Darkfall;
 
 #### Quest
 
