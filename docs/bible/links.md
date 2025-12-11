@@ -1485,6 +1485,8 @@ Arise in Fullness - December 8 (When we practice the law of Christ's love and pu
 
 Wisdom and Grace - December 9 (Jesus was full of wisdom and grace: wisdom to know when to leave and grace to heal those who needed a miracle; Gracious Jesus, I'm grateful for your wisdom and tender grace. Meet me with the power of your sound discernment and lavish love today);
 
+Life Giving Wisdom - December 11 (Proverbs 3:13 KJV; There is goodness in wisdom fruit; May we embrace the wisdom of Christ, for it is life, breath, and peace);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
