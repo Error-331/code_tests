@@ -1471,19 +1471,21 @@ Peace of Mind - December 1 (John 14:27 NLT; God's inescapable and perfect peace 
 
 No More Delay - December 2 (It is good to wait in hope, and it is also refreshing to experience the fulfillment of our hope; Even a small promise fulfilled is enough to bolster and encourage our hearts; Proverbs 13:12 KJV);
 
-Answer the call - December 3 (Romans 2:4 TPT; He doesn't ridicule us into change, and he doesn't' manipulate us into transformation; His living love removes the weight of shame, fear, and sin.);
+Answer the call - December 3 (Romans 2:4 TPT; He doesn't ridicule us into change, and he doesn't' manipulate us into transformation; His living love removes the weight of shame, fear, and sin);
 
 Dwelling Life - December 4 (As you apply Christ's rich wisdom to your life, you can teach and instruct one another; There is power in music, and there is encouragement in the spoken and sung Word; As we use worship music in our personal devotion time and in communal settings, we allow the Word of Christ to both dwell and grow in our hearts);
 
 Confident Peace - December 5 (When we set our minds on Christ, his absolute peace surrounds us; Confident trust leads to peace of mind and of heart; Why not lay back in the rest of his presence and turn our attention and imaginations over to his wonderful love?);
 
-A Great Cloud - December 6 (People around us choose to lay down their live in surrender and service daily; Wherever we see faith and love at work, there is evidence of Christ among us.);
+A Great Cloud - December 6 (People around us choose to lay down their live in surrender and service daily; Wherever we see faith and love at work, there is evidence of Christ among us);
 
 Gracious Acceptance - December 7 (1 Corinthians 15:10 KJV; There is tremendous grace and peace in accepting who we are; We don't have to fight our personalities or our talents; We don't need to be held back by who others think we are or what part we've played; We find our peace in the gracious acceptance of who God made us to be and who he is making us into);
 
 Arise in Fullness - December 8 (When we practice the law of Christ's love and put our love for God and for one another at the forefront, we arise in the fullness of our union with God; When his mercy has free reign in our hearts, our lives reveal the fruit of his kindness; There is nothing greater than living with God's love as our highest priorit);
 
 Wisdom and Grace - December 9 (Jesus was full of wisdom and grace: wisdom to know when to leave and grace to heal those who needed a miracle; Gracious Jesus, I'm grateful for your wisdom and tender grace. Meet me with the power of your sound discernment and lavish love today);
+
+Our High Priest - December 10 (Jesus is in the holy of holies where the blood  of his sacrifice made our salvation secure once and forever; We are under the new covenant of his mercy; we now receive the eternal inheritance of dwelling with him in his kingdom)
 
 ## Gods help
 
