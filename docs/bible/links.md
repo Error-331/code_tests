@@ -1489,6 +1489,7 @@ Our High Priest - December 10 (Jesus is in the holy of holies where the blood  o
 
 Life Giving Wisdom - December 11 (Proverbs 3:13 KJV; There is goodness in wisdom fruit; May we embrace the wisdom of Christ, for it is life, breath, and peace);
 
+Upheld By God - December 12 (God guides our steps; Even when we fall, God picks us up. We are never out of his reach; "Even when I can't make out how things will come together, I trust you working it out");
 
 ## Gods help
 
