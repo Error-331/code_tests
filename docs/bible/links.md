@@ -1485,7 +1485,10 @@ Arise in Fullness - December 8 (When we practice the law of Christ's love and pu
 
 Wisdom and Grace - December 9 (Jesus was full of wisdom and grace: wisdom to know when to leave and grace to heal those who needed a miracle; Gracious Jesus, I'm grateful for your wisdom and tender grace. Meet me with the power of your sound discernment and lavish love today);
 
-Our High Priest - December 10 (Jesus is in the holy of holies where the blood  of his sacrifice made our salvation secure once and forever; We are under the new covenant of his mercy; we now receive the eternal inheritance of dwelling with him in his kingdom)
+Our High Priest - December 10 (Jesus is in the holy of holies where the blood  of his sacrifice made our salvation secure once and forever; We are under the new covenant of his mercy; we now receive the eternal inheritance of dwelling with him in his kingdom);
+
+Life Giving Wisdom - December 11 (Proverbs 3:13 KJV; There is goodness in wisdom fruit; May we embrace the wisdom of Christ, for it is life, breath, and peace);
+
 
 ## Gods help
 
