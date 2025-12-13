@@ -1491,6 +1491,8 @@ Life Giving Wisdom - December 11 (Proverbs 3:13 KJV; There is goodness in wisdom
 
 Upheld By God - December 12 (God guides our steps; Even when we fall, God picks us up. We are never out of his reach; "Even when I can't make out how things will come together, I trust you working it out");
 
+Hearts Fastened - December 13 (As we pray continually in the Spirit and receive mercy to help us in our daily lives, we are empowered by the grace of God to trust, hope, and walk in his ways);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
