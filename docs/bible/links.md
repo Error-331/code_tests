@@ -1493,6 +1493,8 @@ Upheld By God - December 12 (God guides our steps; Even when we fall, God picks 
 
 Hearts Fastened - December 13 (As we pray continually in the Spirit and receive mercy to help us in our daily lives, we are empowered by the grace of God to trust, hope, and walk in his ways);
 
+Healing Words - December 14 (2 Timothy 1:13 KJV; We can offer the same grace and mercy we receive from Christ in our interactions with others. Why not be agents of healing as Christ is to us?; "Healer, I don't want to neglect the power of the words I speak. As I consider the great encouragement of your love, may I give the same grace to others")
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
