@@ -1495,6 +1495,8 @@ Hearts Fastened - December 13 (As we pray continually in the Spirit and receive 
 
 Healing Words - December 14 (2 Timothy 1:13 KJV; We can offer the same grace and mercy we receive from Christ in our interactions with others. Why not be agents of healing as Christ is to us?; "Healer, I don't want to neglect the power of the words I speak. As I consider the great encouragement of your love, may I give the same grace to others")
 
+United in Purpose - December 15 (Love is a unifier; Love leads us in restoration and grace; We must humble our hearts, devote ourselves to Christ, and refuse to let walls of division keep us from loving our brothers and sisters in Christ);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
