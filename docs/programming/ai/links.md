@@ -40,6 +40,7 @@
 - https://talkingphotos.ai/go/ - Talking Photos;
 - https://www.hitpaw.net/ - video upscale;
 - https://verv.fm/ - video generation;
+- https://zeely.ai/ - create UGC videos, static ads, and high-selling campaigns;
 
 ## Avatar generation
 

@@ -356,3 +356,22 @@ https://www.ixbt.com/live/digs/fiio-ja11-obzor-portativnogo-capa-nachalnogo-urov
 - https://www.aliexpress.com/item/1005009174563700.html?spm=a2g0o.best.0.0.2cd15132HOrhzE&pdp_npi=6%40dis%21UAH%21%D0%B3%D1%80%D0%BD.3%2C563.45%21%D0%B3%D1%80%D0%BD.1%2C674.80%21%21%21%21%21%40211b619a17616115732135159e1935%2112000048433449767%21btfaff%21%21%21%211%210%21&afTraceInfo=1005009174563700__pc__pcBestMore2Love__9GdVIuC__1761611573555&_gl=1*1jtcgto*_gcl_aw*R0NMLjE3NjE1OTI2MTQuQ2owS0NRandzUHpIQmhEQ0FSSXNBTGxXTkcxWC1HOUlCR1ZoMFBGb3RJUlYtamVUck82aDR3ZWlaYlhtUmZ6d3ZTNFNhR3pNVEZ6ZnNqd2FBcF9FRUFMd193Y0I.*_gcl_dc*R0NMLjE3NjE1OTI2MTQuQ2owS0NRandzUHpIQmhEQ0FSSXNBTGxXTkcxWC1HOUlCR1ZoMFBGb3RJUlYtamVUck82aDR3ZWlaYlhtUmZ6d3ZTNFNhR3pNVEZ6ZnNqd2FBcF9FRUFMd193Y0I.*_gcl_au*MTA3MTkyNDc3Ni4xNzU0OTg0MTA4*_ga*OTExNzM5Mjg2LjE2ODEzNDYyMTc.*_ga_VED1YSGNC7*czE3NjE2MTExMDckbzQ2NCRnMSR0MTc2MTYxMTU3MyRqNTkkbDAkaDA. - HAMGEEK HG1723 Antenna periodica per log PCB da 0,5 Ghz-6 Ghz per il posizionamento degli UAV Ricerca direzioni Wi-Fi;
 - https://www.aliexpress.com/item/1005002109764566.html?aff_fcid=269d3e1f70c34cfdbc9c95c9614c7e0b-1761611223123-07864-_A6x89D&tt=CPS_NORMAL&aff_fsk=_A6x89D&aff_platform=shareComponent-detail&sk=_A6x89D&aff_trace_key=269d3e1f70c34cfdbc9c95c9614c7e0b-1761611223123-07864-_A6x89D&terminal_id=7cbb6e734f3c41e4b2f2d7cf46d4e015&afSmartRedirect=y#nav-specification - Pluto Plus 70MHz - 6GHZ AD9363 SDR ricevitore Radio/trasmettitore 2x RX/ 2x TX compatibile con ADI ADALM-PLUTO plutone + (!!!);
 - https://rozetka.com.ua/ua/490613879/p490613879/ - Аудіоплеєр FiiO Snowsky ECHO Mini Black;
+
+### Чехлы для мобильных
+
+- https://case24.com.ua/ua/p1810458945-tpu-chehol-nakladka.html - Urban Case;
+- https://endorphone.com.ua/silicone-case/fun/sol-ua-5625-oneplus-5 - Силиконовый чехол для OnePlus 5 'Соль UA' ;
+- https://endorphone.com.ua/silicone-case/other/cassette-876-oneplus-5 - Силиконовый чехол для OnePlus 5 'Кассета';
+- https://endorphone.com.ua/silicone-case/animals/letnyaya-noch-6472-oneplus-5 - Силиконовый чехол для OnePlus 5 'Летняя ночь';
+- https://endorphone.com.ua/silicone-case/space/faza-luny-5605-oneplus-5 - Силиконовый чехол для OnePlus 5 'Фаза луны';
+- https://endorphone.com.ua/silicone-case/space/noch-zolotye-zvezdy-5421-oneplus-5 - Силиконовый чехол для OnePlus 5 'Ночь золотые звезды';
+- https://endorphone.com.ua/silicone-case/other/misticheskiy-kollaj-s-travami-i-magicheskimi-simvolami-6428-oneplus-5 - Силиконовый чехол для OnePlus 5 'Мистический коллаж с травами и магическими символами';
+- https://endorphone.com.ua/silicone-case/space/e-al233m-4646-oneplus-5 - Силиконовый чехол для OnePlus 5 'e alem';
+- https://endorphone.com.ua/silicone-case/other/koldovskoy-print-6425-oneplus-5 - Силиконовый чехол для OnePlus 5 'Колдовской принт';
+- https://endorphone.com.ua/silicone-case/other/zvezdnyy-les-6480-oneplus-5 - Силиконовый чехол для OnePlus 5 'Звездный лес';
+- https://endorphone.com.ua/silicone-case/textures/geometric-pattern-904-oneplus-5 - Силиконовый чехол для OnePlus 5 'Геометрический узор';
+- https://endorphone.com.ua/silicone-case/flowers/s-cvetami-6422-oneplus-5 - Силиконовый чехол для OnePlus 5 'С цветами';
+- https://endorphone.com.ua/silicone-case/other/lisa-i-nochnoy-les-6481-oneplus-5 - Силиконовый чехол для OnePlus 5 'Лиса и ночной лес';
+- https://endorphone.com.ua/silicone-case/textures/jellyfish-906-oneplus-5 - Силиконовый чехол для OnePlus 5 'Медузы';
+- https://endorphone.com.ua/silicone-case/animals/ovechki1-4637-oneplus-5 - Силиконовый чехол для OnePlus 5 'Овечки1';
+- https://endorphone.com.ua/silicone-case/animals/nejnost-5906-oneplus-5 - Силиконовый чехол для OnePlus 5 'Нежность';
