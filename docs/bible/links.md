@@ -1497,6 +1497,10 @@ Healing Words - December 14 (2 Timothy 1:13 KJV; We can offer the same grace and
 
 United in Purpose - December 15 (Love is a unifier; Love leads us in restoration and grace; We must humble our hearts, devote ourselves to Christ, and refuse to let walls of division keep us from loving our brothers and sisters in Christ);
 
+Expectant Hope - December 16 (As we live for the Lord, humbling our hearts before him and adopting his ways, we take on his love in every aspect; Our souls have already experienced the first fruits of redemption, but we long for the awaited day of completion along with all creation);
+
+Practices of Prayer - December 17 (Undeserved love is powerful; He doesn't demand we perfectly love those around us, but he does instruct us to stretch our love beyond our limits);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
