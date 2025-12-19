@@ -115,6 +115,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/2952.html - Corsairs: Conquest at Sea;
 - https://www.old-games.ru/game/6362.html - Counter Blow;
 - https://www.old-games.ru/game/1961.html - Cultures;
+- https://www.old-games.ru/game/7507.html - Dawn of Empire (태조왕건 ~제국의 아침~ , StarCraft like);
 
 #### Tycoon 
 
@@ -142,6 +143,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/6087.html - Chengshi Baifenbai;
 - https://www.old-games.ru/game/13333.html - ColonyQuest;
 - https://www.old-games.ru/game/2387.html - Crisis in the Kremlin;
+- https://www.old-games.ru/game/3780.html - Energie-Manager;
+- https://www.old-games.ru/game/2842.html - Dark Universe;
+- https://www.old-games.ru/game/8410.html - Gazillionaire Deluxe;
 
 #### Racing
 

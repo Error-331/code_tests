@@ -42,6 +42,7 @@
 - https://www.hfsignals.com/index.php/zbitx/ - zbitx;
 - https://qrp-labs.com/qmx.html - QMX;
 - https://www.amazon.com/transceiver-5-Band-Multimode-Assembled-PE1NNZ/dp/B0BJ247SNL?pd_rd_w=CfM5c&content-id=amzn1.sym.751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_p=751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_r=RDBHEW0TMN376Z3Q110D&pd_rd_wg=vGwWR&pd_rd_r=9a09bf1c-245a-4e7b-a0ca-94032f4122ab&pd_rd_i=B0BJ247SNL&psc=1&linkCode=sl1&tag=leahnass0b-20&linkId=3fce31cee51f84e1bb2336fde323e09e&language=en_US&ref_=as_li_ss_tl - tr usdx;
+- https://silvustechnologies.com/products/streamcaster-mini-5200/ - STREAMCASTER MINI 5200 ;
 
 ### Antennas
 

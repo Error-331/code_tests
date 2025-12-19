@@ -1501,6 +1501,8 @@ Expectant Hope - December 16 (As we live for the Lord, humbling our hearts befor
 
 Practices of Prayer - December 17 (Undeserved love is powerful; He doesn't demand we perfectly love those around us, but he does instruct us to stretch our love beyond our limits);
 
+Our King Comes - December 19 (May we hold on to hope even as we consider what the first coming was like; Here comes our King; he is coming to us once more);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
