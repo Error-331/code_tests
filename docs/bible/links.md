@@ -1507,6 +1507,8 @@ Our King Comes - December 19 (May we hold on to hope even as we consider what th
 
 Longing For Nearness - December 20 (God loved us when we were far from him, and he loves us when we are drawn close by his mercy; When we long for God's presence, we reflect back to God the passion he has for us);
 
+Eagerly Awaiting - December 21 (The Holy Spirit is the source of our revelation, hope, and faith. His work in our lives displays the power of God's transformative mercy; When we don't know what to think, he deepens our understanding; When we don't know where to go, he directs our steps);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
