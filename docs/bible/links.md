@@ -1509,6 +1509,8 @@ Longing For Nearness - December 20 (God loved us when we were far from him, and 
 
 Eagerly Awaiting - December 21 (The Holy Spirit is the source of our revelation, hope, and faith. His work in our lives displays the power of God's transformative mercy; When we don't know what to think, he deepens our understanding; When we don't know where to go, he directs our steps);
 
+Free From Accusations - December 22 (God has drawn us into union with himself through his Son. This means no accusing voice holds any weight against us; God will not condemn you in your sin but lift you out from under its weight and show you a better way);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
