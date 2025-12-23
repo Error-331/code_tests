@@ -1511,6 +1511,8 @@ Eagerly Awaiting - December 21 (The Holy Spirit is the source of our revelation,
 
 Free From Accusations - December 22 (God has drawn us into union with himself through his Son. This means no accusing voice holds any weight against us; God will not condemn you in your sin but lift you out from under its weight and show you a better way);
 
+Fruit of Patience - December 23 (We need to keep going when the allure of newness wears off; We need to keep moving forward when we are caught up in our own thoughts and feelings; Instant gratification is not an indicator of things that last, and satisfaction comes with hard work and perseverance);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
