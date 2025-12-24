@@ -1513,6 +1513,8 @@ Free From Accusations - December 22 (God has drawn us into union with himself th
 
 Fruit of Patience - December 23 (We need to keep going when the allure of newness wears off; We need to keep moving forward when we are caught up in our own thoughts and feelings; Instant gratification is not an indicator of things that last, and satisfaction comes with hard work and perseverance);
 
+From the Father - December 24 (Jesus came to earth and lived among us so we might see and know the goodness and mercy of the Father; Jesus showed the way to union with God, and he provided everything we need to experience the freedom of salvation);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
