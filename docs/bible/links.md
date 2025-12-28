@@ -1515,6 +1515,8 @@ Fruit of Patience - December 23 (We need to keep going when the allure of newnes
 
 From the Father - December 24 (Jesus came to earth and lived among us so we might see and know the goodness and mercy of the Father; Jesus showed the way to union with God, and he provided everything we need to experience the freedom of salvation);
 
+Glory to God - December 25 (May we proclaim glory to God in the highest as we receive the power of his salvation in our lives);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
