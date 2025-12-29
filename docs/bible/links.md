@@ -1517,6 +1517,14 @@ From the Father - December 24 (Jesus came to earth and lived among us so we migh
 
 Glory to God - December 25 (May we proclaim glory to God in the highest as we receive the power of his salvation in our lives);
 
+Grounded Trust - December 26 (Christ is our foundation stone; Those who trust in Christ have no reason to act in haste or panic; Because he doesn't move, we will not be moved from his mercy);
+
+Willing Surrender - December 27 (What does it take to please God? Response to his bids for connection; He is worthy of our trust and surrender, for his love never fails);
+
+Good Shepherd - December 28 (John 10:11 KJV; Our liberation is in his salvation, and he cares for us still; Jesus calls to us and comes to find us when we lose our way);
+
+All You Need - December 29 (The wisdom of Christ is readily available through fellowship with him. He doesn't withhold direction when you need it; God has solutions designed just for you, and he has courage and strength to offer you);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
