@@ -1525,6 +1525,10 @@ Good Shepherd - December 28 (John 10:11 KJV; Our liberation is in his salvation,
 
 All You Need - December 29 (The wisdom of Christ is readily available through fellowship with him. He doesn't withhold direction when you need it; God has solutions designed just for you, and he has courage and strength to offer you);
 
+Secure Foundation - December 30 (Luke 6:46 KJV; When we do what Christ said to do, we build a solid foundation of his mercy in our lives; Our response to his love and instruction is obedience; "Help me do what you have already said to do");
+
+Fresh and New - December 31 (The fingerprints of God's grace and love are all around us; we have only to open our eyes to see them; Let us not lose hope but instead find courage and anticipation as we look to see what fresh thing God is up to);
+
 ## Gods help
 
 - It is never too much to ask God for help even if you find yourself asking repeatedly;
