@@ -27,3 +27,11 @@ all starts with seeing who God is in Scripture and then living changed by that.
 The change starts with our understanding of Him and how He works. 
 
 The Lord doesn’t ask for a performance. Remember, this is worship, not work.
+
+Title: Waking Up to God Again: The Lost Practice of Morning Prayer
+Links: https://www.biblegateway.com/learn/biblical-living/prayer/waking-up-to-god-morning-prayer/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260106&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+Morning prayer is an ancient rhythm, and yet somehow many of us have lost it. We’ve lost the sacred slowness. We’ve lost the expectancy. We’ve lost the
+simple, steady awakening to God’s presence before anything else claims our attention.
