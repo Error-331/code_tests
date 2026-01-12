@@ -42,7 +42,7 @@
         "@ethersproject/contracts": "5.6.2",
         "@ethersproject/providers": "5.6.8",
         "fluture": "^5.0.0",
-        "lodash": "4.17.11",
+        "lodash": "4.17.21",
         "lodash-fantasy": "https://github.com/jlmorgan/node-lodash-fantasy/tarball/feature/refactor",
         "moment": "^2.20.1",
         "moment-timezone": "^0.5.14",
