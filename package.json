@@ -47,7 +47,7 @@
         "moment": "^2.20.1",
         "moment-timezone": "^0.5.14",
         "mongodb": "^2.2.34",
-        "mongoose": "^4.13.10",
+        "mongoose": "^5.7.7",
         "sqlite": "3.0.3",
         "mori": "^0.3.2",
         "nedb": "^1.8.0",
