@@ -35,3 +35,10 @@ EN:
 
 Morning prayer is an ancient rhythm, and yet somehow many of us have lost it. We’ve lost the sacred slowness. We’ve lost the expectancy. We’ve lost the
 simple, steady awakening to God’s presence before anything else claims our attention.
+
+Title: The Courageous Women of the Exodus Story
+Links: https://www.biblegateway.com/learn/topics-themes/commentaries/courageous-women-exodus/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260116&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+Courage is not simply one of the virtues but the form of every virtue at the testing point, which means at the point of highest reality.
