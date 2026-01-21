@@ -42,3 +42,14 @@ Links: https://www.biblegateway.com/learn/topics-themes/commentaries/courageous-
 EN:
 
 Courage is not simply one of the virtues but the form of every virtue at the testing point, which means at the point of highest reality.
+
+EN:
+
+Title: The Kingdom and the Cross: Understanding Jesus’ Ministry and Mission
+Links: https://www.biblegateway.com/learn/topics-themes/who-is-jesus/kingdom-and-cross/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260120&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+Indeed, the Servant is a parable of Israel, how Israel’s death (i.e., exile) will end when God brings a re-ordering of power, a reversal of fortunes, vindicates the nation 
+from their oppressors, and returns them to the land, with other manifold blessings.
+
+Thus, to understand Jesus’s kingdom message and situate it in relation to the cross will help us understand how Jesus’s message and his death are a focal point for 
+fulfilling God’s promises to Israel and for the realizing of God’s saving purposes.
