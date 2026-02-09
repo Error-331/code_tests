@@ -182,6 +182,12 @@ https://mysku.club/blog/china-stores/54239.html - Eachine ROTG01 UVC (fpv при
 
 https://mktechnic.com/product/usb-to-cvbs-adapter-rca-uvc-1080p-usb-camera-converter/?srsltid=AfmBOorM9tmTxwdY5D3330M5biNHu8w_-GXDxUW1LnKiPgnumNIX6jqK - UVC Drive-free 1080P USB Camera to AV CVBS RCA Video Adapter Adaptor Converter Module|1Pcs ;
 
+https://prom.ua/p2726437852-filtr-bandpass-bpf.html - Фильтр BandPass BPF-1575s, полоса пропускания 20MHz, SMA-M/SMA-F, пассивный LC-фильтр, для RF-устройств, GPS;
+https://prom.ua/m7953869010672519649-filtr-bandpass-bpf.html?p=2726437843 - Фильтр BandPass BPF-1575s, полоса пропускания 20Mhz, SMA-M/SMA-F, полосовые фильтры, для дронов, IoT;
+https://ekran.in.ua/ua/p2726437843-filtr-bandpass-bpf.html - Фільтр BandPass BPF-1575s, смуга пропускання 20Mhz, SMA-M/SMA-F, смугові фільтри, для дронів, IoT, телеметрії;
+https://ekran.in.ua/ua/p2618802600-filtr-lowpass-lpf.html - Фільтр LowPass LPF 1.5GHz, смуга пропускання DC-1500Mhz, SMA M/F, пригнічення завад для VTX 1.2G;
+https://ekran.in.ua/ua/p2210240699-antenna-uwb-800mhz.html - Антена UWB 800MhZ-6Ghz SR_LPD003_V101, SMA-F, трикутник, спрямована, логоперіодична для аналізатора спектру;
+
 #### FPV
 
 https://prom.ua/p2346834419-peredatchik-fpv-vtx.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_b2b_265945592&gad_source=1&gad_campaignid=20690754680&gbraid=0AAAAADBxJSWhY4BYy6wrSNdid57YMXhiO&gclid=CjwKCAjw6s7CBhACEiwAuHQcknMKCe94gLJIudS_oIwSyTJoOL6FVMap7QMfrbi6MoHR132gsT1KRRoC1skQAvD_BwE - Передатчик FPV, VTX 1,5GHz, 1500mW;
@@ -366,6 +372,5 @@ https://www.ixbt.com/live/digs/fiio-ja11-obzor-portativnogo-capa-nachalnogo-urov
 - https://endorphone.com.ua/silicone-case/textures/geometric-pattern-904-oneplus-5 - Силиконовый чехол для OnePlus 5 'Геометрический узор';
 - https://endorphone.com.ua/silicone-case/flowers/s-cvetami-6422-oneplus-5 - Силиконовый чехол для OnePlus 5 'С цветами';
 - https://endorphone.com.ua/silicone-case/other/lisa-i-nochnoy-les-6481-oneplus-5 - Силиконовый чехол для OnePlus 5 'Лиса и ночной лес';
-- https://endorphone.com.ua/silicone-case/textures/jellyfish-906-oneplus-5 - Силиконовый чехол для OnePlus 5 'Медузы';
 - https://endorphone.com.ua/silicone-case/animals/ovechki1-4637-oneplus-5 - Силиконовый чехол для OnePlus 5 'Овечки1';
 - https://endorphone.com.ua/silicone-case/animals/nejnost-5906-oneplus-5 - Силиконовый чехол для OnePlus 5 'Нежность';
