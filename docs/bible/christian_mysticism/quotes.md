@@ -246,3 +246,23 @@ RU:
 Он глубоко вглядывается в природу телесных ощущений. Глубоко вглядываясь в каждый аспект эго-сознания, медитативный опыт превосходит эго-сознание.
 Преодолевая эго, медитативный опыт осознает, что Бог никоим образом не сводится к эго, и не сводится ни к чему, кроме эго и всего, что осознает эго-сознание.
 
+---
+
+EN:
+
+> For it is in working through the challenging aspects of meditation that you are learning to die to your illusions about yourself.
+
+RU:
+
+> Ведь именно в процессе преодоления сложных аспектов медитации вы учитесь умирать для своих иллюзий о себе.
+
+---
+
+EN:
+
+> It is in learning to die to your illusions about yourself that you are dying that sweet death to all that is less than God.
+
+RU:
+
+> Учась умирать для своих иллюзий о себе, вы умираете сладкой смертью для всего, что меньше Бога.
+
