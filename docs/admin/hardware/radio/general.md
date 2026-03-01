@@ -153,6 +153,37 @@ One limiting factor for all wireless communication is noise.
 - by using sophisticated methods of turning speech and data into digital codes, digital technology strips away layers of noise, leaving only the desired signal;
 - using **WSJT-X** software, hams can communicate with signals hundreds of times weaker than the natural noise level, even bouncing their signals off the moon with simple equipment;
 
+## Parts
+
+### Frequency synthesizer
+
+In short, it is the crucial, programmable `clock` or `tuner` that allows modern electronics to communicate on specific, changing channels.
+
+- is an electronic component that acts like a `precise radio tuner` or a `frequency chef`;
+- takes a single, stable, low-frequency signal (the reference) and transforms it into a wide range of different, highly accurate, higher-frequency signals;
+- instead of needing a separate physical crystal component for every single channel on a radio, it can create hundreds or thousands of different frequencies from just one master crystal;
+- ensures the generated frequency does not drift, maintaining a precise, locked state, similar to how a Phase-Locked Loop (PLL) operates;
+- allows devices like phones and radios to switch between channels (frequencies) by programming the chip;
+
+Analogy: 
+
+Imagine you have a single, perfectly tuned guitar string (the reference frequency). A frequency synthesizer is like a robotic hand that can instantly change the tension on 
+that string to create thousands of different musical notes (the desired frequencies) on command.
+
+Usage:
+
+- Mobile Phones - to switch between different cell tower bands;
+- Radio/TV Receivers - to tune into specific channels;
+- GPS Systems - to generate precise timing signals;
+- WiFi/Bluetooth - to manage radio communication frequencies;
+
+Key Components:
+
+- Reference crystal - a `perfect` steady heartbeat;
+- Voltage controlled oscillator (VCO) - a `variable` engine that creates the output frequency;
+- Divider (N-Counter) - a `divider` that slows down the fast VCO signal to compare it with the stable reference;
+- Phase detector - a `comparer` that tells the system if the output is too high or too low;
+
 ## Misc
 
 ### Demodulator
