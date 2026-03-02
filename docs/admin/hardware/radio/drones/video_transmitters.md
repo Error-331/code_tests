@@ -22,6 +22,14 @@ Transceiver:
 - F409(projection TV?);
 - HYC202P;
 
+Presumable signal DBS parameters:
+
+- FM modulated;
+- 625 lines PAL TV system;
+- 16 MHz/V modulator sensitivity;
+- 1 V (p-p) video signal;
+- No SAW filter is used;
+
 ## PandaRC VT5804 BAT 2500mW VTX 48CH
 
 - type: analog;
