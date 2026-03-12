@@ -113,3 +113,7 @@
 - https://www.youtube.com/watch?v=I0DBxnTlaMw - Prompt engineering for developers;
 - https://www.youtube.com/watch?v=oVtlp72f9NQ - How to use Retrieval Augmented Generation (RAG);
 - https://www.youtube.com/watch?v=fownOApoL-A - Intro to multimodal RAG systems;
+
+## Misc
+
+- https://tripleten.com/tools/prompt-optimizer/ - prompt optimizer;
