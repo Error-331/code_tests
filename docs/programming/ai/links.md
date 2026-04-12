@@ -16,10 +16,12 @@
 - https://www.midjourney.com/home - Midjourney;
 - https://stability.ai/stable-image - Stable Diffusion (can use for free);
 - https://beta.dreamstudio.ai/generate - Dream Studio;
-- https://easydiffusion.github.io/ - Easy Diffusion (can use for free)
-- https://habr.com/ru/companies/selectel/articles/886120/ - Генератор картинок от разработчиков DeepSeek. Тест-драйв новой нейросети ;
+- https://easydiffusion.github.io/ - Easy Diffusion (can use for free);
+- https://habr.com/ru/companies/selectel/articles/886120/ - Генератор картинок от разработчиков DeepSeek. Тест-драйв новой нейросети;
 - https://hailuoai.video/ - HailuoAI;
 - https://nijijourney.com/ - NIJIJourney;
+- https://deepmind.google/models/imagen/ - Imagen;
+- https://higgsfield.ai/soul - high-aesthetic photo model;
 
 ## Image processing
 
@@ -66,6 +68,7 @@
 - https://github.com/openai/whisper - OpenAI’s Whisper;
 - https://cloud.google.com/speech-to-text -  Google’s Speech-to-Text
 - https://www.riffusion.com/ - Riffusion;
+- https://github.com/openai/whisper - Whisper is a general-purpose speech recognition model;
 
 ## Music generation
 
@@ -81,7 +84,7 @@
 
 - https://clicksites.ai/gdeal/index.html - site generation;
 
-## Frameworkds
+## Frameworks
 
 - https://gpt-index.readthedocs.io/en/latest/ - LlamaIndex;
 - https://docs.chainlit.io/get-started/overview - Chainlit is an open-source Python package to build production ready Conversational AI;
@@ -95,3 +98,22 @@
 ## Articles (misc)
 
 - https://habr.com/ru/companies/amvera/articles/897830/ - Личный ИИ-ассистент на ваших данных. Часть 1: Векторная база ChromaDB + DeepSeek | GPT ;
+
+## Courses
+
+- https://www.coursera.org/learn/introduction-to-generative-ai - Introduction to Generative AI;
+- https://www.coursera.org/specializations/ai-essentials-google - Google AI Essentials Specialization;
+- https://www.coursera.org/specializations/prompting-essentials-google/ - Google Prompting Essentials Specialization;
+
+## Video Tutorials
+
+- https://www.youtube.com/watch?v=bknUn7yMwNI - Introduction to Artificial Intelligence (AI) | Google AI Essentials;
+- https://www.youtube.com/watch?v=w_3L1Bf2P_g - Introduction to Responsible AI;
+- https://www.youtube.com/watch?v=ZZ2QUCePgYw - Intro to AI agents;
+- https://www.youtube.com/watch?v=I0DBxnTlaMw - Prompt engineering for developers;
+- https://www.youtube.com/watch?v=oVtlp72f9NQ - How to use Retrieval Augmented Generation (RAG);
+- https://www.youtube.com/watch?v=fownOApoL-A - Intro to multimodal RAG systems;
+
+## Misc
+
+- https://tripleten.com/tools/prompt-optimizer/ - prompt optimizer;

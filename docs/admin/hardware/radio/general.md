@@ -153,6 +153,91 @@ One limiting factor for all wireless communication is noise.
 - by using sophisticated methods of turning speech and data into digital codes, digital technology strips away layers of noise, leaving only the desired signal;
 - using **WSJT-X** software, hams can communicate with signals hundreds of times weaker than the natural noise level, even bouncing their signals off the moon with simple equipment;
 
+## Parts
+
+### Frequency synthesizer
+
+In short, it is the crucial, programmable `clock` or `tuner` that allows modern electronics to communicate on specific, changing channels.
+
+- is an electronic component that acts like a `precise radio tuner` or a `frequency chef`;
+- takes a single, stable, low-frequency signal (the reference) and transforms it into a wide range of different, highly accurate, higher-frequency signals;
+- instead of needing a separate physical crystal component for every single channel on a radio, it can create hundreds or thousands of different frequencies from just one master crystal;
+- ensures the generated frequency does not drift, maintaining a precise, locked state, similar to how a Phase-Locked Loop (PLL) operates;
+- allows devices like phones and radios to switch between channels (frequencies) by programming the chip;
+
+Analogy: 
+
+Imagine you have a single, perfectly tuned guitar string (the reference frequency). A frequency synthesizer is like a robotic hand that can instantly change the tension on 
+that string to create thousands of different musical notes (the desired frequencies) on command.
+
+Usage:
+
+- Mobile Phones - to switch between different cell tower bands;
+- Radio/TV Receivers - to tune into specific channels;
+- GPS Systems - to generate precise timing signals;
+- WiFi/Bluetooth - to manage radio communication frequencies;
+
+Key Components:
+
+- Reference crystal - a `perfect` steady heartbeat;
+- Voltage controlled oscillator (VCO) - a `variable` engine that creates the output frequency;
+- Divider (N-Counter) - a `divider` that slows down the fast VCO signal to compare it with the stable reference;
+- Phase detector - a `comparer` that tells the system if the output is too high or too low;
+
+### Frequency mixer
+
+A frequency mixer is essentially a frequency-shifting device. Without them, it would be extremely difficult for radios, TVs, and Wi-Fi devices to process the 
+high-frequency signals they receive.
+
+- is an electronic component that takes two different input signals and combines them to create new frequencies;
+- it is like a `translator` for radio signals, allowing electronics to move a signal from a high frequency to a lower, more manageable frequency, or vice versa, 
+while keeping the original information (like audio or data) intact;
+
+#### Uses
+
+- *Radio Receivers (Down-conversion):* Converting a very high frequency from an antenna down to a lower "intermediate frequency" (IF) that is easier to amplify;
+- *Radio Transmitters (Up-conversion):* Boosting a low-frequency voice signal up to a high frequency suitable for transmitting over the air;
+
+#### Principal of work
+
+1. *Inputs*: It takes two inputs:
+   - *Signal Input (f~RF)*: The incoming radio signal (e.g., a radio station);
+   - *Local Oscillator (f~LO)*: A signal generated inside the device to act as a reference;
+2. *Mixing*: The mixer uses a non-linear component (like a diode or transistor) to multiply or combine these two signals;
+3. *Output*: It creates two new frequencies:
+  - The *Sum* of the frequencies (f~RF + f~LO);
+  - The *Difference* between the frequencies (f~RF - F~Lo);
+
+Example: 
+
+Imagine the user want to change a high-frequency radio signal (100 MHz) to a lower, easier-to-process frequency (10 MHz).
+
+- User send the *100 MHz* signal into the mixer;
+- User also send a *90 MHz* signal (local oscillator) into the mixer;
+- The mixer outputs a range of frequencies, but a filter allows only the *difference (100 - 90 = 10 MHz)* to pass through;
+
+### Local oscillator (LO)
+
+- is a small, internal signal generator;
+- It creates a steady, high-frequency radio wave right inside the radio receiver;
+- `Local` means it is inside your radio, not from the transmitter;
+- `Oscillator` means it creates a repeating, electronic wave;
+- when user changes the station (tune the radio), he/she are actually changing the frequency of the local oscillator to match the station he/she want to hear;
+
+Analogy:
+
+- the incoming radio signal is like a super-fast conveyor belt (high frequency) carrying packages (the sound);
+- user cannot easily grab the packages off;
+- the local oscillator works like a second conveyor belt running alongside it at a slightly different speed;
+- by comparing the two (mixing), user can make the packages appear to move much slower (low intermediate frequency), making them easy to pick up.
+
+#### Principal of work
+
+- radio stations broadcast at very high frequencies that are difficult for electronic circuits to process directly to create audio;
+- the local oscillator generates its own, precise frequency, this signal is combined with the radio station's signal in a component called a mixer;
+- the mixer combines the two signals to produce a new, lower, and fixed frequency, called the Intermediate Frequency (IF);
+- processing at this lower, constant `IF` makes it much easier and cheaper to amplify the signal, remove noise, and filter out other stations, resulting in better, clearer audio;
+
 ## Misc
 
 ### Demodulator

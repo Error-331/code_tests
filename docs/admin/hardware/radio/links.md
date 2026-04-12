@@ -73,3 +73,7 @@
 - https://gpio.com/ ;
 - https://janilab.hu/ ;
 - https://radiostancii.com.ua/ ;
+
+## Signals
+
+- https://www.sigidwiki.com/wiki/PAL_Broadcast - PAL Broadcast;
