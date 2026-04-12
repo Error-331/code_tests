@@ -127,6 +127,12 @@ https://marconisignalsolutions.com/shop/propagation/ - PROPAGATION;
 
 ## Электроника
 
+### Роутеры
+
+- https://rozetka.com.ua/ua/mikrotik_rb941_2nd/p15884585/ - Маршрутизатор MikroTik hAP Lite Classic (RB941-2nD) (мой);
+- https://rozetka.com.ua/ua/mikrotik_rb750gr3/p15935769/ - Маршрутизатор MikroTik hEX RB750Gr3;
+- https://rozetka.com.ua/ua/mikrotik_rb760igs/p65688000/ - Маршрутизатор MikroTik hEX S (RB760iGS);
+
 ### Батарейки
 
 https://rozetka.com.ua/ua/387787854/p387787854/ - Акумулятор 18650, Ultro Fite, 6800mAh (800), 3.7V, красный;

@@ -35,3 +35,14 @@ EN:
 
 Morning prayer is an ancient rhythm, and yet somehow many of us have lost it. We’ve lost the sacred slowness. We’ve lost the expectancy. We’ve lost the
 simple, steady awakening to God’s presence before anything else claims our attention.
+
+
+Title: ‘Be Strong and Courageous’ Is Not an Inspirational Hurrah. It’s a Command.
+Links: https://www.biblegateway.com/learn/topics-themes/commentaries/strong-and-courageous-joshua-command/
+
+EN:
+
+And yet, God made His commands clear. Be strong and courageous. Don’t ruminate, overthink, or control. Don’t quit because the odds are against you. Don’t lean on your own
+understanding. Don’t assume just because the optics look bleak. In giving this command, the Lord wasn’t insinuating that Joshua must ignore the gravity of the challenge ahead. 
+Rather, He was asking Joshua to trust the variable that changes everything: the Presence of God. The deciding factor in their victory was not going to be who Israel were, but 
+rather, whose they were.  
