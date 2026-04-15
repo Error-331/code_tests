@@ -56,6 +56,18 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 
 - https://www.old-games.ru/game/3509.html - Inner Worlds;
 - https://www.old-games.ru/game/13341.html - Perestroyka;
+- https://www.old-games.ru/game/3362.html - Gonzzalezz;
+- https://www.old-games.ru/game/1728.html - Night Shift Mr. Fixit;
+- https://www.old-games.ru/game/5379.html - Sadko;
+- https://www.old-games.ru/game/5218.html - Zarathrusta;
+- https://www.old-games.ru/game/2449.html - Beverly Hills Cop;
+
+#### Simulation
+
+- https://www.old-games.ru/game/187.html - Star Wars: X-Wing;
+- https://www.old-games.ru/game/2026.html - Star Wars: TIE Fighter (Collector's CD-ROM);
+- https://www.old-games.ru/game/4607.html - Hunter;
+- https://www.old-games.ru/game/1322.html - Life & Death II: The Brain;
 
 #### RTS
 
@@ -116,6 +128,23 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/6362.html - Counter Blow;
 - https://www.old-games.ru/game/1961.html - Cultures;
 - https://www.old-games.ru/game/7507.html - Dawn of Empire (태조왕건 ~제국의 아침~ , StarCraft like);
+- https://www.old-games.ru/game/9143.html - The Horde;
+- https://www.old-games.ru/game/6835.html - Hot Business;
+- https://www.old-games.ru/game/11870.html - Huang-di;
+- https://www.old-games.ru/game/8436.html - Че Гевара;
+- https://www.old-games.ru/game/12838.html - Huangchao Baye;
+- https://www.old-games.ru/game/5450.html - Husita;
+- https://www.old-games.ru/game/5617.html - Impact of Power – Destroyers​ (StarCraft like);
+- https://www.old-games.ru/game/9591.html - Impossible Creatures;
+- https://www.old-games.ru/game/97.html - Incubation: Time Is Running Out;
+- https://www.old-games.ru/game/130.html - Incubation: The Wilderness Missions;
+- https://www.old-games.ru/game/130.html - Incubation: The Wilderness Missions;
+- https://www.old-games.ru/game/2936.html - In the Days of Knights & Kings ;
+- https://www.old-games.ru/game/885.html - Into the Void;
+- https://www.old-games.ru/game/883.html - Iron Seed;
+- https://www.old-games.ru/game/3202.html - Mayday: Conflict Earth;
+- https://www.old-games.ru/game/10509.html - Jane's Combat Simulations: Fleet Command;
+- https://www.old-games.ru/game/4391.html - Riot Police;
 
 #### Tycoon 
 
@@ -146,6 +175,43 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/3780.html - Energie-Manager;
 - https://www.old-games.ru/game/2842.html - Dark Universe;
 - https://www.old-games.ru/game/8410.html - Gazillionaire Deluxe;
+- https://www.old-games.ru/game/1627.html - Gloriana;
+- https://www.old-games.ru/game/4445.html - Goldfields;
+- https://www.old-games.ru/game/4552.html - Great Naval Battles: North Atlantic 1939-1943
+- https://www.old-games.ru/game/757.html - Gruntz;
+- https://www.old-games.ru/game/7774.html - Istiden;
+- https://www.old-games.ru/game/1157.html - Hammer of the Gods;
+- https://www.old-games.ru/game/7439.html - Hanse;
+- https://www.old-games.ru/game/3373.html - Hanse: Die Expedition;
+- https://www.old-games.ru/game/6939.html - Hanwu Zhengzhan;
+- https://www.old-games.ru/game/9152.html - Harpoon Classic;
+- https://www.old-games.ru/game/4610.html - Hatfields & McCoys;
+- https://www.old-games.ru/game/2437.html - Heirs to the Throne;
+- https://www.old-games.ru/game/2040.html - Heist;
+- https://www.old-games.ru/game/2685.html - Hidden Agenda;
+- https://www.old-games.ru/game/389.html - High Seas Trader;
+- https://www.old-games.ru/game/2274.html - Hill Street Blues;
+- https://www.old-games.ru/game/2577.html - Holiday Island;
+- https://www.old-games.ru/game/12115.html - Slots;
+- https://www.old-games.ru/game/7674.html - Ice Cream Truck;
+- https://www.old-games.ru/game/774.html - Imperium Galactica;
+- https://www.old-games.ru/game/10253.html - Imperium Rex;
+- https://www.old-games.ru/game/7075.html - Imperivm: Le Grandi Battaglie di Roma
+- https://www.old-games.ru/game/3160.html - Incunabula;
+- https://www.old-games.ru/game/screenshots/7652.html - In the Chips;
+- https://www.old-games.ru/game/2936.html - In the Days of Knights & Kings;
+- https://www.old-games.ru/game/3160.html - Incunabula;
+- https://www.old-games.ru/game/10120.html - Компьютерная эволюция 4;
+- https://www.old-games.ru/game/9475.html - Компьютерщик;
+- https://www.old-games.ru/game/6585.html - It’s a Funny Old Game;
+- https://www.old-games.ru/game/598.html - Afterlife;
+- https://www.old-games.ru/game/10079.html - Hurra Deutschland;
+- https://www.old-games.ru/game/3872.html - Kaiser Deluxe;
+- https://www.old-games.ru/game/14019.html - Kaiser;
+- https://www.old-games.ru/game/2442.html - Khalaan;
+- https://www.old-games.ru/game/14360.html - Kin-Dza-Dza;
+- https://www.old-games.ru/game/1438.html - King of Dragon Pass;
+- https://www.old-games.ru/game/1494.html - Kingdom at War;
 
 #### Racing
 
@@ -160,3 +226,12 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 #### Quest
 
 - https://www.old-games.ru/game/1755.html - Future Wars: Adventures in Time;
+- https://www.old-games.ru/game/3214.html - The Beverly Hillbillies;
+
+#### FPS
+
+- https://www.old-games.ru/game/1680.html - Necrodome;
+
+#### Fighting
+
+- https://www.old-games.ru/game/3820.html - Dangerous Streets;

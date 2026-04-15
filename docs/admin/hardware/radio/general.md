@@ -219,7 +219,7 @@ Imagine the user want to change a high-frequency radio signal (100 MHz) to a low
 ### Local oscillator (LO)
 
 - is a small, internal signal generator;
-- It creates a steady, high-frequency radio wave right inside the radio receiver;
+- it creates a steady, high-frequency radio wave right inside the radio receiver;
 - `Local` means it is inside your radio, not from the transmitter;
 - `Oscillator` means it creates a repeating, electronic wave;
 - when user changes the station (tune the radio), he/she are actually changing the frequency of the local oscillator to match the station he/she want to hear;
