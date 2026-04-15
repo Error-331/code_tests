@@ -36,6 +36,17 @@ EN:
 Morning prayer is an ancient rhythm, and yet somehow many of us have lost it. We’ve lost the sacred slowness. We’ve lost the expectancy. We’ve lost the
 simple, steady awakening to God’s presence before anything else claims our attention.
 
+
+Title: ‘Be Strong and Courageous’ Is Not an Inspirational Hurrah. It’s a Command.
+Links: https://www.biblegateway.com/learn/topics-themes/commentaries/strong-and-courageous-joshua-command/
+
+EN:
+
+And yet, God made His commands clear. Be strong and courageous. Don’t ruminate, overthink, or control. Don’t quit because the odds are against you. Don’t lean on your own
+understanding. Don’t assume just because the optics look bleak. In giving this command, the Lord wasn’t insinuating that Joshua must ignore the gravity of the challenge ahead. 
+Rather, He was asking Joshua to trust the variable that changes everything: the Presence of God. The deciding factor in their victory was not going to be who Israel were, but 
+rather, whose they were.  
+
 Title: The Courageous Women of the Exodus Story
 Links: https://www.biblegateway.com/learn/topics-themes/commentaries/courageous-women-exodus/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260116&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
 
@@ -43,13 +54,13 @@ EN:
 
 Courage is not simply one of the virtues but the form of every virtue at the testing point, which means at the point of highest reality.
 
-EN:
-
 Title: The Kingdom and the Cross: Understanding Jesus’ Ministry and Mission
 Links: https://www.biblegateway.com/learn/topics-themes/who-is-jesus/kingdom-and-cross/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260120&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
 
-Indeed, the Servant is a parable of Israel, how Israel’s death (i.e., exile) will end when God brings a re-ordering of power, a reversal of fortunes, vindicates the nation 
+EN:
+
+Indeed, the Servant is a parable of Israel, how Israel’s death (i.e., exile) will end when God brings a re-ordering of power, a reversal of fortunes, vindicates the nation
 from their oppressors, and returns them to the land, with other manifold blessings.
 
-Thus, to understand Jesus’s kingdom message and situate it in relation to the cross will help us understand how Jesus’s message and his death are a focal point for 
+Thus, to understand Jesus’s kingdom message and situate it in relation to the cross will help us understand how Jesus’s message and his death are a focal point for
 fulfilling God’s promises to Israel and for the realizing of God’s saving purposes.
