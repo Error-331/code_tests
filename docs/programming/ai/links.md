@@ -22,6 +22,7 @@
 - https://nijijourney.com/ - NIJIJourney;
 - https://deepmind.google/models/imagen/ - Imagen;
 - https://higgsfield.ai/soul - high-aesthetic photo model;
+- https://www.topview.ai/ - TopView;
 
 ## Image processing
 
@@ -43,6 +44,7 @@
 - https://www.hitpaw.net/ - video upscale;
 - https://verv.fm/ - video generation;
 - https://zeely.ai/ - create UGC videos, static ads, and high-selling campaigns;
+- https://ltx.studio/ - the AI platform for video production;
 
 ## Avatar generation
 
