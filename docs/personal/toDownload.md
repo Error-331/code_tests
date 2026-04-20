@@ -145,6 +145,8 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/3202.html - Mayday: Conflict Earth;
 - https://www.old-games.ru/game/10509.html - Jane's Combat Simulations: Fleet Command;
 - https://www.old-games.ru/game/4391.html - Riot Police;
+- https://www.old-games.ru/game/2579.html - Kingmaker;
+- https://www.old-games.ru/game/4457.html - Klondike Moon;
 
 #### Tycoon 
 
@@ -212,6 +214,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/14360.html - Kin-Dza-Dza;
 - https://www.old-games.ru/game/1438.html - King of Dragon Pass;
 - https://www.old-games.ru/game/1494.html - Kingdom at War;
+- https://www.old-games.ru/game/1438.html - King of Dragon Pass;
+- https://www.old-games.ru/game/screenshots/842.html - 1830: Railroads & Robber Barons;
+- https://www.old-games.ru/game/1525.html - Kingdoms of Germany;
 
 #### Racing
 
