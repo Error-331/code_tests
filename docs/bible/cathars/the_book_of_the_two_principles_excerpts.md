@@ -24,4 +24,12 @@ RU:
 `И это, кажется, подтверждает мой тезис, ибо ни Бог, ни человек не могут желать или желать чего-либо, если сначала не получат того, чего не желают и что Его беспокоит, 
 либо по Его собственной вине, либо по вине другого.`
 
-19
+## 20
+
+EN:
+
+`And this is so particularly because, if there is only one First Principle, He is directly the cause of all causes. It follows therefore of necessity, according to the said doctrine, that God would be the first cause of all envy and indeed of all evil, as is written, "He who provides the occasion for harm should be held to have done the harm."  One most certainly cannot believe this of the true God.`
+
+RU:
+
+`И это особенно верно, потому что, если существует только один Первопринцип, Он является непосредственной причиной всех причин. Следовательно, согласно указанному учению, Бог является первопричиной всей зависти и, по сути, всего зла, как написано: «Кто создает повод для зла, тот должен считаться причинившим зло». В это, безусловно, нельзя поверить, говоря об истинном Боге.`
