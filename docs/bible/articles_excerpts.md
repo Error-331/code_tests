@@ -14,3 +14,53 @@ RU:
 "На протяжении десятилетий специалисты в области медицины, включая экспертов по психическому здоровью, знали о важности прощения для нашего физического и 
 психологического здоровья. Царь Давид писал о том, как его неисповеданный грех ослабил его, но исповедь исцелила его (Псалом 31:3-5). Желание Бога — чтобы мы 
 жили без чувства вины или стыда, особенно потому, что это легкие инструменты для сатаны, чтобы искушать нас потерять веру в Божью любовь к нам."
+
+Title: If Your New Year’s Goal Is Reading the Bible More, Don’t Focus on the Finish Line
+Link: https://www.biblegateway.com/learn/bible-101/bible-study-tips/reading-bible-finish-line/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260102&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+If you want a Bible study that changes your life, look at how Scripture declares truths about God — and then live off those truths. Through seeing God’s actions in dealing 
+with unfaithful Jacob or his mercy dealing with Peter, we see his great wisdom and love — and that informs the decisions we make and reshapes the struggles we face. But it 
+all starts with seeing who God is in Scripture and then living changed by that.
+
+The change starts with our understanding of Him and how He works. 
+
+The Lord doesn’t ask for a performance. Remember, this is worship, not work.
+
+Title: Waking Up to God Again: The Lost Practice of Morning Prayer
+Links: https://www.biblegateway.com/learn/biblical-living/prayer/waking-up-to-god-morning-prayer/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260106&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+Morning prayer is an ancient rhythm, and yet somehow many of us have lost it. We’ve lost the sacred slowness. We’ve lost the expectancy. We’ve lost the
+simple, steady awakening to God’s presence before anything else claims our attention.
+
+
+Title: ‘Be Strong and Courageous’ Is Not an Inspirational Hurrah. It’s a Command.
+Links: https://www.biblegateway.com/learn/topics-themes/commentaries/strong-and-courageous-joshua-command/
+
+EN:
+
+And yet, God made His commands clear. Be strong and courageous. Don’t ruminate, overthink, or control. Don’t quit because the odds are against you. Don’t lean on your own
+understanding. Don’t assume just because the optics look bleak. In giving this command, the Lord wasn’t insinuating that Joshua must ignore the gravity of the challenge ahead. 
+Rather, He was asking Joshua to trust the variable that changes everything: the Presence of God. The deciding factor in their victory was not going to be who Israel were, but 
+rather, whose they were.  
+
+Title: The Courageous Women of the Exodus Story
+Links: https://www.biblegateway.com/learn/topics-themes/commentaries/courageous-women-exodus/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260116&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+Courage is not simply one of the virtues but the form of every virtue at the testing point, which means at the point of highest reality.
+
+Title: The Kingdom and the Cross: Understanding Jesus’ Ministry and Mission
+Links: https://www.biblegateway.com/learn/topics-themes/who-is-jesus/kingdom-and-cross/?utm_source=bg&utm_medium=email&utm_campaign=newsandknowledge_20260120&utm_term=bible_gateway_news%20%28GDPR%20Friendly%29
+
+EN:
+
+Indeed, the Servant is a parable of Israel, how Israel’s death (i.e., exile) will end when God brings a re-ordering of power, a reversal of fortunes, vindicates the nation
+from their oppressors, and returns them to the land, with other manifold blessings.
+
+Thus, to understand Jesus’s kingdom message and situate it in relation to the cross will help us understand how Jesus’s message and his death are a focal point for
+fulfilling God’s promises to Israel and for the realizing of God’s saving purposes.

@@ -1501,7 +1501,33 @@ Expectant Hope - December 16 (As we live for the Lord, humbling our hearts befor
 
 Practices of Prayer - December 17 (Undeserved love is powerful; He doesn't demand we perfectly love those around us, but he does instruct us to stretch our love beyond our limits);
 
-Our King Comes - December 19 (May we hold on to hope even as we consider what the first coming was like; Here comes our King; he is coming to us once more);
+Ever Present Grace - December 18 (We stand firm with patience endurance to find our souls deliverance);
+
+Our King Comes - December 19 (May we hold on to hope even as we consider what the first coming was like; Here comes our King; He is coming to us once more);
+
+Longing For Nearness - December 20 (God loved us when we were far from him, and he loves us when we are drawn close by his mercy; When we long for God's presence, we reflect back to God the passion he has for us);
+
+Eagerly Awaiting - December 21 (The Holy Spirit is the source of our revelation, hope, and faith. His work in our lives displays the power of God's transformative mercy; When we don't know what to think, he deepens our understanding; When we don't know where to go, he directs our steps);
+
+Free From Accusations - December 22 (God has drawn us into union with himself through his Son. This means no accusing voice holds any weight against us; God will not condemn you in your sin but lift you out from under its weight and show you a better way);
+
+Fruit of Patience - December 23 (We need to keep going when the allure of newness wears off; We need to keep moving forward when we are caught up in our own thoughts and feelings; Instant gratification is not an indicator of things that last, and satisfaction comes with hard work and perseverance);
+
+From the Father - December 24 (Jesus came to earth and lived among us so we might see and know the goodness and mercy of the Father; Jesus showed the way to union with God, and he provided everything we need to experience the freedom of salvation);
+
+Glory to God - December 25 (May we proclaim glory to God in the highest as we receive the power of his salvation in our lives);
+
+Grounded Trust - December 26 (Christ is our foundation stone; Those who trust in Christ have no reason to act in haste or panic; Because he doesn't move, we will not be moved from his mercy);
+
+Willing Surrender - December 27 (What does it take to please God? Response to his bids for connection; He is worthy of our trust and surrender, for his love never fails);
+
+Good Shepherd - December 28 (John 10:11 KJV; Our liberation is in his salvation, and he cares for us still; Jesus calls to us and comes to find us when we lose our way);
+
+All You Need - December 29 (The wisdom of Christ is readily available through fellowship with him. He doesn't withhold direction when you need it; God has solutions designed just for you, and he has courage and strength to offer you);
+
+Secure Foundation - December 30 (Luke 6:46 KJV; When we do what Christ said to do, we build a solid foundation of his mercy in our lives; Our response to his love and instruction is obedience; "Help me do what you have already said to do");
+
+Fresh and New - December 31 (The fingerprints of God's grace and love are all around us; we have only to open our eyes to see them; Let us not lose hope but instead find courage and anticipation as we look to see what fresh thing God is up to);
 
 ## Gods help
 
