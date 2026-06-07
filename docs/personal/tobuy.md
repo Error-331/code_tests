@@ -197,6 +197,10 @@ https://ekran.in.ua/ua/p2726437843-filtr-bandpass-bpf.html - Фільтр BandPa
 https://ekran.in.ua/ua/p2618802600-filtr-lowpass-lpf.html - Фільтр LowPass LPF 1.5GHz, смуга пропускання DC-1500Mhz, SMA M/F, пригнічення завад для VTX 1.2G;
 https://ekran.in.ua/ua/p2210240699-antenna-uwb-800mhz.html - Антена UWB 800MhZ-6Ghz SR_LPD003_V101, SMA-F, трикутник, спрямована, логоперіодична для аналізатора спектру;
 
+https://www.tecsun-radios.com/product/pl990x-radio-receiver/ - PL-990x;
+https://www.tecsun-radios.com/product/q3-mp3-radio/ - Q3;
+https://www.tecsun-radios.com/product/pd60-hifi-dap/ - PD-60;
+
 #### FPV
 
 https://prom.ua/p2346834419-peredatchik-fpv-vtx.html?utm_source=google_pmax&utm_medium=cpc&utm_content=pmax&utm_campaign=Pmax_cpa_1_50_b2b_265945592&gad_source=1&gad_campaignid=20690754680&gbraid=0AAAAADBxJSWhY4BYy6wrSNdid57YMXhiO&gclid=CjwKCAjw6s7CBhACEiwAuHQcknMKCe94gLJIudS_oIwSyTJoOL6FVMap7QMfrbi6MoHR132gsT1KRRoC1skQAvD_BwE - Передатчик FPV, VTX 1,5GHz, 1500mW;
