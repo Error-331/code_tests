@@ -48,6 +48,15 @@
 
 - https://www.aliexpress.com/item/1005006818794615.html?src=google&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=494-037-6276&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=ru1005006818794615&ds_e_product_merchant_id=5337748526&ds_e_product_country=UA&ds_e_product_language=ru&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=19373879459&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjwg8qzBhAoEiwAWagLrFWIW06N61QV2VGZWxg55DfqjBha-yQZZeubet_FmnBaajwVMDOm7BoCunIQAvD_BwE&aff_fcid=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=6260dd677d5141d9940f15687ddb9c5a-1718828076324-06334-UneMJZVf&terminal_id=c706d8eac47948cebdf6f377cbecd6b1&afSmartRedirect=y - Latest PAC-12 7MHz-50MHz 100W Multi Band HF Shortwave GP Outdoor Slide Regulator Portable Antenna QRP For Ham Radio; 
 
+### Tuners
+
+- https://emtech-qrp.com/product/zm-2-uhf-connectors-prebuilt/ - ZM-2 – UHF Connectors – Prebuilt;
+- https://mfjenterprises.com/products/mfj-9201 - MFJ-9201, QRP ANTENNA TUNER, 80-10M;
+
+### Amplifiers
+
+- https://www.passion-radio.com/transverter/ampli-qo100-2723.html - Adalm Pluto compatible 2.4 GHz 10W QO-100 amplifier;
+
 ## Software
 
 - https://www.sigintos.com/ - Linux distribution for Signal Intelligence;
@@ -73,6 +82,7 @@
 - https://gpio.com/ ;
 - https://janilab.hu/ ;
 - https://radiostancii.com.ua/ ;
+- https://www.rmitaly.com/en/home-page/ ;
 
 ## Signals
 
