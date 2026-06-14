@@ -184,39 +184,9 @@ Key Components:
 - Divider (N-Counter) - a `divider` that slows down the fast VCO signal to compare it with the stable reference;
 - Phase detector - a `comparer` that tells the system if the output is too high or too low;
 
-### Frequency mixer
-
-A frequency mixer is essentially a frequency-shifting device. Without them, it would be extremely difficult for radios, TVs, and Wi-Fi devices to process the 
-high-frequency signals they receive.
-
-- is an electronic component that takes two different input signals and combines them to create new frequencies;
-- it is like a `translator` for radio signals, allowing electronics to move a signal from a high frequency to a lower, more manageable frequency, or vice versa, 
-while keeping the original information (like audio or data) intact;
-
-#### Uses
-
-- *Radio Receivers (Down-conversion):* Converting a very high frequency from an antenna down to a lower "intermediate frequency" (IF) that is easier to amplify;
-- *Radio Transmitters (Up-conversion):* Boosting a low-frequency voice signal up to a high frequency suitable for transmitting over the air;
-
-#### Principal of work
-
-1. *Inputs*: It takes two inputs:
-   - *Signal Input (f~RF)*: The incoming radio signal (e.g., a radio station);
-   - *Local Oscillator (f~LO)*: A signal generated inside the device to act as a reference;
-2. *Mixing*: The mixer uses a non-linear component (like a diode or transistor) to multiply or combine these two signals;
-3. *Output*: It creates two new frequencies:
-  - The *Sum* of the frequencies (f~RF + f~LO);
-  - The *Difference* between the frequencies (f~RF - F~Lo);
-
-Example: 
-
-Imagine the user want to change a high-frequency radio signal (100 MHz) to a lower, easier-to-process frequency (10 MHz).
-
-- User send the *100 MHz* signal into the mixer;
-- User also send a *90 MHz* signal (local oscillator) into the mixer;
-- The mixer outputs a range of frequencies, but a filter allows only the *difference (100 - 90 = 10 MHz)* to pass through;
-
 ### Local oscillator (LO)
+
+The oscillator acts as the master heartbeat and reference point.  It generates highly precise, stable clock signals and carrier waves required to accurately down-convert, tune, and sample radio frequencies.
 
 - is a small, internal signal generator;
 - it creates a steady, high-frequency radio wave right inside the radio receiver;
@@ -237,6 +207,87 @@ Analogy:
 - the local oscillator generates its own, precise frequency, this signal is combined with the radio station's signal in a component called a mixer;
 - the mixer combines the two signals to produce a new, lower, and fixed frequency, called the Intermediate Frequency (IF);
 - processing at this lower, constant `IF` makes it much easier and cheaper to amplify the signal, remove noise, and filter out other stations, resulting in better, clearer audio;
+
+#### In-depth
+
+##### Frequency Conversion
+
+- An oscillator generates a stable local frequency;
+- This LO signal is fed into a hardware mixer alongside the signal from the antenna;
+- The mixer multiplies the signals to "down-convert" the high-frequency radio signal to a much lower, manageable intermediate frequency (IF) or 
+baseband frequency that the computer's software can process;
+
+##### Synchronization and Timing (Clock Source)
+
+- Every step in an SDR's digital signal processing relies on flawless timing;
+- The master oscillator provides the clock signal that dictates exactly when the ADC captures snapshots of the voltage from the antenna;
+- Without a highly precise, low-jitter clock, digital sampling errors or "phase noise" occur, distorting the signal;
+
+##### Tuning (Software Control)
+
+- The oscillator is usually part of a Phase-Locked Loop (PLL), which is a circuit controlled by the computer's software;
+- The software commands the PLL to adjust the oscillator's output frequency;
+- This allows user to "tune" across vastly different bands without having to manually swap physical hardware components;
+
+#### Common Types of SDR Oscillators
+
+SDRs are highly sensitive to frequency drift caused by temperature changes.
+
+- **Crystal Oscillators (XO)** - provide a stable frequency but with limited tuning capability;
+- **TCXO (Temperature-Compensated Crystal Oscillator)** - built to resist temperature changes; commonly used in consumer and mid-range SDRs like the RTL-SDR Blog V4 for reliable, stable tuning;
+- **OCXO (Oven-Controlled Crystal Oscillator)** - kept at a constant, highly regulated internal temperature for maximum precision; usually reserved for high-end or lab-grade SDRs;
+- **Voltage-Controlled Oscillators (VCO)** - allow the frequency to be varied by changing the voltage applied, which is vital for tuning across a wide range of frequencies in an SDR;
+- **GPSDO (GPS-Disciplined Oscillator)** - locks the local oscillator directly to the atomic clocks aboard GPS satellites, providing unparalleled accuracy and stability;
+
+### Phase-Locked Loops (PLL)
+
+PLLs are used to lock the output frequency of an oscillator to a reference frequency, typically provided by a more stable source like a TCXO. They are essential in SDRs for maintaining the accuracy of frequency generation and modulation.
+
+PLLs help in:
+
+- Frequency Synthesis: Generating a wide range of frequencies from a single reference frequency;
+- Frequency Stability: Minimizing the effect of frequency drift due to temperature or other environmental factors;
+
+### Digital Signal Processors (DSP)
+
+They perform essential functions such as filtering, modulation, and demodulation, all of which can be adjusted through software to accommodate different frequencies and signal types.
+
+DSPs enable:
+
+- Flexible Signal Processing - adapting to various modulation techniques and bandwidth requirements;
+- Real-time Signal Adaptation - adjusting the processing parameters in real-time to optimize performance for different operating conditions;
+
+### Frequency mixer
+
+A frequency mixer is essentially a frequency-shifting device (to shift the frequency of signals up or down). Without them, it would be extremely difficult for radios, TVs, and Wi-Fi devices to process the
+high-frequency signals they receive. Frequency shifting is done by mixing the input signal with a signal from a local oscillator.
+
+- is an electronic component that takes two different input signals and combines them to create new frequencies;
+- it is like a `translator` for radio signals, allowing electronics to move a signal from a high frequency to a lower, more manageable frequency, or vice versa,
+  while keeping the original information (like audio or data) intact;
+
+#### Uses
+
+- *Radio Receivers (Down-conversion):* Converting a very high frequency from an antenna down to a lower "intermediate frequency" (IF) that is easier to amplify;
+- *Radio Transmitters (Up-conversion):* Boosting a low-frequency voice signal up to a high frequency suitable for transmitting over the air;
+
+#### Principal of work
+
+1. *Inputs*: It takes two inputs:
+    - *Signal Input (f~RF)*: The incoming radio signal (e.g., a radio station);
+    - *Local Oscillator (f~LO)*: A signal generated inside the device to act as a reference;
+2. *Mixing*: The mixer uses a non-linear component (like a diode or transistor) to multiply or combine these two signals;
+3. *Output*: It creates two new frequencies:
+- The *Sum* of the frequencies (f~RF + f~LO);
+- The *Difference* between the frequencies (f~RF - F~Lo);
+
+Example:
+
+Imagine the user want to change a high-frequency radio signal (100 MHz) to a lower, easier-to-process frequency (10 MHz).
+
+- User send the *100 MHz* signal into the mixer;
+- User also send a *90 MHz* signal (local oscillator) into the mixer;
+- The mixer outputs a range of frequencies, but a filter allows only the *difference (100 - 90 = 10 MHz)* to pass through;
 
 ## Misc
 

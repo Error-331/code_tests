@@ -61,6 +61,9 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/5379.html - Sadko;
 - https://www.old-games.ru/game/5218.html - Zarathrusta;
 - https://www.old-games.ru/game/2449.html - Beverly Hills Cop;
+- https://www.old-games.ru/game/5096.html - Splatterhouse;
+- https://www.old-games.ru/game/1588.html - Rocket Ranger;
+- https://www.old-games.ru/game/848.html - Ashes to Ashes;
 
 #### Simulation
 
@@ -217,6 +220,13 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/1438.html - King of Dragon Pass;
 - https://www.old-games.ru/game/screenshots/842.html - 1830: Railroads & Robber Barons;
 - https://www.old-games.ru/game/1525.html - Kingdoms of Germany;
+- https://www.old-games.ru/game/8847.html - Konglong Dongwuyuan;
+- https://www.old-games.ru/game/6177.html - Animal Paradise;
+- https://www.old-games.ru/game/5387.html - Land der Hoffnung;
+
+#### Tabletop
+
+- https://www.old-games.ru/game/12790.html - 1000 - Lots of Happiness in the Game;
 
 #### Racing
 
@@ -240,3 +250,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 #### Fighting
 
 - https://www.old-games.ru/game/3820.html - Dangerous Streets;
+
+#### Edutainment
+
+- https://www.old-games.ru/game/9686.html - Kapsyljakt Med Anki & Pytte;
