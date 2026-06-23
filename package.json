@@ -46,7 +46,7 @@
         "lodash-fantasy": "https://github.com/jlmorgan/node-lodash-fantasy/tarball/feature/refactor",
         "moment": "^2.20.1",
         "moment-timezone": "^0.5.14",
-        "mongodb": "^2.2.34",
+        "mongodb": "^3.6.1",
         "mongoose": "^4.13.10",
         "sqlite": "3.0.3",
         "mori": "^0.3.2",
