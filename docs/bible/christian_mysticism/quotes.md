@@ -266,3 +266,141 @@ RU:
 
 > Учась умирать для своих иллюзий о себе, вы умираете сладкой смертью для всего, что меньше Бога.
 
+---
+
+EN:
+
+> When I was going through the novitiate training at the monastery, there was little emphasis on reaching lofty states of mystical union with God.
+There was, however, an emphasis on not slamming doors, not leaving crumbs all over the table after meals, and not coming late to vespers. There was a daily emphasis on learning to be a
+decent citizen of the earth, one who could be relied on to tend to what needed tending to.
+
+RU:
+
+> Когда я проходил обучение в послушничестве в монастыре, мало внимания уделялось достижению высоких состояний мистического единения с Богом.
+Однако акцент делался на том, чтобы не хлопать дверями, не оставлять крошки на столе после еды и не опаздывать на вечернюю службу. Ежедневно уделялось 
+внимание тому, чтобы научиться быть достойным гражданином земли, на которого можно положиться в том, что требует внимания.
+
+---
+
+EN:
+
+> There is a third and final aspect of the ground on which the ladder to heaven is to be solidly placed —namely, a down-to-earth, loving concern for one's own happiness 
+and the happiness of others.
+
+RU:
+
+> Существует третий и последний аспект, на котором должна прочно стоять лестница в небо, — а именно, приземленная, полная любви забота о собственном счастье и счастье других.
+
+---
+
+EN:
+
+> The ladder to heaven will topple over if it is not firmly established on a sincere love and concern for ourselves and those around us.
+
+RU:
+
+> Лестница в небо рухнет, если она не будет прочно основана на искренней любви и заботе о себе и окружающих.
+
+---
+
+EN:
+
+> Discursive meditation is a process of prayerful introspection in which we move from point to point, carefully thinking through the thoughts, memories, images, and 
+connotations that come into our mind as we sit in the receptive openness of our reading.
+
+RU:
+
+> Дискуссионная медитация — это процесс молитвенной интроспекции, в котором мы перемещаемся от точки к точке, внимательно обдумывая мысли, воспоминания, образы и 
+смысловые оттенки, которые приходят нам в голову, пока мы пребываем в восприимчивой открытости чтения.
+
+---
+
+EN: 
+
+> You might, for example, begin to reflect on the suffering that has come into your own life and the lives of others as a result of your own past hurtful behavior. 
+You might reflect on how you are at times still tempted to allow that self-condemning voice to pummel you for the ten thousandth time for your past, or perhaps ongoing, 
+infractions. Then you reground yourself in prayerfully reflecting on what Scripture reveals: that God is infinitely greater than both your infractions and your 
+self-condemnations. In this way you are consoled and reassured.
+
+RU:
+
+> Например, вы можете начать размышлять о страданиях, которые пришли в вашу жизнь и в жизнь других людей в результате вашего собственного прошлого обидного поведения. 
+Вы можете размышлять о том, как порой вас все еще искушает позволить этому самоосудящему голосу в десятитысячный раз бить вас за ваши прошлые или, возможно, 
+продолжающиеся проступки. Затем вы вновь обретаете опору в молитвенном размышлении над тем, что открывает Писание: что Бог бесконечно больше как ваших проступков, 
+так и вашего самоосуждения. Таким образом, вы получаете утешение и уверенность.
+
+---
+
+EN:
+
+> T. S. Eliot advises us to "[w]ait without thought, for you are not ready for thought." Here, we might say that to think too soon is to think the wrong thing. Or, 
+more precisely, to think too soon is to remain trapped in the one-dimensional nature of conceptual formulations and answers.
+
+RU:
+
+> Т. С. Элиот советует нам «ждать, не задумываясь, ибо вы не готовы к размышлению». Здесь можно сказать, что думать слишком рано — значит думать о неправильном. Или, 
+точнее, думать слишком рано — значит оставаться в ловушке одномерной природы концептуальных формулировок и ответов.
+
+---
+
+EN:
+
+> Guigo says that meditation without prayer is sterile.By this he means that meditation without prayer lacks the energy and momentum of the longings characteristic of a 
+heart impelled toward a union not yet realized.
+
+RU:
+
+> Гиго утверждает, что медитация без молитвы бесплодна. Под этим он подразумевает, что медитация без молитвы лишена энергии и импульса, присущих стремлениям сердца, 
+движимого желанием единения, еще не реализованного.
+
+---
+
+EN:
+
+> the demand arises from longings so profound that one does not know how one can continue to go on unless the longings are fulfilled.
+
+RU:
+
+> Этот спрос возникает из настолько глубоких стремлений, что человек не знает, как продолжать жить, если эти стремления не будут удовлетворены.
+
+---
+
+EN:
+
+> Guigo says that the desire for God that prayer embodies tends to take on certain demanding qualities. Lovers know all about the demanding qualities the longings of 
+love can have.
+
+RU:
+
+> Гиго говорит, что стремление к Богу, воплощенное в молитве, имеет тенденцию приобретать определенные требовательные качества. Влюбленные прекрасно знают, какими 
+требовательными могут быть любовные желания.
+
+---
+
+EN:
+
+> But what if we are suffering because we have become smitten by a love that preempts all other loves? Then it would be sad to be consoled by anything other than the 
+fulfillment of this one love alone. It is consoling to see how utterly unconsoled and inconsolable we are with anything less or other than the consummation of that love 
+for which we now live and, in yearning for, we now die.
+
+RU:
+
+> Но что, если мы страдаем, потому что нас покорила любовь, которая превосходит все другие виды любви? Тогда было бы печально находить утешение в чем-либо, кроме 
+исполнения этой единственной любви. Утешает же то, насколько мы совершенно безутешны и неутешимы, если что-либо меньшее или иное, чем завершение той любви, ради 
+которой мы сейчас живем и, стремясь к ней, умираем.
+
+---
+
+EN:
+
+> For he suggests that as the moment of realized oneness with God passes, we are left with a new understanding of how God is always uniting us to himself in our 
+ordinary experience of our ordinary day-by-day lives.
+
+RU:
+
+> Он предполагает, что по мере того, как проходит момент осознанного единства с Богом, у нас остается новое понимание того, как Бог постоянно соединяет нас с Собой в 
+нашем обыденном опыте нашей повседневной жизни.
+
+---
+
+Page - 91

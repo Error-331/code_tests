@@ -195,7 +195,6 @@ https://prom.ua/p2726437852-filtr-bandpass-bpf.html - Фильтр BandPass BPF-
 https://prom.ua/m7953869010672519649-filtr-bandpass-bpf.html?p=2726437843 - Фильтр BandPass BPF-1575s, полоса пропускания 20Mhz, SMA-M/SMA-F, полосовые фильтры, для дронов, IoT;
 https://ekran.in.ua/ua/p2726437843-filtr-bandpass-bpf.html - Фільтр BandPass BPF-1575s, смуга пропускання 20Mhz, SMA-M/SMA-F, смугові фільтри, для дронів, IoT, телеметрії;
 https://ekran.in.ua/ua/p2618802600-filtr-lowpass-lpf.html - Фільтр LowPass LPF 1.5GHz, смуга пропускання DC-1500Mhz, SMA M/F, пригнічення завад для VTX 1.2G;
-https://ekran.in.ua/ua/p2210240699-antenna-uwb-800mhz.html - Антена UWB 800MhZ-6Ghz SR_LPD003_V101, SMA-F, трикутник, спрямована, логоперіодична для аналізатора спектру;
 
 https://www.tecsun-radios.com/product/pl990x-radio-receiver/ - PL-990x;
 https://www.tecsun-radios.com/product/q3-mp3-radio/ - Q3;
