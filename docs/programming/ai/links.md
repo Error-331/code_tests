@@ -9,6 +9,9 @@
 - https://civitai.com - thousands of high-quality Stable Diffusion & Flux models, share your AI-generated art, and engage with a vibrant community of creators;
 - https://betterwaifu.com/ - hentai and "nude" models;
 - https://github.com/elizaOS/eliza?tab=readme-ov-file - Eliza;
+- https://www.perplexity.ai/ - search;
+- https://www.firecrawl.dev/ - scrape;
+- https://www.tavily.com/ - scrape;
 
 ## Image generation
 
