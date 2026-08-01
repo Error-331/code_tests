@@ -403,4 +403,41 @@ RU:
 
 ---
 
-Page - 91
+EN:
+
+> And when the indwelling spirit begins to awaken you to the divine love that is your life, what real choice do you have but to slow down, to calm yourself, so that this love might
+have its way with you?
+
+RU:
+
+> И когда пребывающий в вас дух начинает пробуждать в вас божественную любовь, которая является вашей жизнью, какой у вас остается выбор, кроме как замедлиться, 
+успокоиться, чтобы эта любовь могла проявиться в вас?
+
+---
+
+EN:
+
+> There are no doctrines to which you must submit to gain access to silence. In fact, as long as the mental noise of ascribing to or refusing to ascribe to doctrines
+continues, you are not yet silent.
+
+RU:
+
+> Нет никаких доктрин, которым вы должны подчиняться, чтобы обрести тишину. На самом деле, пока продолжается внутренний шум, связанный с принятием или отказом от 
+принятия каких-либо доктрин, вы еще не молчите.
+
+---
+
+EN:
+
+> There is nothing you have to figure out before silence will allow you to enter into all that lies hidden in it. In fact, as long as the mental noise of imagining 
+anything needs to be figured out, or even can be figured out, you are not yet silent. All that is needed is for you to simply become silent, in a willingness to become 
+more silent still.
+
+RU:
+
+> Вам не нужно ничего разгадывать, прежде чем тишина позволит вам проникнуть во всё, что в ней скрыто. На самом деле, пока мысленный шум, возникающий при воображении, 
+нуждается в осмыслении или даже может быть осмыслен, вы ещё не молчите. Всё, что нужно, — это просто замолчать, проявив готовность к ещё большему молчанию.
+
+---
+
+Page - 107
