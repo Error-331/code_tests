@@ -440,4 +440,56 @@ RU:
 
 ---
 
-Page - 107
+EN:
+
+> We might say that in practicing meditation we are practicing what it will be like to be dead. Which is to say, we are practicing what it will be like to be, at last, 
+eternally, fully alive with the very silence of God.It is out of God's eternal silence that God eternally speaks the world and everything in it into being.
+
+RU:
+
+> Можно сказать, что, практикуя медитацию, мы практикуем то, каково будет быть мертвым. Иными словами, мы практикуем то, каково будет, наконец, вечно, полностью живым в 
+самом молчании Бога. Именно из вечного молчания Бога Бог вечно создает мир и все, что в нем есть.
+
+---
+
+EN:
+
+> "Listen, my child, to the precepts of the master, and incline the ear of your heart."
+
+RU:
+
+> "Слушай, дитя мое, наставления учителя и приклони ухо своего сердца."
+
+---
+
+EN:
+
+> Meditation is an act of love. It is a way of becoming silent so that the egocentric noise of our mind can fall into the background.
+
+RU:
+
+> Медитация — это акт любви. Это способ погрузиться в тишину, чтобы эгоцентричный шум нашего ума отошел на второй план.
+
+---
+
+EN:
+
+> Patience with one's slow beginnings and false starts is itself a good beginning in learning to realize that, in the end, everything is right on schedule.
+
+RU:
+
+> Терпение к медленному началу и неудачам само по себе является хорошим началом для понимания того, что в конечном итоге все идет по плану.
+
+---
+
+EN:
+
+> It is our growing trust in the loving patience of God that sustains and supports us as we make our way into a meditative way of life.
+
+RU:
+
+> Именно возрастающая вера в любящее терпение Бога поддерживает и направляет нас на пути к медитативному образу жизни.
+
+---
+
+Page - 117
