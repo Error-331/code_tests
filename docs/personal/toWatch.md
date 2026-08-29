@@ -56,6 +56,10 @@ https://theflixer.tv/movie/watch-clown-full-75757 - clown;
 https://theflixer.tv/watch-tv/watch-i-tsushima-full-72307.4820287 - I, Tsushima;
 https://theflixertv.to/tv/watch-big-city-greens-full-32942 - Big City Greens;
 https://theflixertv.to/tv/watch-ugly-americans-full-37622 - Ugly Americans;
+https://old.yummyani.me/catalog/item/ya-cusima - Я, Цусима;
+https://old.yummyani.me/catalog/item/galakticheskiy-ekspress-999-tv - Галактический экспресс 999;
+https://old.yummyani.me/catalog/item/dominion-tankovaya-policiya - Доминион: Танковая полиция;
+https://animesss.com/aniserials/video/comedy/1030-klevaja-para.html - Клевая пара аниме;
 
 ## Готовое к просмотру
 
