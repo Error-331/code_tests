@@ -48,6 +48,8 @@
 - https://verv.fm/ - video generation;
 - https://zeely.ai/ - create UGC videos, static ads, and high-selling campaigns;
 - https://ltx.studio/ - the AI platform for video production;
+- https://github.com/lllyasviel/FramePack - next-frame (next-frame-section) prediction neural network structure that generates videos progressively;
+- https://wan.video/ - Video generation;
 
 ## Avatar generation
 

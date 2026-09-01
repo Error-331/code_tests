@@ -2,15 +2,23 @@
 
 ## Stable diffusion
 
+### General
+
+- https://aicreators.tools/ - AI Creators Tools Directory;
+
 ### Articles
 
 - https://betterwaifu.com/blog/loras - Best LoRAs for Stable Diffusion NSFW Images;
+- https://stable-diffusion-art.com/framepack/ - FramePack: long AI video with low VRAM;
+- https://aicreators.tools/video-animation/video-generators/ltx-video - LTX Video by Lightricks;
+- https://aicreators.tools/video-animation/video-generators/framepack - FramePack;
 
 ### Models
 
 - https://huggingface.co/yungplin/HenmixReal_v40;
 - https://huggingface.co/LyliaEngine/Pony_Diffusion_V6_XL - Pony_Diffusion_V6_XL;
 - https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0 - stable-diffusion-xl-base-1.0;
+- https://ltx.io/models-overview-lm - Multimodal video generation model;
 
 #### LoRA
 
