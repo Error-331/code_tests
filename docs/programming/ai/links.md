@@ -53,6 +53,8 @@
 - https://wan.video/ - Video generation;
 - https://www.heygen.com/ - Video generation;
 - https://www.raylight.app/ - Video generation;
+- https://www.buzzy.now/ - Video generation;
+- https://www.sogni.ai/ - Video generation;
 
 ## Avatar generation
 
