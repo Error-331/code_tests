@@ -492,4 +492,111 @@ RU:
 
 ---
 
-Page - 117
+But if I tried to rid myself of my memo-
+ries, I would be doing violence to myself and to God, the author
+and sustainer of the miracle of memory.
+
+The delicacy lies in remaining
+attentive in the present moment to the memories of the past
+without slipping out of the present moment into the past.
+
+We learn to reverence the
+telling and retelling of our own unfolding story, which is being
+perpetually revised and renewed with each passing moment.
+
+As we settle into meditative freedom in the midst of our
+memories, we are awakened to the great and liberating truth
+that nothing we have done in the past, nor anything that has
+been done to us in the past, has the power to name who we are.
+
+Freed from sequential time with respect to the past, we are simultaneously freed from sequential time with
+respect to the future.
+
+In meditative awareness we find
+this joy in awakening to the timeless joy of God that ceaselessly
+plays itself out in the fleetingness of our day-by-day life.
+
+As
+you sit in meditation, you can practice learning to be quietly
+attentive to each feeling that arises, endures, and passes away
+within you.
+
+
+Sitting still
+and straight, settle into a deep meditative awareness of each
+life-sustaining breath.
+
+Learn to listen so deeply to your breath-
+ing that your very consciousness begins to take on the primor-
+dial, life-sustaining texture of your breathing.
+
+If you are tired as
+you meditate, learn to settle into a deep, reverential attentive-
+ness to your bodily fatigue.
+
+If you are rested as you meditate,
+learn to listen and become one with the sense of bodily well-
+being that being rested brings.
+
+If there is a pain in your back or
+legs, or if your stomach is upset, or if the room is hot or cold —
+learn to listen deeply to the intimate texture of these and all
+aspects of your bodily being.
+
+Be meditatively attentive to, but
+do not get caught up in, the urges within you, both those that
+aie fleeting and those that Ungei. Learn to be piesent, open,
+and awake to all that your bodily being reveals itself to be.
+
+With-
+out clinging to all that is pleasant, without rejecting all that is
+unpleasant, let your bodily being be —in a restful, open aware-
+ness of all it so unthinkably is.
+
+Sitting in this way, you will learn,
+little by little, to neither abandon nor invade the graced mystery
+of your bodily being.
+
+Scripture says, "The word became flesh and dwelt among
+us" (John 1:14). As we sit in meditation, we realize that these
+words are revelations, not just of the historical Christ but of
+ourselves as well. We sit in meditation pondering, breath by
+breath, the Word becoming flesh in the breath of us, in the very
+bodily being of who we simply are.
+
+We sit listening to God
+bodying himself forth in and as our bodily being. We listen to
+each breath, realizing, in some obscure manner, that we are lis-
+tening to God breathing into us the gift of life. We realize, in
+ways we cannot explain, that each breath is carrying us all the
+way home into God, from whom each breath comes.
+
+It is
+because Jesus is the lord of love and emptiness. He emptied
+himself in love in everything he did and said. He kept on emp-
+tying himself in love no matter what, even to the point of emp-
+tying himself in love in his own death.
+
+
+His heart was pierced.
+Blood and water flowed out, so that there was no Jesus left in
+Jesus. And when there was nothing left of Jesus, then only love
+was left, which was the only thing that was really there all
+along. And the same is true of us. And yet in our ego self, we
+fear being emptied so completely that nothing will be left of us
+but love alone. And so, bereft of this redemptive liberation, we
+continue roaming about in our discontent.
+
+The sole measure of God's love for us is the measureless
+expanse of himself, perfectly poured out and given to us, in and
+as our standing when we stand, our sitting when we sit, our
+laughing when we laugh, our crying when we cry.
+
+But our ego self just doesn't get it! And so in
+the end we learn to extend the compassionate love of Christ to
+ourselves in our inability to realize how invincibly precious and
+one with God we are in all our wayward ways.
+
+---
+
+Page - 130
