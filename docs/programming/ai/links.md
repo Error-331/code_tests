@@ -12,6 +12,9 @@
 - https://www.perplexity.ai/ - search;
 - https://www.firecrawl.dev/ - scrape;
 - https://www.tavily.com/ - scrape;
+- https://study24.ai/ - generative AI platform (RU);
+- https://elements.envato.com/ - generative AI platform;
+- https://higgsfield.ai/ - generative AI platform;
 
 ## Image generation
 
@@ -26,11 +29,14 @@
 - https://deepmind.google/models/imagen/ - Imagen;
 - https://higgsfield.ai/soul - high-aesthetic photo model;
 - https://www.topview.ai/ - TopView;
+- https://www.hitpaw.net/ - Image generation;
 
 ## Image processing
 
 - https://www.edimakor.net/sem/video-editor-video-to-video.html?gad_source=2&gad_campaignid=23024096855&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_Xng-tmU3dC2f74_whUQYtCOkgEGDXSC-b5Cw9dgD8MitR2TDgvN14aAh7FEALw_wcB;
 - https://huggingface.co/spaces/randomtable/BiRefNet_Backgroun_Removal - background removal;
+- https://huggingface.co/spaces/not-lain/background-removal - background removal;
+- https://fal.ai/models/fal-ai/birefnet/v2 - background removal;
 
 ## Video generation
 
@@ -53,6 +59,14 @@
 - https://wan.video/ - Video generation;
 - https://www.heygen.com/ - Video generation;
 - https://www.raylight.app/ - Video generation;
+- https://www.buzzy.now/ - Video generation;
+- https://www.sogni.ai/ - Video generation;
+- https://toonbee.ai/ - Video generation;
+- https://www.edimakor.net/ - Video generation;
+
+## 3D generation
+
+- https://studio.tripo3d.ai/ru - 3d generation;
 
 ## Avatar generation
 
