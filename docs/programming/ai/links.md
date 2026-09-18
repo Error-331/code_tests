@@ -64,6 +64,10 @@
 - https://toonbee.ai/ - Video generation;
 - https://www.edimakor.net/ - Video generation;
 
+## Video processing
+
+- https://klap.app/ - short clips creation;
+
 ## 3D generation
 
 - https://studio.tripo3d.ai/ru - 3d generation;
