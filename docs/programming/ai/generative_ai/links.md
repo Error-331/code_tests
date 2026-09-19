@@ -34,6 +34,8 @@
 - https://en.s-ai.net/model/8 - Henmix_Real v4.0 (Realistic) / Stable Diffusion;
 - https://en.s-ai.net/img/991 - [Stable Diffusion] Spread legs, R18, Pussy, Sex Toys, Female Ejaculation, Masterpiece, Painful Face [Realistic];
 - https://stablediffusionweb.com/ - prompts collection;
+- https://youmind.com/ru-RU/prompts/video - video prompts;
+- https://promptden.com/ - prompts collection;
 
 ### Nude art
 
