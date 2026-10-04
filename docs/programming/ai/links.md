@@ -63,6 +63,7 @@
 - https://www.sogni.ai/ - Video generation;
 - https://toonbee.ai/ - Video generation;
 - https://www.edimakor.net/ - Video generation;
+- https://youmind.com/ - Video generation;
 
 ## Video processing
 
