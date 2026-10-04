@@ -97,6 +97,7 @@
 - https://cloud.google.com/speech-to-text -  Google’s Speech-to-Text
 - https://www.riffusion.com/ - Riffusion;
 - https://github.com/openai/whisper - Whisper is a general-purpose speech recognition model;
+- https://www.wootechy.com/ - Voice changer;
 
 ## Music generation
 

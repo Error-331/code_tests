@@ -64,6 +64,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/5096.html - Splatterhouse;
 - https://www.old-games.ru/game/1588.html - Rocket Ranger;
 - https://www.old-games.ru/game/848.html - Ashes to Ashes;
+- https://www.old-games.ru/game/2881.html - Strike Base;
 
 #### Simulation
 
@@ -224,6 +225,10 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 - https://www.old-games.ru/game/6177.html - Animal Paradise;
 - https://www.old-games.ru/game/5387.html - Land der Hoffnung;
 
+#### Wargame
+
+- https://www.old-games.ru/game/3181.html - 5th Fleet;
+
 #### Tabletop
 
 - https://www.old-games.ru/game/12790.html - 1000 - Lots of Happiness in the Game;
@@ -242,6 +247,7 @@ https://dmkpress.com/catalog/computer/mathematics/978-5-97060-688-9/ - ДИСК�
 
 - https://www.old-games.ru/game/1755.html - Future Wars: Adventures in Time;
 - https://www.old-games.ru/game/3214.html - The Beverly Hillbillies;
+- https://www.old-games.ru/game/5819.html - Night Trap: The Director's Cut;
 
 #### FPS
 
