@@ -21,4 +21,4 @@ EV1527 / HS1527 (Learning Code Protocol):
 
 - it sends a 24-bit payload prefixed by a long preamble (sync pulse);
 - the first 20 bits are a pre-programmed random ID;
-- he final 4 bits represent the data key;
+- the final 4 bits represent the data key;
