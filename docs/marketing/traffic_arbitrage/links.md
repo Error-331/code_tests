@@ -96,6 +96,7 @@
 
 - https://www.kadam.net/en;
 - https://clickadu.com/ru;
+- https://mybid.io/
 
 ## Обучение
 

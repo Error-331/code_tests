@@ -41,3 +41,21 @@ Example 3:
 
 - to enable on RTL-SDR in SDR#: toggle `offset tuning`;
 - use `rtlsdr.bat`;
+
+## TCP server
+
+Test rtl-sdr device:
+
+```cmd
+
+rtl_test -t
+
+```
+
+Start server (on remote device):
+
+```cmd
+
+rtl_tcp -a 0.0.0.0 -p 1234
+
+```

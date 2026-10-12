@@ -12,6 +12,9 @@
 - https://www.perplexity.ai/ - search;
 - https://www.firecrawl.dev/ - scrape;
 - https://www.tavily.com/ - scrape;
+- https://study24.ai/ - generative AI platform (RU);
+- https://elements.envato.com/ - generative AI platform;
+- https://higgsfield.ai/ - generative AI platform;
 
 ## Image generation
 
@@ -26,10 +29,14 @@
 - https://deepmind.google/models/imagen/ - Imagen;
 - https://higgsfield.ai/soul - high-aesthetic photo model;
 - https://www.topview.ai/ - TopView;
+- https://www.hitpaw.net/ - Image generation;
 
 ## Image processing
 
 - https://www.edimakor.net/sem/video-editor-video-to-video.html?gad_source=2&gad_campaignid=23024096855&gclid=Cj0KCQjwo63HBhCKARIsAHOHV_Xng-tmU3dC2f74_whUQYtCOkgEGDXSC-b5Cw9dgD8MitR2TDgvN14aAh7FEALw_wcB;
+- https://huggingface.co/spaces/randomtable/BiRefNet_Backgroun_Removal - background removal;
+- https://huggingface.co/spaces/not-lain/background-removal - background removal;
+- https://fal.ai/models/fal-ai/birefnet/v2 - background removal;
 
 ## Video generation
 
@@ -48,6 +55,23 @@
 - https://verv.fm/ - video generation;
 - https://zeely.ai/ - create UGC videos, static ads, and high-selling campaigns;
 - https://ltx.studio/ - the AI platform for video production;
+- https://github.com/lllyasviel/FramePack - next-frame (next-frame-section) prediction neural network structure that generates videos progressively;
+- https://wan.video/ - Video generation;
+- https://www.heygen.com/ - Video generation;
+- https://www.raylight.app/ - Video generation;
+- https://www.buzzy.now/ - Video generation;
+- https://www.sogni.ai/ - Video generation;
+- https://toonbee.ai/ - Video generation;
+- https://www.edimakor.net/ - Video generation;
+- https://youmind.com/ - Video generation;
+
+## Video processing
+
+- https://klap.app/ - short clips creation;
+
+## 3D generation
+
+- https://studio.tripo3d.ai/ru - 3d generation;
 
 ## Avatar generation
 
@@ -74,6 +98,7 @@
 - https://cloud.google.com/speech-to-text -  Google’s Speech-to-Text
 - https://www.riffusion.com/ - Riffusion;
 - https://github.com/openai/whisper - Whisper is a general-purpose speech recognition model;
+- https://www.wootechy.com/ - Voice changer;
 
 ## Music generation
 
@@ -103,6 +128,9 @@
 ## Articles (misc)
 
 - https://habr.com/ru/companies/amvera/articles/897830/ - Личный ИИ-ассистент на ваших данных. Часть 1: Векторная база ChromaDB + DeepSeek | GPT ;
+- https://stable-diffusion-art.com/ - different articles;
+- https://www.promptzone.com/ - prompt zone;
+- https://www.promptzone.com/jaroslav/how-to-install-and-run-sdxl-models-in-comfyui-a-complete-guide-2nk2 - SDXL in ComfyUI (2026): Install Guide + Best Checkpoints to Use;
 
 ## Courses
 
@@ -122,3 +150,4 @@
 ## Misc
 
 - https://tripleten.com/tools/prompt-optimizer/ - prompt optimizer;
+- https://trailhq.com/graft - agent context optimization;

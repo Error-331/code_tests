@@ -76,7 +76,7 @@ Transactions include the following:
 
 ### Customer support
 
-- NetSuite tracks requests, questions and suggestions from customers by means of **cases*;
+- NetSuite tracks requests, questions and suggestions from customers by means of *cases*;
 - Netsuite allows to assign **cases** to appropriate employee;
 
 ### Financials
@@ -86,3 +86,7 @@ Transactions include the following:
 - track customer;
 - information regarding profitability and expenses
 - information regarding the entire customer lifecycle;
+
+## Transactions key data
+
+### Lists and saved searches
