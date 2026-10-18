@@ -72,6 +72,7 @@
 - https://sourceforge.net/projects/hampi/files/ - HamPi;
 - https://www.qsl.net/4nec2/ - NEC based antenna modeler and optimizer;
 - https://github.com/cyraxx/433mhz-led - 433mhz-led;
+- https://github.com/ReplicatAudio/DSPGraph - DSPGraph lib;
 
 ## Hacking
 
