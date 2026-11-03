@@ -59,3 +59,11 @@ Start server (on remote device):
 rtl_tcp -a 0.0.0.0 -p 1234
 
 ```
+
+Start server (on remote device with index `1`):
+
+```cmd
+
+rtl_tcp -d 1 -a 0.0.0.0 -p 1234
+
+```

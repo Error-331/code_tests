@@ -597,6 +597,9 @@ the end we learn to extend the compassionate love of Christ to
 ourselves in our inability to realize how invincibly precious and
 one with God we are in all our wayward ways.
 
+As our moments of spontaneous meditative awareness pass,
+we return to ego consciousness, but we do so changed.
+
 ---
 
-Page - 130
+Page - 136
