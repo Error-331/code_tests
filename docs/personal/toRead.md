@@ -20,6 +20,19 @@ https://www.amazon.in/gp/product/B0B1YDYP4S?notRedirectToSDP=1&ref_=dbs_mng_calw
 https://www.amazon.in/gp/product/B09R4QN2PB?notRedirectToSDP=1&ref_=dbs_mng_calw_6&storeType=ebooks - Dynamic Programming on Trees (Coding Interviews: Algorithm and Data Structure Proficiency Book 9)
 https://www.amazon.in/Greedy-Algorithms-before-Coding-Interview-ebook/dp/B0876JFTWY/ref=zg-te-pba_d_sccl_2_5/258-6207502-3713153?pd_rd_w=I7nH1&content-id=amzn1.sym.19fd9d5f-cb83-4468-ba97-e75ea6b21028&pf_rd_p=19fd9d5f-cb83-4468-ba97-e75ea6b21028&pf_rd_r=R6T7BC1BETQS5YHAT2T4&pd_rd_wg=LT7cN&pd_rd_r=78cc7bdf-f5a9-4a46-adac-ae6477e9e2c5&pd_rd_i=B0876JFTWY&psc=1 - Greedy Algorithms for the day before your Coding Interview (Day before Coding Interview Book 1)
 
+### AI
+
+https://leanpub.com/bulletproofknowledge-aiagents - Bulletproof Knowledge Building Hallucination-Resistant Neurosymbolic Agents with Lean and Logic Programming
+https://leanpub.com/prompt-patterns - Prompt Patterns Timeless Design Patterns for Effective Communication with Large Language Models
+https://leanpub.com/running-local-llms-on-your-own-hardware - Running Local LLMs on Your Own Hardware A Practical Guide to Private, Offline, and Self-Hosted Large Language Models
+https://leanpub.com/cracking-the-rag-interview - Cracking the RAG Interview
+https://leanpub.com/llm-autopsies - 100 LLM Autopsies What broke, why nobody noticed, and how it was found
+https://leanpub.com/under-the-hood - Under The Hood Build Every Layer of a Large Language Model from Scratch
+https://leanpub.com/harness-engineering - Harness Engineering Building Reliable Workflows Around Non-Deterministic Agents
+
+### Design
+
+https://leanpub.com/guideforbuttons - The Designer's Guide to the Buttons A History of Interfaces from Early Computers to Virtual Reality. In Search of a Universal Design System
 
 ## Social
 
