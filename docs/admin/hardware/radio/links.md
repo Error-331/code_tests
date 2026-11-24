@@ -29,6 +29,7 @@
 - https://tigertronics.com/slusbmain.htm - SignaLinkTM USB;
 - https://www.giga.co.za/ocart/index.php?route=product/product&product_id=351 - "EASY DIGI" Baofeng UV-5R INTERFACE for laptops, desktops and Raspberry with usb audio (Easy Digi) Assembled;
 - https://www.ebay.com/itm/321221531105?chn=ps&_trkparms=ispr%3D1&amdata=enc%3A1m53OV6o2SNubmCWV-pBRwQ36&norover=1&mkevt=1&mkrid=711-167653-853678-5&mkcid=2&itemid=321221531105&targetid=325425753764&device=c&mktype=pla&googleloc=9194773&poi=&campaignid=22148080055&mkgroupid=175386547804&rlsatarget=pla-325425753764&abcId=&merchantid=6296724&gad_source=1&gclid=Cj0KCQjwtJ6_BhDWARIsAGanmKcLggc2v_GgnS-RwoAAROURPkyjYIgEaKozSYcDb7KnK3eBRWeNU6kaAle_EALw_wcB - "EASY DIGI™" UV-5R INTERFACE for IPhone/IPad/IPod Touch ;
+- https://opensourcesdrlab.com/products/opensourcesdrlab-pcie-version-plutosdr-ad9363-xc7z010?VariantsId=10329 - OpenSourceSDRLab PCIE Version PlutoSDR AD9363 XC7Z010 70MHz-6GHz 0.5ppm TCXO;
 
 ### Handheld
 
