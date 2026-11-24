@@ -177,6 +177,10 @@ pilgrims on the earth."*
 
 **(2 Corinthians 5:13 KJV)**
 
+*"Oftentimes, trusting God means looking beyond what we can see to what God sees"*
+
+**Charles F. Stanley**
+
 ### Politics
 
 *"It is not for kings, O Lemuel, it is not for kings to drink wine; nor for princes strong drink:"*
@@ -210,6 +214,24 @@ pilgrims on the earth."*
 *"For the law was given by Moses, but grace and truth came by Jesus Christ."*
 
 **(John 1:17 KJV)**
+
+*"When thou hast eaten and art full, then thou shalt bless the LORD thy God for the good land which he hath given thee. Beware that thou forget not the LORD thy God, in not 
+keeping his commandments, and his judgments, and his statutes, which I command thee this day: lest when thou hast eaten and art full, and hast built goodly houses, and dwelt
+therein; and when thy herds and thy flocks multiply, and thy silver and thy gold is multiplied, and all that thou hast is multiplied; then thine heart be lifted up, and thou 
+forget the LORD thy God, which brought thee forth out of the land of Egypt, from the house of bondage; who led thee through that great and terrible wilderness, wherein were 
+fiery serpents, and scorpions, and drought, where there was no water; who brought thee forth water out of the rock of flint; who fed thee in the wilderness with manna, 
+which thy fathers knew not, that he might humble thee, and that he might prove thee, to do thee good at thy latter end; and thou say in thine heart, My power and the might of
+mine hand hath gotten me this wealth. But thou shalt remember the LORD thy God: for it is he that giveth thee power to get wealth, that he may establish his covenant which he
+sware unto thy fathers, as it is this day. And it shall be, if thou do at all forget the LORD thy God, and walk after other gods, and serve them, and worship them, 
+I testify against you this day that ye shall surely perish. As the nations which the LORD destroyeth before your face, so shall ye perish; because ye would not be obedient
+unto the voice of the LORD your God."*
+
+**(Deuteronomy 8:10-20 KJV)**
+
+*"Remember how the Lord your God led you all the way in the wilderness these forty years, to humble and test you in order to know what was in your heart, whether or not you
+would keep his commands."*
+
+**(Deuteronomy 8:2 NIV)**
 
 ### Work
 
@@ -850,3 +872,7 @@ worship: for salvation is of the Jews. But the hour cometh, and now is, when the
 **(Matthew 11:21)**
 
 ...Repentance is a hatred of sin; it is a turning from sin and a determination in the strength of God to forsake it... (Charles Spurgeon)
+
+## Charles F. Stanley
+
+*"Oftentimes, trusting God means looking beyond what we can see to what God sees"*

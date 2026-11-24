@@ -492,114 +492,281 @@ RU:
 
 ---
 
-But if I tried to rid myself of my memo-
-ries, I would be doing violence to myself and to God, the author
-and sustainer of the miracle of memory.
+EN:
 
-The delicacy lies in remaining
-attentive in the present moment to the memories of the past
-without slipping out of the present moment into the past.
+> But if I tried to rid myself of my memories, I would be doing violence to myself and to God, the author and sustainer of the miracle of memory.
 
-We learn to reverence the
-telling and retelling of our own unfolding story, which is being
-perpetually revised and renewed with each passing moment.
+RU:
 
-As we settle into meditative freedom in the midst of our
-memories, we are awakened to the great and liberating truth
-that nothing we have done in the past, nor anything that has
-been done to us in the past, has the power to name who we are.
-
-Freed from sequential time with respect to the past, we are simultaneously freed from sequential time with
-respect to the future.
-
-In meditative awareness we find
-this joy in awakening to the timeless joy of God that ceaselessly
-plays itself out in the fleetingness of our day-by-day life.
-
-As
-you sit in meditation, you can practice learning to be quietly
-attentive to each feeling that arises, endures, and passes away
-within you.
-
-
-Sitting still
-and straight, settle into a deep meditative awareness of each
-life-sustaining breath.
-
-Learn to listen so deeply to your breath-
-ing that your very consciousness begins to take on the primor-
-dial, life-sustaining texture of your breathing.
-
-If you are tired as
-you meditate, learn to settle into a deep, reverential attentive-
-ness to your bodily fatigue.
-
-If you are rested as you meditate,
-learn to listen and become one with the sense of bodily well-
-being that being rested brings.
-
-If there is a pain in your back or
-legs, or if your stomach is upset, or if the room is hot or cold —
-learn to listen deeply to the intimate texture of these and all
-aspects of your bodily being.
-
-Be meditatively attentive to, but
-do not get caught up in, the urges within you, both those that
-aie fleeting and those that Ungei. Learn to be piesent, open,
-and awake to all that your bodily being reveals itself to be.
-
-With-
-out clinging to all that is pleasant, without rejecting all that is
-unpleasant, let your bodily being be —in a restful, open aware-
-ness of all it so unthinkably is.
-
-Sitting in this way, you will learn,
-little by little, to neither abandon nor invade the graced mystery
-of your bodily being.
-
-Scripture says, "The word became flesh and dwelt among
-us" (John 1:14). As we sit in meditation, we realize that these
-words are revelations, not just of the historical Christ but of
-ourselves as well. We sit in meditation pondering, breath by
-breath, the Word becoming flesh in the breath of us, in the very
-bodily being of who we simply are.
-
-We sit listening to God
-bodying himself forth in and as our bodily being. We listen to
-each breath, realizing, in some obscure manner, that we are lis-
-tening to God breathing into us the gift of life. We realize, in
-ways we cannot explain, that each breath is carrying us all the
-way home into God, from whom each breath comes.
-
-It is
-because Jesus is the lord of love and emptiness. He emptied
-himself in love in everything he did and said. He kept on emp-
-tying himself in love no matter what, even to the point of emp-
-tying himself in love in his own death.
-
-
-His heart was pierced.
-Blood and water flowed out, so that there was no Jesus left in
-Jesus. And when there was nothing left of Jesus, then only love
-was left, which was the only thing that was really there all
-along. And the same is true of us. And yet in our ego self, we
-fear being emptied so completely that nothing will be left of us
-but love alone. And so, bereft of this redemptive liberation, we
-continue roaming about in our discontent.
-
-The sole measure of God's love for us is the measureless
-expanse of himself, perfectly poured out and given to us, in and
-as our standing when we stand, our sitting when we sit, our
-laughing when we laugh, our crying when we cry.
-
-But our ego self just doesn't get it! And so in
-the end we learn to extend the compassionate love of Christ to
-ourselves in our inability to realize how invincibly precious and
-one with God we are in all our wayward ways.
-
-As our moments of spontaneous meditative awareness pass,
-we return to ego consciousness, but we do so changed.
+> Но если бы я попытался избавиться от своих воспоминаний, я совершил бы насилие над самим собой и над Богом — творцом и хранителем чуда памяти.
 
 ---
 
-Page - 136
+EN:
+
+> The delicacy lies in remaining attentive in the present moment to the memories of the past without slipping out of the present moment into the past.
+
+RU:
+
+> Тонкость заключается в том, чтобы, оставаясь внимательным к воспоминаниям о прошлом в текущий момент, не выпадать из этого момента в прошлое.
+
+---
+
+EN:
+
+> We learn to reverence the telling and retelling of our own unfolding story, which is being perpetually revised and renewed with each passing moment.
+
+RU:
+
+> Мы учимся с благоговением относиться к тому, как мы рассказываем и пересказываем свою собственную, разворачивающуюся историю, которая с каждым мгновением непрерывно 
+пересматривается и обновляется.
+
+---
+
+EN:
+
+> As we settle into meditative freedom in the midst of our memories, we are awakened to the great and liberating truth that nothing we have done in the past, nor anything 
+that has been done to us in the past, has the power to name who we are.
+
+RU:
+
+> Погружаясь в медитативную свободу посреди своих воспоминаний, мы пробуждаемся к великой, освобождающей истине: ничто из того, что мы совершили в прошлом, и ничто из того, 
+что было совершено по отношению к нам, не властно определить, кто мы есть на самом деле.
+
+---
+
+EN:
+
+> Freed from sequential time with respect to the past, we are simultaneously freed from sequential time with respect to the future.
+
+RU:
+
+> Освободившись от последовательного времени по отношению к прошлому, мы одновременно освобождаемся от последовательного времени по отношению к будущему.
+
+---
+
+EN:
+
+> In meditative awareness we find this joy in awakening to the timeless joy of God that ceaselessly plays itself out in the fleetingness of our day-by-day life.
+
+RU:
+
+> В медитативном осознавании мы обретаем радость, пробуждаясь к той вневременной радости Божьей, которая непрестанно проявляет себя в мимолетности нашей повседневной жизни.
+
+---
+
+EN:
+
+> As you sit in meditation, you can practice learning to be quietly attentive to each feeling that arises, endures, and passes away within you.
+
+RU:
+
+> Во время медитации вы можете учиться спокойно наблюдать за каждым чувством, которое возникает, длится и проходит внутри вас.
+
+---
+
+EN:
+
+> Sitting still and straight, settle into a deep meditative awareness of each life-sustaining breath.
+
+RU:
+
+> Сидя неподвижно и прямо, погрузитесь в глубокое медитативное осознавание каждого вдоха, поддерживающего жизнь.
+
+---
+
+EN:
+
+> Learn to listen so deeply to your breathing that your very consciousness begins to take on the primordial, life-sustaining texture of your breathing.
+
+RU:
+
+> Научитесь прислушиваться к своему дыханию настолько глубоко, чтобы само ваше сознание начало обретать первозданную, жизнеподдерживающую текстуру этого дыхания.
+
+---
+
+EN:
+
+> If you are tired as you meditate, learn to settle into a deep, reverential attentiveness to your bodily fatigue.
+
+RU:
+
+> Если во время медитации вы чувствуете усталость, научитесь погружаться в глубокое, благоговейное внимание к своей телесной усталости.
+
+---
+
+EN:
+
+> If you are rested as you meditate, learn to listen and become one with the sense of bodily wellbeing that being rested brings.
+
+RU:
+
+> Если во время медитации вы чувствуете себя отдохнувшим, научитесь прислушиваться к этому состоянию и сливаться с тем ощущением телесного благополучия, которое приносит отдых.
+
+---
+
+EN:
+
+> If there is a pain in your back or legs, or if your stomach is upset, or if the room is hot or cold — learn to listen deeply to the intimate texture of these and all aspects of your bodily being.
+
+RU:
+
+> Если вы чувствуете боль в спине или ногах, если у вас расстроен желудок, или если в комнате слишком жарко или холодно — научитесь глубоко прислушиваться к сокровенной фактуре этих и любых других проявлений вашего телесного бытия.
+
+---
+
+EN:
+
+> Be meditatively attentive to, but do not get caught up in, the urges within you, both those that aie fleeting and those that Ungei. Learn to be piesent, open, and awake to 
+all that your bodily being reveals itself to be.
+
+RU:
+
+> Будьте медитативно внимательны к возникающим внутри вас побуждениям — как к мимолетным, так и к более стойким, — но не позволяйте им захватить вас. Учитесь присутствовать, 
+быть открытыми и бодрствующими по отношению ко всему, что проявляется в вашем телесном бытии.
+
+---
+
+EN:
+
+> Without clinging to all that is pleasant, without rejecting all that is unpleasant, let your bodily being be — in a restful, open awareness of all it so unthinkably is.
+
+RU:
+
+> Не цепляясь за всё приятное и не отвергая всё неприятное, позволь своему телесному бытию просто быть — в состоянии спокойного, открытого осознавания всего того, чем оно — 
+непостижимым образом — является.
+
+---
+
+EN:
+
+> Sitting in this way, you will learn, little by little, to neither abandon nor invade the graced mystery of your bodily being.
+
+RU:
+
+> Сидя таким образом, вы постепенно научитесь — не оставляя без внимания, но и не вторгаясь — относиться к благодатному таинству своего телесного бытия.
+
+---
+
+EN:
+
+> Scripture says, "The word became flesh and dwelt among us" (John 1:14). As we sit in meditation, we realize that these words are revelations, not just of the historical
+Christ but of ourselves as well. We sit in meditation pondering, breath by breath, the Word becoming flesh in the breath of us, in the very bodily being of who we simply are.
+
+RU:
+
+> В Писании сказано: «Слово стало плотию и обитало с нами» (Ин. 1:14). Погружаясь в медитацию, мы осознаем, что эти слова — откровение не только об историческом Христе, но и 
+о нас самих. Мы сидим в медитации, размышляя — с каждым вдохом и выдохом — о том, как Слово становится плотью в нашем дыхании, в самом телесном бытии того, кем мы, по сути, являемся.
+
+---
+
+EN:
+
+> We sit listening to God bodying himself forth in and as our bodily being. We listen to each breath, realizing, in some obscure manner, that we are listening to God breathing
+into us the gift of life. We realize, in ways we cannot explain, that each breath is carrying us all the way home into God, from whom each breath comes.
+
+RU:
+
+> Мы сидим и слушаем, как Бог воплощает Себя в нас — в нашем телесном бытии и через него. Мы прислушиваемся к каждому вдоху, каким-то непостижимым образом осознавая, что это
+Бог вдыхает в нас дар жизни. Мы понимаем — пусть и не в силах выразить это словами, — что каждый вдох ведет нас прямиком домой, к Богу, от Которого этот вдох исходит.
+
+---
+
+EN:
+
+> It is because Jesus is the lord of love and emptiness. He emptied himself in love in everything he did and said. He kept on emptying himself in love no matter what, even 
+to the point of emptying himself in love in his own death.
+
+RU:
+
+> Это происходит потому, что Иисус — Господь любви и опустошенности. Во всем, что Он делал и говорил, Он с любовью опустошал Себя. Он продолжал с любовью опустошать Себя, 
+несмотря ни на что, — вплоть до того, что полностью опустошил Себя в любви в момент собственной смерти.
+
+---
+
+EN:
+
+> His heart was pierced. Blood and water flowed out, so that there was no Jesus left in Jesus. And when there was nothing left of Jesus, then only love was left, which was 
+the only thing that was really there all along. And the same is true of us. And yet in our ego self, we fear being emptied so completely that nothing will be left of us but 
+love alone. And so, bereft of this redemptive liberation, we continue roaming about in our discontent.
+
+RU:
+
+> Его сердце было пронзено. Из него истекли кровь и вода — так что в Иисусе не осталось самого Иисуса. А когда от Иисуса ничего не осталось, осталась лишь любовь — то 
+единственное, что на самом деле присутствовало в Нём изначально. То же самое верно и для нас. И всё же, пребывая в своём эго, мы боимся опустошить себя настолько, чтобы от 
+нас не осталось ничего, кроме одной лишь любви. И потому, лишив себя этого искупительного освобождения, мы продолжаем блуждать, полные внутреннего недовольства.
+
+---
+
+EN:
+
+> The sole measure of God's love for us is the measureless expanse of himself, perfectly poured out and given to us, in and as our standing when we stand, our sitting when we 
+sit, our laughing when we laugh, our crying when we cry.
+
+RU:
+
+> Единственная мера Божьей любви к нам — это безмерная полнота Его собственного бытия, всецело излитая и дарованная нам; она присутствует в нас и становится самой основой
+нашего существования — когда мы стоим, когда сидим, когда смеемся, когда плачем.
+
+---
+
+EN:
+
+> But our ego self just doesn't get it! And so in the end we learn to extend the compassionate love of Christ to ourselves in our inability to realize how invincibly precious 
+and one with God we are in all our wayward ways.
+
+RU:
+
+> Но наше эго этого просто не понимает! И в итоге мы учимся распространять на самих себя сострадательную любовь Христа — даже в те моменты, когда не способны осознать, 
+насколько мы бесконечно ценны и как неразрывно связаны с Богом, несмотря на все наши заблуждения и отклонения от верного пути.
+
+---
+
+EN:
+
+> As our moments of spontaneous meditative awareness pass, we return to ego consciousness, but we do so changed.
+
+RU:
+
+> Когда моменты спонтанного медитативного осознавания проходят, мы возвращаемся к эго-сознанию — но уже изменившимися.
+
+---
+
+EN:
+
+> The first of these three signs is, he says, "the realization that one cannot make discursive meditation or receive satisfaction from it as before."
+
+RU:
+
+> Первым из этих трех признаков, по его словам, является «осознание того, что человек больше не может заниматься дискурсивной медитацией или получать от нее удовлетворение, 
+как прежде».
+
+---
+
+EN:
+
+> The second sign is "the disinclination to fix the imagination or sense faculties on other particular objects, exterior or interior."
+
+RU:
+
+> Второй признак — «нежелание фиксировать воображение или органы чувств на каких-либо конкретных объектах, внешних или внутренних».
+
+---
+
+EN:
+
+> For Saint John of the Cross, "the third and surest sign is that a person likes to remain alone, in a loving awareness of God, without particular considerations, in interior
+peace, and quiet and repose, and without the acts and exercises . . . of the intellect, memory and the will. Such a one prefers to remain only in the general loving awareness 
+and knowledge . . . without any particular knowledge or understanding."
+
+RU:
+
+> По словам святого Иоанна Креста, «третий и самый верный признак — это когда человек стремится пребывать в уединении, в исполненном любви осознании Бога, не прибегая к 
+каким-либо частным размышлениям, пребывая во внутреннем мире, тишине и покое, — и всё это без участия таких способностей, как разум, память и воля... Такой человек 
+предпочитает оставаться лишь в общем, исполненном любви осознании и постижении... не углубляясь ни в какие частные знания или понимания».
+
+---
+
+---
+
+Page - 141
